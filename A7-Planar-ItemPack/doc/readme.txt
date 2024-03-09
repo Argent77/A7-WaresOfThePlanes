@@ -56,7 +56,8 @@ Components
 
 This is the main component. It installs a great number of items from Planescape: Torment which
 includes weapons, accessories, utility items, and more. They can be purchased from a unique
-travelling merchant who can be encountered throughout the whole Baldur's Gate series.
+travelling merchant who can be encountered in several towns and settlements throughout the whole
+Baldur's Gate series.
 
 As the items vary greatly in strength, they are only gradually made available as the main story
 of the game progresses.
