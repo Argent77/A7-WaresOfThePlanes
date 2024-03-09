@@ -16,3 +16,36 @@ THEN
   RESPONSE #100
     EscapeArea()
 END
+
+IF
+  !Global("CustomerScene","LOCALS",0)
+  Global("ToutTimerInit","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ToutTimerInit","LOCALS",1)
+    SetGlobalTimerRandom("ToutTimer","LOCALS",6,24)
+END
+
+IF
+  !Global("ToutTimerInit","LOCALS",0)
+  GlobalTimerExpired("ToutTimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimerRandom("ToutTimer","LOCALS",8,24)
+    DisplayStringHeadNoLog(Myself,@2008)  // The finest steel of the Planes!
+  RESPONSE #100
+    SetGlobalTimerRandom("ToutTimer","LOCALS",10,24)
+    DisplayStringHeadNoLog(Myself,@2009)  // A well-armed adventurer is a *living* adventurer!
+  RESPONSE #100
+    SetGlobalTimerRandom("ToutTimer","LOCALS",8,24)
+    DisplayStringHeadNoLog(Myself,@2010)  // Fair bargains, honest trades!
+  RESPONSE #100
+    SetGlobalTimerRandom("ToutTimer","LOCALS",8,24)
+    DisplayStringHeadNoLog(Myself,@2011)  // Items at prices ye won't believe!
+  RESPONSE #100
+    SetGlobalTimerRandom("ToutTimer","LOCALS",6,24)
+    DisplayStringHeadNoLog(Myself,@2012)  // Arms for sale!
+  RESPONSE #100
+    SetGlobalTimerRandom("ToutTimer","LOCALS",10,24)
+    DisplayStringHeadNoLog(Myself,@2013)  // C'mon over here and put some of your gold to good use!
+END
