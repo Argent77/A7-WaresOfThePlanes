@@ -1,0 +1,24 @@
+// "Reason"
+
+// @0 = ~~  // #6345
+@1 = ~Reason +2~
+
+// @10 = ~~ // #6716
+@11 = ~This enormous hammer is the third weapon in the "Triad of Tests" of the Believers of the Source in Sigil. The other two are the axe "Ascension" and the dagger "Enlightenment." Its head is covered with mystic runes and engraved with the symbol of the Godsmen. It thrums in your hands.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Charisma: +1
+
+THAC0: +2
+Damage: 1d4+3, +2 additional crushing damage
+Damage type: Crushing
+Speed Factor: 2
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 5~

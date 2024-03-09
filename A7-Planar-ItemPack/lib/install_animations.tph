@@ -1,0 +1,78 @@
+// Installing custom creature animations
+
+// Ebb Creekknees
+OUTER_SPRINT anim_name ~EBB_CREAKKNEES_PST~
+OUTER_SET anim_slot = "-1"
+OUTER_SPRINT anim_ini ~~
+OUTER_SPRINT animate_entry ~~
+OUTER_FOR (slot = 0xe000; slot < 0xf000; ++slot) BEGIN
+  OUTER_PATCH ~~ BEGIN SPRINTF ini_file ~%x.ini~ (slot) END
+  OUTER_PATCH_SAVE ini_file ~%ini_file%~ BEGIN DELETE_BYTES 0 2 END
+  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%ini_file%~) BEGIN
+    OUTER_SET anim_slot = slot
+    OUTER_SPRINT anim_ini ~%ini_file%~
+    OUTER_PATCH ~~ BEGIN
+      SPRINTF animate_entry ~%x %s~ (anim_slot ~%anim_name%~)
+    END
+    OUTER_SET slot = 0xf000
+  END
+END
+
+ACTION_IF (anim_slot >= 0xe000) BEGIN
+  ACTION_FOR_EACH suffix IN ~a1~ ~a2~ ~ca~ ~de~ ~gh~ ~gu~ ~sc~ ~sd~ ~sl~ ~sp~ ~tw~ ~wk~ BEGIN
+    COPY ~%MOD_FOLDER%/bam/a7-c%suffix%.bam~ ~override~
+         ~%MOD_FOLDER%/bam/a7-c%suffix%e.bam~ ~override~
+  END
+  ACTION_FOR_EACH suffix IN ~atk1~ ~atk2~ ~die1~ ~die2~ ~die3~ ~hit1~ ~hit2~ ~hit3~ BEGIN
+    COPY ~%MOD_FOLDER%/wav/a7-c%suffix%.wav~ ~override~
+  END
+  COPY ~%MOD_FOLDER%/ini/exxx.ini~ ~override/%anim_ini%~
+  APPEND ~animate.ids~ ~%animate_entry%~ UNLESS ~%anim_name%~
+  CLEAR_IDS_MAP
+END ELSE BEGIN
+  WARN ~WARNING: Could not install custom creature animation: %anim_name%. Using default animation.~
+END
+
+
+// Lim-Lim
+OUTER_SPRINT anim_name ~LIM_LIM_PST~
+OUTER_SET anim_slot = "-1"
+OUTER_SPRINT anim_ini ~~
+OUTER_SPRINT animate_entry ~~
+ACTION_DEFINE_ASSOCIATIVE_ARRAY anim_ranges BEGIN
+  // range start => range length
+  ~0x7300~ => ~0x100~
+  ~0x7f00~ => ~0x100~
+END
+
+ACTION_PHP_EACH anim_ranges AS range_start => range_length BEGIN
+  ACTION_IF (anim_slot < 0) BEGIN
+    OUTER_SET range_end = range_start + range_length
+    OUTER_FOR (slot = range_start; slot < range_end; ++slot) BEGIN
+      OUTER_PATCH ~~ BEGIN SPRINTF ini_file ~%x.ini~ (slot) END
+      OUTER_PATCH_SAVE ini_file ~%ini_file%~ BEGIN DELETE_BYTES 0 2 END
+      ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%ini_file%~) BEGIN
+        OUTER_SET anim_slot = slot
+        OUTER_SPRINT anim_ini ~%ini_file%~
+        OUTER_PATCH ~~ BEGIN
+          SPRINTF animate_entry ~%x %s~ (anim_slot ~%anim_name%~)
+        END
+        OUTER_SET slot = range_end
+      END
+    END
+  END
+END
+
+ACTION_IF (anim_slot >= 0x7000) BEGIN
+  ACTION_FOR_EACH suffix IN ~g1~ ~g11~ ~g12~ ~g13~ ~g14~ ~g15~ ~g2~ ~g21~ ~g22~ ~g23~ ~g24~ ~g25~ ~g26~ BEGIN
+    COPY ~%MOD_FOLDER%/bam/a7-l%suffix%.bam~ ~override~
+  END
+  ACTION_FOR_EACH suffix IN ~1~ ~2~ ~3~ ~4~ ~6~ ~7~ ~8~ BEGIN
+    COPY ~%MOD_FOLDER%/wav/a7-lim%suffix%.wav~ ~override~
+  END
+  COPY ~%MOD_FOLDER%/ini/7xxx.ini~ ~override/%anim_ini%~
+  APPEND ~animate.ids~ ~%animate_entry%~ UNLESS ~%anim_name%~
+  CLEAR_IDS_MAP
+END ELSE BEGIN
+  WARN ~WARNING: Could not install custom creature animation: %anim_name%. Using default animation.~
+END

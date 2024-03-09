@@ -1,0 +1,15 @@
+// Jagged Bolts
+
+// @0 = ~~  // #6632
+@1 = ~Jagged Bolts +1~
+
+// @10 = ~~ // #6772
+@11 = ~These enchanted bolts have a series of jagged black runes traced along the shaft. When fired, the runes rise upwards like spines, forming an additional row of vicious edges that tear into a target. 
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d4+2 (missile)
+Launcher: Crossbow
+
+Weight: 0~

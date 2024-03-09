@@ -1,0 +1,30 @@
+// *** BG2-SoA: Imnesvale area script ***
+
+// First-time initialization of the merchant
+IF
+  Global("A7-InitMerchant","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-InitMerchant","GLOBAL",1)
+    CreateCreatureImpassableAllowOverlap("a7-merc",[0.0],S)
+    ActionOverride("a7-merc",MakeGlobal())
+    ActionOverride("a7-merc",DestroySelf())
+    Continue()
+END
+
+// Merchant arrives
+IF
+  !Global("UmarCut","Global",0)   // Trigger after the initial mayor speech about the Umar Hills crisis
+  Global("A7-InitMerchant","GLOBAL",1)
+  !GlobalTimerNotExpired("A7-TravelImnesvaleTimer","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("A7-TravelTimeOut","GLOBAL",ONE_DAY)
+    SetGlobalTimer("A7-TravelTimeOutForced","GLOBAL",TWO_DAYS)
+    SetGlobalTimer("A7-TravelTrademeetTimer","GLOBAL",THREE_DAYS)
+    SetGlobalTimer("A7-TravelAthkatlaTimer","GLOBAL",SIX_DAYS)
+    SetGlobalTimer("A7-TravelImnesvaleTimer","GLOBAL",TWELVE_DAYS)
+    MoveGlobal("AR1100","a7-merc",[3530.2940])
+    ActionOverride("a7-merc",Face(SE))
+    Continue()
+END

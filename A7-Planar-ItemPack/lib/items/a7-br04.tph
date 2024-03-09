@@ -1,0 +1,33 @@
+// Item: Dread Bond
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-br04~
+
+// Installing item
+COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+  LPF update_item_generic
+    STR_VAR
+      itm_resref
+    RET
+      icon_resref
+      desc_image_resref
+  END
+  // updating strref in opcode 319 instance
+  LPF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  PATCH_WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+      LPF ALTER_ITEM_EFFECT
+        INT_VAR
+          check_globals = 1
+          match_opcode = 319  // Restrict item
+          special = RESOLVE_STR_REF(@20)  // Vampire
+      END
+  END
+
+// Installing associated resources
+LAF install_item_resources_generic
+STR_VAR
+  itm_resref
+  icon_resref
+  desc_image_resref
+END

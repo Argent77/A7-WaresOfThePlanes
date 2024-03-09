@@ -1,0 +1,26 @@
+// *** Cutscene: Merchant and customer, part 4 ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    SmallWait(5)
+    ActionOverride("a7-mcust",FaceObject("a7-merc"))
+    SmallWait(3)
+    FaceObject("a7-mcust")
+    SmallWait(5)
+    DisplayStringHead(Myself,@2101) // Oh, a customer?
+    Wait(3)
+    DisplayStringHead("a7-mcust",@2102) // I'd like to see your wares, please.
+    Wait(5)
+    DisplayStringHead(Myself,@2103) // Certainly! You won't be disappointed.
+    Wait(6)
+    DisplayStringHead("a7-mcust",@2104) // Hmm, that's quite a selection.
+    Wait(5)
+    DisplayStringHead("a7-mcust",@2105) // I'd like to buy this nifty bracelet.
+    Wait(5)
+    DisplayStringHead(Myself,@2106) // A good choice. I acquired it during one of my skirmishes on Ysgard.
+    Wait(8)
+    StartCutSceneEx("a7-mct05",TRUE)
+END

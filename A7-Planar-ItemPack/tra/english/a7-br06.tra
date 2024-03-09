@@ -1,0 +1,21 @@
+// Spider Bracelet
+
+@0 = ~Bracelet~
+@1 = ~Spider Bracelet~
+
+@10 = ~This bracelet looks to be made of silver and has a precious gem mounted to the top of it.
+
+STATISTICS:
+
+Weight: 0~
+@11 = ~In actuality this is a living spider not jewelry. When attached to ones wrist, the spider will sink its fangs into the users flesh and feed from the host, providing both beneficial and detrimental effects.
+
+STATISTICS:
+
+Equipped abilities:
+– +5% resistance to slashing, piercing, crushing, and missile damage
+– Hit Points: +10
+– Intelligence: -1
+– Wisdom: -1
+
+Weight: 0~

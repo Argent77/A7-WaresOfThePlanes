@@ -1,0 +1,26 @@
+// Widowmaker
+
+// @0 = ~~  // #6343
+@1 = ~Widowmaker +2~
+
+// @10 = ~~ // #6720
+@11 = ~Tempered with the lethal venom of the dreaded hook spider, the magical properties of this blade, known simply as "Widowmaker," are much sought after by practicing assassins throughout the planes. The poison that has been magically and permanently infused into the dagger immediately infects those cut by it. Additionally, the wielder of "Widowmaker" immediately develops an improved resistance to poison simply from holding the blade.
+
+STATISTICS:
+
+Equipped abilities:
+– Poison Resistance: +25%
+
+Combat abilities:
+– Hit target must save vs. Death or suffer 1 point of poison damage every 3 seconds for two rounds
+
+THAC0: +2
+Damage: 1d4+2, +2 slashing damage
+Damage type: Piercing
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~

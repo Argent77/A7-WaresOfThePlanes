@@ -1,0 +1,23 @@
+// "Enlightenment"
+
+// @0 = ~~  // #6343
+@1 = ~Enlightenment +2~
+
+// @10 = ~~ // #6720
+@11 = ~"Enlightenment", along with "Ascension" and "Reason", are weapons called the "Triad of Tests" by the Believers of the Source in Sigil. This dagger is slim, perfectly balanced, and light as a feather. The symbol of the Godsmen is engraved along the blade, and the entire weapon seems to shiver as if in anticipation.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Charisma: +1
+
+THAC0: +2
+Damage: 1d6+2 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~

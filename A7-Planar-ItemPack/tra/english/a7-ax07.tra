@@ -1,0 +1,27 @@
+// "Hatred's Gift"
+
+// @0 = ~~  // #6654
+@1 = ~Hatred's Gift +1~
+
+// @10 = ~~ // #6656
+@11 = ~It is not exactly clear in the annals of known planar history when "Hatred's Gift" was created, but by the bloody trail it has left across the planes seems to have finally reached you. 
+
+The axe exists to inspire hatred in one's enemies and fill its wielder with a berserker rage. When entering combat, the skulls along the shaft come alive, chittering their teeth, and the teeth (remnants of fiendish victims absorbed into the axe blade) extend outwards, biting and tearing into opponents with each strike. 
+
+Once equipped, "Hatred's Gift" cannot be dropped unless its curse is removed.
+
+STATISTICS:
+
+Equipped abilities:
+– Causes the wielder to go berserk
+– May only be removed with a Remove Curse spell
+
+THAC0: +1
+Damage: 2d8+1 (slashing)
+Speed Factor: 6
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7~

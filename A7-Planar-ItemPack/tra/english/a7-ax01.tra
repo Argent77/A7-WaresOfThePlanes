@@ -1,0 +1,23 @@
+// "Ascension"
+
+// @0 = ~~  // #6654
+@1 = ~Ascension +2~
+
+// @10 = ~~ // #6656
+@11 = ~"Ascension" is one of the finest weapons created at the Great Foundry, the home of the Believers of the Source in Sigil. It is one of three weapons called the "Triad of Tests," including the hammer "Reason" and the dagger "Enlightenment." The symbol of the faction is engraved on the axe head, and the edges of the blades are so sharp they could split a hair lengthwise.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Charisma: +1
+
+THAC0: +2
+Damage: 1d8+2 (slashing)
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4~

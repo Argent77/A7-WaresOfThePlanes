@@ -1,0 +1,22 @@
+// Vrock Club
+
+// @0 = ~~  // #6701
+@1 = ~Vrock Club +2~
+
+// @10 = ~~ // #6703
+@11 = ~Created from the bones of a Vrock, this club makes a formidable weapon.
+
+STATISTICS:
+
+Combat abilities:
+– 25% chance to poison the target for 8 seconds (Save vs. Poison negates)
+
+THAC0: +2
+Damage: 1d6+2 (crushing)
+Speed Factor: 2
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 4~

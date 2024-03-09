@@ -1,0 +1,28 @@
+// "Final Judgment"
+
+// @0 = ~~  // #6654
+@1 = ~Final Judgment +3~
+
+// @10 = ~~ // #6656
+@11 = ~This archaic double-bladed battle-axe is reminiscent of an executioner's axe; the axe head has been forged into the symbol of the Mercykiller Faction (a red dragon with its wings outspread… the outstretched wings have been shaped into the blades of the axe.) The axe itself is huge; it would require tremendous strength to use effectively.
+
+This axe carries part of Vhailor's essence within it. As a result, it is utterly devoted to justice and will not allow the user to rest while "judgments" are left to be delivered. The considerable damage it causes to an opponent is doubled if the axe strikes a guilty or chaotic creature. Furthermore, the axe itself lends some of its strength to the wielder, giving them added protection from attacks.
+
+The origin of this axe is unknown. If you were to hazard a guess, the axe gained its powers simply from Vhailor's belief.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– May only be removed with a Remove Curse spell
+
+THAC0: +3
+Damage: 2d6+3, +1d6 fire damage, does double damage against chaotic creatures
+Damage type: Slashing
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 16 Strength
+
+Weight: 12~

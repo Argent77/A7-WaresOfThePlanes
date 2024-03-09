@@ -1,0 +1,8 @@
+// Use tra numbers in range 1000..1999
+
+@1000 = ~Planar Item Pack~
+@1010 = ~Identify all items (not recommended)~
+
+@1100 = ~DLC Merger is required before mods can be installed on this game. Check the readme for more information and a link to download DLC Merger.~
+@1101 = ~Requires BG:EE, BG2:EE or EET.~
+@1102 = ~Requires the main component of the mod.~

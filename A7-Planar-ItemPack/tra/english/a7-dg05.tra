@@ -1,0 +1,21 @@
+// Entropic Blade
+
+// @0 = ~~  // #6343
+@1 = ~Entropic Blade +3~
+
+// @10 = ~~ // #6720
+@11 = ~The surface of this small dagger twists and bends as you watch, as if struggling to break free from its shape.
+
+It looks to be made of iron, silver, and any of a number of different metals. Sometimes they blend together, other times, they submerge into the core of the blade, only to resurface again minutes later.
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d20+3 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0~

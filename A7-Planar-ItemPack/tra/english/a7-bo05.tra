@@ -1,0 +1,15 @@
+// Bolts of Whistling Doom
+
+// @0 = ~~  // #6632
+@1 = ~Bolts of Whistling Doom +2~
+
+// @10 = ~~ // #6772
+@11 = ~These bolts have somehow captured the deadly harmonic of Pandemonium and then added insult to injury by imprisoning an enraged air elemental inside the head of the bolt. When one of these bolts strike an opponent, the head shatters, and the air elemental is released. The elemental will whip around the opponent in a frenzy, making one strike before it vanishes. 
+
+STATISTICS:
+
+THAC0: +2
+Damage: 4d4 (crushing)
+Launcher: Crossbow
+
+Weight: 0~

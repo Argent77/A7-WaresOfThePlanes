@@ -1,0 +1,19 @@
+// 
+
+// @0 = ~~  // #6343
+@1 = ~Bone Dagger +1~
+
+// @10 = ~~ // #6720
+@11 = ~The blade of this dagger seems to be made from the bone of some creature. The edge of this blade is extremely sharp.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d4+1 (piercing)
+Speed Factor: 1
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~

@@ -1,0 +1,25 @@
+// Death of Desire
+
+// @0 = ~~  // #6337
+@1 = ~Death of Desire +2~
+
+// @10 = ~~ // #6709
+@11 = ~This mace is used by the Dustman faction of Sigil to remove all desires from the living.
+
+STATISTICS:
+
+Combat abilities:
+– Living creatures hit by the weapon must save vs. Spell or be stunned for 1 round
+
+THAC0: +2
+Damage: 1d6+3, +1d6 piercing damage
+Damage type: Crushing
+Speed Factor: 5
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 11~
+
+@20 = ~Stunned~

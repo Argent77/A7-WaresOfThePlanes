@@ -1,0 +1,28 @@
+// Abyssal Pipe
+
+@0 = ~Pipe~
+@1 = ~Abyssal Pipe~
+
+@10 = ~This is a small wooden pipe, carved to resemble the head of a demon.
+
+STATISTICS:
+
+Weight: 0~
+@11 = ~This is a small wooden pipe, carved to resemble the head of a demon.
+
+When used, this pipe billows forth great gouts of deadly fumes from the planes of the Abyss.
+
+STATISTICS:
+
+Charge abilities:
+– Cloudkill
+  Damage: 1d10 poison per round
+  Special: Slays creatures with 1-4 HD; creatures with 5-6 HD must save vs. Poison at -4 or die
+  Range: 60 ft.
+  Area of Effect: 15-ft. radius
+  Duration: 1d4 turns
+
+Requires:
+ 9 Intelligence
+
+Weight: 0~

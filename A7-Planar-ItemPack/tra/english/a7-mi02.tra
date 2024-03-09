@@ -1,0 +1,24 @@
+// Clipped Copper Charm
+
+@0 = ~Clipped Copper Piece~
+@1 = ~Clipped Copper Charm~
+
+@10 = ~This copper piece has been "clipped"… most of the copper has been shaved off, no doubt to still keep the appearance it is a coin and allowing the 'clipper' to use the shaved copper to make another coin. It is worthless.
+
+STATISTICS:
+
+Weight: 0~
+@11 = ~This copper piece has been "clipped"… most of the copper has been shaved off, no doubt to still keep the appearance it is a coin and allowing the 'clipper' to use the shaved copper to make another coin. Although many Hive dwellers in Sigil practice this method of "making money," when the Fated faction practices it, they do so with a frightening sense of purpose, creating charms that reflect their own miserly natures.
+
+In order to create these charms, the Fated faction seek out failed business owners and other individuals who once possessed great wealth, then had a reversal of fortune and were left destitute. These individuals are then given enchanted carving blades and asked to "clip a copper" for the Fated in a tedious day-long ritual, which infuses the copper coin with the last traces of their former luck. The ritual and the nature of the individual clipping the copper allows a minor enchantment to seep into the coin and affect the fortune of whoever uses it.
+
+When the clipped copper charm is flipped into the air, it will spill into a rain of copper pieces, and bestow some luck upon the user.
+
+STATISTICS:
+
+Charge abilities:
+– Minor Copper Blessing: +1 bonus to Luck
+  Duration: 1 turn
+  The blessing requires a donation of 11 gold pieces to work.
+
+Weight: 0~

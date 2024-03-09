@@ -1,0 +1,361 @@
+// Default combat script when the pet Lim-Lim goes berserk
+
+// Defend
+IF
+  AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastAttackerOf(Myself))
+    SetInterrupt(TRUE)
+END
+
+// Attack: Player1 > [PC]
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,1)
+  See(Player1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(Player1)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,1)
+  !See(Player1)
+  See([PC])
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+// Attack: Player2 > Player1 > [PC]
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,2)
+  See(Player2)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(Player2)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,2)
+  !See(Player2)
+  See(Player1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,2)
+  !See(Player2)
+  See([PC])
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+// Attack: Player3 > Player2 > Player1 > [PC]
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,3)
+  See(Player3)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(Player3)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,3)
+  !See(Player3)
+  See(Player1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,3)
+  !See(Player3)
+  See(Player2)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,3)
+  !See(Player3)
+  See([PC])
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+// Attack: Player4 > Player3 > Player2 > Player1 > [PC]
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,4)
+  See(Player4)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(Player4)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,4)
+  !See(Player4)
+  See(Player1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,4)
+  !See(Player4)
+  See(Player2)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,4)
+  !See(Player4)
+  See(Player3)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,4)
+  !See(Player4)
+  See([PC])
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+// Attack: Player5 > Player4 > Player3 > Player2 > Player1 > [PC]
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,5)
+  See(Player5)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(Player5)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,5)
+  !See(Player5)
+  See(Player1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,5)
+  !See(Player5)
+  See(Player2)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,5)
+  !See(Player5)
+  See(Player3)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,5)
+  !See(Player5)
+  See(Player4)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,5)
+  !See(Player5)
+  See([PC])
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+// Attack: Player6 > Player5 > Player4 > Player3 > Player2 > Player1 > [PC]
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,6)
+  See(Player6)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(Player6)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,6)
+  !See(Player6)
+  See(Player1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,6)
+  !See(Player6)
+  See(Player2)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,6)
+  !See(Player6)
+  See(Player3)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,6)
+  !See(Player6)
+  See(Player4)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,6)
+  !See(Player6)
+  See(Player5)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  RandomNum(6,6)
+  !See(Player6)
+  See([PC])
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+// Attack: Any formerly allied creatures
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  See([GOODCUTOFF])
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    AttackOneRound(LastSeenBy(Myself))
+    SetInterrupt(TRUE)
+END
+
+// Kill time only
+IF
+  Global("A7-LimLimBerserk","GLOBAL",2)
+  !See([GOODCUTOFF])
+THEN
+  RESPONSE #50
+    RandomWalkTime(2)
+  RESPONSE #30
+    SetInterrupt(FALSE)
+    MoveToSavedLocation("A7-LimLimBerserkLoc","LOCALS")
+    SetInterrupt(TRUE)
+  RESPONSE #20
+    RandomTurn()
+END

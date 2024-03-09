@@ -1,0 +1,27 @@
+// Applies "identified" flag to all installed items
+// PST items
+COPY_EXISTING ~a7-mupgr.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_EVALUATE ~AddStoreItem(\("a7-merc","a7-[^"]+",[0-9]+\),\([0-9]+\))~ BEGIN
+      SET identified = IS_AN_INT "MATCH2" ? (MATCH2 | 1) : 1
+    END ~AddStoreItem(\1,%identified%)~
+  END
+BUT_ONLY IF_EXISTS
+
+// Phazor
+COPY_EXISTING ~ar5500.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_EVALUATE ~AddStoreItem(\("a7-merc","a7-phazr",[0-9]+\),\([0-9]+\))~ BEGIN
+      SET identified = IS_AN_INT "MATCH2" ? (MATCH2 | 1) : 1
+    END ~AddStoreItem(\1,%identified%)~
+  END
+BUT_ONLY
+
+// Suppressing dialog line about unidentified wares
+WITH_TRA ~%MOD_FOLDER%/tra/english/a7-merc.tra~ ~%MOD_FOLDER%/tra/%LANGUAGE%/a7-merc.tra~ BEGIN
+  OUTER_SET state_1 = STATE_WHICH_SAYS @12 FROM ~a7-merc~
+  OUTER_SET states_more = STATE_WHICH_SAYS @18 FROM ~a7-merc~
+  ACTION_IF (state_1 >= 0 && states_more >= 0) BEGIN
+    COMPILE EVAL ~%MOD_FOLDER%/dlg/tweak_identify_all.d~
+  END
+END

@@ -1,0 +1,27 @@
+// Silver Fork
+
+@0 = ~Fork~
+@1 = ~Silver Fork~
+
+@10 = ~This is an ordinary dining fork. It has little to no use in combat.
+
+STATISTICS:
+
+Damage: 1d2 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+
+Weight: 0~
+@11 = ~This is a silver dining fork. Its tines are especially sharp. Upon further consideration, it might be able to be used as a dagger, though it most likely wouldn't do any more damage than a conventional dagger. It might prove useful against creatures damaged only by weapons of silver or cold iron.
+
+STATISTICS:
+
+THAC0: +2 vs. lycanthropes
+Damage: 1d2, +2 vs. lycanthropes
+Damage type: Piercing
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+
+Weight: 0~

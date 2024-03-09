@@ -1,0 +1,21 @@
+// Enchanted Battle Axe
+
+// @0 = ~~  // #6654
+@1 = ~Enchanted Battle Axe +1~
+
+// @10 = ~~ // #6656
+@11 = ~Closer examination of the weapon reveals a strange symbol, very faint, on the surface of the axe head. Tracing it with your finger, there is a sudden charge, and the axe head changes before your eyes into a silvery-looking metal.
+
+The edge is incredibly sharp, so much so it looks like it could hack through stone if necessary. The symbol you traced on the weapon is now glowing brilliantly, and if anything, the axe has become even lighter than before.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d8+1 (slashing)
+Speed Factor: 6
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4~

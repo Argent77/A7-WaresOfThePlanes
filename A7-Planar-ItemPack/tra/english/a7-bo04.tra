@@ -1,0 +1,15 @@
+// Zephyr Bolts
+
+// @0 = ~~  // #6632
+@1 = ~Zephyr Bolts +1~
+
+// @10 = ~~ // #6772
+@11 = ~These crossbow bolts have heads with grooves cut into the sides. They do no more damage than normal crossbow bolts, but they bear a minor enchantment that allows them to correct their path in flight, making them more likely to hit an opponent. 
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d8 (missile)
+Launcher: Crossbow
+
+Weight: 0~

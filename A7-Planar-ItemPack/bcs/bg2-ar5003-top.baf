@@ -1,0 +1,28 @@
+// *** BG2-ToB: Saradush Tavern area script ***
+
+// First-time initialization of the merchant
+IF
+  Global("A7-InitMerchant","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-InitMerchant","GLOBAL",1)
+    CreateCreatureImpassableAllowOverlap("a7-merc",[0.0],S)
+    ActionOverride("a7-merc",MakeGlobal())
+    ActionOverride("a7-merc",DestroySelf())
+    Continue()
+END
+
+// Merchant arrives
+IF
+  Global("A7-InitMerchant","GLOBAL",1)
+  Global("A7-TravelSaradush","AR5003",0)
+  Global("Chapter","GLOBAL",%bg2_chapter_8%)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-TravelSaradush","AR5003",1)
+    SetGlobal("A7-TravelTimeOut","GLOBAL",0)  // do not despawn automatically
+    SetGlobal("A7-TravelTimeOutForced","GLOBAL",0)
+    MoveGlobal("AR5003","a7-merc",[720.855])
+    ActionOverride("a7-merc",Face(SE))
+    Continue()
+END

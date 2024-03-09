@@ -1,0 +1,55 @@
+// Use tra numbers of 2000 or higher
+
+@2000 = ~Seasoned Traveller~
+@2001 = ~Ebb Creakknees~
+@2002 = ~Ebb's Booty~
+@2003 = ~Customer~
+@2004 = ~gal~   // colloquial for "girl"
+@2005 = ~lad~   // colloquial for "boy"
+@2006 = ~Nobody steals from me!~
+@2007 = ~You'll pay for this.~
+
+// Cutscene: Ebb and customer
+@2100 = ~*sigh* Another slow day.~
+@2101 = ~Oh, a customer?~
+@2102 = ~I'd like to see your wares, please.~
+@2103 = ~Certainly! You won't be disappointed.~
+@2104 = ~Hmm, that's quite a selection.~
+@2105 = ~I'd like to buy this nifty bracelet.~
+@2106 = ~A good choice. I acquired it during one of my skirmishes on Ysgard.~
+@2107 = ~Quite a spectacular show. I hope he enjoys the ride.~
+@2108 = ~Let's see how it works.~
+@2109 = ~What the...~
+@2110 = ~NOOO!~
+@2111 = ~Armlet of Omnipotence: Fighter Transformation~
+@2112 = ~Armlet of Omnipotence: Mage Transformation~
+@2113 = ~Armlet of Omnipotence: Rogue Transformation~
+@2114 = ~Armlet of Omnipotence: Call to Battle~
+
+// User journal entries
+@3000 = ~I've met an unusual fellow who calls himself Ebb Creakknees. He claims to be a citizen of Sigil, the "City of Doors." He's now travelling across Faerûn peddling his wares.~
+@3001 = ~Ebb Creakknees told me that while he tours across the Sword Coast he can be found either in Beregost, Nashkel's Carnival or Ulgoth's Beard.~
+@3002 = ~Ebb Creakknees told me that while he tours across Amn he can be found either in Trademeet, Imnesvale in the Umar Hills, or the Athkatla's market district.~
+
+// Quest-related journal entries
+@3100 = ~A gnomish contraption~
+
+@3101 = ~A gnomish contraption
+
+Ebb Creakknees told me news about his latest acquisitions when I met him in Amkethran. It is apparently an exotic weapon of some kind that he procured from a gnome wizard. Unfortunately it is broken. Maybe there is something I can help him with?~
+
+@3102 = ~A gnomish contraption
+
+According to the repair instructions Ebb received from the gnome the broken parts of the weapon can be replaced. Several items are needed for this, however: a beljuril gem and scrolls of Protection from Magic Energy and Disintegrate. I'm beginning to wonder how lethal that weapon turns out to be.~
+
+@3103 = ~A gnomish contraption
+
+I delivered the items needed to repair the gnomish weapon. Ebb left to see the gnome again which should take about a day.~
+
+@3150 = ~A gnomish contraption
+
+Ebb Creakknees was true to his word and returned with the repaired artifact. He placed it into his store where I can buy it if I want to.~
+
+@3151 = ~A gnomish contraption
+
+It looks as if Ebb Creakknees has left permanently, as events in Amkethran have come thick and fast. I should have visited him sooner, before all hell broke loose.~

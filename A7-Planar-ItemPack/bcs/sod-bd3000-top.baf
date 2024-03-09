@@ -1,0 +1,29 @@
+// *** SoD: Coalition Camp area script ***
+
+// First-time initialization of the merchant
+IF
+  Global("A7-InitMerchant","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-InitMerchant","GLOBAL",1)
+    CreateCreatureImpassableAllowOverlap("a7-merc",[0.0],S)
+    ActionOverride("a7-merc",MakeGlobal())
+    ActionOverride("a7-merc",DestroySelf())
+    Continue()
+END
+
+// Merchant arrives
+IF
+  Global("A7-InitMerchant","GLOBAL",1)
+  Global("A7-TravelCoastWay","BD3000",0)
+  GlobalGT("Chapter","GLOBAL",9)
+  GlobalLT("Chapter","GLOBAL",13)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-TravelCoastWay","BD3000",1)
+    SetGlobal("A7-TravelTimeOut","GLOBAL",0)  // do not despawn automatically
+    SetGlobal("A7-TravelTimeOutForced","GLOBAL",0)
+    MoveGlobal("BD3000","a7-merc",[2190.810])
+    ActionOverride("a7-merc",Face(W))
+    Continue()
+END

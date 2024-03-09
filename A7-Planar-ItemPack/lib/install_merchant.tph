@@ -1,0 +1,195 @@
+// Installing travelling merchant "Ebb Creakknees"
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+// Preparations
+// Required to solve script execution issues in dialogs
+APPEND ~instant.ids~ ~288 SetName(I:STRREF*)~ UNLESS ~\bSetName\b~
+
+// Phazor quest journal entries
+ACTION_IF (has_bg2) BEGIN
+  ADD_JOURNAL @3101 @3102 @3103 @3150 @3151
+END
+
+// Defining custom token: Use "gal" or "lad" based on character's gender
+COPY_EXISTING ~tokentxt.2da~ ~override~
+  COUNT_2DA_ROWS 1 tokentxt_index
+  SET tokentxt_index -= 3
+  SPRINT string_gal @2004 // "gal"
+  SPRINT string_lad @2005 // "lad"
+  // token text must not contain regular spaces
+  INNER_PATCH_SAVE replace ~  ~ BEGIN WRITE_SHORT 0 0xa0c2 END  // non-breaking space (U+00A0)
+  INNER_PATCH_SAVE string_gal ~%string_gal%~ BEGIN REPLACE_TEXTUALLY ~[ %TAB%]~ ~%replace%~ END
+  INNER_PATCH_SAVE string_lad ~%string_lad%~ BEGIN REPLACE_TEXTUALLY ~[ %TAB%]~ ~%replace%~ END
+BUT_ONLY
+APPEND ~tokentxt.2da~ ~%tokentxt_index% LADGAL      0   35  2   0   %string_gal%  %string_lad%~
+OUTER_SET tokentxt_index += 1
+APPEND ~tokentxt.2da~ ~%tokentxt_index% PRO_LADGAL  1   35  2   0   %string_gal%  %string_lad%~
+COPY_EXISTING ~tokentxt.2da~ ~override~ PRETTY_PRINT_2DA BUT_ONLY
+
+
+// Merchant name is referenced in dialog
+OUTER_SET ebb_name_strref = RESOLVE_STR_REF(@2001)  // Ebb Creakknees
+COMPILE EVAL ~%MOD_FOLDER%/dlg/a7-merc.d~ USING ~%MOD_FOLDER%/tra/english/a7-merc.tra~
+                                                ~%MOD_FOLDER%/tra/%LANGUAGE%/a7-merc.tra~
+
+COPY ~%MOD_FOLDER%/cre/a7-merc.cre~ ~override~
+  WRITE_LONG NAME1 ebb_name_strref
+  SAY NAME2 @2000 // Seasoned Traveller
+  WRITE_ASCII SCRIPT_OVERRIDE ~A7-MERC~ (8)
+  WRITE_ASCII SCRIPT_CLASS ~A7-MUPGR~ (8)
+  WRITE_ASCII SCRIPT_DEFAULT ~A7-MATK~ (8)
+  WRITE_ASCII DIALOG ~A7-MERC~ (8)
+  SET anim_slot = IDS_OF_SYMBOL(~animate~ ~EBB_CREAKKNEES_PST~)
+  PATCH_IF (anim_slot >= 0xe000) BEGIN
+    WRITE_LONG 0x28 anim_slot // EBB_CREAKKNEES_PST
+  END
+
+COPY ~%MOD_FOLDER%/bmp/a7-mercl.bmp~ ~override~
+     ~%MOD_FOLDER%/bmp/a7-mercm.bmp~ ~override~
+
+COPY ~%MOD_FOLDER%/sto/a7-merc.sto~ ~override~
+  SAY NAME2 @2002 // Ebb's Booty
+
+
+// Combat script
+COMPILE ~%MOD_FOLDER%/bcs/a7-matk.baf~
+
+// Creature scripts
+COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-merc.baf~
+             ~%MOD_FOLDER%/bcs/a7-mupgr.baf~
+
+// Campaign detection
+ACTION_IF (has_bg) BEGIN
+  EXTEND_BOTTOM ~a7-merc.bcs~ ~%MOD_FOLDER%/bcs/a7-merc-game-bgee.baf~ EVAL
+END
+ACTION_IF (has_bg2) BEGIN
+  EXTEND_BOTTOM ~a7-merc.bcs~ ~%MOD_FOLDER%/bcs/a7-merc-game-bg2ee.baf~ EVAL
+END
+
+EXTEND_BOTTOM ~a7-merc.bcs~ ~%MOD_FOLDER%/bcs/a7-merc-bottom.baf~ EVAL
+
+// Store upgrade preparations
+ACTION_IF (has_bg) BEGIN
+  EXTEND_BOTTOM ~a7-mupgr.bcs~ ~%MOD_FOLDER%/bcs/a7-mupgr-store-upgrade-bgee.baf~ EVAL
+END
+ACTION_IF (has_bg2) BEGIN
+  EXTEND_BOTTOM ~a7-mupgr.bcs~ ~%MOD_FOLDER%/bcs/a7-mupgr-store-upgrade-bg2ee.baf~ EVAL
+END
+
+// Store upgrade
+WITH_SCOPE BEGIN
+  COPY ~%MOD_FOLDER%/2da/store-item-table.2da~ ~%MOD_FOLDER%/2da/store-item-table.2da~
+    SPRINT store_upgrade_script ~%WNL%~  // temporary storage for script blocks (Note: must be non-empty to work around a WeiDU bug)
+    // One script block per item
+    READ_2DA_ENTRIES_NOW ~item_table~ 1
+    FOR (row = 3; row < item_table; ++row) BEGIN
+      READ_2DA_ENTRY_FORMER ~item_table~ row 0 sto_item_resref
+      READ_2DA_ENTRY_FORMER ~item_table~ row 1 sto_upgrade_stage
+      READ_2DA_ENTRY_FORMER ~item_table~ row 2 sto_item_count
+
+      PATCH_IF (sto_item_count < 0) BEGIN
+        // retrieve required item count dynamicall from item stack or charges
+        SET multiplier = 0 - sto_item_count // absolute value indicates "count" to add
+        SET sto_item_count = 1
+        INNER_ACTION BEGIN
+          COPY_EXISTING ~%sto_item_resref%.itm~ ~override~
+            LPF get_item_charges RET sto_item_count = count END
+          BUT_ONLY IF_EXISTS
+        END
+        SET sto_item_count *= multiplier
+      END
+
+      INNER_PATCH_SAVE store_upgrade_script ~%store_upgrade_script%~ BEGIN
+        APPEND_FILE_EVALUATE TEXT ~%MOD_FOLDER%/bcs/a7-mupgr-store-upgrade-item-template.baf~
+      END
+    END
+  BUT_ONLY
+
+  COPY_EXISTING ~a7-mupgr.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      SET ofs = BUFFER_LENGTH
+      SET len = STRING_LENGTH ~%store_upgrade_script%~
+      INSERT_BYTES ofs len
+      WRITE_ASCIIE ofs ~%store_upgrade_script%~ (len)
+    END
+  BUT_ONLY
+END
+
+// Merchant spawning
+ACTION_IF (has_bg) BEGIN
+  ACTION_FOR_EACH code IN ~1000~ ~3300~ ~4900~ BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%bg1_are_prefix%%code%.bcs~) BEGIN
+      EXTEND_TOP ~%bg1_are_prefix%%code%.bcs~ ~%MOD_FOLDER%/bcs/bg1-ar%code%-top.baf~ EVAL
+    END ELSE BEGIN
+      COMPILE EVAL ~%MOD_FOLDER%/bcs/bg1-ar%code%-top.baf~
+      MOVE ~override/bg1-ar%code%-top.bcs~ ~override/%bg1_are_prefix%%code%.bcs~
+    END
+  END
+END
+
+ACTION_IF (has_sod) BEGIN
+  ACTION_FOR_EACH resref IN ~bd1000~ ~bd3000~ BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resref%.bcs~) BEGIN
+      EXTEND_TOP ~%resref%.bcs~ ~%MOD_FOLDER%/bcs/sod-%resref%-top.baf~ EVAL
+    END ELSE BEGIN
+      COMPILE EVAL ~%MOD_FOLDER%/bcs/sod-%resref%-top.baf~
+      MOVE ~override/sod-%resref%-top.bcs~ ~override/%resref%.bcs~
+    END
+  END
+END
+
+ACTION_IF (has_bg2) BEGIN
+  // retrieve number of Phazor charges dynamically
+  COPY_EXISTING ~a7-phazr.itm~ ~override~
+    LPF get_item_charges INT_VAR include_stack = 0 RET sto_item_count = count END
+  BUT_ONLY IF_EXISTS
+
+  ACTION_FOR_EACH resref IN ~ar0700~ ~ar1100~ ~ar2000~ ~ar5003~ ~ar5500~ BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resref%.bcs~) BEGIN
+      EXTEND_TOP ~%resref%.bcs~ ~%MOD_FOLDER%/bcs/bg2-%resref%-top.baf~ EVAL
+    END ELSE BEGIN
+      COMPILE EVAL ~%MOD_FOLDER%/bcs/bg2-%resref%-top.baf~
+      MOVE ~override/bg2-%resref%-top.bcs~ ~override/%resref%.bcs~
+    END
+  END
+END
+
+
+// Cutscene resources
+COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-mct01.baf~
+             ~%MOD_FOLDER%/bcs/a7-mct02.baf~
+             ~%MOD_FOLDER%/bcs/a7-mct03.baf~
+             ~%MOD_FOLDER%/bcs/a7-mct04.baf~
+             ~%MOD_FOLDER%/bcs/a7-mct05.baf~
+             ~%MOD_FOLDER%/bcs/a7-mctx.baf~
+
+COPY ~%MOD_FOLDER%/cre/a7-mcust.cre~ ~override~
+     ~%MOD_FOLDER%/cre/a7-mcusf.cre~ ~override~
+     ~%MOD_FOLDER%/cre/a7-mcusm.cre~ ~override~
+     ~%MOD_FOLDER%/cre/a7-mcusr.cre~ ~override~
+  SAY NAME1 @2003 // Customer
+  SAY NAME2 @2003 // Customer
+
+COPY ~%MOD_FOLDER%/cre/a7-ctspy.cre~ ~override~
+     ~%MOD_FOLDER%/vvc/a7-mfx1.vvc~ ~override~
+
+// Cutscene effect spells
+ACTION_DEFINE_ASSOCIATIVE_ARRAY cut_spells BEGIN
+  // spl resref => tra reference
+  ~a7-mct1a~ => 2111  // Armlet of Omnipotence: Fighter Transformation
+  ~a7-mct1b~ => 2112  // Armlet of Omnipotence: Mage Transformation
+  ~a7-mct1c~ => 2113  // Armlet of Omnipotence: Rogue Transformation
+  ~a7-mct2~ => 2114   // Armlet of Omnipotence: Call to Battle
+END
+
+ACTION_PHP_EACH cut_spells AS resref => tra_ref BEGIN
+  COPY ~%MOD_FOLDER%/spl/%resref%.spl~ ~override~
+    LPF alter_item_effect_ex
+      INT_VAR
+        check_headers = 1
+        match_opcode = 139    // Display string
+        match_parameter1 = 0  // replacing predefined strref
+        parameter1 = RESOLVE_STR_REF((AT "tra_ref"))
+    END
+END

@@ -1,0 +1,38 @@
+// Item: Chaos Feather +1
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-dg08~
+
+// Installing item
+COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+  LPF update_item_generic
+    STR_VAR
+      itm_resref
+    RET
+      icon_resref
+      desc_image_resref
+  END
+  // updating strref in opcode 139 instances
+  LPF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  PATCH_WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    READ_LONG 0x64 ofs_abil
+    READ_LONG 0x6a ofs_fx
+    READ_SHORT (ofs_abil + 0x1e) num_fx
+    READ_SHORT (ofs_abil + 0x20) first_fx
+    FOR (i = 0; i < num_fx; ++i) BEGIN
+      SET ofs = ofs_fx + (first_fx + i) * 48
+      PATCH_IF (SHORT_AT ofs = 139) BEGIN // opcode 139: Display string
+        // looking for predefined string with strref=1280
+        WRITE_LONG (ofs + 0x4) (THIS = 1280 ? RESOLVE_STR_REF(@20) : THIS)  // Stunned
+      END
+    END
+  END
+
+// Installing associated resources
+LAF install_item_resources_generic
+STR_VAR
+  itm_resref
+  icon_resref
+  desc_image_resref
+END

@@ -1,0 +1,33 @@
+// "Devil's Due"
+
+// @0 = ~~  // #6701
+@1 = ~Devil's Due +2~
+
+// @10 = ~~ // #6703
+@11 = ~This weapon has a black metal handle that seems to have grown into the narrow skull that is affixed to its top. The metal looks as if it has grown out from the skull, and spikes pierce through the eye sockets, jaw, and from the skull cap itself.  
+
+The "metal" is not metal at all, but the remnants of a creature's forearm that punched through the base of the fiendish skull that now bedecks the head of this weapon. The spikes that have pierced through the skull actually appear to be some sort of quills from the creature's forearm.
+
+When this weapon is used in combat and the spikes of the club penetrate a creature's skin, acid oozes from the quills into the target, and sometimes also into the wielder, doing additional damage.
+
+The common name of this weapon is "Devil's Due." To who or what event it refers to is unknown, but it was obviously a painful experience for the two parties involved.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2 vs. missile and piercing attacks
+– May only be removed with a Remove Curse spell
+
+Combat abilities:
+– 50% chance to inflict 1d6 acid damage upon the wielder
+
+THAC0: +2
+Damage: 1d6+2, +1d6 acid damage
+Damage type: Crushing
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~

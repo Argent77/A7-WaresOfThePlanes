@@ -1,0 +1,123 @@
+// Items: Lim-Lim Cage, Pet Lim-Lim, Petrified Lim-Lim
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+// Installing Cage
+OUTER_SPRINT itm_resref ~a7-cage~
+COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+  LPF update_item_generic
+    STR_VAR
+      itm_resref
+    RET
+      icon_resref
+      desc_image_resref
+  END
+
+// Installing associated resources
+LAF install_item_resources_generic
+STR_VAR
+  itm_resref
+  icon_resref
+  desc_image_resref
+END
+
+// Installing additional resources
+COPY ~%MOD_FOLDER%/eff/%itm_resref%.eff~ ~override~
+
+
+// Installing Petrified Lim-Lim
+OUTER_SPRINT itm_resref ~a7-pplim~
+COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+  LPF update_item_generic
+    STR_VAR
+      itm_resref
+    RET
+      icon_resref
+      ground_icon_resref
+      desc_image_resref
+  END
+
+// Installing associated resources
+LAF install_item_resources_generic
+STR_VAR
+  itm_resref
+  icon_resref
+  ground_icon_resref
+  desc_image_resref
+END
+
+
+// Installing Pet Lim-Lim
+OUTER_SPRINT itm_resref ~a7-plim~
+COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+  LPF update_item_generic
+    STR_VAR
+      itm_resref
+    RET
+      icon_resref
+      desc_image_resref
+  END
+
+// Installing associated resources
+LAF install_item_resources_generic
+STR_VAR
+  itm_resref
+  icon_resref
+  desc_image_resref
+END
+
+// Setting up item dialog and related resources
+WITH_TRA ~%MOD_FOLDER%/tra/english/%itm_resref%.tra~ ~%MOD_FOLDER%/tra/%LANGUAGE%/%itm_resref%.tra~ BEGIN
+  OUTER_SET label_strref = RESOLVE_STR_REF(@20) // Pet
+  APPEND ~itemdial.2da~ ~A7-PLIM   %label_strref%   A7-PLIMI~
+  COPY_EXISTING ~itemdial.2da~ ~override~ PRETTY_PRINT_2DA BUT_ONLY
+
+  COMPILE ~%MOD_FOLDER%/dlg/%itm_resref%i.d~
+          ~%MOD_FOLDER%/dlg/%itm_resref%c.d~
+          ~%MOD_FOLDER%/bcs/%itm_resref%.baf~
+          ~%MOD_FOLDER%/bcs/a7-platk.baf~
+          ~%MOD_FOLDER%/bcs/a7-plbrs.baf~
+
+  // Installing Lim-Lim creature
+  COPY ~%MOD_FOLDER%/cre/%itm_resref%.cre~ ~override~
+    SAY NAME1 @30 // Pet Lim-Lim
+    SAY NAME2 @31 // Lim-Lim
+    SAY BATTLE_CRY1 @40
+    SAY BATTLE_CRY2 @41
+    SAY DYING @42
+    WRITE_ASCII SCRIPT_OVERRIDE ~A7-PLIM~ (8)
+    WRITE_ASCII SCRIPT_DEFAULT ~A7-PLATK~ (8)
+    WRITE_ASCII DIALOG ~A7-PLIMC~ (8)
+    SET anim_slot = IDS_OF_SYMBOL(~animate~ ~LIM_LIM_PST~)
+    PATCH_IF (anim_slot > 0x7000) BEGIN
+      WRITE_LONG 0x28 anim_slot // LIM_LIM_PST
+    END ELSE BEGIN
+      // Add greenish tint to default sprite (Rabbit)
+      LPF ADD_CRE_EFFECT
+        INT_VAR
+          opcode = 51 // Character tint solid
+          target = 1
+          parameter1 = 0xa0ffa000 // greenish tint
+          parameter2 = 255  // whole sprite
+          timing = 9  // Instant/Permanent
+      END
+    END
+
+  COPY ~%MOD_FOLDER%/spl/a7-plpet.spl~ ~override~
+    LPF alter_item_effect_ex
+      INT_VAR
+        check_headers = 1
+        match_opcode = 139  // Display String
+        parameter1 = RESOLVE_STR_REF(@21) // Turned to Stone
+    END
+
+  COPY ~%MOD_FOLDER%/bmp/%itm_resref%l.bmp~ ~override~
+       ~%MOD_FOLDER%/bmp/%itm_resref%m.bmp~ ~override~
+       ~%MOD_FOLDER%/spl/a7-plb1.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-plb2.spl~ ~override~
+
+  // Add potential buyer for the petrified Lim-Lim statue
+  ACTION_IF (has_bg) BEGIN
+    COMPILE ~%MOD_FOLDER%/dlg/bg1_felonius_gist.d~
+  END
+END

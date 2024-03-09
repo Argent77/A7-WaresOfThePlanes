@@ -1,0 +1,87 @@
+// *** Cutscene: Merchant and customer, part 5 ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    Wait(8)
+    SmallWait(8)
+    DisplayStringHead(Myself,@2107) // Quite a spectacular show. I hope he enjoys the ride.
+    Wait(4)
+    ActionOverride("a7-ctspy",DestroySelf())
+    EndCutSceneMode()
+END
+
+IF
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    CutSceneId("a7-mcust")
+    Face(S)
+    DisplayStringHead(Myself,@2108) // Let's see how it works.
+    Wait(3)
+    SetCutSceneBreakable(FALSE)
+    SetAreaScript("",OVERRIDE)
+    DisplayStringHead(Myself,@2109) // What the...
+    SmallWait(7)
+    ApplySpellRES("a7-mct1a",Myself)  // [Polymorph to Fighter sprite]
+    CreateItem("CHAN01",0,0,0)
+    CreateItem("HELM08",0,0,0)
+    CreateItem("SW1H04",0,0,0)
+    CreateItem("SHLD03",0,0,0)
+    XEquipItem("CHAN01",Myself,SLOT_ARMOR,EQUIP)
+    XEquipItem("HELM08",Myself,SLOT_HELMET,EQUIP)
+    XEquipItem("SW1H04",Myself,SLOT_WEAPON,EQUIP)
+    XEquipItem("SHLD03",Myself,SLOT_SHIELD,EQUIP)
+    Wait(2)
+    DisplayStringHead(Myself,@2110) // NOOO!
+    SmallWait(10)
+    ApplySpellRES("a7-mct2",Myself)  // [Teleport away with many visual effects]
+END
+
+IF
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    CutSceneId("a7-mcust")
+    Face(S)
+    DisplayStringHead(Myself,@2108) // Let's see how it works.
+    Wait(3)
+    SetCutSceneBreakable(FALSE)
+    SetAreaScript("",OVERRIDE)
+    DisplayStringHead(Myself,@2109) // What the...
+    SmallWait(7)
+    ApplySpellRES("a7-mct1b",Myself)  // [Polymorph to Mage sprite]
+    CreateItem("CLCK14",0,0,0)
+    CreateItem("STAF01",0,0,0)
+    XEquipItem("CLCK14",Myself,SLOT_ARMOR,EQUIP)
+    XEquipItem("STAF01",Myself,SLOT_WEAPON,EQUIP)
+    Wait(2)
+    DisplayStringHead(Myself,@2110) // NOOO!
+    SmallWait(10)
+    ApplySpellRES("a7-mct2",Myself)  // [Teleport away with many visual effects]
+END
+
+IF
+  RandomNum(3,3)
+THEN
+  RESPONSE #100
+    CutSceneId("a7-mcust")
+    Face(S)
+    DisplayStringHead(Myself,@2108) // Let's see how it works.
+    Wait(3)
+    SetCutSceneBreakable(FALSE)
+    SetAreaScript("",OVERRIDE)
+    DisplayStringHead(Myself,@2109) // What the...
+    SmallWait(7)
+    ApplySpellRES("a7-mct1c",Myself)  // [Polymorph to Thief sprite]
+    CreateItem("LEAT01",0,0,0)
+    CreateItem("SW1H07",0,0,0)
+    XEquipItem("LEAT01",Myself,SLOT_ARMOR,EQUIP)
+    XEquipItem("SW1H07",Myself,SLOT_WEAPON,EQUIP)
+    Wait(2)
+    DisplayStringHead(Myself,@2110) // NOOO!
+    SmallWait(8)
+    ApplySpellRES("a7-mct2",Myself)  // [Teleport away with many visual effects]
+END

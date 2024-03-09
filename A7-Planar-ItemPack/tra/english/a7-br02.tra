@@ -1,0 +1,18 @@
+// Magus Shield
+
+@0 = ~Bracelet~
+@1 = ~Magus Shield~
+
+@10 = ~This bracelet looks to be made of silver and has a semi-precious gem mounted to the top of it.
+
+STATISTICS:
+
+Weight: 0~
+@11 = ~This bracelet is a variation of the Magus Guard. Essentially using the same spells and glyphs as its predecessor, the Magus Shield is better able to focus the energy of the enchantments placed upon it.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 4
+
+Weight: 2~

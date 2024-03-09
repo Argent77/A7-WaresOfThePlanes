@@ -1,0 +1,28 @@
+// Blindsider
+
+// @0 = ~~  // #6654
+@1 = ~Blindsider +1~
+
+// @10 = ~~ // #6656
+@11 = ~This magnificent axe, known as "Blindsider," is truly one of a kind. It is rumored that it was the creation of one Akyzum Yar, chief metallurgist of an ancient empire on the Prime Material Plane. The Emperor whom Yar served, a vain and wicked man, commissioned the creation of "a weapon of unsurpassed beauty." After years of toiling, Yar succeeded and presented the Emperor with "Blindsider," whereupon he was promptly put to death so that his work could never be reproduced. 
+
+The various ores and enchantments employed in the forging of this weapon yielded a new type of metal that is lightweight, durable, and highly reflective. The axe earned its name from its tendency to reflect light into the eyes of its opponent, temporarily blinding the target so that its wielder can easily cut him down. Additionally, its wielder is granted immunity to blinding attacks as a magical byproduct of its reflective nature.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor class: +2
+– Wearer is immune to Blindness
+
+Combat abilities:
+– Hit target must save vs. Death or is blinded for one round
+
+THAC0: +1
+Damage: 1d8+1 (slashing)
+Speed Factor: 6
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4~

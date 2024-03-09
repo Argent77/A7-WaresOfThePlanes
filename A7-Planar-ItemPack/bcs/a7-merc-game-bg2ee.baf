@@ -1,0 +1,22 @@
+// SoA campaign
+IF
+  !Global("Campaign","LOCALS",3)
+  GlobalGT("Chapter","GLOBAL",%bg2_chapter_1%)
+  GlobalLT("Chapter","GLOBAL",%bg2_chapter_8%)
+THEN
+  RESPONSE #100
+    SetGlobal("Campaign","LOCALS",3)
+    // DisplayString(Myself,~DEBUG: Campaign=3~)
+    Continue()
+END
+
+// ToB campaign
+IF
+  !Global("Campaign","LOCALS",4)
+  GlobalGT("Chapter","GLOBAL",%bg2_chapter_7%)
+THEN
+  RESPONSE #100
+    SetGlobal("Campaign","LOCALS",4)
+    // DisplayString(Myself,~DEBUG: Campaign=4~)
+    Continue()
+END

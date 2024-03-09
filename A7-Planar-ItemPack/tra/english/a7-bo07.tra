@@ -1,0 +1,15 @@
+// Winged Bolts
+
+@0 = ~Winged Bolts~
+// @1 = ~~
+
+@10 = ~The heads of these bolts have been carved to resemble a pair of feathered wings. The bolts are extremely light and look more like arrows than crossbow bolts. Although not magical, they are more accurate and do more damage when they strike an opponent than standard crossbow bolts.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d8+2 (missile)
+Launcher: Crossbow
+
+Weight: 0~
+// @11 = ~~

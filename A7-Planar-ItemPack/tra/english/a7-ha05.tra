@@ -1,0 +1,22 @@
+// Hammer of Comminution
+
+// @0 = ~~  // #6345
+@1 = ~Hammer of Comminution +2~
+
+// @10 = ~~ // #6716
+@11 = ~Research reveals that this is a formidable weapon indeed. Far superior to a normal hammer, this war hammer (also called "The Hammer of Comminution") delivers a devastating strike that not only inflicts crushing damage, but also fractures any surface it contacts, whether bone, metal, or wood, inflicting extra damage… and if the victim survives, it also "softens" him up for the next attack. 
+
+The Hammer of Comminution was used extensively by Enote, a Doomguard priest, in 14 E.U. A philosopher who was prone to violent mood swings while debating theology, he was known to espouse the virtues of the hammer as a means of furthering the decay of dead matter. Whether or not what he struck with the hammer was dead or alive before the blow is open to debate.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d4+3, +1d6 acid damage
+Damage type: Crushing
+Speed Factor: 2
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 5~

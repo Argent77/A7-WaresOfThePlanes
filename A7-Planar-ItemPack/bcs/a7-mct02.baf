@@ -1,0 +1,179 @@
+// *** Cutscene: Merchant and customer, part 2 ***
+
+// Location: Ulgoth's Beard
+IF
+  Global("Campaign","LOCALS",1)
+  AreaCheck("%bg1_are_prefix%1000")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    CreateCreature("a7-mcust",[2050.720],NE)
+    MoveViewObject(Myself,INSTANT)
+    StartCutSceneEx("a7-mct03",TRUE)
+END
+
+// Location: Beregost
+IF
+  Global("Campaign","LOCALS",1)
+  AreaCheck("%bg1_are_prefix%3300")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    CreateCreature("a7-mcust",[1790.3000],NWW)
+    MoveViewObject(Myself,INSTANT)
+    StartCutSceneEx("a7-mct03",TRUE)
+END
+
+// Location: Nashkel Carnival
+IF
+  Global("Campaign","LOCALS",1)
+  AreaCheck("%bg1_are_prefix%4900")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    CreateCreature("a7-mcust",[2760.3140],NW)
+    MoveViewObject(Myself,INSTANT)
+    StartCutSceneEx("a7-mct03",TRUE)
+END
+
+// Location: Coast Way Crossing
+IF
+  Global("Campaign","LOCALS",2)
+  AreaCheck("BD1000")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    CreateCreature("a7-mcust",[2675.2020],NE)
+    MoveViewObject(Myself,INSTANT)
+    StartCutSceneEx("a7-mct03",TRUE)
+END
+
+// Location: Coalition Camp
+IF
+  Global("Campaign","LOCALS",2)
+  AreaCheck("BD3000")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    CreateCreature("a7-mcust",[1905.945],NE)
+    MoveViewObject(Myself,INSTANT)
+    StartCutSceneEx("a7-mct03",TRUE)
+END
+
+// Location: Waukeen's Promenade
+IF
+  Global("Campaign","LOCALS",3)
+  AreaCheck("AR0700")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    CreateCreature("a7-mcust",[1970.1940],NE)
+    MoveViewObject(Myself,INSTANT)
+    StartCutSceneEx("a7-mct03",TRUE)
+END
+
+// Location: Imnesvale
+IF
+  Global("Campaign","LOCALS",3)
+  AreaCheck("AR1100")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    CreateCreature("a7-mcust",[3530.3220],N)
+    MoveViewObject(Myself,INSTANT)
+    StartCutSceneEx("a7-mct03",TRUE)
+END
+
+// Location: Trademeet
+IF
+  Global("Campaign","LOCALS",3)
+  AreaCheck("AR2000")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    CreateCreature("a7-mcust",[1830.1030],NE)
+    MoveViewObject(Myself,INSTANT)
+    StartCutSceneEx("a7-mct03",TRUE)
+END
+
+// Location: Saradush Tavern
+IF
+  Global("Campaign","LOCALS",4)
+  AreaCheck("AR5003")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    CreateCreature("a7-mcust",[512.930],E)
+    MoveViewObject(Myself,INSTANT)
+    StartCutSceneEx("a7-mct03",TRUE)
+END
+
+// Location: Amkethran
+IF
+  Global("Campaign","LOCALS",4)
+  AreaCheck("AR5500")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    CreateCreature("a7-mcust",[2500.1445],SEE)
+    MoveViewObject(Myself,INSTANT)
+    StartCutSceneEx("a7-mct03",TRUE)
+END
+
+// Failsafe conditions
+IF
+  OR(2)
+    GlobalLT("Campaign","LOCALS",1)
+    GlobalGT("Campaign","LOCALS",4)
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    SetGlobal("CustomerScene","LOCALS",3)
+    EndCutSceneMode()
+END
+
+IF
+  Global("Campaign","LOCALS",1)
+  !AreaCheck("%bg1_are_prefix%1000")
+  !AreaCheck("%bg1_are_prefix%3300")
+  !AreaCheck("%bg1_are_prefix%4900")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    SetGlobal("CustomerScene","LOCALS",3)
+    EndCutSceneMode()
+END
+
+IF
+  Global("Campaign","LOCALS",2)
+  !AreaCheck("BD1000")
+  !AreaCheck("BD3000")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    SetGlobal("CustomerScene","LOCALS",3)
+    EndCutSceneMode()
+END
+
+IF
+  Global("Campaign","LOCALS",3)
+  !AreaCheck("AR0700")
+  !AreaCheck("AR1100")
+  !AreaCheck("AR2000")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    SetGlobal("CustomerScene","LOCALS",3)
+    EndCutSceneMode()
+END
+
+IF
+  Global("Campaign","LOCALS",4)
+  !AreaCheck("AR5003")
+  !AreaCheck("AR5500")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    SetGlobal("CustomerScene","LOCALS",3)
+    EndCutSceneMode()
+END

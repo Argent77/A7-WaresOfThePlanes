@@ -1,0 +1,23 @@
+// Blind Terror
+
+// @0 = ~~  // #6337
+@1 = ~Blind Terror +2~
+
+// @10 = ~~ // #6709
+@11 = ~When an opponent is struck with sufficient force, acid is released thru the spongy surface of the mace. From the resulting spray of acid, the adversary can become temporarily blinded making him easier to hit.
+
+STATISTICS:
+
+Combat abilities: 
+– Hit target must save vs. Spell or is blinded for 6 seconds
+
+THAC0: +2
+Damage: 1d6+3, +2d4 acid damage
+Damage type: Crushing
+Speed Factor: 5
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4~

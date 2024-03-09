@@ -1,0 +1,20 @@
+// Crimson Sphere Earrings
+
+@0 = ~Earrings~
+@1 = ~Crimson Sphere Earrings~
+
+@10 = ~Earrings are small bands of precious metal with attached hooks that are used as jewelry or accessory. Some rare earrings have had enchantments placed on upon them that confer various magical abilities.
+
+STATISTICS:
+
+Weight: 0~
+@11 = ~Small red gems set into these earrings act like a heat sponge, protecting the wearer from heat or flame attacks. Whenever the wearer is exposed to fire, the gems draw some of the heat into themselves, shielding their wearer from part of the damage.
+
+It is rumored that each of these earrings holds a tiny fire mephit inside, and that they are so starved for heat that they will drink deep of any fire in the vicinity. This has never been proven, mostly because no one really cares to investigate the matter.
+
+STATISTICS:
+
+Equipped abilities: 
+– Fire resistance: +20%
+
+Weight: 0~

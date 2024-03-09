@@ -1,0 +1,54 @@
+BACKUP ~weidu_external/backup/A7-Planar-ItemPack~
+AUTHOR ~https://github.com/Argent77/A7-Planar-ItemPack/issues~
+VERSION ~0.9-beta~
+
+ALWAYS
+  // root folder for mutable data
+  OUTER_TEXT_SPRINT WORK_FOLDER ~weidu_external~
+
+  ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN
+    FAIL @1100 // DLC Merger is required before mods can be installed on this game. Check the readme for more information and a link to download DLC Merger.
+  END
+
+  INCLUDE ~%MOD_FOLDER%/lib/always.tph~
+END
+
+README ~A7-Planar-ItemPack/doc/readme-%LANGUAGE%.txt~ ~A7-Planar-ItemPack/doc/readme.txt~
+
+LANGUAGE ~English~
+         ~english~
+         ~A7-Planar-ItemPack/tra/english/setup.tra~
+         ~A7-Planar-ItemPack/tra/english/mod.tra~
+// LANGUAGE ~Language~
+         // ~LANGUAGE~
+         // ~A7-Planar-ItemPack/tra/english/setup.tra~
+         // ~A7-Planar-ItemPack/tra/english/mod.tra~
+         // ~A7-Planar-ItemPack/tra/LANGUAGE/setup.tra~
+         // ~A7-Planar-ItemPack/tra/LANGUAGE/mod.tra~
+
+
+////////////////////////////////////////////////
+// Planar Item Pack                           //
+////////////////////////////////////////////////
+BEGIN @1000 // Planar Item Pack
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @1101  // Requires BG:EE, BG2:EE or EET.
+DESIGNATED 0
+
+// Installing custom creature animations
+INCLUDE ~%MOD_FOLDER%/lib/install_animations.tph~
+
+// Installing pst items
+INCLUDE ~%MOD_FOLDER%/lib/install_items.tph~
+
+// Installing travelling merchant
+INCLUDE ~%MOD_FOLDER%/lib/install_merchant.tph~
+
+
+////////////////////////////////////////////////
+// Tweak: Identify all items                  //
+////////////////////////////////////////////////
+BEGIN @1010 // Identify all items (not recommended)
+REQUIRE_COMPONENT ~A7-Planar-ItemPack.tp2~ 0  @1102 // Requires the main component of the mod.
+DESIGNATED 10
+
+INCLUDE ~%MOD_FOLDER%/lib/tweak_identify_all.tph~

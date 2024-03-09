@@ -1,0 +1,32 @@
+// "Foolsmiter"
+
+// @0 = ~~  // #6345
+@1 = ~Foolsmiter +2~
+
+// @10 = ~~ // #6716
+@11 = ~This war hammer has a huge stone head in the shape of a rectangular block. Faint traces of gore and blood are on all sides of the hammer's head. The shaft is of a thick wood that looks too weak to support the hammer head's weight.
+
+This enchanted hammer was used as a tool by the Athar at one time during their religious persecution phase of their faction history. The magical war-hammer "Foolsmiter" was constructed so that it did additional damage against opponents who were particularly stupid. When it was crafted, however, the enchantment was twisted such that if the user was less intelligent than the target struck by the hammer, the wielder would take damage as well. For many years, the hammer became a test rite between rival members of the Athar as a primitive (and lethal) IQ test. It was stolen from their headquarters in the Shattered Temple many years ago and has resurfaced once or twice across the planes.
+
+It is believed that the Intelligence vs. Intelligence contest the hammer once inflicted on the wielder and his enemies has dissipated from the hammer over time, but no one has been confident enough to put it to the test.
+
+STATISTICS:
+
+Combat abilities:
+– May inflict 1d4+3 crushing damage upon the wielder, based on their intelligence:
+  6 or lower: always
+  7: 75% chance
+  8: 50% chance
+  9: 35% chance
+  10 to 14: 25% chance
+  15 or higher: never
+
+THAC0: +2
+Damage: 1d4+3 (crushing)
+Speed Factor: 2
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 5~

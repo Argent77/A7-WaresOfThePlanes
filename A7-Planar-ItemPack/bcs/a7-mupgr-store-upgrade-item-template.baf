@@ -1,0 +1,19 @@
+// *** Template for adding an item to the store ***
+// Replace:
+// sto_upgrade_stage  by the store upgrade stage value
+// sto_item_resref    by the ITM resref
+// sto_item_count     by the number of items to add
+// Note: Bandages are already predefined in the store
+
+IF
+  Global("A7-StoreItem-%sto_item_resref%","GLOBAL",0)
+  OR(2)
+    Global("A7-StoreUpgrade","GLOBAL",%sto_upgrade_stage%)
+    GlobalGT("A7-StoreUpgrade","GLOBAL",%sto_upgrade_stage%)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-StoreItem-%sto_item_resref%","GLOBAL",1)
+    AddStoreItem("a7-merc","%sto_item_resref%",%sto_item_count%,0)
+    // DisplayString(Myself,~DEBUG: Adding item to store: %sto_item_resref%~)
+    Continue()
+END

@@ -1,0 +1,31 @@
+// Fiend's Blood Dagger
+
+// @0 = ~~  // #6343
+@1 = ~Fiend's Blood Dagger~
+
+// @10 = ~~ // #6720
+@11 = ~Years of being embedded in the flesh of a fiend have imbued this once ordinary dagger with qualities best left with their kind. Blood of the fiend has infused itself with the dagger causing it to feel slightly warm to the touch.
+
+When in combat the user of this dagger can hear a constant chittering in the back of his mind causing him to lose all self-control making him unstoppable in combat, but vulnerable to spells.
+
+The history of this dagger is for the most part unknown. More than likely some fool perished while fighting the fiend, losing his dagger as well as his life. For now the name is but a description, it has yet to earn a proper title.
+
+STATISTICS:
+
+Equipped abilities:
+– Save vs. spells: -4
+– Causes the wielder to go berserk in combat
+– May only be removed with a Remove Curse spell
+
+Combat abilities:
+– Hit target must save vs. Death at +2 or suffer 3 points of poison damage per round for 120 seconds (non-cumulative)
+
+THAC0: +2
+Damage: 1d4+2 (piercing)
+Speed Factor: 1
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~

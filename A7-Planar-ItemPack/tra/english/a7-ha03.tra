@@ -1,0 +1,19 @@
+// Hammer of Quality
+
+@0 = ~Hammer of Quality~
+// @1 = ~~  // unused
+
+@10 = ~This is a finely crafted war hammer. Godsmen etchings and symbology decorate the head of the weapon and work their way down the shaft. Despite its heavy appearance, it feels much lighter than it looks.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d4+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 5~
+// @11 = ~~ // unused

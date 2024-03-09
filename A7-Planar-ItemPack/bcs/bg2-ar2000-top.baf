@@ -1,0 +1,50 @@
+// *** BG2-SoA: Trademeet area script ***
+
+// First-time initialization of the merchant
+IF
+  Global("A7-InitMerchant","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-InitMerchant","GLOBAL",1)
+    CreateCreatureImpassableAllowOverlap("a7-merc",[0.0],S)
+    ActionOverride("a7-merc",MakeGlobal())
+    ActionOverride("a7-merc",DestroySelf())
+    Continue()
+END
+
+// Merchant arrives
+IF
+  !Global("geniesgone","GLOBAL",0)  // Trigger only after solving the genie problems
+  Global("A7-InitMerchant","GLOBAL",1)
+  !GlobalTimerNotExpired("A7-TravelTrademeetTimer","GLOBAL")
+  Global("A7-TourTrademeet","AR2000",0)  // indicates the next destination (0=Imnesvale, 1=Athkatla)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-TourTrademeet","AR2000",1)
+    SetGlobalTimer("A7-TravelTimeOut","GLOBAL",ONE_DAY)
+    SetGlobalTimer("A7-TravelTimeOutForced","GLOBAL",TWO_DAYS)
+    SetGlobalTimer("A7-TravelImnesvaleTimer","GLOBAL",THREE_DAYS)
+    SetGlobalTimer("A7-TravelTrademeetTimer","GLOBAL",SIX_DAYS)
+    SetGlobalTimer("A7-TravelAthkatlaTimer","GLOBAL",NINE_DAYS)
+    MoveGlobal("AR2000","a7-merc",[2060.920])
+    ActionOverride("a7-merc",Face(SW))
+    Continue()
+END
+
+IF
+  !Global("geniesgone","GLOBAL",0)  // Trigger only after solving the genie problems
+  Global("A7-InitMerchant","GLOBAL",1)
+  !GlobalTimerNotExpired("A7-TravelTrademeetTimer","GLOBAL")
+  Global("A7-TourTrademeet","AR2000",0)  // indicates the next destination (0=Imnesvale, 1=Athkatla)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-TourTrademeet","AR2000",1)
+    SetGlobalTimer("A7-TravelTimeOut","GLOBAL",ONE_DAY)
+    SetGlobalTimer("A7-TravelTimeOutForced","GLOBAL",TWO_DAYS)
+    SetGlobalTimer("A7-TravelAthkatlaTimer","GLOBAL",THREE_DAYS)
+    SetGlobalTimer("A7-TravelTrademeetTimer","GLOBAL",SIX_DAYS)
+    SetGlobalTimer("A7-TravelImnesvaleTimer","GLOBAL",NINE_DAYS)
+    MoveGlobal("AR2000","a7-merc",[2060.920])
+    ActionOverride("a7-merc",Face(SW))
+    Continue()
+END

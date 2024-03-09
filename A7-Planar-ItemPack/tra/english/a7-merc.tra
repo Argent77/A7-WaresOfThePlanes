@@ -1,0 +1,57 @@
+// Ebb Creakknees dialog
+@0 = ~Ah, hello there. You've come to the right place.~
+@1 = ~Ebb Creakknees is my name. Third Measure of the Harmonium, as if that means anything here in this far-off place. I'm retired now, semi-retired actually, and spend my time and money travelling the planes.~
+@2 = ~I've also collected lots of treasures over the years on my travels across the planes. You're welcome to buy anything you like. Keeps my purse filled.~
+@3 = ~Third Measure of the Harmonium?~
+@4 = ~What can you tell me about Sigil?~
+@5 = ~What happened to the customer you've talked to before?~
+@6 = ~What do you have for sale?~
+@7 = ~Never mind. Farewell.~
+@8 = ~Anything else you'd like to know?~
+@9 = ~You mentioned the Harmonium earlier. Who are they?~
+@10 = ~Nothing. Farewell.~
+@11 = ~Good t'see ye again, <LADGAL>. Back for more, eh?~
+@12 = ~What can ol' Ebb do for you on this fine day?~
+@13 = ~Why are all your wares unlabeled? It feels like a gamble to buy something from you.~
+@14 = ~Can you tell me more about the broken artifact?~
+@15 = ~Can you tell me about the broken artifact again?~
+@16 = ~I have found the items required to repair the broken artifact.~
+@17 = ~Please show me your wares.~
+@18 = ~Anything else?~
+@19 = ~Good timing, anyway. I've stocked up my store with even more wares. Feel free to browse and buy, friend.~
+@20 = ~Aye, I served in many fights and skirmishes for the Harmonium. Our faction keeps peace and order in Sigil, and on other planes as well. Been that way as long as I can think of. And I can think back for many a decade.~
+@21 = ~Now that I'm *mostly* retired I want to see the planes at my own leisure rather than waste my time away in Sigil's bars an' taverns.~
+@22 = ~Be that as it may, the planes work in unknowable ways; even to ol' Ebb. They always have. You cling to entropy, but that's only one force of many in the multiverse. There's more than enough to keep entropy in check. But in my old age I'm not concerned with that anymore.~
+@23 = ~Sigil is a wondrous place. Called the "City of Doors", an' for good reason it is. Any arch, frame, window or door can be a portal to another place. Most of them are dormant, though, unless you have the right key.~
+@24 = ~A key can be pretty much anything; from a literal key itself, over a phrase spoken aloud, to a thought expressed at a specific hour with a lim-lim pet standing on your head. Destination can be any place in the multiverse, too. Many clueless berks walked through a portal by accident only to find themselves in the middle of the Blood War, or drowning in the endless oceans of the Elemental Plane of Water with no way back.~
+@25 = ~The city is ruled by the Lady of Pain. Her rule is absolute. You'd be careful to invoke her wrath. It's something you'd never survive, no matter how tough ye are. If you're lucky she'll only maze you to one of her pocket planes with no way out. Otherwise you might find out a new way of dying. That'll be something.~
+@26 = ~I'm sorry for rambling on and on, but ye can only really come to understand the city by experiencing it for yourself.~
+@27 = ~Eh, that one? He purchased an artifact of premium quality. Good as new, without any charges spent. He's probably enjoying the sights an' wonders of Ysgard right now. With luck he'll figure out the way home, eventually.~
+@28 = ~But don't you worry too much about it. None of my wares will kill you. If you keep your wits about you, that is.~
+@29 = ~As I mentioned before, these are all souvenirs collected from places all over the planes. If I had to spend my time identifying all that stuff then I'd die of old age before I was done.~
+@30 = ~I can assure you that everything is genuine and would probably pass as rarities on this world.~
+@31 = ~I've got everything an adventurer like yourself desires. Be it jewelry that makes you invulnerable to harm, or a weapon to turn even your deadliest foes to ash.~
+@32 = ~Oh, and every now and then I replenish my stock; when I have the opportunity to visit home. You might want to check back once in a while.~
+@33 = ~I'll be here for a while before I move on. My tour across the Sword Coast probably leads me from Beregost, over Nashkel's Carnival, Ulgoth's Beard, an' back. So y'know where to look for me if ye can't find me here.~
+@34 = ~I'll be here for a while before I move on. My tour across Amn probably leads me from Athkatla's market district, over Trademeet, Imnesvale, an' back. So y'know where to look for me if ye can't find me here.~
+@35 = ~Anyway, just recently I procured a curious artifact from a befuddled gnome wizard. It's supposed to be a deadly weapon according to his ramblings. But it seems to be broken. Maybe you'd be interested in helping me out to fix it?~
+@36 = ~Sure. It's a weapon of a design I've never seen before. And believe me, I've seen a lot in my life already. The gnome wizard left with me scribbled notes that are supposed to be repair instructions. But I can't make heads or tails of it.~
+@37 = ~What I *can* make out are the spare parts needed to fix this device. The broken crystal needs to be replaced by a beljuril gem of the highest quality. Furthermore, a scroll of protection from magical energies is required to shield the crystal from overloading. The scribbles also mention a scroll of disintegration, but I can't make out what it is used for.~
+@38 = ~If you provide me with these items then I'll have another word with the gnome about how to repair this piking contraption. Are ye up to the task, <LADGAL>?~
+@39 = ~Sounds intriguing. I'll try my best to find these items for you.~
+@40 = ~No, I'm not interested.~
+@41 = ~Splendid. I'll continue to study the notes. Maybe I can make out more details in the meantime.~
+@42 = ~Fair enough. It would be quite a task to collect everything. I'll keep studying the notes anyway, just in case you change your mind.~
+@43 = ~Certainly. It's a weapon of a design I've never seen before. But it's broken. According to the gnome's scribbles it can be repaired with a beljuril gem and scrolls of disintegration and protection from magical energies. If you provide me with these, I'll have another word with the gnome wizard how to fix this contraption.~
+@44 = ~Let me see them. Yes, the beljuril is quite a sight, isn't it? And you've got the scrolls as well? Very good. Are ye ready to part with them?~
+@45 = ~Yes, I am.~
+@46 = ~Not yet. Maybe later.~
+@47 = ~Let me take that to the old gnome. He'll know better than me what to do with it. I guess repairing that damn contraption will take a while. Come back tomorrow.~
+@48 = ~Any time, <LADGAL>. I'll be here if you change your mind.~
+@49 = ~By the way, the gnome wizard did the impossible and fixed that weird contraption. I have it added to my pile of wares if you'd like to buy it.~
+
+// Interjection: Jan
+@100 = ~Well now, it's not our fault that the big folk can't follow our trains of thought. Unless the train is just a pile of loose gears, like Uncle Witherjar used to have occasionally. That's nothing that can't be solved with good blow to the head, though.~
+
+// Interjection: Haer'Dalis
+@110 = ~A futile attempt in the face of entropy and decay. Your words and deeds will only delay the inevitable by a miniscule span of time. While you have to work actively to keep entropy at bay we can simply sit back and watch. Time is our ally.~

@@ -1,0 +1,19 @@
+// Bolts of Wincing
+
+// @0 = ~~  // #6632
+@1 = ~Bolts of Wincing +1~
+
+// @10 = ~~ // #6772
+@11 = ~These crotch-shaped bolts have been enchanted with one thing in mind: emasculation. When fired, they home in on the most vulnerable point on a victim's body, sink into the flesh, then the head of each bolt scissors outwards, making it nearly impossible to pull out and increasing the damage considerably. The name of the bolts comes from the reactions of spectators after the bolts are fired. 
+
+STATISTICS:
+
+Equipped abilities:
+– Chance to score a critical hit: +15%
+
+THAC0: +1
+Damage: 1d8+1, +1d8+1 slashing damage
+Damage type: Missile
+Launcher: Crossbow
+
+Weight: 0~

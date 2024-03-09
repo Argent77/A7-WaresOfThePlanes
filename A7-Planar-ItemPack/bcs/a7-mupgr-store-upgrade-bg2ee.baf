@@ -1,0 +1,106 @@
+// *** Included in BG2EE and EET games ***
+// Variable "A7-StoreUpgrade": first value initiates upgrade stage, second value finalizes upgrade stage
+// 1-2: BG1, chapter 1
+// 3-4: BG1, chapter 5
+// 5-6: SoD, chapter 8
+// 7-8: SoD, chapter 10
+// 9-10: SoA, chapter 2
+// 11-12: SoA, chapter 3
+// 13-14: SoA, chapter 6
+// 15-16: ToB, chapter 8
+// 17-18: ToB, chapter 9
+
+// Store upgrade at SoA chapter 2
+IF
+  GlobalGT("Chapter","GLOBAL",%bg2_chapter_1%)
+  GlobalLT("A7-StoreUpgrade","GLOBAL",10)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-StoreUpgrade","GLOBAL",9)
+    Continue()
+END
+
+IF
+  Global("A7-StoreUpgrade","GLOBAL",9)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-StoreUpgrade","GLOBAL",10)
+    SetGlobal("StoreUpdated","LOCALS",1)
+    Continue()
+END
+
+// Store upgrade at SoA chapter 3
+IF
+  GlobalGT("Chapter","GLOBAL",%bg2_chapter_2%)
+  GlobalLT("A7-StoreUpgrade","GLOBAL",12)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-StoreUpgrade","GLOBAL",11)
+    Continue()
+END
+
+IF
+  Global("A7-StoreUpgrade","GLOBAL",11)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-StoreUpgrade","GLOBAL",12)
+    SetGlobal("StoreUpdated","LOCALS",1)
+    Continue()
+END
+
+// Store upgrade at SoA chapter 6
+IF
+  GlobalGT("Chapter","GLOBAL",%bg2_chapter_5%)
+  GlobalLT("A7-StoreUpgrade","GLOBAL",14)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-StoreUpgrade","GLOBAL",13)
+    Continue()
+END
+
+IF
+  Global("A7-StoreUpgrade","GLOBAL",13)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-StoreUpgrade","GLOBAL",14)
+    SetGlobal("StoreUpdated","LOCALS",1)
+    Continue()
+END
+
+// Store upgrade at ToB chapter 8
+IF
+  GlobalGT("Chapter","GLOBAL",%bg2_chapter_7%)
+  GlobalLT("A7-StoreUpgrade","GLOBAL",16)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-StoreUpgrade","GLOBAL",15)
+    Continue()
+END
+
+IF
+  Global("A7-StoreUpgrade","GLOBAL",15)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-StoreUpgrade","GLOBAL",16)
+    SetGlobal("StoreUpdated","LOCALS",1)
+    Continue()
+END
+
+// Store upgrade at ToB chapter 9
+IF
+  GlobalGT("Chapter","GLOBAL",%bg2_chapter_8%)
+  GlobalLT("A7-StoreUpgrade","GLOBAL",18)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-StoreUpgrade","GLOBAL",17)
+    Continue()
+END
+
+IF
+  Global("A7-StoreUpgrade","GLOBAL",17)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-StoreUpgrade","GLOBAL",18)
+    SetGlobal("StoreUpdated","LOCALS",1)
+    Continue()
+END

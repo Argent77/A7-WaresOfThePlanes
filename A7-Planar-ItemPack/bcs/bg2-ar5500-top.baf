@@ -1,0 +1,70 @@
+// *** BG2-ToB: Amkethran area script ***
+
+// First-time initialization of the merchant
+IF
+  Global("A7-InitMerchant","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-InitMerchant","GLOBAL",1)
+    CreateCreatureImpassableAllowOverlap("a7-merc",[0.0],S)
+    ActionOverride("a7-merc",MakeGlobal())
+    ActionOverride("a7-merc",DestroySelf())
+    Continue()
+END
+
+// Merchant arrives
+IF
+  Global("A7-InitMerchant","GLOBAL",1)
+  Global("A7-TravelAmkethran","AR5500",0)
+  Global("Chapter","GLOBAL",%bg2_chapter_9%)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-TravelAmkethran","AR5500",1)
+    SetGlobal("A7-TravelTimeOut","GLOBAL",0)  // do not despawn automatically
+    SetGlobal("A7-TravelTimeOutForced","GLOBAL",0)
+    MoveGlobal("AR5500","a7-merc",[2765.1500])
+    ActionOverride("a7-merc",Face(W))
+    Continue()
+END
+
+// Merchant leaves after party dealt with Sendai and Abazigal
+IF
+  GlobalGT("Enclave","GLOBAL",1)
+  Global("A7-TravelAmkethran","AR5500",1)
+  InMyArea("a7-merc")
+THEN
+  RESPONSE #100
+    SetGlobal("A7-TravelAmkethran","AR5500",2)
+    ActionOverride("a7-merc",EscapeArea())
+    Continue()
+END
+
+// Phazor Quest: Merchant reappears
+IF
+  GlobalLT("Enclave","GLOBAL",2)
+  Global("A7-PhazorQuest","GLOBAL",4)
+  GlobalTimerExpired("A7-PhazorQuestRepairTimer","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobal("A7-PhazorQuest","GLOBAL",5)
+    MoveGlobal("AR5500","a7-merc",[2765.1500])
+    ActionOverride("a7-merc",Face(W))
+    AddStoreItem("a7-merc","a7-phazr",%sto_item_count%,0)
+    // DisplayString("a7-merc",~DEBUG: Adding item to store: a7-phazr~)
+    Continue()
+END
+
+// Phazor Quest: premature ending
+IF
+  GlobalGT("Enclave","GLOBAL",1)
+  GlobalGT("A7-PhazorQuest","GLOBAL",0)
+  GlobalLT("A7-PhazorQuest","GLOBAL",9)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-PhazorQuest","GLOBAL",10)
+    EraseJournalEntry(@3101)
+    EraseJournalEntry(@3102)
+    EraseJournalEntry(@3103)
+    AddJournalEntry(@3151,QUEST_DONE)
+    Continue()
+END

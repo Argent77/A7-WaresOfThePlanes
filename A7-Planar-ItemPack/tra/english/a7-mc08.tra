@@ -1,0 +1,24 @@
+// Club of Nettles
+
+// @0 = ~~  // #6701
+@1 = ~Club of Nettles~
+
+// @10 = ~~ // #6703
+@11 = ~This club seems to be made from some sort of prickly plant. Small thorns adorn the head of the club and can easily be broken off.
+
+This particular club is one of the more favored weapons of thieves. Upon making a successful hit on an opponent, tiny barbed thorns lodge into the skin and cause the victim to become disoriented for a brief period of time. This allows the thief time to safely rob and escape the victim.
+
+STATISTICS:
+
+Combat abilities:
+– Hit target must save vs. Spell or is confused for one round
+
+THAC0: +2
+Damage: 1d6 (crushing)
+Speed Factor: 3
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 4~

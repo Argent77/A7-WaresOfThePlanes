@@ -1,0 +1,33 @@
+// Phazor +5
+
+@0 = ~Stick with a handle~
+@1 = ~Phazor +5~
+
+@10 = ~This item looks like a stick of polished metal with a handle of a shape that fits nicely in the hand. Because of its small size only children or people of the short races can hold it comfortably.
+
+STATISTICS:
+
+Weight: 1~
+@11 = ~This wondrous artifact was originally discovered by a gnomish wizard who travelled the planes for many decades. One day he came across a highly advanced culture that abandoned the use of magic in favor or engineering science. This weapon was one of their numerous inventions. It was originally designed to shoot pulses of highly concentrated light with an enormously destructive effect. After his return to Faerûn the gnome soon discovered that the energy source of the weapon depended on particular natural laws working on that plane, so he replaced it with a less powerful magical substitute.
+
+The weapon is rather small and can only be held comfortably and safely by children or people of the short races. It can fire a limited number of charges per day in rapid succession before the energy source has to be recharged.
+
+STATISTICS:
+
+Equipped abilities:
+– Sets attacks per round to 5
+
+Combat abilities:
+– Fires charges of magical energy that are treated as +5 for the purposes of determining what enemies they can damage
+– Target is disintegrated on a critical hit (Save vs. Death negates)
+
+THAC0: +5 bonus
+Damage: 1d20 magic damage
+Speed Factor: 0
+Type: Two-handed
+Requires:
+ 12 Intelligence
+ 
+Weight: 1~
+
+@20 = ~Disintegrate~

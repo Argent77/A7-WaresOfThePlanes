@@ -1,0 +1,23 @@
+// Backbiter
+
+// @0 = ~~  // #6343
+@1 = ~Backbiter +1~
+
+// @10 = ~~ // #6720
+@11 = ~Crafted specifically with the adept thief in mind, this magical blade masks the approach of the wielder by muffling any sounds he or she might make in passing, thus improving his or her chances of approaching a target by stealth.
+
+STATISTICS:
+
+Equipped abilities:
+– Hide In Shadows: +10%
+– Move Silently: +10%
+
+THAC0: +1
+Damage: 1d4+2 (piercing)
+Speed Factor: 1
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~

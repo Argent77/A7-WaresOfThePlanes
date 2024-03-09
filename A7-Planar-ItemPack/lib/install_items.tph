@@ -1,0 +1,8 @@
+// Installing pst items
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/lib/items~ ~^.+\.tph$~ BEGIN
+  WITH_SCOPE BEGIN
+    LOG ~Installing "%BASH_FOR_RES%"~
+    INCLUDE ~%BASH_FOR_FILESPEC%~
+  END
+END

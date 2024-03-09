@@ -1,0 +1,668 @@
+/**
+ * Returns the tra file paths for the specified tra name for use with WITH_TRA.
+ *
+ * STR_VAR tra_res    Name of the tra file (without path and file extension).
+ * RET tra_language   Path to the tra file for the current mod language.
+ * RET tra_fallback   Path to the English tra file.
+ */
+DEFINE_DIMORPHIC_FUNCTION get_tra_paths
+STR_VAR
+  tra_res = ~~
+RET
+  tra_language
+  tra_fallback
+BEGIN
+  OUTER_SPRINT tra_language ~~
+  OUTER_SPRINT tra_fallback ~~
+  ACTION_IF (NOT ~%tra_res%~ STR_EQ ~~) BEGIN
+    ACTION_IF (FILE_EXISTS ~%MOD_FOLDER%/tra/%LANGUAGE%/%tra_res%.tra~) BEGIN
+      OUTER_SPRINT tra_language ~%MOD_FOLDER%/tra/%LANGUAGE%/%tra_res%.tra~
+    END ELSE BEGIN
+      OUTER_SPRINT tra_language ~%MOD_FOLDER%/tra/english/%tra_res%.tra~
+    END
+    ACTION_IF (FILE_EXISTS ~%MOD_FOLDER%/tra/english/%tra_res%.tra~) BEGIN
+      OUTER_SPRINT tra_fallback ~%MOD_FOLDER%/tra/english/%tra_res%.tra~
+    END ELSE BEGIN
+      FAIL ~Translation file not found: %MOD_FOLDER%/tra/english/%tra_res%.tra~
+    END
+  END
+END
+
+
+/**
+ * Performs standard operations on the current item resource.
+ * Standard operation includes:
+ * - Updating item name (general, identified)
+ * - Updating item description (general, identified)
+ * - Retrieving and returning icon and description image resrefs
+ *
+ * STR_VAR itm_resref     The item resref.
+ * RET icon_resref        BAM resref of the item icon.
+ * RET ground_icon_resref BAM resref of the ground item icon.
+ * RET desc_image_resref  BAM resref of the item description image.
+ */
+DEFINE_PATCH_FUNCTION update_item_generic
+STR_VAR
+  itm_resref = ~~
+RET
+  icon_resref
+  ground_icon_resref
+  desc_image_resref
+BEGIN
+  SPRINT icon_resref ~~
+  SPRINT ground_icon_resref ~~
+  SPRINT desc_image_resref ~~
+
+  READ_ASCII 0 sig (8)
+  PATCH_IF (~%sig%~ STR_EQ ~ITM V1  ~) BEGIN
+    // Updating item name and description
+    LPF get_item_info
+      STR_VAR itm_resref
+      RET general_name identified_name general_desc identified_desc
+    END
+    PATCH_IF (NOT ~%general_name%~ STR_EQ ~~ && LONG_AT NAME1 = "-1") BEGIN
+      SAY NAME1 ~%general_name%~
+    END
+    PATCH_IF (NOT ~%identified_name%~ STR_EQ ~~ && LONG_AT NAME2 = "-1") BEGIN
+      SAY NAME2 ~%identified_name%~
+    END
+    PATCH_IF (NOT ~%general_desc%~ STR_EQ ~~ && LONG_AT UNIDENTIFIED_DESC = "-1") BEGIN
+      SAY UNIDENTIFIED_DESC ~%general_desc%~
+    END
+    PATCH_IF (NOT ~%identified_desc%~ STR_EQ ~~ && LONG_AT IDENTIFIED_DESC = "-1") BEGIN
+      SAY IDENTIFIED_DESC ~%identified_desc%~
+    END
+
+    // Getting icon and description image BAM resrefs
+    READ_ASCII 0x3a icon_resref (8) NULL
+    TO_LOWER ~icon_resref~
+    READ_ASCII 0x44 ground_icon_resref (8) NULL
+    TO_LOWER ~ground_icon_resref~
+    READ_ASCII 0x58 desc_image_resref (8) NULL
+    TO_LOWER ~desc_image_resref~
+  END ELSE BEGIN
+    PATCH_FAIL ~Skipping invalid item resource: %itm_resref%.itm~
+  END
+END
+
+
+/**
+ * Performs installation of generic resources associated with the specified item.
+ * The operation includes:
+ * - Installing item icon
+ * - Installing description image
+ *
+ * STR_VAR icon_resref        BAM resref of the item icon.
+ * STR_VAR ground_icon_resref BAM resref of the ground item icon.
+ * STR_VAR desc_image_resref  BAM resref of the item description image.
+ */
+DEFINE_ACTION_FUNCTION install_item_resources_generic
+STR_VAR
+  icon_resref = ~~
+  ground_icon_resref = ~~
+  desc_image_resref = ~~
+BEGIN
+  // Installing icon
+  ACTION_IF (NOT ~%icon_resref%~ STR_EQ ~~ && NOT FILE_EXISTS_IN_GAME ~%icon_resref%.bam~) BEGIN
+    COPY ~%MOD_FOLDER%/bam/%icon_resref%.bam~ ~override~ IF_EXISTS
+  END
+
+  // Installing ground icon
+  ACTION_IF (NOT ~%ground_icon_resref%~ STR_EQ ~~ && NOT FILE_EXISTS_IN_GAME ~%ground_icon_resref%.bam~) BEGIN
+    COPY ~%MOD_FOLDER%/bam/%ground_icon_resref%.bam~ ~override~ IF_EXISTS
+  END
+
+  // Installing description image
+  ACTION_IF (NOT ~%desc_image_resref%~ STR_EQ ~~ && NOT FILE_EXISTS_IN_GAME ~%desc_image_resref%.bam~) BEGIN
+    COPY ~%MOD_FOLDER%/bam/%desc_image_resref%.bam~ ~override~ IF_EXISTS
+  END
+END
+
+
+/**
+ * Retrieves name and description strings for a specified item.
+ *
+ * STR_VAR itm_resref   The item resref to retrieve strings for.
+ * RET general_name     "General name" string of the item. Empty if not available.
+ * RET identified_name  "Identified name" string of the item. Empty if not available.
+ * RET general_desc     "General description" string of the item. Empty if not available.
+ * RET identified_desc  "Identified description" string of the item. Empty if not available.
+ */
+DEFINE_PATCH_FUNCTION get_item_info
+STR_VAR
+  itm_resref = ~~
+RET
+  general_name
+  identified_name
+  general_desc
+  identified_desc
+BEGIN
+  SPRINT general_name ~~
+  SPRINT identified_name ~~
+  SPRINT general_desc ~~
+  SPRINT identified_desc ~~
+
+  PATCH_IF (NOT ~%itm_resref%~ STR_EQ ~~) BEGIN
+    // Loading strings from item-local tra file
+    LPF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+    PATCH_WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+      PATCH_IF (TRA_ENTRY_EXISTS(0)) BEGIN
+        SPRINT general_name @0
+      END
+      PATCH_IF (TRA_ENTRY_EXISTS(1)) BEGIN
+        SPRINT identified_name @1
+      END ELSE BEGIN
+        SPRINT identified_name ~%general_name%~
+      END
+      PATCH_IF (TRA_ENTRY_EXISTS(10)) BEGIN
+        SPRINT general_desc @10
+      END
+      PATCH_IF (TRA_ENTRY_EXISTS(11)) BEGIN
+        SPRINT identified_desc @11
+      END ELSE BEGIN
+        SPRINT identified_desc ~%general_desc%~
+      END
+    END
+
+    // Sanity checks
+    PATCH_IF (~%general_name%~ STR_EQ ~~ && ~%identified_name%~ STR_EQ ~~) BEGIN
+      PATCH_WARN ~WARNING: Item name not available for %itm_resref%.itm~
+    END
+    PATCH_IF (~%general_desc%~ STR_EQ ~~ && ~%identified_desc%~ STR_EQ ~~) BEGIN
+      PATCH_WARN ~WARNING: Item description not available for %itm_resref%.itm~
+    END
+  END
+END
+
+
+/**
+ * Returns a list of "anti-paladin" kits (i.e. paladin kits that cannot fall).
+ *
+ * INT_VAR only_valid A boolean value that indicates whether only kits with valid kit id
+ *                    and title strref should be returned.
+ * RET_ARRAY kits     An array of all available anti-paladin kits.
+ *                    Key indicates the kit id. Value indicates the strref of the kit title.
+ *                    Non-existing kit title strrefs are defined as -1.
+ */
+DEFINE_DIMORPHIC_FUNCTION get_anti_paladin_kits
+INT_VAR
+  only_valid = 1
+RET_ARRAY
+  kits
+BEGIN
+  // collecting all paladin kits
+  COPY_EXISTING ~kitlist.2da~ ~override~
+    READ_2DA_ENTRIES_NOW ~kitlist~ 1
+    FOR (row = 4; row < kitlist; ++row) BEGIN
+      READ_2DA_ENTRY_FORMER ~kitlist~ row 8 kit_class
+      PATCH_IF (kit_class = 6) BEGIN  // Paladin?
+        READ_2DA_ENTRY_FORMER ~kitlist~ row 1 kit_name
+        READ_2DA_ENTRY_FORMER ~kitlist~ row 3 kit_title_strref
+        TO_UPPER ~kit_name~
+        SET $paladin_kits(~%kit_name%~) = 1
+        SET $paladin_kit_titles(~%kit_name%~) = kit_title_strref
+      END
+    END
+  BUT_ONLY
+
+  // marking all regular paladin kits as invalid
+  COPY_EXISTING ~fallen.2da~ ~override~
+    READ_2DA_ENTRIES_NOW ~fallen~ 1
+    FOR (row = 3; row < fallen; ++row) BEGIN
+      READ_2DA_ENTRY_FORMER ~fallen~ row 1 can_fall
+      PATCH_IF (IS_AN_INT ~can_fall~ && NOT can_fall) BEGIN
+        READ_2DA_ENTRY_FORMER ~fallen~ row 0 kit_name
+        TO_UPPER ~kit_name~
+        PATCH_IF (VARIABLE_IS_SET $paladin_kits(~%kit_name%~)) BEGIN
+          SET $paladin_kits(~%kit_name%~) = 0
+        END
+      END
+    END
+  BUT_ONLY
+
+  // assembling resulting kit list
+  ACTION_PHP_EACH paladin_kits AS kit_name => can_fall BEGIN
+    ACTION_IF (NOT can_fall) BEGIN
+      OUTER_SET kit_id = IDS_OF_SYMBOL(~kit~ ~%kit_name%~)
+      ACTION_IF (kit_id > 0) BEGIN
+        OUTER_SET kit_title = VARIABLE_IS_SET $paladin_kit_titles(~%kit_name%~) ? $paladin_kit_titles(~%kit_name%~) : "-1"
+        ACTION_IF (kit_title >= 0 || NOT only_valid) BEGIN
+          OUTER_SET $kits(~%kit_id%~) = kit_title
+        END
+      END
+    END
+  END
+END
+
+
+/**
+ * Returns the first SPLPROT.2DA entry matching the specified parameters.
+ * Creates the entry if needed.
+ * 
+ * INT_VAR stat               Stat definition to evaluate.
+ * INT_VAR value              Stat value to reference.
+ * INT_VAR relation           Stat condition.
+ * INT_VAR create_if_missing  Boolean value that indicates whether the entry should be created if it doesn't exist.
+ * STR_VAR name               An optional custom name that is used if a new entry is created. Use asterisk (*) as
+ *                            placeholder for the calculated entry index.
+ * RET index                  Index of the matching splprot entry.
+ */
+DEFINE_DIMORPHIC_FUNCTION get_splprot_entry
+INT_VAR
+  stat = 0
+  value = "-1"
+  relation = 0
+  create_if_missing = 1
+STR_VAR
+  name = ""
+RET
+  index
+BEGIN
+  OUTER_SET index = "-1"
+  OUTER_SET splprot_exists = 0
+  COPY_EXISTING ~splprot.2da~ ~override~
+    // checking for existing entry
+    READ_2DA_ENTRIES_NOW ~splprot~ 1
+    FOR (row = 3; row < splprot; ++row) BEGIN
+      READ_2DA_ENTRY_FORMER ~splprot~ row 1 cur_stat
+      PATCH_IF (IS_AN_INT ~cur_stat~ && cur_stat = stat) BEGIN
+        READ_2DA_ENTRY_FORMER ~splprot~ row 2 cur_value
+        READ_2DA_ENTRY_FORMER ~splprot~ row 3 cur_rel
+        PATCH_IF (IS_AN_INT ~cur_value~ && cur_value = value && IS_AN_INT ~cur_rel~ && cur_rel = relation) BEGIN
+          // match found: retrieving index
+          SET index = row - 3
+          SET splprot_exists = 1
+          SET row = splprot
+        END
+      END
+    END
+
+    PATCH_IF (index < 0) BEGIN
+      // determine next free splprot index
+      COUNT_2DA_ROWS 1 num_rows
+      SET index = num_rows - 3
+    END
+  BUT_ONLY
+
+  // adding new index
+  ACTION_IF (create_if_missing && NOT splprot_exists) BEGIN
+    ACTION_IF (~%name%~ STR_EQ ~~) BEGIN
+      OUTER_SPRINT name ~*~
+    END
+
+    OUTER_PATCH_SAVE name ~%name%~ BEGIN
+      REPLACE_TEXTUALLY ~[ %TAB%]+~ ~~  // whitespace is not allowed
+      REPLACE_TEXTUALLY EXACT_MATCH ~*~ ~%index%~
+    END
+
+    ACTION_IF (stat >= 256) BEGIN
+      OUTER_PATCH ~~ BEGIN
+        SPRINTF line ~%s %x %d %d~ (~%name%~ ~%stat%~ ~%value%~ ~%relation%~)
+      END
+    END ELSE BEGIN
+      OUTER_SPRINT line ~%name% %stat% %value% %relation%~
+    END
+    APPEND ~splprot.2da~ ~%name% %stat% %value% %relation%~
+
+    COPY_EXISTING ~splprot.2da~ ~override~
+      PRETTY_PRINT_2DA
+    BUT_ONLY
+  END
+END
+
+
+/**
+ * Returns the title of the specified class as strref.
+ *
+ * STR_VAR class_name   Symbolic class name or numeric class id to look up.
+ * RET title            Strref of the class title. Returns -1 if no valid class or title strref was found.
+ */
+DEFINE_DIMORPHIC_FUNCTION get_class_title
+STR_VAR
+  class_name = ~~
+RET
+  title
+BEGIN
+  OUTER_SET title = "-1"
+  ACTION_IF (NOT ~%class_name%~ STR_EQ ~~) BEGIN
+    ACTION_IF (IS_AN_INT ~class_name~) BEGIN
+      OUTER_PATCH ~~ BEGIN
+        LOOKUP_IDS_SYMBOL_OF_INT ~class_name~ ~class~ class_name
+      END
+    END
+
+    COPY_EXISTING ~clastext.2da~ ~override~
+      COUNT_2DA_COLS num_cols
+      PATCH_IF (num_cols >= 6) BEGIN
+        READ_2DA_ENTRIES_NOW ~clastext~ 1
+        FOR (row = 3; row < clastext; ++row) BEGIN
+          READ_2DA_ENTRY_FORMER ~clastext~ row 0 name
+          PATCH_IF (~%name%~ STR_EQ ~%class_name%~) BEGIN
+            READ_2DA_ENTRY_FORMER ~clastext~ row 5 title
+            SET row = clastext
+          END
+        END
+      END
+    BUT_ONLY
+  END
+END
+
+
+/**
+ * Returns the title of the specified kit as strref.
+ *
+ * STR_VAR kit_name   Symbolic kit name or numeric kit id to look up.
+ * RET title          Strref of the kit title. Returns -1 if no valid kit or title strref was found.
+ */
+DEFINE_DIMORPHIC_FUNCTION get_kit_title
+STR_VAR
+  kit_name = ~~
+RET
+  title
+BEGIN
+  OUTER_SET title = "-1"
+  ACTION_IF (NOT ~%kit_name%~ STR_EQ ~~) BEGIN
+    ACTION_IF (IS_AN_INT ~kit_name~) BEGIN
+      OUTER_SET kit_id = kit_name
+    END ELSE BEGIN
+      OUTER_SET kit_id = IDS_OF_SYMBOL(~kit~ ~%kit_name%~)
+    END
+
+    COPY_EXISTING ~kitlist.2da~ ~override~
+      COUNT_2DA_COLS num_cols
+      PATCH_IF (num_cols >= 10) BEGIN
+        READ_2DA_ENTRIES_NOW ~kitlist~ 1
+        FOR (row = 4; row < kitlist; ++row) BEGIN
+          READ_2DA_ENTRY_FORMER ~kitlist~ row 9 id
+          PATCH_IF (id = kit_id) BEGIN
+            READ_2DA_ENTRY_FORMER ~kitlist~ row 3 title
+            SET row = kitlist
+          END
+        END
+      END
+    BUT_ONLY
+  END
+END
+
+
+/**
+ * This patch function finds matching item or spell effects and updates their respective values.
+ *
+ * INT_VAR check_globals        Whether to check global (on-equip) effects (0 for no, 1 for yes). (default: 0)
+ * INT_VAR check_headers        Whether to check effects on extended headers (0 for no, 1 for yes). (default: 0)
+ * INT_VAR header               One-based index of the ability header that should be altered. A value of 0 matches all headers. (default: 0)
+ * INT_VAR header_type          Type of the ability header that should be checked. If this variable is -1, all header types will be checked. (default: -1)
+ *
+ * INT_VAR match_opcode         Opcode value to match. (default: match any)
+ * INT_VAR match_target         Target value to match. (default: match any)
+ * INT_VAR match_power          Power value to match.  (default: match any)
+ * INT_VAR match_parameter1     Parameter1 value to match. (default: match any)
+ * INT_VAR match_parameter2     Parameter2 value to match. (default: match any)
+ * INT_VAR match_timing         Timing value to match. (default: match any)
+ * INT_VAR match_resist_dispel  Resist/Dispel value to match. (default: match any)
+ * INT_VAR match_duration       Duration value to match. (default: match any)
+ * INT_VAR match_probability1   Probability1 value (upper bound) to match. (default: match any)
+ * INT_VAR match_probability2   Probability2 value (lower bound) to match. (default: match any)
+ * STR_VAR match_resource       Resource reference string to match. (default: match any)
+ * INT_VAR match_dicenumber     Dice number value to match. (default: match any)
+ * INT_VAR match_dicesize       Dice size value to match. (default: match any)
+ * INT_VAR match_savingthrow    Saving throws type value to match. (default: match any)
+ * INT_VAR match_savebonus      Saving throws bonus or penalty value to match. (default: match any)
+ * INT_VAR match_special        Special value to match. (default: match any)
+ *
+ * INT_VAR opcode               The new opcode value to write if a match is found. (default: don't update)
+ * INT_VAR target               The new target value to write if a match is found. (default: don't update)
+ * INT_VAR power                The new power value to write if a match is found. (default: don't update)
+ * INT_VAR parameter1           The new parameter1 value to write if a match is found. (default: don't update)
+ * INT_VAR parameter2           The new parameter2 value to write if a match is found. (default: don't update)
+ * INT_VAR timing               The new timing value to write if a match is found. (default: don't update)
+ * INT_VAR resist_dispel        The new resist/dispel value to write if a match is found. (default: don't update)
+ * INT_VAR duration             The new duration value to write if a match is found. (default: don't update)
+ * INT_VAR probability1         The new probability1 value (upper bound) to write if a match is found. (default: don't update)
+ * INT_VAR probability2         The new probability2 value (lower bound) to write if a match is found. (default: don't update)
+ * STR_VAR resource             The new resource reference string to write if a match is found. (default: don't update)
+ * INT_VAR dicenumber           The new dice number value to write if a match is found. (default: don't update)
+ * INT_VAR dicesize             The new dice size value to write if a match is found. (default: don't update)
+ * INT_VAR savingthrow          The new saving throws type value to write if a match is found. (default: don't update)
+ * INT_VAR savebonus            The new saving throws bonus or penalty value to write if a match is found. (default: don't update)
+ * INT_VAR special              The new special value to write if a match is found. (default: don't update)
+ *
+ * RET count                    Returns the number of matching effects.
+ */
+DEFINE_PATCH_FUNCTION alter_item_effect_ex
+INT_VAR
+  check_globals       = 0
+  check_headers       = 0
+  header              = 0
+  header_type         = "-1"
+STR_VAR
+  match_opcode        = ""
+  match_target        = ""
+  match_power         = ""
+  match_parameter1    = ""
+  match_parameter2    = ""
+  match_timing        = ""
+  match_resist_dispel = ""
+  match_duration      = ""
+  match_probability1  = ""
+  match_probability2  = ""
+  match_resource      = "*"
+  match_dicenumber    = ""
+  match_dicesize      = ""
+  match_savingthrow   = ""
+  match_savebonus     = ""
+  match_special       = ""
+  opcode              = ""
+  target              = ""
+  power               = ""
+  parameter1          = ""
+  parameter2          = ""
+  timing              = ""
+  resist_dispel       = ""
+  duration            = ""
+  probability1        = ""
+  probability2        = ""
+  resource            = "*"
+  dicenumber          = ""
+  dicesize            = ""
+  savingthrow         = ""
+  savebonus           = ""
+  special             = ""
+RET
+  count
+BEGIN
+  SET count = 0
+  READ_ASCII 0 sig (8)
+  SET is_itm = ~%sig%~ STR_EQ ~ITM V1  ~
+  SET is_spl = ~%sig%~ STR_EQ ~SPL V1  ~
+  PATCH_IF (is_itm || is_spl) BEGIN
+    SET abil_size = is_itm ? 56 : 40
+    SET fx_size = 48
+    SET effects = 0
+
+    READ_LONG 0x64 ofs_abils
+    READ_SHORT 0x68 num_abils
+    READ_LONG 0x6a ofs_fx
+
+    // collecting effect offsets
+    PATCH_IF (check_globals) BEGIN
+      READ_SHORT 0x6e first_fx
+      READ_SHORT 0x70 num_fx
+      FOR (i = 0; i < num_fx; ++i) BEGIN
+        SET $effects(~%effects%~) = ofs_fx + (first_fx + i) * fx_size
+        SET effects += 1
+      END
+    END
+
+    // collecting ability effect offsets
+    PATCH_IF (check_headers) BEGIN
+      SET min_idx = (header = 0) ? 0 : header - 1
+      SET max_idx = (header = 0) ? num_abils : header
+      FOR (i = min_idx; i < max_idx; ++i) BEGIN
+        SET ofs_abil = ofs_abils + i * abil_size
+        READ_SHORT ofs_abil abil_type
+        PATCH_IF (header_type = "-1" || header_type = abil_type) BEGIN
+          READ_SHORT (ofs_abil + 0x1e) num_fx
+          READ_SHORT (ofs_abil + 0x20) first_fx
+          FOR (j = 0; j < num_fx; ++j) BEGIN
+            SET $effects(~%effects%~) = ofs_fx + (first_fx + j) * fx_size
+            SET effects += 1
+          END
+        END
+      END
+    END
+
+    // updating effects
+    FOR (i = 0; i < effects; ++i) BEGIN
+      SET ofs_fx = $effects(~%i%~)
+      // evaluating filters
+      SET match = 1
+      PATCH_IF (match && IS_AN_INT ~match_opcode~ && match_opcode != "-1") BEGIN
+        SET match = (SHORT_AT (ofs_fx + 0x0) = match_opcode)
+      END
+      PATCH_IF (match && IS_AN_INT ~match_target~) BEGIN
+        SET match = (BYTE_AT (ofs_fx + 0x2) = match_target)
+      END
+      PATCH_IF (match && IS_AN_INT ~match_power~) BEGIN
+        SET match = (BYTE_AT (ofs_fx + 0x3) = match_power)
+      END
+      PATCH_IF (match && IS_AN_INT ~match_parameter1~) BEGIN
+        SET match = (match_parameter1 < 0) ? (SLONG_AT (ofs_fx + 0x4) = match_parameter1) : (LONG_AT (ofs_fx + 0x4) = match_parameter1)
+      END
+      PATCH_IF (match && IS_AN_INT ~match_parameter2~) BEGIN
+        SET match = (match_parameter2 < 0) ? (SLONG_AT (ofs_fx + 0x8) = match_parameter2) : (LONG_AT (ofs_fx + 0x8) = match_parameter2)
+      END
+      PATCH_IF (match && IS_AN_INT ~match_timing~) BEGIN
+        SET match = (BYTE_AT (ofs_fx + 0xc) = match_timing)
+      END
+      PATCH_IF (match && IS_AN_INT ~match_resist_dispel~) BEGIN
+        SET match = (BYTE_AT (ofs_fx + 0xd) = match_resist_dispel)
+      END
+      PATCH_IF (match && IS_AN_INT ~match_duration~) BEGIN
+        SET match = (LONG_AT (ofs_fx + 0xe) = match_duration)
+      END
+      PATCH_IF (match && IS_AN_INT ~match_probability1~) BEGIN
+        SET match = (BYTE_AT (ofs_fx + 0x12) = match_probability1)
+      END
+      PATCH_IF (match && IS_AN_INT ~match_probability2~) BEGIN
+        SET match = (BYTE_AT (ofs_fx + 0x13) = match_probability2)
+      END
+      PATCH_IF (match && NOT ~%match_resource%~ STR_EQ ~*~) BEGIN
+        READ_ASCII (ofs_fx + 0x14) fx_resource (8) NULL
+        SET match = ~%fx_resource%~ STR_EQ ~%match_resource%~
+      END
+      PATCH_IF (match && IS_AN_INT ~match_dicenumber~) BEGIN
+        SET match = (LONG_AT (ofs_fx + 0x1c) = match_dicenumber)
+      END
+      PATCH_IF (match && IS_AN_INT ~match_dicesize~) BEGIN
+        SET match = (LONG_AT (ofs_fx + 0x20) = match_dicesize)
+      END
+      PATCH_IF (match && IS_AN_INT ~match_savingthrow~) BEGIN
+        SET match = (LONG_AT (ofs_fx + 0x24) = match_savingthrow)
+      END
+      PATCH_IF (match && IS_AN_INT ~match_savebonus~) BEGIN
+        SET match = (match_savebonus < 0) ? (SLONG_AT (ofs_fx + 0x28) = match_savebonus) : (LONG_AT (ofs_fx + 0x28) = match_savebonus)
+      END
+      PATCH_IF (match && IS_AN_INT ~match_special~) BEGIN
+        SET match = (match_special < 0) ? (SLONG_AT (ofs_fx + 0x2c) = match_special) : (LONG_AT (ofs_fx + 0x2c) = match_special)
+      END
+
+      // updating values
+      PATCH_IF (match) BEGIN
+        SET count += 1
+        PATCH_IF (IS_AN_INT ~opcode~) BEGIN
+          WRITE_SHORT (ofs_fx + 0x0) opcode
+        END
+        PATCH_IF (IS_AN_INT ~target~) BEGIN
+          WRITE_BYTE (ofs_fx + 0x2) target
+        END
+        PATCH_IF (IS_AN_INT ~power~) BEGIN
+          WRITE_BYTE (ofs_fx + 0x3) power
+        END
+        PATCH_IF (IS_AN_INT ~parameter1~) BEGIN
+          WRITE_LONG (ofs_fx + 0x4) parameter1
+        END
+        PATCH_IF (IS_AN_INT ~parameter2~) BEGIN
+          WRITE_LONG (ofs_fx + 0x8) parameter2
+        END
+        PATCH_IF (IS_AN_INT ~timing~) BEGIN
+          WRITE_BYTE (ofs_fx + 0xc) timing
+        END
+        PATCH_IF (IS_AN_INT ~resist_dispel~) BEGIN
+          WRITE_BYTE (ofs_fx + 0xd) resist_dispel
+        END
+        PATCH_IF (IS_AN_INT ~duration~) BEGIN
+          WRITE_LONG (ofs_fx + 0xe) duration
+        END
+        PATCH_IF (IS_AN_INT ~probability1~) BEGIN
+          WRITE_BYTE (ofs_fx + 0x12) probability1
+        END
+        PATCH_IF (IS_AN_INT ~probability2~) BEGIN
+          WRITE_BYTE (ofs_fx + 0x13) probability2
+        END
+        PATCH_IF (NOT ~%resource%~ STR_EQ ~*~) BEGIN
+          WRITE_ASCIIE (ofs_fx + 0x14) ~%resource%~ (8)
+        END
+        PATCH_IF (IS_AN_INT ~dicenumber~) BEGIN
+          WRITE_LONG (ofs_fx + 0x1c) dicenumber
+        END
+        PATCH_IF (IS_AN_INT ~dicesize~) BEGIN
+          WRITE_LONG (ofs_fx + 0x20) dicesize
+        END
+        PATCH_IF (IS_AN_INT ~savingthrow~) BEGIN
+          WRITE_LONG (ofs_fx + 0x24) savingthrow
+        END
+        PATCH_IF (IS_AN_INT ~savebonus~) BEGIN
+          WRITE_LONG (ofs_fx + 0x28) savebonus
+        END
+        PATCH_IF (IS_AN_INT ~special~) BEGIN
+          WRITE_LONG (ofs_fx + 0x2c) special
+        END
+      END
+    END
+  END ELSE BEGIN
+    PATCH_WARN ~WARNING: Not an ITM or SPL resource. Skipping operation.~
+  END
+END
+
+
+/**
+ * Retrieves the stack count and/or number of defined charges from the current item
+ * and returns the greater of both values.
+ *
+ * INT_VAR min_count        Minimum count to return.
+ * INT_VAR include_stack    A boolean value that indicates whether to consider the stack count.
+ * INT_VAR include_charges  A boolean value that indicates whether to consider the number of charges.
+ *                          defined in the ability header(s).
+ * RET count                The returned count.
+ */
+DEFINE_PATCH_FUNCTION get_item_charges
+INT_VAR
+  min_count = 1
+  include_stack = 1
+  include_charges = 1
+RET
+  count
+BEGIN
+  SET count = min_count
+
+  READ_ASCII 0 sig (8)
+  PATCH_IF (~%sig%~ STR_EQ ~ITM V1  ~) BEGIN
+    PATCH_IF (include_stack) BEGIN
+      READ_SHORT 0x38 stack_count
+      SET count = (stack_count > count) ? stack_count : count
+    END
+
+    PATCH_IF (include_charges) BEGIN
+      READ_LONG 0x64 ofs_abil
+      READ_SHORT 0x68 num_abil
+      FOR (i = 0; i < num_abil; ++i) BEGIN
+        SET ofs = ofs_abil + i * 56
+        READ_SHORT (ofs + 0x22) num_charges
+        SET count = (num_charges > count) ? num_charges : count
+      END
+    END
+  END ELSE BEGIN
+    PATCH_WARN ~WARNING: Not an ITM resource. Skipping operation.~
+  END
+END

@@ -1,0 +1,29 @@
+// *** BG1: Ulgoth's Beard area script ***
+
+// First-time initialization of the merchant
+IF
+  Global("A7-InitMerchant","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-InitMerchant","GLOBAL",1)
+    CreateCreatureImpassableAllowOverlap("a7-merc",[0.0],S)
+    ActionOverride("a7-merc",MakeGlobal())
+    ActionOverride("a7-merc",DestroySelf())
+    Continue()
+END
+
+// Merchant arrives
+IF
+  Global("A7-InitMerchant","GLOBAL",1)
+  !GlobalTimerNotExpired("A7-TravelUBeardTimer","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("A7-TravelTimeOut","GLOBAL",ONE_DAY)
+    SetGlobalTimer("A7-TravelTimeOutForced","GLOBAL",TWO_DAYS)
+    SetGlobalTimer("A7-TravelBeregostTimer","GLOBAL",THREE_DAYS)
+    SetGlobalTimer("A7-TravelNashkelTimer","GLOBAL",SIX_DAYS)
+    SetGlobalTimer("A7-TravelUBeardTimer","GLOBAL",TWELVE_DAYS)
+    MoveGlobal("%bg1_are_prefix%1000","a7-merc",[2185.520])
+    ActionOverride("a7-merc",Face(S))
+    Continue()
+END

@@ -1,0 +1,31 @@
+// Item: Final Judgment +3
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-ax09~
+
+// Installing item
+COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+  LPF update_item_generic
+    STR_VAR
+      itm_resref
+    RET
+      icon_resref
+      desc_image_resref
+  END
+
+// Installing associated resources
+LAF install_item_resources_generic
+STR_VAR
+  itm_resref
+  icon_resref
+  desc_image_resref
+END
+
+// Installing additional resources
+ACTION_FOR_EACH file IN ~%itm_resref%a.eff~ BEGIN
+  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%file%~) BEGIN
+    LAF EXT_OF_FILESPEC STR_VAR filespec = EVAL ~%file%~ RET ext END
+    COPY ~%MOD_FOLDER%/%ext%/%file%~ ~override~
+  END
+END

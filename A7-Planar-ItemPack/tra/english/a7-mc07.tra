@@ -1,0 +1,25 @@
+// "The Justifier"
+
+// @0 = ~~  // #6337
+@1 = ~The Justifier +2~
+
+// @10 = ~~ // #6709
+@11 = ~This mace looks much like any other mace - a spiked ball atop a wooden shaft, leather handgrip with a thong to prevent losing it in the heat of battle. Where it differs is in the Eye etched in acid on the head of the weapon, a stylized sigil of the god Horus.
+
+This weapon is The Justifier, a mace created in the city of Heliopolis on the plane of Arcadia, designed to aid the followers of law and good. It can heal its owner, if asked, and harbors a special hatred for the forces of chaos and evil.
+
+STATISTICS:
+
+Equipped abilities:
+– Regenerate 1 Hit Point per round
+
+THAC0: +2, +4 vs. chaotic evil creatures
+Damage: 1d6+3, +5 vs. chaotic evil creatures
+Damage type: Crushing
+Speed Factor: 5
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4~

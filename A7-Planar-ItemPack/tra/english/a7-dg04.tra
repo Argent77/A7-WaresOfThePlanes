@@ -1,0 +1,19 @@
+// Phantom Dagger
+
+// @0 = ~~  // #6343
+@1 = ~Phantom Dagger +3~
+
+// @10 = ~~ // #6720
+@11 = ~As if of its own volition, this dagger seems to reach out to its enemies, instinctively finding the most vulnerable spots on any creature.
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d4+3 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~

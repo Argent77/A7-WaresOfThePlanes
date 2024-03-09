@@ -1,0 +1,60 @@
+// Default combat script of the pet Lim-Lim
+
+IF
+  See(NearestEnemyOf([PC]))
+THEN
+  RESPONSE #100
+    Attack(LastSeenBy(Myself))
+END
+
+IF
+  AttackedBy([EVILCUTOFF],DEFAULT)
+THEN
+  RESPONSE #100
+    Attack(LastAttackerOf(Myself))
+END
+
+IF
+  AttackedBy([NOTEVIL],DEFAULT)
+THEN
+  RESPONSE #100
+    RunAwayFromNoInterruptNoLeaveArea(LastAttackerOf(Myself),90)
+END
+
+IF
+  InMyArea(Player1)
+  !Range(Player1,20)
+THEN
+  RESPONSE #100
+    MoveToObject(Player1)
+END
+
+IF
+  !InMyArea(Player1)
+  !Range(NearestAllyOf(Myself),20)
+THEN
+  RESPONSE #100
+    MoveToObject(NearestAllyOf(Myself))
+END
+
+IF
+  InMyArea(Player1)
+THEN
+  RESPONSE #50
+    RandomWalkTime(3)
+  RESPONSE #30
+    FaceObject(Player1)
+  RESPONSE #20
+    MoveToObject(Player1)
+END
+
+IF
+  !InMyArea(Player1)
+THEN
+  RESPONSE #50
+    RandomWalkTime(3)
+  RESPONSE #30
+    FaceObject(NearestAllyOf(Myself))
+  RESPONSE #20
+    MoveToObject(NearestAllyOf(Myself))
+END

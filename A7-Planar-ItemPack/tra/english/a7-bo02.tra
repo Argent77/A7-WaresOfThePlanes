@@ -1,0 +1,20 @@
+// Acidic Sponge Bolts
+
+// @0 = ~~  // #6632
+@1 = ~Acidic Sponge Bolts +1~
+
+// @10 = ~~ // #6772
+@11 = ~The putty-like globes on the heads of these crossbow bolts are actually dried-up aquatic sponges found in many of the great lakes of Bytopia. Seemingly unremarkable to most scholars, these tiny sponges were accidentally discovered to have the property of being able to absorb acids and store them in their bodies with no harm to themselves. 
+
+As a result, great masses of these creatures were gathered and bred for use as weapons against fiends in the Blood War. After being fed a steady diet of acid for a few days, the sponges are harvested, dried, and covered with a resin that keeps a soft bubble around the sponge. The sponge is then mounted on the head of an arrow or crossbow bolt and is ready for use. 
+
+When the tip of the bolt strikes a creature with sufficient force, the resin bubble bursts, the sponge flattens, and the target is doused with acid. 
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d2+1, +6 acid damage (Save vs. Breath for half)
+Damage type: Missile
+Launcher: Crossbow
+
+Weight: 0~

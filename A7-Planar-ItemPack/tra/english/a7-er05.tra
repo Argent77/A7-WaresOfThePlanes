@@ -1,0 +1,18 @@
+// Chained-Teeth Earrings
+
+@0 = ~Earrings~
+@1 = ~Chained-Teeth Earrings~
+
+@10 = ~Earrings are small bands of precious metal with attached hooks that are used as jewelry or accessory. Some rare earrings have had enchantments placed on upon them that confer various magical abilities.
+
+STATISTICS:
+
+Weight: 0~
+@11 = ~These thin metal earrings are actually a series of well-crafted lockpicks. If need be, they can be unhooked and used to pick open stubborn locks.
+
+STATISTICS:
+
+Equipped appearance:
+– Pick Locks: +5%
+
+Weight: 0~

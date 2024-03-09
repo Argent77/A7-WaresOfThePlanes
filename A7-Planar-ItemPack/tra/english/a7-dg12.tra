@@ -1,0 +1,24 @@
+// Porphatys Dagger
+
+// @0 = ~~  // #6343
+@1 = ~Porphatys Dagger +3~
+
+// @10 = ~~ // #6720
+@11 = ~The acids of Porphatys, the fifth layer of Carceri, are dangerous to more than a body's physical form - they tear at his mind and soul, eating away at his reason. Weapons forged in this heart of betrayal do the same thing to their owners, but too many believe that the acidic powers of a weapon created in Porphatys are worth the risk.
+
+STATISTICS:
+
+Equipped abilities:
+– Causes the wielder to go berserk
+– May only be removed with a Remove Curse spell
+
+THAC0: +3
+Damage: 1d4+3, +1d6 acid damage
+Damage type: Piercing
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~

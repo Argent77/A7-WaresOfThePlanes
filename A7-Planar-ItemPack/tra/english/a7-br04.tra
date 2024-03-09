@@ -1,0 +1,21 @@
+// Dread Bond
+
+@0 = ~Bracelet~
+@1 = ~Dread Bond~
+
+@10 = ~This bracelet looks to be made of silver and has a semi-precious gem mounted to the top of it.
+
+STATISTICS:
+
+Weight: 0~
+@11 = ~Legend has it that this bracelet was created by Nacek the Sadistic. Tiny razor sharp spikes cover the entire surface of this item injecting small amounts of rare reagents into the blood stream of the user. The effect of these chemicals causes the user to feel a constant adrenaline rush of strength.
+
+STATISTICS:
+
+Equipped abilities:
+– Strength: +1
+– Immunity to panic
+
+Weight: 3~
+
+@20 = ~Vampire~

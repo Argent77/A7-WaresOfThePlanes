@@ -1,0 +1,18 @@
+// Magus Guard
+
+@0 = ~Bracelet~
+@1 = ~Magus Guard~
+
+@10 = ~This bracelet looks to be made of silver and has a precious gem mounted to the top of it.
+
+STATISTICS:
+
+Weight: 0~
+@11 = ~Considered standard equipment for any adventuring mage, bracelets such as these can be found across the planes. Judging by the markings on this particular bracelet it appears to have been made in a style quite common to Sigil. Various glyphs of warding are meticulously carved along the surface producing an almost hypnotic effect when looked at. When worn this bracelet protects the wearer from normal attacks as if they were wearing scale armor. 
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 6
+
+Weight: 2~

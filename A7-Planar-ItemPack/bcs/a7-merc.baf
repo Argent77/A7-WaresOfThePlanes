@@ -1,0 +1,18 @@
+// *** Creature script for Merchant ***
+
+// Introductory cutscene between merchant and a customer
+IF
+  !Global("Campaign","LOCALS",0)
+  Global("CustomerScene","LOCALS",0)
+  !See([ENEMY])
+  CombatCounter(0)
+  OR(2)
+    Detect([PC])
+    Detect([FAMILIAR])
+THEN
+  RESPONSE #100
+    SetGlobal("CustomerScene","LOCALS",1)
+    ClearAllActions()
+    StartCutSceneMode()
+    StartCutSceneEx("a7-mct01",TRUE)
+END

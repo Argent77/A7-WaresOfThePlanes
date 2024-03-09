@@ -1,0 +1,18 @@
+// *** These blocks should come late in the script ***
+
+// Merchant leaves for the next destination
+IF
+  !Global("A7-TravelTimeOutForced","GLOBAL",0)
+  GlobalTimerExpired("A7-TravelTimeOutForced","GLOBAL")
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  !Global("A7-TravelTimeOut","GLOBAL",0)
+  GlobalTimerExpired("A7-TravelTimeOut","GLOBAL")
+THEN
+  RESPONSE #100
+    EscapeArea()
+END

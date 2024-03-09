@@ -1,0 +1,22 @@
+// Bolts of Acheron
+
+// @0 = ~~  // #6632
+@1 = ~Bolts of Acheron +1~
+
+// @10 = ~~ // #6772
+@11 = ~These enchanted bolts have been fashioned from one of the great cubes of Acheron. According to many planar scholars, Acheron is a plane in perpetual war with itself, where huge cubes the size of continents float through the ether and smash against each other. On the surface of these cubes, legions of soldiers wage war on each other, swarming from cube to cube and attacking whoever else they can find. The plane is filled with the ringing of steel and the great thundering impacts of the cubes striking each other.  
+
+These bolts carry a portion of Acheron's heart within them. When these bolts strike an opponent, they do so with so much force that the impact has the potential to stun an opponent and leave him helpless for a period of time.
+
+STATISTICS:
+
+Combat abilities:
+– Target must save vs. Death or be stunned for one round
+
+THAC0: +1
+Damage: 1d4+1 (crushing)
+Launcher: Crossbow
+
+Weight: 0~
+
+@20 = ~Stunned~

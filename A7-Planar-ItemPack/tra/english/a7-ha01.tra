@@ -1,0 +1,23 @@
+// Brimstone Hammer
+
+// @0 = ~~  // #6345
+@1 = ~Brimstone Hammer +1~
+
+// @10 = ~~ // #6716
+@11 = ~This type of weapon, thought to be forged by the flames of the Elemental Plane of Fire, is extremely rare, even in Sigil. The elemental properties of the hammer grants its wielder an increased resistance to fire and fire-based attacks. In addition, when used in combat, the hammer deals out additional damage when it successfully connects, searing its target with crackling flames.
+
+STATISTICS:
+
+Equipped abilities:
+– Fire resistance: +25%
+
+THAC0: +1
+Damage: 1d8+1, +4 fire damage
+Damage type: Crushing
+Speed Factor: 3
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 5~

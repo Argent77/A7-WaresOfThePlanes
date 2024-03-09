@@ -1,0 +1,19 @@
+// Baatezu Mace
+
+// @0 = ~~  // #6337
+@1 = ~Baatezu Mace +1~
+
+// @10 = ~~ // #6709
+@11 = ~Made from ore found only in the wastelands of Avernus. Baatezu have created a metal called Baatorian green steel. Weapons produced from this metal are lighter and stronger than those forged of ordinary steel and tend to inflict greater damage. Although produced in great quantities for the Blood Wars, weapons such as these are rarely found outside of Baator.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 2d4+2 (crushing)
+Speed Factor: 6
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10~

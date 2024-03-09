@@ -1,0 +1,25 @@
+// *** Cutscene: Merchant and customer, clean up ***
+
+IF
+  CutSceneBroken()
+THEN
+  RESPONSE #100
+    SetCutSceneBreakable(FALSE)
+    StartCutSceneMode()
+    ClearAllActions()
+    FadeToColor([0.0],0)
+    SetCursorState(FALSE)
+    SetAreaScript("",OVERRIDE)
+    Continue()
+END
+
+IF
+  CutSceneBroken()
+THEN
+  RESPONSE #100
+    ActionOverride("a7-mcust",DestroySelf())
+    ActionOverride("a7-ctspy",DestroySelf())
+    MultiPlayerSync()
+    FadeFromColor([15.0],0)
+    EndCutSceneMode()
+END

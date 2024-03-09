@@ -1,0 +1,35 @@
+// Butcherer of Innocents
+
+@0 = ~Meat Cleaver~
+@1 = ~Butcherer of Innocents +2~
+
+@10 = ~This massive meat cleaver appears to have seen more than its share of butchery. Its wide, flat blade has more notches than most battleaxes you've seen and there are traces of blood permanently stained into its wooden handle.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7~
+@11 = ~This giant, axe-like cleaver earned its nickname while in the hands of Oswell Breck, a butcher who once serviced the Clerk's Ward of Sigil. The rumor goes that one day this affable and well-respected citizen suddenly went on a murderous and bloody rampage that lasted ten days and ten nights. Cleaver in hand, Oswell stalked the streets of the ward, brutally hacking down every man, woman, and child unlucky enough to cross his path until the Lady of Pain herself intervened. It is rumored that he suffered from a strange disease that slowly caused his body to waste away, and it was this disease that eroded his sanity and prompted the murder spree.
+
+The origin of this instrument of carnage is shrouded in mystery. However, the various wizards and scholars who examined the discarded weapon after Oswell's mazing have catalogued the nature of its enchantment. The cleaver seems to feed upon its victims, sucking the very life force from them and bestowing a portion of it upon its wielder.
+
+STATISTICS:
+
+Combat abilities:
+– Transfers 2 Hit Points from target to wielder
+
+THAC0: +2
+Damage: 1d8+2 (slashing)
+Speed Factor: 5
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4~

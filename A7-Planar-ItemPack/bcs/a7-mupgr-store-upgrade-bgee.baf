@@ -1,0 +1,87 @@
+// *** Included in BGEE, SoD and EET games ***
+// Variable "A7-StoreUpgrade": first value initiates upgrade stage, second value finalizes upgrade stage
+// 1-2: BG1, chapter 1
+// 3-4: BG1, chapter 5
+// 5-6: SoD, chapter 8
+// 7-8: SoD, chapter 10
+// 9-10: SoA, chapter 2
+// 11-12: SoA, chapter 3
+// 13-14: SoA, chapter 6
+// 15-16: ToB, chapter 8
+// 17-18: ToB, chapter 9
+
+// Store upgrade at BG1 chapter 1
+IF
+  GlobalGT("Chapter","GLOBAL",0)
+  GlobalLT("A7-StoreUpgrade","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-StoreUpgrade","GLOBAL",1)
+    Continue()
+END
+
+IF
+  Global("A7-StoreUpgrade","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-StoreUpgrade","GLOBAL",2)
+    SetGlobal("StoreUpdated","LOCALS",1)
+    Continue()
+END
+
+// Store upgrade at BG1 chapter 5
+IF
+  GlobalGT("Chapter","GLOBAL",4)
+  GlobalLT("A7-StoreUpgrade","GLOBAL",4)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-StoreUpgrade","GLOBAL",3)
+    Continue()
+END
+
+IF
+  Global("A7-StoreUpgrade","GLOBAL",3)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-StoreUpgrade","GLOBAL",4)
+    SetGlobal("StoreUpdated","LOCALS",1)
+    Continue()
+END
+
+// Store upgrade at SoD chapter 8
+IF
+  GlobalGT("Chapter","GLOBAL",7)
+  GlobalLT("A7-StoreUpgrade","GLOBAL",6)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-StoreUpgrade","GLOBAL",5)
+    Continue()
+END
+
+IF
+  Global("A7-StoreUpgrade","GLOBAL",5)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-StoreUpgrade","GLOBAL",6)
+    SetGlobal("StoreUpdated","LOCALS",1)
+    Continue()
+END
+
+// Store upgrade at SoD chapter 10
+IF
+  GlobalGT("Chapter","GLOBAL",9)
+  GlobalLT("A7-StoreUpgrade","GLOBAL",8)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-StoreUpgrade","GLOBAL",7)
+    Continue()
+END
+
+IF
+  Global("A7-StoreUpgrade","GLOBAL",7)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-StoreUpgrade","GLOBAL",8)
+    SetGlobal("StoreUpdated","LOCALS",1)
+    Continue()
+END

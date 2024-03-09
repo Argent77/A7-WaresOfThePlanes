@@ -1,0 +1,35 @@
+// Item: Bolts of Acheron +1
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-bo01~
+
+// Installing item
+COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+  LPF update_item_generic
+    STR_VAR
+      itm_resref
+    RET
+      icon_resref
+      desc_image_resref
+  END
+  // updating strref in opcode 139 instances
+  LPF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  PATCH_WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    PATCH_IF (TRA_ENTRY_EXISTS(20)) BEGIN
+      LPF ALTER_ITEM_EFFECT
+        INT_VAR
+          check_headers = 1
+          match_opcode = 139  // Display string
+          parameter1 = RESOLVE_STR_REF(@20) // Stunned
+      END
+    END
+  END
+
+// Installing associated resources
+LAF install_item_resources_generic
+STR_VAR
+  itm_resref
+  icon_resref
+  desc_image_resref
+END

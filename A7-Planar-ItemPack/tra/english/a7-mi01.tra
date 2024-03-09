@@ -1,0 +1,13 @@
+// Bandages
+
+@0 = ~Bandages~
+// @1 = ~~
+
+@10 = ~This is a roll of bandages, useful for stanching minor wounds. When applied they will heal a character for 3 hit points of damage.
+
+STATISTICS:
+
+Special: Restores 3 Hit Points.
+
+Weight: 0~
+// @11 = ~~
