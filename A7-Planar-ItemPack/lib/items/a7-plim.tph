@@ -46,6 +46,11 @@ STR_VAR
   desc_image_resref
 END
 
+ACTION_IF (has_bg2) BEGIN
+  // Item can be imported in BG2
+  EXTEND_TOP ~ar0602.bcs~ ~%MOD_FOLDER%/bcs/bg2-ar0602-top.baf~
+END
+
 
 // Installing Pet Lim-Lim
 OUTER_SPRINT itm_resref ~a7-plim~
@@ -116,8 +121,11 @@ WITH_TRA ~%MOD_FOLDER%/tra/english/%itm_resref%.tra~ ~%MOD_FOLDER%/tra/%LANGUAGE
        ~%MOD_FOLDER%/spl/a7-plb1.spl~ ~override~
        ~%MOD_FOLDER%/spl/a7-plb2.spl~ ~override~
 
-  // Add potential buyer for the petrified Lim-Lim statue
+  // Add potential buyers for the petrified Lim-Lim statue
   ACTION_IF (has_bg) BEGIN
     COMPILE ~%MOD_FOLDER%/dlg/bg1_felonius_gist.d~
+  END
+  ACTION_IF (has_bg2) BEGIN
+    COMPILE ~%MOD_FOLDER%/dlg/soa_quataris.d~
   END
 END

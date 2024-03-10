@@ -52,8 +52,22 @@ Weight: 5~
 @202 = ~The statue is indeed masterfully crafted, with so much care put into every detail. I can offer you a thousand gold pieces for it. Are you agreeable?~
 @203 = ~Yes, I am.~
 @204 = ~No. I don't want to part with it.~
-@205 = ~The statue appears to be authentic indeed. I doubt a ruffian like you acquired it by any legal means. But I suppose there is no harm in doing business with you. I can offer you 400 gold for it. Are you agreeable?~
+@205 = ~The statue appears to be authentic indeed. I doubt a ruffian like you acquired it by any legal means. But I suppose there is no harm in doing business with you. I can offer you 400 gold pieces for it. Are you agreeable?~
 @206 = ~It's doubtful that a ruffian like you has anything *authentic* to offer. This statue has more likely been robbed from a burial site or some barbarian camp. I don't want to have anything to do with it. I kindly ask you to leave now.~
 @207 = ~It was a pleasure doing business with you. If you will excuse me now, I have to take care of my new acquisition.~
 @208 = ~Fine. Our business is concluded. If you will excuse me now, I have to take care of my new acquisition.~
 @209 = ~That is unfortunate. If you have no more business with me then I kindly ask you to leave now.~
+
+// Quataris dialog lines
+@300 = ~I'd like to offer you this authentic Lim-Lim stone statue.~
+@301 = ~Never mind, I'll be on my way.~
+@302 = ~This is indeed an exquisite statue.~
+@303 = ~Please forgive my hasty judgment, I'm always happy to cater to potential customers. This statue appears to be in exquisite condition indeed.~
+@304 = ~The extraordinary level of detail that has been worked into the statue is breathtaking. I have never heard of the artist "Lim-Lim" before, but the statue will certainly fetch a good price at the next auction anyway.~
+@305 = ~For a work of that quality I will gladly pay you 4,000 gold pieces. Are you interested?~
+@306 = ~Yes, I am.~
+@307 = ~No, I don't want to part with it yet.~
+@308 = ~Unfortunately Athkatla's nobility values paintings higher than sculptures and statues these days. I'm not familiar with an artist called "Lim-Lim", but a statue of that quality is sure to find a new owner nonetheless.~
+@309 = ~I can offer you 2,000 gold pieces for it. Are you interested?~
+@310 = ~It was a pleasure doing business with you.~
+@311 = ~That's a pity. My offer still stands if you ever change your mind. Good business to you, my <LADYLORD>.~

@@ -1,0 +1,12 @@
+// *** BG2-SoA: Irenicus Dungeon - First Floor area script ***
+
+// Import Petrified Lim-Lim from a BG1 save
+IF
+  Global("A7-LimLimStatue","GLOBAL",0)
+  PartyHasItem("a7-pplim")
+THEN
+  RESPONSE #100
+    SetGlobal("A7-LimLimStatue","GLOBAL",1)
+    ActionOverride("Shelf 2",TakePartyItemNum("a7-pplim",1))
+    Continue()
+END

@@ -16,7 +16,7 @@ IF ~~ feloni.offer.chr.high
 END
 
 IF ~~ feloni.offer.chr.mid
-  SAY @205 /* The statue appears to be authentic indeed. I doubt a ruffian like you acquired it by any legal means. But I suppose there is no harm in doing business with you. I can offer you 400 gold for it. Are you agreeable? */
+  SAY @205 /* The statue appears to be authentic indeed. I doubt a ruffian like you acquired it by any legal means. But I suppose there is no harm in doing business with you. I can offer you 400 gold pieces for it. Are you agreeable? */
   ++ @203 /* Yes, I am. */ + feloni.paid.low
   ++ @204 /* No. I don't want to part with it. */ + feloni.refused
 END

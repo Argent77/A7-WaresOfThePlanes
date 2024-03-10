@@ -112,6 +112,12 @@ WITH_SCOPE BEGIN
       SET len = STRING_LENGTH ~%store_upgrade_script%~
       INSERT_BYTES ofs len
       WRITE_ASCIIE ofs ~%store_upgrade_script%~ (len)
+
+      PATCH_IF (has_bg2) BEGIN
+        // Do not add Lim-Lim Cage if Petrified Lim-Lim has been imported to BG2
+        REPLACE_TEXTUALLY ~Global("A7-StoreItem-a7-cage","GLOBAL",0)~
+                          ~Global("A7-LimLimStatue","GLOBAL",0) \0~
+      END
     END
   BUT_ONLY
 END
