@@ -1,5 +1,5 @@
-BACKUP ~weidu_external/backup/A7-Planar-ItemPack~
-AUTHOR ~https://github.com/Argent77/A7-Planar-ItemPack/issues~
+BACKUP ~weidu_external/backup/A7-WaresOfThePlanes~
+AUTHOR ~https://github.com/Argent77/A7-WaresOfThePlanes/issues~
 VERSION ~0.9-beta~
 
 ALWAYS
@@ -13,27 +13,27 @@ ALWAYS
   INCLUDE ~%MOD_FOLDER%/lib/always.tph~
 END
 
-README ~A7-Planar-ItemPack/doc/readme-%LANGUAGE%.txt~ ~A7-Planar-ItemPack/doc/readme.txt~
+README ~A7-WaresOfThePlanes/doc/readme-%LANGUAGE%.txt~ ~A7-WaresOfThePlanes/doc/readme.txt~
 
 LANGUAGE ~English~
          ~english~
-         ~A7-Planar-ItemPack/tra/english/setup.tra~
-         ~A7-Planar-ItemPack/tra/english/mod.tra~
+         ~A7-WaresOfThePlanes/tra/english/setup.tra~
+         ~A7-WaresOfThePlanes/tra/english/mod.tra~
 LANGUAGE ~Deutsch~
          ~german~
-         ~A7-Planar-ItemPack/tra/english/setup.tra~
-         ~A7-Planar-ItemPack/tra/english/mod.tra~
-         ~A7-Planar-ItemPack/tra/german/setup.tra~
-         ~A7-Planar-ItemPack/tra/german/mod.tra~
+         ~A7-WaresOfThePlanes/tra/english/setup.tra~
+         ~A7-WaresOfThePlanes/tra/english/mod.tra~
+         ~A7-WaresOfThePlanes/tra/german/setup.tra~
+         ~A7-WaresOfThePlanes/tra/german/mod.tra~
 
 
 ////////////////////////////////////////////////
-// Planar Item Pack                           //
+// Wares of the Planes                        //
 ////////////////////////////////////////////////
-BEGIN @1000 // Planar Item Pack
+BEGIN @1000 // Wares of the Planes
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @1101  // Requires BG:EE, BG2:EE or EET.
 DESIGNATED 0
-LABEL ~A7-PLANAR_ITEMPACK-MAIN~
+LABEL ~A7-WARES_OF_THE_PLANES-MAIN~
 
 // Installing custom creature animations
 INCLUDE ~%MOD_FOLDER%/lib/install_animations.tph~
@@ -46,11 +46,11 @@ INCLUDE ~%MOD_FOLDER%/lib/install_merchant.tph~
 
 
 ////////////////////////////////////////////////
-// Tweak: Identify all items                  //
+// Tweak: Identify all wares                  //
 ////////////////////////////////////////////////
-BEGIN @1010 // Identify all items (not recommended)
-REQUIRE_COMPONENT ~A7-Planar-ItemPack.tp2~ 0  @1102 // Requires the main component of the mod.
+BEGIN @1010 // Identify all wares (not recommended)
+REQUIRE_COMPONENT ~A7-WaresOfThePlanes.tp2~ 0  @1102 // Requires the main component of the mod.
 DESIGNATED 10
-LABEL ~A7-PLANAR_ITEMPACK-IDENTIFY_ALL~
+LABEL ~A7-WARES_OF_THE_PLANES-IDENTIFY_ALL~
 
 INCLUDE ~%MOD_FOLDER%/lib/tweak_identify_all.tph~
