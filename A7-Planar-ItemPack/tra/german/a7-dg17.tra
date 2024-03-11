@@ -1,0 +1,23 @@
+// Widowmaker
+
+// @0 = ~~  // #6343
+@1 = ~Witwenmacher +2~
+
+// @10 = ~~ // #6720
+@11 = ~Dieses Schwert, bekannt unter der Bezeichnung "Witwenmacher", ist mit dem tödlichen Gift der gefürchteten Hakenspinne versehen und auf Grund der magischen Eigenschaften seiner Klinge ein begehrtes Arbeitsmittel praktizierender Meuchelmörder auf allen Ebenen. Das Gift, das durch Magie dauerhaft in den Dolch eingelagert wurde, infiziert jeden, der durch das Schwert verletzt wird. Zusätzlich erhält der Träger des Witwenmachers allein schon durch das Tragen des Schwertes eine verbesserte Widerstandsfähigkeit gegen Gifte.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer erleidet das Ziel 1 Schadenspunkt durch Gift alle 3 Sekunden für 2 Runden (Rettungswurf gg. Tod).
+
+Giftwiderstand: +25 %
+
+ETW0-Bonus: -2
+Schaden: 1W4 +2 (Stich)
+Schadensbonus: +2 (Klinge)
+Initiativefaktor: 0
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 1~

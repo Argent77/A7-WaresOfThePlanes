@@ -1,0 +1,20 @@
+// Notched Dagger
+
+// @0 = ~~  // #6343
+@1 = ~Eingekerbter Dolch +2~
+
+// @10 = ~~ // #6720
+@11 = ~Um die Klinge dieses Dolches sind verschiedene Kerben strategisch plaziert. Wenn dieser Dolch richtig verwendet wird, kann er die angreifenden Schläge fremder Klingenwaffen auffangen.
+
+EIGENSCHAFTEN:
+
+RK-Bonus: -1 gg. Klingenwaffen
+
+ETW0-Bonus: -2
+Schaden: 1W4 +2 (Stich)
+Initiativefaktor: 0
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 1~

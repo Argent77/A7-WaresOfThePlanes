@@ -1,0 +1,41 @@
+// Chaos Feather
+
+@0 = ~Seltsame Feder~
+@1 = ~Chaos-Feder +1~
+
+@10 = ~Diese Feder ist aschgrau, das an den Rändern zu Schwarz verläuft. Sie ist viel größer als eine Vogelfeder, und wenn man sie länger als eine Minute lang hält, verursacht sie ein unangenehm prickelndes Gefühl.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W4 (Stich)
+Initiativefaktor: 2
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 1~
+@11 = ~Diese Feder ist aschgrau, das an den Rändern zu Schwarz verläuft. Sie ist viel größer als eine Vogelfeder, und wenn man sie länger als eine Minute lang hält, verursacht sie ein unangenehm prickelndes Gefühl.
+
+Wenn man die Feder untersucht, findet man heraus, daß sie von einem Vrock stammt, einer der vielen Rassen der Tanar'ri, die im Abgrund leben. Die Vrock ähneln großen Geiern, und sie werden oft als Späher für die Streitkräfte der Tanar'ri im Blutkrieg genutzt.
+
+Es wird behauptet, diese Feder stamme von einem Vrock-Schamanen, der einfach daran gestorben sei, daß er nicht an sich geglaubt hat. Diesem verrückten Vrock, der für eine gewisse geistige Instabilität und die häßliche Angewohnheit bekannt war, seine Anhänger zu verschlingen, um an Stärke zu gewinnen, wurde nachgesagt, er könne andere aus seinem Schwarm dazu bringen, sich unberechenbar zu verhalten - noch viel unberechenbarer als normale Tanar'ri. Er überzeugte viele aus seinem Schwarm davon, sich die Flügel herauszureißen und in der Erde einzubuddeln. Dann wieder predigte er, daß die Tugenden der Ehrlichkeit böser und zerstörerischer seien als jede Lüge. Von ihm blieb nur diese Feder als Testament seiner fiebrigen Existenz zurück. Ein Rest des Schamanen soll sich nun noch in dieser "Chaos-Feder" befinden.
+
+Wenn die Chaos-Feder im Kampf als Dolch verwendet wird, verursacht sie einen geringen Schaden (etwa so viel wie ein normaler Dolch) und hat die Kraft, den getroffenen Gegner zu verwirren. Wesen, die von der Feder getroffen werden, können benommen sein, weglaufen oder ihre Verbündeten angreifen.
+
+Die meisten Tanar'ri betrachten die Feder als heiliges Objekt. Die Vrocks würden jeden töten, in dessen Besitz sie sich befindet, nur um sie wieder zurückzuerobern.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer wird das Ziel entweder betäubt, verwirrt oder in Panik versetzt (Rettungswurf gg. Zauber).
+Der Gegenstand kann nur für eine begrenzte Anzahl an Angriffen eingesetzt werden, bevor er zerbricht.
+
+ETW0-Bonus: -1
+Schaden: 1W4 +1 (Stich)
+Initiativefaktor: 1
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 1~
+
+@20 = ~Betäubt~

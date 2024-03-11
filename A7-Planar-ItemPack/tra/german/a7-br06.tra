@@ -1,0 +1,23 @@
+// Spider Bracelet
+
+@0 = ~Modeschmuck~
+@1 = ~Spinnenarmband~
+
+@10 = ~Dies scheint ein exquisit gefertigtes Stück Modeschmuck zu sein, daß irgendeiner Spinne ähnelt. Es sieht fast so aus, als ob die Spinne jeden Moment aufstehen und weggehen könnte.
+
+EIGENSCHAFTEN:
+
+Gewicht: 0~
+@11 = ~Tatsächlich ist dies eine lebende Spinne, kein Schmuckstück. Wenn man sie am Handgelenk anlegt, versenkt die Spinne ihre Beißwerzkeuge im Fleisch des Trägers und ernährt sich von ihrem Wirt, wodurch beide positive, aber auch negative Auswirkungen erfahren.
+
+EIGENSCHAFTEN:
+
+Widerstand gg. Klingenwaffen: +5 %
+Widerstand gg. Stichwaffen: +5 %
+Widerstand gg. Wuchtwaffen: +5 %
+Widerstand gg. Geschosswaffen: +5 %
+Trefferpunkte: +10
+Intelligenz: -1
+Weisheit: -1
+
+Gewicht: 0~

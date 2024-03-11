@@ -1,0 +1,17 @@
+// Magus Shield
+
+@0 = ~Armreif~
+@1 = ~Magus-Schild~
+
+@10 = ~Dieser Armreif sieht aus, als bestünde er aus Silber. Auf ihm ist ein Halbedelstein angebracht.
+
+EIGENSCHAFTEN:
+
+Gewicht: 0~
+@11 = ~Dies ist eine Variante des Magus-Schutzes. Mit praktisch denselben Zaubern und Glyphen wie sein Vorgänger kann der Magus-Schild die Energie der Verzauberung, die auf ihm liegt, noch besser konzentrieren.
+
+EIGENSCHAFTEN:
+
+Rüstungsklasse: 4
+
+Gewicht: 2~

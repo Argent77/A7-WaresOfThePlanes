@@ -1,0 +1,35 @@
+// "Edge of Oblivion"
+
+@0 = ~Axt der klirrenden Kälte~
+@1 = ~Klinge der Vergessenheit +2~
+
+@10 = ~Die Klinge dieser Axt ist schwarz wie die Nacht, und sie reflektiert überhaupt kein Licht. Die gesamte Axt besteht aus Metall, und sie strahlt eine eisige Kälte aus, die deine Hände gefühllos macht.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Klinge)
+Initiativefaktor: 7
+Fertigkeit: Axt
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 7~
+@11 = ~Wenn ihre Kräfte erwacht sind und ihr Name bekannt ist, wird die "Klinge der Vergessenheit" völlig schwarz... Während vorher nur die Schneiden ebenholzfarben waren, hat sich die Schwärze nun über die gesamte Klinge ausgebreitet. Die Kälte, die die Klinge ausstrahlt, wird verzehnfacht, so daß es schmerzvoll ist, sie zu lange zu halten.
+
+Die "Klinge der Vergessenheit" fügt dem Gegner bei jedem Schlag Auflösungsschaden zu, denn sie löst das Fleisch um jede Wunde herum, die sie schlägt, auf und ätzt die Wunde beim Schlagen aus.
+
+Es gibt auch Vermutungen, daß irgendwo in der Axt selbst eine Sphäre des Nichts eingeschlossen sein könnte, aber das sind nur Vermutungen. In Anbetracht der Tatsache, daß die Ebenen endlos sind, ist alles möglich.
+
+EIGENSCHAFTEN:
+
+Kältewiderstand: +50 %
+
+ETW0-Bonus: -1
+Schaden: 1W8 +1 (Klinge)
+Schadensbonus: +1W6 (Kälte)
+Initiativefaktor: 5
+Fertigkeit: Axt
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 5~

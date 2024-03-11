@@ -19,12 +19,12 @@ LANGUAGE ~English~
          ~english~
          ~A7-Planar-ItemPack/tra/english/setup.tra~
          ~A7-Planar-ItemPack/tra/english/mod.tra~
-// LANGUAGE ~Language~
-         // ~LANGUAGE~
-         // ~A7-Planar-ItemPack/tra/english/setup.tra~
-         // ~A7-Planar-ItemPack/tra/english/mod.tra~
-         // ~A7-Planar-ItemPack/tra/LANGUAGE/setup.tra~
-         // ~A7-Planar-ItemPack/tra/LANGUAGE/mod.tra~
+LANGUAGE ~Deutsch~
+         ~german~
+         ~A7-Planar-ItemPack/tra/english/setup.tra~
+         ~A7-Planar-ItemPack/tra/english/mod.tra~
+         ~A7-Planar-ItemPack/tra/german/setup.tra~
+         ~A7-Planar-ItemPack/tra/german/mod.tra~
 
 
 ////////////////////////////////////////////////

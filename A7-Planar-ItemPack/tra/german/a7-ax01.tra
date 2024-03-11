@@ -1,0 +1,21 @@
+// "Ascension"
+
+// @0 = ~~  // #6654
+@1 = ~Auferstehung +2~
+
+// @10 = ~~ // #6656
+@11 = ~"Auferstehung" ist eine der besten Waffen, die in der Großen Gießerei, der Heimat der Gläubigen der Quelle in Sigil, hergestellt werden. Gemeinsam mit dem Hammer "Vernunft" und dem Dolch "Erleuchtung" bildet sie eine Dreiergruppe, die unter dem Namen "Triade der Prüfungen" bekannt ist. Das Symbol des Bundes ist in den Kopf der Axt eingraviert, und die Schneiden der Klingen sind so scharf, daß man damit ein Haar längs spalten könnte.
+
+EIGENSCHAFTEN:
+
+RK-Bonus: -1
+Charisma: +1
+
+ETW0-Bonus: -2
+Schaden: 1W8 +2 (Klinge)
+Initiativefaktor: 4
+Fertigkeit: Axt
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 4~

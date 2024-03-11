@@ -1,0 +1,18 @@
+// Bone Dagger
+
+// @0 = ~~  // #6343
+@1 = ~Knochendolch +1~
+
+// @10 = ~~ // #6720
+@11 = ~Die Klinge dieses Dolches scheint aus den Knochen irgendeines Wesens zu bestehen. Die Schneide der Klinge ist extrem scharf.
+
+EIGENSCHAFTEN:
+
+ETW0-Bonus: -1
+Schaden: 1W4 +1 (Stich)
+Initiativefaktor: 1
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 1~

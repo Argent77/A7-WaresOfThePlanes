@@ -1,0 +1,61 @@
+// Use tra numbers of 2000 or higher
+
+@2000 = ~Erfahrener Reisender~
+@2001 = ~Ebb Knarrknie~
+@2002 = ~Ebbs Kriegsbeute~
+@2003 = ~Kunde~
+@2004 = ~Mädel~   // colloquial for "girl"
+@2005 = ~Junge~   // colloquial for "boy"
+@2006 = ~Niemand bestielt mich!~
+@2007 = ~Dafür werdet Ihr zahlen!~
+@2008 = ~Der beste Stahl in ganzen Ebenen!~
+@2009 = ~Ein gut bewaffneter Abenteurer ist ein *lebender* Abenteurer!~
+@2010 = ~Fairer Handel, ehrliche Abschlüsse!~
+@2011 = ~Waren zu Preisen, die man nicht glauben kann!~
+@2012 = ~Waffen zu verkaufen!~
+@2013 = ~Kommt hier rüber und legt Euer Gold mal nützlich an!~
+
+// Cutscene: Ebb and customer
+@2100 = ~*seufz* Ein weiterer ruhiger Tag.~
+@2101 = ~Oh, ein Kunde?~
+@2102 = ~Ich würde gerne Eure Waren sehen, bitte sehr.~
+@2103 = ~Gewiss! Ihr werdet nicht enttäuscht sein.~
+@2104 = ~Hmm, das ist eine ganz schöne Auswahl.~
+@2105 = ~Ich möchte gerne dieses schicke Armband kaufen.~
+@2106 = ~Eine gute Wahl. Das habe ich während einer meiner Scharmützel in Ysgard erworben.~
+@2107 = ~Eine wirklich spektakuläre Darbietung. Ich hoffe, er genießt die Reise.~
+@2108 = ~Mal sehen, wie es funktioniert.~
+@2109 = ~Was zum...~
+@2110 = ~NEIIIN!~
+@2111 = ~Armband der Allmacht: Verwandlung zum Kämpfer~
+@2112 = ~Armband der Allmacht: Verwandlung zum Magier~
+@2113 = ~Armband der Allmacht: Verwandlung zum Schurken~
+@2114 = ~Armband der Allmacht: Aufruf zur Schlacht~
+
+// User journal entries
+@3000 = ~Ich habe einen ungewöhnlichen Gefährten getroffen, der sich Ebb Knarrknie nennt. Er behauptet, ein Bewohner von Sigil, der "Stadt der Tore", zu sein. Jetzt reist er durch ganz Faerûn, um seine Waren feilzubieten.~
+@3001 = ~Ebb Knarrknie sagte mir, dass man ihn entweder in Beregost, dem Jahrmarkt von Nashkell oder in Ulgoths Bart antreffen kann, solange er die Schwertküste bereist.~
+@3002 = ~Ebb Knarrknie sagte mir, dass man ihn entweder in Handelstreff, in Imnestal in den Umarhügeln oder in Athkatlas Marktbezirk antreffen kann, solange er Amn bereist.~
+
+// Quest-related journal entries
+@3100 = ~Ein gnomischer Apparat~
+
+@3101 = ~Ein gnomischer Apparat
+
+Ebb Knarrknie erzählte mir von seiner neuesten Anschaffung, als ich ihm in Amkethran begegnete. Es ist anscheinend eine Art exotische Waffe, die er von einem Gnomzauberer erworben hat. Leider ist sie nicht funktionstüchtig. Vielleicht gibt es etwas, bei dem ich ihm helfen kann?~
+
+@3102 = ~Ein gnomischer Apparat
+
+Nach der Reparaturanleitung, die Ebb vom Gnom erhalten hat, können die beschädigten Teile der Waffe ersetzt werden. Dafür benötigt er allerdings einige Dinge: ein Beljuril, sowie Schriftrollen des Schutzes vor magischer Energie und Auflösung. Ich frage mich langsam, wie tödlich diese Waffe sein wird.~
+
+@3103 = ~Ein gnomischer Apparat
+
+Ich habe die Gegenstände abgeliefert, die zur Reparatur der gnomischen Waffe benötigt werden. Ebb brach auf, um den Gnom erneut aufzusuchen, was wohl etwa einen Tag dauern sollte.~
+
+@3150 = ~Ein gnomischer Apparat
+
+Ebb Knarrknie hat sein Wort gehalten und ist mit der reparierten Apparatur zurückgekommen. Er hat sie in seinen Warenbestand aufgenommen, wo ich ihn kaufen kann, wenn ich das möchte.~
+
+@3151 = ~Ein gnomischer Apparat
+
+Es sieht so aus, als ob Ebb Knarrknie für immer fortgegangen ist, da sich die Ereignisse in Amkethran überschlagen. Ich hätte ihn schon früher aufsuchen sollen, bevor die Hölle ausbrach.~

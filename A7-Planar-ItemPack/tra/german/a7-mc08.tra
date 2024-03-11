@@ -1,0 +1,32 @@
+// Club of Nettles
+
+@0 = ~Stachelige Keule~
+@1 = ~Nesselkeule~
+
+@10 = ~Diese Keule scheint aus einer Art stacheliger Pflanze hergestellt zu sein. Der Kopf der Keule ist mit kleinen Dornen verziert, die leicht abgebrochen werden können.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W6 (Wucht)
+Initiativefaktor: 4
+Fertigkeit: Keule
+Typ: 1-händig
+Mindeststärke: 5
+
+Gewicht: 3~
+@11 = ~Diese Keule scheint aus einer Art stacheliger Pflanze hergestellt zu sein. Der Kopf der Keule ist mit kleinen Dornen verziert, die leicht abgebrochen werden können.
+
+Diese Keule ist eine der beliebtesten Waffen unter Dieben. Bei einem erfolgreichen Treffer verhaken sich winzige Schwarzstacheldornen in der Haut des Opfers und bewirken, daß es eine kurze Zeitlang desorientiert wird. Dadurch hat der Dieb Zeit, das Opfer sicher auszurauben und zu entkommen.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer wird das Ziel für 1 Runde verwirrt (Rettungswurf gg. Zauber).
+
+ETW0-Bonus: -2
+Schaden: 1W6 (Wucht)
+Initiativefaktor: 3
+Fertigkeit: Keule
+Typ: 1-händig
+Mindeststärke: 5
+
+Gewicht: 4~

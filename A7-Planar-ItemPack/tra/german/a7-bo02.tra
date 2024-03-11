@@ -1,0 +1,28 @@
+// Acidic Sponge Bolts
+
+@0 = ~Sphärische Bolzen~
+@1 = ~Säureschwamm-Bolzen +1~
+
+@10 = ~Diese Bolzen haben kugelförmige Spitzen, die weich wie Kitt sind. Du kannst dir nicht vorstellen, wozu sie verwendet werden.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Geschoss)
+Schusswaffe: Armbrust
+
+Gewicht: 0~
+@11 = ~Die kittähnlichen Kugeln auf den Spitzen dieser Armbrustbolzen sind eigentlich getrocknete Schwämme, wie man sie in vielen der großen Seen Bytopias antrifft. Von den meisten Gelehrten scheinbar nicht beachtet, hat man rein zufällig herausgefunden, daß diese winzigen Schwämme die Fähigkeit besitzen, Säuren aufzunehmen und in ihrem Körper zu speichern, ohne sich selbst Schaden zuzufügen.
+
+Dies hatte zur Folge, daß unzählige dieser Wesen gesammelt und gezüchtet wurden, um sie im Blutkrieg als Waffen gegen die Scheusale einzusetzen. Nachdem sie einige Tage lang nur Säure als Nahrung erhalten haben, werden sie geerntet, getrocknet und mit einem Harz versiegelt, das sich wie eine dehnbare Blase um den Schwamm legt. Der Schwamm wird dann auf der Spitze eines Pfeils oder Armbrustbolzens angebracht und ist einsatzbereit.
+
+Wenn die Spitze des Bolzens ein Wesen mit ausreichender Wucht trifft, zerplatzt die Harzblase, der Schwamm wird ausgedrückt, und die Säure verteilt sich im Körper des Opfers.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer erleidet das Ziel 6 Schadenspunkte durch Säure (Rettungswurf gg. Odemwaffen für halben Schaden).
+
+ETW0-Bonus: -1
+Schaden: 1W2 +1 (Geschoss)
+Schusswaffe: Armbrust
+
+Gewicht: 0~

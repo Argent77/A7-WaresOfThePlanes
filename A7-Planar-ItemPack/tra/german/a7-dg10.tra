@@ -1,0 +1,18 @@
+// Green Steel Dagger
+
+// @0 = ~~  // #6343
+@1 = ~Dolch aus Grünstahl +1~
+
+// @10 = ~~ // #6720
+@11 = ~Dieser schlanke Dolch wurde aus dem berühmten Baatorianischen Grünstahl gefertigt. Dieses eigenartige grüne Erz, das nur in den Ödländern von Avernus vorkommt, wird durch besondere Glühverfahren in ein Metall umgewandelt, das viel leichter als normaler Stahl ist. Waffen aus Grünstahl können auch ihre außergewöhnlich feinen Schneiden bewahren und sind so in der Lage, mehr Schaden als normale Waffen zu verursachen.
+
+EIGENSCHAFTEN:
+
+ETW0-Bonus: -1
+Schaden: 1W4 +1 (Stich)
+Initiativefaktor: 0
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 0~

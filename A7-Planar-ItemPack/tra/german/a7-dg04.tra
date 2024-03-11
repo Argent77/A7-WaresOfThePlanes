@@ -1,0 +1,18 @@
+// Phantom Dagger
+
+// @0 = ~~  // #6343
+@1 = ~Phantomdolch +3~
+
+// @10 = ~~ // #6720
+@11 = ~Dieser Dolch scheint beinahe von selbst nach seinen Feinden zu greifen und instinktiv die verwundbarste Stelle aller Wesen zu finden.
+
+EIGENSCHAFTEN:
+
+ETW0-Bonus: -3
+Schaden: 1W4 +3 (Stich)
+Initiativefaktor: 0
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 1~

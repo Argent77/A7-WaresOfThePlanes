@@ -1,0 +1,21 @@
+// Backbiter
+
+// @0 = ~~  // #6343
+@1 = ~Leiser Tod +1~
+
+// @10 = ~~ // #6720
+@11 = ~Diese magische Klinge, gefertigt speziell für Meister des Querhandels, verbirgt das Annähern des Trägers, indem sie jedes seiner Geräusche dämpft und so die Chancen auf ein Annähern an ein Ziel durch List erhöht.
+
+EIGENSCHAFTEN:
+
+Im Schatten verstecken: +10 %
+Leise bewegen: +10 %
+
+ETW0-Bonus: -1
+Schaden: 1W4 +2 (Stich)
+Initiativefaktor: 1
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 1~

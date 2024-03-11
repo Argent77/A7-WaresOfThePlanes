@@ -1,0 +1,15 @@
+// Zephyr Bolts
+
+// @0 = ~~  // #6632
+@1 = ~Zephyr-Bolzen +1~
+
+// @10 = ~~ // #6772
+@11 = ~Diese Armbrustbolzen haben Spitzen mit Rillen an den Seiten. Sie richten nicht mehr Schaden an als normale Armbrustbolzen. Sie sind jedoch mit einem schwachen Zauber belegt, der ihnen ermöglicht, während des Fluges ihre Richtung zu korrigieren. Dies erhöht die Wahrscheinlichkeit, einen Gegner zu treffen.
+
+EIGENSCHAFTEN:
+
+ETW0-Bonus: -1
+Schaden: 1W8 (Geschoss)
+Schusswaffe: Armbrust
+
+Gewicht: 0~

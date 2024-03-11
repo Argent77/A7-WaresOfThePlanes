@@ -1,0 +1,21 @@
+// Runeblade
+
+// @0 = ~~  // #6343
+@1 = ~Runenklinge~
+
+// @10 = ~~ // #6720
+@11 = ~Diese verzauberten Klingen, geschaffen von einer legendären Gilde von Kriegsmagiern, die als die "Scharlachroten Seher" bekannt waren, wurden speziell zur Verteidigung gegen gegnerische Zauberwirker erdacht. Die in die Klinge eingeätzten winzigen Runen sind machtvolle Schutzzauber vor jeglicher Art von Magie. Unglücklicherweise ist die so völlig auf die magische Verteidigung ausgelegte Waffe aufgrund ihres eher unhandlichen Designs im Nahkampf nahezu wirkungslos.
+
+EIGENSCHAFTEN:
+
+Magiewiderstand: +25 %
+RW-Bonus: -2 gg. Zauber
+
+ETW0-Bonus: +4
+Schaden: 1W4 (Stich)
+Initiativefaktor: 3
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 1~

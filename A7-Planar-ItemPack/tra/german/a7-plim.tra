@@ -1,0 +1,73 @@
+// Pet Lim-Lim
+
+@0 = ~Haustier Lim-Lim~
+// @1 = ~~
+
+@10 = ~Dies ist dein Haustier Lim-Lim. Es ist ein insektenartiges Wesen, das normalerweise in den Außenländern zu finden ist.
+
+EIGENSCHAFTEN:
+
+Gewicht: 5~
+// @11 = ~~
+
+// "Converse" button label
+@20 = ~Streicheln~
+// Status message
+@21 = ~In Stein verwandelt~
+
+// Creature name
+@30 = ~Haustier Lim-Lim~
+@31 = ~Lim-Lim~
+
+// Creature sound slots (DO NOT TRANSLATE!)
+@40 = ~[Battle Cry 1]~ [a7-lim1]
+@41 = ~[Battle Cry 2]~ [a7-lim2]
+@42 = ~[Death]~ [a7-lim8]
+
+// Lim-Lim dialog lines
+@100 = ~Dies ist dein Haustier, ein Lim-Lim. Als es merkt, daß es deine Aufmerksamkeit hat, zirpt es dich liebevoll an. "Piyo!"~
+@101 = ~Untersuche dein Lim-Lim.~
+@102 = ~Heb dein Lim-Lim wieder auf.~
+@103 = ~Streichle dein Lim-Lim.~
+@104 = ~Gib deinem Lim-Lim einen kräftigen Tritt.~
+@105 = ~Hör auf, mit deinem Lim-Lim zu spielen.~
+@106 = ~Dein Lim-Lim ist immer noch verärgert über dein jüngstes aggressives Verhalten und springt schnell außer Reichweite.~
+@107 = ~Dein Lim-Lim scheint eine Kreuzung aus einem Insekt und einem anderen Tier zu sein. Seine Beine sind überdimensional groß und seine Arme klein, fast rudimentär. Ein leuchtend gesprenkelter Halbpanzer bedeckt seinen Rücken. Es besitzt zwei Paar insektenartige Flügel und winzige schwarze Augen. Sein Mund scheint die ganze Zeit vergnügt zu grinsen.~
+@108 = ~"Pijo! Pijo!" Das Lim-Lim hüpft fröhlich herum, seine Flügel summen. Es scheint die Zuwendung ganz besonders zu genießen.~
+@109 = ~Streichle dein Lim-Lim noch etwas mehr.~
+@110 = ~Du willst dem Lim-Lim einen kurzen Tritt versetzen, doch es weicht dir geschickt aus. "Pijo!" Es dreht sich um und flieht mit schwirrenden Flügeln.~
+@111 = ~Du willst dem Lim-Lim einen weiteren kurzen Tritt versetzen, doch es weicht dir geschickt aus. "Pijo!" Es dreht sich um und flieht mit schwirrenden Flügeln.~
+@112 = ~Du willst dem Lim-Lim einen kurzen Tritt versetzen, aber zu deiner Überraschung stößt es ein schrilles Zirpen aus und blickt dich bedrohlich an.~
+@113 = ~Was zum...~
+@114 = ~Setz dein Lim-Lim ab, damit es ein wenig herumrennen kann.~
+@115 = ~"Pijo! Pijo!" Das Lim-Lim zappelt fröhlich herum. Seine Flügel schwirren. Es scheint die Zuwendung ganz besonders zu genießen.~
+@116 = ~Du versuchst, das Lim-Lim zu treten, doch es befreit sich aus deiner Hand und fliegt auf den Boden!~
+@117 = ~Huch...~
+@118 = ~Du versuchst, das Lim-Lim noch einmal zu treten, doch es befreit sich aus deiner Hand und fliegt auf den Boden!~
+@119 = ~Du versuchst, das Lim-Lim noch einmal zu treten. Zu deiner Überraschung stößt es ein schrilles Zirpen aus und blickt dich bedrohlich an, bevor es sich aus deiner Hand befreit und auf den Boden fliegt.~
+
+// Felonius Gist dialog lines
+@200 = ~Ich habe gehört, dass ihr ein Sammler von Kunst und Antiquitäten seid. Ich würde Euch gerne diese authentische Lim-Lim Steinstatue anbieten.~
+@201 = ~Nun, zeigt mal her.~
+@202 = ~Die Statue ist in der Tat meisterhaft gearbeitet, mit so viel Sorgfalt in jedem Detail. Ich kann Euch tausend Goldstücke dafür bieten. Seid Ihr einverstanden?~
+@203 = ~Ja, das bin ich.~
+@204 = ~Nein, ich möchte mich davon nicht trennen.~
+@205 = ~Die Statue scheint in der Tat authentisch zu sein. Ich bezweifle allerdings, dass ein Strolch wie Ihr sie auf legitime Art erworben habt. Aber ich denke, es kann nicht schaden, mit Euch trotzdem Geschäfte zu machen. Ich kann Euch dafür 400 Goldstücke anbieten. Seid Ihr einverstanden?~
+@206 = ~Es ist zweifelhaft, dass ein Rüpel wie Ihr etwas *Authentisches* anzubieten hat. Diese Statue wurde wohl eher aus einer Grabstätte geplündert oder aus irgendeinem Barbarenlager geraubt. Ich möcht damit nichts zu tun haben. Ich bitte Euch, jetzt zu gehen.~
+@207 = ~Es war mir ein Vergnügen, mit Euch Geschäfte zu machen. Wenn Ihr mich jetzt entschuldigen würdet, ich muss mich um meine Neuerwerbung kümmern.~
+@208 = ~Schön. Unser Geschäft ist damit abgeschlossen. Wenn Ihr mich jetzt entschuldigen würdet, ich muss mich um meine Neuerwerbung kümmern.~
+@209 = ~Das ist bedauerlich. Wenn Ihr keine weiteren Geschäfte mit mir habt, dann bitte ich Euch, jetzt zu gehen.~
+
+// Quataris dialog lines
+@300 = ~Ich würde Euch gerne diese authentische Lim-Lim Steinstatue anbieten.~
+@301 = ~Verzeihung, ich bin schon wieder weg.~
+@302 = ~Dies ist in der Tat eine exquisite Statue.~
+@303 = ~Verzeiht mir bitte meine voreilige Bemerkung. Ich bin immer gerne bereit, auf potenzielle Kunden einzugehen. Diese Statue scheint tatsächlich in einem exquisiten Zustand zu sein.~
+@304 = ~Diese unglaubliche Detailtreue der Statue ist atemberaubend. Ich habe bisher noch nicht von einem Künstler namens "Lim-Lim" gehört, aber die Statue wird bei der nächsten Auktion sicher einen guten Preis erzielen.~
+@305 = ~Für eine Arbeit dieser Qualität zahle ich Euch gerne 4.000 Goldstücke. Seid Ihr interessiert?~
+@306 = ~Ja, das bin ich.~
+@307 = ~Nein, ich möchte mich noch nicht davon trennen.~
+@308 = ~Leider schätzt Athkatlas Adel dieser Tage Gemälde höher ein als Skulpturen und Statuen. Ein Künstler namens "Lim-Lim" ist mir nicht bekannt, aber eine Statue dieser Qualität wird sicher trotzdem einen neuen Besitzer finden.~
+@309 = ~Ich kann Euch 2.000 Goldstücke dafür bieten. Seid Ihr interessiert?~
+@310 = ~Es war mir ein Vergnügen, mit Euch Geschäfte zu machen.~
+@311 = ~Das ist bedauerlich. Mein Angebot besteht weiterhin, falls Ihr Eure Meinung doch noch ändern solltet. Noch einen schönen Tag und gute Geschäfte.~

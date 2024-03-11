@@ -1,0 +1,21 @@
+// Vrock Club
+
+// @0 = ~~  // #6701
+@1 = ~Vrock-Keule +2~
+
+// @10 = ~~ // #6703
+@11 = ~Diese Keule wurde aus den Knochen eines Vrocks hergestellt und ist eine schreckliche Waffe.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer erleidet das Ziel mit 25 % Wahrscheinlichkeit 1 Schadenspunkt durch Gift pro Sekunde für 8 Sekunden (Rettungswurf gg. Tod).
+
+ETW0-Bonus: +2
+Schaden: 1W6 +2 (Wucht)
+Initiativefaktor: 2
+Fertigkeit: Keule
+Type: One-handed
+Typ: 1-händig
+Mindeststärke: 5
+
+Gewicht: 4~

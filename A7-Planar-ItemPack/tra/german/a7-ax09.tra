@@ -1,0 +1,39 @@
+// "Final Judgment"
+
+@0 = ~Henkersaxt~
+@1 = ~Jüngstes Gericht +3~
+
+@10 = ~Diese zweischneidige Streitaxt erinnert an die Axt eines Henkers. Ihre Klinge wurde in Form des Symbols des Gnadentöter-Bundes geschmiedet (ein roter Drache mit gespreizten Flügeln... die gespreizten Flügel bilden dabei die Schneiden der Axt). Die Axt selbst ist riesig, und man braucht gewaltige Kraft, um sie wirkungsvoll einzusetzen.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Klinge)
+Initiativefaktor: 7
+Fertigkeit: Axt
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 7~
+@11 = ~Diese uralte doppelklingige Streitaxt erinnert an eine Henkersaxt. Der Kopf wurde in Form des Symbols der Gnadentöter (ein roter Drache mit ausgebreiteten Flügeln, die die Klingen der Axt bilden) geschmiedet. Die Axt selbst ist riesig und erfordert zur effektiven Nutzung eine ungemeine Kraft.
+
+Diese Axt ist ebenso Teil von Vhailor wie seine Rüstung, und die Axt selbst trägt einen Teil seiner Essenz in sich. Dadurch ist sie der Gerechtigkeit völlig ergeben und gewährt dem Träger keine Ruhe, solange noch "Urteile" ausgeführt werden müssen. Der beachtliche Schaden, den sie dem Gegner zufügt, wird verdoppelt, wenn die Axt ein schuldiges oder chaotisches Wesen trifft. Außerdem verleiht die Axt ihrem Träger einen Teil ihrer Kraft, wodurch er zusätzlichen Schutz vor Angriffen erhält.
+
+Die Herkunft dieser Axt ist unbekannt. Wenn du raten solltest, würdest du sagen, daß die Axt ihre Kräfte einfach aus Vhailors Glauben gewonnen hat.
+
+EIGENSCHAFTEN:
+
+Kann nur durch „Fluch brechen“ wieder abgenommen werden.
+
+RK-Bonus: -1
+
+ETW0-Bonus: -3
+Schaden:
+ 2W6 +3 (Klinge)
+ 4W6 +6 gg. chaotische Wesen
+Schadensbonus: +1W6 (Feuer)
+Initiativefaktor: 4
+Fertigkeit: Axt
+Typ: 1-händig
+Mindeststärke: 16
+
+Gewicht: 12~

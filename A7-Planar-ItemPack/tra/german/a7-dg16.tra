@@ -1,0 +1,31 @@
+// Mad Splinter
+
+@0 = ~Steinsplitter~
+@1 = ~Verrückter Splitter +1~
+
+@10 = ~Dieses Stück Stein besitzt die Form eines Dolches.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W4 (Stich)
+Initiativefaktor: 2
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 1~
+@11 = ~Dieses Stück Stein besitzt die Form eines Dolches. Es ist ein Teil der Statue des etherserischen Zauberers Gangroighydon und birgt einen mächtigen Zauber. Immer wenn jemandem mit dem Steinsplitter ein Stich versetzt wird, besteht die Chance, daß dieser verflucht wird. Wahrscheinlich hat der fürchterliche Fluch, der auf Gangroighydrons Lippen lag, als er erstarrte, auf seinen gesamten versteinerten Körper übergegriffen und 'vergiftet' nun mit seiner bösen Magie all diejenigen, denen mit dem Splitter ein Stich versetzt wird.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer erleidet das Ziel 1 Schadenspunkte durch Gift pro Sekunde bis es stirbt oder geheilt wird (Rettungswurf gg. Tod).
+Der Gegenstand kann nur für eine begrenzte Anzahl an Angriffen eingesetzt werden, bevor er zerbricht.
+
+ETW0-Bonus: -1
+Schaden: 1W4 +1 (Stich)
+Initiativefaktor: 2
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 1~

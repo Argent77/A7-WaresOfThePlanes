@@ -1,0 +1,20 @@
+// Enchanted Battle Axe
+
+// @0 = ~~  // #6654
+@1 = ~Verzauberte Streitaxt +1~
+
+// @10 = ~~ // #6656
+@11 = ~Bei genauerer Betrachtung der Waffe entdeckst du ein seltsames Symbol, sehr schwach, auf der Oberfläche des Axtkopfes. Wenn du daran mit deinem Finger entlangfährst, entlädt sich plötzlich ein elektrischer Strom, und vor deinen Augen ändert sich der Kopf der Axt in ein silbrig wirkendes Metall.
+
+Die Schneide ist unglaublich scharf. Sie sieht beinahe so aus, als könne sie, wenn nötig, Stein spalten. Das Symbol, das du mit deinem Finger nachgezeichnet hast, glänzt nun stark, und wenn das überhaupt möglich ist, ist die Axt sogar noch leichter geworden.
+
+EIGENSCHAFTEN:
+
+ETW0-Bonus: -1
+Schaden: 1W8 +1 (Klinge)
+Initiativefaktor: 6
+Fertigkeit: Axt
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 4~

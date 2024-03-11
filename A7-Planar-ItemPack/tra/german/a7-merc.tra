@@ -1,0 +1,57 @@
+// Ebb Creakknees dialog
+@0 = ~Ah, sei gegrüßt. Du bist hier genau richtig.~
+@1 = ~Ebb Knarrknie ist mein Name. Dritter Rang des Harmoniums, als ob das hier an diesem entlegenen Ort etwas bedeutet. Ich bin mittlerweile im Ruhestand, zumindest zur Hälfte, und verbringe meine Zeit und mein Geld damit, die Ebenen zu bereisen.~
+@2 = ~Ich habe im Laufe der Jahre auch eine Menge Reichtümer angesammelt, auf die ich in meinen Reisen durch die Ebenen gelangt bin. Du kannst gerne davon etwas kaufen. So bleibt mein Geldbeutel gefüllt.~
+@3 = ~Dritter Rang des Harmoniums?~
+@4 = ~Was kannst du mir über Sigil erzählen?~
+@5 = ~Was ist mit dem Kunden geschehen, mit dem du zuvor gesprochen hast?~
+@6 = ~Was hast du zu verkaufen?~
+@7 = ~Schon gut. Leb wohl.~
+@8 = ~Gibt es sonst noch was, das du wissen möchtest?~
+@9 = ~Du hast vorhin das Harmonium erwähnt. Wer sind sie?~
+@10 = ~Nichts. Leb wohl.~
+@11 = ~Schön, dich wiederzusehen, <LADGAL>. Du hast wohl immer noch nicht genug?~
+@12 = ~Was kann der alte Ebb heute an diesem schönen Tag für dich tun?~
+@13 = ~Warum haben deine Waren keine Bezeichnungen? Es fühlt sich wie ein Glücksspiel an, etwas bei dir zu kaufen.~
+@14 = ~Kannst du mir mehr über die defekte Apparatur sagen?~
+@15 = ~Kannst du mir noch einmal etwas über die defekte Apparatur sagen?~
+@16 = ~Ich habe die Ersatzteile gefunden, die für die Reparatur der defekten Apparatur benötigt werden.~
+@17 = ~Zeige mir bitte deine Waren.~
+@18 = ~Sonst noch etwas?~
+@19 = ~Der Zeitpunkt ist jedenfalls gut gewählt. Ich habe meinen Laden mit noch mehr Waren aufgefüllt. Stöbert und kauft ruhig, mein Freund.~
+@20 = ~Ja, ich habe in vielen Kämpfen und Scharmützeln für das Harmonium gedient. Unser Bund sorgt für Ruhe und Ordnung in Sigil und auch auf anderen Ebenen. Das ist schon so lange so, wie ich denken kann. Und ich kann viele Jahrzehnte zurückdenken.~
+@21 = ~Jetzt, wo ich *fast* im Ruhestand bin, möchte ich alle Orte der Ebenen in Ruhe besichtigen, anstatt meine Zeit in den Gasthäusern und Schenken von Sigil zu verschwenden.~
+@22 = ~Wie dem auch sei, die Ebenen funktionieren auf unerklärliche Weise, selbst für den alten Ebb. Das haben sie schon immer getan. Du klammerst dich an die Mächte der Entropie, aber das ist nur eine Macht von vielen im Multiversum. Es gibt mehr als genug, um die Mächte der Entropie in Schach zu halten. Aber auf meine alten Tage mache ich mir darüber keine Gedanken mehr.~
+@23 = ~Sigil ist ein wundersamer Ort. Er wird auch die "Stadt der Tore" genannt, und aus gutem Grund. Jeder Bogen, jeder Rahmen, jedes Fenster und jede Tür kann ein Portal zu einem anderen Ort sein. Die meisten von ihnen sind allerdings inaktiv, außer man besitzt den richtigen Schlüssel.~
+@24 = ~Ein Schlüssel kann so ziemlich alles sein. Angefangen von einem wortwörtlichen Schlüssel, über einen laut gesprochenen Satz, bis hin zu einem Gedanken, der zu einer bestimmte Uhrzeit gedacht wird, während ein Lim-Lim auf eurem Kopf tanzt. Der Zielort kann ebenfalls jeder Ort im Multiversum sein. Zu viele unerfahrene Abenteurer sind durch Portale geschritten, nur um sich irgendwo inmitten des Blutkrieges wiederzufinden, oder in den endlosen Ozeanen der elementaren Wasserebene zu ertrinken.~
+@25 = ~Die Stadt wird von der Dame der Schmerzen kontrolliert. Ihre Herrschaft ist absolut. Niemand sollte auch nur daran denken, ihren Zorn zu erregen. Das würde niemand überleben, egal wie zäh man ist. Mit viel Glück wird man nur in einen Irrgarten geschickt. Ansonsten könnte man eine neue Art des Sterbens entdecken. Das wäre doch mal etwas.~
+@26 = ~Es tut mir leid, dass ich immer wieder ausschweife, aber man kann die Stadt nur dann wirklich verstehen, wenn man sie selbst erlebt.~
+@27 = ~Ach der? Er hat ein erstklassiges Stück erworben. So gut wie neu. Wahrscheinlich genießt er gerade die Schönheiten und Wunder von Ysgard. Mit etwas Glück findet er auch irgendwann den Weg nach Hause zurück.~
+@28 = ~Aber mach dir nicht zu viele Gedanken darüber. Keine meiner Waren wird dich umbringen. Wenn du einen klaren Kopf behältst, meine ich.~
+@29 = ~Wie schon erwähnt, handelt es sich dabei um Mitbringsel, die ich an den verschiedensten Orten und Ebenen erworben habe. Wenn ich meine Zeit damit verbringen müsste, all diese Dinge zu bestimmen, würde ich wohl an Altersschwäche sterben, bevor ich fertig bin.~
+@30 = ~Ich kann dir versichern, dass alles echt ist und in dieser Welt wahrscheinlich als Rarität durchgehen würde.~
+@31 = ~Ich habe alles, was ein Abenteurer wie du begehrt. Seien es Schmucksachen, die dich unbesiegbar machen oder Waffen, die selbst die tödlichsten Gegner in Asche verwandeln.~
+@32 = ~Oh, und ab und zu fülle ich meine Bestände auf, wenn ich die Gelegenheit habe, meine Heimat zu besuchen. Es lohnt sich also, hin und wieder mal vorbeizuschauen.~
+@33 = ~Eine Weile bin ich noch hier, dann geht es weiter. Meine Reise durch die Schwertküste führt mich wahrscheinlich von Beregost, über den Jahrmarkt von Nashkell, bis Ulgoths Bart und zurück. So weißt du, wo du mich suchen kannst, wenn ich gerade nicht hier bin.~
+@34 = ~Eine Weile bin ich noch hier, dann geht es weiter. Meine Reise durch Amn führt mich wahrscheinlich von Athkatlas Marktbezirk, über Handelstreff, bis nach Imnestal in den Umarhügeln und zurück. So weißt du, wo du mich suchen kannst, wenn ich gerade nicht hier bin.~
+@35 = ~Übrigens habe ich vor kurzem eine merkwürdige Apparatur von einem verwirrten Gnomzauberer erstanden. Seinem Geschwafel zufolge soll es sich dabei um eine tödliche Waffe handeln. Aber sie scheint defekt zu sein. Vielleicht bist du daran interessiert, mir bei der Reparatur zu helfen?~
+@36 = ~Sicher doch. Es handelt sich um eine Waffe mit einem Design, das ich noch nie zuvor gesehen habe. Und glaub mir, ich habe in meinem Leben schon so einiges gesehen. Der Gnomzauberer hat mir einige gekritzelte Notizen hinterlassen, bei denen es sich wohl um Reparaturanweisungen handeln soll. Aber ich kann mir beim besten Willen keinen Reim darauf machen.~
+@37 = ~Was ich allerdings entziffern kann, sind die Ersatzteile, die für die Reparatur benötigt werden. Der defekte Kristall muss durch einen Beljuril mit dem höchsten Reinheitsgrad ersetzt werden. Weiterhin wird eine Schriftrolle des Schutzes vor magischer Energie benötigt, die den Kristall vor Überhitzung schützt. Es wird wohl auch eine Schriftrolle der Auflösung benötigt. Allerdings kann ich nicht entziffern, wofür sie gebraucht wird.~
+@38 = ~Wenn du mir diese Dinge besorgst, dann werde ich mich noch einmal mit dem Gnom darüber unterhalten, wie man diese verdammte Apparatur reparieren kann. Bist du dieser Aufgabe gewachsen, <LADGAL>?~
+@39 = ~Das hört sich faszinierend an. Ich versuche mein Bestes, diese Gegenstände zu finden.~
+@40 = ~Nein, ich bin nicht wirklich daran interessiert.~
+@41 = ~Hervorragend. Ich werde indessen diese Notizen weiter studieren. Vielleicht kann ich in der Zwischenzeit weitere Einzeilheiten entziffern.~
+@42 = ~Na schön. Es wäre auch eine gewaltige Aufgabe, alle Dinge zu besorgen. Ich werde die Notizen trotzdem weiter studieren, für den Fall, dass du deine Meinung doch noch änderst.~
+@43 = ~Gewiss doch. Es handelt sich dabei um eine Waffe in einem Design, dass ich noch nie zuvor gesehen habe. Allerdings scheint es defekt zu sein. Laut den Notizen des Gnoms kann es mit einem Beljuril repariert werden. Außerdem wird noch eine Schriftrolle des Schutzes vor magischer Energie und eine Schriftrolle der Auflösung benötigt. Wenn du mir das alles besorgen kannst, dann werde ich noch einmal mit dem Gnomzauberer darüber sprechen, wie man diese Apparatur reparieren kann.~
+@44 = ~Zeig her. Ja, der Beljuril ist ein wahrhaft prächtiger Anblick, nicht wahr? Und die Schriftrollen hast du auch dabei? Sehr gut. Bist du bereit, dich von ihnen zu trennen?~
+@45 = ~Ja, das bin ich.~
+@46 = ~Noch nicht. Vielleicht später.~
+@47 = ~Ich bringe das dann mal dem alten Gnom. Er wird besser als ich wissen, was man damit anstellt. Ich schätze, die Reparatur dieser verdammten Apparatur wird eine Weile dauern. Komm am besten Morgen wieder.~
+@48 = ~Jederzeit, <LADGAL>. Ich werde hier sein, falls du deine Meinung änderst.~
+@49 = ~Ach ja, dem Gnomzauberer gelang das Unmögliche und hat tatsächlich diese seltsame Apparatur repariert. Ich habe es zu meinem Warenangebot hinzugefügt, falls du es kaufen möchtest.~
+
+// Interjection: Jan
+@100 = ~Also, es ist nicht unsere Schuld, das das Großvolk nicht unseren Gedankengängen folgen kann. Außer dieser Gedankengang ist ein einziger Irrgang, so wie es bei Onkel Trockenkrug gelegentlich zutrifft. Aber das ist nichts, was man nicht mit einer Karte und einem Kompass entwirren kann.~
+
+// Interjection: Haer'Dalis
+@110 = ~Ein aussichtsloser Versuch im Angesicht von Entropie und Verfall. Eure Worte und Taten zögern nur das Unvermeidliche um einen winzigen Zeitraum hinaus. Während ihr hart arbeiten müsst, um Entropie in Schach zu halten, können wir uns gemütlich zurücklehnen und zuschauen. Zeit ist unsere Verbündete.~

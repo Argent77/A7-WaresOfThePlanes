@@ -1,0 +1,39 @@
+// Fiend's Blood Dagger
+
+@0 = ~Rostiger Dolch~
+@1 = ~Scheusalsblut-Dolch~
+
+@10 = ~Trotz seines rostigen Aussehens hat sich dieser Dolch eine rasierklingenscharfe Schneide bewahren können.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W4 (Stich)
+Initiativefaktor: 2
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 1~
+@11 = ~Die Jahre, die dieser ehemals gewöhnliche Dolch im Fleisch eines Scheusals verbracht hat, haben ihn mit Eigenschaften versehen, die besser nur Scheusalen vorbehalten sein sollten. Das Blut des Scheusals ist mit dem Dolch eine Verbindung eingegangen, so daß er sich lauwarm anfühlt.
+
+Im Kampf hört der Besitzer dieses Dolchs in seinem Unterbewußtsein ein ständiges Piepsen, das ihn jegliche Selbstbeherrschung verlieren läßt und ihn unaufhaltsam im Kampf, gleichzeitig jedoch anfällig gegenüber Zaubern macht.
+
+Die Geschichte dieses Dolches ist größtenteils unbekannt. Es ist mehr als wahrscheinlich, daß irgendein Dussel beim Kampf mit einem Scheusal nicht nur seinen Dolch sondern auch sein Leben gelassen hat. Zur Zeit ist sein Name lediglich eine Beschreibung. Er muß sich seinen richtigen Namen erst noch verdienen.
+
+EIGENSCHAFTEN:
+
+Kann nur durch „Fluch brechen“ wieder abgenommen werden.
+Der Träger verfällt in Raserei.
+
+RW-Bonus: +4 gg. Zauber
+
+Bei jedem Treffer erleidet das Ziel 3 Schadenspunkte durch Gift pro Runde für 120 Sekunden (Rettungswurf +2 gg. Tod).
+
+ETW0-Bonus: -2
+Schaden: 1W4 +2 (Stich)
+Initiativefaktor: 1
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 1~

@@ -1,0 +1,21 @@
+// "Enlightenment"
+
+// @0 = ~~  // #6343
+@1 = ~Erleuchtung +2~
+
+// @10 = ~~ // #6720
+@11 = ~Dieser Dolch ist die zweite Waffe der "Triade der Prüfungen" - die anderen beiden sind "Auferstehung" und "Vernunft". Er ist schlank, liegt perfekt in der Hand und ist leicht wie eine Feder. Entlang der Klinge ist das Symbol der Göttermenschen von Sigil eingraviert, und die ganze Waffe scheint vor Erwartung zu beben.
+
+EIGENSCHAFTEN:
+
+RK-Bonus: -1
+Charisma: +1
+
+ETW0-Bonus: -2
+Schaden: 1W6 +2 (Stich)
+Initiativefaktor: 0
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 1~

@@ -1,0 +1,13 @@
+// Bandages
+
+@0 = ~Bandagen~
+// @1 = ~~
+
+@10 = ~Dies ist eine Rolle Bandagen, die zur Stillung kleinerer Wunden nützlich sind. Sie können den Benutzer von 3 Schadenspunkten heilen.
+
+EIGENSCHAFTEN:
+
+Heilt 3 Trefferpunkte.
+
+Gewicht: 0~
+// @11 = ~~

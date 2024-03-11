@@ -1,0 +1,28 @@
+// Bolts of Acheron
+
+@0 = ~Würfelförmige Bolzen~
+@1 = ~Bolzen von Acheron +1~
+
+@10 = ~Diese Armbrustbolzen haben würfelförmige Spitzen aus Metall. Sie sehen nicht so aus, als wären sie im Kampf sehr wirkungsvoll.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Geschoss)
+Schusswaffe: Armbrust
+
+Gewicht: 0~
+@11 = ~Diese verzauberten Bolzen wurden aus einem der großen Würfel Acherons gefertigt. Vielen Gelehrten der Ebenen zufolge ist Acheron eine Ebene, die in ständigem Krieg mit sich selbst steht. Dort soll es riesige Würfel von der Größe ganzer Kontinente geben, die umherschweben und gegeneinander prallen. Auf der Oberfläche dieser Würfel führen Legionen von Soldaten Krieg gegeneinander und schwärmen von Würfel zu Würfel, um jeden anzugreifen, den sie dort vorfinden. Die Ebene ist erfüllt vom Rasseln der Klingen und dem gewaltigen Donnern aufeinanderprallender Würfel.
+
+Diese Bolzen tragen ein Stück von Acherons Herzen in sich. Wenn sie einen Gegner treffen, tun sie das mit einer Wucht, die ihn beim Aufschlag derart in Erstaunen versetzt, daß er für geraume Zeit in einen Zustand der Hilflosigkeit verfällt.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer wird das Ziel für eine Runde betäubt (Rettungswurf gg. Tod).
+
+ETW0-Bonus: -1
+Schaden: 1W4 +1 (Wucht)
+Schusswaffe: Armbrust
+
+Gewicht: 0~
+
+@20 = ~Betäubt~

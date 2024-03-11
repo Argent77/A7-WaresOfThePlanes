@@ -1,0 +1,40 @@
+// "Foolsmiter"
+
+@0 = ~Hammer mit schwerem Kopf~
+@1 = ~Narrentöter +2~
+
+@10 = ~Dieser Kriegshammer besitzt einen riesigen Steinkopf in Form eines rechteckigen Blocks. An allen Seiten des Hammerkopfes befinden sich schwache Reste von Blut und Metzelei. Der Schaft besteht aus dickem Holz, das zu schwach aussieht, um das Gewicht des Hammerkopfes auszuhalten.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W4 +1 (Wucht)
+Initiativefaktor: 4
+Fertigkeit: Kriegshammer
+Typ: 1-händig
+Mindeststärke: 9
+
+Gewicht: 6~
+@11 = ~Dieser Kriegshammer besitzt einen riesigen Steinkopf in Form eines rechteckigen Blocks. An allen Seiten des Hammerkopfes befinden sich schwache Reste von Blut und Metzelei. Der Schaft besteht aus dickem Holz, das zu schwach aussieht, um das Gewicht des Hammerkopfes auszuhalten.
+
+Dieser verzauberte Hammer wurde einst von den Athar als Werkzeug verwendet, nämlich während der Zeit ihrer religiösen Verfolgung in der Geschichte ihres Bundes. Der magische Kriegshammer "Narrentöter" war so konstruiert, daß er besonders dummen Gegnern zusätzlichen Schaden zufügte. Als er jedoch hergestellt wurde, wurde dieser Zauber so umgedreht, daß ein Träger, der noch dümmer war als sein Opfer ebenfalls Schaden erlitt. Viele Jahre lang wurde der Hammer unter rivalisierenden Mitgliedern der Athar rituell als ein primitiver (und tödlicher) Intelligenztest verwendet. Er wurde vor vielen Jahren aus ihrem Hauptquartier im Zerschmetterten Tempel gestohlen und ist seitdem ein- oder zweimal in der einen oder anderen Ebene aufgetaucht.
+
+Es wird angenommen, dass sich der Kampf zwischen Intelligenz und Intelligenz, den der Hammer einst zwischen seinem Träger und seinen Feinden ausfocht, im Laufe der Zeit verflüchtigt hat, aber niemand war entschlossen genug, dies zu testen.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer erleidet das Träger 1W4 +3 Wuchtschaden, basierend auf ihrer Intelligenz:
+  6 oder geringer: immer
+  7: 75 % Wahrscheinlichkeit
+  8: 50 % Wahrscheinlichkeit
+  9: 35 % Wahrscheinlichkeit
+  10 bis 14: 25 % Wahrscheinlichkeit
+  15 oder höher: nie
+
+ETW0-Bonus: -2
+Schaden: 1W4 +3 (Wucht)
+Initiativefaktor: 2
+Fertigkeit: Kriegshammer
+Typ: 1-händig
+Mindeststärke: 9
+
+Gewicht: 5~

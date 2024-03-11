@@ -1,0 +1,21 @@
+// Displacer Ring
+
+@0 = ~Liebesring~
+@1 = ~Verschiebungsring~
+
+@10 = ~Ringe wie diese werden in der Regel von Liebenden dazu verwendet, ihre unsterbliche Liebe zueinander zu erklären. Solche Ringe werden sehr oft unter Liebenden ausgetauscht, wenn eine lange Reise unternommen wird, als Erinnerung und Versprechen, daß man zurückkommen wird.
+
+EIGENSCHAFTEN:
+
+Gewicht: 0~
+@11 = ~Dieser Ring wurde aus dem Blut eines Verschiebungstieres geschaffen und kann die Kraft jeder normalen Waffe teilweise umleiten. Dadurch ist der Träger des Ringes schwerer zu treffen und nimmt im Trefferfall weniger Schaden als üblich.
+
+EIGENSCHAFTEN:
+
+RK-Bonus: -2
+Widerstand gg. Klingenwaffen: +5 %
+Widerstand gg. Stichwaffen: +5 %
+Widerstand gg. Wuchtwaffen: +5 %
+Widerstand gg. Geschosswaffen: +5 %
+
+Gewicht: 0~

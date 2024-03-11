@@ -1,0 +1,31 @@
+// Blind Terror
+
+@0 = ~Übungskeule~
+@1 = ~Blinder Schrecken +2~
+
+@10 = ~Dieser Streitkolben fühlt sich weich, ja, beinahe schwammig an. Er wird höchstwahrscheinlich als Übungswaffe verwendet.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W6 +1 (Wucht)
+Initiativefaktor: 7
+Fertigkeit: Streitkolben
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 10~
+@11 = ~Wenn ein Gegner mit genügend Kraft getroffen wird, wird Säure durch die schwammartige Oberfläche der Keule abgesondert. Durch diesen Säureregen kann der Gegner zeitweilig erblinden, wodurch er leichter zu treffen ist.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer wird das Ziel für 6 Sekunden geblendet (Rettungswurf gg. Zauber).
+
+ETW0-Bonus: -2
+Schaden: 1W6 +3 (Wucht)
+Schadensbonus: +2W4 (Säure)
+Initiativefaktor: 5
+Fertigkeit: Streitkolben
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 4~

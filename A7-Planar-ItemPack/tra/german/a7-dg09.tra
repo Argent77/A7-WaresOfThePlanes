@@ -1,0 +1,28 @@
+// Silver Fork
+
+@0 = ~Gabel~
+@1 = ~Silbergabel~
+
+@10 = ~Dies ist eine gewöhnliche Tafelgabel. Im Kampf ist sie wenig bis gar nicht von Nutzen.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W2 (Stich)
+Initiativefaktor: 2
+Fertigkeit: Dolch
+Typ: 1-händig
+
+Gewicht: 0~
+@11 = ~Dies ist eine silberne Tafelgabel. Ihre Zinken sind besonders scharf. Wenn du es dir genauer überlegst, kann sie auch als Dolch verwendet werden, wenn sie auch höchstwahrscheinlich nicht mehr Schaden anrichten würde als ein normaler Dolch. Sie könnte allerdings bei Gegnern nützlich sein, die nur durch silberne oder kaltgeschmiedete Waffen verletzt werden können.
+
+EIGENSCHAFTEN:
+
+ETW0-Bonus: -2 gg. Lykanthropen
+Schaden:
+ 1W2 (Klinge)
+ 1W2 +2 gg. Lykanthropen
+Initiativefaktor: 2
+Fertigkeit: Dolch
+Typ: 1-händig
+
+Gewicht: 0~

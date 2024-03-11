@@ -1,0 +1,22 @@
+// Bolts of Whistling Doom
+
+@0 = ~Pfeifende Bolzen~
+@1 = ~Bolzen des pfeifenden Untergangs +2~
+
+@10 = ~Diese Armbrustbolzen haben Spitzen mit Rillen an den Seiten. Sie geben ständig seltsame Pfeifgeräusche von sich, die in ihrer Tonhöhe variieren. Das Geräusch treibt einen zwar nicht in den Wahnsinn, ruft aber eine gewisse Unbehaglichkeit bei dir hervor.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Geschoss)
+Schusswaffe: Armbrust
+
+Gewicht: 0~
+@11 = ~Diese Bolzen haben irgendwie die tödliche Harmonie des Pandämoniums eingefangen und, um das Ganze noch schlimmer zu machen, ist ein wütender Luftelementar in die Spitze der Bolzen eingeschlossen. Wenn einer dieser Bolzen einen Gegner trifft, zerbricht die Spitze, und der Luftelementar wird freigesetzt. Dieser wirbelt dann in wilder Raserei um den Gegner herum und schlägt einmal zu, bevor er verschwindet.
+
+EIGENSCHAFTEN:
+
+ETW0-Bonus: -2
+Schaden: 4W4 (Wucht)
+Schusswaffe: Armbrust
+
+Gewicht: 0~

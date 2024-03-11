@@ -1,0 +1,21 @@
+// Hammer of Comminution
+
+// @0 = ~~  // #6345
+@1 = ~Hammer des Zerschmetterns +2~
+
+// @10 = ~~ // #6716
+@11 = ~Forschunsergebnissen zufolge ist dies eine wahrhaft hervorragende Waffe. Dieser Kriegshammer (der auch "Hammer des Zerschmetterns" genannt wird) ist jedem herkömmlichen Vorschlaghammer weit überlegen. Sein vernichtender Schlag zerschmettert das Opfer nicht nur, sondern bricht auch jede getroffene Oberfläche auf, sei es nun Knochen, Metall oder Holz, und fügt so zusätzlichen Schaden zu... Wenn das Opfer den Angriff überlebt, wird es außerdem für den nächsten Angriff "geschwächt".
+
+Der Hammer des Zerschmetterns wurde ausgiebig von Enote genutzt, einem Priester der Schicksalsgarde, im Jahr 14 E.U. Er war ein Philosoph, der gewalttätigen Stimmungsumschwüngen unterlag, wenn er über Theologie diskutierte, und setzte die Tugenden des Hammers als Mittel zur Förderung des Verfalls toter Materie ein. Ob das, was er mit dem Hammer traf, vorher bereits tot war, bleibt dabei offen.
+
+EIGENSCHAFTEN:
+
+ETW0-Bonus: -2
+Schaden: 1W4 +3 (Wucht)
+Schadensbonus: +1W6 (Säure)
+Initiativefaktor: 2
+Fertigkeit: Kriegshammer
+Typ: 1-händig
+Mindeststärke: 9
+
+Gewicht: 5~

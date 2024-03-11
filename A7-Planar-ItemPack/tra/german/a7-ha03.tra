@@ -1,0 +1,18 @@
+// Hammer of Quality
+
+@0 = ~Hammer der Qualität~
+// @1 = ~~  // unused
+
+@10 = ~Dies ist ein gut gearbeiteter Hammer. Ätzungen und Symbole von Göttermenschen aus Sigil schmücken den Kopf der Waffe und ziehen sich bis zum Schaft hinunter. Trotz seines schweren Aussehens fühlt er sich viel leichter an, als er aussieht.
+
+STATISTICS:
+
+ETW0-Bonus: -1
+Schaden: 1W4 +1 (Wucht)
+Initiativefaktor: 4
+Fertigkeit: Kriegshammer
+Typ: 1-händig
+Mindeststärke: 9
+
+Gewicht: 5~
+// @11 = ~~ // unused

@@ -1,0 +1,21 @@
+// "Rule of Threes" Bolts
+
+@0 = ~Pyramidenförmige Bolzen~
+@1 = ~Bolzen der "Regel der Drei"~
+
+@10 = ~Diese Armbrustbolzen haben pyramidenförmige Spitzen. Ihre Aerodynamik ist nicht gerade umwerfend, und sie sehen aus, als würden sie nicht sehr weit fliegen.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Geschoss)
+Schusswaffe: Armbrust
+
+Gewicht: 0~
+@11 = ~Diese Armbrustbolzen sind das Werk eines verdrehten mechanischen Genies. Genau unterhalb der Spitze jedes Bolzen befindet sich ein kleiner Verschluß, der sich durch Drücken entriegeln läßt und damit dem Bolzen ermöglicht, sich zu teilen. Soweit du sehen kannst, wurden die Spitzen der Bolzen sorgfältig in Pyramidenform gefertigt, so daß jede von ihnen nach dem Entriegeln beim Aufschlag dreigeteilt wird. Jedes der dreieckigen Teile schlägt dann eine andere Richtung durch den Körper des Opfers ein und zerfetzt seine inneren Organe.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W10 +5 (Geschoss)
+Schusswaffe: Armbrust
+
+Gewicht: 0~

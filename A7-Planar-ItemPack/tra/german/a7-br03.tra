@@ -1,0 +1,17 @@
+// Magus Guard
+
+@0 = ~Armreif~
+@1 = ~Magus-Schutz~
+
+@10 = ~Dieser Armreif sieht aus, als bestünde er aus Silber. Auf ihm ist ein Halbedelstein angebracht.
+
+EIGENSCHAFTEN:
+
+Gewicht: 0~
+@11 = ~Armbänder wie diese gehören zur Standardausrüstung jedes abenteuerlustigen Zauberkundigen und sind fast überall auf den Ebenen zu finden. Dem Muster nach scheint dieses spezielle Armband in einem in Sigil verbreiteten Stil gefertigt worden zu sein. Die verschiedenen Glyphen der Abwehr, die kunstvoll entlang der Oberfläche eingraviert wurden, haben eine beinahe hypnotische Wirkung auf den Betrachter. Diese Armbänder schützen den Träger vor normalen Angriffen - so, als ob er eine Lederrüstung tragen würde.
+
+EIGENSCHAFTEN:
+
+Rüstungsklasse: 6
+
+Gewicht: 2~

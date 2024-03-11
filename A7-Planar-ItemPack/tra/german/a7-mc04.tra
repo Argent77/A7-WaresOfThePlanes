@@ -1,0 +1,24 @@
+// Death of Desire
+
+// @0 = ~~  // #6337
+@1 = ~Tod des Verlangens +2~
+
+// @10 = ~~ // #6709
+@11 = ~Dieser Streitkolben wird von den Staubmenschen zum Ausschalten jeglichen Verlangens der Lebenden verwendet.
+
+EIGENSCHAFTEN:
+
+Lebende Wesen werden bei jedem Treffer für 1 Runde betäubt (Rettungswurf gg. Zauber).
+
+ETW0-Bonus: -2
+Schaden:
+ 1W6 +3 (Wucht)
+ 1W6 (Stich)
+Initiativefaktor: 5
+Fertigkeit: Streitkolben
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 11~
+
+@20 = ~Betäubt~

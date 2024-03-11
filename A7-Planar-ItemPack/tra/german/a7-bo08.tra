@@ -1,0 +1,15 @@
+// Jagged Bolts
+
+// @0 = ~~  // #6632
+@1 = ~Gezackte Bolzen +1~
+
+// @10 = ~~ // #6772
+@11 = ~Diese verzauberten Bolzen verfügen über eine Reihe gezackter, schwarzer Runen entlang des Schafts. Wenn sie abgefeuert werden, stellen sich die Runen wie Dornen auf und bilden eine zusätzliche Reihe heimtückischer Spitzen, die in das Opfer eindringen.
+
+EIGENSCHAFTEN:
+
+ETW0-Bonus: +1
+Schaden: 1W4 +2 (Geschoss)
+Schusswaffe: Armbrust
+
+Gewicht: 0~

@@ -1,0 +1,21 @@
+// Brimstone Hammer
+
+// @0 = ~~  // #6345
+@1 = ~Schwefelhammer +1~
+
+// @10 = ~~ // #6716
+@11 = ~Diese Art von Waffe, von der man annimmt, sie sei in den Flammen der Feuerebene geschmiedet worden, ist selbst in Sigil ausgesprochen selten. Die elementaren Eigenschaften des Hammers gewähren seinem Träger eine erhöhte Widerstandfähigkeit gegen Feuer und Angriffe durch Feuer. Außerdem fügt der Hammer im Kampf zusätzlichen Schaden zu, wenn er einen Treffer erzielt, indem er das Ziel mit lodernden Flammen versengt.
+
+EIGENSCHAFTEN:
+
+Feuerwiderstand: +25 %
+
+ETW0-Bonus: -1
+Schaden: 1W8 +1 (Wucht)
+Schadensbonus: +4 (Feuer)
+Initiativefaktor: 3
+Fertigkeit: Kriegshammer
+Typ: 1-händig
+Mindeststärke: 9
+
+Gewicht: 5~

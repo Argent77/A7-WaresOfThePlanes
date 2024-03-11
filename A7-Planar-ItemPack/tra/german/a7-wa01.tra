@@ -1,0 +1,25 @@
+// Abyssal Pipe
+
+@0 = ~Pfeife~
+@1 = ~Pfeife aus dem Abgrund~
+
+@10 = ~Dies ist eine kleine, hölzerne Pfeife, die so geschnitzt ist, daß sie dem Kopf eines Dämonen ähnelt.
+
+EIGENSCHAFTEN:
+
+Gewicht: 0~
+@11 = ~Dies ist eine kleine, hölzerne Pfeife, die so geschnitzt ist, daß sie dem Kopf eines Dämonen ähnelt.
+
+Wenn diese Pfeife verwendet wird, stößt sie große Wolken tödlicher Dämpfe aus den Ebenen des Abgrunds aus.
+
+EIGENSCHAFTEN:
+
+Todeswolke:
+Reichweite: 12 m
+Bereich: 4,5 m Radius
+Dauer: 1W4 Phasen
+Tötet Wesen mit 4 oder weniger Trefferwürfeln, die in den Wirkungsbereich geraten, augenblicklich. Wesen mit 5 oder 6 Trefferwürfeln müssen einen Rettungswurf mit einem Malus von -4 gegen Gift bestehen oder sie werden ebenfalls getötet. Wesen mit mehr als 6 Trefferwürfeln (d. h. mehr als 6 Stufen) erleiden in jeder Runde, in der sie sich im Wirkungsbereich aufhalten, 1W10 Schadenspunkte durch Gift.
+
+Mindestintelligenz: 9
+
+Gewicht: 0~

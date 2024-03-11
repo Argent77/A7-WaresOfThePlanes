@@ -1,0 +1,22 @@
+// Porphatys Dagger
+
+// @0 = ~~  // #6343
+@1 = ~Porphatys Dolch +3~
+
+// @10 = ~~ // #6720
+@11 = ~Die Säuren von Porphyatys, der fünften Unterebene von Carceri, sind nicht nur für die physische Beschaffenheit eines Körpers gefährlich - sie greifen auch seinen Geist und seine Seele an, und zehren an seinem Verstand. Waffen, die mit diesem Herzen des Betruges geschmiedet wurden, richten bei ihren Besitzern gleiches an, aber zu viele glauben, daß die Macht der Säure einer Waffe aus Porphatys dieses Risiko wert ist.
+
+EIGENSCHAFTEN:
+
+Kann nur durch „Fluch brechen“ wieder abgenommen werden.
+Der Träger verfällt in Raserei.
+
+ETW0-Bonus: -3
+Schaden: 1W4 +3 (Stich)
+Schadensbonus: +1W6 (Säure)
+Initiativefaktor: 0
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 1~

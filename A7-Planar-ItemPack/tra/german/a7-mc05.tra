@@ -1,0 +1,44 @@
+// "Devil's Due"
+
+@0 = ~Schädelgekrönter Keule~
+@1 = ~Des Teufels Lohn +2~
+
+@10 = ~Diese Waffe hat einen schwarzen Metallgriff, der in den schmalen Schädel gewachsen zu sein scheint, der am oberen Ende befestigt ist. Das Metall sieht so aus, als ob es aus dem Schädel gewachsen sei, und Stachel bohren sich durch die Augenlöcher, den Kiefer und die Schädeldecke selbst.
+
+Der Schädel stammt nicht von einem Menschen. Erstens hat er Stummel, auf denen einmal Hörner saßen (es sieht fast so aus, als seien die Hörner abgeknabbert worden - an den Rändern sind Bißspuren zu erkennen), und zweitens gehören die Reihen der nadelähnlichen Zähne des Schädels keinem menschlichen Wesen, das dir je über den Weg gelaufen ist. Wenn du raten solltest, würdest du sagen, daß der Schädel entfernt etwas von einem Reptil hat.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W6 (Wucht)
+Initiativefaktor: 4
+Fertigkeit: Keule
+Typ: 1-händig
+Mindeststärke: 5
+
+Gewicht: 3~
+@11 = ~Diese Waffe hat einen schwarzen Metallgriff, der in den schmalen Schädel gewachsen zu sein scheint, der am oberen Ende befestigt ist. Das Metall sieht so aus, als ob es aus dem Schädel gewachsen sei, und Stachel bohren sich durch die Augenlöcher, den Kiefer und die Schädeldecke selbst.
+
+Das "Metall" ist überhaupt keines, sondern der Überrest des Unterarms eines Wesens, das von unten durch den Schädel eines Scheusals getrieben wurde, der nun den Kopf der Waffe schmückt. Die Stachel, die sich durch den Schädel gebohrt haben, scheinen so eine Art Federkiele aus dem Unterarm des Wesens zu sein.
+
+Wenn diese Waffe im Kampf eingesetzt wird, durchdringen die Stachel der Keule die Haut des Wesens, und aus den Federkielen rinnt Säure in das Opfer, und manchmal auch in den Träger der Waffe, wodurch zusätzlicher Schaden entsteht.
+
+Der gebräuchliche Name für diese Waffe ist "Des Teufels Lohn". Auf wen oder welches Ereignis sich das bezieht, ist nicht bekannt, aber es muß offensichtlich eine schmerzvolle Erfahrung für beide Beteiligten gewesen sein.
+
+EIGENSCHAFTEN:
+
+Kann nur durch „Fluch brechen“ wieder abgenommen werden.
+
+RK-Bonus: -2 gg. Stichwaffen
+RK-Bonus: -2 gg. Geschosswaffen
+
+Bei jedem Treffer erleidet der Träger mit 50 % Wahrscheinlichkeit 1W6 Schadenspunkte durch Säure.
+
+ETW0-Bonus: -2
+Schaden: 1W6 +2 (Wucht)
+Schadensbonus: +1W6 (Säure)
+Initiativefaktor: 4
+Fertigkeit: Keule
+Typ: 1-händig
+Mindeststärke: 5
+
+Gewicht: 3~

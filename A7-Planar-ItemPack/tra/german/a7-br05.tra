@@ -1,0 +1,22 @@
+// Spiked Gauntlets of Ogre Power
+
+@0 = ~Gestachelte Handschuhe~
+@1 = ~Gestachelte Ogerkrafthandschuhe~
+
+@10 = ~An den Fingerknöcheln dieser Handschuhe entlang verläuft eine Reihe riesiger schwarzer Stacheln, mit denen der Träger jedes Ziel durchlöchern kann, gegen das er mit ihnen schlägt. An den Säumen der Handschuhe befinden sich Klammern, als ob sie damit beim Tragen gesichert werden sollen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 2~
+@11 = ~An den Fingerknöcheln dieser Handschuhe entlang verläuft eine Reihe riesiger schwarzer Stacheln, mit denen der Träger jedes Ziel durchlöchern kann, gegen das er mit ihnen schlägt. An den Säumen der Handschuhe befinden sich Klammern, als ob sie damit beim Tragen gesichert werden sollen.
+
+Diese Handschuhe besitzen einen Zauber, mit dem der Träger Gegner mit der Kraft von zehn Männern schlagen kann. Durch die Stacheln wird der Gegner nicht nur verwundet, sondern auch gedemütigt, denn wenn die Knochen des Opfers nicht durch den Angriff völlig zerschmettert werden, verblutet es langsam an den ausgefransten Wunden, die durch die Stacheln verursacht werden.
+
+EIGENSCHAFTEN:
+
+ETW0-Bonus: -2 im waffenlosen Kampf
+Schadensbonus:
+ +1W4 +2 Wuchtschaden im waffenlosen Kampf
+ +1W4 +2 Stichschaden im waffenlosen Kampf
+
+Gewicht: 2~

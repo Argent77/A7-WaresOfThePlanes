@@ -1,0 +1,32 @@
+// Butcherer of Innocents
+
+@0 = ~Fleischerbeil~
+@1 = ~Schlächter der Unschuldigen +2~
+
+@10 = ~Dieses schwere Fleischerbeil scheint in seiner Laufbahn schon so manches Gemetzel gesehen zu haben. Seine breite, flache Klinge hat mehr Einkerbungen als die meisten Streitäxte, die du bisher gesehen hast. Zudem ist sein Holzgriff mit Blutspuren übersät, die sich wohl nie mehr entfernen lassen.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Klinge)
+Initiativefaktor: 7
+Fertigkeit: Axt
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 7~
+@11 = ~Dieses riesige, axtähnliche Hackbeil, erhielt seinen Beinamen im Zusammenhang mit Oswell Breck, einem Schlächter, der einst in Sigils Bezirk der Kuratoren tätig war. Der Plausch besagt, daß dieser liebenswürdige und allseits geachtete Bürger plötzlich auf eine mörderische und blutige Hetzjagd ging, die zehn Tage und zehn Nächte andauerte. Mit dem Hackbeil in der Hand zog er durch die Straßen des Bezirks und zerhackte auf brutalste Weise alles, was ihm vors Beil lief - egal ob Mann, Frau oder Kind. Schließlich setzte die Dame selbst dem Ganzen ein Ende. Es wird gemunkelt, daß er an einer seltsamen Krankheit litt, die seinen Körper langsam dahinsiechen ließ, und daß ihm dies den Verstand raubte und zu dem Blutbad führte.
+
+Der Ursprung dieses Mordwerkzeugs ist geheimnisumwoben. Die unterschiedlichen Zauberer und Gelehrten, von denen die Waffe untersucht wurde, nachdem Oswell in einen Irrgang geschickt worden und sie nicht mehr in Gebrauch war, haben aber die Art ihrer Verzauberung katalogisiert. Das Hackbeil scheint sich von seinen Opfern zu ernähren, indem es ihnen die Lebenskraft aussaugt und einen Teil davon auf den Träger der Waffe überträgt.
+
+EIGENSCHAFTEN:
+
+Überträgt 2 Trefferpunkte vom Zielobjekt auf den Träger.
+
+ETW0-Bonus: -2
+Schaden: 1W8 +2 (Klinge)
+Initiativefaktor: 5
+Fertigkeit: Axt
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 4~

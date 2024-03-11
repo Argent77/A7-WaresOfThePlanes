@@ -1,0 +1,25 @@
+// Bolts of Wincing
+
+@0 = ~Gespreizte Bolzen~
+@1 = ~Bolzen des Zusammenzuckens +1~
+
+@10 = ~Die Spitzen dieser Bolzen sind U-förmig. Die Kanten sind rasiermesserscharf, und der Schaft an sich besteht aus einer dir unbekannten Legierung.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Geschoss)
+Schusswaffe: Armbrust
+
+Gewicht: 0~
+@11 = ~Diese gabelförmigen Bolzen haben dank ihrer Verzauberung nur eines im Sinn: Entmannung. Wenn sie abgefeuert werden, zielen sie auf den verwundbarsten Punkt des Opfers und dringen ins Fleisch ein. Dann arbeitet sich die Spitze eines jeden Bolzens nach außen und richtet noch größeren Schaden an. Dies macht es nahezu unmöglich, ihn herauszuziehen. Die Bolzen sind nach der Reaktion benannt, die eventuelle Augenzeugen nach Abfeuern des Geschosses zeigen.
+
+EIGENSCHAFTEN:
+
+Chance auf kritischen Treffer: +15 %
+
+ETW0-Bonus: -1
+Schaden: 1W8 +1 (Geschoss)
+Schadensbonus: +1W8 +1 (Klinge)
+Schusswaffe: Armbrust
+
+Gewicht: 0~

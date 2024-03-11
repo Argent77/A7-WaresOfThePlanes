@@ -1,0 +1,18 @@
+// Battle Axe of Quality
+ 
+@0 = ~Streitaxt der Qualität~
+// @1 = ~~
+
+@10 = ~In den Schaft und die Klingen dieser Axt sind komplizierte Runen geätzt. Die Klingen der Axt sind messerscharf. Sie sieht so aus, als könne man sich mit ihr rasieren. Auf diese Idee würdest du jedoch nur kommen, wenn du bereits ein paar Humpen Bier intus hättest. Der Griff selbst besteht aus Hartholz, und Leder ist fest um den Griff gewickelt, wodurch der Träger noch fester zugreifen kann.
+
+EIGENSCHAFTEN:
+
+ETW0-Bonus: -1
+Schaden: 1d8 +1 (Klinge)
+Initiativefaktor: 7
+Fertigkeit: Axt
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 8~
+// @11 = ~~

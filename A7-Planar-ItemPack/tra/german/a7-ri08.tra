@@ -1,0 +1,20 @@
+// Serpent Ring
+
+@0 = ~Festivalpreis~
+@1 = ~Schlangenring~
+
+@10 = ~Ein Spielzeugring in Form einer Schlange. Ringe wie dieser werden oft bei Festivals als Trostpreise ausgegeben.
+
+EIGENSCHAFTEN:
+
+Gewicht: 0~
+@11 = ~Dies scheint eine Art Babyschlange zu sein, die in Form eines Ringes gefroren worden ist. Ihre Augen glitzern und wirbeln wie Juwelen und scheinen sich manchmal sogar zu bewegen.
+
+EIGENSCHAFTEN:
+
+Der Träger ist immun gegen Gift.
+
+Magiewiderstand: +15 %
+RW-Bonus: -2 gg. Zauber
+
+Gewicht: 0~

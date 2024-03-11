@@ -1,0 +1,30 @@
+// Phazor +5
+
+@0 = ~Stange mit Griff~
+@1 = ~Phaser +5~
+
+@10 = ~Dieser Gegenstand sieht aus wie eine Stange aus poliertem Metalll mit einem Griff, der gut in der Hand liegt. Wegen seiner geringe Größe können ihn nur Kinder oder Angehörige der kleineren Rassen bequem halten.
+
+EIGENSCHAFTEN:
+
+Gewicht: 1~
+@11 = ~Diese wundersame Waffe wurde ursprünglich von einem Gnomzauberer entdeckt, der für viele Jahrzehnte die Ebenen bereiste. Eines Tages stieß er auf eine hochentwickelte Kultur, die den Gebrauch von Magie zugunsten der Ingenieurwissenschaften aufgaben. Diese Waffe war eine ihrer zahlreichen Erfindungen. Sie war ursprünglich dafür gedacht, hochkonzentrierte Lichtimpulse mit gewaltiger Zerstörungskraft auszusenden. Allerdings entdeckte der Gnom nach seiner Rückkehr schnell, dass die Energiequelle der Waffe auf speziellen Naturgesetzen beruhte, die in Faerûn nicht existieren. Also ersetzte er sie durch einen weniger starken magischen Ersatz.
+
+Die Waffe is recht klein und kann daher nur von Kindern oder Angehörigen der kleineren Rassen bequem und sicher gehalten werden. Sie kann eine begrenzte Anzahl Magieimpulse pro Tag in schneller Folge abfeuern, bevor die Energiequelle wieder aufgeladen werden muss.
+
+EIGENSCHAFTEN:
+
+Angriffe pro Runde: auf 5 gesetzt
+
+Feuert magische Impulse ab, die wie Geschosse mit +5 Verzauberung behandelt werden.
+Bei einem kritischen Treffer zerfällt das Ziel zu Staub (Rettungswurf gg. Tod).
+
+ETW0-Bonus: -5 bonus
+Schaden: 1W20 (Magie)
+Initiativefaktor: 0
+Typ: 2-händig
+Mindestintelligenz: 12
+ 
+Gewicht: 1~
+
+@20 = ~Auflösung~

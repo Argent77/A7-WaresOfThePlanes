@@ -1,0 +1,36 @@
+// Bolts of Kessek the Devourer
+
+@0 = ~Reißzahnbolzen~
+@1 = ~Bolzen von Kessek, dem Verschlingenden +2~
+
+@10 = ~Die Spitzen dieser Bolzen verfügen über zwei lange Reißzähne, die in einem Bogen von ihrem Mittelpunkt ausgehen. Sie sehen bedrohlich aus... und hungrig.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Geschoss)
+Schusswaffe: Armbrust
+
+Gewicht: 0~
+@11 = ~Diese Bolzen werden auch "Kesseks Zähne" genannt. Die Spitzen jener verzauberten Bolzen sind aus Knochen gefertigt und verfügen über zwei lange Fangzähne, die in einem Bogen von ihrer Mitte ausgehen. Wenn einer dieser Bolzen einen Gegner trifft, erwachen die Zähne zum Leben und beginnen, sich langsam und schmerzhaft durch den Körper des Opfers zu fressen.
+
+Der Legende nach war Kessek ein Häuptling der Bariaur in den Außenländern, der vor vielen Jahrhunderten in der Kluft der Tränen zusehen mußte, wie sein Volk während eines Schneesturms verhungerte. Da sie wegen der heftigen Schneefälle in der Kluft festsaßen, sandte er Kundschafter aus, um seine Nachbarn in der Provinz Ohinru um Hilfe zu bitten.
+
+Als die Handelsfürsten von Ohinru von der Not der Bariaur erfuhren, sahen sie darin die Gelegenheit, diese "nomadische Plage" auszulöschen und ihr Land für sich zu beanspruchen. Die Kundschafter der Bariaur wurden hingerichtet und ihre Köpfe auf Mauersimse gestellt, damit "die Geier etwas zu fressen hätten, während die Bariaur verhungerten".
+
+Als die Stürme vorüber waren und mehr als die Hälfte seines Volkes verhungert war, erfuhr Kessek schließlich, was mit seinen Kundschaftern geschehen war. Vor Wut fast in den Wahnsinn getrieben fertigte er ein Bündel Armbrustbolzen aus den Zähnen und Knochen seines verhungerten Volkes. Als er fertig war, reiste er nachts nach Ohinru und feuerte seine Bolzen blindlings in die Straßen der Stadt ab. Dabei flüsterte er jeweils den Namen eines verstorbenen Bariaur, wenn er die Sehne spannte.
+
+Jeder abgeschossene Bolzen wand sich im Flug, suchte gierig nach einem Opfer und fand eins... und dann noch eins und noch eins. Die Nacht war von den erstickten Schreien der Bewohner von Ohinru erfüllt, als die Verschlingenden ihre Körper heimsuchten.
+
+Als es tagte, gab es wieder ein Fressen für die Geier. Von Kessek fehlte jegliche Spur.
+
+Die Bolzen von Kessek, dem Verschlingenden, können noch immer hier und da auf den Ebenen gefunden werden. Man sagt, daß für jedes Opfer, daß ein Bolzen fordere, ein neuer Bolzen entstehe… der über dieselbe Gier verfüge wie der erste.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer erleidet das Ziel 10 Schadenspunkte durch Stich (Rettungswurf gg. Tod für halben Schaden).
+
+ETW0-Bonus: -4
+Schaden: 1W8 +2 (Geschoss)
+Schusswaffe: Armbrust
+
+Gewicht: 0~

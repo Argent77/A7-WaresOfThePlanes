@@ -1,0 +1,21 @@
+// Dread Bond
+
+@0 = ~Armreif~
+@1 = ~Schreckensband~
+
+@10 = ~Dieser Gegenstand besteht aus langen, schwarzen Eisenbändern, die zu einer Art Armband verwoben sind. Spitze Stacheln verlaufen sowohl auf seiner Außen- als auch auf seiner Innenseite. Es sieht so aus, als wäre der Träger jenes Armbands entsetzlichen Schmerzen ausgesetzt.
+
+EIGENSCHAFTEN:
+
+Gewicht: 0~
+@11 = ~Der Legende nach wurde dieses Armband von Nacek dem Sadistischen erschaffen. Seine gesamte Oberfläche ist mit winzigen rasierklingenscharfen Stacheln übersät, aus denen geringe Mengen seltener Reagenzien in den Blutstrom des Trägers injiziert werden. Diese Substanzen bewirken, daß der Träger einen unablässigen Adrenalinstoß der Stärke empfindet.
+
+EIGENSCHAFTEN:
+
+Der Träger ist immun gegen Panik.
+
+Stärke: +1
+
+Gewicht: 3~
+
+@20 = ~Vampir~
