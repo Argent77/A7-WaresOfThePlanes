@@ -42,11 +42,10 @@ DLC Merger can be downloaded from here: https://github.com/Argent77/A7-DlcMerger
 Installation Order & Mod Compatibility
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This mod can be installed anywhere in the mod installation order.
-
-There are no compatibility issues known with other mods. A small number of items may overlap with
-items from Angel's Made in Heaven - Item Pack. But they won't interfere with each other except by
-have the same item names.
+It is recommended to install this mod after Unfinished Business component "The Murder of Acton
+Balthis" to solve a minor dialog conflict.
+A small number of items may overlap with items from Angel's Made in Heaven - Item Pack. But they
+won't interfere with each other except by have the same item names.
 
 
 Components

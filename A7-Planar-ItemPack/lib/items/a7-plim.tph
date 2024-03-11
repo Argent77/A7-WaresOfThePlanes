@@ -126,6 +126,13 @@ WITH_TRA ~%MOD_FOLDER%/tra/english/%itm_resref%.tra~ ~%MOD_FOLDER%/tra/%LANGUAGE
     COMPILE ~%MOD_FOLDER%/dlg/bg1_felonius_gist.d~
   END
   ACTION_IF (has_bg2) BEGIN
-    COMPILE ~%MOD_FOLDER%/dlg/soa_quataris.d~
+    OUTER_SPRINT bye_false ~~
+
+    OUTER_SET disable_goodbye = MOD_IS_INSTALLED ~ub.tp2~ 25  // BG2-UB: The Murder of Acton Balthis
+    ACTION_IF (disable_goodbye) BEGIN
+      OUTER_SPRINT bye_false ~False()~
+    END
+
+    COMPILE EVAL ~%MOD_FOLDER%/dlg/soa_quataris.d~
   END
 END

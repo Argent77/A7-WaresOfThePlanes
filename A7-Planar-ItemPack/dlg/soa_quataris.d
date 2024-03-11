@@ -1,4 +1,6 @@
 // Dialog additions for the art merchant Quataris in Athkatla: Waukeen's Promenade
+// Required variables:
+// bye_false:  Trigger to suppress display of the "Farewell" response
 
 APPEND ~haquat~
 
@@ -53,5 +55,5 @@ END
 
 EXTEND_BOTTOM ~haquat~ 2
   + ~PartyHasItem("a7-pplim")~ + @300 /* I'd like to offer you this authentic Lim-Lim stone statue. */ + haquat.offer.2
-  ++ @301 /* Never mind, I'll be on my way. */ EXIT
+  + ~%bye_false%~ + @301 /* Never mind, I'll be on my way. */ EXIT
 END
