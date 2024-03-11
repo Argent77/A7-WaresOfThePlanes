@@ -36,12 +36,16 @@ END
  * - Updating item description (general, identified)
  * - Retrieving and returning icon and description image resrefs
  *
+ * INT_VAR forced         Indicates whether to assign a string even if the string field
+ *                        contains a valid strref.
  * STR_VAR itm_resref     The item resref.
  * RET icon_resref        BAM resref of the item icon.
  * RET ground_icon_resref BAM resref of the ground item icon.
  * RET desc_image_resref  BAM resref of the item description image.
  */
 DEFINE_PATCH_FUNCTION update_item_generic
+INT_VAR
+  forced = 1
 STR_VAR
   itm_resref = ~~
 RET
@@ -60,16 +64,16 @@ BEGIN
       STR_VAR itm_resref
       RET general_name identified_name general_desc identified_desc
     END
-    PATCH_IF (NOT ~%general_name%~ STR_EQ ~~ && LONG_AT NAME1 = "-1") BEGIN
+    PATCH_IF (NOT ~%general_name%~ STR_EQ ~~ && (forced || LONG_AT NAME1 = "-1")) BEGIN
       SAY NAME1 ~%general_name%~
     END
-    PATCH_IF (NOT ~%identified_name%~ STR_EQ ~~ && LONG_AT NAME2 = "-1") BEGIN
+    PATCH_IF (NOT ~%identified_name%~ STR_EQ ~~ && (forced || LONG_AT NAME2 = "-1")) BEGIN
       SAY NAME2 ~%identified_name%~
     END
-    PATCH_IF (NOT ~%general_desc%~ STR_EQ ~~ && LONG_AT UNIDENTIFIED_DESC = "-1") BEGIN
+    PATCH_IF (NOT ~%general_desc%~ STR_EQ ~~ && (forced || LONG_AT UNIDENTIFIED_DESC = "-1")) BEGIN
       SAY UNIDENTIFIED_DESC ~%general_desc%~
     END
-    PATCH_IF (NOT ~%identified_desc%~ STR_EQ ~~ && LONG_AT IDENTIFIED_DESC = "-1") BEGIN
+    PATCH_IF (NOT ~%identified_desc%~ STR_EQ ~~ && (forced || LONG_AT IDENTIFIED_DESC = "-1")) BEGIN
       SAY IDENTIFIED_DESC ~%identified_desc%~
     END
 

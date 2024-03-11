@@ -1,9 +1,20 @@
 // "Edge of Oblivion"
 
-// @0 = ~~  // #6654
+@0 = ~Freezing Axe~
 @1 = ~Edge of Oblivion +2~
 
-// @10 = ~~ // #6656
+@10 = ~The edge of this axe is night-black, and it reflects none of the light around it. The entire axe is made of metal, and it radiates a heavy chill that numbs your hands.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7~
 @11 = ~When its powers are awakened and its name known, "Edge of Oblivion" becomes entirely black… where once just the edges were ebony, now the blackness has spread across the entire blade. The chill the blade radiates has increased ten-fold, so much so that it is painful to hold it for too long.
 
 "Edge of Oblivion" does disintegration damage every time it strikes an opponent… for every wound it causes, it also disintegrates the flesh around the target area, simultaneously cauterizing the wound as it strikes.

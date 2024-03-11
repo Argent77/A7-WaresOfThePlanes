@@ -1,9 +1,20 @@
 // Club of Piercing
 
-// @0 = ~~  // #6701
+@0 = ~Spiked Club~
 @1 = ~Club of Piercing +1~
 
-// @10 = ~~ // #6703
+@10 = ~This is a heavy iron club that is covered with sharp spikes.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
 @11 = ~This is a heavy iron club that is covered with sharp spikes.
 
 Enchantments have been placed on this club so that it can be wielded with greater accuracy.

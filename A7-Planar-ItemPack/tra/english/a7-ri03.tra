@@ -1,9 +1,13 @@
 // Gehraise's Ring
 
-// @0 = ~~  // #6348
+@0 = ~Simple Silver Ring~
 @1 = ~Gehraise's Ring~
 
-// @10 = ~~ // #
+@10 = ~This small silver ring looks like it belongs on a woman's finger. It feels slightly warm to the touch but seems to have no other special properties.
+
+STATISTICS:
+
+Weight: 0~
 @11 = ~This small silver ring looks like it belongs on a woman's finger. It feels slightly warm to the touch and has the power to ward off poison of any kind.
 
 STATISTICS:

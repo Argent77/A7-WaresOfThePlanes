@@ -1,9 +1,20 @@
 // Fiend Femur
 
-// @0 = ~~  // #6701
+@0 = ~Fiend Bone Club~
 @1 = ~Fiend Femur +2~
 
-// @10 = ~~ // #6703
+@10 = ~This strange leg bone looks faintly metallic. There is the slight smell of sulfur and acid about it, but it radiates a slight chill.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
 @11 = ~This tanar'ri femur carries the last traces of a balor's essence within its marrow. Disgraced in battle and torn apart by its fellow fiends in a ceremonial execution, the bone has since carried with it a vengeful spite towards all of its kind. 
 
 When the femur strikes any tanar'ri or baatezu, serrated teeth bristle up and down the length of the bone and cause tremendous damage to any tanar'ri or baatezu.

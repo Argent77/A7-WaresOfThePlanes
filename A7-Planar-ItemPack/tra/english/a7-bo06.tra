@@ -1,9 +1,16 @@
 // Bolts of Wincing
 
-// @0 = ~~  // #6632
+@0 = ~Splayed Bolts~
 @1 = ~Bolts of Wincing +1~
 
-// @10 = ~~ // #6772
+@10 = ~The head of these bolts are shaped like a "U." The edges are razor sharp, and the shaft itself is made out of some alloy you do not recognize.
+
+STATISTICS:
+
+Damage: 1d8 (missile)
+Launcher: Crossbow
+
+Weight: 0~
 @11 = ~These crotch-shaped bolts have been enchanted with one thing in mind: emasculation. When fired, they home in on the most vulnerable point on a victim's body, sink into the flesh, then the head of each bolt scissors outwards, making it nearly impossible to pull out and increasing the damage considerably. The name of the bolts comes from the reactions of spectators after the bolts are fired. 
 
 STATISTICS:

@@ -1,9 +1,16 @@
 // Acidic Sponge Bolts
 
-// @0 = ~~  // #6632
+@0 = ~Spherical Bolts~
 @1 = ~Acidic Sponge Bolts +1~
 
-// @10 = ~~ // #6772
+@10 = ~These bolts have a soft, globe-shaped head, like putty. You can't imagine what they are used for.
+
+STATISTICS:
+
+Damage: 1d8 (missile)
+Launcher: Crossbow
+
+Weight: 0~
 @11 = ~The putty-like globes on the heads of these crossbow bolts are actually dried-up aquatic sponges found in many of the great lakes of Bytopia. Seemingly unremarkable to most scholars, these tiny sponges were accidentally discovered to have the property of being able to absorb acids and store them in their bodies with no harm to themselves. 
 
 As a result, great masses of these creatures were gathered and bred for use as weapons against fiends in the Blood War. After being fed a steady diet of acid for a few days, the sponges are harvested, dried, and covered with a resin that keeps a soft bubble around the sponge. The sponge is then mounted on the head of an arrow or crossbow bolt and is ready for use. 

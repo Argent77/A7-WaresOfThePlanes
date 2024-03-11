@@ -1,9 +1,20 @@
 // "Heartgrinder"
 
-// @0 = ~~  // #6654
+@0 = ~Weak Battle Axe~
 @1 = ~Heartgrinder +3~
 
-// @10 = ~~ // #6656
+@10 = ~The edge of this axe is dull, and it looks as if it hasn't been sharpened in years. A light layer of rust has formed where the blade meets the axe handle.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7~
 @11 = ~A single teardrop of the wielder's blood, applied at the border where the axe meets the handle, is sufficient to awaken "Heartgrinder." Once applied, the drop of blood freckles across the blade and handle, giving it a dull red radiance. The glow from Heartgrinder pulses, matching the heartbeat of its wielder.
 
 No matter what the target, Heartgrinder is a powerful weapon, capable of tearing through nearly any defenses. Against targets with blood running in their veins (whether their own or another's - vampires beware), Heartgrinder inflicts additional damage, as every stroke also smashes the target's heart, no matter what location the axe struck.

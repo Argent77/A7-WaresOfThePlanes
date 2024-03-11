@@ -1,9 +1,22 @@
 // "Devil's Due"
 
-// @0 = ~~  // #6701
+@0 = ~Skull-Tipped Club~
 @1 = ~Devil's Due +2~
 
-// @10 = ~~ // #6703
+@10 = ~This weapon has a black metal handle that seems to have grown into the narrow skull that is affixed to its top. The metal looks as if it has grown out from the skull, and spikes pierce through the eye sockets, jaw, and from the skull cap itself.  
+
+The skull is not human. For one thing, it has stubs where horns used to be (and looked as if they were gnawn off - teeth marks are visible around the edges) and second of all, the ridges of needle-like teeth that are part of the jaw don't belong to any human you have ever seen. If you were to hazard a guess, the entire skull looks faintly reptilian.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
 @11 = ~This weapon has a black metal handle that seems to have grown into the narrow skull that is affixed to its top. The metal looks as if it has grown out from the skull, and spikes pierce through the eye sockets, jaw, and from the skull cap itself.  
 
 The "metal" is not metal at all, but the remnants of a creature's forearm that punched through the base of the fiendish skull that now bedecks the head of this weapon. The spikes that have pierced through the skull actually appear to be some sort of quills from the creature's forearm.

@@ -1,9 +1,16 @@
 // Bolts of Kessek the Devourer
 
-// @0 = ~~  // #6632
+@0 = ~Fanged Bolts~
 @1 = ~Bolts of Kessek the Devourer +2~
 
-// @10 = ~~ // #6772
+@10 = ~The heads of these enchanted bolts have two long fangs curving out from the center. They look menacing... and hungry.
+
+STATISTICS:
+
+Damage: 1d8 (missile)
+Launcher: Crossbow
+
+Weight: 0~
 @11 = ~Also called "Kessek's Teeth," the head of these enchanted bolts are made of bone and have two long fangs curving out from the center. When one of these bolts strikes an opponent, the fangs takes on a life of their own and begin eating their way slowly and painfully through the victim's body. 
 
 According to legend, Kessek was a bariaur chieftain on the Outlands who was forced to watch his people starve during a winter storm in the Cleft of Tears many centuries ago. Trapped in the Cleft because of heavy snows, he sent scouts from his tribe out to seek aid from his neighbors, the province of Ohinru. 

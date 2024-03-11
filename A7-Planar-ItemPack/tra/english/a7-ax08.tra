@@ -1,9 +1,20 @@
 // Axe of the Jester
 
-// @0 = ~~  // #6654
+@0 = ~Motley Axe~
 @1 = ~Axe of the Jester +3~
 
-// @10 = ~~ // #6656
+@10 = ~This odd axe is so garishly painted and unwieldy that it couldn't possibly be used in combat. The blades of the axe seemed to have been purposely filed down and made blunt possibly to keep the wielder from hurting himself and those around him. More than likely this axe was created for ceremony or better yet as an accouterment for some fools costume.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7~
 @11 = ~The person who created this axe must have been mad or a genius. Only the most skilled of smiths could have forged a weapon using Chaos Matter, the most unstable and unpredictable element in all the planes.
 
 Stories of this particular axe have been told and retold across the planes. Heroic deeds of men defeating creatures of immense power simply by touching the axe to the creature… and of these same men dying horrible deaths while doing simple everyday tasks.

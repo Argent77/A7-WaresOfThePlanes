@@ -1,9 +1,20 @@
 // Kaarlac's Knife
 
-// @0 = ~~  // #6343
+@0 = ~Curved Knife~
 @1 = ~Kaarlac's Knife~
 
-// @10 = ~~ // #6720
+@10 = ~This knife is of outstanding quality and craftsmanship. It is well balanced and its curved blade seems capable of slashing through flesh with very little effort.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
 @11 = ~The final achievement of one Kaarlac Cragenmoor, this enchanted knife is a boon to those who practice the mystic arts. Kaarlac, ever one to aspire to greatness, sought to create a magic item that could retain an imprint of a portion of his memory - particularly the short term memory that contained his considerable spell repertoire. He theorized that, if successful, he could effectively double the amount of spell knowledge he could retain at any given time.
 
 Unfortunately, the enchantment was beyond his capability and in the midst of his fervent casting, Kaarlac went mad and plunged the knife into his own chest. His sacrifice, however, was not completely in vain, for the knife possesses enough of the intended enchantment to bestow upon its wielder the ability to memorize several additional first level spells.

@@ -1,9 +1,22 @@
 // "Hatred's Gift"
 
-// @0 = ~~  // #6654
+@0 = ~Bizarre Blood-Red Axe~
 @1 = ~Hatred's Gift +1~
 
-// @10 = ~~ // #6656
+@10 = ~This huge axe makes you uncomfortable. Bones have been embedded into its surface, and a light sheen of red, possibly blood seem to have mortared the skulls into the shaft of the axe. The blade itself looks to be a mish mash of sharpened teeth pried from the jaws of some huge creature. 
+
+The mere presence of the axe sets you on edge... for some reason, simply having it in your possession makes you angry.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7~
 @11 = ~It is not exactly clear in the annals of known planar history when "Hatred's Gift" was created, but by the bloody trail it has left across the planes seems to have finally reached you. 
 
 The axe exists to inspire hatred in one's enemies and fill its wielder with a berserker rage. When entering combat, the skulls along the shaft come alive, chittering their teeth, and the teeth (remnants of fiendish victims absorbed into the axe blade) extend outwards, biting and tearing into opponents with each strike. 

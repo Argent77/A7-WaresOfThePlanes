@@ -1,9 +1,20 @@
 // Fiend's Blood Dagger
 
-// @0 = ~~  // #6343
+@0 = ~Rusted Dagger~
 @1 = ~Fiend's Blood Dagger~
 
-// @10 = ~~ // #6720
+@10 = ~Despite its rusty appearance, this dagger manages to retain a razor sharp edge.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
 @11 = ~Years of being embedded in the flesh of a fiend have imbued this once ordinary dagger with qualities best left with their kind. Blood of the fiend has infused itself with the dagger causing it to feel slightly warm to the touch.
 
 When in combat the user of this dagger can hear a constant chittering in the back of his mind causing him to lose all self-control making him unstoppable in combat, but vulnerable to spells.

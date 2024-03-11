@@ -1,14 +1,14 @@
 // Stinger Earrings
 
-@0 = ~Earrings~
+@0 = ~Segmented Earrings~
 @1 = ~Stinger Earrings~
 
-@10 = ~Earrings are small bands of precious metal with attached hooks that are used as jewelry or accessory. Some rare earrings have had enchantments placed on upon them that confer various magical abilities.
+@10 = ~These earrings have been made from the hardened shell of a segmented, larva-like creature. Its shell has been treated with some sort of glazed finish that makes it look disturbingly alive. The wire that hooks to the ear looks like it is part of the larva itself, perhaps its stinger or antenna.
 
 STATISTICS:
 
 Weight: 0~
-@11 = ~These earrings have been made from the hardened shell of a segmented, larva-like creature. Their shell has been treated with some sort of glazed finish that makes it look disturbingly alive. The wire that hooks to the ear looks like it is part of the larva itself, perhaps its stinger or antenna.
+@11 = ~These earrings have been made from the hardened shell of a segmented, larva-like creature. Its shell has been treated with some sort of glazed finish that makes it look disturbingly alive. The wire that hooks to the ear looks like it is part of the larva itself, perhaps its stinger or antenna.
 
 To activate the earrings' power, the wearer must prick his thumb with the stinger, allowing it to bond with its new owner. When "awakened," these earrings help protect the wearer from attacks, giving the wearer's skin the same strength and durability of the larva's shell.
 

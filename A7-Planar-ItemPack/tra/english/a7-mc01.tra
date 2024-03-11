@@ -1,9 +1,20 @@
 // Blind Terror
 
-// @0 = ~~  // #6337
+@0 = ~Practice Mace~
 @1 = ~Blind Terror +2~
 
-// @10 = ~~ // #6709
+@10 = ~This mace has a soft almost spongy feel to it. More than likely this is used as a practice weapon.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10~
 @11 = ~When an opponent is struck with sufficient force, acid is released thru the spongy surface of the mace. From the resulting spray of acid, the adversary can become temporarily blinded making him easier to hit.
 
 STATISTICS:

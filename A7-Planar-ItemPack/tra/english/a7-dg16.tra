@@ -1,9 +1,20 @@
 // Mad Splinter
 
-// @0 = ~~  // #6343
+@0 = ~Stone Splinter~
 @1 = ~Mad Splinter +1~
 
-// @10 = ~~ // #6720
+@10 = ~This is a dagger-shaped fragment of a stone.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
 @11 = ~This is a dagger-shaped fragment of stone taken from the statue of the Etherserian sorcerer Gangroighydon. It bears a powerful enchantment - each time someone is stabbed by the splinter, they have a chance of being Cursed. It is most likely that the fell curse trapped upon Gangroighydon's lips has soaked into the very stone of his petrified form, and "poisons" those the splinter stabs with his malicious magic.
 
 STATISTICS:

@@ -1,9 +1,13 @@
 // Mempa's Biting Ring
 
-// @0 = ~~  // #6348
+@0 = ~Jagged Ring~
 @1 = ~Mempa's Biting Ring~
 
-// @10 = ~~ // #17054
+@10 = ~This glittering, silvery ring is sculpted with dozens of tiny, ornate flanges and decorative protrusions. It looks as if it might be slightly uncomfortable to wear, as a careless bearer might cut themselves upon its jagged edges while placing or removing the ring.
+
+STATISTICS:
+
+Weight: 0~
 @11 = ~Mempa was a mage obsessed with the possibility of having her magic items lost or burgled while she was asleep or otherwise incapacitated. While the vast majority of her carried possessions were inseparable from her corpse and thus buried with her, some of her weaker items - early experiments, perhaps - were left behind and remain in the world of the living.
 
 Mempa's Biting Ring, whose powerful aura protects its bearer from bodily harm, is one such item. However, once placed upon one's finger, the ring bites down and holds on so tenaciously that it is nigh impossible to remove it from the 'bitten' digit.
