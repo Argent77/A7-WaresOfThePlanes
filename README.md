@@ -2,7 +2,7 @@
 [![Github downloads (all releases)](https://img.shields.io/github/downloads/Argent77/A7-Planar-ItemPack/total.svg?color=gold)](https://github.com/Argent77/A7-Planar-ItemPack/releases)
 [![Platform](https://img.shields.io/static/v1?label=platform&message=Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Project%20Infinity&color=informational)](https://github.com/Argent77/A7-Planar-ItemPack/releases/latest)
 [![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BG%3AEE%20%7C%20SoD%20%7C%20BG2%3AEE%20%7C%20EET&color=indigo)](https://github.com/Argent77/A7-Planar-ItemPack)
-[![Language](https://img.shields.io/static/v1?label=language&message=English&color=limegreen)](https://github.com/Argent77/A7-Planar-ItemPack)
+[![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20German&color=limegreen)](https://github.com/Argent77/A7-Planar-ItemPack)
 
 # Planar Item Pack
 *A mod for BG:EE, SoD, BG2:EE and EET that imports a great number of items from Planescape: Torment to the Baldur's Gate series.*
