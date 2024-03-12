@@ -1,5 +1,5 @@
 Wares of the Planes (for BG:EE, SoD, BG2:EE and EET)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Version:    0.5-wip
 Author:     Argent77
@@ -42,8 +42,9 @@ DLC Merger can be downloaded from here: https://github.com/Argent77/A7-DlcMerger
 Installation Order & Mod Compatibility
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-It is recommended to install this mod after the Unfinished Business component "The Murder of Acton
-Balthis" to properly handle a minor dialog conflict.
+This mod should be installed after the Unfinished Business component "The Murder of Acton Balthis"
+to resolve a (mostly) cosmetic dialog conflict.
+
 A small number of items may overlap with items from Angel's Made in Heaven - Item Pack. They won't
 interfere with each other except by have the same item names though.
 
@@ -95,8 +96,8 @@ Credits
 Coding and testing: Argent77
 
 
-Copyright Notice
-~~~~~~~~~~~~~~~~
+Copyright Notices
+~~~~~~~~~~~~~~~~~
 
 The mod "Wares of the Planes" is licensed under the "Creative Commons Attribution-NonCommercial-
 ShareAlike 4.0 International License" (https://creativecommons.org/licenses/by-nc-sa/4.0/).
