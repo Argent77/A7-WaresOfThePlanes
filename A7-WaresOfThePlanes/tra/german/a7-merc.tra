@@ -1,7 +1,7 @@
 // Ebb Creakknees dialog
 @0 = ~Ah, sei gegrüßt. Du bist hier genau richtig.~
-@1 = ~Ebb Knarrknie ist mein Name. Dritter Rang des Harmoniums, als ob das hier an diesem entlegenen Ort etwas bedeutet. Ich bin mittlerweile im Ruhestand, zumindest zur Hälfte, und verbringe meine Zeit und mein Geld damit, die Ebenen zu bereisen.~
-@2 = ~Ich habe im Laufe der Jahre auch eine Menge Reichtümer angesammelt, auf die ich in meinen Reisen durch die Ebenen gelangt bin. Du kannst gerne davon etwas kaufen. So bleibt mein Geldbeutel gefüllt.~
+@1 = ~Ebb Knarrknie ist mein Name. Dritter Rang des Harmoniums in Sigil, als ob das hier an diesem entlegenen Ort etwas bedeutet. Ich bin mittlerweile im Ruhestand, zumindest zur Hälfte, und verbringe meine Zeit und mein Geld damit, die Ebenen zu bereisen.~
+@2 = ~Ich habe im Laufe der Jahre auch eine Menge Reichtümer angesammelt, an die ich in meinen Reisen durch die Ebenen gelangt bin. Du kannst gerne davon etwas kaufen. So bleibt mein Geldbeutel gefüllt.~
 @3 = ~Dritter Rang des Harmoniums?~
 @4 = ~Was kannst du mir über Sigil erzählen?~
 @5 = ~Was ist mit dem Kunden geschehen, mit dem du zuvor gesprochen hast?~
@@ -20,10 +20,10 @@
 @18 = ~Sonst noch etwas?~
 @19 = ~Der Zeitpunkt ist jedenfalls gut gewählt. Ich habe meinen Laden mit noch mehr Waren aufgefüllt. Stöbert und kauft ruhig, mein Freund.~
 @20 = ~Ja, ich habe in vielen Kämpfen und Scharmützeln für das Harmonium gedient. Unser Bund sorgt für Ruhe und Ordnung in Sigil und auch auf anderen Ebenen. Das ist schon so lange so, wie ich denken kann. Und ich kann viele Jahrzehnte zurückdenken.~
-@21 = ~Jetzt, wo ich *fast* im Ruhestand bin, möchte ich alle Orte der Ebenen in Ruhe besichtigen, anstatt meine Zeit in den Gasthäusern und Schenken von Sigil zu verschwenden.~
+@21 = ~Jetzt, wo ich *fast* im Ruhestand bin, möchte ich alle Orte der Ebenen in Ruhe besichtigen, anstatt meine Zeit in den Gasthäusern und Schenken von Sigil zu vergeuden.~
 @22 = ~Wie dem auch sei, die Ebenen funktionieren auf unerklärliche Weise, selbst für den alten Ebb. Das haben sie schon immer getan. Du klammerst dich an die Mächte der Entropie, aber das ist nur eine Macht von vielen im Multiversum. Es gibt mehr als genug, um die Mächte der Entropie in Schach zu halten. Aber auf meine alten Tage mache ich mir darüber keine Gedanken mehr.~
 @23 = ~Sigil ist ein wundersamer Ort. Er wird auch die "Stadt der Tore" genannt, und aus gutem Grund. Jeder Bogen, jeder Rahmen, jedes Fenster und jede Tür kann ein Portal zu einem anderen Ort sein. Die meisten von ihnen sind allerdings inaktiv, außer man besitzt den richtigen Schlüssel.~
-@24 = ~Ein Schlüssel kann so ziemlich alles sein. Angefangen von einem wortwörtlichen Schlüssel, über einen laut gesprochenen Satz, bis hin zu einem Gedanken, der zu einer bestimmte Uhrzeit gedacht wird, während ein Lim-Lim auf eurem Kopf tanzt. Der Zielort kann ebenfalls jeder Ort im Multiversum sein. Zu viele unerfahrene Abenteurer sind durch Portale geschritten, nur um sich irgendwo inmitten des Blutkrieges wiederzufinden, oder in den endlosen Ozeanen der elementaren Wasserebene zu ertrinken.~
+@24 = ~Ein Schlüssel kann so ziemlich alles sein. Angefangen von einem wortwörtlichen Schlüssel, über einen laut gesprochenen Satz, bis hin zu einem Gedanken, der zu einer bestimmte Uhrzeit gedacht wird, während ein Lim-Lim auf eurem Kopf tanzt. Der Zielort kann ebenfalls jeder Ort im Multiversum sein. Zu viele unerfahrene Abenteurer sind schon durch Portale geschritten, nur um sich irgendwo inmitten des Blutkrieges wiederzufinden oder in den endlosen Ozeanen der elementaren Wasserebene zu ertrinken.~
 @25 = ~Die Stadt wird von der Dame der Schmerzen kontrolliert. Ihre Herrschaft ist absolut. Niemand sollte auch nur daran denken, ihren Zorn zu erregen. Das würde niemand überleben, egal wie zäh man ist. Mit viel Glück wird man nur in einen Irrgarten geschickt. Ansonsten könnte man eine neue Art des Sterbens entdecken. Das wäre doch mal etwas.~
 @26 = ~Es tut mir leid, dass ich immer wieder ausschweife, aber man kann die Stadt nur dann wirklich verstehen, wenn man sie selbst erlebt.~
 @27 = ~Ach der? Er hat ein erstklassiges Stück erworben. So gut wie neu. Wahrscheinlich genießt er gerade die Schönheiten und Wunder von Ysgard. Mit etwas Glück findet er auch irgendwann den Weg nach Hause zurück.~
@@ -51,7 +51,7 @@
 @49 = ~Ach ja, dem Gnomzauberer gelang das Unmögliche und hat tatsächlich diese seltsame Apparatur repariert. Ich habe es zu meinem Warenangebot hinzugefügt, falls du es kaufen möchtest.~
 
 // Interjection: Jan
-@100 = ~Also, es ist nicht unsere Schuld, das das Großvolk nicht unseren Gedankengängen folgen kann. Außer dieser Gedankengang ist ein einziger Irrgang, so wie es bei Onkel Trockenkrug gelegentlich zutrifft. Aber das ist nichts, was man nicht mit einer Karte und einem Kompass entwirren kann.~
+@100 = ~Also, es ist nicht unsere Schuld, dass das Großvolk nicht unseren Gedankengängen folgen kann. Außer dieser Gedankengang ist ein einziger Irrgang, so wie es bei Onkel Trockenkrug gelegentlich zutrifft. Aber das ist nichts, was man nicht mit einer Karte und einem Kompass entwirren kann.~
 
 // Interjection: Haer'Dalis
 @110 = ~Ein aussichtsloser Versuch im Angesicht von Entropie und Verfall. Eure Worte und Taten zögern nur das Unvermeidliche um einen winzigen Zeitraum hinaus. Während ihr hart arbeiten müsst, um Entropie in Schach zu halten, können wir uns gemütlich zurücklehnen und zuschauen. Zeit ist unsere Verbündete.~

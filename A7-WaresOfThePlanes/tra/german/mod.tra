@@ -33,7 +33,7 @@
 @2114 = ~Armband der Allmacht: Aufruf zur Schlacht~
 
 // User journal entries
-@3000 = ~Ich habe einen ungewöhnlichen Gefährten getroffen, der sich Ebb Knarrknie nennt. Er behauptet, ein Bewohner von Sigil, der "Stadt der Tore", zu sein. Jetzt reist er durch ganz Faerûn, um seine Waren feilzubieten.~
+@3000 = ~Ich habe einen ungewöhnlichen Gefährten getroffen, der sich Ebb Knarrknie nennt. Er behauptet, ein Bewohner von Sigil, der "Stadt der Tore", zu sein. Jetzt reist er durch ganz Faerûn, um die Welt zu sehen und seine Waren feilzubieten.~
 @3001 = ~Ebb Knarrknie sagte mir, dass man ihn entweder in Beregost, dem Jahrmarkt von Nashkell oder in Ulgoths Bart antreffen kann, solange er die Schwertküste bereist.~
 @3002 = ~Ebb Knarrknie sagte mir, dass man ihn entweder in Handelstreff, in Imnestal in den Umarhügeln oder in Athkatlas Marktbezirk antreffen kann, solange er Amn bereist.~
 
@@ -46,7 +46,7 @@ Ebb Knarrknie erzählte mir von seiner neuesten Anschaffung, als ich ihm in Amke
 
 @3102 = ~Ein gnomischer Apparat
 
-Nach der Reparaturanleitung, die Ebb vom Gnom erhalten hat, können die beschädigten Teile der Waffe ersetzt werden. Dafür benötigt er allerdings einige Dinge: ein Beljuril, sowie Schriftrollen des Schutzes vor magischer Energie und Auflösung. Ich frage mich langsam, wie tödlich diese Waffe sein wird.~
+Nach der Reparaturanleitung, die Ebb vom Gnom erhalten hat, können die beschädigten Teile der Waffe ersetzt werden. Dafür benötigt er allerdings einige Dinge: einen Beljuril-Edelstein, sowie Schriftrollen des Schutzes vor magischer Energie und Auflösung. Ich frage mich langsam, wie tödlich diese Waffe sein wird.~
 
 @3103 = ~Ein gnomischer Apparat
 
@@ -54,8 +54,8 @@ Ich habe die Gegenstände abgeliefert, die zur Reparatur der gnomischen Waffe be
 
 @3150 = ~Ein gnomischer Apparat
 
-Ebb Knarrknie hat sein Wort gehalten und ist mit der reparierten Apparatur zurückgekommen. Er hat sie in seinen Warenbestand aufgenommen, wo ich ihn kaufen kann, wenn ich das möchte.~
+Ebb Knarrknie hat sein Wort gehalten und ist mit der reparierten Waffe zurückgekommen. Er hat sie in seinen Warenbestand aufgenommen, wo ich sie kaufen kann, wenn ich das möchte.~
 
 @3151 = ~Ein gnomischer Apparat
 
-Es sieht so aus, als ob Ebb Knarrknie für immer fortgegangen ist, da sich die Ereignisse in Amkethran überschlagen. Ich hätte ihn schon früher aufsuchen sollen, bevor die Hölle ausbrach.~
+Es sieht so aus, als ob Ebb Knarrknie Amkethran für immer verlassen hat, da sich die Ereignisse gerade überschlagen. Ich hätte ihn schon früher aufsuchen sollen, bevor die Hölle ausbrach.~

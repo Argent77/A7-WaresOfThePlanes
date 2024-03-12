@@ -1,6 +1,6 @@
 // Ebb Creakknees dialog
 @0 = ~Ah, hello there. You've come to the right place.~
-@1 = ~Ebb Creakknees is my name. Third Measure of the Harmonium, as if that means anything here in this far-off place. I'm retired now, semi-retired actually, and spend my time and money travelling the planes.~
+@1 = ~Ebb Creakknees is my name. Third Measure of the Harmonium in Sigil, as if that means anything here in this far-off place. I'm retired now, semi-retired actually, and spend my time and money travelling the planes.~
 @2 = ~I've also collected lots of treasures over the years on my travels across the planes. You're welcome to buy anything you like. Keeps my purse filled.~
 @3 = ~Third Measure of the Harmonium?~
 @4 = ~What can you tell me about Sigil?~
@@ -11,7 +11,7 @@
 @9 = ~You mentioned the Harmonium earlier. Who are they?~
 @10 = ~Nothing. Farewell.~
 @11 = ~Good t'see ye again, <LADGAL>. Back for more, eh?~
-@12 = ~What can ol' Ebb do for you on this fine day?~
+@12 = ~What can ol' Ebb do for you on this fine <DAYNIGHTALL>?~
 @13 = ~Why are all your wares unlabeled? It feels like a gamble to buy something from you.~
 @14 = ~Can you tell me more about the broken artifact?~
 @15 = ~Can you tell me about the broken artifact again?~
@@ -37,7 +37,7 @@
 @35 = ~Anyway, just recently I procured a curious artifact from a befuddled gnome wizard. It's supposed to be a deadly weapon according to his ramblings. But it seems to be broken. Maybe you'd be interested in helping me out to fix it?~
 @36 = ~Sure. It's a weapon of a design I've never seen before. And believe me, I've seen a lot in my life already. The gnome wizard left with me scribbled notes that are supposed to be repair instructions. But I can't make heads or tails of it.~
 @37 = ~What I *can* make out are the spare parts needed to fix this device. The broken crystal needs to be replaced by a beljuril gem of the highest quality. Furthermore, a scroll of protection from magical energies is required to shield the crystal from overloading. The scribbles also mention a scroll of disintegration, but I can't make out what it is used for.~
-@38 = ~If you provide me with these items then I'll have another word with the gnome about how to repair this piking contraption. Are ye up to the task, <LADGAL>?~
+@38 = ~If you provide me with these items then I'll have another word with the gnome about how to repair this damn contraption. Are ye up to the task, <LADGAL>?~
 @39 = ~Sounds intriguing. I'll try my best to find these items for you.~
 @40 = ~No, I'm not interested.~
 @41 = ~Splendid. I'll continue to study the notes. Maybe I can make out more details in the meantime.~
@@ -51,7 +51,7 @@
 @49 = ~By the way, the gnome wizard did the impossible and fixed that weird contraption. I have it added to my pile of wares if you'd like to buy it.~
 
 // Interjection: Jan
-@100 = ~Well now, it's not our fault that the big folk can't follow our trains of thought. Unless the train is just a pile of loose gears, like Uncle Witherjar used to have occasionally. That's nothing that can't be solved with good blow to the head, though.~
+@100 = ~Well now, it's not our fault that the big folk can't follow our trains of thought. Unless the train is just a pile of loose gears, like Uncle Witherjar used to have occasionally. That's nothing that can't be solved with a good blow to the head, though.~
 
 // Interjection: Haer'Dalis
 @110 = ~A futile attempt in the face of entropy and decay. Your words and deeds will only delay the inevitable by a miniscule span of time. While you have to work actively to keep entropy at bay we can simply sit back and watch. Time is our ally.~
