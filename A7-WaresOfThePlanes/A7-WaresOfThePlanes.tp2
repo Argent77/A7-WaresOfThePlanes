@@ -7,13 +7,14 @@ ALWAYS
   OUTER_TEXT_SPRINT WORK_FOLDER ~weidu_external~
 
   ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN
-    FAIL @1100 // DLC Merger is required before mods can be installed on this game. Check the readme for more information and a link to download DLC Merger.
+    FAIL @1900 // DLC Merger is required before mods can be installed on this game. Check the readme for more information and a link to download DLC Merger.
   END
 
   INCLUDE ~%MOD_FOLDER%/lib/always.tph~
 END
 
-README ~A7-WaresOfThePlanes/doc/readme-%LANGUAGE%.txt~ ~A7-WaresOfThePlanes/doc/readme.txt~
+README ~A7-WaresOfThePlanes/doc/readme-%LANGUAGE%.txt~
+       ~A7-WaresOfThePlanes/doc/readme.txt~
 
 LANGUAGE ~English~
          ~english~
@@ -31,7 +32,7 @@ LANGUAGE ~Deutsch~
 // Wares of the Planes                        //
 ////////////////////////////////////////////////
 BEGIN @1000 // Wares of the Planes
-REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @1101  // Requires BG:EE, BG2:EE or EET.
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @1901  // Requires BG:EE, BG2:EE or EET.
 DESIGNATED 0
 LABEL ~A7-WARES_OF_THE_PLANES-MAIN~
 
@@ -48,9 +49,9 @@ INCLUDE ~%MOD_FOLDER%/lib/install_merchant.tph~
 ////////////////////////////////////////////////
 // Tweak: Identify all wares                  //
 ////////////////////////////////////////////////
-BEGIN @1010 // Identify all wares (not recommended)
-REQUIRE_COMPONENT ~A7-WaresOfThePlanes.tp2~ 0  @1102 // Requires the main component of the mod.
-DESIGNATED 10
+BEGIN @1100 // Identify all wares (not recommended)
+REQUIRE_COMPONENT ~A7-WaresOfThePlanes.tp2~ 0  @1902 // Requires the main component of the mod.
+DESIGNATED 100
 LABEL ~A7-WARES_OF_THE_PLANES-IDENTIFY_ALL~
 
 INCLUDE ~%MOD_FOLDER%/lib/tweak_identify_all.tph~

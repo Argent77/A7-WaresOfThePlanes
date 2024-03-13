@@ -1,7 +1,7 @@
 Wares of the Planes (for BG:EE, SoD, BG2:EE and EET)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:    0.5-wip
+Version:    0.9-beta
 Author:     Argent77
 
 Download:   https://

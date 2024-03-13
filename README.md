@@ -5,7 +5,7 @@
 [![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20German&color=limegreen)](https://github.com/Argent77/A7-WaresOfThePlanes)
 
 # Wares of the Planes
-*A mod for BG:EE, SoD, BG2:EE and EET that imports a large number of items from Planescape: Torment to the Baldur's Gate series and makes them available through a unique merchant.*
+*A mod for BG:EE, SoD, BG2:EE and EET that imports a large number of items from Planescape: Torment to the Baldur's Gate series and makes them available by a unique merchant.*
 
 <!--
 [![Beamdog Forums](https://img.shields.io/static/v1?label=Discussion&message=Beamdog%20Forums&color=444&labelColor=eee&style=for-the-badge)](https://forums.beamdog.com/discussion/000/mod-wares-of-the-planes "Beamdog Forums")

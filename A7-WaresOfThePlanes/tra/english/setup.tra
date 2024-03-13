@@ -1,8 +1,8 @@
 // Use tra numbers in range 1000..1999
 
 @1000 = ~Wares of the Planes~
-@1010 = ~Identify all wares (not recommended)~
+@1100 = ~Identify all wares (not recommended)~
 
-@1100 = ~DLC Merger is required before mods can be installed on this game. Check the readme for more information and a link to download DLC Merger.~
-@1101 = ~Requires BG:EE, BG2:EE or EET.~
-@1102 = ~Requires the main component of the mod.~
+@1900 = ~DLC Merger is required before mods can be installed on this game. Check the readme for more information and a link to download DLC Merger.~
+@1901 = ~Requires BG:EE, BG2:EE or EET.~
+@1902 = ~Requires the main component of the mod.~

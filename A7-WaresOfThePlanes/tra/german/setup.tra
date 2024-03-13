@@ -1,11 +1,11 @@
 // Use tra numbers in range 1000..1999
 
 @1000 = ~Waren der Ebenen~
-@1010 = ~Alle Waren identifizieren (nicht empfohlen)~
+@1100 = ~Alle Waren identifizieren (nicht empfohlen)~
 
-@1100 = ~DLC Merger wird benoetigt, bevor in diesem Spiel Mods installiert werden koennen. Links und weitere Informationen werden in der Readme aufgefuehrt.~
-@1101 = ~Benoetigt BG:EE, BG2:EE oder EET.~
-@1102 = ~Benoetigt die Hauptkomponente der Mod.~
+@1900 = ~DLC Merger wird benoetigt, bevor in diesem Spiel Mods installiert werden koennen. Links und weitere Informationen werden in der Readme aufgefuehrt.~
+@1901 = ~Benoetigt BG:EE, BG2:EE oder EET.~
+@1902 = ~Benoetigt die Hauptkomponente der Mod.~
 
 
 // WeiDU prompts

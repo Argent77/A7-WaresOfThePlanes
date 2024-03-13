@@ -1,7 +1,7 @@
 Waren der Ebenen (für BG:EE, SoD, BG2:EE und EET)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:    0.5-wip
+Version:    0.9-beta
 Autor:      Argent77
 
 Download:   https://
