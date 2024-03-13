@@ -2,12 +2,12 @@
 
 // Reaction to failed pickpocket attempt
 IF
-  PickPocketFailed(Myself)
+  PickPocketFailed([GOODCUTOFF])
 THEN
   RESPONSE #100
     SetInterrupt(FALSE)
     DisplayStringHead(Myself,@2006) // Nobody steals from me!
-    ChangeStoreMarkup("a7-merc",60,140)
+    ChangeStoreMarkup("a7-merc",140,60)
     EscapeArea()
     SetInterrupt(TRUE)
 END
@@ -19,7 +19,7 @@ THEN
   RESPONSE #100
     SetInterrupt(FALSE)
     DisplayStringHead(Myself,@2007) // You'll pay for this.
-    ChangeStoreMarkup("a7-merc",40,160)
+    ChangeStoreMarkup("a7-merc",160,40)
     EscapeArea()
     SetInterrupt(TRUE)
 END
