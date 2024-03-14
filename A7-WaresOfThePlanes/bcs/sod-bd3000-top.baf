@@ -27,3 +27,16 @@ THEN
     ActionOverride("a7-merc",Face(W))
     Continue()
 END
+
+// Merchant leaves after everyone moved on to Castle Dragonspear
+IF
+  Global("A7-InitMerchant","GLOBAL",1)
+  !Global("A7-TravelCoastWay","BD3000",2)
+  GlobalGT("Chapter","GLOBAL",12)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-TravelCoastWay","BD3000",2)
+    SetGlobalTimer("A7-TravelTimeOut","GLOBAL",0)
+    SetGlobalTimer("A7-TravelTimeOutForced","GLOBAL",0)
+    Continue()
+END

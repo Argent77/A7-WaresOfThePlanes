@@ -21,9 +21,9 @@ THEN
   RESPONSE #100
     SetGlobalTimer("A7-TravelTimeOut","GLOBAL",ONE_DAY)
     SetGlobalTimer("A7-TravelTimeOutForced","GLOBAL",TWO_DAYS)
-    SetGlobalTimer("A7-TravelTrademeetTimer","GLOBAL",THREE_DAYS)
-    SetGlobalTimer("A7-TravelImnesvaleTimer","GLOBAL",SIX_DAYS)
-    SetGlobalTimer("A7-TravelAthkatlaTimer","GLOBAL",TWELVE_DAYS)
+    SetGlobalTimer("A7-TravelTrademeetTimer","GLOBAL",TWO_DAYS)
+    SetGlobalTimer("A7-TravelImnesvaleTimer","GLOBAL",FOUR_DAYS)
+    SetGlobalTimer("A7-TravelAthkatlaTimer","GLOBAL",EIGHT_DAYS)
     MoveGlobal("AR0700","a7-merc",[2200.1715])
     ActionOverride("a7-merc",Face(SE))
     Continue()

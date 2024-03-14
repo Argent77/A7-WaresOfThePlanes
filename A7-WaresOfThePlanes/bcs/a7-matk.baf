@@ -3,11 +3,24 @@
 // Reaction to failed pickpocket attempt
 IF
   PickPocketFailed([GOODCUTOFF])
+  Global("PickPocketFailed","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("PickPocketFailed","LOCALS",1)
+    DisplayStringHead(Myself,@2006) // Nobody steals from me!
+    ChangeStoreMarkup("a7-merc",140,60)
+    EscapeArea()
+    SetInterrupt(TRUE)
+END
+
+IF
+  PickPocketFailed([GOODCUTOFF])
+  !Global("PickPocketFailed","LOCALS",0)
 THEN
   RESPONSE #100
     SetInterrupt(FALSE)
     DisplayStringHead(Myself,@2006) // Nobody steals from me!
-    ChangeStoreMarkup("a7-merc",140,60)
     EscapeArea()
     SetInterrupt(TRUE)
 END
@@ -15,11 +28,25 @@ END
 // Reaction to hostile action
 IF
   AttackedBy([GOODCUTOFF],DEFAULT)
+  Global("Attacked","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("Attacked","LOCALS",1)
+    SetGlobal("PickPocketFailed","LOCALS",1)
+    DisplayStringHead(Myself,@2007) // You'll pay for this.
+    ChangeStoreMarkup("a7-merc",160,40)
+    EscapeArea()
+    SetInterrupt(TRUE)
+END
+
+IF
+  AttackedBy([GOODCUTOFF],DEFAULT)
+  !Global("Attacked","LOCALS",0)
 THEN
   RESPONSE #100
     SetInterrupt(FALSE)
     DisplayStringHead(Myself,@2007) // You'll pay for this.
-    ChangeStoreMarkup("a7-merc",160,40)
     EscapeArea()
     SetInterrupt(TRUE)
 END
