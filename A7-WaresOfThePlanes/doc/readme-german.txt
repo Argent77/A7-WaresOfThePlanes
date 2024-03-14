@@ -13,8 +13,8 @@ Diskussion: https://
 ~~~~~~~~~
 
 Diese Mod führt eine große Anzahl an Waffen und Zubehör von Planescape: Torment in die Baldurs
-Gate Serie ein. Diese Gegenstände können von einem reisenden Händler erworben werden, den man über
-das ganze Spiel hinweg antreffen kann.
+Gate Serie ein. Diese Gegenstände können von einem besonderen reisenden Händler erworben werden,
+den man über das ganze Spiel hinweg antreffen kann.
 
 Einige Gegenstände wurde etwas angepasst, damit sie besser in das Baldurs Gate Universum passen,
 da Gegenstände aus dem Planescape Universum häufig mächtiger und einzigartiger sind als ihre
@@ -65,13 +65,13 @@ den man in diversen Städten und Dörfern über das ganze Spiel hinweg antreffen
 Der reisende Händler bietet insgesamt
 - 17 Dolche
 - 10 Streitäxte
+- 9 verschiedene Bolzentypen
 - 5 Kriegshämmer
 - 5 Keulen
 - 4 Streitkolben
 - 1 Morgenstern
 - 1 Langschwert
 - 10 Ringe
-- 9 verschiedene Bolzentypen
 - 7 Ohrringe (können im Feld für Amulette platziert werden)
 - 6 Armbänder (können im Feld für Armschützer und Handschuhe platziert werden)
 - 1 Zauberstab
@@ -90,8 +90,9 @@ Diese Komponente identifiziert automatisch alle Waren, die vom reisenden Händle
 
 Hinweis:
 Es wird generell nicht empfohlen, diese Komponente zu installieren, da sie das Spielerlebnis
-mit der Mod deutlich beeinträchtigt. Sie sollte nur installiert werden, um die Modkomponente
-„Alle Gegenstände identifizieren” von Tweaks Anthology oder ähnliche Modkomponenten zu ergänzen.
+mit der Mod deutlich beeinträchtigt.
+Sie sollte nur installiert werden, um die Modkomponente „Alle Gegenstände identifizieren” von
+Tweaks Anthology oder ähnliche Mods zu ergänzen.
 
 
 Danksagungen

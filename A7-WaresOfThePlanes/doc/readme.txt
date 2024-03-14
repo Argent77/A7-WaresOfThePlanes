@@ -46,7 +46,7 @@ This mod should be installed after the Unfinished Business component "The Murder
 to resolve a (mostly) cosmetic dialog conflict.
 
 A small number of items may overlap with items from Angel's Made in Heaven - Item Pack. They won't
-interfere with each other except by have the same item names though.
+interfere with each other except by having the same item names.
 
 
 Components
@@ -62,13 +62,13 @@ Baldur's Gate series.
 The travelling merchant offers a total of
 - 17 Daggers
 - 10 Battle Axes
+- 9 different types of Bolts
 - 5 War Hammers
 - 5 Clubs
 - 4 Maces
 - 1 Morning Star
 - 1 Long Sword
 - 10 Rings
-- 9 different types of Bolts
 - 7 Earrings (can be equipped in the Amulets slot)
 - 6 Bracelets (can be equipped in the Bracers/Gauntlets slot)
 - 1 Wand
@@ -86,8 +86,9 @@ of the game progresses.
 This tweak automatically identifies all wares offered by the travelling merchant.
 
 Notes:
-It is not recommended to install this tweak as it diminishes the mod experience. Install it only
-if you want to complement Tweaks Anthology's subcomponent "Identify All Items" or similar tweaks.
+It is generally not recommended to install this tweak as it diminishes the mod experience.
+Install it only if you want to complement Tweaks Anthology's subcomponent "Identify All Items"
+or similar tweaks.
 
 
 Credits

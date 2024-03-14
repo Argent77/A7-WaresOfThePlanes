@@ -33,5 +33,4 @@ As the items vary greatly in strength, they are only gradually made available as
 
 This tweak automatically identifies all wares offered by the travelling merchant.
 
-**Notes:**
-It is generally not recommended to install this tweak as it diminishes the mod experience. Install it only if you want to complement Tweaks Anthology's subcomponent "Identify All Items" or similar tweaks.
+**Note:** It is generally not recommended to install this tweak as it diminishes the mod experience. Install it only if you want to complement Tweaks Anthology's subcomponent "Identify All Items" or similar tweaks.
