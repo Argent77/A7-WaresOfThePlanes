@@ -2,7 +2,7 @@
 
 // Location: Ulgoth's Beard
 IF
-  Global("Campaign","LOCALS",1)
+  Global("A7-Campaign","GLOBAL",1)
   AreaCheck("%bg1_are_prefix%1000")
 THEN
   RESPONSE #100
@@ -14,7 +14,7 @@ END
 
 // Location: Beregost
 IF
-  Global("Campaign","LOCALS",1)
+  Global("A7-Campaign","GLOBAL",1)
   AreaCheck("%bg1_are_prefix%3300")
 THEN
   RESPONSE #100
@@ -26,7 +26,7 @@ END
 
 // Location: Nashkel Carnival
 IF
-  Global("Campaign","LOCALS",1)
+  Global("A7-Campaign","GLOBAL",1)
   AreaCheck("%bg1_are_prefix%4900")
 THEN
   RESPONSE #100
@@ -38,7 +38,7 @@ END
 
 // Location: Coast Way Crossing
 IF
-  Global("Campaign","LOCALS",2)
+  Global("A7-Campaign","GLOBAL",2)
   AreaCheck("BD1000")
 THEN
   RESPONSE #100
@@ -50,7 +50,7 @@ END
 
 // Location: Coalition Camp
 IF
-  Global("Campaign","LOCALS",2)
+  Global("A7-Campaign","GLOBAL",2)
   AreaCheck("BD3000")
 THEN
   RESPONSE #100
@@ -62,7 +62,7 @@ END
 
 // Location: Waukeen's Promenade
 IF
-  Global("Campaign","LOCALS",3)
+  Global("A7-Campaign","GLOBAL",3)
   AreaCheck("AR0700")
 THEN
   RESPONSE #100
@@ -74,7 +74,7 @@ END
 
 // Location: Imnesvale
 IF
-  Global("Campaign","LOCALS",3)
+  Global("A7-Campaign","GLOBAL",3)
   AreaCheck("AR1100")
 THEN
   RESPONSE #100
@@ -86,7 +86,7 @@ END
 
 // Location: Trademeet
 IF
-  Global("Campaign","LOCALS",3)
+  Global("A7-Campaign","GLOBAL",3)
   AreaCheck("AR2000")
 THEN
   RESPONSE #100
@@ -98,7 +98,7 @@ END
 
 // Location: Saradush Tavern
 IF
-  Global("Campaign","LOCALS",4)
+  Global("A7-Campaign","GLOBAL",4)
   AreaCheck("AR5003")
 THEN
   RESPONSE #100
@@ -110,7 +110,7 @@ END
 
 // Location: Amkethran
 IF
-  Global("Campaign","LOCALS",4)
+  Global("A7-Campaign","GLOBAL",4)
   AreaCheck("AR5500")
 THEN
   RESPONSE #100
@@ -123,8 +123,8 @@ END
 // Failsafe conditions
 IF
   OR(2)
-    GlobalLT("Campaign","LOCALS",1)
-    GlobalGT("Campaign","LOCALS",4)
+    GlobalLT("A7-Campaign","GLOBAL",1)
+    GlobalGT("A7-Campaign","GLOBAL",4)
 THEN
   RESPONSE #100
     CutSceneId("a7-merc")
@@ -133,7 +133,7 @@ THEN
 END
 
 IF
-  Global("Campaign","LOCALS",1)
+  Global("A7-Campaign","GLOBAL",1)
   !AreaCheck("%bg1_are_prefix%1000")
   !AreaCheck("%bg1_are_prefix%3300")
   !AreaCheck("%bg1_are_prefix%4900")
@@ -145,7 +145,7 @@ THEN
 END
 
 IF
-  Global("Campaign","LOCALS",2)
+  Global("A7-Campaign","GLOBAL",2)
   !AreaCheck("BD1000")
   !AreaCheck("BD3000")
 THEN
@@ -156,7 +156,7 @@ THEN
 END
 
 IF
-  Global("Campaign","LOCALS",3)
+  Global("A7-Campaign","GLOBAL",3)
   !AreaCheck("AR0700")
   !AreaCheck("AR1100")
   !AreaCheck("AR2000")
@@ -168,7 +168,7 @@ THEN
 END
 
 IF
-  Global("Campaign","LOCALS",4)
+  Global("A7-Campaign","GLOBAL",4)
   !AreaCheck("AR5003")
   !AreaCheck("AR5500")
 THEN

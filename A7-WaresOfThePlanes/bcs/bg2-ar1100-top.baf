@@ -15,6 +15,8 @@ END
 // Merchant arrives
 IF
   !Global("UmarCut","Global",0)   // Trigger after the initial mayor speech about the Umar Hills crisis
+  GlobalGT("Chapter","GLOBAL",%bg2_chapter_1%)
+  GlobalLT("Chapter","GLOBAL",%bg2_chapter_8%)
   Global("A7-InitMerchant","GLOBAL",1)
   !GlobalTimerNotExpired("A7-TravelImnesvaleTimer","GLOBAL")
 THEN

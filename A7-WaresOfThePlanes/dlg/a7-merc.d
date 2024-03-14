@@ -15,12 +15,12 @@ IF ~~ Intro.1
   + ~Global("CustomerScene","LOCALS",2) Global("TalkCustomer","LOCALS",0)~ + @5 /* What happened to the customer you've talked to before? */ DO ~SetGlobal("TalkCustomer","LOCALS",1)~ FLAGS 512 + Intro.Customer.1
   ++ @6 /* What do you have for sale? */ DO ~SetGlobal("TalkStore","LOCALS",1)~ + Store.1
 
-  // Variable "Campaign" is set in his creature script
-  + ~Global("Campaign","LOCALS",1) Global("TalkByeBG1","LOCALS",0)~ + @7 /* Never mind. Farewell. */ DO ~SetGlobal("TalkByeBG1","LOCALS",1)~ + Bye.BG1.1
-  + ~Global("Campaign","LOCALS",1) !Global("TalkByeBG1","LOCALS",0)~ + @7 /* Never mind. Farewell. */ EXIT
-  + ~Global("Campaign","LOCALS",3) Global("TalkByeSoA","LOCALS",0)~ + @7 /* Never mind. Farewell. */ DO ~SetGlobal("TalkByeSoA","LOCALS",1)~ + Bye.SoA.1
-  + ~Global("Campaign","LOCALS",3) !Global("TalkByeSoA","LOCALS",0)~ + @7 /* Never mind. Farewell. */ EXIT
-  + ~!Global("Campaign","LOCALS",1) !Global("Campaign","LOCALS",3)~ + @7 /* Never mind. Farewell. */ EXIT
+  // Variable "A7-Campaign" is set in his creature script
+  + ~Global("A7-Campaign","GLOBAL",1) Global("TalkByeBG1","LOCALS",0)~ + @7 /* Never mind. Farewell. */ DO ~SetGlobal("TalkByeBG1","LOCALS",1)~ + Bye.BG1.1
+  + ~Global("A7-Campaign","GLOBAL",1) !Global("TalkByeBG1","LOCALS",0)~ + @7 /* Never mind. Farewell. */ EXIT
+  + ~Global("A7-Campaign","GLOBAL",3) Global("TalkByeSoA","LOCALS",0)~ + @7 /* Never mind. Farewell. */ DO ~SetGlobal("TalkByeSoA","LOCALS",1)~ + Bye.SoA.1
+  + ~Global("A7-Campaign","GLOBAL",3) !Global("TalkByeSoA","LOCALS",0)~ + @7 /* Never mind. Farewell. */ EXIT
+  + ~!Global("A7-Campaign","GLOBAL",1) !Global("A7-Campaign","GLOBAL",3)~ + @7 /* Never mind. Farewell. */ EXIT
 END
 
 IF ~~ Intro.2
@@ -30,12 +30,12 @@ IF ~~ Intro.2
   + ~Global("CustomerScene","LOCALS",2) Global("TalkCustomer","LOCALS",0)~ + @5 /* What happened to the customer you've talked to before? */ DO ~SetGlobal("TalkCustomer","LOCALS",1)~ FLAGS 512 + Intro.Customer.1
   ++ @6 /* What do you have for sale? */ DO ~SetGlobal("TalkStore","LOCALS",1)~ + Store.1
 
-  // Variable "Campaign" is set in his creature script
-  + ~Global("Campaign","LOCALS",1) Global("TalkByeBG1","LOCALS",0)~ + @10 /* Nothing. Farewell. */ DO ~SetGlobal("TalkByeBG1","LOCALS",1)~ + Bye.BG1.1
-  + ~Global("Campaign","LOCALS",1) !Global("TalkByeBG1","LOCALS",0)~ + @10 /* Nothing. Farewell. */ EXIT
-  + ~Global("Campaign","LOCALS",3) Global("TalkByeSoA","LOCALS",0)~ + @10 /* Nothing. Farewell. */ DO ~SetGlobal("TalkByeSoA","LOCALS",1)~ + Bye.SoA.1
-  + ~Global("Campaign","LOCALS",3) !Global("TalkByeSoA","LOCALS",0)~ + @10 /* Nothing. Farewell. */ EXIT
-  + ~!Global("Campaign","LOCALS",1) !Global("Campaign","LOCALS",3)~ + @10 /* Nothing. Farewell. */ EXIT
+  // Variable "A7-Campaign" is set in his creature script
+  + ~Global("A7-Campaign","GLOBAL",1) Global("TalkByeBG1","LOCALS",0)~ + @10 /* Nothing. Farewell. */ DO ~SetGlobal("TalkByeBG1","LOCALS",1)~ + Bye.BG1.1
+  + ~Global("A7-Campaign","GLOBAL",1) !Global("TalkByeBG1","LOCALS",0)~ + @10 /* Nothing. Farewell. */ EXIT
+  + ~Global("A7-Campaign","GLOBAL",3) Global("TalkByeSoA","LOCALS",0)~ + @10 /* Nothing. Farewell. */ DO ~SetGlobal("TalkByeSoA","LOCALS",1)~ + Bye.SoA.1
+  + ~Global("A7-Campaign","GLOBAL",3) !Global("TalkByeSoA","LOCALS",0)~ + @10 /* Nothing. Farewell. */ EXIT
+  + ~!Global("A7-Campaign","GLOBAL",1) !Global("A7-Campaign","GLOBAL",3)~ + @10 /* Nothing. Farewell. */ EXIT
 END
 
 
@@ -44,7 +44,7 @@ IF ~True()~ Default
   SAY @11 /* Good t'see ye again, <LADGAL>. Back for more, eh? */
   IF ~!Global("StoreUpdated","LOCALS",1)~ + Default.1
   // Phazor quest is triggered in ToB chapter 9
-  IF ~Global("Campaign","LOCALS",4) Global("Chapter","GLOBAL",%bg2_chapter_9%) Global("A7-PhazorQuest","GLOBAL",0)~ DO ~SetGlobal("A7-PhazorQuest","GLOBAL",1)~ FLAGS 512 + PhazorQuest.1
+  IF ~Global("A7-Campaign","GLOBAL",4) Global("Chapter","GLOBAL",%bg2_chapter_9%) Global("A7-PhazorQuest","GLOBAL",0)~ DO ~SetGlobal("A7-PhazorQuest","GLOBAL",1)~ FLAGS 512 + PhazorQuest.1
   // Phazor quest is completed
   IF ~Global("A7-PhazorQuest","GLOBAL",5)~ DO ~SetGlobal("A7-PhazorQuest","GLOBAL",9)~ + PhazorQuest.5
   // Ebb informs you about his store upgrade (triggered every time a store upgrade has been performed; variable "StoreUpdated" is set in his creature script.)
@@ -64,12 +64,12 @@ IF ~~ Default.1
   + ~Global("TalkStore","LOCALS",0)~ + @6 /* What do you have for sale? */ DO ~SetGlobal("TalkStore","LOCALS",1)~ + Store.1
   + ~!Global("TalkStore","LOCALS",0)~ + @17 /* Please show me your wares. */ DO ~StartStore("a7-merc",LastTalkedToBy(Myself))~ EXIT
 
-  // Variable "Campaign" is set in his creature script
-  + ~Global("Campaign","LOCALS",1) Global("TalkByeBG1","LOCALS",0)~ + @10 /* Nothing. Farewell. */ DO ~SetGlobal("TalkByeBG1","LOCALS",1)~ + Bye.BG1.1
-  + ~Global("Campaign","LOCALS",1) !Global("TalkByeBG1","LOCALS",0)~ + @10 /* Nothing. Farewell. */ EXIT
-  + ~Global("Campaign","LOCALS",3) Global("TalkByeSoA","LOCALS",0)~ + @10 /* Nothing. Farewell. */ DO ~SetGlobal("TalkByeSoA","LOCALS",1)~ + Bye.SoA.1
-  + ~Global("Campaign","LOCALS",3) !Global("TalkByeSoA","LOCALS",0)~ + @10 /* Nothing. Farewell. */ EXIT
-  + ~!Global("Campaign","LOCALS",1) !Global("Campaign","LOCALS",3)~ + @10 /* Nothing. Farewell. */ EXIT
+  // Variable "A7-Campaign" is set in his creature script
+  + ~Global("A7-Campaign","GLOBAL",1) Global("TalkByeBG1","LOCALS",0)~ + @10 /* Nothing. Farewell. */ DO ~SetGlobal("TalkByeBG1","LOCALS",1)~ + Bye.BG1.1
+  + ~Global("A7-Campaign","GLOBAL",1) !Global("TalkByeBG1","LOCALS",0)~ + @10 /* Nothing. Farewell. */ EXIT
+  + ~Global("A7-Campaign","GLOBAL",3) Global("TalkByeSoA","LOCALS",0)~ + @10 /* Nothing. Farewell. */ DO ~SetGlobal("TalkByeSoA","LOCALS",1)~ + Bye.SoA.1
+  + ~Global("A7-Campaign","GLOBAL",3) !Global("TalkByeSoA","LOCALS",0)~ + @10 /* Nothing. Farewell. */ EXIT
+  + ~!Global("A7-Campaign","GLOBAL",1) !Global("A7-Campaign","GLOBAL",3)~ + @10 /* Nothing. Farewell. */ EXIT
 END
 
 IF ~~ Default.2
@@ -85,12 +85,12 @@ IF ~~ Default.2
   + ~Global("TalkStore","LOCALS",0)~ + @6 /* What do you have for sale? */ DO ~SetGlobal("TalkStore","LOCALS",1)~ + Store.1
   + ~!Global("TalkStore","LOCALS",0)~ + @17 /* Please show me your wares. */ DO ~StartStore("a7-merc",LastTalkedToBy(Myself))~ EXIT
 
-  // Variable "Campaign" is set in his creature script
-  + ~Global("Campaign","LOCALS",1) Global("TalkByeBG1","LOCALS",0)~ + @10 /* Nothing. Farewell. */ DO ~SetGlobal("TalkByeBG1","LOCALS",1)~ + Bye.BG1.1
-  + ~Global("Campaign","LOCALS",1) !Global("TalkByeBG1","LOCALS",0)~ + @10 /* Nothing. Farewell. */ EXIT
-  + ~Global("Campaign","LOCALS",3) Global("TalkByeSoA","LOCALS",0)~ + @10 /* Nothing. Farewell. */ DO ~SetGlobal("TalkByeSoA","LOCALS",1)~ + Bye.SoA.1
-  + ~Global("Campaign","LOCALS",3) !Global("TalkByeSoA","LOCALS",0)~ + @10 /* Nothing. Farewell. */ EXIT
-  + ~!Global("Campaign","LOCALS",1) !Global("Campaign","LOCALS",3)~ + @10 /* Nothing. Farewell. */ EXIT
+  // Variable "A7-Campaign" is set in his creature script
+  + ~Global("A7-Campaign","GLOBAL",1) Global("TalkByeBG1","LOCALS",0)~ + @10 /* Nothing. Farewell. */ DO ~SetGlobal("TalkByeBG1","LOCALS",1)~ + Bye.BG1.1
+  + ~Global("A7-Campaign","GLOBAL",1) !Global("TalkByeBG1","LOCALS",0)~ + @10 /* Nothing. Farewell. */ EXIT
+  + ~Global("A7-Campaign","GLOBAL",3) Global("TalkByeSoA","LOCALS",0)~ + @10 /* Nothing. Farewell. */ DO ~SetGlobal("TalkByeSoA","LOCALS",1)~ + Bye.SoA.1
+  + ~Global("A7-Campaign","GLOBAL",3) !Global("TalkByeSoA","LOCALS",0)~ + @10 /* Nothing. Farewell. */ EXIT
+  + ~!Global("A7-Campaign","GLOBAL",1) !Global("A7-Campaign","GLOBAL",3)~ + @10 /* Nothing. Farewell. */ EXIT
 END
 
 

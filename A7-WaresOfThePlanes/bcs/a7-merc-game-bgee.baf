@@ -1,22 +1,36 @@
 // BG1 campaign
 IF
-  !Global("Campaign","LOCALS",1)
+  !Global("A7-Campaign","GLOBAL",1)
+  Global("EndOfBG1","GLOBAL",0)
   GlobalLT("Chapter","GLOBAL",8)
 THEN
   RESPONSE #100
-    SetGlobal("Campaign","LOCALS",1)
+    SetGlobal("A7-Campaign","GLOBAL",1)
     // DisplayString(Myself,~DEBUG: Campaign=1~)
     Continue()
 END
 
-// SoD campaign
+// SoD campaign (non-EET)
 IF
-  !Global("Campaign","LOCALS",2)
-  GlobalGT("Chapter","GLOBAL",7)
+  !Global("A7-Campaign","GLOBAL",2)
+  Global("EndOfBG1","GLOBAL",0)
+  !Global("BD_HAVE_SOD","GLOBAL",0)
+  GlobalGT("Chapter","GLOBAL",6)
   GlobalLT("Chapter","GLOBAL",14)
 THEN
   RESPONSE #100
-    SetGlobal("Campaign","LOCALS",2)
+    SetGlobal("A7-Campaign","GLOBAL",2)
+    // DisplayString(Myself,~DEBUG: Campaign=2~)
+    Continue()
+END
+
+// SoD campaign (EET)
+IF
+  !Global("A7-Campaign","GLOBAL",2)
+  Global("EndOfBG1","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-Campaign","GLOBAL",2)
     // DisplayString(Myself,~DEBUG: Campaign=2~)
     Continue()
 END

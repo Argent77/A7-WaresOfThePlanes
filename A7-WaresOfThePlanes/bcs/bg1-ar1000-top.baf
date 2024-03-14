@@ -15,6 +15,7 @@ END
 // Merchant arrives
 IF
   Global("A7-InitMerchant","GLOBAL",1)
+  GlobalLT("Chapter","GLOBAL",8)
   !GlobalTimerNotExpired("A7-TravelUBeardTimer","GLOBAL")
 THEN
   RESPONSE #100

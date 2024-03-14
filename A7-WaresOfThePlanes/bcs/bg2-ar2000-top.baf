@@ -15,6 +15,8 @@ END
 // Merchant arrives
 IF
   !Global("geniesgone","GLOBAL",0)  // Trigger only after solving the genie problems
+  GlobalGT("Chapter","GLOBAL",%bg2_chapter_1%)
+  GlobalLT("Chapter","GLOBAL",%bg2_chapter_8%)
   Global("A7-InitMerchant","GLOBAL",1)
   !GlobalTimerNotExpired("A7-TravelTrademeetTimer","GLOBAL")
   Global("A7-TourTrademeet","AR2000",0)  // indicates the next destination (0=Imnesvale, 1=Athkatla)
@@ -33,6 +35,8 @@ END
 
 IF
   !Global("geniesgone","GLOBAL",0)  // Trigger only after solving the genie problems
+  GlobalGT("Chapter","GLOBAL",%bg2_chapter_1%)
+  GlobalLT("Chapter","GLOBAL",%bg2_chapter_8%)
   Global("A7-InitMerchant","GLOBAL",1)
   !GlobalTimerNotExpired("A7-TravelTrademeetTimer","GLOBAL")
   Global("A7-TourTrademeet","AR2000",0)  // indicates the next destination (0=Imnesvale, 1=Athkatla)

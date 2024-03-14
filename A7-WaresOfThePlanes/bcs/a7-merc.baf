@@ -2,7 +2,7 @@
 
 // Introductory cutscene between merchant and a customer
 IF
-  !Global("Campaign","LOCALS",0)
+  !Global("A7-Campaign","GLOBAL",0)
   Global("CustomerScene","LOCALS",0)
   !See([ENEMY])
   CombatCounter(0)

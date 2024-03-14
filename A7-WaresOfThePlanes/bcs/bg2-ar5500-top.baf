@@ -14,9 +14,9 @@ END
 
 // Merchant arrives
 IF
+  Global("Chapter","GLOBAL",%bg2_chapter_9%)
   Global("A7-InitMerchant","GLOBAL",1)
   Global("A7-TravelAmkethran","AR5500",0)
-  Global("Chapter","GLOBAL",%bg2_chapter_9%)
 THEN
   RESPONSE #100
     SetGlobal("A7-TravelAmkethran","AR5500",1)

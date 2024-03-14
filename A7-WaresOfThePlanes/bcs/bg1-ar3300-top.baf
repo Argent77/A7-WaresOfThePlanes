@@ -15,6 +15,7 @@ END
 // Merchant arrives
 IF
   Global("A7-InitMerchant","GLOBAL",1)
+  GlobalLT("Chapter","GLOBAL",8)
   !GlobalTimerNotExpired("A7-TravelBeregostTimer","GLOBAL")
   Global("A7-TourBeregost","%bg1_are_prefix%3300",0)  // indicates the next destination (0=Nashkel Carnival, 1=Ulgoth's Beard)
 THEN
@@ -32,6 +33,7 @@ END
 
 IF
   Global("A7-InitMerchant","GLOBAL",1)
+  GlobalLT("Chapter","GLOBAL",8)
   !GlobalTimerNotExpired("A7-TravelBeregostTimer","GLOBAL")
   !Global("A7-TourBeregost","%bg1_are_prefix%3300",0) // indicates the next destination (0=Nashkel Carnival, 1=Ulgoth's Beard)
 THEN
