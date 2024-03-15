@@ -81,7 +81,7 @@ Der reisende Händler bietet insgesamt
 zum Verkauf an.
 
 Da die Gegenstände von sehr unterschiedlicher Stärke sind, werden sie nur schrittweise zum Verkauf
-angeboten, während sich die Haupthandlung des Spiels entwickelt.
+angeboten, während die Haupthandlung des Spiels voranschreitet.
 
 
 2. Alle Waren identifizieren (nicht empfohlen; benötigt die Hauptkomponente)
