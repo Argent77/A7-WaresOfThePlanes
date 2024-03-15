@@ -1,12 +1,12 @@
 Wares of the Planes (for BG:EE, SoD, BG2:EE and EET)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:    0.9-beta
+Version:    1.0
 Author:     Argent77
 
-Download:   https://
-Discussion: https://
-            https://
+Download:   https://github.com/Argent77/A7-WaresOfThePlanes/releases/latest
+Discussion: https://www.gibberlings3.net/forums/topic/38054-wares-of-the-planes-planescape-items-for-baldurs-gate
+            https://forums.beamdog.com/discussion/88361/wares-of-the-planes-planescape-items-for-baldurs-gate
 
 
 Overview
