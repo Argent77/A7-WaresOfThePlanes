@@ -29,7 +29,7 @@ The mod is available for BG:EE, Siege of Dragonspear, BG2:EE and EET (Enhanced E
 
 This is the main component. It installs a large number of items from Planescape: Torment which includes weapons, accessories, utility items, and more. They can be purchased from a unique travelling merchant who can be found in several towns and settlements throughout the whole Baldur's Gate series.
 
-As the items vary greatly in strength, they are only gradually made available as the main story of the game progresses.
+As the items vary greatly in power, they are only gradually made available as the main story of the game progresses.
 
 ### Identify all wares *(not recommended; requires the main component)*
 
