@@ -80,8 +80,8 @@ Der reisende Händler bietet insgesamt
 - und ein Haustier
 zum Verkauf an.
 
-Da die Gegenstände von sehr unterschiedlicher Stärke sind, werden sie nur schrittweise zum Verkauf
-angeboten, während die Haupthandlung des Spiels voranschreitet.
+Da die Gegenstände von sehr unterschiedlicher Qualität sind, werden sie nur schrittweise zum
+Verkauf angeboten, während die Haupthandlung des Spiels voranschreitet.
 
 
 2. Alle Waren identifizieren (nicht empfohlen; benötigt die Hauptkomponente)

@@ -77,8 +77,8 @@ The travelling merchant offers a total of
 - and a pet
 for sale.
 
-As the items vary greatly in strength, they are only gradually made available as the main story
-of the game progresses.
+As the items vary greatly in power, they are only gradually made available as the main story of
+the game progresses.
 
 
 2. Identify all wares (not recommended; requires main component)
