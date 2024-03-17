@@ -1,0 +1,51 @@
+// Installs an alternate portrait sets
+
+/**
+ * Installs an alternate portrait set for the travelling merchant.
+ *
+ * INT_VAR option   Portrait option to install. Currently only one option is available. (Default: 1)
+ */
+DEFINE_ACTION_FUNCTION set_merchant_portrait
+INT_VAR
+  option = 1
+BEGIN
+  ACTION_IF (option > 0) BEGIN
+    OUTER_SPRINT path_portrait_large ~%MOD_FOLDER%/bmp/merchant-v%option%/a7-mercl.bmp~
+    OUTER_SPRINT path_portrait_small ~%MOD_FOLDER%/bmp/merchant-v%option%/a7-mercm.bmp~
+    ACTION_IF (NOT FILE_EXISTS ~%path_portrait_small%~) BEGIN
+      OUTER_SPRINT path_portrait_small ~%path_portrait_large%~
+    END
+
+    ACTION_IF (FILE_EXISTS ~%path_portrait_large%~) BEGIN
+      COPY ~%path_portrait_large%~ ~override/a7-mercl.bmp~
+           ~%path_portrait_small%~ ~override/a7-mercm.bmp~
+    END ELSE BEGIN
+      FAIL ~Merchant portrait not found: v%option%~
+    END
+  END
+END
+
+/**
+ * Installs an alternate portrait set for the pet Lim-Lim.
+ *
+ * INT_VAR option   Portrait option to install. There is currently no option available.
+ */
+DEFINE_ACTION_FUNCTION set_limlim_portrait
+INT_VAR
+  option = 0
+BEGIN
+  ACTION_IF (option > 0) BEGIN
+    OUTER_SPRINT path_portrait_large ~%MOD_FOLDER%/bmp/plimlim-v%option%/a7-pliml.bmp~
+    OUTER_SPRINT path_portrait_small ~%MOD_FOLDER%/bmp/plimlim-v%option%/a7-plimm.bmp~
+    ACTION_IF (NOT FILE_EXISTS ~%path_portrait_small%~) BEGIN
+      OUTER_SPRINT path_portrait_small ~%path_portrait_large%~
+    END
+
+    ACTION_IF (FILE_EXISTS ~%path_portrait_large%~) BEGIN
+      COPY ~%path_portrait_large%~ ~override/a7-pliml.bmp~
+           ~%path_portrait_small%~ ~override/a7-plimm.bmp~
+    END ELSE BEGIN
+      FAIL ~Lim-Lim portrait not found: v%option%~
+    END
+  END
+END

@@ -55,3 +55,15 @@ DESIGNATED 100
 LABEL ~A7-WARES_OF_THE_PLANES-IDENTIFY_ALL~
 
 INCLUDE ~%MOD_FOLDER%/lib/tweak_identify_all.tph~
+
+
+////////////////////////////////////////////////
+// Tweak: Alternate merchant portrait         //
+////////////////////////////////////////////////
+BEGIN @1200 // Alternate merchant portrait
+REQUIRE_COMPONENT ~A7-WaresOfThePlanes.tp2~ 0  @1902 // Requires the main component of the mod.
+DESIGNATED 200
+LABEL ~A7-WARES_OF_THE_PLANES-ALTERNATE_PORTRAIT-1~
+
+INCLUDE ~%MOD_FOLDER%/lib/tweak_portrait.tph~
+LAF set_merchant_portrait INT_VAR option = 1 END

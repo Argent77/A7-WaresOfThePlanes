@@ -91,6 +91,11 @@ Install it only if you want to complement Tweaks Anthology's subcomponent "Ident
 or similar tweaks.
 
 
+3. Alternate merchant portrait (requires main component)
+
+This tweak installs Ebb Creakknees' original character portrait from Planescape: Torment.
+
+
 Credits
 ~~~~~~~
 
@@ -104,6 +109,8 @@ The mod "Wares of the Planes" is licensed under the "Creative Commons Attributio
 ShareAlike 4.0 International License" (https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 Items are based on resources from Planescape: Torment, (c) by Black Isle Studios.
+
+Merchant portrait based on "RPG Dwarf Males 41" by ttb2112-ai on DeviantArt.
 
 
 Version History

@@ -95,6 +95,11 @@ Sie sollte nur installiert werden, um die Modkomponente „Alle Gegenstände ide
 Tweaks Anthology oder ähnliche Mods zu ergänzen.
 
 
+3. Alternatives Händlerportrait (benötigt die Hauptkomponente)
+
+Diese Komponente installiert Ebb Knarrknies originales Charakterportrait von Planescape: Torment.
+
+
 Danksagungen
 ~~~~~~~~~~~~
 
@@ -108,6 +113,8 @@ The mod "Wares of the Planes" is licensed under the "Creative Commons Attributio
 ShareAlike 4.0 International License" (https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 Items are based on resources from Planescape: Torment, (c) by Black Isle Studios.
+
+Merchant portrait based on "RPG Dwarf Males 41" by ttb2112-ai on DeviantArt.
 
 
 Versionshistorie
