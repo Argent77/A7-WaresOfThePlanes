@@ -116,5 +116,10 @@ Merchant portrait based on "RPG Dwarf Males 41" by ttb2112-ai on DeviantArt.
 Version History
 ~~~~~~~~~~~~~~~
 
+1.1
+- Added new default portrait for the travelling merchant
+- Added tweak that restores the original PsT portrait for the travelling merchant
+- Added new item for sale: Elixir of Horrific Separation
+
 1.0
 - Initial release
