@@ -1,0 +1,83 @@
+// Item: Elixir of Horrific Separation
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-mi04~
+
+ACTION_IF (has_bg2) BEGIN
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        desc_image_resref
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    desc_image_resref
+  END
+
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    COMPILE ~%MOD_FOLDER%/bcs/%itm_resref%.baf~
+
+    COPY ~%MOD_FOLDER%/eff/%itm_resref%a.eff~ ~override~
+         ~%MOD_FOLDER%/eff/%itm_resref%b.eff~ ~override~
+         ~%MOD_FOLDER%/eff/%itm_resref%c.eff~ ~override~
+         ~%MOD_FOLDER%/spl/%itm_resref%x.spl~ ~override~
+
+    COPY ~%MOD_FOLDER%/eff/%itm_resref%d.eff~ ~override~
+      SAY 0x1c @23  // Item has no effect
+
+    // Use an existing spell state slot
+    OUTER_SET splstate_idx = IDS_OF_SYMBOL(~splstate~ ~IMPRISONMENT_DESTROY~)
+    ACTION_IF (splstate_idx < 0) BEGIN
+      OUTER_SET splstate_idx = 124
+    END
+
+    OUTER_SET tra_ref = 20
+    ACTION_FOR_EACH suffix IN ~a~ ~b~ ~c~ BEGIN
+      COPY ~%MOD_FOLDER%/spl/%itm_resref%%suffix%.spl~ ~override~
+        LPF alter_item_effect_ex
+          INT_VAR
+            check_headers = 1
+            match_opcode = 328  // Set spell state
+            parameter2 = splstate_idx
+        END
+        LPF alter_item_effect_ex
+          INT_VAR
+            check_headers = 1
+            match_opcode = 337  // Remove effects by opcode
+            parameter1 = splstate_idx
+            parameter2 = 328
+        END
+        LPF alter_item_effect_ex
+          INT_VAR
+            check_headers = 1
+            match_opcode = 139  // Display string
+            parameter1 = RESOLVE_STR_REF((AT ~tra_ref~))  // Alignment permanently changed to ...
+        END
+      OUTER_SET tra_ref += 1
+    END
+
+    // Patching hardcoded simulacrum spell
+    COPY_EXISTING ~simulacr.spl~ ~override~
+      LPF ADD_SPELL_EFFECT
+        INT_VAR
+          opcode = 326  // Apply effects list
+          target = 1  // Self
+          timing = 9
+          parameter1 = splstate_idx
+          parameter2 = 76 // SPLSTATE = [parameter1]
+        STR_VAR
+          resource = ~A7-MI04X~
+      END
+    BUT_ONLY
+  END
+END

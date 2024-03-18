@@ -1,0 +1,27 @@
+// Elixir of Horrific Separation
+
+@0 = ~Strange Vial~
+@1 = ~Elixir of Horrific Separation~
+
+@10 = ~This solid vial is made of a crystalline material and resembles the head of a monster. It contains a clear liquid that glows slightly with a bluish hue.
+
+STATISTICS:
+
+Weight: 1~
+@11 = ~This vial of Elixir of Horrific Separation was compounded by a scholar who'd found she possessed a darker half - a side of her which took control, at times, and bade her do awful things. This potion was to have 'split' the darker half away from her, creating two separate beings. Mercykillers from Sigil, however, found and executed her for a string of depraved murders before she could use it.
+
+STATISTICS:
+
+Horrific Separation:
+When the elixir is consumed the enchantment takes hold and splits the less dominant part of the user into a separate being of comparable power but opposite alignment. This being can be controlled for five turns before it breaks free from the enchantment and either attacks the party or escapes. Moreover, the user's ethical part of their alignment shifts permanently towards 'neutral'.
+
+The elixir will have no effect when consumed by a user whose ethical alignment is already 'neutral' (neutral good, true neutral or neutral evil).
+
+Weight: 1~
+
+@20 = ~Alignment permanently shifted to Neutral Good.~
+@21 = ~Alignment permanently shifted to True Neutral.~
+@22 = ~Alignment permanently shifted to Neutral Evil.~
+@23 = ~Item has no effect.~
+
+@30 = ~Breaks free from the enchantment.~

@@ -1,0 +1,255 @@
+// Initializing enchantment
+IF
+  Global("init","LOCALS",0)
+  Alignment(Myself,MASK_EVIL)
+THEN
+  RESPONSE #80
+    SetInterrupt(FALSE)
+    SetGlobal("init","LOCALS",1)
+    SetGlobal("releaseEnemy","LOCALS",1)
+    SetGlobalTimer("releaseTimer","LOCALS",FIVE_TURNS)
+    SetInterrupt(TRUE)
+    Continue()
+  RESPONSE #20
+    SetInterrupt(FALSE)
+    SetGlobal("init","LOCALS",1)
+    SetGlobalTimer("releaseTimer","LOCALS",FIVE_TURNS)
+    SetInterrupt(TRUE)
+    Continue()
+END
+
+IF
+  Global("init","LOCALS",0)
+  Alignment(Myself,MASK_GOOD)
+THEN
+  RESPONSE #20
+    SetInterrupt(FALSE)
+    SetGlobal("init","LOCALS",1)
+    SetGlobal("releaseEnemy","LOCALS",1)
+    SetGlobalTimer("releaseTimer","LOCALS",FIVE_TURNS)
+    SetInterrupt(TRUE)
+    Continue()
+  RESPONSE #80
+    SetInterrupt(FALSE)
+    SetGlobal("init","LOCALS",1)
+    SetGlobalTimer("releaseTimer","LOCALS",FIVE_TURNS)
+    SetInterrupt(TRUE)
+    Continue()
+END
+
+IF
+  Global("init","LOCALS",0)
+  !Alignment(Myself,MASK_EVIL)
+  !Alignment(Myself,MASK_GOOD)
+THEN
+  RESPONSE #50
+    SetInterrupt(FALSE)
+    SetGlobal("init","LOCALS",1)
+    SetGlobal("releaseEnemy","LOCALS",1)
+    SetGlobalTimer("releaseTimer","LOCALS",FIVE_TURNS)
+    SetInterrupt(TRUE)
+    Continue()
+  RESPONSE #50
+    SetInterrupt(FALSE)
+    SetGlobal("init","LOCALS",1)
+    SetGlobalTimer("releaseTimer","LOCALS",FIVE_TURNS)
+    SetInterrupt(TRUE)
+    Continue()
+END
+
+
+// Setting XP value
+IF
+  Global("init","LOCALS",0)
+  LevelLT(Myself,11)
+THEN
+  RESPONSE #100
+    ChangeStat(Myself,XPVALUE,2000,SET)
+    Continue()
+END
+
+IF
+  Global("init","LOCALS",0)
+  LevelGT(Myself,10)
+  LevelLT(Myself,21)
+THEN
+  RESPONSE #100
+    ChangeStat(Myself,XPVALUE,4000,SET)
+    Continue()
+END
+
+IF
+  Global("init","LOCALS",0)
+  LevelGT(Myself,20)
+  LevelLT(Myself,31)
+THEN
+  RESPONSE #100
+    ChangeStat(Myself,XPVALUE,6000,SET)
+    Continue()
+END
+
+IF
+  Global("init","LOCALS",0)
+  LevelGT(Myself,30)
+  LevelLT(Myself,41)
+THEN
+  RESPONSE #100
+    ChangeStat(Myself,XPVALUE,8000,SET)
+    Continue()
+END
+
+IF
+  Global("init","LOCALS",0)
+  LevelGT(Myself,40)
+THEN
+  RESPONSE #100
+    ChangeStat(Myself,XPVALUE,10000,SET)
+    Continue()
+END
+
+
+// Attacking the clone may break the enchantment prematurely
+IF
+  HitBy([PC],CRUSHING)
+  Global("released","LOCALS",0)
+THEN
+  RESPONSE #10
+    SetGlobalTimer("releaseTimer","LOCALS",0)
+    Continue()
+  RESPONSE #90
+    Continue()
+END
+
+
+// Enchantment ends
+IF
+  GlobalTimerExpired("releaseTimer","LOCALS")
+  !Global("releaseEnemy","LOCALS",1)
+  Global("released","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("released","LOCALS",1)
+    DisplayString(Myself,@30) // Breaks free from the enchantment
+    ChangeEnemyAlly(Myself,NEUTRAL)
+    ChangeAIScript("",OVERRIDE)
+    EscapeArea()
+    SetInterrupt(TRUE)
+END
+
+IF
+  GlobalTimerExpired("releaseTimer","LOCALS")
+  Global("releaseEnemy","LOCALS",1)
+  Global("released","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("released","LOCALS",1)
+    DisplayString(Myself,@30) // Breaks free from the enchantment
+    ChangeAIScript("",OVERRIDE)
+    ChangeAIScript("WTASIGHT",DEFAULT)
+    Enemy()
+    SetInterrupt(TRUE)
+    Continue()
+END
+
+IF
+  GlobalTimerExpired("releaseTimer","LOCALS")
+  Global("releaseEnemy","LOCALS",1)
+  Global("released","LOCALS",0)
+  Class(Myself,MAGE_ALL)
+THEN
+  RESPONSE #100
+    ChangeAIScript("MAGE20B",CLASS)
+    Continue()
+END
+
+IF
+  GlobalTimerExpired("releaseTimer","LOCALS")
+  Global("releaseEnemy","LOCALS",1)
+  Global("released","LOCALS",0)
+  Class(Myself,CLERIC_ALL)
+THEN
+  RESPONSE #100
+    ChangeAIScript("PRIES18B",CLASS)
+    Continue()
+END
+
+IF
+  GlobalTimerExpired("releaseTimer","LOCALS")
+  Global("releaseEnemy","LOCALS",1)
+  Global("released","LOCALS",0)
+  Class(Myself,DRUID_ALL)
+THEN
+  RESPONSE #100
+    ChangeAIScript("DRUID14G",CLASS)
+    Continue()
+END
+
+IF
+  GlobalTimerExpired("releaseTimer","LOCALS")
+  Global("releaseEnemy","LOCALS",1)
+  Global("released","LOCALS",0)
+  Class(Myself,THIEF_ALL)
+THEN
+  RESPONSE #100
+    ChangeAIScript("THIEF14T",CLASS)
+    Continue()
+END
+
+IF
+  GlobalTimerExpired("releaseTimer","LOCALS")
+  Global("releaseEnemy","LOCALS",1)
+  Global("released","LOCALS",0)
+  Class(Myself,FIGHTER_MAGE)
+THEN
+  RESPONSE #100
+    ChangeAIScript("FIGMAG16",CLASS)
+    Continue()
+END
+
+IF
+  GlobalTimerExpired("releaseTimer","LOCALS")
+  Global("releaseEnemy","LOCALS",1)
+  Global("released","LOCALS",0)
+  OR(2)
+    Class(Myself,MAGE_THIEF)
+    Class(Myself,FIGHTER_MAGE_THIEF)
+THEN
+  RESPONSE #100
+    ChangeAIScript("THIEFMAG",CLASS)
+    Continue()
+END
+
+IF
+  GlobalTimerExpired("releaseTimer","LOCALS")
+  Global("releaseEnemy","LOCALS",1)
+  Global("released","LOCALS",0)
+  Class(Myself,MONK)
+THEN
+  RESPONSE #100
+    ChangeAIScript("CMONK20B",CLASS)
+    Continue()
+END
+
+IF
+  GlobalTimerExpired("releaseTimer","LOCALS")
+  Global("releaseEnemy","LOCALS",1)
+  Global("released","LOCALS",0)
+  Class(Myself,PALADIN_ALL)
+THEN
+  RESPONSE #100
+    ChangeAIScript("PALAD16",CLASS)
+    Continue()
+END
+
+IF
+  GlobalTimerExpired("releaseTimer","LOCALS")
+  Global("releaseEnemy","LOCALS",1)
+  Global("released","LOCALS",0)
+  Class(Myself,RANGER_ALL)
+THEN
+  RESPONSE #100
+    ChangeAIScript("DRUID8A",CLASS)
+    Continue()
+END
