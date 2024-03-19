@@ -1,0 +1,57 @@
+// *** BG2-ToB: Pocket Plane area script ***
+
+IF
+  OnCreation()
+  GlobalGT("Chapter","GLOBAL",%bg2_chapter_8%)
+  PartyHasItem("a7-mi05")
+THEN
+  RESPONSE #100
+    StartTimer(144,10)
+    Continue()
+  RESPONSE #100
+    StartTimer(144,20)
+    Continue()
+  RESPONSE #100
+    StartTimer(144,30)
+    Continue()
+  RESPONSE #100
+    StartTimer(144,40)
+    Continue()
+  RESPONSE #100
+    StartTimer(144,50)
+    Continue()
+  RESPONSE #100
+    StartTimer(144,60)
+    Continue()
+  RESPONSE #100
+    StartTimer(144,70)
+    Continue()
+  RESPONSE #100
+    StartTimer(144,80)
+    Continue()
+  RESPONSE #100
+    StartTimer(144,90)
+    Continue()
+  RESPONSE #100
+    StartTimer(144,100)
+    Continue()
+  RESPONSE #100
+    StartTimer(144,110)
+    Continue()
+  RESPONSE #100
+    StartTimer(144,120)
+    Continue()
+END
+
+IF
+  Global("A7-MoridorSeal","AR4500",0)
+  TimerExpired(144)
+  PartyHasItem("a7-mi05")
+THEN
+  RESPONSE #100
+    SetGlobal("A7-MoridorSeal","AR4500",1)
+    ClearAllActions()
+    StartCutSceneMode()
+    CreateCreatureImpassableAllowOverlap("a7-ctspy",[0.0],0)
+    StartCutSceneEx("a7-mbcut",TRUE)
+END

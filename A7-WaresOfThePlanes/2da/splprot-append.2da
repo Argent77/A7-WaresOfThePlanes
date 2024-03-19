@@ -1,0 +1,3 @@
+%splprot_lt_250k%_STAT(XP)<250k                                     44      250000              2
+%splprot_ge_2_5M%_STAT(XP)>=2.5M                                    44      2500000             4
+%splprot_in_range%_ENTRIES!=(%splprot_lt_250k%||%splprot_ge_2_5M%)  0x104   %splprot_lt_250k%   %splprot_ge_2_5M%

@@ -117,6 +117,9 @@ WITH_SCOPE BEGIN
         // Do not add Lim-Lim Cage if Petrified Lim-Lim has been imported to BG2
         REPLACE_TEXTUALLY ~Global("A7-StoreItem-a7-cage","GLOBAL",0)~
                           ~Global("A7-LimLimStatue","GLOBAL",0) \0~
+        // Do not add Moridor's Box if item has been imported to BG2
+        REPLACE_TEXTUALLY ~Global("A7-StoreItem-a7-mi05","GLOBAL",0)~
+                          ~Global("A7-MoridorBox","GLOBAL",0) \0~
       END
     END
   BUT_ONLY

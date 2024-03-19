@@ -10,3 +10,13 @@ THEN
     ActionOverride("Shelf 2",TakePartyItemNum("a7-pplim",1))
     Continue()
 END
+
+// Import Moridor's Box from a BG1 save (part 1)
+IF
+  Global("A7-MoridorBox","GLOBAL",0)
+  PartyHasItem("a7-mi05")
+THEN
+  RESPONSE #100
+    SetGlobal("A7-MoridorBox","GLOBAL",1)
+    Continue()
+END

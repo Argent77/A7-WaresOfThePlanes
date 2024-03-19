@@ -6,3 +6,9 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/lib/items~ ~^.+\.tph$~ BEGIN
     INCLUDE ~%BASH_FOR_FILESPEC%~
   END
 END
+
+ACTION_IF (has_bg2) BEGIN
+  // Scripts for handling item imports in BG2
+  EXTEND_TOP ~ar0602.bcs~ ~%MOD_FOLDER%/bcs/bg2-ar0602-top.baf~
+  EXTEND_TOP ~ar0603.bcs~ ~%MOD_FOLDER%/bcs/bg2-ar0603-top.baf~
+END

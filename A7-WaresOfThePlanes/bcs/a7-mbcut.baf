@@ -1,0 +1,92 @@
+// *** Cutscene: Moridor's Box seal is broken ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-ctspy")
+    TakePartyItemNum("a7-mi05",1)
+    DestroySelf()
+END
+
+IF
+  !HasItem("a7-mi05",Player2)
+  !HasItem("a7-mi05",Player3)
+  !HasItem("a7-mi05",Player4)
+  !HasItem("a7-mi05",Player5)
+  !HasItem("a7-mi05",Player6)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    MoveViewObject(Myself,INSTANT)
+    Wait(1)
+    DisplayStringHeadNoLog(Myself,@40)  // The seal of Moridor's Box dissolves completely.
+    Wait(4)
+    ApplySpellRES("a7-mi05c",Myself)
+    EndCutSceneMode()
+END
+
+IF
+  HasItem("a7-mi05",Player2)
+THEN
+  RESPONSE #100
+    CutSceneId(Player2)
+    MoveViewObject(Myself,INSTANT)
+    Wait(1)
+    DisplayStringHeadNoLog(Myself,@40)  // The seal of Moridor's Box dissolves completely.
+    Wait(4)
+    ApplySpellRES("a7-mi05c",Myself)
+    EndCutSceneMode()
+END
+
+IF
+  HasItem("a7-mi05",Player3)
+THEN
+  RESPONSE #100
+    CutSceneId(Player3)
+    MoveViewObject(Myself,INSTANT)
+    Wait(1)
+    DisplayStringHeadNoLog(Myself,@40)  // The seal of Moridor's Box dissolves completely.
+    Wait(4)
+    ApplySpellRES("a7-mi05c",Myself)
+    EndCutSceneMode()
+END
+
+IF
+  HasItem("a7-mi05",Player4)
+THEN
+  RESPONSE #100
+    CutSceneId(Player4)
+    MoveViewObject(Myself,INSTANT)
+    Wait(1)
+    DisplayStringHeadNoLog(Myself,@40)  // The seal of Moridor's Box dissolves completely.
+    Wait(4)
+    ApplySpellRES("a7-mi05c",Myself)
+    EndCutSceneMode()
+END
+
+IF
+  HasItem("a7-mi05",Player5)
+THEN
+  RESPONSE #100
+    CutSceneId(Player5)
+    MoveViewObject(Myself,INSTANT)
+    Wait(1)
+    DisplayStringHeadNoLog(Myself,@40)  // The seal of Moridor's Box dissolves completely.
+    Wait(4)
+    ApplySpellRES("a7-mi05c",Myself)
+    EndCutSceneMode()
+END
+
+IF
+  HasItem("a7-mi05",Player6)
+THEN
+  RESPONSE #100
+    CutSceneId(Player6)
+    MoveViewObject(Myself,INSTANT)
+    Wait(1)
+    DisplayStringHeadNoLog(Myself,@40)  // The seal of Moridor's Box dissolves completely.
+    Wait(4)
+    ApplySpellRES("a7-mi05c",Myself)
+    EndCutSceneMode()
+END

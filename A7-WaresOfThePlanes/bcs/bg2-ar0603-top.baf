@@ -1,0 +1,13 @@
+// *** BG2-SoA: Irenicus Dungeon - Second Floor area script ***
+
+// Import Moridor's Box from a BG1 save (part 2)
+IF
+  !Global("A7-MoridorBox","GLOBAL",0)
+  Global("A7-MoridorBoxAdded","AR0603",0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-MoridorBoxAdded","AR0603",1)
+    ActionOverride("Container 8",CreateItem("a7-mi05",1,0,0))
+    // ActionOverride("Container 8",SetItemFlags("a7-mi05",IDENTIFIED,TRUE))  // doesn't work
+    Continue()
+END

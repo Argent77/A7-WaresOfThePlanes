@@ -1,0 +1,37 @@
+// Moridor's Box
+
+@0 = ~Ornate Box~
+@1 = ~Moridor's Box~
+
+@10 = ~This appears to be a small wooden box. Intricate designs etched in gold adorn the box. At one time this box would have been worthy enough to be displayed at any aristocrat's estate. However, years of neglect have taken their toll and it appears to be falling apart. If not for the large gem mounted to the front of the box, it would be worthless.
+
+Feelings of dread seem to emanate from the box.
+
+STATISTICS:
+
+Weight: 2~
+@11 = ~This appears to be a small wooden box. Intricate designs etched in gold adorn the box. At one time this box would have been worthy enough to be displayed at any aristocrat's estate. However, years of neglect have taken their toll and it appears to be falling apart. If not for the large gem mounted to the front of the box, it would be worthless.
+
+It is not known what exactly is sealed within the box. Some say it's an ancient dragon, while others say it's the evil soul of Moridor himself. Judging by the deteriorating state of the box someone must have already examined the seal and damaged it in the process. It is only a matter of time before the seal dissolves completely and releases the entity imprisoned in the box.
+
+STATISTICS:
+
+Special:
+Opening the seal releases the imprisoned entity.
+
+Requires:
+ 9 Intelligence
+
+Weight: 2~
+
+@20 = ~Balor~
+@21 = ~Cornugon~
+@22 = ~Glabrezu~
+@23 = ~Imp~
+@24 = ~Marilith~
+@25 = ~Maurezhi~
+@26 = ~Nabassu~
+@27 = ~Pit Fiend~
+@28 = ~Quasit~
+
+@40 = ~The seal of Moridor's Box dissolves completely.~

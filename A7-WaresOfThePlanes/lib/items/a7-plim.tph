@@ -46,11 +46,6 @@ STR_VAR
   desc_image_resref
 END
 
-ACTION_IF (has_bg2) BEGIN
-  // Item can be imported in BG2
-  EXTEND_TOP ~ar0602.bcs~ ~%MOD_FOLDER%/bcs/bg2-ar0602-top.baf~
-END
-
 
 // Installing Pet Lim-Lim
 OUTER_SPRINT itm_resref ~a7-plim~
