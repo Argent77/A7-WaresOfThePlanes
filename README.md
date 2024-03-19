@@ -34,3 +34,7 @@ As the items vary greatly in power, they are only gradually made available as th
 This tweak automatically identifies all wares offered by the travelling merchant.
 
 **Note:** It is generally not recommended to install this tweak as it diminishes the mod experience. Install it only if you want to complement Tweaks Anthology's subcomponent "Identify All Items" or similar tweaks.
+
+### Alternate merchant portrait *(requires main component)*
+
+This tweak installs Ebb Creakknees' original character portrait from Planescape: Torment.
