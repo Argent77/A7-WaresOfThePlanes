@@ -59,6 +59,12 @@ includes weapons, accessories, utility items, and more. They can be purchased fr
 travelling merchant who can be found in several towns and settlements throughout the whole
 Baldur's Gate series.
 
+The merchant can be found at the following locations:
+- BG1: Beregost, Nashkel's Carnival or Ulgoth's Beard
+- SoD: Coast Way Crossing or Coalition Camp
+- BG2-SoA: Athkatla's market district, Trademeet or Imnesvale in the Umar Hills
+- BG2-ToB: Saradush or Amkethran
+
 The travelling merchant offers a total of
 - 17 Daggers
 - 10 Battle Axes
@@ -119,7 +125,7 @@ Version History
 1.1
 - Added new default portrait for the travelling merchant
 - Added tweak that restores the original PsT portrait for the travelling merchant
-- Added new item for sale: Elixir of Horrific Separation
+- Added new items for sale: Elixir of Horrific Separation, Moridor's Box
 
 1.0
 - Initial release

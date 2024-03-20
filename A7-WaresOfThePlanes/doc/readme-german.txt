@@ -62,6 +62,12 @@ Das ist die Hauptkomponente. Sie installiert eine große Anzahl Waffen, Zubehör
 gegenstände aus Planescape: Torment. Sie können von einem speziellen Händler erworben werden,
 den man in diversen Städten und Dörfern über das ganze Spiel hinweg antreffen kann.
 
+Den Händler kann man an den folgenden Orten antreffen:
+- BG1: in Beregost, Nashkells Jahrmarkt oder Ulgoths Bart
+- SoD: am Küstenwegübergang oder im Koalitionslager
+- BG2-SvA: in Athkatlas Marktbezirk, Handelstreff oder Imnestal in den Umarhügeln
+- BG2-TdB: in Saradush oder Amkethran
+
 Der reisende Händler bietet insgesamt
 - 17 Dolche
 - 10 Streitäxte
@@ -123,7 +129,7 @@ Versionshistorie
 1.1
 - Added new default portrait for the travelling merchant
 - Added tweak that restores the original PsT portrait for the travelling merchant
-- Added new item for sale: Elixir of Horrific Separation
+- Added new items for sale: Elixir of Horrific Separation, Moridor's Box
 
 1.0
 - Initial release
