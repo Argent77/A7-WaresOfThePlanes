@@ -25,21 +25,26 @@ ACTION_IF (has_bg2) BEGIN
 
   LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
   WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
-    COMPILE ~%MOD_FOLDER%/bcs/%itm_resref%.baf~
-
-    COPY ~%MOD_FOLDER%/eff/%itm_resref%a.eff~ ~override~
-         ~%MOD_FOLDER%/eff/%itm_resref%b.eff~ ~override~
-         ~%MOD_FOLDER%/eff/%itm_resref%c.eff~ ~override~
-         ~%MOD_FOLDER%/spl/%itm_resref%x.spl~ ~override~
-
-    COPY ~%MOD_FOLDER%/eff/%itm_resref%d.eff~ ~override~
-      SAY 0x1c @23  // Item has no effect
-
     // Use an existing spell state slot
     OUTER_SET splstate_idx = IDS_OF_SYMBOL(~splstate~ ~IMPRISONMENT_DESTROY~)
     ACTION_IF (splstate_idx < 0) BEGIN
       OUTER_SET splstate_idx = 124
     END
+
+    COMPILE ~%MOD_FOLDER%/bcs/%itm_resref%.baf~
+
+    COPY ~%MOD_FOLDER%/eff/%itm_resref%a.eff~ ~override~
+         ~%MOD_FOLDER%/eff/%itm_resref%b.eff~ ~override~
+         ~%MOD_FOLDER%/eff/%itm_resref%c.eff~ ~override~
+
+    COPY ~%MOD_FOLDER%/spl/%itm_resref%x.spl~ ~override~
+        LPF alter_item_effect_ex
+          INT_VAR
+            check_headers = 1
+            match_opcode = 337  // Remove effects by opcode
+            match_parameter2 = 328
+            parameter1 = splstate_idx
+        END
 
     OUTER_SET tra_ref = 20
     ACTION_FOR_EACH suffix IN ~a~ ~b~ ~c~ BEGIN

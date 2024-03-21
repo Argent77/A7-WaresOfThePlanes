@@ -8,20 +8,19 @@
 EIGENSCHAFTEN:
 
 Gewicht: 1~
-@11 = ~Dies ist die Phiole mit dem Elixier der Schrecklichen Trennung, das von einer Gelehrten gemischt wurde, die einst eine dunkle Seite an sich entdeckte, eine Seite, die von Zeit zu Zeit die Kontrolle über sie übernahm und sie veranlaßte, schreckliche Dinge zu tun. Dieser Trank sollte ihre dunkle Hälfte von der anderen 'abspalten' und zwei getrennte Wesen schaffen. Gnadentöter aus Sigil fanden und exekutierten sie jedoch wegen einer Reihe scheußlicher Morde, bevor sie den Trank anwenden konnte.
+@11 = ~Dies ist die Phiole mit dem Elixier der Schrecklichen Trennung, das von einer Gelehrten gemischt wurde, die einst eine dunkle Seite an sich entdeckte, eine Seite, die von Zeit zu Zeit die Kontrolle über sie übernahm und sie veranlasste, schreckliche Dinge zu tun. Dieser Trank sollte ihre dunkle Hälfte von der anderen 'abspalten' und zwei getrennte Wesen schaffen. Gnadentöter aus Sigil fanden und exekutierten sie jedoch wegen einer Reihe scheußlicher Morde, bevor sie den Trank anwenden konnte.
 
 EIGENSCHAFTEN:
 
 Schreckliche Trennung:
-When der Trank zu sich genommen wird, dann fängt die Verzauberung an zu wirken. Sie spaltet den weniger dominanten Teil des Anwenders ab, der sich als eigenständiges Wesen mit vergleichbarer Stärke und einer entgegengesetzten Gesinnung manifestiert. Dieses Wesen untersteht 5 Phasen lang der Kontrolle der Gruppe, bevor es sich aus der Verzauberung befreit und entweder flieht oder die Gruppe angreift. Zusätzlich ändert sich die ethische Gesinnung des Nutzer dauerhaft hin zu 'Neutral'.
+When der Trank zu sich genommen wird, dann fängt die Verzauberung an zu wirken. Sie spaltet den weniger dominanten Teil des Anwenders ab, der sich als eigenständiges Wesen mit vergleichbarer Stärke und einer entgegengesetzten Gesinnung manifestiert. Dieses Wesen untersteht 5 Phasen lang der Kontrolle der Gruppe, bevor es sich aus der Verzauberung befreit und entweder flieht oder die Gruppe angreift. Zusätzlich ändert sich die ethische Gesinnung des Nutzers dauerhaft hin zu 'Neutral' (Neutral Gut, Absolut Neutral oder Neutral Böse).
 
-Das Elixier zeigt keine Wirkung, wenn die ethische Gesinnung des Nutzers bereits 'Neutral' ist (Neutral Gut, Absolut Neutral oder Neutral Böse).
+Das Elixier zeigt keine Wirkung, wenn die ethische Gesinnung des Nutzers bereits 'Neutral' ist.
 
 Gewicht: 1~
 
 @20 = ~Gesinnung dauerhaft auf Neutral Gut geändert.~
 @21 = ~Gesinnung dauerhaft auf Absolut Neutral geändert.~
 @22 = ~Gesinnung dauerhaft auf Neutral Böse geändert.~
-@23 = ~Der Gegenstand zeigt keine Wirkung.~
 
 @30 = ~Befreit sich aus der Verzauberung.~

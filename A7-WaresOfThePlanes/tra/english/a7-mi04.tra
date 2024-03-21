@@ -13,15 +13,14 @@ Weight: 1~
 STATISTICS:
 
 Horrific Separation:
-When the elixir is consumed the enchantment takes hold and splits the less dominant part of the user into a separate being of comparable power but opposite alignment. This being can be controlled for five turns before it breaks free from the enchantment and either attacks the party or escapes. Moreover, the user's ethical part of their alignment shifts permanently towards 'neutral'.
+When the elixir is consumed the enchantment takes hold and splits the less dominant part of the user into a separate being of comparable power but opposite alignment. This being can be controlled for five turns before it breaks free from the enchantment and either attacks the party or escapes. Moreover, the user's ethical part of their alignment shifts permanently towards 'neutral' (neutral good, true neutral or neutral evil).
 
-The elixir will have no effect when consumed by a user whose ethical alignment is already 'neutral' (neutral good, true neutral or neutral evil).
+The elixir will have no effect when consumed by a user whose ethical alignment is already 'neutral'.
 
 Weight: 1~
 
 @20 = ~Alignment permanently shifted to Neutral Good.~
 @21 = ~Alignment permanently shifted to True Neutral.~
 @22 = ~Alignment permanently shifted to Neutral Evil.~
-@23 = ~Item has no effect.~
 
 @30 = ~Breaks free from the enchantment.~
