@@ -1,6 +1,6 @@
 BACKUP ~weidu_external/backup/A7-WaresOfThePlanes~
 AUTHOR ~https://www.gibberlings3.net/forums/topic/38054-wares-of-the-planes-planescape-items-for-baldurs-gate~
-VERSION ~1.0~
+VERSION ~1.1~
 
 ALWAYS
   // root folder for mutable data
