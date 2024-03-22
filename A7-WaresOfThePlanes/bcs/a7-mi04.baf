@@ -111,7 +111,7 @@ END
 // Inverted alignment may cause paladins and rangers to fall
 IF
   Global("init","LOCALS",0)
-  Class(Myself,PALADIN_ALL)
+  Class(Myself,PALADIN)
   Alignment(Myself,MASK_EVIL)
 THEN
   RESPONSE #100
@@ -121,7 +121,7 @@ END
 
 IF
   Global("init","LOCALS",0)
-  Class(Myself,RANGER_ALL)
+  Class(Myself,RANGER)
   Alignment(Myself,MASK_EVIL)
 THEN
   RESPONSE #100
@@ -258,7 +258,7 @@ IF
   GlobalTimerExpired("releaseTimer","LOCALS")
   Global("releaseEnemy","LOCALS",1)
   Global("released","LOCALS",0)
-  Class(Myself,PALADIN_ALL)
+  Class(Myself,PALADIN)
 THEN
   RESPONSE #100
     ChangeAIScript("PALAD16",CLASS)
@@ -269,7 +269,7 @@ IF
   GlobalTimerExpired("releaseTimer","LOCALS")
   Global("releaseEnemy","LOCALS",1)
   Global("released","LOCALS",0)
-  Class(Myself,RANGER_ALL)
+  Class(Myself,RANGER)
 THEN
   RESPONSE #100
     ChangeAIScript("DRUID8A",CLASS)
