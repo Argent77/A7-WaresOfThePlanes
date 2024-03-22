@@ -108,6 +108,28 @@ THEN
 END
 
 
+// Inverted alignment may cause paladins and rangers to fall
+IF
+  Global("init","LOCALS",0)
+  Class(Myself,PALADIN_ALL)
+  Alignment(Myself,MASK_EVIL)
+THEN
+  RESPONSE #100
+    RemovePaladinHood()
+    Continue()
+END
+
+IF
+  Global("init","LOCALS",0)
+  Class(Myself,RANGER_ALL)
+  Alignment(Myself,MASK_EVIL)
+THEN
+  RESPONSE #100
+    RemoveRangerHood()
+    Continue()
+END
+
+
 // Attacking the clone may break the enchantment prematurely
 IF
   HitBy([PC],CRUSHING)
