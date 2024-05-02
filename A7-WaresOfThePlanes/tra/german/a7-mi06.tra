@@ -1,0 +1,20 @@
+// Baku's Horn
+
+@0 = ~Horn~
+@1 = ~Bakus Horn~
+
+@10 = ~Das ist ein kleines Horn. Hörner werden normalerweise aus Holz, Knochen oder Metall gefertigt und können die verschiedensten Töne erzeugen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 1~
+@11 = ~Dieses unscheinbare Holzhorn ist in Wirklichkeit ein magisches Artefakt aus den Oberen Ebenen. Wie der Angriff der namensgebenden Kreatur, fügt Bakus Horn bösen Wesen im Wirkungsbereich Schaden zu, wenn es geblasen wird. Außerdem fliehen solche Wesen in Panik, sofern sie keinen Rettungswurf gg. Lähmung bestehen.
+
+EIGENSCHAFTEN:
+
+Bakus Gebrüll (3x täglich)
+ Die Opfer fliehen für eine Phase in Panik (Rettungswurf gg. Lähmung).
+ Schaden: 2W8 (Wucht) gg. böse Wesen
+ Bereich: 4,5 m Radius
+
+Gewicht: 1~

@@ -1,0 +1,19 @@
+// Baku's Horn
+
+@0 = ~Horn~
+@1 = ~Baku's Horn~
+
+@10 = ~This is a small horn. Horns are typically made of wood, bone or metal and can produce a large variety of sounds.
+
+STATISTICS:
+
+Weight: 1~
+@11 = ~This nondescript wooden horn is in fact a magical item crafted on the Upper Planes. Similar to the attack of the creature for which it is named, a Baku's Horn inflicts damage upon evil creatures within the area of effect when it is sounded. Further, such creatures must make a save vs. paralyzation or flee in panic.
+
+Charge abilities:
+– Baku's Roar three times per day
+  Damage: 2d8 crushing vs. evil creatures
+  Special: Causes panic for one turn (Save vs. Paralysis negates)
+  Area of Effect: 15-ft. radius
+
+Weight: 1~

@@ -123,7 +123,7 @@ Version History
 ~~~~~~~~~~~~~~~
 
 1.2
-- Added new item for sale: Vambraces of Evil's Warding
+- Added new items for sale: Vambraces of Evil's Warding, Baku's Horn
 
 1.1
 - Added new default portrait for the travelling merchant
