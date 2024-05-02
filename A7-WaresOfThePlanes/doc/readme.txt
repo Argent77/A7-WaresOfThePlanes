@@ -76,7 +76,7 @@ The travelling merchant offers a total of
 - 1 Long Sword
 - 10 Rings
 - 7 Earrings (can be equipped in the Amulets slot)
-- 6 Bracelets (can be equipped in the Bracers/Gauntlets slot)
+- 7 Bracelets and Bracers (can be equipped in the Bracers/Gauntlets slot)
 - 1 Wand
 - several miscellaneous items
 - a unique quest-related artifact
@@ -121,6 +121,9 @@ Merchant portrait based on "RPG Dwarf Males 41" by ttb2112-ai on DeviantArt.
 
 Version History
 ~~~~~~~~~~~~~~~
+
+1.2
+- Added new item for sale: Vambraces of Evil's Warding
 
 1.1
 - Added new default portrait for the travelling merchant

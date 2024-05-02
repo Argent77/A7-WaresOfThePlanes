@@ -1,0 +1,18 @@
+// Vambraces of Evil's Warding
+
+// @0 = ~~  // #6341
+@1 = ~Vambraces of Evil's Warding~
+
+// @10 = ~  // #6791
+@11 = ~These armbands, when worn, protect their wearer from the attacks of evil creatures. Their shiny metallic pieces of armor are graven with warding runes that attract damage to the vambraces where it bounces off harmlessly. Area of effect attacks there are not directly aimed at the target are unaffected.
+
+It is rumored that the vambraces were created from the spirits of fallen petitioners on Arcadia, and their desire to combat evil still lives within the item. This theory is supported by the fact that when evil characters equip these vambraces, they suffer damage repeatedly for every ten rounds while worn.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2 vs. evil creatures
+– Saving Throws: +2 vs. evil creatures
+– Applies 2d8 non-lethal damage to the wearer every 10 rounds when worn by evil characters (save vs. Death for half damage.)
+
+Weight: 2~

@@ -79,10 +79,10 @@ Der reisende Händler bietet insgesamt
 - 1 Langschwert
 - 10 Ringe
 - 7 Ohrringe (können im Feld für Amulette platziert werden)
-- 6 Armbänder (können im Feld für Armschützer und Handschuhe platziert werden)
+- 7 Armbänder und Armschienen (können im Feld für Armschützer und Handschuhe platziert werden)
 - 1 Zauberstab
 - mehrere Gebrauchsgegenstände
-- ein einzigartiges Aufgaben-bezogenes Artefakt
+- ein einzigartiges Quest-bezogenes Artefakt
 - und ein Haustier
 zum Verkauf an.
 
@@ -125,6 +125,9 @@ Merchant portrait based on "RPG Dwarf Males 41" by ttb2112-ai on DeviantArt.
 
 Versionshistorie
 ~~~~~~~~~~~~~~~~
+
+1.2
+- Added new item for sale: Vambraces of Evil's Warding
 
 1.1
 - Added new default portrait for the travelling merchant
