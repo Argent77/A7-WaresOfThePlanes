@@ -1,0 +1,27 @@
+// Abigail +1
+
+// @0 = ~~  // #6646
+@1 = ~Abigail +1~
+
+// @10 = ~~ // #6738
+@11 = ~This blade has been created for a single purpose: to eradicate oozes, slimes and jellies of all kind. The razor sharp blade is made from alchemically-strengthened black obsidian which is harder than steel and immune to the corrosive effects of oozes and related monsters.
+
+Not much is known about the origins of the blade. There are no tales recorded about adventurers slaying hordes of jellies threatening a village, nor rumors known about heroes cleaning out slime-infested caves single-handedly. Dispatching ooze and slime cannot match up to vanquishing dragons after all.
+
+STATISTICS:
+
+Combat abilities:
+– Ooze, slime and jelly must save vs. Death or be utterly destroyed
+
+THAC0: +1, +3 vs. oozes, slimes and jellies
+Damage: 2d4+1, +3 vs. oozes, slimes and jellies
+Damage type: Slashing
+Speed Factor: 7
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10~
+
+@20 = ~Slime destroyed~

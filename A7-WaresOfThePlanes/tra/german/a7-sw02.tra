@@ -1,0 +1,26 @@
+// Abigail +1
+
+// @0 = ~~  // #6646
+@1 = ~Abigail +1~
+
+// @10 = ~~ // #6738
+@11 = ~Diese Klinge wurde für einen genau definierten Zweck erschaffen: Schleim jeder Art auszulöschen. Die extrem scharfe Klinge wurde aus alchemisch verstärktem schwarzen Obsidian gefertigt, der härter als Stahl und unempfindlich gegenüber der ätzenden Wirkung von Schleim oder verwandten Wesen ist.
+
+Über die Ursprünge der Klinge ist nicht viel bekannt. Es sind weder Geschichten über Abenteurer überliefert, die Horden von Schlammmonstern erschlagen, welche eine Siedlung bedrohen, noch Gerüchte über Helden, die im Alleingang schleimbefallene Höhlen säubern. Das Beseitigen von Schleim- und Schlammmonstern kann eben nicht mit dem Bezwingen von Drachen mithalten.
+
+EIGENSCHAFTEN:
+
+Wird ein Schleim-, Schlamm- oder Blobmonster getroffen, wird dieses sofort zerstört (Rettungswurf gg. Tod).
+
+ETW0-Bonus: -1, -3 gg. Schleim-, Schlamm- und Blobmonster
+Schaden:
+ 2W4 +1 (Klinge)
+ 2W4 +3 gg. Schleim-, Schlamm- und Blobmonster
+Initiativefaktor: 7
+Fertigkeit: Bastardschwert
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 10~
+
+@20 = ~Schleim zerstört~
