@@ -1,0 +1,28 @@
+// Dûrgaläd +3
+
+// @0 = ~~  // #2893
+@1 = ~Dûrgaläd +3~
+
+// @10 = ~~ // #6742
+@11 = ~This magnificient weapon was forged by the svartalves of Svartalfheim in Nidavellir, the third layer of Ysgard. It was made from mithral, and ancient Drow magic imbued it with the radiance of the caves of Svartalfheim. The sword was originally given to Garadun of Sigil for his bravery when he aided the svartalves in their battle against giant fiendish bats.
+
+The weapon allows the wielder to see the true nature of all things by dispelling any illusions and deceptions that would otherwise mislead the unwary.
+
+STATISTICS:
+
+Combat abilities: 
+– Dispels illusionary protections, including projected images, when the sword strikes an opponent
+
+Charge abilities:
+– True Seeing once per day
+– Identify items three times per day
+
+THAC0: +3
+Damage: 1d8+3 (slashing)
+Speed Factor: 2
+Proficiency Type: Long Sword 
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3~

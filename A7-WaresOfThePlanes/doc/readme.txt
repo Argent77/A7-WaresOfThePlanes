@@ -116,6 +116,8 @@ ShareAlike 4.0 International License" (https://creativecommons.org/licenses/by-n
 
 Items are based on resources from Planescape: Torment, (c) by Black Isle Studios.
 
+Some icon graphics based on resources from Age of Wonders - Shadow Magic.
+
 Merchant portrait based on "RPG Dwarf Males 41" by ttb2112-ai on DeviantArt.
 
 
@@ -123,7 +125,7 @@ Version History
 ~~~~~~~~~~~~~~~
 
 1.2
-- Added new items for sale: Vambraces of Evil's Warding, Baku's Horn, Abigail +1
+- Added new items for sale: Vambraces of Evil's Warding, Baku's Horn, Abigail +1, Dûrgaläd +3
 
 1.1
 - Added new default portrait for the travelling merchant

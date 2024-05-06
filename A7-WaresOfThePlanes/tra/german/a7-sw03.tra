@@ -1,0 +1,30 @@
+// Dûrgaläd +3
+
+// @0 = ~~  // #2893
+@1 = ~Dûrgaläd +3~
+
+// @10 = ~~ // #6742
+@11 = ~Diese prächtige Waffe wurde von den Dunkelelfen Svartalfheims in Nidavellir, der dritten Ebene von Ysgard, geschmiedet. Sie besteht aus Mithril, und uralte Drowmagie verleiht ihr den Glanz der Höhlen von Svartalfheim. Das Schwert wurde ursprünglich Garadun aus Sigil für seine Tapferkeit verliehen, als er den Svartalfheimern im Kampf gegen dämonische Riesenfledermäuse beistand.
+
+Die Waffe ermöglicht es dem Träger, die wahre Natur aller Dinge zu erkennen, indem sie jegliche Illusionen und Täuschungen beseitigt, die andernfalls den Unachtsamen in die Irre führen würden.
+
+EIGENSCHAFTEN:
+
+Wahrer Blick (1x täglich)
+ Reichweite: Anwender
+ Dauer: 1 Phase
+ Bereich: 36,5 m Radius
+
+Identifizieren (3x täglich)
+ Bereich: 1 Gegenstand
+
+Bei jedem Treffer werden Illusionszauber des Ziels und illusionäre Duplikate gebannt.
+
+ETW0-Bonus: +3
+Schaden: 1W8 +3 (Klinge)
+Initiativefaktor: 2
+Fertigkeit: Langschwert
+Typ: 1-händig
+Mindeststärke: 6
+
+Gewicht: 3~
