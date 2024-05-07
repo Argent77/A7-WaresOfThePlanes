@@ -1,9 +1,9 @@
 // Various initializations
 
-OUTER_SET has_bg = GAME_IS ~bgee eet~
+OUTER_SET has_bg  = GAME_IS ~bgee eet~
 OUTER_SET has_sod = GAME_INCLUDES ~sod~
 OUTER_SET has_bg2 = GAME_IS ~bg2ee eet~
-OUTER_SET is_eet = GAME_IS ~eet~
+OUTER_SET is_eet  = GAME_IS ~eet~
 
 // Setting bg2_chapter_1, bg2_chapter_2, ... to actual BG2 chapter value
 OUTER_SET bg2_chapter = is_eet ? 12 : 0
@@ -13,9 +13,11 @@ OUTER_FOR (i = 1; i < 11; ++i) BEGIN
   OUTER_SET EVAL ~%name_source%~ = bg2_chapter
 END
 
-// Area prefixes for BG1
+// BG1-specific initializations
 ACTION_IF (GAME_IS ~eet~) BEGIN
   OUTER_SPRINT bg1_are_prefix ~BG~
+  OUTER_SET bg1_strref_base = 200000
 END ELSE BEGIN
   OUTER_SPRINT bg1_are_prefix ~AR~
+  OUTER_SET bg1_strref_base = 0
 END
