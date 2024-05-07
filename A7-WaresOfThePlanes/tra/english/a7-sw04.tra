@@ -1,0 +1,37 @@
+// Fiendblight +2
+
+// @0 = ~~  // #6646
+@1 = ~Fiendblight +2~
+
+// @10 = ~~ // #6738
+@11 = ~Fiendblight was originally forged by the Tanar'ri for the endless Blood War that raged across countless planes of existence. It was given to promising contenders for higher ranks or mercenaries who wanted to prove themselves in battle.
+
+When activated the weapon forces the wielder to clutch the grip of the sword tightly, unable to release it without the help of divine intervention or a Remove Curse spell. The true danger of the weapon, however, is revealed only in actual combat. Each successful hit causes a rush of adrenaline so intense that the wielder goes into a frenzy with the goal to score yet another hit unless a successful save vs. Spell is made. To further incentivize the wielder to reach peak performance they are rewarded with a piece of life energy from their target on a critical hit and punished with self-injury on a critical miss.
+
+STATISTICS:
+
+Equipped abilities:
+– May only be removed with a Remove Curse spell
+
+Combat abilities:
+– Casts Larloch's Minor Drain on the target on a critical hit (no save)
+– Applies 1d4 points of slashing damage to the wielder on a critical miss (no save)
+– Each successful hit the wielder must save vs. Spell or go into a frenzy for one round with the following effects:
+   THAC0: +2 bonus
+   Damage: +2 bonus
+   Armor Class: -2 penalty
+   Save vs. Spell: -2 penalty
+   Immunity to panic
+   Causes the wielder to go berserk
+
+THAC0: +2
+Damage: 2d4+2 (slashing)
+Speed Factor: 6
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 9~
+
+@20 = ~Frenzied~

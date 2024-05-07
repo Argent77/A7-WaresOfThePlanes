@@ -1,0 +1,38 @@
+// Fiendblight +2
+
+// @0 = ~~  // #6646
+@1 = ~Dämonenbrand +2~
+
+// @10 = ~~ // #6738
+@11 = ~Dämonenbrand wurde ursprünglich von den Tanar'ri für den endlosen Blutkrieg geschmiedet, der über unzählige Existenzebenen tobte. Die Waffe wurde an vielversprechende Anwärter für höhere Ränge oder Söldner vergeben, die sich im Kampf beweisen wollten.
+
+Die Magie der Waffe zwingt den Träger, den Griff des Schwerts fest zu umklammern, aus der man sich nur durch göttliche Fügung oder mit dem Zauber „Fluch brechen“ befreien kann. Die wahre Gefahr der Waffe wird allerdings erst im Kampf selbst offenbar. Jeder erfolgreicher Treffer löst einen Adrenalinschub aus, der so intensiv ist, dass der Träger in einen regelrechten Blutrausch verfällt und versucht, einen weiteren Treffer zu erzielen. Als weiterer Anreiz zu Höchstleistungen wird der Träger bei einem kritischen Treffer mit Lebensenergie des Angriffsziels belohnt und bei einem kritischen Fehlschlag mit Selbstverletzung bestraft.
+
+EIGENSCHAFTEN:
+
+Kann nur durch „Fluch brechen“ wieder abgenommen werden.
+
+Bei jedem kritischen Treffer wird „Entzug von Lebenskraft“ auf das Ziel gewirkt (kein Rettungswurf).
+
+Bei jedem kritischen Fehlschlag nimmt der Träger 1d4 Punkte Klingenschaden (kein Rettungswurf).
+
+Bei jedem erfolgreichen Treffer verfällt der Träger in einen Blutrausch (Rettungswurf gg. Zauber)
+ Dauer: 1 Runde
+ Effekte:
+   ETW0-Bonus: -2
+   Schadensbonus: +2
+   RK-Malus: +2
+   RW-Malus: +2 gg. Zauber
+   Der Träger ist immun gegen Panik.
+   Der Träger verfällt in Raserei.
+
+ETW0-Bonus: -2
+Schaden: 2W4 +2 (Klinge)
+Initiativefaktor: 6
+Fertigkeit: Bastardschwert
+Typ: 1-händig
+Mindeststärke: 11
+
+Gewicht: 9~
+
+@20 = ~Im Blutrausch~
