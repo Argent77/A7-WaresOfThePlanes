@@ -3,7 +3,7 @@
 @0 = ~Bunte Axt~
 @1 = ~Axt des Narren +3~
 
-@10 = ~Diese seltsame Axt ist mit so schreienden Farben angemalt und so unhandlich, daß sie auf keinen Fall im Kampf verwendet werden kann. Die Klingen der Axt scheinen absichtlich heruntergefeilt und stumpf gemacht worden zu sein, vielleicht, damit der Träger nicht sich selbst und anderen wehtut. Wahrscheinlich wurde diese Axt für eine Zeremonie geschaffen, oder, noch wahrscheinlicher, als Zubehör eines Narrenkostüms.
+@10 = ~Diese seltsame Axt ist mit so schreienden Farben angemalt und so unhandlich, dass sie auf keinen Fall im Kampf verwendet werden kann. Die Klingen der Axt scheinen absichtlich heruntergefeilt und stumpf gemacht worden zu sein, vielleicht, damit der Träger nicht sich selbst und anderen wehtut. Wahrscheinlich wurde diese Axt für eine Zeremonie geschaffen, oder, noch wahrscheinlicher, als Zubehör eines Narrenkostüms.
 
 EIGENSCHAFTEN:
 
@@ -14,7 +14,7 @@ Typ: 1-händig
 Mindeststärke: 10
 
 Gewicht: 7~
-@11 = ~Wer diese Axt erschaffen hat, muß entweder verrückt oder ein Genie gewesen sein. Nur die geübtesten Schmiede können eine Waffe aus Chaosmaterial, dem instabilsten und unvorhersehbarsten Element auf allen Ebenen, geschmiedet haben.
+@11 = ~Wer diese Axt erschaffen hat, muss entweder verrückt oder ein Genie gewesen sein. Nur die geübtesten Schmiede können eine Waffe aus Chaosmaterial, dem instabilsten und unvorhersehbarsten Element auf allen Ebenen, geschmiedet haben.
 
 Geschichten um genau diese Axt haben immer und immer wieder die Runde im Universum der Ebenen gemacht. Heroische Taten von Männern, die Wesen besiegten, indem sie diese einfach nur mit der Axt berührten, sowie Geschichten davon, wie dieselben Männer einen schrecklichen Tod fanden, während sie ganz einfache, alltägliche Ausgaben ausführten.
 

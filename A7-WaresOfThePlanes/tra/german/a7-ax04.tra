@@ -3,7 +3,7 @@
 @0 = ~Polierte Streitaxt~
 @1 = ~Blindseiter +1~
 
-@10 = ~Die Klinge dieser Axt wurde so stark poliert, daß sie Dinge wie ein Spiegel reflektiert. Die Axt ist ungewöhnlich leicht, als wäre sie eher als Zierde als für den Kampf gedacht.
+@10 = ~Die Klinge dieser Axt wurde so stark poliert, dass sie Dinge wie ein Spiegel reflektiert. Die Axt ist ungewöhnlich leicht, als wäre sie eher als Zierde als für den Kampf gedacht.
 
 EIGENSCHAFTEN:
 
@@ -14,9 +14,9 @@ Typ: 1-händig
 Mindeststärke: 10
 
 Gewicht: 7~
-@11 = ~Diese prachtvolle Axt, bekannt als der "Blindseiter", ist wirklich einmalig. Es wird gemunkelt, daß sie das Werk eines gewissen Akyzum Yar ist, der Chefmetallurge eines alten Kaiserreichs der Materiellen Ebene gewesen sein soll. Der Kaiser, dem Yar diente, war ein eitler und hinterhältiger Mann. Er beauftragte Yar mit der Herstellung einer "Waffe von unübertroffener Schönheit". Als Yar nach Jahren mühseliger Plackerei dem Kaiser endlich den "Blindseiter" präsentieren konnte, wurde er umgehend getötet, damit seine Arbeit nicht reproduziert werden konnte.
+@11 = ~Diese prachtvolle Axt, bekannt als der "Blindseiter", ist wirklich einmalig. Es wird gemunkelt, dass sie das Werk eines gewissen Akyzum Yar ist, der Chefmetallurge eines alten Kaiserreichs der Materiellen Ebene gewesen sein soll. Der Kaiser, dem Yar diente, war ein eitler und hinterhältiger Mann. Er beauftragte Yar mit der Herstellung einer "Waffe von unübertroffener Schönheit". Als Yar nach Jahren mühseliger Plackerei dem Kaiser endlich den "Blindseiter" präsentieren konnte, wurde er umgehend getötet, damit seine Arbeit nicht reproduziert werden konnte.
 
-Die verschiedenen Erze und Verzauberungen, die beim Schmieden dieser Waffe verwendet wurden, haben ein Metall entstehen lassen, das leicht, robust und hochreflektierend ist. Die Axt erhielt ihren Namen nach ihrer Eigenheit, Licht in die Augen des Gegners zu reflektieren, so daß dieser geblendet wurde und leichter niedergestreckt werden konnte. Zudem verleiht die Axt - als magischen Zusatz ihrer reflektierenden Eigenschaften - ihrem Träger Immunität gegen Blendangriffe.
+Die verschiedenen Erze und Verzauberungen, die beim Schmieden dieser Waffe verwendet wurden, haben ein Metall entstehen lassen, das leicht, robust und hochreflektierend ist. Die Axt erhielt ihren Namen nach ihrer Eigenheit, Licht in die Augen des Gegners zu reflektieren, so dass dieser geblendet wurde und leichter niedergestreckt werden konnte. Zudem verleiht die Axt - als magischen Zusatz ihrer reflektierenden Eigenschaften - ihrem Träger Immunität gegen Blendangriffe.
 
 EIGENSCHAFTEN:
 

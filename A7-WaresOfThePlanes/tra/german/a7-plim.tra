@@ -25,7 +25,7 @@ Gewicht: 5~
 @42 = ~[Death]~ [a7-lim8]
 
 // Lim-Lim dialog lines
-@100 = ~Dies ist dein Haustier, ein Lim-Lim. Als es merkt, daß es deine Aufmerksamkeit hat, zirpt es dich liebevoll an. "Piyo!"~
+@100 = ~Dies ist dein Haustier, ein Lim-Lim. Als es merkt, dass es deine Aufmerksamkeit hat, zirpt es dich liebevoll an. "Piyo!"~
 @101 = ~Untersuche dein Lim-Lim.~
 @102 = ~Heb dein Lim-Lim wieder auf.~
 @103 = ~Streichle dein Lim-Lim.~
