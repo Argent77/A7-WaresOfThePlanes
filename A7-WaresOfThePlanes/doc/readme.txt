@@ -73,7 +73,8 @@ The travelling merchant offers a total of
 - 5 Clubs
 - 4 Maces
 - 1 Morning Star
-- 1 Long Sword
+- 2 Long Swords
+- 2 Bastard Swords
 - 10 Rings
 - 7 Earrings (can be equipped in the Amulets slot)
 - 7 Bracelets and Bracers (can be equipped in the Bracers/Gauntlets slot)
@@ -82,6 +83,8 @@ The travelling merchant offers a total of
 - a unique quest-related artifact
 - and a pet
 for sale.
+
+More details about available items can be found in the file "item-descriptions.txt".
 
 As the items vary greatly in power, they are only gradually made available as the main story of
 the game progresses.

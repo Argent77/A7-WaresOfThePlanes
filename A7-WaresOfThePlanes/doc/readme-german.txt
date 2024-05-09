@@ -76,7 +76,8 @@ Der reisende Händler bietet insgesamt
 - 5 Keulen
 - 4 Streitkolben
 - 1 Morgenstern
-- 1 Langschwert
+- 2 Langschwerter
+- 2 Bastardschwerter
 - 10 Ringe
 - 7 Ohrringe (können im Feld für Amulette platziert werden)
 - 7 Armbänder und Armschienen (können im Feld für Armschützer und Handschuhe platziert werden)
@@ -85,6 +86,9 @@ Der reisende Händler bietet insgesamt
 - ein einzigartiges Quest-bezogenes Artefakt
 - und ein Haustier
 zum Verkauf an.
+
+Weitere Einzelheiten zu den angebotenen Gegenständen sind in der Datei "item-descriptions-german.txt"
+aufgelistet.
 
 Da die Gegenstände von sehr unterschiedlicher Qualität sind, werden sie nur schrittweise zum
 Verkauf angeboten, während die Haupthandlung des Spiels voranschreitet.
