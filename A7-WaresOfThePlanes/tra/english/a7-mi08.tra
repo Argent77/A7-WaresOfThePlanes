@@ -1,0 +1,37 @@
+// Wesley's Improved Hourglass
+
+@0 = ~Hourglass~
+@1 = ~Wesley's Improved Hourglass~
+
+@10 = ~An hourglass is a device that can be used to measure the passage of time. It usually comprises of two bulbs of glass or other translucent materials connected vertically by a narrow neck that controls the flow of the substance within.
+
+STATISTICS:
+
+Weight: 1~
+@11 = ~This item was originally fashioned by a powerful chronomancer with the intention to teach his students about the nature of time. It looks like an ordinary hourglass in a wooden frame, but instead of sand it is filled with mist-smoke of the Demiplane of Time, also known as Temporal Prime.
+
+When the hourglass is smashed it enables the user to step out of the normal flow of time and manipulate objects in a limited fashion while everything around them appears to be frozen in time. The mental and physical stress induced by this state causes the user to be severely fatigued after the effect has worn off.
+
+Enhancing the inherent magic of the item with the help of the Rift Device allows the user to extend the temporal effect to a selected number of targets.
+
+STATISTICS:
+
+Charge abilities:
+– Invokes "Time Stop"
+  Duration: 5 rounds
+  Area of Effect: The whole party
+  Leaves all affected characters fatigued when the effect has worn off.
+
+Requires:
+ 6 Intelligence
+
+Weight: 1~
+
+// Message when Rift Device is taken from the original resting place (shortened version of strref 53006)
+@20 = ~As you were warned, attempting to take the Rift Device from the dungeon has brought the full force of the curse down upon you.~
+
+// Dialog lines for Cespenar
+@100 = ~Oh, an hourglass. You need to boil eggs?~
+@101 = ~Combine with Rift Device to boil many eggs at same time. But anger of the gods you risk by keeping it. Do you dare?~
+@102 = ~Combine with Rift Device to boil many eggs at same time. That and 10,000 gp and I will do it for you. Is good deal?~
+@103 = ~Let me see what else you have.~

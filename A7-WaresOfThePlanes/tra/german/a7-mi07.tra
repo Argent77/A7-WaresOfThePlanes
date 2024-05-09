@@ -1,0 +1,24 @@
+// Wesley's Hourglass
+
+@0 = ~Sanduhr~
+@1 = ~Wesleys Stundenglas~
+
+@10 = ~Eine Sanduhr ist ein Instrument, mit dem man den Lauf der Zeit messen kann. Sie besteht in der Regel aus zwei Glaskörpern oder anderen durchsichtigen Materialien, die senkrecht durch einen schmalen Hals verbunden sind, der den Durchfluss der darin befindlichen Substanz steuert.
+
+EIGENSCHAFTEN:
+
+Gewicht: 1~
+@11 = ~Dieses Artefakt wurde ursprünglich von einem mächtigen Chronomanten mit der Absicht erschaffen, seine Schüler über die Natur der Zeit zu lehren. Es sieht aus wie eine gewöhnliche Sanduhr in einem Holzgestell, aber statt mit Sand ist sie mit Nebelrauch aus der Halbebene der Zeit gefüllt.
+
+Wenn das Stundenglas zerbrochen wird, dann ermöglicht die darin befindliche Substanz den Anwender, aus der Normalzeit herauszutreten und sich frei zu bewegen, während alles andere in der Zeit eingefroren zu sein scheint. Der mentale und physische Stress, den dieser Zustand beim Anwender auslöst, lässt ihn stark erschöpft zurück, nachdem die Wirkung abgeklungen ist.
+
+EIGENSCHAFTEN:
+
+Ruft „Zeitstopp“ hervor.
+ Dauer: 5 Runden
+ Reichweite: Anwender
+ Der Anwender ist nach dem Abklingen der Wirkung erschöpft.
+
+Mindestintelligenz: 6
+
+Gewicht: 1~

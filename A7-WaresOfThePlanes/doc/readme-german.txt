@@ -130,7 +130,7 @@ Versionshistorie
 
 1.2
 - Added new items for sale: Vambraces of Evil's Warding, Baku's Horn, Abigail +1, Dûrgaläd +3,
-  Fiendblight +2
+  Fiendblight +2, Wesley's Hourglass, Wesley's Improved Hourglass (upgraded by Cespenar)
 
 1.1
 - Added new default portrait for the travelling merchant

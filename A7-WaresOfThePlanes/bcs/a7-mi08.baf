@@ -1,0 +1,13 @@
+// Append to Cespenar's item upgrade script (botsmith.bcs)
+
+IF
+  Global("A7-ImprovedHourglass","GLOBAL",1)
+  Global("ImpForgeStuff","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-ImprovedHourglass","GLOBAL",0)
+    SetGlobal("ImpForgeStuff","GLOBAL",0)
+    SetGlobal("ItemMaker","GLOBAL",999) // required to trigger Cespenar's post-forge dialog
+    GiveItemCreate("a7-mi08",Player1,1,0,0)
+    StartDialogueNoSet(Player1)
+END

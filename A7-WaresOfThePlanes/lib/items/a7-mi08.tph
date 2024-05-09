@@ -1,0 +1,77 @@
+// Item: Wesley's Improved Hourglass
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-mi08~
+
+// Installing item
+COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+  LPF update_item_generic
+    STR_VAR
+      itm_resref
+    RET
+      icon_resref
+      desc_image_resref
+  END
+
+// Installing associated resources
+LAF install_item_resources_generic
+STR_VAR
+  itm_resref
+  icon_resref
+  desc_image_resref
+END
+
+// Item upgrade
+ACTION_IF (has_bg2) BEGIN
+  WITH_TRA ~%MOD_FOLDER%/tra/english/%itm_resref%.tra~ ~%MOD_FOLDER%/tra/%LANGUAGE%/%itm_resref%.tra~ BEGIN
+    COMPILE ~%MOD_FOLDER%/dlg/a7-mi08.d~
+    EXTEND_BOTTOM ~botsmith.bcs~ ~%MOD_FOLDER%/bcs/a7-mi08.baf~
+
+    // Updating curse for taking the Rift Device from its resting place
+    // Player1 has now a chance to survive the curse
+    COPY_EXISTING ~ar0701.bcs~ ~override~
+      DECOMPILE_AND_PATCH BEGIN
+        // extracting script block
+        SET pos1 = INDEX_BUFFER(~OR([0-9]+)[ %TAB%%WNL%]*PartyHasItem("MISC5[CZ]")~)
+        PATCH_IF (pos1 >= 0) BEGIN
+          SET pos1 = RINDEX_BUFFER(~^IF$~ pos1)
+          SET pos2 = INDEX_BUFFER(~^END$~ pos1)
+          PATCH_IF (pos2 > pos1) BEGIN
+            SET len = pos2 - pos1 + 3
+            READ_ASCII pos1 block (len)
+            DELETE_BYTES pos1 len
+
+            // updating block
+            INNER_PATCH_SAVE block ~%block%~ BEGIN
+              REPLACE_TEXTUALLY ~OR([0-9]+)[ %TAB%%WNL%]*PartyHasItem("MISC5[CZ]")~
+                                ~Global("A7-RiftDeviceMoved","AR0701",0) \0~
+              REPLACE_TEXTUALLY ~StartCutSceneMode()[ %TAB%%WNL%]*TakePartyItem("MISC5[CZ]")~
+                                ~SetGlobal("A7-RiftDeviceMoved","AR0701",1) \0~
+              REPLACE_TEXTUALLY ~TakePartyItem("MISC5[CZ]")~ ~~
+              REPLACE_EVALUATE ~DisplayStringHead(Player1,\([0-9]+\))~ BEGIN
+                PATCH_IF (IS_AN_INT ~MATCH1~) BEGIN
+                  SET strref = RESOLVE_STR_REF(@20) // As you were warned, attempting to take the Rift Device from the dungeon has brought the full force of the curse down upon you.
+                END
+              END ~DisplayStringHead(Player1,%strref%)~
+              REPLACE_TEXTUALLY ~Kill(Player1)~ ~ApplySpellRES("a7-mi08a",Player1)~
+            END
+
+            // writing updated block
+            SET len = STRING_LENGTH ~%block%~
+            INSERT_BYTES pos1 len
+            WRITE_ASCIIE pos1 ~%block%~ (len)
+          END
+        END
+      END
+    BUT_ONLY
+  END
+
+  // Installing additional resources
+  ACTION_FOR_EACH file IN ~a7-mi08a.spl~ BEGIN
+    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%file%~) BEGIN
+      LAF EXT_OF_FILESPEC STR_VAR filespec = EVAL ~%file%~ RET ext END
+      COPY ~%MOD_FOLDER%/%ext%/%file%~ ~override~
+    END
+  END
+END

@@ -1,0 +1,35 @@
+// Wesley's Improved Hourglass
+
+@0 = ~Sanduhr~
+@1 = ~Wesleys verbessertes Stundenglas~
+
+@10 = ~Eine Sanduhr ist ein Instrument, mit dem man den Lauf der Zeit messen kann. Sie besteht in der Regel aus zwei Glaskörpern oder anderen durchsichtigen Materialien, die senkrecht durch einen schmalen Hals verbunden sind, der den Durchfluss der darin befindlichen Substanz steuert.
+
+EIGENSCHAFTEN:
+
+Gewicht: 1~
+@11 = ~Dieses Artefakt wurde ursprünglich von einem mächtigen Chronomanten mit der Absicht erschaffen, seine Schüler über die Natur der Zeit zu lehren. Es sieht aus wie eine gewöhnliche Sanduhr in einem Holzgestell, aber statt mit Sand ist sie mit Nebelrauch aus der Halbebene der Zeit gefüllt.
+
+Wenn das Stundenglas zerbrochen wird, dann ermöglicht die darin befindliche Substanz den Anwender, aus der Normalzeit herauszutreten und sich frei zu bewegen, während alles andere in der Zeit eingefroren zu sein scheint. Der mentale und physische Stress, den dieser Zustand beim Anwender auslöst, lässt ihn stark erschöpft zurück, nachdem die Wirkung abgeklungen ist.
+
+Mit der Hilfe des Dimensionsreißers konnte die Magie des Stundenglases so verstärkt werden, dass sie sich auf eine ausgewählte Anzahl von Wesen ausweiten lässt.
+
+EIGENSCHAFTEN:
+
+Ruft „Zeitstopp“ hervor.
+ Dauer: 5 Runden
+ Reichweite: Gesamte Gruppe
+ Alle Gruppenmitglieder sind nach dem Abklingen der Wirkung erschöpft.
+
+Mindestintelligenz: 6
+
+Gewicht: 1~
+
+// Message when Rift Device is taken from the original resting place (shortened version of strref 53006)
+@20 = ~Man hat Euch davor gewarnt, den Dimensionsreißer aus dem Verlies zu entfernen. Da Ihr nicht auf die Warnungen gehört habt, wurdet Ihr Opfer des Fluchs.~
+
+// Dialog lines for Cespenar
+@100 = ~Oh, eine Sanduhr. Braucht Ihr sie zum Eierkochen?~
+@101 = ~Ich kann sie mit Dimensionsreißer kombinieren, um viele Eier auf einmal zu kochen. Aber das Ding bringt Ärger mit den Göttern. Traut Ihr Euch?!~
+@102 = ~Ich kann sie mit Dimensionsreißer kombinieren, um viele Eier auf einmal zu kochen. Gutes Angebot, für nur 10.000 Goldmünzen?!~
+@103 = ~Mal sehen, was Ihr noch habt.~
