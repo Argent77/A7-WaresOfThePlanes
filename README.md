@@ -5,7 +5,7 @@
 [![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20German&color=limegreen)](https://github.com/Argent77/A7-WaresOfThePlanes)
 
 # Wares of the Planes
-*A mod for BG:EE, SoD, BG2:EE and EET that imports a large number of items from Planescape: Torment to the Baldur's Gate series and makes them available by a unique merchant.*
+*A mod for BG:EE, SoD, BG2:EE and EET that imports a large number of items from the Planescape universe to the Baldur's Gate series and makes them available by a unique merchant.*
 
 [![Beamdog Forums](https://img.shields.io/static/v1?label=Discussion&message=Beamdog%20Forums&color=444&labelColor=eee&style=for-the-badge)](https://forums.beamdog.com/discussion/88361/wares-of-the-planes-planescape-items-for-baldurs-gate "Beamdog Forums")
 &nbsp;&nbsp;
@@ -15,7 +15,7 @@
 
 ![Sigil Merchant](A7-WaresOfThePlanes/doc/logo.webp)
 
-This mod introduces a large number of weapons and accessories from Planescape: Torment in the Baldur's Gate series. The items can be purchased from from a travelling merchant who is available throughout the whole game.
+This mod introduces a large number of weapons and accessories from the Planescape universe in the Baldur's Gate series. The items can be purchased from from a travelling merchant who is available throughout the whole game.
 
 Several items have been slightly altered to fit better into the BG series since items from the Planescape universe are generally more powerful and unique than their Forgotten Realms counterparts.
 
@@ -25,7 +25,7 @@ The mod is available for BG:EE, Siege of Dragonspear, BG2:EE and EET (Enhanced E
 
 ### Wares of the Planes *(for BG:EE, SoD, BG2:EE and EET)*
 
-This is the main component. It installs a large number of items from Planescape: Torment which includes weapons, accessories, utility items, and more. They can be purchased from a unique travelling merchant who can be found in several towns and settlements throughout the whole Baldur's Gate series.
+This is the main component. It installs a large number of items from the Planescape universe which includes weapons, accessories, utility items, and more. They can be purchased from a unique travelling merchant who can be found in several towns and settlements throughout the whole Baldur's Gate series.
 
 As the items vary greatly in power, they are only gradually made available as the main story of the game progresses.
 

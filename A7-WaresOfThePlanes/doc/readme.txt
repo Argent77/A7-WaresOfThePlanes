@@ -12,7 +12,7 @@ Discussion: https://www.gibberlings3.net/forums/topic/38054-wares-of-the-planes-
 Overview
 ~~~~~~~~
 
-This mod introduces a large number of weapons and accessories from Planescape: Torment to the
+This mod introduces a large number of weapons and accessories from the Planescape universe to the
 Baldur's Gate series. The items can be purchased from a travelling merchant who is available
 throughout the whole game.
 
@@ -54,7 +54,7 @@ Components
 
 1. Wares of the Planes (for BG:EE, SoD, BG2:EE and EET)
 
-This is the main component. It installs a large number of items from Planescape: Torment which
+This is the main component. It installs a large number of items from the Planescape universe which
 includes weapons, accessories, utility items, and more. They can be purchased from a unique
 travelling merchant who can be found in several towns and settlements throughout the whole
 Baldur's Gate series.
@@ -75,6 +75,7 @@ The travelling merchant offers a total of
 - 1 Morning Star
 - 2 Long Swords
 - 2 Bastard Swords
+- 2 Scimitars
 - 10 Rings
 - 7 Earrings (can be equipped in the Amulets slot)
 - 7 Bracelets and Bracers (can be equipped in the Bracers/Gauntlets slot)
@@ -129,7 +130,8 @@ Version History
 
 1.2
 - Added new items for sale: Vambraces of Evil's Warding, Baku's Horn, Abigail +1, Dûrgaläd +3,
-  Fiendblight +2, Wesley's Hourglass, Wesley's Improved Hourglass (upgraded by Cespenar)
+  Fiendblight +2, Wesley's Hourglass, Wesley's Improved Hourglass (upgraded by Cespenar),
+  Thanatos +2, Thanatos +4 (upgraded by Cespenar)
 
 1.1
 - Added new default portrait for the travelling merchant

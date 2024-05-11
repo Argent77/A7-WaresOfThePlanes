@@ -12,9 +12,9 @@ Diskussion: https://www.gibberlings3.net/forums/topic/38054-wares-of-the-planes-
 Überblick
 ~~~~~~~~~
 
-Diese Mod führt eine große Anzahl an Waffen und Zubehör von Planescape: Torment in die Baldurs
-Gate Serie ein. Diese Gegenstände können von einem besonderen reisenden Händler erworben werden,
-den man über das ganze Spiel hinweg antreffen kann.
+Diese Mod führt eine große Anzahl an Waffen und Zubehör aus dem Planescape Universum in die 
+Baldurs Gate Serie ein. Diese Gegenstände können von einem besonderen reisenden Händler erworben
+werden, den man über das ganze Spiel hinweg antreffen kann.
 
 Einige Gegenstände wurde etwas angepasst, damit sie besser in das Baldurs Gate Universum passen,
 da Gegenstände aus dem Planescape Universum häufig mächtiger und einzigartiger sind als ihre
@@ -59,7 +59,7 @@ Komponenten
 1. Waren der Ebenen (für BG:EE, SoD, BG2:EE und EET)
 
 Das ist die Hauptkomponente. Sie installiert eine große Anzahl Waffen, Zubehör und Gebrauchs-
-gegenstände aus Planescape: Torment. Sie können von einem speziellen Händler erworben werden,
+gegenstände aus dem Planescape Universum. Sie können von einem speziellen Händler erworben werden,
 den man in diversen Städten und Dörfern über das ganze Spiel hinweg antreffen kann.
 
 Den Händler kann man an den folgenden Orten antreffen:
@@ -78,6 +78,7 @@ Der reisende Händler bietet insgesamt
 - 1 Morgenstern
 - 2 Langschwerter
 - 2 Bastardschwerter
+- 2 Krummsäbel
 - 10 Ringe
 - 7 Ohrringe (können im Feld für Amulette platziert werden)
 - 7 Armbänder und Armschienen (können im Feld für Armschützer und Handschuhe platziert werden)
@@ -134,7 +135,8 @@ Versionshistorie
 
 1.2
 - Added new items for sale: Vambraces of Evil's Warding, Baku's Horn, Abigail +1, Dûrgaläd +3,
-  Fiendblight +2, Wesley's Hourglass, Wesley's Improved Hourglass (upgraded by Cespenar)
+  Fiendblight +2, Wesley's Hourglass, Wesley's Improved Hourglass (upgraded by Cespenar),
+  Thanatos +2, Thanatos +4 (upgraded by Cespenar)
 
 1.1
 - Added new default portrait for the travelling merchant
