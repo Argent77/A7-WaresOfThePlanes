@@ -1,0 +1,27 @@
+// Thanatos +2
+
+// @0 = ~~  // #11052
+@1 = ~Thanatos +2~
+
+// @10 = ~~ // #22712
+@11 = ~Dieser Krummsäbel wurde einst vom Kalifen Jassan der Dschinn geführt. Sie ging um -6155 TZ in einem Gefecht mit plündernden Nabassu-Dämonen verloren. Seitdem war die Waffe für Jahrtausende verloren und geriet in Vergessenheit. Um 367 TZ wurde sie von einer erfahrenen Gruppe Ebenenreisender an den Ufern des Flusses Styx in Thanatos, der 333. Ebene des Abyss, wiederentdeckt, die gleichzeitig zum neuen Namensgeber der Waffe wurde.
+
+Nachdem die Waffe so lange im Flussbett von Styx gelegen hatte, nahm sie mit der Zeit einige Eigenschaften des Flusses an. Wenn ein Ziel von der Klinge verletzt wird, dann verursacht sie verübergehenden oder dauerhaften Gedächtnisverlust, so als ob das Ziel mit dem Wasser des Flusses Styx in Berührung gekommen ist.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer verliert das Ziel 1W4 eingeprägte Zauber und verursacht in 50% aller Fälle für drei Runden entweder „Magie fehlwirken“, „Verwirrung“ oder „Schwachsinn“ (Rettungswurf mit einem Malus von -2 gegen Zauber).
+
+ETW0-Bonus: -2
+Schaden: 1W8 +2 (Klinge)
+Initiativefaktor: 3
+Fertigkeit: Krummsäbel/Wakizashi/Ninjatō
+Typ: 1-händig
+Mindeststärke: 8
+
+Gewicht: 4~
+
+@21 = ~Hat einen Zauber vergessen~
+@22 = ~Hat zwei Zauber vergessen~
+@23 = ~Hat drei Zauber vergessen~
+@24 = ~Hat vier Zauber vergessen~

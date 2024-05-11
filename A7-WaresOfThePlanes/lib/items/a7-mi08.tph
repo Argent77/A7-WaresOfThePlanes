@@ -25,8 +25,8 @@ END
 // Item upgrade
 ACTION_IF (has_bg2) BEGIN
   WITH_TRA ~%MOD_FOLDER%/tra/english/%itm_resref%.tra~ ~%MOD_FOLDER%/tra/%LANGUAGE%/%itm_resref%.tra~ BEGIN
-    COMPILE ~%MOD_FOLDER%/dlg/a7-mi08.d~
-    EXTEND_BOTTOM ~botsmith.bcs~ ~%MOD_FOLDER%/bcs/a7-mi08.baf~
+    COMPILE ~%MOD_FOLDER%/dlg/%itm_resref%.d~
+    EXTEND_BOTTOM ~botsmith.bcs~ ~%MOD_FOLDER%/bcs/%itm_resref%.baf~
 
     // Updating curse for taking the Rift Device from its resting place
     // Player1 has now a chance to survive the curse

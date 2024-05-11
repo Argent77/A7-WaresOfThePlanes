@@ -1,0 +1,77 @@
+// Item: Thanatos +4
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-sw06~
+
+// Installing item
+// Depends on files from Thanatos +2: a7-c502.bam
+COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+  LPF update_item_generic
+    STR_VAR
+      itm_resref
+    RET
+      icon_resref
+      desc_image_resref
+  END
+
+  // BGEE uses a different strref
+  PATCH_IF (GAME_IS ~bgee~) BEGIN
+    LPF alter_item_effect_ex
+      INT_VAR
+        check_globals = 1
+        match_opcode = 319    // Restrict item
+        match_parameter1 = 21 // SHAMAN
+        match_parameter2 = 5  // CLASS.IDS
+        special = 32342       // Shaman
+    END
+  END
+
+// Installing associated resources
+LAF install_item_resources_generic
+STR_VAR
+  itm_resref
+  icon_resref
+  desc_image_resref
+END
+
+// Installing additional resources
+// Depends on files from Thanatos +2: a7-sw05e.spl, a7-sw05f.spl, a7-sw05g.spl
+WITH_TRA ~%MOD_FOLDER%/tra/english/%itm_resref%.tra~ ~%MOD_FOLDER%/tra/%LANGUAGE%/%itm_resref%.tra~ BEGIN
+  ACTION_IF (has_bg2) BEGIN
+    COMPILE ~%MOD_FOLDER%/dlg/%itm_resref%.d~
+    EXTEND_BOTTOM ~botsmith.bcs~ ~%MOD_FOLDER%/bcs/%itm_resref%.baf~
+  END
+
+  OUTER_SET index = 1
+  ACTION_FOR_EACH file IN ~%itm_resref%a.spl~
+                          ~%itm_resref%b.spl~
+                          ~%itm_resref%c.spl~
+                          ~%itm_resref%d.spl~
+  BEGIN
+    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%file%~) BEGIN
+      LAF EXT_OF_FILESPEC STR_VAR filespec = EVAL ~%file%~ RET ext END
+      COPY ~%MOD_FOLDER%/%ext%/%file%~ ~override~
+        // updating target string
+        SET tra_ref = index + 20
+        LPF alter_item_effect_ex
+          INT_VAR
+            check_headers = 1
+            match_opcode = 139  // Display string
+            match_parameter1 = index
+            parameter1 = RESOLVE_STR_REF((AT ~tra_ref~))
+        END
+
+        // updating caster string
+        SET tra_ref = index + 21
+        LPF alter_item_effect_ex
+          INT_VAR
+            check_headers = 1
+            match_opcode = 139  // Display string
+            match_parameter1 = index + 1
+            parameter1 = RESOLVE_STR_REF((AT ~tra_ref~))
+        END
+    END
+    OUTER_SET index += 2
+  END
+END
