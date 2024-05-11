@@ -1332,10 +1332,46 @@ Mindeststärke: 11
 Gewicht: 9
 
 
-10. Ringe
+10. Krummsäbel
+~~~~~~~~~~~~~~
+
+10.1. Thanatos +2 (Verfügbar: ab BG2:SvA Kapitel 6)
+Dieser Krummsäbel wurde einst vom Kalifen Jassan der Dschinn geführt. Sie ging um -6155 TZ in einem 
+Gefecht mit plündernden Nabassu-Dämonen verloren. Seitdem war die Waffe für Jahrtausende verloren 
+und geriet in Vergessenheit. Um 367 TZ wurde sie von einer erfahrenen Gruppe Ebenenreisender an den 
+Ufern des Flusses Styx in Thanatos, der 333. Ebene des Abyss, wiederentdeckt, die gleichzeitig zum 
+neuen Namensgeber der Waffe wurde.
+
+Nachdem die Waffe so lange im Flussbett von Styx gelegen hatte, nahm sie mit der Zeit einige 
+Eigenschaften des Flusses an. Wenn ein Ziel von der Klinge verletzt wird, dann verursacht sie 
+vorübergehenden oder dauerhaften Gedächtnisverlust, so als ob das Ziel mit dem Wasser des Flusses 
+Styx in Berührung gekommen ist.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer verliert das Ziel 1W4 eingeprägte Zauber und verursacht in 50% aller Fälle für 
+drei Runden entweder „Magie fehlwirken“, „Verwirrung“ oder „Schwachsinn“ (Rettungswurf mit einem 
+Malus von -2 gegen Zauber).
+
+ETW0-Bonus: -2
+Schaden: 1W8 +2 (Klinge)
+Initiativefaktor: 3
+Fertigkeit: Krummsäbel/Wakizashi/Ninjatō
+Typ: 1-händig
+Mindeststärke: 8
+
+Gewicht: 4
+
+10.2. Thanatos +4
+Cespenar kann Thanatos +2 mit Schriftrollen von Verzauberter Waffe, Entzug von Lebensenergie und 
+Genesung verzaubern, um eine verbesserte Version zu erschaffen, die zusätzlich zu den Fähigkeiten 
+der Originalwaffe auch verbrauchte Zauber des Trägers wiederherstellt.
+
+
+11. Ringe
 ~~~~~~~~~
 
-10.1. Ägide des Schreckens (Verfügbar: ab BG2:TdB Kapitel 9)
+11.1. Ägide des Schreckens (Verfügbar: ab BG2:TdB Kapitel 9)
 Ägide des Schreckens
 Reihe um Reihe winziger Schädel ziehen sich an der Außenseite dieses Rings entlang. Er wird von 
 einem übergroßen Schädel mit feuerroten Edelsteinen als Augen gekrönt. Dieser Ring ist die 
@@ -1351,7 +1387,7 @@ Konstitution: +3
 
 Gewicht: 0
 
-10.2. Mempas Beißender Ring (Verfügbar: ab BG2:SvA Kapitel 6)
+11.2. Mempas Beißender Ring (Verfügbar: ab BG2:SvA Kapitel 6)
 Mempa war eine Magierin, die von dem Gedanken besessen war, ihre magischen Gegenstände könnten 
 verlorengehen oder gestohlen werden, während sie schlief oder sie sich aus irgendeinem anderen 
 Grund nicht dagegen wehren konnte. Während der Großteil ihrer tragbaren Besitztümer von 
@@ -1371,7 +1407,7 @@ RK-Bonus: -2
 
 Gewicht: 0
 
-10.3. Gehraises Ring (Verfügbar: ab BG1 Kapitel 5)
+11.3. Gehraises Ring (Verfügbar: ab BG1 Kapitel 5)
 Dieser kleiner Silberring sieht so aus, als gehöre er an den Finger einer Frau. Er fühlt sich 
 leicht warm an und hat die Fähigkeit, die Wirkung von Gift aufzuheben, das in den Blutkreislauf 
 des Trägers gelangt ist.
@@ -1383,7 +1419,7 @@ Die Trägerin ist immun gegen Gift.
 
 Gewicht: 0
 
-10.4. Verschlungener Ring
+11.4. Verschlungener Ring
 Dieser Ring sieht aus wie drei Ringe, die miteinander verschlungen wurden. Schon ihn anzusehen 
 macht euch ganz schwindlig.
 
@@ -1393,7 +1429,7 @@ RK-Bonus: -1
 
 Gewicht: 0
 
-10.5. Ring des Reisenden (Verfügbar: ab SoD Kapitel 8)
+11.5. Ring des Reisenden (Verfügbar: ab SoD Kapitel 8)
 Diese Ringe sind auf den Ebenen ziemlich gebräuchlich. Sie sind einfach herzustellen und werden 
 viel nachgefragt, und daher schaffen Magier diese Gegenstände in der Regel als Mittel, um schnell 
 Geld zu machen. Dieser Ring hier hat eine geringe Verzauberung, die den Träger vor Schaden beschützt.
@@ -1405,7 +1441,7 @@ RW-Bonus: -1
 
 Gewicht: 0
 
-10.6. Verschiebungsring (Verfügbar: ab BG2:SvA Kapitel 2)
+11.6. Verschiebungsring (Verfügbar: ab BG2:SvA Kapitel 2)
 Dieser Ring wurde aus dem Blut eines Verschiebungstieres geschaffen und kann die Kraft jeder 
 normalen Waffe teilweise umleiten. Dadurch ist der Träger des Ringes schwerer zu treffen und nimmt 
 im Trefferfall weniger Schaden als üblich.
@@ -1420,7 +1456,7 @@ Widerstand gg. Geschosswaffen: +5 %
 
 Gewicht: 0
 
-10.7. Ring der nahezu vollständigen Unsichtbarkeit (Verfügbar: ab SoD Kapitel 8)
+11.7. Ring der nahezu vollständigen Unsichtbarkeit (Verfügbar: ab SoD Kapitel 8)
 Dies ist Yevrahs Ring der nahezu vollständigen Unsichtbarkeit. Er macht seinen Träger unsichtbar - 
 beinahe jedenfalls. Manchmal kommt sein Besitzer für kurze Zeit der Unsichtbarkeit *wirklich* 
 durchaus nahe, was auf eventuelle Angreifer in der Regel beunruhigend wirkt. Dadurch wird es 
@@ -1432,7 +1468,7 @@ RK-Bonus: -1
 
 Gewicht: 0
 
-10.8. Schlangenring (Verfügbar: ab BG2:TdB Kapitel 8)
+11.8. Schlangenring (Verfügbar: ab BG2:TdB Kapitel 8)
 Dies scheint eine Art Babyschlange zu sein, die in Form eines Ringes gefroren worden ist. Ihre 
 Augen glitzern und wirbeln wie Juwelen und scheinen sich manchmal sogar zu bewegen.
 
@@ -1445,7 +1481,7 @@ RW-Bonus: -2 gg. Zauber
 
 Gewicht: 0
 
-10.9. Ring von Thex (Verfügbar: ab BG2:TdB Kapitel 9)
+11.9. Ring von Thex (Verfügbar: ab BG2:TdB Kapitel 9)
 Dieser verzierte Silberring ist mit einem einzigen roten Stein unbekannten Typs geschmückt. Der 
 Ring soll von einer abenteuerlustigen Magierin namens Thex hergestellt worden sein. Thex behauptete, 
 dass sie müde sei, auf ihrem Hintern zu sitzen und Zaubersprüche auf Feinde zu schleudern, während 
@@ -1462,7 +1498,7 @@ Weisheit: -1
 
 Gewicht: 0
 
-10.10. Ring Null (Verfügbar: ab BG2:TdB Kapitel 9)
+11.10. Ring Null (Verfügbar: ab BG2:TdB Kapitel 9)
 Dieser exquisite Ring stammt von einem Helden der Antike aus dem Jahr von Gii 'on (AC195). Er ist 
 kunstvoll geschnitzt und hat spitze Kanten. Der Ring besteht aus einem nicht identifizierbaren 
 Metall mit einem Mittelstein, der sich eiskalt anfühlt. Er strahlt eine mächtige Aura aus, die 
@@ -1480,10 +1516,10 @@ Magierzauber: +1 (Grad 1 bis 9)
 Gewicht: 0
 
 
-11. Ohrringe
+12. Ohrringe
 ~~~~~~~~~~~~
 
-11.1. Bernsteinohrringe (Verfügbar: ab BG2:SvA Kapitel 3)
+12.1. Bernsteinohrringe (Verfügbar: ab BG2:SvA Kapitel 3)
 Diese Ohrringe sind aus dem gehärteten Saft der Klingenrebe hergestellt. Wenn diese Substanz 
 richtig präpariert wird, können Gegenstände aus ihr mit mächtigen Schutzzaubern belegt werden.
 
@@ -1494,7 +1530,7 @@ Magierzauber: +2 (Grad 1)
 
 Gewicht: 0
 
-11.2. Purpurrote Sphärenohrringe (Verfügbar: ab SoD Kapitel 8)
+12.2. Purpurrote Sphärenohrringe (Verfügbar: ab SoD Kapitel 8)
 Diese kleinen, rote Edelsteine, die in den Ohrringen gefasst sind, funktionieren wie eine Art 
 Hitzeschwamm und schützt den Träger vor Hitze oder Feuerangriffen. Wenn der Träger Feuer 
 ausgesetzt ist, nehmen die Edelsteine einen Teil der Hitze auf und schirmen den Träger so teilweise 
@@ -1510,7 +1546,7 @@ Feuerwiderstand: +20 %
 
 Gewicht: 0
 
-11.3. Staubmenschen-Ohrringe (Verfügbar: ab BG2:SvA Kapitel 2)
+12.3. Staubmenschen-Ohrringe (Verfügbar: ab BG2:SvA Kapitel 2)
 Diese Ohrringe riechen nach Asche und Staub und fühlen sich eiskalt an. Die Ohrringe beschützen den 
 Träger vor extremen Temperaturen und verleihen ihm eine teilweise Widerstandsfähigkeit gegen Hitze 
 und Kälte. Außerdem schützen die Ohrringe den Träger gegen Zauberkräfte, die den Geist beeinflussen 
@@ -1527,7 +1563,7 @@ RW-Bonus: -2 gg. Tod
 
 Gewicht: 0
 
-11.4. Unabhängigen-Ohrringe (Verfügbar: ab BG2:SvA Kapitel 3)
+12.4. Unabhängigen-Ohrringe (Verfügbar: ab BG2:SvA Kapitel 3)
 Diese stacheligen Ohrringe machen den Träger als ein Mitglied des Bundes der Unabhängigen (der 
 Freien Liga) kenntlich. Diese Ohrringe sind der Sitz eines unabhängigen Geistes, der den Träger 
 begleitet und sein Bestes tut, ihn vor Schaden zu beschützen. Immer, wenn es möglich ist, gibt der 
@@ -1551,7 +1587,7 @@ RW-Bonus: -1 gg. Zauber
 
 Gewicht: 0
 
-11.5. Ohrringe der verketteten Zähne (Verfügbar: ab BG1 Kapitel 1)
+12.5. Ohrringe der verketteten Zähne (Verfügbar: ab BG1 Kapitel 1)
 Diese schlanken Metallohrringe stellen eigentlich eine Reihe hervorragend gearbeiteter Dietriche dar
 . Bei Bedarf kann man sie auseinander haken, um damit widerspenstige Schlösser zu öffnen.
 
@@ -1561,7 +1597,7 @@ Schlösser öffnen: +5 %
 
 Gewicht: 0
 
-11.6. Obsidian-Ohrringe (Verfügbar: ab BG1 Kapitel 5)
+12.6. Obsidian-Ohrringe (Verfügbar: ab BG1 Kapitel 5)
 Diese kleinen Ohrringe bestehen aus poliertem Obsidian. Trotz der Glätte ihrer Oberfläche 
 reflektieren sie überhaupt kein Licht.
 
@@ -1576,7 +1612,7 @@ Leise bewegen: +10 %
 
 Gewicht: 0
 
-11.7. Stachelohrringe (Verfügbar: ab SoD Kapitel 8)
+12.7. Stachelohrringe (Verfügbar: ab SoD Kapitel 8)
 Diese Ohrringe bestehen aus dem gehärteten Panzer eines segmentierten, larvenähnlichen Wesens. Der 
 Panzer wurde mit einer Art Glasierung behandelt, die ihn irritierend lebendig erscheinen lässt. 
 Der Draht, mit dem die Ohrringe am Ohr befestigt werden, sieht aus wie ein Teil der Larve selbst, 
@@ -1595,10 +1631,10 @@ RK-Bonus: -4 gg. Geschosswaffen
 Gewicht: 0
 
 
-12. Armbänder und Armschienen
+13. Armbänder und Armschienen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-12.1. Glockenschild (Verfügbar: ab BG2:TdB Kapitel 9)
+13.1. Glockenschild (Verfügbar: ab BG2:TdB Kapitel 9)
 Die Gravuren auf diesem Armband sind einfach nur schön. Die Handwerkskunst spiegelt die 
 handwerkliche Arbeit der Meh 'gahmi Sah 'ma Nomadenstämme wider. Dieser Armreif wurde für die 
 größte Krieger-Priesterin, Bell, geschnitzt, die den Frieden in die südlichen Ebenen bringen 
@@ -1614,7 +1650,7 @@ Priesterzauber: +1 (Grad 1 bis 6)
 
 Gewicht: 0
 
-12.2. Magus-Schutz (Verfügbar: ab SoD Kapitel 8)
+13.2. Magus-Schutz (Verfügbar: ab SoD Kapitel 8)
 Armbänder wie diese gehören zur Standardausrüstung jedes abenteuerlustigen Zauberkundigen und sind 
 fast überall auf den Ebenen zu finden. Dem Muster nach scheint dieses spezielle Armband in einem 
 in Sigil verbreiteten Stil gefertigt worden zu sein. Die verschiedenen Glyphen der Abwehr, die 
@@ -1628,7 +1664,7 @@ Rüstungsklasse: 6
 
 Gewicht: 2
 
-12.3. Magus-Schild (Verfügbar: ab BG2:SvA Kapitel 2)
+13.3. Magus-Schild (Verfügbar: ab BG2:SvA Kapitel 2)
 Dies ist eine Variante des Magus-Schutzes. Mit praktisch denselben Zaubern und Glyphen wie sein 
 Vorgänger kann der Magus-Schild die Energie der Verzauberung, die auf ihm liegt, noch besser 
 konzentrieren.
@@ -1639,7 +1675,7 @@ Rüstungsklasse: 4
 
 Gewicht: 2
 
-12.4. Schreckensband (Verfügbar: ab SoD Kapitel 10)
+13.4. Schreckensband (Verfügbar: ab SoD Kapitel 10)
 Der Legende nach wurde dieses Armband von Nacek dem Sadistischen erschaffen. Seine gesamte 
 Oberfläche ist mit winzigen rasierklingenscharfen Stacheln übersät, aus denen geringe Mengen 
 seltener Reagenzien in den Blutstrom des Trägers injiziert werden. Diese Substanzen bewirken, 
@@ -1653,7 +1689,7 @@ Stärke: +1
 
 Gewicht: 3
 
-12.5. Gestachelte Ogerkrafthandschuhe (Verfügbar: ab BG2:SvA Kapitel 6)
+13.5. Gestachelte Ogerkrafthandschuhe (Verfügbar: ab BG2:SvA Kapitel 6)
 An den Fingerknöcheln dieser Handschuhe entlang verläuft eine Reihe riesiger schwarzer Stacheln, 
 mit denen der Träger jedes Ziel durchlöchern kann, gegen das er mit ihnen schlägt. An den Säumen 
 der Handschuhe befinden sich Klammern, als ob sie damit beim Tragen gesichert werden sollen.
@@ -1672,7 +1708,7 @@ Schadensbonus:
 
 Gewicht: 2
 
-12.6. Spinnenarmband (Verfügbar: ab BG2:SvA Kapitel 2)
+13.6. Spinnenarmband (Verfügbar: ab BG2:SvA Kapitel 2)
 Tatsächlich ist dies eine lebende Spinne, kein Schmuckstück. Wenn man sie am Handgelenk anlegt, 
 versenkt die Spinne ihre Beißwerzkeuge im Fleisch des Trägers und ernährt sich von ihrem Wirt, 
 wodurch beide positive, aber auch negative Auswirkungen erfahren.
@@ -1689,7 +1725,7 @@ Weisheit: -1
 
 Gewicht: 0
 
-12.7. Armschienen der Abwehr von Bösem (Verfügbar: ab BG1 Kapitel 5)
+13.7. Armschienen der Abwehr von Bösem (Verfügbar: ab BG1 Kapitel 5)
 Diese Armschienen schützen ihren Träger vor Angriffen von bösen Wesen. Ihre metallisch glänzenden 
 Rüstungsteile sind mit Schutzrunen versehen, die den Schaden auf die Armschienen lenken, wo er 
 harmlos abprallt. Angriffe, die sich nicht direkt auf den Träger richten, sind davon nicht betroffen.
@@ -1710,10 +1746,10 @@ Armschienen tragen (Rettungswurf gg. Tod für halben Schaden).
 Gewicht: 2
 
 
-13. Zauberstäbe
+14. Zauberstäbe
 ~~~~~~~~~~~~~~~
 
-13.1. Pfeife aus dem Abgrund (Verfügbar: ab SoD Kapitel 8)
+14.1. Pfeife aus dem Abgrund (Verfügbar: ab SoD Kapitel 8)
 
 Dies ist eine kleine, hölzerne Pfeife, die so geschnitzt ist, dass sie dem Kopf eines Dämonen ähnelt.
 
@@ -1737,10 +1773,10 @@ Mindestintelligenz: 9
 Gewicht: 0
 
 
-14. Verbrauchsmaterialien und Gegenstände mit Ladungen
+15. Verbrauchsmaterialien und Gegenstände mit Ladungen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-14.1. Bandagen (Verfügbar: ab BG1 Kapitel 1)
+15.1. Bandagen (Verfügbar: ab BG1 Kapitel 1)
 Dies ist eine Rolle Bandagen, die zur Stillung kleinerer Wunden nützlich sind. Sie können den 
 Benutzer von 3 Schadenspunkten heilen.
 
@@ -1750,7 +1786,7 @@ Heilt 3 Trefferpunkte.
 
 Gewicht: 0
 
-14.2. Abgeschnittenes Kupferstück (Verfügbar: ab BG1 Kapitel 1)
+15.2. Abgeschnittenes Kupferstück (Verfügbar: ab BG1 Kapitel 1)
 Dieses Kupferstück wurde "abgeschnitten"… das meiste Kupfer wurde abrasiert, offensichtlich, damit 
 es noch wie eine Münze aussieht, der "Barbier" aber aus dem abrasierten Kupfer eine neue Münze 
 machen kann. Obwohl viele Bewohner des Stocks diese Methode des "Geldverdienens" praktizieren, tun 
@@ -1778,7 +1814,7 @@ Kleiner Kupfersegen
 
 Gewicht: 0
 
-14.3. Gordischer Knoten (Verfügbar: ab BG2:TdB Kapitel 8)
+15.3. Gordischer Knoten (Verfügbar: ab BG2:TdB Kapitel 8)
 Der Knoten, der die beiden Enden dieses Seils zusammenhält, enthält einen mächtigen Zauber. Wenn 
 dieser Knoten von einem Kämpfer mit einer scharfen Waffe durchtrennt wird, erfährt der Krieger 
 eine Welle des Selbstbewusstseins und der Arroganz, wodurch seine Weisheit herabgesetzt, sein 
@@ -1801,7 +1837,7 @@ Platziert den Knoten in ein Feld für einsatzbereite Gegenstände.
 
 Gewicht: 0
 
-14.4. Elixier der schrecklichen Trennung (Verfügbar: ab BG2:TdB Kapitel 9)
+15.4. Elixier der schrecklichen Trennung (Verfügbar: ab BG2:TdB Kapitel 9)
 Dies ist die Phiole mit dem Elixier der Schrecklichen Trennung, das von einer Gelehrten gemischt 
 wurde, die einst eine dunkle Seite an sich entdeckte, eine Seite, die von Zeit zu Zeit die 
 Kontrolle über sie übernahm und sie veranlasste, schreckliche Dinge zu tun. Dieser Trank sollte 
@@ -1823,7 +1859,7 @@ Das Elixier zeigt keine Wirkung, wenn die ethische Gesinnung des Nutzers bereits
 
 Gewicht: 1
 
-14.5. Moridors Kästchen (Verfügbar: ab SoD Kapitel 8)
+15.5. Moridors Kästchen (Verfügbar: ab SoD Kapitel 8)
 Dies scheint ein kleines Holzkästchen zu sein. Komplizierte Muster, die in Gold geätzt sind, zieren 
 das Kästchen. Irgendwann einmal mag es genug wert gewesen sein, um im Haus eines Aristokraten 
 ausgestellt zu werden. Jahre der Vernachlässigung haben jedoch ihren Tribut gefordert, und es 
@@ -1844,7 +1880,7 @@ Mindestintelligenz: 9
 
 Gewicht: 2
 
-14.6. Bakus Horn (Verfügbar: ab SoD Kapitel 8)
+15.6. Bakus Horn (Verfügbar: ab SoD Kapitel 8)
 Dieses unscheinbare Holzhorn ist in Wirklichkeit ein magisches Artefakt aus den Oberen Ebenen. Wie 
 der Angriff der namensgebenden Kreatur, fügt Bakus Horn bösen Wesen im Wirkungsbereich Schaden zu, 
 wenn es geblasen wird. Außerdem fliehen solche Wesen in Panik, sofern sie keinen Rettungswurf gg. 
@@ -1859,7 +1895,7 @@ Bakus Gebrüll (3x täglich)
 
 Gewicht: 1
 
-14.7. Wesleys Stundenglas (Verfügbar: ab BG2:TdB Kapitel 9)
+15.7. Wesleys Stundenglas (Verfügbar: ab BG2:TdB Kapitel 9)
 Dieses Artefakt wurde ursprünglich von einem mächtigen Chronomanten mit der Absicht erschaffen, 
 seine Schüler über die Natur der Zeit zu lehren. Es sieht aus wie eine gewöhnliche Sanduhr in einem 
 Holzgestell, aber statt mit Sand ist sie mit Nebelrauch aus der Halbebene der Zeit gefüllt.
@@ -1880,16 +1916,15 @@ Mindestintelligenz: 6
 
 Gewicht: 1
 
-14.8. Wesleys verbessertes Stundenglas
-
+15.8. Wesleys verbessertes Stundenglas
 Cespenar kann Wesleys Stundenglas mit dem Dimensionsreißer aus der "Kult des Augenlosen"-Quest 
 kombinieren, um eine verbesserte Version des Gegenstands zu erschaffen.
 
 
-15. Besondere Gegenstände
+16. Besondere Gegenstände
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-15.1. Lim-Lim-Käfig (Verfügbar: ab BG1 Kapitel 1)
+16.1. Lim-Lim-Käfig (Verfügbar: ab BG1 Kapitel 1)
 Dieser robuste Stahlkasten hat an der Oberseite einen dicken Ledergriff. Es scheint das Zuhause 
 eines Lim-Lims zu sein, das durch sein vergnügtes Zirpen unverkennbar identifiziert werden kann. 
 Der Käfig selbst scheint nur durch einen einfachen Riegel verschlossen zu sein.
@@ -1898,9 +1933,9 @@ EIGENSCHAFTEN:
 
 Gewicht: 10
 
-15.2. Stange mit Griff? (Verfügbar: ab BG2:TdB Kapitel 9)
-Dieser Gegenstand sieht aus wie eine Stange aus poliertem Metalll mit einem Griff, der gut in der 
-Hand liegt. Wegen seiner geringe Größe können ihn nur Kinder oder Angehörige der kleineren Rassen 
+16.2. Stange mit Griff? (Verfügbar: ab BG2:TdB Kapitel 9)
+Dieser Gegenstand sieht aus wie eine Stange aus poliertem Metall mit einem Griff, der gut in der 
+Hand liegt. Wegen seiner geringen Größe können ihn nur Kinder oder Angehörige der kleineren Rassen 
 bequem halten.
 
 EIGENSCHAFTEN:
