@@ -25,9 +25,11 @@ END
 // Installing additional resources
 COPY ~%MOD_FOLDER%/vvc/a7-sw03a.vvc~ ~override~
 
-APPEND ~itemspec.2da~ ~A7-SW03  1~
+OUTER_SPRINT itm_resref_upper ~%itm_resref%~
+ACTION_TO_UPPER ~itm_resref_upper~
+APPEND ~itemspec.2da~ ~%itm_resref_upper% 1~
 
 WITH_TRA ~%MOD_FOLDER%/tra/english/%itm_resref%.tra~ ~%MOD_FOLDER%/tra/%LANGUAGE%/%itm_resref%.tra~ BEGIN
   OUTER_SET item_name = RESOLVE_STR_REF(@1) // Dûrgaläd +3
-  APPEND ~tooltip.2da~ ~A7-SW03   %item_name%  12096  12040~
+  APPEND ~tooltip.2da~ ~%itm_resref_upper%    %item_name%     12096      12040~
 END
