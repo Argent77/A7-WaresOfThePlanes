@@ -17,7 +17,7 @@
 
 This mod introduces a large number of weapons and accessories from the Planescape universe in the Baldur's Gate series. The items can be purchased from from a travelling merchant who is available throughout the whole game.
 
-Several items have been slightly altered to fit better into the BG series since items from the Planescape universe are generally more powerful and unique than their Forgotten Realms counterparts.
+Several items from Planescape: Torment have been slightly altered to fit better into the BG series since items from the Planescape universe are generally more powerful and unique than their Forgotten Realms counterparts.
 
 The mod is available for BG:EE, Siege of Dragonspear, BG2:EE and EET (Enhanced Edition Trilogy).
 

@@ -1,7 +1,7 @@
 Waren der Ebenen (für BG:EE, SoD, BG2:EE und EET)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:    1.1
+Version:    1.2
 Autor:      Argent77
 
 Download:   https://github.com/Argent77/A7-WaresOfThePlanes/releases/latest
@@ -16,9 +16,9 @@ Diese Mod führt eine große Anzahl an Waffen und Zubehör aus dem Planescape Un
 Baldurs Gate Serie ein. Diese Gegenstände können von einem besonderen reisenden Händler erworben
 werden, den man über das ganze Spiel hinweg antreffen kann.
 
-Einige Gegenstände wurde etwas angepasst, damit sie besser in das Baldurs Gate Universum passen,
-da Gegenstände aus dem Planescape Universum häufig mächtiger und einzigartiger sind als ihre
-Gegenstücke aus den Vergessenen Reichen.
+Einige Gegenstände aus Planescape: Torment wurde etwas angepasst, damit sie besser in das
+Baldurs Gate Universum passen, da Gegenstände aus dem Planescape Universum häufig mächtiger und
+einzigartiger sind als ihre Gegenstücke aus den Vergessenen Reichen.
 
 Die Mod kann in BG:EE, SoD (Belagerung von Drachenspeer), BG2:EE und EET (Enhanced Edition Trilogy)
 installiert werden.
@@ -125,7 +125,7 @@ ShareAlike 4.0 International License" (https://creativecommons.org/licenses/by-n
 
 Items are based on resources from Planescape: Torment, (c) by Black Isle Studios.
 
-Some icon graphics based on resources from Age of Wonders - Shadow Magic.
+Some icon graphics based on resources from Age of Wonders - Shadow Magic, (c) Triumph Studios.
 
 Merchant portrait based on "RPG Dwarf Males 41" by ttb2112-ai on DeviantArt.
 
@@ -137,6 +137,7 @@ Versionshistorie
 - Added new items for sale: Vambraces of Evil's Warding, Baku's Horn, Abigail +1, Dûrgaläd +3,
   Fiendblight +2, Wesley's Hourglass, Wesley's Improved Hourglass (upgraded by Cespenar),
   Thanatos +2, Thanatos +4 (upgraded by Cespenar)
+- Fixed spelling errors
 
 1.1
 - Added new default portrait for the travelling merchant

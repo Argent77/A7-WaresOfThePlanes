@@ -1,7 +1,7 @@
 Wares of the Planes (for BG:EE, SoD, BG2:EE and EET)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:    1.1
+Version:    1.2
 Author:     Argent77
 
 Download:   https://github.com/Argent77/A7-WaresOfThePlanes/releases/latest
@@ -16,8 +16,9 @@ This mod introduces a large number of weapons and accessories from the Planescap
 Baldur's Gate series. The items can be purchased from a travelling merchant who is available
 throughout the whole game.
 
-Several items have been slightly altered to fit better into the BG series since items from the
-Planescape universe are generally more powerful and unique than their Forgotten Realms counterparts.
+Several items from Planescape: Torment have been slightly altered to fit better into the BG series
+since items from the Planescape universe are generally more powerful and unique than their
+Forgotten Realms counterparts.
 
 The mod is available for BG:EE, Siege of Dragonspear, BG2:EE and EET (Enhanced Edition Trilogy).
 
@@ -120,7 +121,7 @@ ShareAlike 4.0 International License" (https://creativecommons.org/licenses/by-n
 
 Items are based on resources from Planescape: Torment, (c) by Black Isle Studios.
 
-Some icon graphics based on resources from Age of Wonders - Shadow Magic.
+Some icon graphics based on resources from Age of Wonders - Shadow Magic, (c) Triumph Studios.
 
 Merchant portrait based on "RPG Dwarf Males 41" by ttb2112-ai on DeviantArt.
 
@@ -132,6 +133,7 @@ Version History
 - Added new items for sale: Vambraces of Evil's Warding, Baku's Horn, Abigail +1, Dûrgaläd +3,
   Fiendblight +2, Wesley's Hourglass, Wesley's Improved Hourglass (upgraded by Cespenar),
   Thanatos +2, Thanatos +4 (upgraded by Cespenar)
+- Fixed spelling errors
 
 1.1
 - Added new default portrait for the travelling merchant
