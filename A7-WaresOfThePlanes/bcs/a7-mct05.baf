@@ -9,7 +9,7 @@ THEN
     SmallWait(8)
     DisplayStringHead(Myself,@2107) // Quite a spectacular show. I hope he enjoys the ride.
     Wait(4)
-    ActionOverride("a7-ctspy",DestroySelf())
+    ActionOverride("a7-mcspy",DestroySelf())
     EndCutSceneMode()
 END
 

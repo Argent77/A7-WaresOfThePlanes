@@ -129,6 +129,9 @@ Merchant portrait based on "RPG Dwarf Males 41" by ttb2112-ai on DeviantArt.
 Version History
 ~~~~~~~~~~~~~~~
 
+1.3
+- Fixed a resource name conflict with the "Skip Chateau Irenicus" mod
+
 1.2
 - Added new items for sale: Vambraces of Evil's Warding, Baku's Horn, Abigail +1, Dûrgaläd +3,
   Fiendblight +2, Wesley's Hourglass, Wesley's Improved Hourglass (upgraded by Cespenar),

@@ -4,7 +4,7 @@ IF
   True()
 THEN
   RESPONSE #100
-    CutSceneId("a7-ctspy")
+    CutSceneId("a7-mcspy")
     TakePartyItemNum("a7-mi05",1)
     DestroySelf()
 END

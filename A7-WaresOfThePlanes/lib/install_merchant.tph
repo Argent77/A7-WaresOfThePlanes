@@ -180,7 +180,7 @@ COPY ~%MOD_FOLDER%/cre/a7-mcust.cre~ ~override~
   SAY NAME1 @2003 // Customer
   SAY NAME2 @2003 // Customer
 
-COPY ~%MOD_FOLDER%/cre/a7-ctspy.cre~ ~override~
+COPY ~%MOD_FOLDER%/cre/a7-mcspy.cre~ ~override~
      ~%MOD_FOLDER%/vvc/a7-mfx1.vvc~ ~override~
 
 // Cutscene effect spells

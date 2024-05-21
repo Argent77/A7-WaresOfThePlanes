@@ -6,7 +6,7 @@ THEN
   RESPONSE #100
     CutSceneId("a7-merc")
     SetGlobal("CustomerScene","LOCALS",2)
-    CreateCreatureObject("a7-ctspy",Myself,0,0,0)
+    CreateCreatureObject("a7-mcspy",Myself,0,0,0)
     SetAreaScript("a7-mctx",OVERRIDE)
     SetCutSceneBreakable(TRUE)
     StartCutSceneEx("a7-mct02",TRUE)

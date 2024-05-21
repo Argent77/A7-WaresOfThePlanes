@@ -52,6 +52,6 @@ THEN
     SetGlobal("A7-MoridorSeal","AR4500",1)
     ClearAllActions()
     StartCutSceneMode()
-    CreateCreatureImpassableAllowOverlap("a7-ctspy",[0.0],0)
+    CreateCreatureImpassableAllowOverlap("a7-mcspy",[0.0],0)
     StartCutSceneEx("a7-mbcut",TRUE)
 END

@@ -18,7 +18,7 @@ IF
 THEN
   RESPONSE #100
     ActionOverride("a7-mcust",DestroySelf())
-    ActionOverride("a7-ctspy",DestroySelf())
+    ActionOverride("a7-mcspy",DestroySelf())
     MultiPlayerSync()
     FadeFromColor([15.0],0)
     EndCutSceneMode()
