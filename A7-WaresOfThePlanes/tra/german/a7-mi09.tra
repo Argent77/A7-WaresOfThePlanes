@@ -1,0 +1,156 @@
+// The Grimoire of Pestilential Thought
+
+@0 = ~Muffiges Buch~
+@1 = ~Zauberbuch der ekelhaften Gedanken~
+
+@10 = ~Von diesem in Schwarz gebundenen Buchband scheint ein leichter Modergeruch auszugehen, und der Einschlag fühlt sich unangenehm an - wie ungetrocknetes Menschenfleisch, das in der Sonne liegengelassen wurde. Verrostete Schnallen am Einschlag versiegeln es gegen die Elemente.
+
+EIGENSCHAFTEN:
+
+Gewicht: 2~
+@11 = ~Von diesem in Schwarz gebundenen Buchband scheint ein leichter Modergeruch auszugehen, und der Einschlag fühlt sich unangenehm an - wie ungetrocknetes Menschenfleisch, das in der Sonne liegengelassen wurde. Verrostete Schnallen am Einschlag versiegeln es gegen die Elemente.
+
+Es ist das Zauberbuch der ekelhaften Gedanken, ein obskurer Buchband, der vor Jahren für unbekannte Zwecke hergestellt wurde. Es lehrt Sterbliche das Wesen des Bösen. Einige Weise warnen vor seiner Verwendung, während andere sie empfehlen. Es soll mächtige magische Kräfte verleihen, wenn man ihm dient.
+
+EIGENSCHAFTEN:
+
+Gewicht: 2~
+
+// Misc. strings
+@25 = ~Eure Gesinnung hat sich gewandelt.~ [REPDOWN]
+@26 = ~Unschuldiges Wesen ermorden~
+@27 = ~Unschuldiges Wesen ermorden
+Diese Fähigkeit erlaubt es Euch, das Leben eines unschuldigen Wesens auszulöschen. Sie muss verwendet werden, um die Gunst des Zauberbuchs der ekelhaften Gedanken zu gewinnen.~
+
+// Dialog content
+@100 = ~(Abgesehen von dem unansehnlichen Erscheinungsbild und einem leichten Modergeruch fällt Euch nichts Ungewöhnliches auf.)~
+@101 = ~(Das Buch reagiert nicht auf Eure Anwesenheit.)~
+@102 = ~Ich grüße Euch, Meister. Wie kann Euch dieser bescheidene Band zu Diensten sein?~
+@103 = ~Du kannst sprechen?~
+@104 = ~Gar nicht. Hör auf, mit mir zu reden.~
+@105 = ~Meister, womit kann ich Euch dienen? Möchtet Ihr Eure Neugier stillen?~
+@106 = ~Ja. Beantworte mir ein paar Fragen.~
+@107 = ~Nein.~
+@108 = ~Meister. Wollt Ihr Euren Unterricht fortsetzen? Mein Angebot an Euch, größere Einsicht und größere Fähigkeiten zu erlangen, gilt noch.~
+@109 = ~Sag mir, was ich tun muss.~
+@110 = ~Noch nicht. Beantworte mir erst noch ein paar Fragen.~
+@111 = ~Nein. Leb wohl.~
+@112 = ~Meister. Wollt Ihr Euren Unterricht fortsetzen? Mein Angebot an Euch, größere Einsicht und größere Fähigkeiten zu erlangen, gilt noch. Ihr müsst nur das zweite Opfer erbringen.~
+@113 = ~Ja, ich bin bereit.~
+@114 = ~Nicht jetzt. Leb wohl.~
+@115 = ~Ihr habt bisher richtig gehandelt. Hört mir zu und lernt noch mehr.~
+@116 = ~Kannst du mich noch mehr lehren, Buch?~
+@117 = ~Ich kann Euch noch eine weitere Fähigkeit geben. Ihr habt bewiesen, dass Ihr bereit seid, eine Sache zu Ende zu führen. Seid Ihr bereit für die letzte Aufgabe?~
+@118 = ~Ja, das bin ich.~
+@119 = ~Nun? Habt Ihr Euer Ziel erreicht? Habt Ihr mit der Spezialfähigkeit, die ich Euch beigebracht habe, das Leben einer unschuldigen Person genommen?~
+@120 = ~Ja, hab' ich.~
+@121 = ~Noch nicht.~
+@122 = ~Nein. Und das werde ich auch nicht.~
+@123 = ~(Das Buch schweigt und antwortet Euch nicht. Ihm scheinen die Worte zu fehlen.)~
+@124 = ~Wie du meinst.~
+@125 = ~Ich kann sprechen, Meister, in vielen unterschiedlichen Sprachen. Ihr solltet nur darauf achten, dass uns andere nicht bei unserer Unterhaltung sehen, denn sie können mich nicht hören. Und, Meister, die Sprache ist nicht die einzige meiner Fähigkeiten.~
+@126 = ~Was kannst du machen? Worin bestehen deine Fähigkeiten?~
+@127 = ~Wie bist du in Ebbs Laden gelandet?~
+@128 = ~Erzähl mir was von dir.~
+@129 = ~Das reicht für den Moment.~
+@130 = ~Ich kann Euch Fähigkeiten gewähren, die Euch größeren Spielraum in den Launen des Schicksals ermöglichen, Meister.~
+@131 = ~Von welchen Fähigkeiten sprichst du?~
+@132 = ~Vergiss es. Beantworte mir noch ein paar Fragen.~
+@133 = ~Der Händler stieß auf die Überreste meines früheren Herrn, der vor langer Zeit in den Außenländern umgekommen ist. Anstatt meine Dienste in Anspruch zu nehmen, beschloss er, mich zum Verkauf anzubieten.~
+@134 = ~Erzähl mir was über deine Fähigkeiten.~
+@135 = ~Verstehe. Beantworte mir noch ein paar Fragen.~
+@136 = ~Das ist wahr. Leb wohl.~
+@137 = ~Dieser Bitte nachzukommen ist nicht leicht, Meister, aber Euer Diener wird versuchen, sie so gut wie möglich zu beantworten. Ich bin ein Kodex aus heute vergessenen Momenten, heute verlorenen Ideen und Gedanken aus anderen Zeiten und anderen Welten. Auf meinen Seiten findet man die Überlieferungen vergessener Kulturen. Kurzum, mein Meister, und das einzige von Belang: Zwischen meinen Seiten liegt MACHT verborgen. Diese Macht kann Euch gehören... mein Meister.~
+@138 = ~Hab' gerade kein Interesse. Aber beantworte mir doch noch ein paar Fragen.~
+@139 = ~Nicht interessiert. Lebe wohl, Buch.~
+@140 = ~Es ist nur ein kleines Opfer, Meister, der Gewinn jedoch ist groß... Doch es liegt an Euch. Mein Angebot könnt Ihr jederzeit wieder aufgreifen, Meister.~
+@141 = ~Gut. Beantworte mir noch ein paar Fragen.~
+@142 = ~Gut. Leb wohl.~
+@143 = ~Wie Ihr wünscht, Meister. Stellt Eure Fragen, und ich werde Euch so gut ich kann weiterhelfen.~
+@144 = ~Erzähl mir doch mal, was du machen kannst.~
+@145 = ~Gut. Dann halt' jetzt den Mund.~
+@146 = ~Die Gegenleistung ist sehr klein, Meister. Ich würde sie gar nicht erwähnen, wenn ich es nicht müsste...~
+@147 = ~Um meine Macht nutzen zu können, müsst Ihr nur einen kleinen Teil von Euch opfern, Meister. Ihr müsst Blut über meine erste Seite vergießen. Durch diesen Akt wird das Band zwischen uns gestärkt, und ich kann Euch dabei helfen, Euer Potential voll zu entfalten. Ihr zahlt nur einen geringen Preis im Vergleich zu den Kräften, die Ihr dafür erhaltet.~
+@148 = ~In Ordnung. Hier.~
+@149 = ~Nein.~
+@150 = ~Ihr schneidet Euch und lasst ein wenig Blut auf die Seite tropfen. Es läuft Euch kalt den Rücken herunter, und Ihr fühlt Euch leer und verletzt. Gleichzeitig verspürt Ihr ein Triumphgefühl: Ihr wurdet mit einem kostbaren Edelstein belohnt.
+
+^CIhr habt 1 Trefferpunkt von Eurer maximalen Trefferpunktezahl verloren.^-~
+@151 = ~Dies ist jetzt Eure Belohnung... Meister. Doch dies ist nur die erste von vielen Fähigkeiten auf meinen Seiten.
+
+^CGegenstand gewonnen: %task1_reward%^-~
+@152 = ~Erzähl mir was über diese anderen Fähigkeiten.~
+@153 = ~Beantworte mir noch ein paar Fragen.~
+@154 = ~Ich brauch im Moment nichts weiter.~
+@155 = ~Leider, Meister, müsst Ihr ein größeres Opfer als Gegenleistung für mehr Macht erbringen. Ich würde Euch diese Macht gern einfach so geben, doch wie Ihr seht, kann ich das nicht.~
+@156 = ~Was ist das für ein Opfer?~
+@157 = ~Dann vergiss es.~
+@158 = ~Ihr wollt Antworten?~
+@159 = ~Hast du noch mehr Fähigkeiten für mich?~
+@160 = ~Ich hab' genug. Leb wohl.~
+@161 = ~Es bedrückt mich, dass Ihr für meine Fähigkeiten noch nicht mal diesen niedrigen Preis bezahlen wollt. Lasst Euch nicht von Zweifel und Verwirrung einwickeln, Meister... doch ich komme vom Thema ab. Denkt daran, dass Ihr mein Angebot jederzeit annehmen könnt.~
+@162 = ~Ich denk drüber nach. Du musst mir noch ein paar Fragen beantworten.~
+@163 = ~Ich werd mal drüber nachdenken. Leb wohl.~
+@164 = ~Ich bin Macht, Meister, und ich kann Euch mehr lehren.~
+@165 = ~Wie jetzt?~
+@166 = ~Hilf mir mal auf die Sprünge.~
+@167 = ~Dann denkt daran: kommt zurück, wenn Ihr mehr Macht braucht. Ich warte auf Euch... Meister.~
+@168 = ~Mach ich. Leb wohl.~
+@169 = ~Das zweite Opfer ist, dass Ihr mir einen Teil Eurer Erfahrung überlasst. Dieser Akt symbolisiert das Band zwischen Euch und der Macht - die Erfahrung ermöglicht es mir, Euch eine Belohnung von immaterieller Art zu gewähren.~
+@170 = ~Gut. Ich mache das.~
+@171 = ~Ihr habt die richtige Entscheidung getroffen. Ich gewähre Euch die Fähigkeit, schädlichen Effekten besser zu widerstehen.
+
+^CIhr habt Erfahrungspunkte verloren.^-
+^CEure Rettungswürfe wurden um 1 Punkt verbessert.^-~
+@172 = ~Danke. Leb wohl.~
+@173 = ~Sachte! Ihr müsst Geduld haben! Ihr habt mir bereits bewiesen, dass Ihr alles tun werdet, um diese Macht zu erlangen. Und Ihr müsst wissen, dass Ihr für diese Macht bezahlen WERDET.~
+@174 = ~Was muss ich tun?~
+@175 = ~Ich hab' genug bezahlt. Vergiss es.~
+@176 = ~Habt Ihr den Mut, ein Leben zu nehmen?~
+@177 = ~Ja, den habe ich. Was muss ich tun?~
+@178 = ~Nein, so etwas werde ich nicht tun.~
+@179 = ~So weit zu kommen, um dann einen Rückzieher zu machen! Welch Schande! Ihr seid schwächer als ich dachte.~
+@180 = ~Wie dem auch sei. Beantworte mir ein paar Fragen.~
+@181 = ~Gut. Was muss ich tun?~
+@182 = ~Wie dem auch sei. Leb wohl.~
+@183 = ~Nein. Erst wenn Ihr bereit seid, Euer Potential voll zu entfalten.~
+@184 = ~Ich gewähre Euch eine Fähigkeit, die einer unschuldigen Person die Seele aus dem Leib reißt. Sprecht wieder mit mir, wenn die Tat vollbracht wurde, und ich werde Euch meine stärkste Macht gewähren.~
+@185 = ~Wie du meinst.~
+@186 = ~Bah. Dann werde ich keine Minute länger damit verschwenden, Euch etwas zu lehren. Habt Ihr keinen Ehrgeiz? Habt Ihr keine Wünsche? Ihr armseliger Narr!~
+@187 = ~Wie ich schon sagte: Das werde ich nicht tun. Keine Macht der Welt ist das wert.~
+@188 = ~Dann leidet in der Dunkelheit, Narr!~
+@189 = ~Ich hab es mir anders überlegt. Was muss ich tun?~
+@190 = ~Das werde ich. Leb wohl.~
+@191 = ~So sei es denn. Ein Weg führt zum Misserfolg, einer zum Erfolg.~
+@192 = ~Schön.~
+@193 = ~Hervorragend. Ihr habt Euch als würdiger Lehrling erwiesen. Dies ist dann also die letzte Macht, die ich Euch gewähren kann.~
+@194 = ~Danke, Buch.~
+@195 = ~(Das Buch verstummt plötzlich und keine Überredungskunst der Welt kann es dazu bringen, Euch wieder zu antworten.)~
+@196 = ~(Das Buch schweigt und antwortet Euch nicht. Ihm scheinen die Worte zu fehlen.)
+
+^CIhr habt +15 % auf Euren Widerstand gegen Wucht-, Klingen, Stich- und Geschossschaden erhalten.^-~
+@197 = ~Mit diesen Fähigkeiten, Meister, könnt Ihr Euer Leben unermesslich verbessern. Leider muss ich aber von Euch...eine kleine Gegenleistung für diese Mächte verlangen.~
+@198 = ~Kleine Gegenleistung? Was denn?~
+@199 = ~Dann will ich nichts.~
+@200 = ~Was möchtet Ihr wissen, Meister?~
+
+// Journal entries
+@300 = ~Dunkle Verlockungen
+
+Dieses seltsame Buch, das ich von Ebb Knarrknie erworben habe, hat mich aufgefordert, für Macht ein kleines Stück von mir selbst aufzugeben. Ich habe es abgelehnt. Die Möglichkeit steht mir aber noch offen.~
+@301 = ~Dunkle Verlockungen
+
+Dieses seltsame Buch, das ich von Ebb Knarrknie erworben habe, hat mich aufgefordert, ein paar Tropfen meines Blutes auf seine Seiten fallen zu lassen. Das habe ich getan und einen Edelstein gewonnen. Es hat mir außerdem mehr Macht versprochen.~
+@302 = ~Dunkle Verlockungen
+
+Im Austausch für einen Teil meiner Erfahrung gewährte mir das Buch einen Bonus auf meine Rettungswürfe.~
+@303 = ~Dunkle Verlockungen
+
+Ich habe zugestimmt, im Austausch für noch mehr Macht eine unschuldige Person zu ermorden. Ich muss dafür die Spezialfähigkeit nutzen, die mir das Buch beigebracht hat.~
+@304 = ~Dunkle Verlockungen
+
+Das Buch hat mir für den Mord an einer unschuldigen Person noch mehr Macht verliehen - ein würdiger Handel.~
+
+@350 = ~Dunkle Verlockungen
+
+Das Buch spricht nicht mehr mit mir.~

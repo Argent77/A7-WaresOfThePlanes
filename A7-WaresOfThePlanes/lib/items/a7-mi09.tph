@@ -1,0 +1,81 @@
+// Item: The Grimoire of Pestilential Thought
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-mi09~
+
+// Installing item
+COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+  LPF update_item_generic
+    STR_VAR
+      itm_resref
+    RET
+      icon_resref
+      desc_image_resref
+  END
+
+// Installing associated resources
+LAF install_item_resources_generic
+STR_VAR
+  itm_resref
+  icon_resref
+  desc_image_resref
+END
+
+// Installing additional resources
+COPY ~%MOD_FOLDER%/eff/%itm_resref%1.eff~ ~override~
+     ~%MOD_FOLDER%/eff/%itm_resref%2.eff~ ~override~
+     ~%MOD_FOLDER%/eff/%itm_resref%3.eff~ ~override~
+     ~%MOD_FOLDER%/eff/%itm_resref%4.eff~ ~override~
+     ~%MOD_FOLDER%/eff/%itm_resref%5.eff~ ~override~
+     ~%MOD_FOLDER%/eff/%itm_resref%6.eff~ ~override~
+     ~%MOD_FOLDER%/eff/%itm_resref%d.eff~ ~override~
+
+LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+
+WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+  COPY ~%MOD_FOLDER%/spl/%itm_resref%a.spl~ ~override~
+    SAY NAME1 @20 // [Reduce max. HP by 1]
+
+  COPY ~%MOD_FOLDER%/spl/%itm_resref%b.spl~ ~override~
+    SAY NAME1 @21 // [Reduce XP by 10 percent]
+
+  COPY ~%MOD_FOLDER%/spl/%itm_resref%c.spl~ ~override~
+    SAY NAME1 @22 // [Grant +1 to all Saving Throws]
+
+  COPY ~%MOD_FOLDER%/spl/%itm_resref%d.spl~ ~override~
+    SAY NAME1 @26 // Slay Innocent
+    SAY UNIDENTIFIED_DESC @27
+
+  COPY ~%MOD_FOLDER%/spl/%itm_resref%e.spl~ ~override~
+    SAY NAME1 @23 // [Grant 15 percent to physical damage]
+
+  COPY ~%MOD_FOLDER%/spl/%itm_resref%f.spl~ ~override~
+    SAY NAME1 @24 // [Shift alignment]
+    LPF ALTER_ITEM_EFFECT
+      INT_VAR
+        check_headers = 1
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@25) // Your alignment has shifted.
+    END
+
+  ADD_JOURNAL @300 @301 @302 @303 @304 @350
+
+  ACTION_IF (FILE_EXISTS_IN_GAME ~misc45.itm~) BEGIN
+    COPY_EXISTING ~misc45.itm~ ~override~
+      READ_STRREF NAME2 task1_reward
+    BUT_ONLY
+  END ELSE BEGIN
+    ACTION_GET_STRREF 7106 task1_reward // Gem
+  END
+  COMPILE EVAL ~%MOD_FOLDER%/dlg/%itm_resref%.d~
+
+  // Make item conversable
+<<<<<<<< .../inlined/A7-WaresOfThePlanes/itemdial-a7-mi09.2da
+A7-MI09   5689   A7-MI09
+>>>>>>>>
+  COPY_EXISTING ~itemdial.2da~ ~override~
+    APPEND_FILE TEXT ~.../inlined/A7-WaresOfThePlanes/itemdial-a7-mi09.2da~
+    PRETTY_PRINT_2DA
+  BUT_ONLY
+END

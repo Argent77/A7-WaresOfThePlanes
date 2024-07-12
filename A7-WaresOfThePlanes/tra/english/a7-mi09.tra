@@ -1,0 +1,161 @@
+// The Grimoire of Pestilential Thought
+
+@0 = ~Smelly Book~
+@1 = ~The Grimoire of Pestilential Thought~
+
+@10 = ~This black-bound tome seems to radiate a slight rotting smell, and the covers are unpleasant to the touch - like uncured human flesh left out in the sun. Rusted buckles on the cover seal it against the elements.
+
+STATISTICS:
+
+Weight: 2~
+@11 = ~This black-bound tome seems to radiate a slight rotting smell, and the covers are unpleasant to the touch - like uncured human flesh left out in the sun. Rusted buckles on the cover seal it against the elements.
+
+It is the Grimoire of Pestilential Thought, an arcane tome created ages ago for purposes unknown, the purpose of which is to teach mortals the nature of evil. Some sages warn against its use, while others urge it. It is said to grant mighty powers when services are performed for it.
+
+STATISTICS:
+
+Weight: 2~
+
+// Misc. strings
+@20 = ~[Reduce max. HP by 1]~
+@21 = ~[Reduce XP by 10 percent]~
+@22 = ~[Grant +1 to all Saving Throws]~
+@23 = ~[Grant 15 percent to physical damage]~
+@24 = ~[Shift alignment]~
+@25 = ~Your alignment has shifted.~ [REPDOWN]
+@26 = ~Slay Innocent~
+@27 = ~Slay Innocent
+This ability allows you to snuff out the life of an innocent creature. It must be used to gain a favor of the Grimoire of Pestilential Thought.~
+
+// Dialog content
+@100 = ~(Apart from the unsightly look and a slight rotting smell you don't notice anything unusual.)~
+@101 = ~(The book does not respond to your presence.)~
+@102 = ~I greet thee, master. How may this humble tome serve you?~
+@103 = ~You can talk?~
+@104 = ~You can't. Stop talking to me.~
+@105 = ~Master, how may I serve your needs? Do you need your curiosity assuaged?~
+@106 = ~Yes. Answer some questions for me.~
+@107 = ~No.~
+@108 = ~Master. Have you decided that perhaps you wish to continue your education? The offer of greater insight and ability remains open to you.~
+@109 = ~Tell me what I have to do.~
+@110 = ~Not yet. Answer some other questions for me.~
+@111 = ~No. Farewell.~
+@112 = ~Master. Have you decided that perhaps you wish to continue your education? The offer of greater insight and ability remains open to you if you will but complete the second sacrifice.~
+@113 = ~Yes, I am ready.~
+@114 = ~Not right now. Farewell.~
+@115 = ~You have done well so far. Listen to these words and learn still more.~
+@116 = ~Do you have more to teach me, Book?~
+@117 = ~I can grant you one more power. You have shown yourself willing to do what it takes to finish a job. Are you ready to perform your final task?~
+@118 = ~Yes, I am.~
+@119 = ~Well? Have you achieved your goal? Have you slain an innocent person with the ability I taught you?~
+@120 = ~Yes, I have.~
+@121 = ~Not yet.~
+@122 = ~No. And I'm not going to.~
+@123 = ~(The book is silent and does not answer you. It appears to have run out of words.)~
+@124 = ~Very well.~
+@125 = ~That I can, master, in many different languages. Only you should take care that none see us conversing, for they cannot hear me. And, master, speech is but one of my powers.~
+@126 = ~What can you do? What are your powers?~
+@127 = ~How did you end up in Ebb's store?~
+@128 = ~Tell me about yourself.~
+@129 = ~That's enough for now.~
+@130 = ~I can grant you abilities that will allow you greater latitude in life's vicissitudes, master.~
+@131 = ~What abilities do you mean?~
+@132 = ~Forget it. Answer some other questions for me.~
+@133 = ~The merchant stumbled upon the remains of my former master who perished in the Outlands many ages ago. Instead of perusing my services he decided to put me up for sale.~
+@134 = ~Tell me of your powers.~
+@135 = ~I see. Answer some other questions for me.~
+@136 = ~True. Farewell.~
+@137 = ~The question you ask is not a simple one, my master, but your servant shall seek to answer it as best it can. I am a codex of moments-now-forgotten, ideas-now-lost, and thoughts of other times and other worlds. Within my pages lies the lore of forgotten civilizations. In essence, my master, and this is the only thing of import: within my pages lie POWER. This power can be yours... my master.~
+@138 = ~Not interested right now. Answer some other questions for me, instead.~
+@139 = ~Not interested. Farewell, book.~
+@140 = ~It is but a small sacrifice, master, for a great gain... but it is your choice. The offer remains open, master.~
+@141 = ~Good. Answer some other questions for me.~
+@142 = ~Good. Farewell.~
+@143 = ~As you wish, master. Merely speak the word to me and I shall assist you in any way possible.~
+@144 = ~Actually, tell me what you can do.~
+@145 = ~Fine. Now quiet yourself.~
+@146 = ~The service required is a trifling one, my master. I would barely mention it if it were not for the sake of the laws that bind me to these pages...~
+@147 = ~To unlock my power, you must sacrifice but a small bit of yourself, my master. You must spill blood upon the first of my pages. This act will serve to strengthen the chain between us and allow me to help you reach your full potential. It is a small price to pay for the powers that will come to be at your disposal.~
+@148 = ~All right. Here.~
+@149 = ~No.~
+@150 = ~You cut yourself and allow a few drops of blood to drip upon the page. A strange chill settles in your bones, and you feel empty and hurt. At the same time, there is a feeling of triumph: You have been rewarded with a precious gem.
+
+^CYou have lost 1 Hit Point from your maximum Hit Point level.^-~
+@151 = ~This is your reward... master. Know that this is but the first power that lies in my pages.
+
+^CGained An Item: %task1_reward%^-~
+@152 = ~Tell me of these other powers.~
+@153 = ~Answer some more questions for me.~
+@154 = ~I need nothing more right now.~
+@155 = ~Unfortunately, master, the laws that bind me demand a greater sacrifice in return for greater power. I would grant these powers to you freely, but as you can see, I am bound.~
+@156 = ~What is the sacrifice?~
+@157 = ~Forget it, then.~
+@158 = ~You require answers?~
+@159 = ~Do you have more powers for me?~
+@160 = ~No more. Farewell.~
+@161 = ~I am saddened that you do not think my powers worth such a small price. Do not let doubt and confusion shackle you, master... but I speak out of turn. Remember that the offer remains open to you.~
+@162 = ~I'll think about it. I need some more answers from you.~
+@163 = ~I'll think about it. Farewell.~
+@164 = ~I am power, master, and I can teach you more.~
+@165 = ~How?~
+@166 = ~Refresh my memory.~
+@167 = ~Then remember that you may find yourself wishing greater power later, and that I will be waiting for you... master.~
+@168 = ~I'll do that. Farewell.~
+@169 = ~The second sacrifice is a portion of your experience, master. This will signify the binding between you and the power - the experience allows me to grant you a reward of a more immaterial nature.~
+@170 = ~Fine, I agree.~
+@171 = ~You have made the right decision. I grant you the ability to resist adverse effects more efficiently.
+
+^CYou have lost experience points.^-
+^CYou have been granted +1 to all of your Saving Throws.^-~
+@172 = ~My thanks. Farewell.~
+@173 = ~In time, in time! You must have patience! You have already shown yourself willing to do what it takes to achieve this power, and you must realize that you WILL pay for this power.~
+@174 = ~What do I have to do?~
+@175 = ~I've paid enough. Forget it.~
+@176 = ~Do you have the courage to take a life?~
+@177 = ~Yes, I have. What do I have to do?~
+@178 = ~No, I won't do something like that.~
+@179 = ~To have come so far, only to back out now. Shameful. You are not as strong as I had thought.~
+@180 = ~Be that as it may. Answer some questions for me.~
+@181 = ~Fine. What do I have to do?~
+@182 = ~Be that as it may. Farewell.~
+@183 = ~No. I will not until you show yourself willing to achieve your potential.~
+@184 = ~I am granting you an ability that rips the souls from the body of an innocent person. Talk to me again when the deed is done and I will grant you my greatest power.~
+@185 = ~Very well.~
+@186 = ~Bah. Then I shall waste no more time in trying to educate you. Have you no ambition? Have you no desire? You weak fool.~
+@187 = ~As I said: I won't do it. No power is worth that.~
+@188 = ~Then suffer in darkness, fool.~
+@189 = ~I've changed my mind. What do I have to do?~
+@190 = ~I will. Farewell.~
+@191 = ~Be that as it may. One route leads to failure, one to success.~
+@192 = ~Fine.~
+@193 = ~Excellent. You have proven yourself a worthy student. This, then, is the final power I can grant you.~
+@194 = ~Thanks, book.~
+@195 = ~(The book falls abruptly silent, and no amount of coaxing can induce it to answer you again.)~
+@196 = ~(The book is silent and does not answer you. It appears to have run out of words.)
+
+^CYou have been granted +15% resistance to crushing, slashing, piercing, and missile damage.^-~
+@197 = ~These are powers, my master, that can improve your life immeasurably. Unfortunately, the laws that bind me... they demand a small service in recompense for these powers.~
+@198 = ~A small service? Like what?~
+@199 = ~Then I wish nothing.~
+@200 = ~What do you wish to know, master?~
+
+// Journal entries
+@300 = ~Dark Temptations
+
+This strange book I purchased from Ebb has asked me to give up a small piece of myself in exchange for power. I declined. The option is still open, however.~
+@301 = ~Dark Temptations
+
+This strange book I purchased from Ebb has asked me to spill some of my blood onto its pages. I have done so, and received a gem in return. It has promised me more power, as well.~
+@302 = ~Dark Temptations
+
+In exchange for a portion of my experience the book granted me a bonus to all my saving throws.~
+@303 = ~Dark Temptations
+
+I have just agreed to slay an innocent person in exchange for more power from the book. I have to use the ability the book has granted me for this purpose.~
+@304 = ~Dark Temptations
+
+The book has granted me yet another, more powerful power in exchange for the death of an innocent person - a worthy trade.~
+
+@350 = ~Dark Temptations
+
+The book speaks to me no longer.~
