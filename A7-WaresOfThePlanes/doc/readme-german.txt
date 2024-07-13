@@ -82,6 +82,7 @@ Der reisende Händler bietet insgesamt
 - 10 Ringe
 - 7 Ohrringe (können im Feld für Amulette platziert werden)
 - 7 Armbänder und Armschienen (können im Feld für Armschützer und Handschuhe platziert werden)
+- 1 Mantel
 - 1 Zauberstab
 - mehrere Gebrauchsgegenstände
 - ein einzigartiges Quest-bezogenes Artefakt

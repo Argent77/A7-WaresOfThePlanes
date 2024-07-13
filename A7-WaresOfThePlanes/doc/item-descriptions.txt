@@ -1755,10 +1755,45 @@ Equipped abilities:
 Weight: 2
 
 
-14. Wands
+14. Cloaks
+~~~~~~~~~~
+
+14.1. Cowl of Deepest Shadows (available: BG2:SoA chapter 6 or later)
+Just like the cowl itself the history of this artifact is shrouded in darkness. It was granted a 
+member of the Doomguard faction by the goddess Shar as a reward for corrupting a group of 
+worshippers of Hanali Celanil, the elven goddess of love and beauty, into self-destructive hedonism 
+and despair. The cowl was lost a short time later, only to reappear occasionally for brief moments 
+in the possession of less reputable individuals like assassins or agents of Shar, as if it has a 
+mind of its own.
+
+This cowl is made of an unknown material that is surprisingly light and durable. It seems to blend 
+with the immediate surroundings to a degree where it becomes difficult to discern the exact shape 
+of the cowl and their wearer.
+
+STATISTICS:
+
+Equipped abilities:
+– Hide In Shadows: +20%
+– Move Silently: +20%
+– Darkvision
+  THAC0: +2 bonus (outdoors at night and in dungeons)
+– Light Sensitive
+  THAC0: -4 penalty (outdoors at daytime)
+– Blurred
+  Armor Class: +3 vs. missile attacks
+
+Charge abilities:
+– Mislead once per day
+  Duration: 12 rounds
+  Area of Effect: The wearer
+
+Weight: 1
+
+
+15. Wands
 ~~~~~~~~~
 
-14.1. Abyssal Pipe (available: SoD chapter 8 or later)
+15.1. Abyssal Pipe (available: SoD chapter 8 or later)
 This is a small wooden pipe, carved to resemble the head of a demon.
 
 When used, this pipe billows forth great gouts of deadly fumes from the planes of the Abyss.
@@ -1779,10 +1814,10 @@ Requires:
 Weight: 0
 
 
-15. Consumables and charged items
+16. Consumables and charged items
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-15.1. Bandages (available: BG1 chapter 1 or later)
+16.1. Bandages (available: BG1 chapter 1 or later)
 This is a roll of bandages, useful for stanching minor wounds. When applied they will heal a 
 character for 3 hit points of damage.
 
@@ -1792,7 +1827,7 @@ Special: Restores 3 Hit Points.
 
 Weight: 0
 
-15.2. Clipped Copper Charm (available: BG1 chapter 1 or later)
+16.2. Clipped Copper Charm (available: BG1 chapter 1 or later)
 This copper piece has been "clipped"… most of the copper has been shaved off, no doubt to still 
 keep the appearance it is a coin and allowing the 'clipper' to use the shaved copper to make 
 another coin. Although many Hive dwellers in Sigil practice this method of "making money," when 
@@ -1818,7 +1853,7 @@ Charge abilities:
 
 Weight: 0
 
-15.3. Gordian Knot (available: BG2:ToB chapter 8 or later)
+16.3. Gordian Knot (available: BG2:ToB chapter 8 or later)
 The knot binding the two ends of this rope together holds a powerful magic. When this knot is 
 severed by a fighter with an edged weapon, the warrior gains a rush of confidence and arrogance, 
 reducing their Wisdom but raising their Charisma. The user is also beset with the urge to gather an 
@@ -1836,7 +1871,7 @@ Charge abilities:
 
 Weight: 0
 
-15.4. Elixir of Horrific Separation (available: BG2:ToB chapter 9 or later)
+16.4. Elixir of Horrific Separation (available: BG2:ToB chapter 9 or later)
 This vial of Elixir of Horrific Separation was compounded by a scholar who'd found she possessed a 
 darker half - a side of her which took control, at times, and bade her do awful things. This potion 
 was to have 'split' the darker half away from her, creating two separate beings. Mercykillers from 
@@ -1855,7 +1890,7 @@ The elixir will have no effect when consumed by a user whose ethical alignment i
 
 Weight: 1
 
-15.5. Moridor's Box (available: SoD chapter 8 or later)
+16.5. Moridor's Box (available: SoD chapter 8 or later)
 This appears to be a small wooden box. Intricate designs etched in gold adorn the box. At one time 
 this box would have been worthy enough to be displayed at any aristocrat's estate. However, years 
 of neglect have taken their toll and it appears to be falling apart. If not for the large gem 
@@ -1877,7 +1912,7 @@ Requires:
 
 Weight: 2
 
-15.6. Baku's Horn (available: SoD chapter 8 or later)
+16.6. Baku's Horn (available: SoD chapter 8 or later)
 This nondescript wooden horn is in fact a magical item crafted on the Upper Planes. Similar to the 
 attack of the creature for which it is named, a Baku's Horn inflicts damage upon evil creatures 
 within the area of effect when it is sounded. Further, such creatures must make a save vs. 
@@ -1891,7 +1926,7 @@ Charge abilities:
 
 Weight: 1
 
-15.7. Wesley's Hourglass (available: BG2:ToB chapter 9 or later)
+16.7. Wesley's Hourglass (available: BG2:ToB chapter 9 or later)
 This item was originally fashioned by a powerful chronomancer with the intention to teach his 
 students about the nature of time. It looks like an ordinary hourglass in a wooden frame, but 
 instead of sand it is filled with mist-smoke of the Demiplane of Time, also known as Temporal Prime.
@@ -1914,15 +1949,28 @@ Requires:
 
 Weight: 1
 
-15.8. Wesley's Improved Hourglass
+16.8. Wesley's Improved Hourglass
 Cespenar can combine Wesley's Hourglass with the Rift Device from the Eyeless Cult quest to fashion 
 this improved version of the item.
 
+16.9. The Grimoire of Pestilential Thought (available: BG2:SoA chapter 2 or later)
+This black-bound tome seems to radiate a slight rotting smell, and the covers are unpleasant to the 
+touch - like uncured human flesh left out in the sun. Rusted buckles on the cover seal it against 
+the elements.
 
-16. Special items
+It is the Grimoire of Pestilential Thought, an arcane tome created ages ago for purposes unknown, 
+the purpose of which is to teach mortals the nature of evil. Some sages warn against its use, while 
+others urge it. It is said to grant mighty powers when services are performed for it.
+
+STATISTICS:
+
+Weight: 2
+
+
+17. Special items
 ~~~~~~~~~~~~~~~~~
 
-16.1. Lim-Lim Cage (available: BG1 chapter 1 or later)
+17.1. Lim-Lim Cage (available: BG1 chapter 1 or later)
 This sturdy steel cage has a thick leather handle on the top. It appears to be the home of a 
 Lim-Lim which can be unmistakably identified by their gleeful chirps. The cage itself seems to be 
 locked only by a simple latch.
@@ -1931,7 +1979,7 @@ STATISTICS:
 
 Weight: 10
 
-16.2. Stick with a handle? (available: BG2:ToB chapter 9 or later)
+17.2. Stick with a handle? (available: BG2:ToB chapter 9 or later)
 
 This item looks like a stick of polished metal with a handle of a shape that fits nicely in the hand. 
 Because of its small size only children or people of the short races can hold it comfortably.

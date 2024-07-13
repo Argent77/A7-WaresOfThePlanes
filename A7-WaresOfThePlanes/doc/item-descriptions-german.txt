@@ -1746,10 +1746,43 @@ Armschienen tragen (Rettungswurf gg. Tod für halben Schaden).
 Gewicht: 2
 
 
-14. Zauberstäbe
+14. Umhänge
+~~~~~~~~~~~
+
+14.1. Kutte der tiefsten Schatten (Verfügbar: ab BG2:SvA Kapitel 6)
+Wie die Kutte selbst, sind auch die Ursprünge dieses Artifakts in Dunkelheit gehüllt. Sie wurde von 
+der Göttin Shar einem Mitglied der Schicksalswächter aus Sigil als Belohnung gewährt, da er eine 
+Gruppe von Gläubigen Hanali Celanils, der elfischen Göttin der Liebe und Schönheit, hin zu 
+selbstzerstörerischer Vergnügungssucht und Verzweiflung verführt hatte. Die Kutte ging einige Zeit 
+später verloren, nur um gelegentlich kurz im Besitz zweifelhafter Personen, wie Meuchelmörder oder 
+Agenten von Shar, wieder aufzutauchen.
+
+Diese Kutte wurde aus einem unbekannten Material gefertigt und ist überraschend leicht und 
+strapazierfähig. Sie scheint sich mit der unmittelbaren Umgebung so stark zu verschmelzen, dass 
+es schwierig ist, ihre genaue Form und die ihres Trägers zu erkennen.
+
+EIGENSCHAFTEN:
+
+Im Schatten verstecken: +20 %
+Leise Bewegen: +20 %
+Nachtsicht:
+ ETW0-Bonus: -2 (in Verließen und nachts im Freien)
+Lichtempfindlichkeit:
+ ETW0-Malus: +4 (tagsüber im Freien)
+Verschwommen:
+ RK-Bonus: -3 gg. Geschosswaffen
+
+Ablenkung (1x täglich)
+ Dauer: 12 Runden
+ Bereich: Anwender
+
+Gewicht: 1
+
+
+15. Zauberstäbe
 ~~~~~~~~~~~~~~~
 
-14.1. Pfeife aus dem Abgrund (Verfügbar: ab SoD Kapitel 8)
+15.1. Pfeife aus dem Abgrund (Verfügbar: ab SoD Kapitel 8)
 
 Dies ist eine kleine, hölzerne Pfeife, die so geschnitzt ist, dass sie dem Kopf eines Dämonen ähnelt.
 
@@ -1773,10 +1806,10 @@ Mindestintelligenz: 9
 Gewicht: 0
 
 
-15. Verbrauchsmaterialien und Gegenstände mit Ladungen
+16. Verbrauchsmaterialien und Gegenstände mit Ladungen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-15.1. Bandagen (Verfügbar: ab BG1 Kapitel 1)
+16.1. Bandagen (Verfügbar: ab BG1 Kapitel 1)
 Dies ist eine Rolle Bandagen, die zur Stillung kleinerer Wunden nützlich sind. Sie können den 
 Benutzer von 3 Schadenspunkten heilen.
 
@@ -1786,7 +1819,7 @@ Heilt 3 Trefferpunkte.
 
 Gewicht: 0
 
-15.2. Abgeschnittenes Kupferstück (Verfügbar: ab BG1 Kapitel 1)
+16.2. Abgeschnittenes Kupferstück (Verfügbar: ab BG1 Kapitel 1)
 Dieses Kupferstück wurde "abgeschnitten"… das meiste Kupfer wurde abrasiert, offensichtlich, damit 
 es noch wie eine Münze aussieht, der "Barbier" aber aus dem abrasierten Kupfer eine neue Münze 
 machen kann. Obwohl viele Bewohner des Stocks diese Methode des "Geldverdienens" praktizieren, tun 
@@ -1814,7 +1847,7 @@ Kleiner Kupfersegen
 
 Gewicht: 0
 
-15.3. Gordischer Knoten (Verfügbar: ab BG2:TdB Kapitel 8)
+16.3. Gordischer Knoten (Verfügbar: ab BG2:TdB Kapitel 8)
 Der Knoten, der die beiden Enden dieses Seils zusammenhält, enthält einen mächtigen Zauber. Wenn 
 dieser Knoten von einem Kämpfer mit einer scharfen Waffe durchtrennt wird, erfährt der Krieger 
 eine Welle des Selbstbewusstseins und der Arroganz, wodurch seine Weisheit herabgesetzt, sein 
@@ -1837,7 +1870,7 @@ Platziert den Knoten in ein Feld für einsatzbereite Gegenstände.
 
 Gewicht: 0
 
-15.4. Elixier der schrecklichen Trennung (Verfügbar: ab BG2:TdB Kapitel 9)
+16.4. Elixier der schrecklichen Trennung (Verfügbar: ab BG2:TdB Kapitel 9)
 Dies ist die Phiole mit dem Elixier der Schrecklichen Trennung, das von einer Gelehrten gemischt 
 wurde, die einst eine dunkle Seite an sich entdeckte, eine Seite, die von Zeit zu Zeit die 
 Kontrolle über sie übernahm und sie veranlasste, schreckliche Dinge zu tun. Dieser Trank sollte 
@@ -1859,7 +1892,7 @@ Das Elixier zeigt keine Wirkung, wenn die ethische Gesinnung des Nutzers bereits
 
 Gewicht: 1
 
-15.5. Moridors Kästchen (Verfügbar: ab SoD Kapitel 8)
+16.5. Moridors Kästchen (Verfügbar: ab SoD Kapitel 8)
 Dies scheint ein kleines Holzkästchen zu sein. Komplizierte Muster, die in Gold geätzt sind, zieren 
 das Kästchen. Irgendwann einmal mag es genug wert gewesen sein, um im Haus eines Aristokraten 
 ausgestellt zu werden. Jahre der Vernachlässigung haben jedoch ihren Tribut gefordert, und es 
@@ -1880,7 +1913,7 @@ Mindestintelligenz: 9
 
 Gewicht: 2
 
-15.6. Bakus Horn (Verfügbar: ab SoD Kapitel 8)
+16.6. Bakus Horn (Verfügbar: ab SoD Kapitel 8)
 Dieses unscheinbare Holzhorn ist in Wirklichkeit ein magisches Artefakt aus den Oberen Ebenen. Wie 
 der Angriff der namensgebenden Kreatur, fügt Bakus Horn bösen Wesen im Wirkungsbereich Schaden zu, 
 wenn es geblasen wird. Außerdem fliehen solche Wesen in Panik, sofern sie keinen Rettungswurf gg. 
@@ -1895,7 +1928,7 @@ Bakus Gebrüll (3x täglich)
 
 Gewicht: 1
 
-15.7. Wesleys Stundenglas (Verfügbar: ab BG2:TdB Kapitel 9)
+16.7. Wesleys Stundenglas (Verfügbar: ab BG2:TdB Kapitel 9)
 Dieses Artefakt wurde ursprünglich von einem mächtigen Chronomanten mit der Absicht erschaffen, 
 seine Schüler über die Natur der Zeit zu lehren. Es sieht aus wie eine gewöhnliche Sanduhr in einem 
 Holzgestell, aber statt mit Sand ist sie mit Nebelrauch aus der Halbebene der Zeit gefüllt.
@@ -1916,15 +1949,29 @@ Mindestintelligenz: 6
 
 Gewicht: 1
 
-15.8. Wesleys verbessertes Stundenglas
+16.8. Wesleys verbessertes Stundenglas
 Cespenar kann Wesleys Stundenglas mit dem Dimensionsreißer aus der "Kult des Augenlosen"-Quest 
 kombinieren, um eine verbesserte Version des Gegenstands zu erschaffen.
 
+16.9. Zauberbuch der ekelhaften Gedanken (Verfügbar: ab BG2:SvA Kapitel 2)
+Von diesem in Schwarz gebundenen Buchband scheint ein leichter Modergeruch auszugehen, und der 
+Einschlag fühlt sich unangenehm an - wie ungetrocknetes Menschenfleisch, das in der Sonne 
+liegengelassen wurde. Verrostete Schnallen am Einschlag versiegeln es gegen die Elemente.
 
-16. Besondere Gegenstände
+Es ist das Zauberbuch der ekelhaften Gedanken, ein obskurer Buchband, der vor Jahren für unbekannte 
+Zwecke hergestellt wurde. Es lehrt Sterbliche das Wesen des Bösen. Einige Weise warnen vor seiner 
+Verwendung, während andere sie empfehlen. Es soll mächtige magische Kräfte verleihen, wenn man ihm 
+dient.
+
+EIGENSCHAFTEN:
+
+Gewicht: 2
+
+
+17. Besondere Gegenstände
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-16.1. Lim-Lim-Käfig (Verfügbar: ab BG1 Kapitel 1)
+17.1. Lim-Lim-Käfig (Verfügbar: ab BG1 Kapitel 1)
 Dieser robuste Stahlkasten hat an der Oberseite einen dicken Ledergriff. Es scheint das Zuhause 
 eines Lim-Lims zu sein, das durch sein vergnügtes Zirpen unverkennbar identifiziert werden kann. 
 Der Käfig selbst scheint nur durch einen einfachen Riegel verschlossen zu sein.
@@ -1933,7 +1980,7 @@ EIGENSCHAFTEN:
 
 Gewicht: 10
 
-16.2. Stange mit Griff? (Verfügbar: ab BG2:TdB Kapitel 9)
+17.2. Stange mit Griff? (Verfügbar: ab BG2:TdB Kapitel 9)
 Dieser Gegenstand sieht aus wie eine Stange aus poliertem Metall mit einem Griff, der gut in der 
 Hand liegt. Wegen seiner geringen Größe können ihn nur Kinder oder Angehörige der kleineren Rassen 
 bequem halten.
