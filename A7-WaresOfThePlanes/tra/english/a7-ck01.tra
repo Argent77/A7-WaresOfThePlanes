@@ -1,0 +1,35 @@
+// Cowl of Deepest Shadows
+
+@0 = ~Hooded Cloak~
+@1 = ~Cowl of Deepest Shadows~
+
+@10 = ~This cloak is made of an unknown material that is surprisingly light and durable. It seems to blend with the immediate surroundings to a degree where it becomes difficult to discern its exact shape.
+
+STATISTICS:
+
+Weight: 1~
+@11 = ~Just like the cowl itself the history of this artifact is shrouded in darkness. It was granted a member of the Doomguard faction by the goddess Shar as a reward for corrupting a group of worshippers of Hanali Celanil, the elven goddess of love and beauty, into self-destructive hedonism and despair. The cowl was lost a short time later, only to reappear occasionally for brief moments in the possession of less reputable individuals like assassins or agents of Shar, as if it has a mind of its own.
+
+This cowl is made of an unknown material that is surprisingly light and durable. It seems to blend with the immediate surroundings to a degree where it becomes difficult to discern the exact shape of the cowl and their wearer.
+
+STATISTICS:
+
+Equipped abilities:
+– Hide In Shadows: +20%
+– Move Silently: +20%
+– Darkvision
+  THAC0: +2 bonus (outdoors at night and in dungeons)
+– Light Sensitive
+  THAC0: -4 penalty (outdoors at daytime)
+– Blurred
+  Armor Class: +3 vs. missile attacks
+
+Charge abilities:
+– Mislead once per day
+  Duration: 12 rounds
+  Area of Effect: The wearer
+
+Weight: 1~
+
+@20 = ~Light Sensitive~
+@21 = ~Darkvision~

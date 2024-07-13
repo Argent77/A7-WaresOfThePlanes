@@ -1,0 +1,33 @@
+// Cowl of Deepest Shadows
+
+@0 = ~Umhang mit Kapuze~
+@1 = ~Kutte der tiefsten Schatten~
+
+@10 = ~Dieser Umhang wurde aus einem unbekannten Material gefertigt und ist überraschend leicht und strapazierfähig. Er scheint sich mit seiner unmittelbaren Umgebung so stark zu verschmelzen, dass es schwierig ist, seine genaue Form zu erkennen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 1~
+@11 = ~Wie die Kutte selbst, sind auch die Ursprünge dieses Artifakts in Dunkelheit gehüllt. Sie wurde von der Göttin Shar einem Mitglied der Schicksalswächter aus Sigil als Belohnung gewährt, da er eine Gruppe von Gläubigen Hanali Celanils, der elfischen Göttin der Liebe und Schönheit, hin zu selbstzerstörerischer Vergnügungssucht und Verzweiflung verführt hatte. Die Kutte ging einige Zeit später verloren, nur um gelegentlich kurz im Besitz zweifelhafter Personen, wie Meuchelmörder oder Agenten von Shar, wieder aufzutauchen.
+
+Diese Kutte wurde aus einem unbekannten Material gefertigt und ist überraschend leicht und strapazierfähig. Sie scheint sich mit der unmittelbaren Umgebung so stark zu verschmelzen, dass es schwierig ist, ihre genaue Form und die ihres Trägers zu erkennen.
+
+EIGENSCHAFTEN:
+
+Im Schatten verstecken: +20 %
+Leise Bewegen: +20 %
+Nachtsicht:
+ ETW0-Bonus: -2 (in Verließen und nachts im Freien)
+Lichtempfindlichkeit:
+ ETW0-Malus: +4 (tagsüber im Freien)
+Verschwommen:
+ RK-Bonus: -3 gg. Geschosswaffen
+
+Ablenkung (1x täglich)
+ Dauer: 12 Runden
+ Bereich: Anwender
+
+Gewicht: 1~
+
+@20 = ~Lichtempfindlich~
+@21 = ~Nachtsicht~
