@@ -1805,6 +1805,20 @@ Mindestintelligenz: 9
 
 Gewicht: 0
 
+15.2. Skelettschlüssel
+Dieser Gegenstand wurde aus den Fingerknochen eines Humanoiden gefertigt. Auf seiner Oberfläche wurden magische Symbole eingraviert, die ihn mit einem Zauber belegen, der alle Arten von Schlössern an Truhen, Kisten oder Türen öffnen kann.
+
+EIGENSCHAFTEN:
+
+Klopfen
+ Reichweite: 27,5m (Sichtfeld)
+ Dauer: Sofort
+ Bereich: Ein Gegenstand
+
+Mindestintelligenz: 9
+
+Gewicht: 1
+
 
 16. Verbrauchsmaterialien und Gegenstände mit Ladungen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

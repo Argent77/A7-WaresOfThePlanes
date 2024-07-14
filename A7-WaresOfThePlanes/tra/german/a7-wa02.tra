@@ -1,0 +1,22 @@
+// Skeletal Key
+
+@0 = ~Fingerknochen~
+@1 = ~Skelettschlüssel~
+
+@10 = ~Dieser Gegenstand scheint aus den Fingerknochen eines Humanoiden gefertigt worden zu sein. Auf seiner Oberfläche sind allerlei Symbole eingraviert... sie sind so klein, dass man sie nicht richtig erkennen kann.
+
+EIGENSCHAFTEN:
+
+Gewicht: 1~
+@11 = ~Dieser Gegenstand wurde aus den Fingerknochen eines Humanoiden gefertigt. Auf seiner Oberfläche wurden magische Symbole eingraviert, die ihn mit einem Zauber belegen, der alle Arten von Schlössern an Truhen, Kisten oder Türen öffnen kann.
+
+EIGENSCHAFTEN:
+
+Klopfen
+ Reichweite: 27,5m (Sichtfeld)
+ Dauer: Sofort
+ Bereich: Ein Gegenstand
+
+Mindestintelligenz: 9
+
+Gewicht: 1~

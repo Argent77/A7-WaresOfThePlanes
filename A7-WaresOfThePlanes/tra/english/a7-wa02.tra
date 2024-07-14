@@ -1,0 +1,24 @@
+// Skeletal Key
+
+@0 = ~Finger Bone~
+@1 = ~Skeletal Key~
+
+@10 = ~This item appears to be fashioned from the finger bones of a humanoid creature. Various symbols have been engraved on its surface... they are so small that you can't make them out.
+
+STATISTICS:
+
+Weight: 1~
+@11 = ~This key has been be fashioned from the finger bones of a humanoid creature. Magical symbols have been engraved on the surface to enchant it with a spell that opens any kinds of locks on chests, boxes or doors.
+
+STATISTICS:
+
+Charge abilities:
+– Knock
+  Range: Visual range of the caster
+  Area of Effect: Locked door or chest
+  Duration: Instant
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

@@ -1813,6 +1813,24 @@ Requires:
 
 Weight: 0
 
+15.2. Skeletal Key
+This key has been be fashioned from the finger bones of a humanoid creature. Magical symbols have 
+been engraved on the surface to enchant it with a spell that opens any kinds of locks on chests, 
+boxes or doors.
+
+STATISTICS:
+
+Charge abilities:
+– Knock
+  Range: Visual range of the caster
+  Area of Effect: Locked door or chest
+  Duration: Instant
+
+Requires:
+ 9 Intelligence
+
+Weight: 1
+
 
 16. Consumables and charged items
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
