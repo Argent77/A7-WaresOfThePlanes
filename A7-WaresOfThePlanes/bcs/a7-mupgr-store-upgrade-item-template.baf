@@ -6,13 +6,13 @@
 // Note: Bandages are already predefined in the store
 
 IF
-  Global("A7-StoreItem-%sto_item_resref%","GLOBAL",0)
+  Global("A7-StoreItem-%sto_item_resref%-%sto_upgrade_stage%","GLOBAL",0)
   OR(2)
     Global("A7-StoreUpgrade","GLOBAL",%sto_upgrade_stage%)
     GlobalGT("A7-StoreUpgrade","GLOBAL",%sto_upgrade_stage%)
 THEN
   RESPONSE #100
-    SetGlobal("A7-StoreItem-%sto_item_resref%","GLOBAL",1)
+    SetGlobal("A7-StoreItem-%sto_item_resref%-%sto_upgrade_stage%","GLOBAL",1)
     AddStoreItem("a7-merc","%sto_item_resref%",%sto_item_count%,0)
     // DisplayString(Myself,~DEBUG: Adding item to store: %sto_item_resref%~)
     Continue()
