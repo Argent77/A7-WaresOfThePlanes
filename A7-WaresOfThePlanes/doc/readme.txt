@@ -131,6 +131,8 @@ Version History
 ~~~~~~~~~~~~~~~
 
 1.3
+- Added new items for sale: Grimoire of Pestilential Thought, Cowl of Deepest Shadows,
+  Skeletal Key, Tear of Salieru-Dei
 - Fixed a resource name conflict with the "Skip Chateau Irenicus" mod
 
 1.2
