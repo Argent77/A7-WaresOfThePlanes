@@ -1,0 +1,137 @@
+// Item: Scroll of "Tasha's Unbearable Derisive Laughter"
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-sp01~
+
+// Installing item
+COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+  LPF update_item_generic
+    STR_VAR
+      itm_resref
+    RET
+      icon_resref
+      desc_image_resref
+  END
+
+// Installing associated resources
+LAF install_item_resources_generic
+STR_VAR
+  itm_resref
+  icon_resref
+  desc_image_resref
+END
+
+// Appending SPLPROT table
+LAF get_splprot_entry
+  INT_VAR
+    stat = 0x10b  // GENERAL.IDS
+    value = 5     // GIANTHUMANOID
+    relation = 1  // Equals
+  STR_VAR
+    name = ~*_GENERAL=GIANTHUMANOID~
+  RET
+    splprot_is_gianthumanoid = index
+END
+
+LAF get_splprot_entry
+  INT_VAR
+    stat = 38     // STAT(INT)
+    value = 5
+    relation = 2  // Less than
+  STR_VAR
+    name = ~*_STAT(INT)<5~
+  RET
+    splprot_int_less_5 = index
+END
+
+LAF get_splprot_entry
+  INT_VAR
+    stat = 0x104  // Negate match of two entries: HUMANOID or GIANTHUMANOID
+    value = 5
+    relation = splprot_is_gianthumanoid
+  STR_VAR
+    name = EVAL ~*_ENTRIES!=(5||%splprot_is_gianthumanoid%)~
+  RET
+    splprot_is_humanlike = index
+END
+
+LAF get_splprot_entry
+  INT_VAR
+    stat = 0x103  // Match two entries: GENDER!=MALE or INT<5
+    value = 58
+    relation = splprot_int_less_5
+  STR_VAR
+    name = EVAL ~*_ENTRIES=(58||%splprot_int_less_5%)~
+  RET
+    splprot_is_notmale_noint = index
+END
+
+// Installing custom projectile
+ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-sp01.pro~ ~Sparkle_Area_Red_Male_Humanoids_Not_Party~
+COPY_EXISTING ~a7-sp01.pro~ ~override~
+  // updating IDS 1 filter
+  WRITE_SHORT 0x3e splprot_is_humanlike
+  // updating IDS 2 filter
+  WRITE_SHORT 0x42 splprot_is_notmale_noint
+BUT_ONLY
+
+LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+  OUTER_SET tra_20 = RESOLVE_STR_REF(@20)  // Blushed
+
+  // Appending STATDESC table
+<<<<<<<< .../inlined/A7-WaresOfThePlanes/a7-sp01/statdesc-append.2da
+%statdesc_idx%   %tra_20%   A7-SP01D
+>>>>>>>>
+  COPY_EXISTING ~statdesc.2da~ ~override~
+    READ_2DA_ENTRIES_NOW ~statdesc~ 1
+    SET statdesc_idx = 0
+    FOR (row = 3; row < statdesc; ++row) BEGIN
+      READ_2DA_ENTRY_FORMER ~statdesc~ row 0 index
+      PATCH_IF (IS_AN_INT ~index~ && index > statdesc_idx) BEGIN
+        SET statdesc_idx = index
+      END
+    END
+    SET statdesc_idx += 1
+    APPEND_FILE_EVALUATE TEXT ~.../inlined/A7-WaresOfThePlanes/a7-sp01/statdesc-append.2da~
+    PRETTY_PRINT_2DA
+  BUT_ONLY
+
+  // Installing spell
+  COPY ~%MOD_FOLDER%/spl/a7-sp01.spl~ ~override~
+    SAY NAME1 @1  // Tasha's Unbearable Derisive Laughter
+    SAY UNIDENTIFIED_DESC @11
+    READ_LONG 0x64 ofs_abils
+    READ_SHORT 0x68 num_abils
+    FOR (i = 0; i < num_abils; ++i) BEGIN
+      SET ofs = ofs_abils + i * 40
+      WRITE_SHORT (ofs + 0x26) a7-sp01
+    END
+    LPF alter_item_effect_ex
+      INT_VAR
+        check_headers = 1
+        match_opcode = 139  // Display string
+        parameter1 = tra_20
+    END
+    LPF alter_item_effect_ex
+      INT_VAR
+        check_headers = 1
+        match_opcode = 142  // Display portrait icon
+        parameter2 = statdesc_idx
+    END
+END
+
+// Additional resources
+ACTION_FOR_EACH file IN ~%itm_resref%a.wav~
+                        ~%itm_resref%b.wav~
+                        ~%itm_resref%a.bam~
+                        ~%itm_resref%b.bam~
+                        ~%itm_resref%c.bam~
+                        ~%itm_resref%d.bam~
+BEGIN
+  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%file%~) BEGIN
+    LAF EXT_OF_FILESPEC STR_VAR filespec = EVAL ~%file%~ RET ext END
+    COPY ~%MOD_FOLDER%/%ext%/%file%~ ~override~
+  END
+END

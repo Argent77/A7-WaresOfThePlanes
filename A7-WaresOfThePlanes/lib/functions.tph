@@ -306,7 +306,7 @@ BEGIN
     END ELSE BEGIN
       OUTER_SPRINT line ~%name% %stat% %value% %relation%~
     END
-    APPEND ~splprot.2da~ ~%name% %stat% %value% %relation%~
+    APPEND ~splprot.2da~ ~%line%~
 
     COPY_EXISTING ~splprot.2da~ ~override~
       PRETTY_PRINT_2DA

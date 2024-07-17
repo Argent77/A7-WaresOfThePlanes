@@ -2003,10 +2003,33 @@ Constitution: Raised by 1 point permanently
 Weight: 0
 
 
-17. Special items
+17. Spell scrolls
 ~~~~~~~~~~~~~~~~~
 
-17.1. Lim-Lim Cage (available: BG1 chapter 1 or later)
+17.1 Tasha's Unbearable Derisive Laughter
+(Enchantment/Charm)
+
+Level: 3
+Range: Visual range of the caster
+Duration: 1 round/level
+Casting Time: 3
+Area of Effect: 15-ft. radius
+Saving Throw: Neg.
+
+What man does not feel their body fill with burning shame when mocked by a woman? Fill the ears of 
+your enemies with the derisive scorn of a woman's laughter. Their bodies shall become clumsy and 
+foolish, easily struck, and confidence shall be leeched from their muscles, weakening their blows.
+
+Tasha's Unbearable Derisive Laughter occurs in a 15 ft. radius from that spot. All male humanoid or 
+giant-humanoid creatures in range of the spell must make a Saving Throw vs. Spells or get a -2 to 
+their attack and damage rolls, -2 to their armor class, -2 to their Saving Throws, and have their 
+morale lowered for the duration of the spell.
+
+
+18. Special items
+~~~~~~~~~~~~~~~~~
+
+18.1. Lim-Lim Cage (available: BG1 chapter 1 or later)
 This sturdy steel cage has a thick leather handle on the top. It appears to be the home of a 
 Lim-Lim which can be unmistakably identified by their gleeful chirps. The cage itself seems to be 
 locked only by a simple latch.
@@ -2015,7 +2038,7 @@ STATISTICS:
 
 Weight: 10
 
-17.2. Stick with a handle? (available: BG2:ToB chapter 9 or later)
+18.2. Stick with a handle? (available: BG2:ToB chapter 9 or later)
 
 This item looks like a stick of polished metal with a handle of a shape that fits nicely in the hand. 
 Because of its small size only children or people of the short races can hold it comfortably.

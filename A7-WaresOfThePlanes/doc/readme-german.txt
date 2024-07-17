@@ -84,6 +84,7 @@ Der reisende Händler bietet insgesamt
 - 7 Armbänder und Armschienen (können im Feld für Armschützer und Handschuhe platziert werden)
 - 1 Mantel
 - 2 Zauberstäbe
+- 1 Zauberschriftrolle
 - mehrere Gebrauchsgegenstände
 - ein einzigartiges Quest-bezogenes Artefakt
 - und ein Haustier

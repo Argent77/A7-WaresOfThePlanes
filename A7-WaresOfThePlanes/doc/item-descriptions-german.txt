@@ -2000,10 +2000,34 @@ Konstitution: +1 (permanent)
 Gewicht: 0
 
 
-17. Besondere Gegenstände
+17. Zauberschriftrollen
+~~~~~~~~~~~~~~~~~~~~~~~
+
+17.1. Tashas fürchterlicher unbezähmbarer Lachanfall
+Grad: 3
+Schule: Verzauberung
+Reichweite: 9 m (Sichtfeld)
+Dauer: 1 Runde pro Stufe
+Zeitaufwand: 3
+Bereich: 4,5 m Radius
+Rettungswurf: Ja (gg. Zauber)
+
+Welchen Mann packt nicht das Gefühl brennender Scham, wenn ihn eine Frau verhöhnt? Füll die Ohren 
+deiner Feinde mit der ganzen höhnischen Verachtung, die im Lachen einer Frau liegen kann. Ihre 
+Körper sollen ungelenk und lächerlich wirken, und das Selbstbewusstsein soll aus ihren Muskeln 
+gesogen werden. Dies wird ihre Angriffe schwächen und sie selbst angreifbarer machen.
+
+Der Anwender kann diesen Zauber an jedem Punkt auf dem Bildschirm anwenden. Tashas unerträgliches 
+höhnisches Gelächter tritt in einem Radius von 4,5 m von diesem Punkt aus auf. Alle männlichen 
+humanoiden Wesen in der Reichweite des Zaubers müssen einen Rettungswurf gegen Zauber durchführen, 
+sonst wird für die Dauer des Zaubers ihre Moral gesenkt sowie -2 von ihren Angriffs- und 
+Schadenswürfen, -2 von der Rüstungsklasse und -2 von allen Rettungswürfen abgezogen.
+
+
+18. Besondere Gegenstände
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-17.1. Lim-Lim-Käfig (Verfügbar: ab BG1 Kapitel 1)
+18.1. Lim-Lim-Käfig (Verfügbar: ab BG1 Kapitel 1)
 Dieser robuste Stahlkasten hat an der Oberseite einen dicken Ledergriff. Es scheint das Zuhause 
 eines Lim-Lims zu sein, das durch sein vergnügtes Zirpen unverkennbar identifiziert werden kann. 
 Der Käfig selbst scheint nur durch einen einfachen Riegel verschlossen zu sein.
@@ -2012,7 +2036,7 @@ EIGENSCHAFTEN:
 
 Gewicht: 10
 
-17.2. Stange mit Griff? (Verfügbar: ab BG2:TdB Kapitel 9)
+18.2. Stange mit Griff? (Verfügbar: ab BG2:TdB Kapitel 9)
 Dieser Gegenstand sieht aus wie eine Stange aus poliertem Metall mit einem Griff, der gut in der 
 Hand liegt. Wegen seiner geringen Größe können ihn nur Kinder oder Angehörige der kleineren Rassen 
 bequem halten.

@@ -82,6 +82,7 @@ The travelling merchant offers a total of
 - 7 Bracelets and Bracers (can be equipped in the Bracers/Gauntlets slot)
 - 1 Cloak
 - 2 Wands
+- 1 Spell scroll
 - several miscellaneous items
 - a unique quest-related artifact
 - and a pet
