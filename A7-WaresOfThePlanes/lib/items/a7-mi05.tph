@@ -7,14 +7,38 @@ OUTER_SPRINT itm_resref ~a7-mi05~
 // Installing item
 
 // Appending SPLPROT.2DA
-COPY_EXISTING ~splprot.2da~ ~override~
-  COUNT_2DA_ROWS 1 num_rows
-  SET splprot_lt_250k = num_rows - 3
-  SET splprot_ge_2_5M = splprot_lt_250k + 1
-  SET splprot_in_range = splprot_ge_2_5M + 1
-  APPEND_FILE_EVALUATE TEXT ~%MOD_FOLDER%/2da/splprot-append.2da~
-  PRETTY_PRINT_2DA
-BUT_ONLY
+LAF get_splprot_entry
+  INT_VAR
+    stat = 44       // XP
+    value = 250000
+    relation = 2    // less than
+  STR_VAR
+    name = ~*_STAT(XP)<250k~
+  RET
+    splprot_lt_250k = index
+END
+
+LAF get_splprot_entry
+  INT_VAR
+    stat = 44       // XP
+    value = 2500000
+    relation = 4    // greater than or equal
+  STR_VAR
+    name = ~*_STAT(XP)>=2.5M~
+  RET
+    splprot_ge_2_5M = index
+END
+
+LAF get_splprot_entry
+  INT_VAR
+    stat = 0x104    // Negate match of two entries
+    value = splprot_lt_250k
+    relation = splprot_ge_2_5M
+  STR_VAR
+    name = EVAL ~*_ENTRIES!=(%splprot_lt_250k%||%splprot_ge_2_5M%)~
+  RET
+    splprot_in_range = index
+END
 
 COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
   LPF update_item_generic
