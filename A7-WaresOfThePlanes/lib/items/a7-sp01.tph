@@ -68,8 +68,8 @@ LAF get_splprot_entry
 END
 
 // Installing custom projectile
-ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-sp01.pro~ ~Sparkle_Area_Red_Male_Humanoids_Not_Party~
-COPY_EXISTING ~a7-sp01.pro~ ~override~
+ADD_PROJECTILE ~%MOD_FOLDER%/pro/%itm_resref%.pro~ ~Sparkle_Area_Red_Male_Humanoids_Not_Party~
+COPY_EXISTING ~%itm_resref%.pro~ ~override~
   // updating IDS 1 filter
   WRITE_SHORT 0x3e splprot_is_humanlike
   // updating IDS 2 filter
@@ -99,7 +99,7 @@ WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
   BUT_ONLY
 
   // Installing spell
-  COPY ~%MOD_FOLDER%/spl/a7-sp01.spl~ ~override~
+  COPY ~%MOD_FOLDER%/spl/%itm_resref%.spl~ ~override~
     SAY NAME1 @1  // Tasha's Unbearable Derisive Laughter
     SAY UNIDENTIFIED_DESC @11
     READ_LONG 0x64 ofs_abils
