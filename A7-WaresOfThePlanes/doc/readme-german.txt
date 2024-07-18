@@ -84,7 +84,7 @@ Der reisende Händler bietet insgesamt
 - 7 Armbänder und Armschienen (können im Feld für Armschützer und Handschuhe platziert werden)
 - 1 Mantel
 - 2 Zauberstäbe
-- 1 Zauberschriftrolle
+- 2 Zauberschriftrollen
 - mehrere Gebrauchsgegenstände
 - ein einzigartiges Quest-bezogenes Artefakt
 - und ein Haustier
@@ -138,6 +138,7 @@ Versionshistorie
 1.3
 - Added new items for sale: Grimoire of Pestilential Thought, Cowl of Deepest Shadows,
   Skeletal Key, Tear of Salieru-Dei
+- Added new spell scrolls for sale: Tasha's Unbearable Derisive Laughter, Modron Mind
 - Fixed a resource name conflict with the "Skip Chateau Irenicus" mod
 
 1.2

@@ -1805,7 +1805,7 @@ Mindestintelligenz: 9
 
 Gewicht: 0
 
-15.2. Skelettschlüssel
+15.2. Skelettschlüssel (Verfügbar: ab BG1 Kapitel 5)
 Dieser Gegenstand wurde aus den Fingerknochen eines Humanoiden gefertigt. Auf seiner Oberfläche wurden magische Symbole eingraviert, die ihn mit einem Zauber belegen, der alle Arten von Schlössern an Truhen, Kisten oder Türen öffnen kann.
 
 EIGENSCHAFTEN:
@@ -1981,7 +1981,7 @@ EIGENSCHAFTEN:
 
 Gewicht: 2
 
-16.10. Träne von Salieru-Dei
+16.10. Träne von Salieru-Dei (Verfügbar: ab BG2:SvA Kapitel 6)
 Diese glitzernde rote Träne wurde von dem gefolterten Harmonium-Offizier Salieru-Dei vergossen, 
 als er auf der Harmonium-Heimatebene Ortho hingerichtet wurde. Er wurde fälschlicherweise für ein 
 Mitglied der verhassten Revolutionsliga gehalten, doch Salieru-Deis Gehorsam und Loyalität waren 
@@ -2003,7 +2003,7 @@ Gewicht: 0
 17. Zauberschriftrollen
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-17.1. Tashas fürchterlicher unbezähmbarer Lachanfall
+17.1. Tashas fürchterlicher unbezähmbarer Lachanfall (Verfügbar: ab BG1 Kapitel 5)
 Grad: 3
 Schule: Verzauberung
 Reichweite: 9 m (Sichtfeld)
@@ -2022,6 +2022,21 @@ höhnisches Gelächter tritt in einem Radius von 4,5 m von diesem Punkt aus auf.
 humanoiden Wesen in der Reichweite des Zaubers müssen einen Rettungswurf gegen Zauber durchführen, 
 sonst wird für die Dauer des Zaubers ihre Moral gesenkt sowie -2 von ihren Angriffs- und 
 Schadenswürfen, -2 von der Rüstungsklasse und -2 von allen Rettungswürfen abgezogen.
+
+17.2. Modrongedanken (Verfügbar: ab SoD Kapitel 8)
+(Bannzauber)
+
+Grad: 3
+Reichweite: Anwender
+Dauer: 1 Phase pro Stufe
+Zeitaufwand: 3
+Bereich: Anwender
+Rettungswurf: Nein
+
+Der Zauber Modrongedanken erlaubt es dem Anwender, ein Wesen fokussierter Ordnung zu werden. Der 
+Anwender erhält +2 auf Rettungswürfe gegen Verzauberungs- und Illusionszauber. Außerdem verbessert 
+der Zauber die Gedankenprozesse des Anwenders, was sich in einen Intelligenzbonus von +1 alle fünf 
+Stufen auswirkt, bis zu einem +5 Bonus auf Stufe 20.
 
 
 18. Besondere Gegenstände

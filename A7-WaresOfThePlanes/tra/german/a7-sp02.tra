@@ -1,0 +1,19 @@
+// Modron Mind
+
+// @0 = ~~  // #7222
+@1 = ~Modrongedanken~
+
+// @10 = ~~ // #-1
+@11 = ~Modrongedanken
+(Bannzauber)
+
+Grad: 3
+Reichweite: Anwender
+Dauer: 1 Phase pro Stufe
+Zeitaufwand: 3
+Bereich: Anwender
+Rettungswurf: Nein
+
+Der Zauber Modrongedanken erlaubt es dem Anwender, ein Wesen fokussierter Ordnung zu werden. Der Anwender erhält +2 auf Rettungswürfe gegen Verzauberungs- und Illusionszauber. Außerdem verbessert der Zauber die Gedankenprozesse des Anwenders, was sich in einen Intelligenzbonus von +1 alle fünf Stufen auswirkt, bis zu einem +5 Bonus auf Stufe 20.~
+
+@20 = ~Fokussiert~

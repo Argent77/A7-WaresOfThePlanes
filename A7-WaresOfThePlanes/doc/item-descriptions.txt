@@ -1813,7 +1813,7 @@ Requires:
 
 Weight: 0
 
-15.2. Skeletal Key
+15.2. Skeletal Key (available: BG1 chapter 5 or later)
 This key has been be fashioned from the finger bones of a humanoid creature. Magical symbols have 
 been engraved on the surface to enchant it with a spell that opens any kinds of locks on chests, 
 boxes or doors.
@@ -2006,7 +2006,7 @@ Weight: 0
 17. Spell scrolls
 ~~~~~~~~~~~~~~~~~
 
-17.1 Tasha's Unbearable Derisive Laughter
+17.1 Tasha's Unbearable Derisive Laughter (available: BG1 chapter 5 or later)
 (Enchantment/Charm)
 
 Level: 3
@@ -2024,6 +2024,21 @@ Tasha's Unbearable Derisive Laughter occurs in a 15 ft. radius from that spot. A
 giant-humanoid creatures in range of the spell must make a Saving Throw vs. Spells or get a -2 to 
 their attack and damage rolls, -2 to their armor class, -2 to their Saving Throws, and have their 
 morale lowered for the duration of the spell.
+
+17.2. Modron Mind (available: SoD chapter 8 or later
+(Abjuration)
+
+Level: 3
+Range: 0
+Duration: 1 turn/level
+Casting Time: 3
+Area of Effect: The caster
+Saving Throw: None
+
+Modron Mind allows the the caster to become a being of focused order. The caster gains a +2 bonus 
+to Saving Throws versus spells of the schools of Illusion and Enchantment. The spell also enhances 
+the caster's thought processes which results in an intelligence bonus of +1 every five levels, up 
+to a +5 bonus at level 20.
 
 
 18. Special items
