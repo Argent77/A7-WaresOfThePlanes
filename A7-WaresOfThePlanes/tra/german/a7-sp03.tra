@@ -1,0 +1,19 @@
+// Vrock's Screech
+
+// @0 = ~~  // #7222
+@1 = ~Vrockschrei~
+
+// @10 = ~~ // #-1
+@11 = ~Vrockschrei
+(Hervorrufung)
+
+Grad: 4
+Reichweite: 0
+Dauer: Augenblicklich
+Zeitaufwand: 2
+Bereich: 4,5 m Radius
+Rettungswurf: Speziell
+
+Dieser dämonische Zauber ahmt den schrecklichen Schrei eines Vrocks nach. Alle Gegner im Bereich werden eine Phase lang taub und eine Runde lang gelähmt. Ein tauber Charakter scheitert zu 50 %, wenn er einen Zauber wirken will. Wesen mit 6 oder weniger Trefferwürfeln sind automatisch betroffen. Stärkere Wesen können einen Rettungswurf gegen Zauber durchführen, um beide Effekte zu vermeiden. Der Wirkungsbereich des Zaubers wird nicht durch Mauern oder andere Hindernisse blockiert.~
+
+@20 = ~Betäubt~

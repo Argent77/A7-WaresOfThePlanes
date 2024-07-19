@@ -82,7 +82,7 @@ The travelling merchant offers a total of
 - 7 Bracelets and Bracers (can be equipped in the Bracers/Gauntlets slot)
 - 1 Cloak
 - 2 Wands
-- 2 Spell scrolls
+- 3 Spell scrolls
 - several miscellaneous items
 - a unique quest-related artifact
 - and a pet
@@ -134,7 +134,8 @@ Version History
 1.3
 - Added new items for sale: Grimoire of Pestilential Thought, Cowl of Deepest Shadows,
   Skeletal Key, Tear of Salieru-Dei
-- Added new spell scrolls for sale: Tasha's Unbearable Derisive Laughter, Modron Mind
+- Added new spell scrolls for sale: Tasha's Unbearable Derisive Laughter, Modron Mind,
+  Vrock's Screech
 - Fixed a resource name conflict with the "Skip Chateau Irenicus" mod
 
 1.2

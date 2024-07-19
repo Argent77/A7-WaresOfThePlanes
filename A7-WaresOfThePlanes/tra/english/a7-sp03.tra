@@ -1,0 +1,19 @@
+// Vrock's Screech
+
+// @0 = ~~  // #7222
+@1 = ~Vrock's Screech~
+
+// @10 = ~~ // #-1
+@11 = ~Vrock's Screech
+(Evocation)
+
+Level: 4
+Range: 0
+Duration: Instant
+Casting Time: 2
+Area of Effect: 15-ft. radius
+Saving Throw: Special
+
+This Abyssal spell mimics the terrifying scream of a vrock. It deafens all enemies in the area of effect for one turn and stuns them for one round. Deafened spellcasters have a 50% chance to miscast any spells. Creatures of 6 hit dice or less are always affected. More powerful creatures may make a save vs. Spell to negate both effects. The area of effect is not blocked by walls or other obstacles.~
+
+@20 = ~Stunned~

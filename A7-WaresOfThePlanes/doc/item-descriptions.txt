@@ -2025,7 +2025,7 @@ giant-humanoid creatures in range of the spell must make a Saving Throw vs. Spel
 their attack and damage rolls, -2 to their armor class, -2 to their Saving Throws, and have their 
 morale lowered for the duration of the spell.
 
-17.2. Modron Mind (available: SoD chapter 8 or later
+17.2. Modron Mind (available: SoD chapter 8 or later)
 (Abjuration)
 
 Level: 3
@@ -2039,6 +2039,22 @@ Modron Mind allows the the caster to become a being of focused order. The caster
 to Saving Throws versus spells of the schools of Illusion and Enchantment. The spell also enhances 
 the caster's thought processes which results in an intelligence bonus of +1 every five levels, up 
 to a +5 bonus at level 20.
+
+17.3. Vrock's Screech (available: SoD chapter 10 or later)
+(Evocation)
+
+Level: 4
+Range: 0
+Duration: Instant
+Casting Time: 2
+Area of Effect: 15-ft. radius
+Saving Throw: Special
+
+This Abyssal spell mimics the terrifying scream of a vrock. It deafens all enemies in the area of 
+effect for one turn and stuns them for one round. Deafened spellcasters have a 50% chance to 
+miscast any spells. Creatures of 6 hit dice or less are always affected. More powerful creatures 
+may make a save vs. Spell to negate both effects. The area of effect is not blocked by walls or 
+other obstacles.
 
 
 18. Special items

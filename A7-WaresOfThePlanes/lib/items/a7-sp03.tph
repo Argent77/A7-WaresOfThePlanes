@@ -1,0 +1,104 @@
+// Item: Scroll of "Vrock's Screech"
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-sp03~
+
+// Installing item
+COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+  LPF update_item_generic
+    STR_VAR
+      itm_resref
+    RET
+      icon_resref
+      desc_image_resref
+  END
+
+// Installing associated resources
+LAF install_item_resources_generic
+STR_VAR
+  itm_resref
+  icon_resref
+  desc_image_resref
+END
+
+// Appending SPLPROT table
+LAF get_splprot_entry
+  INT_VAR
+    stat = 1      // MAXHITPOINTS
+    value = "-1"  // custom value
+    relation = 4  // Greater than or equal
+  STR_VAR
+    name = ~*_STAT(MAXHITPOINTS)>=n~
+  RET
+    splprot_maxhp_ge = index
+END
+
+LAF get_splprot_entry
+  INT_VAR
+    stat = 1      // MAXHITPOINTS
+    value = "-1"  // custom value
+    relation = 2  // Less than
+  STR_VAR
+    name = ~*_STAT(MAXHITPOINTS)<n~
+  RET
+    splprot_maxhp_lt = index
+END
+
+// Installing custom projectile
+ADD_PROJECTILE ~%MOD_FOLDER%/pro/%itm_resref%.pro~ ~Shout_Area_Not_Party~
+OUTER_SET missile_id = EVAL ~%itm_resref%~
+
+LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+  // Installing spell
+  COPY ~%MOD_FOLDER%/spl/%itm_resref%.spl~ ~override~
+    SAY NAME1 @1  // Vrock's Screech
+    SAY UNIDENTIFIED_DESC @11
+    READ_LONG 0x64 ofs_abils
+    READ_SHORT 0x68 num_abils
+    // updating projectile
+    FOR (i = 0; i < num_abils; ++i) BEGIN
+      SET ofs = ofs_abils + i * 40
+      WRITE_SHORT (ofs + 0x26) missile_id
+    END
+    LPF alter_item_effect_ex
+      INT_VAR
+        check_headers = 1
+        match_opcode = 326  // Apply effects list
+        match_parameter2 = 145
+        parameter2 = splprot_maxhp_lt
+    END
+    LPF alter_item_effect_ex
+      INT_VAR
+        check_headers = 1
+        match_opcode = 326  // Apply effects list
+        match_parameter2 = 144
+        parameter2 = splprot_maxhp_ge
+    END
+
+  COPY ~%MOD_FOLDER%/spl/%itm_resref%e.spl~ ~override~
+    LPF alter_item_effect_ex
+      INT_VAR
+        check_headers = 1
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@20) // Stunned
+    END
+END
+
+// Additional resources
+ACTION_FOR_EACH file IN ~%itm_resref%a.bam~
+                        ~%itm_resref%b.bam~
+                        ~%itm_resref%c.bam~
+                        ~%itm_resref%d.bam~
+                        ~%itm_resref%a.spl~
+                        ~%itm_resref%b.spl~
+                        ~%itm_resref%c.spl~
+                        ~%itm_resref%d.spl~
+                        ~%itm_resref%a.wav~
+BEGIN
+  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%file%~) BEGIN
+    LAF EXT_OF_FILESPEC STR_VAR filespec = EVAL ~%file%~ RET ext END
+    COPY ~%MOD_FOLDER%/%ext%/%file%~ ~override~
+  END
+END

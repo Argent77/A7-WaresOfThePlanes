@@ -2038,6 +2038,22 @@ Anwender erhält +2 auf Rettungswürfe gegen Verzauberungs- und Illusionszauber.
 der Zauber die Gedankenprozesse des Anwenders, was sich in einen Intelligenzbonus von +1 alle fünf 
 Stufen auswirkt, bis zu einem +5 Bonus auf Stufe 20.
 
+17.3. Vrockschrei (Verfügbar: ab SoD Kapitel 10)
+(Hervorrufung)
+
+Grad: 4
+Reichweite: 0
+Dauer: Augenblicklich
+Zeitaufwand: 2
+Bereich: 4,5 m Radius
+Rettungswurf: Speziell
+
+Dieser dämonische Zauber ahmt den schrecklichen Schrei eines Vrocks nach. Alle Gegner im Bereich 
+werden eine Phase lang taub und eine Runde lang gelähmt. Ein tauber Charakter scheitert zu 50 %, 
+wenn er einen Zauber wirken will. Wesen mit 6 oder weniger Trefferwürfeln sind automatisch betroffen. 
+Stärkere Wesen können einen Rettungswurf gegen Zauber durchführen, um beide Effekte zu vermeiden. 
+Der Wirkungsbereich des Zaubers wird nicht durch Mauern oder andere Hindernisse blockiert.
+
 
 18. Besondere Gegenstände
 ~~~~~~~~~~~~~~~~~~~~~~~~~
