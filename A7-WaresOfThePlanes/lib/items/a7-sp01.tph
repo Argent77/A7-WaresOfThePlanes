@@ -69,6 +69,7 @@ END
 
 // Installing custom projectile
 ADD_PROJECTILE ~%MOD_FOLDER%/pro/%itm_resref%.pro~ ~Sparkle_Area_Red_Male_Humanoids_Not_Party~
+OUTER_SET missile_id = EVAL ~%itm_resref%~
 COPY_EXISTING ~%itm_resref%.pro~ ~override~
   // updating IDS 1 filter
   WRITE_SHORT 0x3e splprot_is_humanlike
@@ -104,9 +105,10 @@ WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
     SAY UNIDENTIFIED_DESC @11
     READ_LONG 0x64 ofs_abils
     READ_SHORT 0x68 num_abils
+    // updating projectile
     FOR (i = 0; i < num_abils; ++i) BEGIN
       SET ofs = ofs_abils + i * 40
-      WRITE_SHORT (ofs + 0x26) a7-sp01
+      WRITE_SHORT (ofs + 0x26) missile_id
     END
     LPF alter_item_effect_ex
       INT_VAR

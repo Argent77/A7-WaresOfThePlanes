@@ -5,15 +5,8 @@ INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 OUTER_SPRINT itm_resref ~a7-phazr~
 
 // Installing custom projectiles
-ADD_PROJECTILE ~%MOD_FOLDER%/pro/%itm_resref%.pro~
-COPY_EXISTING ~missile.ids~ ~override~
-  REPLACE_TEXTUALLY ~\b%itm_resref%\b~ ~Phazor_Beam~
-BUT_ONLY
-
-ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-pkill.pro~
-COPY_EXISTING ~missile.ids~ ~override~
-  REPLACE_TEXTUALLY ~\ba7-pkill\b~ ~Phazor_Beam_Invisible~
-BUT_ONLY
+ADD_PROJECTILE ~%MOD_FOLDER%/pro/%itm_resref%.pro~ ~Phazor_Beam~
+ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-pkill.pro~ ~Phazor_Beam_Invisible~
 
 // Installing item
 COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
@@ -55,5 +48,6 @@ COPY ~%MOD_FOLDER%/spl/a7-pkill.spl~ ~override~
       SAY NAME1 @20  // Disintegrate
     END
   END
+  // updating projectile
   READ_LONG 0x64 ofs_abil
   WRITE_SHORT (ofs_abil + 0x26) "a7-pkill"
