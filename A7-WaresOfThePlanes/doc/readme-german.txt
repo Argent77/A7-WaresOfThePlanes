@@ -1,7 +1,7 @@
 Waren der Ebenen (für BG:EE, SoD, BG2:EE und EET)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:    1.2
+Version:    1.3
 Autor:      Argent77
 
 Download:   https://github.com/Argent77/A7-WaresOfThePlanes/releases/latest
