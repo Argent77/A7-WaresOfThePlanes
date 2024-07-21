@@ -84,6 +84,8 @@ der Klinge, nur, um Minuten später wieder an die Oberfläche zu kommen.
 
 EIGENSCHAFTEN:
 
+Boni auf Treffer- und Schadenswürfe aufgrund hoher Stärke werden nicht angerechnet.
+
 ETW0-Bonus: -3
 Schaden: 1W20 +3 (Stich)
 Initiativefaktor: 0
@@ -194,6 +196,8 @@ Schaden anrichten würde als ein normaler Dolch. Sie könnte allerdings bei Gegn
 die nur durch silberne oder kaltgeschmiedete Waffen verletzt werden können.
 
 EIGENSCHAFTEN:
+
+Boni auf Treffer- und Schadenswürfe aufgrund hoher Stärke werden nicht angerechnet.
 
 ETW0-Bonus: -2 gg. Lykanthropen
 Schaden:
@@ -323,6 +327,7 @@ werden könne.
 
 EIGENSCHAFTEN:
 
+Boni auf Schadenswürfe aufgrund hoher Stärke werden nicht angerechnet.
 Kann nur durch „Fluch brechen“ wieder abgenommen werden.
 
 ETW0-Bonus: -6
@@ -522,8 +527,8 @@ ETW0-Bonus: -3
 Schaden:
  1W8 +3 (Klinge)
 Schadensbonus:
- +1W6 (Elektrizität)
- +1W6 Klingenschaden gg. körperliche Wesen
+ +3 (Elektrizität)
+ +1W4 Klingenschaden gg. körperliche Wesen
 Initiativefaktor: 4
 Fertigkeit: Axt
 Typ: 1-händig
@@ -619,8 +624,8 @@ RK-Bonus: -1
 
 ETW0-Bonus: -3
 Schaden:
- 2W6 +3 (Klinge)
- 4W6 +6 gg. chaotische Wesen
+ 1W8 +3 (Klinge)
+ 2W8 +6 gg. chaotische Wesen
 Schadensbonus: +1W6 (Feuer)
 Initiativefaktor: 4
 Fertigkeit: Axt
@@ -765,9 +770,8 @@ EIGENSCHAFTEN:
 Die Wahrscheinlichkeit für einen kritischen Treffer steigt um 15 %.
 
 ETW0-Bonus: -1
-Schaden:
- 1W8 +1 (Geschoss)
- 1W8 +1 (Klinge)
+Schaden: 1W8 +1 (Geschoss)
+Schadensbonus: +4 (Klinge)
 Schusswaffe: Armbrust
 
 Gewicht: 0
@@ -833,7 +837,7 @@ dieselbe Gier verfüge wie der erste.
 
 EIGENSCHAFTEN:
 
-Bei jedem Treffer erleidet das Ziel 10 Schadenspunkte durch Stich (Rettungswurf gg. Tod für halben 
+Bei jedem Treffer erleidet das Ziel 8 Schadenspunkte durch Stich (Rettungswurf gg. Tod für halben 
 Schaden).
 
 ETW0-Bonus: -4
@@ -1222,14 +1226,14 @@ RK-Bonus: -2
 Widerstand gg. Klingenwaffen: +10 %
 
 ETW0-Bonus: +3, +5 gg. böse Wesen
-Schaden: 3W6 (Klinge)
+Schaden: 2W6 (Klinge)
 Schadensbonus: +10 Feuerschaden gg. böse Wesen
 Initiativefaktor: 2
 Fertigkeit: Langschwert
 Typ: 1-händig
-Mindeststärke: 6
+Mindeststärke: 12
 
-Gewicht: 5
+Gewicht: 10
 
 8.2. Dûrgaläd +3 (Verfügbar: ab BG2:SvA Kapitel 6)
 Diese prächtige Waffe wurde von den Dunkelelfen Svartalfheims in Nidavellir, der dritten Ebene von 

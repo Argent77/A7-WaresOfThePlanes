@@ -18,9 +18,8 @@ EIGENSCHAFTEN:
 Die Wahrscheinlichkeit für einen kritischen Treffer steigt um 15 %.
 
 ETW0-Bonus: -1
-Schaden:
- 1W8 +1 (Geschoss)
- 1W8 +1 (Klinge)
+Schaden: 1W8 +1 (Geschoss)
+Schadensbonus: +4 (Klinge)
 Schusswaffe: Armbrust
 
 Gewicht: 0~

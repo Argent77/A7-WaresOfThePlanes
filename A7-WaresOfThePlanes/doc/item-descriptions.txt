@@ -90,6 +90,9 @@ later.
 
 STATISTICS:
 
+Combat abilities:
+– Bonuses to hit and damage based on strength do not apply to this weapon
+
 THAC0: +3
 Damage: 1d20+3 (piercing)
 Speed Factor: 0
@@ -202,6 +205,9 @@ conventional dagger. It might prove useful against creatures damaged only by wea
 cold iron.
 
 STATISTICS:
+
+Combat abilities:
+– Bonuses to hit and damage based on strength do not apply to this weapon
 
 THAC0: +2 vs. lycanthropes
 Damage: 1d2, +2 vs. lycanthropes
@@ -334,6 +340,9 @@ STATISTICS:
 
 Equipped abilities:
 – May only be removed with a Remove Curse spell
+
+Combat abilities:
+– Bonus to damage based on strength do not apply to this weapon
 
 THAC0: +6
 Damage: 1d2 (slashing)
@@ -535,7 +544,7 @@ target's heart, no matter what location the axe struck.
 STATISTICS:
 
 THAC0: +3
-Damage: 1d8+3, +1d6 electrical damage, +1d6 slashing damage vs. corporeal creatures
+Damage: 1d8+3, +3 electrical damage, +1d4 slashing damage vs. corporeal creatures
 Damage type: Slashing
 Speed Factor: 4
 Proficiency Type: Axe
@@ -634,7 +643,7 @@ Equipped abilities:
 – May only be removed with a Remove Curse spell
 
 THAC0: +3
-Damage: 2d6+3, +1d6 fire damage, does double damage against chaotic creatures
+Damage: 1d8+3, +1d6 fire damage, does double damage against chaotic creatures
 Damage type: Slashing
 Speed Factor: 4
 Proficiency Type: Axe
@@ -776,7 +785,7 @@ Equipped abilities:
 – Chance to score a critical hit: +15%
 
 THAC0: +1
-Damage: 1d8+1, +1d8+1 slashing damage
+Damage: 1d8+1, +4 slashing damage
 Damage type: Missile
 Launcher: Crossbow
 
@@ -839,7 +848,7 @@ for each victim the bolts claim, that another bolt is born… with the same hung
 STATISTICS:
 
 THAC0: +4
-Damage: 1d8+2, +10 piercing damage (Save vs. Death for half)
+Damage: 1d8+2, +8 piercing damage (Save vs. Death for half)
 Damage type: Missile
 Launcher: Crossbow
 
@@ -1231,15 +1240,15 @@ Equipped abilities:
 – +10% resistance to slashing damage
 
 THAC0: +3, +5 vs. evil creatures
-Damage: 3d6, +10 fire damage vs. evil creatures
+Damage: 2d6, +10 fire damage vs. evil creatures
 Damage type: Slashing
 Speed Factor: 2
 Proficiency Type: Long Sword
 Type: One-handed
 Requires:
- 6 Strength
+ 12 Strength
 
-Weight: 5
+Weight: 10
 
 8.2. Dûrgaläd +3 (available: BG2:SoA chapter 6 or later)
 This magnificient weapon was forged by the svartalves of Svartalfheim in Nidavellir, the third 
