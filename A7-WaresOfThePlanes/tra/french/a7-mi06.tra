@@ -1,0 +1,22 @@
+// Baku's Horn
+
+@0 = ~Cor~
+@1 = ~Cor de Baku~
+
+@10 = ~C'est un petit cor. Les cors sont généralement faits de bois, d'os ou de métal et peuvent produire une grande variété de sons.
+
+PARAMÈTRES :
+
+Poids : 1~
+@11 = ~Ce cor en bois est en fait un objet magique fabriqué dans les plans supérieurs. Semblable à l'attaque de la créature qui lui a donné son nom, le cor de Baku inflige des dégâts aux créatures maléfiques qui se trouvent dans la zone d'effet lorsqu'elle retentit. De plus, ces créatures doivent effectuer une sauvegarde contre la paralysie ou fuir en panique.
+
+Capacité de charge :
+- Rugissement de Baku, trois fois par jour.
+  Dégâts : 2d8 points de dégâts contondant aux créatures maléfiques
+  Spécial : Provoque la panique pendant un tour (jet de sauvegarde contre la paralysie pour éviter).
+  
+  Zone d'effet : 6 mètres de rayon
+  
+  
+Poids : 1~
+  

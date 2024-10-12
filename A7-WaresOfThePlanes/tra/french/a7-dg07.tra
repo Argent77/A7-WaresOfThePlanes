@@ -1,0 +1,40 @@
+// Fiend's Blood Dagger
+
+@0 = ~Dague rouillée~
+@1 = ~Dague sanglante du fiélon~
+
+@10 = ~Bien que rouillée, cette dague reste exceptionnellement tranchante.
+
+PARAMETRES :
+
+Dégâts : 1d4 (perçant)
+Facteur de vitesse : 2
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 1~
+@11 = ~Cette dague, qui était autrefois ordinaire, a acquis des facultés démoniaques pour avoir passé plusieurs années enfoncée dans les chairs d'un fiélon. Le sang du monstre a fusionné avec l'arme, qui est désormais tiède au toucher.
+
+Au combat, le possesseur de la dague entend des murmures incompréhensibles dans sa tête. Ces bruits le rendent fou furieux, ce qui améliore grandement ses facultés martiales, tout en le rendant néanmoins vulnérable à la magie.
+
+L'histoire de cette dague est en grande partie inconnue. Il est plus que probable qu'un fou a péri en combattant le démon, perdant sa dague ainsi que sa vie. Pour l'instant, le nom n'est qu'une description, il n'a pas encore de titre propre.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Jet de sauvegarde contre les sorts : -4
+– Rend berserk quand on l'utilise
+– Ne peut être retirée qu'avec un sort de Délivrance de la Malédiction
+
+Capacités de combat :
+– La cible touchée doit réussir un jet de sauvegarde contre la mort à +2 ou subir 3 points de dégâts de poison par round pendant 120 secondes (non cumulable).
+
+TAC0 : +2
+Dégâts : 1d4+2 (perçant)
+Facteur de vitesse : 1
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 1~

@@ -1,0 +1,21 @@
+// Mempa's Biting Ring
+
+@0 = ~Anneau dentelé~
+@1 = ~Anneau Mordant de Mempa~
+
+@10 = ~Cet anneau en argent luisant a été doté de plusieurs dizaines d'excroissances décorative. Le porter peut s'avérer légèrement embêtant, car quelqu'un qui ne ferait pas assez attention risquerait de se couper en l'enfilant ou en l'ôtant
+
+PARAMETRES :
+
+Poids : 0~
+@11 = ~Mempa était une magicienne obsédée par le fait que l'on puisse lui voler ses objets magiques lorsqu'elle dormait ou se trouvait hors de combat. La plupart de ses possessions ne purent être séparées de sa dépouille et finirent incinérées avec elle, mais certains de ses plus faibles objets (ses expériences de jeunesse ?) peuvent encore être découverts çà et là.
+
+L'Anneau Mordant de Mempa, dont la puissante aura protège son porteur contre les attaques, fait partie de cette catégorie. Une fois que l'on a glissé l'anneau à son doigt, il mord l'os et le serre avec une telle ténacité qu'il est quasiment impossible de l'ôter.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Classe d'Armure : +2
+– Ne peut être retirée qu'avec un sort de Délivrance de la Malédiction
+
+Poids : 0~

@@ -1,0 +1,161 @@
+// The Grimoire of Pestilential Thought
+
+@0 = ~Livre malodorant~
+@1 = ~Le Grimoire de la Pensée pestilentielle~
+
+@10 = ~Ce livre noir dégage une légère odeur de putréfaction et sa couverture est extrêmement désagréable au toucher (on dirait de la chair humaine flétrie au soleil). Des attaches rouillées protègent le livre contre les éléments.
+
+PARAMETRES :
+
+Poids : 2~
+@11 = ~Ce livre noir dégage une légère odeur de putréfaction et sa couverture est extrêmement désagréable au toucher (on dirait de la chair humaine flétrie au soleil). Des attaches rouillées protègent le livre contre les éléments.
+
+C'est le Grimoire de la Pensée Pestilentielle, un ouvrage de magie créé il y a bien longtemps pour enseigner aux mortels la nature du mal. Certains sages conseillent de ne pas l'utiliser, mais d'autres sont de l'avis contraire. On prétend que le livre confère de puissants pouvoirs magiques à qui accepte de lui rendre service.
+
+PARAMETRES :
+
+Poids : 2~
+
+// Misc. strings
+@20 = ~[Réduit de 1 point le total de points de vie maximum]~
+@21 = ~[Réduit de 10 % l'expérience]~
+@22 = ~[Accorde +1 à tous les jets de sauvegarde]~
+@23 = ~[Accorde +15% de résistance aux dégâts contondants, tranchants, perçants et de projectiles.]~
+@24 = ~[Change l'alignement]~
+@25 = ~Votre alignement a changé.~ [REPDOWN]
+@26 = ~Tuer un innocent~
+@27 = ~Tuer un innocent
+Cette capacité vous permet de tuer une créature innocente. Elle doit être utilisée pour obtenir une faveur du grimoire de la pensée pestilentielle.~
+
+// Dialog content
+@100 = ~(Hormis l'aspect inesthétique et une légère odeur de pourriture, vous ne remarquez rien d'anormal).~
+@101 = ~(Le livre ne réagit pas à votre présence).~
+@102 = ~Je vous salue, maître. En quoi cet humble ouvrage peut-il vous être utile ?~
+@103 = ~Tu peux parler ?~
+@104 = ~En rien. Arrête de me parler.~
+@105 = ~Maître, comment puis-je répondre à vos besoins ? Avez-vous besoin de satisfaire votre curiosité ?~
+@106 = ~Oui. Réponds à quelques questions pour moi.~
+@107 = ~Non.~
+@108 = ~Maître. Avez-vous décidé de poursuivre votre apprentissage ? L'offre d'une plus grande compréhension et d'une plus grande capacité vous est toujours ouverte.~
+@109 = ~Dis-moi ce que je dois faire.~
+@110 = ~Pas encore. Réponds à d'autres questions pour moi.~
+@111 = ~Non. Adieu.~
+@112 = ~Maître. Avez-vous décidé que vous souhaitiez peut-être poursuivre votre apprentissage ? L'offre d'une plus grande compréhension et d'une plus grande capacité vous est ouverte si vous voulez bien accomplir le deuxième sacrifice.~
+@113 = ~Oui, je suis prêt.~~Oui, je suis prête.~
+@114 = ~Pas maintenant. Adieu.~
+@115 = ~Vous avez bien travaillé jusqu'à présent. Écoutez ces mots et apprenez encore.~
+@116 = ~As-tu d'autres choses à m'apprendre, Livre ?~
+@117 = ~Je peux vous accorder un pouvoir supplémentaire. Vous avez montré que vous étiez prêt à faire ce qu'il fallait pour terminer une tâche. Êtes-vous prêt à accomplir votre dernière tâche ?~~Je peux vous accorder un pouvoir supplémentaire. Vous avez montré que vous étiez prête à faire ce qu'il fallait pour terminer une tâche. Êtes-vous prête à accomplir votre dernière tâche ?~
+@118 = ~Oui, je le suis.~
+@119 = ~Et alors ? Avez-vous atteint votre but ? Avez-vous tué un innocent avec le pouvoir que je vous ai enseigné ?~
+@120 = ~Oui~
+@121 = ~Pas encore.~
+@122 = ~Non. Et je ne le ferai pas.~
+@123 = ~(Le livre est silencieux et ne vous répond pas. Il semble être à court de mots).~
+@124 = ~Très bien.~
+@125 = ~Je le peux, maître, dans de nombreuses langues. Seulement, vous devez veiller à ce que personne ne nous voie converser, car ils ne peuvent pas m'entendre. Et, maître, la parole n'est qu'un de mes pouvoirs.~
+@126 = ~Que peux-tu faire d'autre ? Quels sont tes pouvoirs ?~
+@127 = ~Comment es-tu arrivé dans le magasin d'Ebb ?~
+@128 = ~Parle-moi de toi.~
+@129 = ~Ça suffit pour le moment.~
+@130 = ~Je peux vous accorder des capacités qui vous donneront une plus grande flexibilité face aux vicissitudes de la vie, maître.~
+@131 = ~De quelles capacités parles-tu ?~
+@132 = ~Oublie ça. Réponds à d'autres questions pour moi.~
+@133 = ~Le marchand est tombé sur les restes de mon ancien maître qui a péri dans l'Outreterre il y a bien longtemps. Au lieu de s'intéresser à mes services, il a décidé de me mettre en vente.~
+@134 = ~Parle-moi de tes pouvoirs.~
+@135 = ~Je vois. Réponds à d'autres questions pour moi.~
+@136 = ~Vrai. Adieu.~
+@137 = ~La question que vous posez n'est pas simple, mon maître, mais votre serviteur s'efforcera d'y répondre du mieux qu'il pourra. Je suis un codex de moments oubliés, d'idées perdues et de pensées d'autres temps et d'autres mondes. Mes pages renferment les traditions de civilisations oubliées. En fait, mon maître, et c'est la seule chose qui compte : dans mes pages se trouve le POUVOIR. Ce pouvoir peut être le vôtre... mon maître.~
+@138 = ~Ça ne m'intéresse pas pour le moment. Réponds plutôt à d'autres questions.~
+@139 = ~Ça ne m'intéresse pas. Adieu, livre.~
+@140 = ~Ce n'est qu'un petit sacrifice, maître, pour un grand bénéfice... mais c'est votre choix. L'offre reste ouverte, maître.~
+@141 = ~Bien. Réponds à d'autres questions pour moi.~
+@142 = ~Bien. Adieu.~
+@143 = ~Comme vous le voulez, maître. Il vous suffit de me le dire et je vous aiderai de toutes les façons possibles.~
+@144 = ~En fait, dis-moi ce que tu peux faire.~
+@145 = ~C'est bien. Maintenant, tais-toi.~
+@146 = ~Le service demandé est insignifiant, mon maître. Je le mentionnerais à peine si ce n'était au nom des lois qui me lient à ces pages...~
+@147 = ~Pour libérer mon pouvoir, vous devez sacrifier une petite partie de vous-même, mon maître. Vous devez verser du sang sur la première de mes pages. Cet acte servira à renforcer le lien qui nous unit et me permettra de vous aider à atteindre votre plein potentiel. C'est un petit prix à payer pour les pouvoirs qui seront mis à votre disposition.~
+@148 = ~Très bien. Voilà.~
+@149 = ~Non.~
+@150 = ~Vous vous coupez et laissez quelques gouttes de sang couler sur la page. Un étrange frisson s'installe dans vos os, vous vous sentez vide et blessé. En même temps, vous ressentez un sentiment de triomphe : vous avez été récompensé par une pierre précieuse.
+
+^CVous avez perdu 1 point au maximum de points de vie.^-~
+@151 = ~Voilà votre récompense... maître. Sachez que ce n'est que le premier pouvoir qui se trouve dans mes pages.
+
+^CVous avez gagné un objet : %task1_reward%^-~
+@152 = ~Parle-moi de ces autres pouvoirs.~
+@153 = ~Réponds à d'autres questions pour moi.~
+@154 = ~Je n'ai besoin de rien de plus pour le moment.~
+@155 = ~Malheureusement, maître, les lois qui me lient exigent un plus grand sacrifice en échange d'un plus grand pouvoir. Je vous accorderais bien ces pouvoirs librement, mais comme vous pouvez le voir, je suis lié.~
+@156 = ~Quel est le sacrifice ?~
+@157 = ~Alors oublie ça.~
+@158 = ~Vous souhaitez des réponses ?~
+@159 = ~As-tu d'autres pouvoirs pour moi ?~
+@160 = ~Pas plus. Adieu.~
+@161 = ~Je suis attristé que vous pensiez que mes pouvoirs ne valent pas un si petit prix. Ne laissez pas le doute et la confusion vous entraver, maître... mais je parle à tort et à travers. N'oubliez pas que l'offre vous est ouverte.~
+@162 = ~Je vais y réfléchir. J'ai besoin d'autres réponses de ta part.~
+@163 = ~Je vais y réfléchir. Adieu.~
+@164 = ~Je suis le pouvoir, le maître, et je peux vous apprendre davantage.~
+@165 = ~Comment ~
+@166 = ~Rafraîchis-moi la mémoire.~
+@167 = ~N'oubliez pas que vous pourriez avoir envie d'un plus grand pouvoir plus tard, et que je vous attendrai... maître.~
+@168 = ~J'y penserai. Adieu.~
+@169 = ~Le second sacrifice est une partie de votre expérience, maître. Cela signifiera le lien entre vous et le pouvoir - l'expérience me permet de vous accorder une récompense d'une nature plus immatérielle.~
+@170 = ~Très bien, je suis d'accord.~
+@171 = ~Vous avez pris la bonne décision. Je vous accorde la capacité de résister plus efficacement aux effets indésirables.
+
+^CVous avez perdu des points d'expérience.^-
+^CVous bénéficiez de +1 sur tous vos jets de sauvegarde.^-~
+@172 = ~Mes remerciements. Adieu.~
+@173 = ~Du temps, du temps ! Vous devez faire preuve de patience ! Vous avez déjà montré que vous étiez prêt à faire ce qu'il fallait pour obtenir ce pouvoir, et vous devez comprendre que vous ALLEZ payer pour ce pouvoir.~~Du temps, du temps ! Vous devez faire preuve de patience ! Vous avez déjà montré que vous étiez prête à faire ce qu'il fallait pour obtenir ce pouvoir, et vous devez comprendre que vous ALLEZ payer pour ce pouvoir.~
+@174 = ~Qu'est-ce que je dois faire ?~
+@175 = ~J'ai déjà assez payé. Oublie ça.~
+@176 = ~Avez-vous le courage de prendre une vie ?~
+@177 = ~Oui, je l'ai. Que faut-il que je fasse ?~
+@178 = ~Non, je ne ferai pas une telle chose.~
+@179 = ~Avoir été si loin, pour reculer maintenant. Quelle honte. Vous n'êtes pas aussi fort que je le pensais.~~Avoir été si loin, pour reculer maintenant. Quelle honte. Vous n'êtes pas aussi forte que je le pensais.~
+@180 = ~Peu importe; réponds à quelques questions.~
+@181 = ~Bon. Que faut-il que je fasse ?~
+@182 = ~Peu importe; adieu~
+@183 = ~Non. Je ne le ferai pas tant que vous ne vous montrerez pas disposé à exploiter votre potentiel.~
+@184 = ~Je vous accorde un pouvoir qui arrache l'âme du corps d'une personne innocente. Parlez-moi de nouveau une fois l'acte accompli et je vous accorderai mon plus grand pouvoir.~
+@185 = ~Très bien.~
+@186 = ~Bah. Dans ce cas, je ne perdrai plus de temps à essayer de vous éduquer. N'avez-vous pas d'ambition ? Pas de désir ? Espèce de crétin pathétique.~
+@187 = ~Comme je l'ai dit : Je ne le ferai pas. Aucun pouvoir ne justifie ça.~
+@188 = ~Alors souffrez dans l'obscurité, crétin.~
+@189 = ~J'ai changé d'avis. Que faut-il que je fasse ?~
+@190 = ~C'est ce que je ferai. Adieu.~
+@191 = ~Peu importe. Une voie mène à l'échec, l'autre à la réussite.~
+@192 = ~Très bien~
+@193 = ~Excellent. Vous avez prouvé que vous étiez un élève digne de ce nom. Voici donc le dernier pouvoir que je peux vous accorder.~
+@194 = ~Merci, le livre.~
+@195 = ~(Le livre devient brusquement silencieux, et il est impossible de l'inciter à vous répondre à nouveau.)~
+@196 = ~(Le livre est silencieux et ne vous répond pas. Il semble être à court de mots.)
+
+^CVous bénéficiez d'une résistance de +15% aux dégâts contondants, tranchants, perçants et de projectiles.^-~
+@197 = ~Ce sont des pouvoirs, mon maître, qui peuvent améliorer votre vie de façon incommensurable. Malheureusement, les lois qui me lient... exigent un petit service en contrepartie de ces pouvoirs.~
+@198 = ~Un petit service ? Comme quoi ?~
+@199 = ~Alors je ne souhaite rien.~
+@200 = ~Que voulez-vous savoir, maître ?~
+
+// Journal entries
+@300 = ~Sombres tentations
+
+Ce livre étrange que j'ai acheté à Ebb m'a demandé de renoncer à une petite partie de moi-même en échange de pouvoir. J'ai refusé. L'option reste cependant ouverte.~
+@301 = ~Sombres tentations
+
+Ce livre étrange que j'ai acheté à Ebb m'a demandé de verser un peu de mon sang sur ses pages. Je l'ai fait et j'ai reçu une pierre précieuse en retour. Il m'a également promis plus de pouvoir.~
+@302 = ~Sombres tentations
+
+En échange d'une partie de mon expérience, le livre m'a accordé un bonus à tous mes jets de sauvegarde.~
+@303 = ~Sombres tentations
+
+Je viens d'accepter de tuer un innocent en échange de plus de pouvoir du livre. Je dois pour cela utiliser la capacité que le livre m'a accordée.~
+@304 = ~Sombres tentations
+
+Le livre m'a accordé un pouvoir encore plus puissant en échange de la mort d'un innocent - un échange qui en valait la peine.~
+
+@350 = ~Sombres tentations
+
+Le livre ne me parle plus.~

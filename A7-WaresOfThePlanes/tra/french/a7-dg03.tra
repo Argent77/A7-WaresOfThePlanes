@@ -1,0 +1,21 @@
+// Notched Dagger
+
+// @0 = ~~  // #6343
+@1 = ~Dague crantée +2~
+
+// @10 = ~~ // #6720
+@11 = ~Cette dague est pourvue de crans situés à des endroits stratégiques de la lame. Pour peu que l'on sache s'en servir, elle permet de parer les coups délivrés à l'aide d'armes tranchantes.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Classe d'Armure : +1 contre les armes tranchantes
+
+TAC0 : +2
+Dégâts : 1d4+2 (perçant)
+Facteur de vitesse : 0
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 1~

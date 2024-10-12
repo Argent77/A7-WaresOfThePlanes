@@ -1,0 +1,25 @@
+// "Celestial Fire"
+
+// @0 = ~~  // #2893
+@1 = ~Feu céleste +3~
+
+// @10 = ~~ // #6742
+@11 = ~"Feu céleste" est le seul objet rappelant encore les Plans Supérieurs à Trias. Cette lourde épée est chaude et des flammes ont été gravées sur toute sa longueur. La complexité de l'ouvrage est proprement ahurissante et l'épée semble environnée de flammes métalliques. L'artiste a dû avoir besoin de plusieurs siècles avant d'obtenir un tel rendu. Le métal de la lame est particulièrement étrange. Il est lourd mais brille comme de l'argent.
+
+L'épée a l'air d'avoir plusieurs milliers d'années. Un léger bourdonnement semble issu de son coeur, et cette vibration augmente quand l'épée touche la chair humaine. Comme de bien entendu, "Feu céleste" ne peut être maniée que par les individus suffisamment forts et au coeur pur. Au combat, elle s'entoure d'une aura lumineuse qui brûle les créatures maléfiques qu'elle touche.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Classe d'Armure : +2
+– +10% de résistance aux dégâts tranchants
+
+TAC0 : +3, +5 contre les créatures mauvaises
+Dégâts : 3d6, +10 points de dégâts de feu contre les créatures mauvaises
+Type de dégâts : Tranchant
+Facteur de vitesse : 2
+Type de compétence : Épée longue
+Type: arme à 1 main
+Nécessite : 6 en Force
+
+Poids : 5~

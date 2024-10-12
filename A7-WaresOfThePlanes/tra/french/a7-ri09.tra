@@ -1,0 +1,16 @@
+// Ring of Thex
+
+// @0 = ~~  // #6348
+@1 = ~Anneau de Thex~
+
+// @10 = ~~ // #
+@11 = ~Cet anneau en argent ouvragé est serti d'une pierre rouge impossible à reconnaître. On pense qu'il a été créé par une magicienne aventurière du nom de Thex. Cette dernière aurait dit qu'elle en avait assez de rester en arrière alors que ses compagnons étaient libres d'aller combattre. Grâce à l'anneau, elle put devenir ce qu'elle appela une "magicienne de guerre". L'anneau fut le couronnement de sa brève carrière.
+PARAMETRES :
+
+Capacités d'équipement :
+– Classe d'Armure : +4
+– Maximum de points de vie : +20
+– Jets de sauvegarde : +2
+– Sagesse : -1
+
+Poids : 0~

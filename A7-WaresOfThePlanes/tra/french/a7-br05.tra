@@ -1,0 +1,22 @@
+// Spiked Gauntlets of Ogre Power
+
+@0 = ~Gantelets à pointes~
+@1 = ~Gantelets des ogres à pointes~
+
+@10 = ~La rangée de grosses pointes noires qui suit les articulations de ces gantelets permet d'infliger des dégâts de type perforant. Les gantelets sont également munis d'attaches, comme pour les empêcher de bouger une fois enfilés.
+
+PARAMETRES :
+
+Poids : 2~
+@11 = ~La rangée de grosses pointes noires qui suit les articulations de ces gantelets permet d'infliger des dégâts de type perforant. Les gantelets sont également munis d'attaches, comme pour les empêcher de bouger une fois enfilés.
+
+Ces gantelets bénéficient d'un enchantement qui permet au porteur de frapper ses adversaires avec la force de dix hommes, et les pointes placées le long des articulations n'arrangent rien. En effet, si les os de la victime n'ont pas été broyés par l'attaque initiale, elle se vide lentement de son sang suite aux multiples blessures causées par les pointes.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– TAC0 : +2 pour l'attaque à mains nues
+– Dégâts contondants : +1d4+2 en attaquant à mains nues
+– Dégâts perçants additionnels : 1d4+2 dégâts perçants en attaquant à mains nues
+
+Poids : 2~

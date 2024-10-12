@@ -1,0 +1,21 @@
+// Spider Bracelet
+
+@0 = ~Bracelet fantaisie~
+@1 = ~Bracelet de l'Araignée~
+
+@10 = ~Ce bracelet fantaisie réalisé avec talent représente une sorte d'araignée. Il est si bien fait que tu as l'impression que l'animal risque de s'en aller d'un instant à l'autre.
+
+PARAMETRES :
+
+Poids : 0~
+@11 = ~En réalité, il s'agit bien d'une araignée, et non d'un bijou. Quand on glisse le bracelet à son poignet, l'araignée plante ses crocs dans la chair de son hôte, ce qui lui confère des avantages et des inconvénients.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Résistance aux dégâts physiques : +5%
+– maximum de points de vie : +10
+– Intelligence: -1
+– Sagesse : -1
+
+Poids : 0~

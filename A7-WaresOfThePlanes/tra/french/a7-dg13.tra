@@ -1,0 +1,18 @@
+// High Quality Stiletto
+
+@0 = ~Stylet de grande qualité~
+// @1 = ~~  // unused
+
+@10 = ~Cette fine dague est un vrai petit bijou. C'est une arme perforante qui se manie à une main.
+
+PARAMETRES :
+
+TAC0 : +1
+Dégâts : 1d4 (perçant)
+Facteur de vitesse : 1
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 1~
+// @11 = ~~ // unused

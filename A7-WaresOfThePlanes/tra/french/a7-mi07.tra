@@ -1,0 +1,25 @@
+// Wesley's Hourglass
+
+@0 = ~Sablier~
+@1 = ~Sablier de Wesley~
+
+@10 = ~Un sablier est un dispositif qui peut être utilisé pour mesurer le passage du temps. Il se compose généralement de deux globes de verre ou d'autres matériaux translucides reliés verticalement par un col étroit qui contrôle l'écoulement de la substance à l'intérieur.
+
+PARAMETRES :
+
+Poids : 1~
+@11 = ~Cet objet a été conçu à l'origine par un puissant chronomancien dans le but d'enseigner à ses élèves la nature du temps. Il ressemble à un sablier ordinaire dans un cadre en bois, mais au lieu de sable, il est rempli de fumée de brume du Plan Primaire temporel.
+
+Lorsque le sablier est brisé, il permet à l'utilisateur de sortir du cours normal du temps et de manipuler des objets de façon limitée, alors que tout ce qui l'entoure semble figé dans le temps. Le stress mental et physique induit par cet état provoque une grande fatigue chez l'utilisateur une fois que l'effet s'est dissipé.
+
+PARAMETRES :
+
+Capacité de charge :
+– Lance "Arrêt du temps"
+  Durée : 5 rounds
+  Zone d'effet : L’utilisateur
+  Laisse l'utilisateur fatigué lorsque l'effet se termine.
+
+Nécessite : 6 Intelligence
+
+Poids : 1~

@@ -1,0 +1,23 @@
+// Backbiter
+
+// @0 = ~~  // #6343
+@1 = ~Fourbelame +1~
+
+// @10 = ~~ // #6720
+@11 = ~Spécialement forgée pour les Voleurs, cette lame magique masque l'approche de son porteur en étouffant les bruits qu'il fait, ce qui augmente ses chances de prendre sa proie par surprise.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Ce cacher dans l'ombre : +10%
+– Déplacement silencieux : +10%
+
+TAC0 : +1
+Dégâts : 1d4+2 (perçant)
+Facteur de vitesse : 1
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+ 
+
+Poids : 1~

@@ -1,0 +1,31 @@
+// Fiend Femur
+
+@0 = ~Gourdin en os de fiélon~
+@1 = ~Fémur de fiélon +2~
+
+@10 = ~Cet étrange fémur a l'air vaguement métallique. Une légère odeur de soufre et d'acide s'en dégage, de même qu'un froid peu intense.
+
+PARAMETRES :
+
+Dégâts : 1d6 (contondant)
+Facteur de vitesse : 4
+Type de compétence : Masse
+Type: arme à 1 main
+Nécessite : 5 en Force
+
+Poids : 3~
+@11 = ~Ce fémur de tanar'ri a encore quelques traces d'essence de balor dans sa moelle. Le balor en question a été accusé de lâcheté puis démembré de façon rituelle par ses collègues. Depuis, le fémur ne cherche qu'à se venger de tous les fiélons.
+
+Quand le fémur est utilisé contre un tanar'ri ou un baatezu, des dents tranchantes apparaissent sur toute sa longueur et délivrent de terribles dégâts.
+
+PARAMETRES :
+
+TAC0 : +2, +3 contre les diables et les démons
+Dégâts : 1d6+2, +3 contre les diables et les démons
+Type de dégâts : Contondant
+Facteur de vitesse : 4
+Type de compétence : Masse
+Type: arme à 1 main
+Nécessite : 5 en Force
+
+Poids : 4~

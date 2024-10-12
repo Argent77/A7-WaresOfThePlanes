@@ -1,0 +1,23 @@
+// "Enlightenment"
+
+// @0 = ~~  // #6343
+@1 = ~Illumination +2~
+
+// @10 = ~~ // #6720
+@11 = ~"Cette dague est la deuxième arme de la "Triade des Épreuves" des Hommes-Dieux ("Ascension" et "Raison" étant les deux autres). Elle est fine, merveilleusement équilibrée et légère comme une plume. Le symbole des Hommes-Dieux est gravé sur la lame, et la dague tout entière luit comme si elle était pressée de servir. Tu es le premier à l'utiliser.
+
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Classe d'Armure : +1
+– Charisme : +1
+
+TAC0 : +2
+Dégâts : 1d6+2 (perçant)
+Facteur de vitesse : 0
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 1~

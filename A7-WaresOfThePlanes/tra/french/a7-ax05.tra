@@ -1,0 +1,33 @@
+// Butcherer of Innocents
+
+@0 = ~Feuille de boucher~
+@1 = ~Mort au Innocents +2~
+
+@10 = ~Cet énorme feuille de boucher semble avoir connu plus que sa part de boucherie. Sa lame large et plate comporte plus d'encoches que la plupart des haches d'armes que vous avez vues et son manche en bois porte des traces de sang permanentes.
+
+PARAMETRES :
+
+Dégâts : 1d8 (tranchant)
+Facteur de vitesse : 7
+Type de compétence : Hache
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 7~
+@11 = ~Cet énorme hachoir ressemblant davantage à une hache a gagné son surnom entre les mains d'un certain Oswell Breck, boucher qui officiait autrefois dans le Quartier des Gratte-Papier de Sigil. On dit qu'un jour, ce citoyen affable et respecté aurait été pris de folie pendant dix jours et dix nuits. Armé de son hachoir, Oswell hanta alors les rues du quartier, massacrant tout homme, femme ou enfant qui avait le malheur de croiser son chemin. On prétend que la Dame elle-même finit par intervenir. Oswell avait apparemment contracté une étrange maladie qui le rongeait lentement de l'intérieur, et c'est cette infection qui l'aurait rendu fou.
+
+On ignore d'où vient cette arme de mort, mais les différents magiciens et érudits qui l'ont étudiée suite au carnage sont parvenus à déterminer la nature de son enchantement.  Le hachoir semble se nourrir de l'énergie vitale de ses victimes, tout en en transmettant une partie à son porteur.
+
+PARAMETRES :
+
+Capacités de combat :
+– Transfère 2 points de vie de la cible au porteur
+
+TAC0 : +2
+Dégâts : 1d8+2 (tranchant)
+Facteur de vitesse : 5
+Type de compétence : Hache
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 4~

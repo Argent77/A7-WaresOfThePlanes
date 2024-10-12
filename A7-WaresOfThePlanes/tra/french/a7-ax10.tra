@@ -1,0 +1,36 @@
+// "Edge of Oblivion"
+
+@0 = ~Hache Givrante~
+@1 = ~Limite de l'oubli +2~
+
+@10 = ~Le tranchant de cette hache est noir et ne reflète pas la lumière. L'arme tout entière est en métal ; elle dégage un froid important qui engourdit les mains.
+
+PARAMETRES :
+
+Dégâts : 1d8 (tranchant)
+Facteur de vitesse : 7
+Type de compétence : Hache
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 7~
+@11 = ~Lorsque l'on connaît son nom, la "Lame de l'Oubli" s'éveille et devient intégralement noire. Auparavant, les ténèbres se confinaient à son tranchant, mais elles recouvrent désormais toute la lame. Le froid dégagé est dix fois plus intense, à tel point qu'il est impossible de garder longtemps la hache en main.
+
+La "Lame de l'Oubli" délivre des dégâts de type désintégration à chaque coup au but. Dès qu'elle touche, elle désintègre la chair autour de la blessure, ce qui a également pour effet de cautériser la plaie.
+
+Certains se demandent, sans toutefois pouvoir le prouver, si une sphère d'annihilation n'aurait pas été enfermée à l'intérieur de la lame. Et comme tout est possible dans l'infinité des plans...
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Résistance au froid : +50%
+
+TAC0 : +1
+Dégâts : 1d8+1, +1d6 dégâts de froid
+Type de dégâts : Tranchant
+Facteur de vitesse : 5
+Type de compétence : Hache
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 5~

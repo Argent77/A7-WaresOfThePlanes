@@ -1,0 +1,15 @@
+// Winged Carreaux
+
+@0 = ~Carreaux ailés~
+// @1 = ~~
+
+@10 = ~La pointe de ces carreaux d'arbalète a été taillée de manière à ressembler à une paire d'ailes à plumes. Ils sont très légers et ressemblent davantage à des flèches qu'à des carreaux. Bien que non magiques, ils sont plus précis que les carreaux conventionnels et délivrent davantage de dégâts.
+
+PARAMETRES :
+
+TAC0 : +1
+Dégâts : 1d8+2 (missile)
+Arme à  distance : Arbalète
+
+Poids : 0~
+// @11 = ~~

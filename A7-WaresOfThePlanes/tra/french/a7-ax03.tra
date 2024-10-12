@@ -1,0 +1,18 @@
+// Hache d'armes of Quality
+ 
+@0 = ~Hache d'armes de Qualité~
+// @1 = ~~
+
+@10 = ~Des runes complexes sont gravées sur le manche et les lames de cette hache. Les bords de la hache sont tranchants comme des rasoirs ; il semblerait qu'il soit possible de se raser avec, bien qu'il ne faille pas essayer avant d'avoir consommé plusieurs pintes de bière. Le manche lui-même est en bois de fer, et le cuir est étroitement enroulé autour du manche pour assurer la prise de l'utilisateur.
+
+PARAMETRES :
+
+TAC0 : +1
+Dégâts : 1d8+1 (tranchant)
+Facteur de vitesse : 7
+Type de compétence : Hache
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 8~
+// @11 = ~~

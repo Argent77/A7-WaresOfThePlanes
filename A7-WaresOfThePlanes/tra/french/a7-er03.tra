@@ -1,0 +1,22 @@
+// Dustman Boucles d'oreilles
+
+@0 = ~Boucles d'oreilles~
+@1 = ~Boucle d'oreille d'Homme-Poussière~
+
+@10 = ~Les boucles d'oreilles sont de petites bandes de métal précieux auxquelles sont attachés des crochets et qui sont utilisées comme bijoux ou accessoires. Certaines boucles d'oreilles rares ont été enchantées, ce qui leur confère diverses capacités magiques.
+
+PARAMETRES :
+
+Poids : 0~
+@11 = ~Cette boucle d'oreille glacée dégage une odeur de cendre et de poussière. Il suffit de la porter pour être protégé contre les températures extrêmes, tant basses qu'élevées. La boucle d'oreille protège également contre les sorts influençant l'esprit ou attaquant le corps de la cible, ce qui inclut la paralysie et la mort magique.
+
+La boucle d'oreille témoigne de l'allégeance de son porteur aux Hommes-Poussière ; elle ne peut être portée que par un membre de cette faction. On dit que cette boucle d'oreille aide à insensibiliser les Hommes-Poussière contre les effets du monde extérieur.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Résistance au froid : +30%
+– Résistance au feu : +30%
+– Jet de sauvegarde contre la mort : +2
+
+Poids : 0~

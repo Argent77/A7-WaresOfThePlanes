@@ -1,0 +1,73 @@
+// Pet Lim-Lim
+
+@0 = ~Lim-Lim de compagnie~
+// @1 = ~~
+
+@10 = ~Voici votre animal de compagnie, le Lim-Lim. Il s'agit d'une petite créature ressemblant à un insecte que l'on trouve à l'origine dans l'Outreterre.
+
+PARAMETRES :
+
+Poids : 5~
+// @11 = ~~
+
+// "Converse" button label
+@20 = ~Animal de compagnie~
+// Status message
+@21 = ~Changé en pierre~
+
+// Creature name
+@30 = ~Lim-Lim de compagnie~
+@31 = ~Lim-Lim~
+
+// Creature sound slots (DO NOT TRANSLATE!)
+@40 = ~[Battle Cry 1]~ [a7-lim1]
+@41 = ~[Battle Cry 2]~ [a7-lim2]
+@42 = ~[Death]~ [a7-lim8]
+
+// Lim-Lim dialog lines
+@100 = ~Voici votre Lim-Lim de compagnie. S'apercevant qu'il a attiré votre attention, il gazouille affectueusement vers vous. "Piyo !~
+@101 = ~Examiner votre Lim-Lim.~
+@102 = ~Ramassez votre Lim-Lim.~
+@103 = ~Caressez votre Lim-Lim.~
+@104 = ~Donnez un coup de pied à votre Lim-Lim.~
+@105 = ~Arrêtez de jouer avec votre Lim-Lim pour le moment.~
+@106 = ~Votre Lim-Lim de compagnie est encore bouleversé par votre récent comportement agressif et saute rapidement hors de votre portée.~
+@107 = ~Votre Lim-Lim semble à la fois insecte et animal. Ses jambes sont surdimensionnées, mais ses bras sont petits, presque vestigiaux, et une demi-coquille tachetée de couleurs vives descend le long de son dos. Il porte deux paires d'ailes semblables à celles d'un insecte, a de petits yeux noirs et une bouche qui semble toujours sourire gaiement.~
+@108 = ~"Piyo ! Piyo !" Le Lim-Lim sautille joyeusement, ses ailes bourdonnent. Il semble apprécier énormément l'affection que vous lui portez.~
+@109 = ~Caressez encore un peu votre Lim-Lim.~
+@110 = ~Vous tentez de donner un coup de pied rapide à votre Lim-Lim, mais il saute agilement hors du chemin. "Piyo ! Il se retourne et s'enfuit un moment, les ailes bourdonnantes.~
+@111 = ~Vous tentez encore une fois de donner un coup de pied rapide à votre Lim-Lim, mais il saute agilement hors de la trajectoire. "Piyo ! Il se retourne et s'enfuit un moment, les ailes bourdonnantes.~
+@112 = ~Vous essayez encore une fois de donner un coup de pied à votre Lim-Lim, mais, à votre grande surprise, il émet un gazouillis strident et vous jette un regard menaçant.~
+@113 = ~Qu'est-ce que...~
+@114 = ~Posez votre Lim-Lim pour qu'il puisse courir un peu.~
+@115 = ~"Piyo ! Piyo !" Le Lim-Lim se tortille joyeusement, ses ailes bourdonnent. Il semble apprécier énormément l'affection que vous lui portez.~
+@116 = ~Vous essayez de donner un coup de pied tombant au Lim-Lim, mais il se tortille pour échapper à votre emprise et s'envole pour rejoindre le sol !~
+@117 = ~Oups...~
+@118 = ~Vous essayez encore de donner un coup de pied tombant au Lim-Lim, mais il se tortille pour échapper à votre emprise et s'envole pour rejoindre le sol !~
+@119 = ~Vous essayez encore de donner un coup de pied au Lim-Lim. À votre grande surprise, il émet un gazouillis strident et vous jette un regard menaçant avant de se tortiller pour échapper à votre emprise et de s'envoler pour rejoindre le sol.~
+
+// Felonius Gist dialog lines
+@200 = ~J'ai entendu dire que vous étiez un collectionneur d'art et d'antiquités. J'aimerais vous offrir cette authentique statue en pierre de Lim-Lim.~
+@201 = ~Eh bien, voyons ça.~
+@202 = ~Cette statue est en effet un chef-d'œuvre, dont les moindres détails ont été soignés. Je peux vous offrir mille pièces d'or en échange. Êtes-vous d'accord ?~
+@203 = ~Oui, ça me va.~
+@204 = ~Non. Je ne veux pas m'en séparer.~
+@205 = ~La statue semble en effet authentique. Je doute qu'un ruffian comme vous l'ait acquise par des moyens légaux. Mais je suppose qu'il n'y a pas de mal à faire affaire avec vous. Je peux vous offrir 400 pièces d'or pour cet objet. Êtes-vous d'accord ?~
+@206 = ~Il est peu probable qu'un ruffian comme vous ait quoi que ce soit d'authentique à offrir. Cette statue a plus probablement été volée dans un site funéraire ou dans un camp barbare. Je ne veux rien avoir à faire avec elle. Je vous demande de bien vouloir partir maintenant.~
+@207 = ~Ce fut un plaisir de faire affaire avec vous. Si vous voulez bien m'excuser, je dois m'occuper de ma nouvelle acquisition.~
+@208 = ~C'est bien. Notre affaire est terminée. Si vous voulez bien m'excuser, je dois m'occuper de ma nouvelle acquisition.~
+@209 = ~C'est regrettable. Si vous n'avez plus rien à faire avec moi, je vous demande de partir maintenant.~
+
+// Quataris dialog lines
+@300 = ~J'aimerais vous proposer cette authentique statue en pierre de Lim-Lim.~
+@301 = ~Oubliez ça. Je m'en vais.~
+@302 = ~C'est en effet une statue exquise.~
+@303 = ~Pardonnez mon jugement hâtif, je suis toujours heureux de répondre aux besoins des clients potentiels. Cette statue semble en effet être dans un état de conservation exceptionnel.~
+@304 = ~L'extraordinaire niveau de détail de la statue est à couper le souffle. Je n'ai jamais entendu parler de l'artiste "Lim-Lim" auparavant, mais la statue atteindra certainement un bon prix lors de la prochaine vente aux enchères..~
+@305 = ~Pour un travail de cette qualité, je vous paierai volontiers 4 000 pièces d'or. Êtes-vous intéressé ?~~Pour un travail de cette qualité, je vous paierai volontiers 4 000 pièces d'or. Êtes-vous intéressée ?~
+@306 = ~Oui, ça me va.~
+@307 = ~Non, je ne veux pas m'en séparer pour le moment.~
+@308 = ~Malheureusement, la noblesse d'Athkatla accorde aujourd'hui plus de valeur aux peintures qu'aux sculptures et aux statues. Je ne connais pas d'artiste appelé "Lim-Lim", mais une statue de cette qualité trouvera assurément un nouveau propriétaire.~
+@309 = ~Je peux vous en offrir 2 000 pièces d'or. Êtes-vous intéressé ?~~Je peux vous en offrir 2 000 pièces d'or. Êtes-vous intéressée ?~
+@310 = ~Ce fut un plaisir de faire affaire avec vous.~
+@311 = ~C'est dommage. Mon offre tient toujours si vous changez d'avis. Bonnes affaires à vous, mon seigneur.~~C'est dommage. Mon offre tient toujours si vous changez d'avis. Bonnes affaires à vous, ma dame.~

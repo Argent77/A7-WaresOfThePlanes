@@ -1,0 +1,22 @@
+// Carreaux of Whistling Doom
+
+@0 = ~Carreaux siffleurs~
+@1 = ~Carreaux de la mort sifflante +2~
+
+@10 = ~La pointe de ces carreaux d'arbalète est munie de légères entailles. Ils produisent en permanence un sifflement plus ou moins variable. Ce n'est pas assez pour énerver tout le monde, mais cela met déjà mal à l'aise.
+
+PARAMETRES :
+
+Dégâts : 1d8 (missile)
+Arme à  distance : Arbalète
+
+Poids : 0~
+@11 = ~Ces carreaux d'arbalète portent en eux les terribles harmonies sonores du Pandémonium. Comme si cela ne suffisait pas, un élémental d'air enragé est enfermé dans leur pointe. Au moment de l'impact, cette dernière explose et l'élemental est libéré. Il tourbillonne frénétiquement autour de la cible, qu'il frappe une fois avant de disparaître.
+
+PARAMETRES :
+
+TAC0 : +2
+Dégâts : 4d4 (contondant)
+Arme à  distance : Arbalète
+
+Poids : 0~

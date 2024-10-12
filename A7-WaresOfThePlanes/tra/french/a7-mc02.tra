@@ -1,0 +1,19 @@
+// Baatezu Mace
+
+// @0 = ~~  // #6337
+@1 = ~Masse d'armes baatezu +1~
+
+// @10 = ~~ // #6709
+@11 = ~Cette masse d'armes a été forgée à partir d'un minerai que l'on ne trouve que dans les étendues désolées d'Avernus, minerai qui a permis aux baatezus d'obtenir leur acier vert de Baator. Les armes forgées dans cet alliage sont plus légères que celles en acier et délivrent des dégâts plus importants. Elles sont produites en grande quantité pour la Guerre Sanglante, mais on les trouve rarement en dehors de Baator.
+
+
+PARAMETRES :
+
+TAC0 : +1
+Dégâts : 2d4+2 (contondant)
+Facteur de vitesse : 6
+Type de compétence : Masse
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 10~

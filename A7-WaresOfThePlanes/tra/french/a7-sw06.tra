@@ -1,0 +1,40 @@
+// Thanatos +4
+
+// @0 = ~~  // #11052
+@1 = ~Thanatos +4~
+
+// @10 = ~~ // #22712
+@11 = ~Ce cimeterre a été utilisé par le calife Jassan des Djinns dans les temps anciens. Il l'a perdu lors d'une escarmouche contre une horde de nabassus pillards en -6155. Depuis, l'arme a été perdue et oubliée pendant des millénaires. Vers 367 DR, elle fut redécouverte par un groupe de voyageurs planaires expérimentés sur les rives du Styx, sur Thanatos, la 333e couche de l'Abysse, qui devint le nouvel homonyme de l'arme.
+
+Après avoir séjourné si longtemps dans le lit de la rivière Styx, l'arme a peu à peu absorbé certaines de ses propriétés. Lorsqu'une cible est touchée par la lame, elle provoque une amnésie temporaire ou permanente, comme si elle avait été exposée à l'eau du Styx lui-même.
+
+Avec l'aide de puissants sorts, Cespenar a perfectionné l'arme en acheminant les souvenirs volés vers le porteur, où ils peuvent restaurer les sorts utilisés.
+
+STATISTISCS:
+
+Capacités de combat :
+– Chaque coup réussi fait perdre à la cible 1d4 sorts mémorisés et a 50% de chances d'appliquer à la cible Fourvoiement magique, Confusion ou Débilité pendant trois rounds (jet de sauvegarde contre les sorts à -2 pour annuler). Les sorts drainés permettent au porteur de restaurer un sort arcanique utilisé du même niveau que le nombre de sorts perdus par la cible.
+
+TAC0 : +4
+Dégâts : 1d8+4 (tranchant)
+Facteur de vitesse : 1
+Type de compétence : Cimeterre/Wakizashi/Ninja-To
+Type: arme à 1 main
+Nécessite : 8 en Force
+
+Poids : 4~
+
+@21 = ~Oubli un sort~
+@22 = ~Se remémore un sort de niveau 1~
+@23 = ~Oubli deux sorts~
+@24 = ~Se remémore un sort de niveau 2~
+@25 = ~Oubli trois sorts~
+@26 = ~Se remémore un sort de niveau 3~
+@27 = ~Oubli quatre sorts~
+@28 = ~Se remémore un sort de niveau 4~
+
+// Dialog lines for Cespenar
+@100 = ~Une épée qui vole les souvenirs ? Martha m'a jeté dans le Styx une fois. L'eau avait un très mauvais goût, beurk. Bref, il m'a fallu des années pour me rappeler le chemin du retour. Même Bhaal a remarqué que j’étais absent.~
+@101 = ~Je peux faire entrer dans ta tête des souvenirs volés, pour que tu n'oublies pas tes propres sorts. Il faut des parchemins d'Arme enchantée, de Drain d'énergie et de Restauration pour l'enchantement. Tu n'as pas tout ça.~
+@102 = ~Je peux faire entrer dans ta tête des souvenirs volés, pour que tu n'oublies pas tes propres sorts. Il faut des parchemins d'Arme enchantée, de Drain d'énergie et de Restauration. J'ai aussi besoin de 10 000 pièces d'or pour la forge et d'autres choses. Tu veux ?~
+@103 = ~Eh bien, je continue à chercher.~

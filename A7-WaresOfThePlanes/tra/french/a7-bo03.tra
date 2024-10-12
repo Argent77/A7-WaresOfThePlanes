@@ -1,0 +1,21 @@
+// "Rule of Threes" Carreaux
+
+@0 = ~Carreaux à tête pyramidale~
+@1 = ~Carreaux de la Règles des Trois~
+
+@10 = ~Ces carreaux d'arbalète ont une tête de forme pyramidale. Ils ne sont guère aérodynamiques et ne doivent pas pouvoir aller bien loin.
+
+PARAMETRES :
+
+Dégâts : 1d8 (missile)
+Arme à  distance : Arbalète
+
+Poids : 0~
+@11 = ~Ces carreaux d'arbalète ont été inventés par un génie de la mécanique particulièrement retors. Sous leur pointe se trouve un petit mécanisme qui la libère et lui permet de se scinder. D'après ce que tu en vois, chaque pointe donne naissance à trois projectiles triangulaires au moment de l'impact. Chacun d'eux pénètre dans les chairs de la cible en suivant une trajectoire différente, ce qui permet d'atteindre plusieurs organes d'un seul coup.
+
+PARAMETRES :
+
+Dégâts : 1d10+5 (missile)
+Arme à  distance : Arbalète
+
+Poids : 0~

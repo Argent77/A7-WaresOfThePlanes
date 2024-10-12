@@ -1,0 +1,31 @@
+// "Heartgrinder"
+
+@0 = ~Hache d'armes fragile~
+@1 = ~Broyeur de Cœur +3~
+
+@10 = ~Le tranchant de cette hache est émoussé et on dirait qu'elle n'a pas été aiguisée depuis des années. Une légère couche de rouille s'est formée à l'endroit où la lame rencontre le manche de la hache.
+
+PARAMETRES :
+
+Dégâts : 1d8 (tranchant)
+Facteur de vitesse : 7
+Type de compétence : Hache
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 7~
+@11 = ~Une seule goutte de sang du porteur, placée à l'endroit où la lame rejoint le manche, suffit à réveiller le "Broyeur de cœur". Une fois appliquée, la goutte de sang se propage sur la lame et le manche, leur donnant une lueur rouge terne, dont l'intensité évolue en fonction du rythme cardiaque du porteur.
+
+Le Broyeur de Cœur est une arme exceptionnelle, capable de transpercer presque toutes les défenses. Contre les créatures qui ont du sang dans les veines (le leur ou celui d'un autre ; vampires méfiez-vous), la hache inflige des dégâts supplémentaires, car chacun des coups qu'elle délivre détruit automatiquement le cœur de la victime, et ce quelle que soit la partie du corps touchée.
+
+PARAMETRES :
+
+TAC0 : +3
+Dégâts : 1d8+3, +1d6 dégâts électriques, +1d6 dégâts tranchants contre les créatures corporelles
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Hache
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 4~

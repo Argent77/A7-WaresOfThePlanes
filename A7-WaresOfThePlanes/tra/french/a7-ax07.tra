@@ -1,0 +1,38 @@
+// "Hatred's Gift"
+
+@0 = ~Hache bizarre rouge sang~
+@1 = ~Cadeau de la Haine +1~
+
+@10 = ~Cette énorme hache te met mal à l'aise. Des os y ont été incrustés et une substance rouge, probablement du sang, est visible entre les crânes incorporés dans son manche. La lame constitue quant à elle un méli-mélo de dents aiguisées arrachées aux mâchoires de quelque créature gigantesque.
+
+La seule présence de la hache te met mal à l'aise. Pour une raison inexplicable, le simple fait de l'avoir en ta possession te met en colère.
+
+PARAMETRES :
+
+Dégâts : 1d8 (tranchant)
+Facteur de vitesse : 7
+Type de compétence : Hache
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 7~
+@11 = ~Les annales des plans n'indiquent pas avec précision quand le "Cadeau de la Haine" a été créé mais, ce qui est sûr, c'est qu'il a fini par arriver jusqu'à toi... en laissant une longue trace sanglante derrière lui.
+
+La raison d'être de la hache est d'inspirer un sentiment de haine à son porteur et de l'emplir d'une rage de berserker. Au combat, les crânes du manche s'animent et se mettent à claquer des dents. Celles-ci (vestiges de victimes diaboliques absorbées par  la lame) se referment sur l'adversaire pour mieux déchirer ses chairs.
+
+Une fois que l'on a pris le "Cadeau de la Haine" en main, il est impossible de le relâcher tant que l'on n'est pas libéré de la malédiction.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Rend berserk quand on l'utilise
+– Ne peut être retirée qu'avec un sort de Délivrance e la Malédiction
+
+TAC0 : +1
+Dégâts : 2d8+1 (tranchant)
+Facteur de vitesse : 6
+Type de compétence : Hache
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 7~

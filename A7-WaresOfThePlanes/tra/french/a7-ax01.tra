@@ -1,0 +1,22 @@
+// "Ascension"
+
+// @0 = ~~  // #6654
+@1 = ~Ascension +2~
+
+// @10 = ~~ // #6656
+@11 = ~"L'Ascension" est l'une des meilleures armes créées à la Grande Fonderie, la maison des Adorateurs de la Source à Sigil. C'est l'une des trois armes appelées "Triade des épreuves", avec le marteau "Raison" et la dague "Illumination". Le symbole de la faction est gravé sur la tête de la hache, et les lames sont si tranchantes qu'elles pourraient couper un cheveu dans le sens de la longueur.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Classe d'Armure : +1
+– Charisme : +1
+
+TAC0 : +2
+Dégâts : 1d8+2 (tranchant)
+Facteur de vitesse : 4
+Type de compétence : Hache
+Type: arme à 1 main
+Nécessite : 10 en en Force
+
+Poids : 4~

@@ -1,0 +1,23 @@
+// Porphatys Dagger
+
+// @0 = ~~  // #6343
+@1 = ~Dague de Porphatys +3~
+
+// @10 = ~~ // #6720
+@11 = ~Les acides de Porphatys, cinquième strate des Carcères, s'attaquent non seulement à la forme physique d'un corps mais également à son âme, rongeant sa raison. Les armes forgées dans ce cœur de trahison font le même effet à leurs propriétaires. Malgré cela, d'aucuns pensent que les pouvoirs acides d'une arme créée à Porphatys en valent la peine.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Rend berserk quand on l'utilise
+– Ne peut être retirée qu'avec un sort de Délivrance de la Malédiction
+
+TAC0 : +3
+Dégâts : 1d4+3, +1d6 points de dégâts d'acide
+Type de dégâts : Perçant
+Facteur de vitesse : 0
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 1~

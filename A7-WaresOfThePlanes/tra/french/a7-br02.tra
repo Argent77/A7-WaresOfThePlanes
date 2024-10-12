@@ -1,0 +1,18 @@
+// Magus Shield
+
+@0 = ~Bracelet~
+@1 = ~Pavoimage~
+
+@10 = ~Ce bracelet semble être en argent et est orné d'une pierre semi-précieuse.
+
+PARAMETRES :
+
+Poids : 0~
+@11 = ~Cet objet est une variante du gardemage. Il utilise les mêmes glyphes et enchantements que son prédécesseur mais, plus puissant, il concentre davantage l'énergie des enchantements dont il bénéficie.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Classe d'Armure : 4
+
+Poids : 2~

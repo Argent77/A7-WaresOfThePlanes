@@ -1,0 +1,35 @@
+// Moridor's Box
+
+@0 = ~Boîte décorée~
+@1 = ~Boîte de Moridor~
+
+@10 = ~Cette petite boîte en bois s'orne de fines gravures dorées. A l'origine, elle devait être assez belle pour décorer la propriété d'un riche aristocrate. Mais cela fait manifestement des années que personne ne s'en est occupé et elle est en train de se détériorer. N'était le gros rubis serti sur sa face frontale, elle ne vaudrait plus rien.
+
+Des sentiments inquiétants semblent émaner de la boîte.
+
+PARAMETRES :
+
+Poids : 2~
+@11 = ~Cette petite boîte en bois s'orne de fines gravures dorées. A l'origine, elle devait être assez belle pour décorer la propriété d'un riche aristocrate. Mais cela fait manifestement des années que personne ne s'en est occupé et elle est en train de se détériorer. N'était le gros rubis serti sur sa face frontale, elle ne vaudrait plus rien.
+
+On ne sait pas exactement ce que renferme la boîte. D'innombrables histoires circulent à son sujet et aucune n'est de bon augure pour son propriétaire. Certains disent qu'il s'agit d'un ancien dragon, tandis que d'autres affirment qu'il s'agit de l'âme maléfique de Moridor lui-même. À en juger par l'état de détérioration de la boîte, quelqu'un a déjà dû examiner le sceau et l'a endommagé. Ce n'est qu'une question de temps avant que le sceau ne se dissolve complètement et libère l'entité emprisonnée dans la boîte.
+
+PARAMETRES :
+
+Spécial : L'ouverture du sceau libère l'entité emprisonnée.
+
+Nécessite : 9 Intelligence
+
+Poids : 2~
+
+@20 = ~Balor~
+@21 = ~Cornugon~
+@22 = ~Glabrezu~
+@23 = ~Diablotin~
+@24 = ~Marilith~
+@25 = ~Maurezhi~
+@26 = ~Nabassu~
+@27 = ~Fiélon du Puit~
+@28 = ~Quasit~
+
+@40 = ~Le sceau de la boîte de Moridor se désagrège complètement.~

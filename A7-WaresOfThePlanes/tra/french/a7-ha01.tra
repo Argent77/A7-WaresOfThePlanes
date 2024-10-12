@@ -1,0 +1,24 @@
+// Brimstone Hammer
+
+// @0 = ~~  // #6345
+@1 = ~Marteau en soufre +1~
+
+// @10 = ~~ // #6716
+@11 = ~Ce type d'arme, que l'on dit forgée dans les flammes éternelles du Plan Elémentaire du Feu, est extrêmement rare, même à Sigil. Les propriétés élémentaires du marteau confèrent à son porteur une résistance accrue contre le feu, magique ou non. De plus, les flammes qui environnent la tête du marteau brûlent les créatures qu'il touche.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Résistance au feu : +25%
+
+TAC0 : +1
+Dégâts : 1d8+1, +4 points de dégâts de feu
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Marteau de Guerre
+Type: arme à 1 main
+Nécessite : 9 en Force
+
+Poids : 5~
+
+

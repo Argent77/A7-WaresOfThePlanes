@@ -1,0 +1,32 @@
+// Blind Terror
+
+@0 = ~Masse d'entraînement~
+@1 = ~Terreur aveugle +2~
+
+@10 = ~Cette masse a une tête molle, presque spongieuse. Nul doute que l'on s'en sert comme arme d'entraînement.
+
+PARAMETRES :
+
+Dégâts : 1d6+1 (contondant)
+Facteur de vitesse : 7
+Type de compétence : Masse
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 10~
+@11 = ~Quand le coup délivré est suffisamment puissant, la surface spongieuse de la masse laisse échapper de l'acide, lequel a des chances d'aveugler l'adversaire (qui devient alors plus facile à toucher).
+
+PARAMETRES :
+
+Capacités de combat : 
+– Hit target must save vs. Spell or is blinded for 6 seconds
+
+TAC0 : +2
+Dégâts : 1d6+3, +2d4 points de dégâts d'acide
+Type de dégâts : Contondant
+Facteur de vitesse : 5
+Type de compétence : Masse
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 4~

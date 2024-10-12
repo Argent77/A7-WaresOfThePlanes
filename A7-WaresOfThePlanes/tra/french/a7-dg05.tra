@@ -1,0 +1,20 @@
+// Entropic Blade
+
+// @0 = ~~  // #6343
+@1 = ~Lame Entropique +3~
+
+// @10 = ~~ // #6720
+@11 = ~On dirait une petite dague, mais elle ne cesse de se tortiller sous tes yeux, comme si elle tentait d'échapper à la forme qu'on lui a donnée.
+
+Elle semble constituée de fer, d'argent, et de nombreux autres métaux encore. Parfois, ils fusionnent tous mais, à d'autres moments, certains semblent disparaître à l'intérieur de la lame pour mieux ressurgir quelques instants plus tard.
+
+PARAMETRES :
+
+TAC0 : +3
+Dégâts : 1d20+3 (perçant)
+Facteur de vitesse : 0
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 0~

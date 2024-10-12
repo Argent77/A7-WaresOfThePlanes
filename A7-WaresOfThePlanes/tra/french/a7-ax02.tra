@@ -1,0 +1,20 @@
+// Enchanted Hache d'armes
+
+// @0 = ~~  // #6654
+@1 = ~Hache d'armes Enchantée +1~
+
+// @10 = ~~ // #6656
+@11 = ~Un examen plus approfondi de l'arme révèle un étrange symbole, très ténu, à la surface de la tête de la hache. En le traçant du doigt, une charge soudaine se produit, et la tête de la hache se transforme sous vos yeux en un métal d'aspect argenté.
+
+Le tranchant est incroyablement aiguisé, à tel point qu'on dirait qu'il pourrait couper de la pierre si nécessaire. Le symbole que vous avez tracé sur l'arme brille désormais de mille feux, et la hache est devenue encore plus légère qu'avant.
+
+PARAMETRES :
+
+TAC0 : +1
+Dégâts : 1d8+1 (tranchant)
+Facteur de vitesse : 6
+Type de compétence : Hache
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 4~

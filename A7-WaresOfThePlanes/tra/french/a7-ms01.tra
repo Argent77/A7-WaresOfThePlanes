@@ -1,0 +1,24 @@
+// Heaven and Earth
+
+// @0 = ~~  // #6853
+@1 = ~La terre et le ciel +4~
+
+// @10 = ~~ // #6855
+@11 = ~Une aura de puissance redoutable émane de cette arme massive. Des lignes acérées et puissantes ornent le manche de cette masse, qui s'étendent directement jusqu'à une sphère parfaite qui sert de point de contact à l'arme. Des pointes parfaitement incurvées émanent de la sphère de forme parfaite, produisant une image à la fois saisissante et impressionnante. Cette arme de pouvoir est entourée d'une vibrante teinte pourpre royal.
+
+Lorsque l'on tient l'arme en main, il est immédiatement évident que seuls ceux qui ont le cœur pur peuvent vraiment la manier.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Force : +2
+
+TAC0 : +4
+Dégâts : 2d4+4, +4 dégâts contondants supplémentaires
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compÃ©tenceÂ : Fléau d'armes/morgenstern
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 6~

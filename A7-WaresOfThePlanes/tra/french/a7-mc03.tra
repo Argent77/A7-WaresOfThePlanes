@@ -1,0 +1,21 @@
+// Vrock Club
+
+// @0 = ~~  // #6701
+@1 = ~Gourdin de vrock +2~
+
+// @10 = ~~ // #6703
+@11 = ~Ce gourdin taillé dans un os de vrock est une arme d'exception.
+
+PARAMETRES :
+
+Capacités de combat :
+– 25% de chances que la cible touchée doive réussir un jet sauvegarde contre la mort ou subir 1 point de dégâts de poison par seconde pendant 8 secondes
+
+TAC0 : +2
+Dégâts : 1d6+2 (contondant)
+Facteur de vitesse : 2
+Type de compétence : Masse
+Type: arme à 1 main
+Nécessite : 5 en Force
+
+Poids : 4~

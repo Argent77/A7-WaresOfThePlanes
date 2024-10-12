@@ -1,0 +1,34 @@
+// Wesley's Improved Hourglass
+
+@0 = ~Sablier~
+@1 = ~Sablier de Wesley~
+
+@10 = ~Un sablier est un dispositif qui peut être utilisé pour mesurer le passage du temps. Il se compose généralement de deux globes de verre ou d'autres matériaux translucides reliés verticalement par un col étroit qui contrôle l'écoulement de la substance à l'intérieur.
+
+PARAMETRES :
+
+Poids : 1~
+@11 = ~Cet objet a été conçu à l'origine par un puissant chronomancien dans le but d'enseigner à ses élèves la nature du temps. Il ressemble à un sablier ordinaire dans un cadre en bois, mais au lieu de sable, il est rempli de fumée de brume du Plan Primaire temporel.
+
+Lorsque le sablier est brisé, il permet à l'utilisateur de sortir du cours normal du temps et de manipuler des objets de façon limitée, alors que tout ce qui l'entoure semble figé dans le temps. Le stress mental et physique induit par cet état provoque une grande fatigue chez l'utilisateur une fois que l'effet s'est dissipé.
+
+L'amélioration de la magie inhérente à l'objet à l'aide du dispositif de faille permet à l'utilisateur d'étendre l'effet temporel à un certain nombre de cibles.
+
+Capacité de charge :
+– Lance "Arrêt du temps"
+  Durée : 5 rounds
+  Zone d'effet : tout le groupe
+  Laisse les personnes affectée fatiguées lorsque l'effet se termine.
+
+Nécessite : 6 Intelligence
+
+Poids : 1~
+
+// Message when Rift Device is taken from the original resting place (shortened version of strref 53006)
+@20 = ~Comme on vous avait averti, le fait d'avoir tenté de prendre le dispositif de la Faille dans le donjon a attiré sur vous toute la puissance de la malédiction..~
+
+// Dialog lines for Cespenar
+@100 = ~Oh, un sablier. Vous voulez faire bouillir des œufs ?~
+@101 = ~Combinez avec le dispositif de brèche pour faire bouillir plusieurs œufs en même temps. Mais vous risquez d'attirer la colère des dieux en le gardant. Oserez-vous ?~
+@102 = ~Combinez avec le dispositif de brèche pour faire bouillir plusieurs œufs en même temps. Avec ça et 10 000 pièces d'or, je le ferai pour vous. C'est une bonne affaire ?~
+@103 = ~Voyons ce que vous avez d'autre.~

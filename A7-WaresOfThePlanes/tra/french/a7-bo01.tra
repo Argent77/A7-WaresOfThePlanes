@@ -1,0 +1,29 @@
+// Carreaux of Acheron
+
+@0 = ~Carreaux à tête cubique~
+@1 = ~Carreaux d'Acheron +1~
+
+@10 = ~Ces carreaux d'arbalète ont une tête métallique en forme de cube. Ils ne doivent pas être très efficaces au combat.
+
+PARAMETRES :
+
+Dégâts : 1d8 (missile)
+Arme à  distance : Arbalète
+
+Poids : 0~
+@11 = ~Ces carreaux enchantés ont été fabriqués à partir de l'un des grands cubes de l'Achéron. S'il faut en croire les spécialistes, l'Achéron serait un plan en guerre permanente contre lui-même, occupé par des cubes gros comme des continents qui flottent dans l'éther et se heurtent en permanence. A la surface de ces blocs, des armées attaquent tout ce qui bouge, passant d'un cube à l'autre quand elles viennent à manquer d'adversaires. L'Achéron résonne continuellement du bruit des épées et des cubes qui s'entrechoquent.
+
+Ces carreaux ont en eux une partie de l'énergie de l'Achéron. Lorsqu'ils touchent leur cible, ils le font avec une telle violence que l'impact a de fortes chances d'étourdir la victime et de l'empêcher temporairement de faire quoi que ce soit.
+
+PARAMETRES :
+
+Capacités de combat :
+– La cible est étourdie pendant un round si elle rate un jet de sauvegarde contre la mort.
+
+TAC0 : +1
+Dégâts : 1d4+1 (contondant)
+Arme à  distance : Arbalète
+
+Poids : 0~
+
+@20 = ~Étourdi~

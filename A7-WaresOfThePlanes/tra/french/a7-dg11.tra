@@ -1,0 +1,35 @@
+// Kaarlac's Knife
+
+@0 = ~Couteau à lame courbe~
+@1 = ~Couteau de Kaarlac~
+
+@10 = ~Ce couteau est d'une qualité exceptionnelle. Il est parfaitement équilibré et sa lame courbe doit s'enfoncer dans les chairs sans le moindre problème.
+
+PARAMETRES :
+
+Dégâts : 1d4 (perçant)
+Facteur de vitesse : 2
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 1~
+@11 = ~Chef-d'oeuvre d'un certain Kaarlac Landapic, ce couteau enchanté est un véritable don du ciel pour quiconque pratique les arts magiques. Kaarlac cherchait à devenir l'un des plus grands Mages de tous les temps et, pour ce faire, il conçut un objet capable de conserver une partie de ses souvenirs (plus spécifiquement axé sur la mémoire à court terme, où sont "stockés" les sorts appris par coeur). En cas de succès, il pensait pouvoir apprendre deux fois plus de sorts que ses collègues de même niveau. Malheureusement, l'enchantement requis était trop puissant pour lui. L'invocation lui fit perdre l'esprit et il se plongea la lame dans le coeur. Mais son sacrifice ne fut pas vain, car le couteau est suffisamment enchanté pour permettre à son porteur de mémoriser plusieurs sorts supplémentaires de premier niveau.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Permet de mémoriser 3 sorts de Mage supplémentaires de niveau 1
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Can memorize three extra 1st-level wizard spells
+
+Dégâts : 1d4 (perçant)
+Facteur de vitesse : 2
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 1~

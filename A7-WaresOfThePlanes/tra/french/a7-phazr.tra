@@ -1,0 +1,32 @@
+// Phazor +5
+
+@0 = ~Bâton avec une poignée~
+@1 = ~Phaseur +5~
+
+@10 = ~Cet article ressemble à un bâton de métal poli dont le manche a une forme qui tient bien dans la main. En raison de sa petite taille, seuls les enfants ou les personnes de petite taille peuvent le tenir confortablement.
+
+PARAMETRES :
+
+Poids : 1~
+@11 = ~Cet artefact merveilleux a été découvert à l'origine par un sorcier gnome qui a voyagé dans les plans pendant plusieurs décennies. Un jour, il est tombé sur une culture très avancée qui avait abandonné la magie au profit des sciences de l'ingénieurie. Cette arme était l'une de leurs nombreuses inventions. À l'origine, elle était conçue pour lancer des impulsions de lumière hautement concentrée, avec un effet extrêmement destructeur. Après son retour à Faerûn, le gnome a rapidement découvert que la source d'énergie de l'arme dépendait de lois naturelles particulières fonctionnant de son plan originel, et il l'a donc remplacée par un substitut magique moins puissant.
+
+L'arme est plutôt petite et ne peut être tenue confortablement et en toute sécurité que par des enfants ou des personnes de petite taille. Elle peut tirer un nombre limité de charges par jour en succession rapide avant que la source d'énergie ne doive être rechargée.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Fixe le nombre d'attaques par round à 5
+
+Capacités de combat :
+- Tire des décharges d'énergie magique qui sont traitées comme +5 pour déterminer les ennemis qu'elles peuvent toucher.
+- La cible est désintégrée en cas de coup critique (jet de sauvegarde contre la mort pour évite).
+
+TAC0 : +5
+Dégâts : 1d20 points de dégâts magiques
+Facteur de vitesse : 0
+Type: 2 mains
+Nécessite : 12 Intelligence
+ 
+Poids : 1~
+
+@20 = ~Désintégré~

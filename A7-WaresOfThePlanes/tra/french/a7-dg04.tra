@@ -1,0 +1,18 @@
+// Phantom Dagger
+
+// @0 = ~~  // #6343
+@1 = ~Dague spectrale +3~
+
+// @10 = ~~ // #6720
+@11 = ~Comme si elle était guidée par une main autre que la tienne, cette dague semble trouver toute seule les points faibles de tes adversaires.
+
+PARAMETRES :
+
+TAC0 : +3
+Dégâts : 1d4+3 (perçant)
+Facteur de vitesse : 0
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 1~

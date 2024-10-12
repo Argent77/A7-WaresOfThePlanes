@@ -1,0 +1,32 @@
+// Cowl of Deepest Shadows
+
+@0 = ~Cape à capuche~
+@1 = ~Manteau de noirceur~
+
+@10 = ~Cette cape est faite d'un matériau inconnu, étonnamment léger et résistant. Elle semble se fondre dans l'environnement immédiat, à tel point qu'il devient difficile d'en discerner la forme exacte.
+
+PARAMETRES :
+
+Poids : 1~
+@11 = ~Tout comme le capuchon lui-même, l'histoire de cet artefact est entourée de ténèbres. La déesse Shar l'a offert à un membre de la Garde fatale en guise de récompense pour avoir corrompu un groupe d'adorateurs d'Hanali Celanil, la déesse elfique de l'amour et de la beauté, en les poussant à l'hédonisme autodestructeur et au désespoir. Le capuchon a été perdu peu de temps après, pour réapparaître occasionnellement pendant de brefs moments en possession d'individus moins réputés, comme des assassins ou des agents de Shar, comme s'il avait un esprit propre.
+
+Ce capuchon est fait d'un matériau inconnu qui est étonnamment léger et résistant. Il semble se fondre dans l'environnement immédiat à un point tel qu'il devient difficile de discerner la forme exacte du capuchon et de son porteur.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Se cacher dans l'ombre : +20%
+– Déplacement silencieux : +20%
+– Vision nocturne : TAC0 : +2 (à l’extérieur de nuit ou dans les donjons)
+– Sensitivité à la lumière : TAC0 : -4 (à l’extérieur en plein jour)
+– Flou : Classe d'Armure +3 contre les projectiles
+
+Capacité de charge :
+– Double Illusoire une fois par round
+  Durée : 12 rounds
+  Zone d'effet : Le porteur
+
+Poids : 1~
+
+@20 = ~Sensitivité à la lumière~
+@21 = ~Vision nocturne~

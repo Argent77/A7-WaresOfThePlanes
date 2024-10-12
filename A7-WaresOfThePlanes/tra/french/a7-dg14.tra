@@ -1,0 +1,23 @@
+// Runeblade
+
+// @0 = ~~  // #6343
+@1 = ~Dague runique~
+
+// @10 = ~~ // #6720
+@11 = ~Crées par une légendaire guilde de Mages guerriers, les "Devins Ecarlates" , ces dagues enchantées servent à se défendre contre les sorts adverses. Les runes minuscules qui recouvrent la lame sont de puissantes défenses qui confèrent une grande protection contre tous les types de magie. Malheureusement, la dague est tout entière tournée vers la défense, ce qui la rend quasiment inefficace au combat. 
+
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Résistance à la magie : +25%
+– Jet de sauvegarde contre les sorts : +2
+
+TAC0 : -4
+Dégâts : 1d4 (perçant)
+Facteur de vitesse : 3
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 1~

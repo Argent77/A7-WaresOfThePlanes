@@ -1,0 +1,27 @@
+// Dûrgaläd +3
+
+// @0 = ~~  // #2893
+@1 = ~Dûrgaläd +3~
+
+// @10 = ~~ // #6742
+@11 = ~Cette magnifique arme a été forgée par les svartalves de Svartalfheim à Nidavellir, la troisième couche d'Ysgard. Elle a été fabriquée en mithral et une ancienne magie Drow l'a imprégnée de l'éclat des grottes de Svartalfheim. À l'origine, l'épée a été offerte à Garadun de Sigil pour sa bravoure lorsqu'il a aidé les svartalves dans leur combat contre des chauves-souris géantes diaboliques.
+
+L'arme permet à son porteur de voir la vraie nature des choses en dissipant les illusions et les tromperies qui pourraient égarer les imprudents.
+
+PARAMETRES :
+
+Capacités de combat : 
+– Dissipe les protections illusoires, y compris les images projetées, lorsque l'épée frappe un adversaire.
+
+Capacité de charge :
+– Vision véritable une fois par jour
+– Identification trois fois par jour
+
+TAC0 : +3
+Dégâts : 1d8+3 (tranchant)
+Facteur de vitesse : 2
+Type de compétence : Épée longue 
+Type: arme à 1 main
+Nécessite : 6 en Force
+
+Poids : 3~

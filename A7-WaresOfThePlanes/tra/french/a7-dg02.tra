@@ -1,0 +1,18 @@
+// Bone Dagger
+
+// @0 = ~~  // #6343
+@1 = ~Dague en os +1~
+
+// @10 = ~~ // #6720
+@11 = ~La lame de cette dague a été taillée dans un os de créature inconnue. Son tranchant est terriblement aiguisé.
+
+PARAMETRES :
+
+TAC0 : +1
+Dégâts : 1d4+1 (perçant)
+Facteur de vitesse : 1
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 1~

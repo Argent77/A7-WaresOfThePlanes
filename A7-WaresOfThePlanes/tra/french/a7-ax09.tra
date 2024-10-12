@@ -1,0 +1,37 @@
+// "Final Judgment"
+
+@0 = ~Hache de bourreau~
+@1 = ~Jugement Dernier +3~
+
+@10 = ~Cette hache de guerre à deux lames rappelle la hache d'un bourreau ; la tête de la hache a été forgée pour représenter le symbole de la faction des Rectifieurs (un dragon rouge aux ailes déployées... les ailes déployées ont été façonnées pour former les lames de la hache). La hache elle-même est énorme ; il faudrait une force énorme pour l'utiliser efficacement.
+
+PARAMETRES :
+
+Dégâts : 1d8 (tranchant)
+Facteur de vitesse : 7
+Type de compétence : Hache
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 7~
+@11 = ~Cette hache de guerre à deux lames rappelle la hache d'un bourreau ; la tête de la hache a été forgée pour représenter le symbole de la faction des Rectifieurs (un dragon rouge aux ailes déployées... les ailes déployées ont été façonnées pour former les lames de la hache). La hache elle-même est énorme ; il faudrait une force énorme pour l'utiliser efficacement.
+
+Cette hache porte en elle une partie de l'essence de Vhailor. Elle est donc entièrement dévouée à la justice et ne permet pas à son utilisateur de se reposer tant qu'il reste des " jugements " à rendre. Les dégâts considérables qu'elle inflige à un adversaire sont doublés si la hache frappe une créature coupable ou chaotique. De plus, la hache elle-même prête une partie de sa force à son utilisateur, lui offrant ainsi une protection supplémentaire contre les attaques.
+
+L'origine de cette hache est inconnue. Selon toute vraisemblance, la hache a acquis ses pouvoirs grâce à la croyance de Vhailor.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Classe d'Armure : +1
+– Ne peut être retirée qu'avec un sort de Délivrance e la Malédiction
+
+TAC0 : +3
+Dégâts : 2d6+3, +1d6 dégâts de feu, double les dégâts contre les créatures chaotiques
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Hache
+Type: arme à 1 main
+Nécessite : 9 en Force16 en Force
+
+Poids : 12~

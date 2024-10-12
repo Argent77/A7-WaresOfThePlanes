@@ -1,0 +1,39 @@
+// "Foolsmiter"
+
+@0 = ~Marteau à grosse tête~
+@1 = ~Masse à fous +2~
+
+@10 = ~Ce marteau de guerre possède une énorme tête rectangulaire en pierre, couverte de traces de sang à peine visibles. Son manche est en bois épais mais semble trop fragile pour supporter le poids de la tête.
+
+PARAMETRES :
+
+Dégâts : 1d4+1 (contondant)
+Facteur de vitesse : 4
+Type de compétence : Marteau de Guerre
+Type: arme à 1 main
+Nécessite : 9 en Force
+
+Poids : 6~
+@11 = ~Ce marteau de guerre possède une énorme tête rectangulaire en pierre, couverte de traces de sang à peine visibles. Son manche est en bois épais mais semble trop fragile pour supporter le poids de la tête.
+
+Les Athars utilisaient ce marteau enchanté au temps où ils se livraient à leurs persécutions religieuses. La "Masse à fous" a été conçue de manière à infliger des dégâts supplémentaires aux créatures particulièrement stupides. Mais au moment où elle fut forgée, on compliqua l'enchantement de façon que l'utilisateur reçoive également des dégâts s'il s'avérait moins intelligent que sa cible. Pendant de nombreuses années, le marteau servit d'outil d'évaluation pour les membres rivaux de la faction athar, qui s'en servaient pour se livrer à une sorte de test de QI primitif (et mortel). Il y a de nombreuses années, il fut volé dans le quartier-général des Athars, le Temple Ruiné. Depuis, il est réapparu une ou deux fois dans les plans.
+
+PARAMETRES :
+
+Capacités de combat :
+- Peut infliger 1d4+3 dégâts contondant au porteur, en fonction de son intelligence :
+  6 ou moins : toujours
+  7 : 75% de chances
+  8 : 50% de chances
+  9 : 35% de chances
+  10 à 14 : 25 % de chances
+  15 ou plus : jamais
+
+TAC0 : +2
+Dégâts : 1d4+3 (contondant)
+Facteur de vitesse : 2
+Type de compétence : Marteau de Guerre
+Type: arme à 1 main
+Nécessite : 9 en Force
+
+Poids : 5~

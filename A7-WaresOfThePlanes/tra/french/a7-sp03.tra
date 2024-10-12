@@ -1,0 +1,19 @@
+// Vrock's Screech
+
+// @0 = ~~  // #7222
+@1 = ~Cri de Vrock~
+
+// @10 = ~~ // #-1
+@11 = ~Cri de Vrock
+(Evocation)
+
+Niveau : 4
+Portée : 0
+Durée : Instant
+Temps d'incantation : 2
+Zone d'effet : 4,5 mètres de rayon
+Jet de sauvegarde : Spécial
+
+Ce sort des Abysses imite le cri terrifiant d'un vrock. Il assourdit tous les ennemis dans la zone d'effet pendant un tour et les étourdit pendant un round. Les lanceurs de sorts assourdis ont 50% de chances de rater l’incantation de leurs sorts. Les créatures de 6 dés de vie ou moins sont toujours affectées. Les créatures plus puissantes peuvent effectuer un jet de sauvegarde contre les sorts pour annuler les deux effets. La zone d'effet n'est pas bloquée par des murs ou d'autres obstacles.~
+
+@20 = ~Étourdi~

@@ -1,0 +1,9 @@
+// Use tra numbers in range 1000..1999
+
+@1000 = ~Marchandises venues des plans~
+@1100 = ~Identifier tous les objets du mod (non recommandé)~
+@1200 = ~Portrait alternatif du commercant~
+
+@1900 = ~DLC Merger est necessaire pour pouvoir installer des mods sur ce jeu. Consultez le readme pour plus d'informations et un lien pour telecharger DLC Merger.~
+@1901 = ~Necessite BG:EE, BG2:EE ou EET.~
+@1902 = ~Necessite le composant principal du mod.~

@@ -1,0 +1,21 @@
+// Serpent Ring
+
+@0 = ~Prix de festival~
+@1 = ~Anneau du serpent~
+
+@10 = ~Ce petit anneau sans valeur représente un serpent. Les bijoux de ce type sont souvent offerts lors des festivals.
+
+PARAMETRES :
+
+Poids : 0~
+@11 = ~On dirait un minuscule serpent figé sous forme d'anneau. Ses yeux luisent comme des gemmes et ses pupilles semblent parfois bouger
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Résistance à la magie : +15%
+– Jet de sauvegarde contre les sorts : +2
+– Immunité contre les poisons
+
+
+Poids : 0~

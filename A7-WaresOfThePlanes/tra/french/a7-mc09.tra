@@ -1,0 +1,31 @@
+// Club of Piercing
+
+@0 = ~Gourdin à pointes~
+@1 = ~Gourdin perforant +1~
+
+@10 = ~La tête de gros gourdin en fer est couverte de pointes acérées.
+
+PARAMETRES :
+
+Dégâts : 1d6 (contondant)
+Facteur de vitesse : 4
+Type de compétence : Masse
+Type: arme à 1 main
+Nécessite : 5 en Force
+
+Poids : 3~
+@11 = ~La tête de gros gourdin en fer est couverte de pointes acérées.
+
+Ce gourdin a été enchanté afin de pouvoir être utilisé avec une efficacité accrue.
+
+PARAMETRES :
+
+TAC0 : +3
+Dégâts : 1d6, +1d6 points de dégâts perçants
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Masse
+Type: arme à 1 main
+Nécessite : 8 en Force
+
+Poids : 12~

@@ -1,0 +1,23 @@
+// Skeletal Key
+
+@0 = ~Os de doigt~
+@1 = ~Clé squelette~
+
+@10 = ~Cet objet semble avoir été façonné à partir des os d'un doigt d'une créature humanoïde. Divers symboles ont été gravés sur sa surface... ils sont si petits qu'on ne peut les distinguer.
+
+PARAMETRES :
+
+Poids : 1~
+@11 = ~Cet objet semble avoir été façonné à partir des os d'un doigt d'une créature humanoïde. Divers symboles ont été gravés sur sa surface pour l'enchanter avec un sort qui permet d'ouvrir toutes sortes de serrures sur des coffres, des boîtes ou des portes.
+
+PARAMETRES :
+
+Capacité de charge :
+– Déblocage
+  Portée : Champ de vision
+  Zone d'effet : porte ou verrou fermé
+  Durée : Instantanée
+
+Nécessite : 9 Intelligence
+
+Poids : 1~

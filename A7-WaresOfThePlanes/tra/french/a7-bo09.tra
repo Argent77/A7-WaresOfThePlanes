@@ -1,0 +1,35 @@
+// Carreaux of Kessek the Devourer
+
+@0 = ~Carreaux à crocs~
+@1 = ~Carreaux de Kessek le dévoreur +2~
+
+@10 = ~The heads of these enchanted Carreaux have two long fangs curving out from the center. They look menacing… and hungry.
+
+PARAMETRES :
+
+Dégâts : 1d8 (missile)
+Arme à  distance : Arbalète
+
+Poids : 0~
+@11 = ~Ces carreaux enchantés sont également appelés "dents de Kessek". Leur pointe est en os et deux longs crocs incurvés partent de son centre. Quand ils touchent, les crocs s'animent et se mettent à dévorer les chairs de la victime, en se dirigeant lentement vers l'intérieur de son corps.
+
+S'il faut en croire la légende, Kessek était un chef bariaure d'Outreterre qui a, voici de nombreux siècles, vu son peuple mourir de faim au cours d'une terrible tempête hivernale dans la Gorge des Larmes. Les incessantes chutes de neige avaient piégé les bariaures, et Kessek envoya plusieurs éclaireurs chercher de l'aide dans la province voisine d'Ohinru.
+
+Apprenant ce qui était arrivé aux bariaures, les princes-marchands d'Ohinru y virent l'occasion de se débarrasser une bonne fois pour toutes de ce qu'ils considéraient comme une "nuisance" et de s'emparer des terres des bariaures. Les éclaireurs furent mis à mort et on planta leur tête sur les plus hauts remparts afin que "les vautours puissent se gaver tandis que les bariaures mouraient de faim. "
+
+Quand la tempête se calma, et alors que plus de la moitié des siens avaient déjà péri, Kessek apprit enfin ce qu'il était advenu de ses éclaireurs. Rongé par le démon de la vengeance, il fabriqua une série de carreaux d'arbalète en utilisant les dents de ceux qui, parmi les siens, étaient morts de faim. Une fois cela fait, il se rendit, de nuit, à Ohinru et tira aveuglément dans les rues de la ville, murmurant le nom des défunts chaque fois qu'il libérait un nouveau carreau.
+
+Chaque carreau suivit alors une trajectoire, cherchant lui-même sa cible. Et quand il l'eut trouvé, il en chercha une autre, puis une autre encore. La nuit s'emplit des cris des habitants d'Ohinru, massacrés par les dévoreurs de Kessek.
+
+Quand l'aube se leva, les vautours purent de nouveau se gaver. Personne ne sut où Kessek était passé.
+
+Les carreaux de Kessek le Dévoreur peuvent encore être découverts au hasard des plans. On prétend qu'il en naît un nouveau chaque fois que l'un d'eux fait une victime, et que sa faim est aussi grande que celle des autres. 
+
+PARAMETRES :
+
+TAC0 : +4
+Dégâts : 1d8+2, +10 dégâts perçants (jet de sauvegarde contre la mort pour la moitié)
+Type de dégâts : Projectile
+Arme à  distance : Arbalète
+
+Poids : 0~

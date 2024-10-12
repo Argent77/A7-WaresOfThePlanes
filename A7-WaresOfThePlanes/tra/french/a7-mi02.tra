@@ -1,0 +1,25 @@
+// Clipped Copper Charm
+
+@0 = ~Pièces de cuivre~
+@1 = ~Charme de cuivre taillée~
+
+@10 = ~Cette pièce de cuivre a été "taillée"... La majorité du cuivre a été raboté, probablement pour conserver l'aspect d'une pièce de monnaie et permettre au "tailleur" d'utiliser le cuivre récupéré pour fabriquer une autre pièce. Elle ne vaut rien.
+
+PARAMETRES :
+
+Poids : 0~
+@11 = ~Cette pièce de cuivre a été "taillée" : on en a prélevé la majeure partie du métal par raclage, ne laissant que le minimum permettant de faire comprendre qu'il s'agissait bien d'une pièce (l'excédent de cuivre a sans doute servi à fondre une autre pièce). Nombre d'habitants de la Ruche emploient cette méthode pour s'enrichir, mais les Marqués, eux, l'utilisent généralement pour créer des charmes reflétant leur nature avaricieuse.
+
+Pour créer ces charmes, les Marqués recherchent les marchands en faillite et les gens autrefois riches qui ont tout perdu. Les Marqués fournissent alors une lame enchantée à ces individus et leur demandent de "tailler" une pièce. Le rituel dure une journée entière et la pièce absorbe le reliquat de chance de son créateur. Cette cérémonie et la nature de l'individu confèrent à la pièce un enchantement mineur destiné à aider son utilisateur futur.
+
+Quand on jette le charme en cuivre dans les airs, il retombe sous la forme d'une pluie de pièces de cuivre conférant de la chance au personnage.
+
+
+PARAMETRES :
+
+Capacité de charge :
+– Bénédiction mineure de cuivre : bonus de +1 à la chance
+  Durée : 1 tour
+  La bénédiction nécessite un don de 11 pièces d'or pour fonctionner.
+
+Poids : 0~

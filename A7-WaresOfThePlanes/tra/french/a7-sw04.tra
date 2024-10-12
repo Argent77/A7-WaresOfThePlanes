@@ -1,0 +1,36 @@
+// Fiendblight +2
+
+// @0 = ~~  // #6646
+@1 = ~Fléau des diables +2~
+
+// @10 = ~~ // #6738
+@11 = ~Le fléau des diables a été forgé à l'origine par les Tanar'ri pour l'interminable guerre du sang qui faisait rage dans d'innombrables plans d'existence. Elle était donnée aux candidats prometteurs à un rang supérieur ou aux mercenaires qui voulaient faire leurs preuves au combat.
+
+Lorsqu'elle est activée, l'arme oblige son porteur à s'agripper fermement à la poignée de l'épée, sans pouvoir la relâcher sans l'aide d'une intervention divine ou d'un sort de Délivrance de la Malédiction. Le véritable danger de l'arme ne se révèle toutefois qu'en combat réel. Chaque coup réussi provoque une poussée d'adrénaline si intense que le manieur entre en frénésie avec l'objectif de marquer un nouveau coup à moins de réussir un jet de sauvegarde contre les sorts. Pour inciter le porteur à atteindre ses performances maximales, il est récompensé par une partie de l'énergie vitale de sa cible s'il réussit un coup critique, et puni par une automutilation s'il rate son coup critique.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Ne peut être retirée qu'avec un sort de Délivrance de la Malédiction
+
+Capacités de combat :
+– Lance Absorption mineure de Larloch sur la cible en cas de coup critique (pas de sauvegarde).
+– Inflige 1d4 points de dégâts tranchants au porteur en cas de raté critique (pas de sauvegarde).
+– A chaque coup réussi, le porteur doit réussir un jet de sauvegarde contre les sorts ou devenir frénétique pendant un round avec les effets suivants :
+   TAC0 : +2
+   Dégâts : +2 
+   Classe d'Armure : -2
+   Jet de sauvegarde contre les sorts : -2
+   Immunité à la peur
+   Le porteur devient berserk
+
+TAC0 : +2
+Dégâts : 2d4+2 (tranchant)
+Facteur de vitesse : 6
+Type de compétence : Épée bâtarde
+Type: arme à 1 main
+Nécessite : 11 en Force
+
+Poids : 9~
+
+@20 = ~Frénétique~

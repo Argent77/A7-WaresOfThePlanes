@@ -1,0 +1,27 @@
+// Abyssal Pipe
+
+@0 = ~Pipe~
+@1 = ~Pipe des Abysses~
+
+@10 = ~Cette petite pipe en bois ouvragée ressemble à une tête de démon.
+
+PARAMETRES :
+
+Poids : 0~
+@11 = ~Cette petite pipe en bois ouvragée ressemble à une tête de démon.
+
+Lorsqu'on l'allume, cette pipe émet des vapeurs toxiques en provenance des Abysses.
+
+PARAMETRES :
+
+Capacité de charge :
+– Nuage mortel
+  Dégâts : 1d10 points de dégâts de poison chaque round
+  Spécial:  tue automatiquement toute créature possédant moins de 4+1 dés de vie, et oblige les créatures possédant de 4+1 à 6 dés de vie à lancer un jet de sauvegarde contre le poison (avec une pénalité de -4) ou à mourir.
+  Portée : 20 mètres
+  Zone d'effet : 4,5 mètres de rayon
+  Durée : 1 tour
+
+Nécessite : 9 Intelligence
+
+Poids : 0~

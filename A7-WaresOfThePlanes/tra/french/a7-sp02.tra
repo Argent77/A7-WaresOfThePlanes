@@ -1,0 +1,19 @@
+// Modron Mind
+
+// @0 = ~~  // #7222
+@1 = ~Esprit de modrone~
+
+// @10 = ~~ // #-1
+@11 = ~Esprit de modrone
+(Abjuration)
+
+Niveau : 3
+Portée : 0
+Durée : 1 tour/niveau
+Temps d'incantation : 3
+Zone d'effet : le lanceur de sort
+Jet de sauvegarde : None
+
+Esprit de modrone permet au lanceur de devenir un être d'ordre concentré. Le lanceur bénéficie d'un bonus de +2 aux jets de sauvegarde contre les sorts des écoles d'Illusion et d'Enchantement. Le sort améliore également les processus de pensée du lanceur, ce qui se traduit par un bonus d'intelligence de +1 tous les cinq niveaux, jusqu'à un bonus de +5 au niveau 20.~
+
+@20 = ~Concentré~~Concentrée~

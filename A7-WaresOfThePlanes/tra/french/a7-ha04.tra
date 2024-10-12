@@ -1,0 +1,23 @@
+// "Reason"
+
+// @0 = ~~  // #6345
+@1 = ~Raison +2~
+
+// @10 = ~~ // #6716
+@11 = ~Cet énorme marteau est la troisième arme de la "Triade des Épreuves" des Hommes-Dieux (les deux autres étant la hache "Ascension" et la dague "Illumination"). Sa tête s'orne de runes mystiques et du symbole des Hommes-Dieux. Il vibre entre vos mains.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Classe d'Armure : +1
+– Charisme : +1
+
+TAC0 : +2
+Dégâts : 1d4+3, +2 points de dégâts contondants
+Type de dégâts : Contondant
+Facteur de vitesse : 2
+Type de compétence : Marteau de Guerre
+Type: arme à 1 main
+Nécessite : 9 en Force
+
+Poids : 5~

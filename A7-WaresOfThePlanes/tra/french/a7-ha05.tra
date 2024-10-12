@@ -1,0 +1,21 @@
+// Hammer of Comminution
+
+// @0 = ~~  // #6345
+@1 = ~Marteau-Briseur +2~
+
+// @10 = ~~ // #6716
+@11 = ~Les recherches indiquant que vous vous trouvez en présence d'une arme formidable. Bien supérieur à un marteau de forgeron standard, ce marteau de guerre délivre des coups terrifiants qui infligent non seulement des dégâts de type contondant, mais qui fracturent en plus toute surface touchée (os , métal, bois, etc.), lui infligeant ainsi des dégâts supplémentaires. Même si la victime survit, elle est  terriblement affaiblie en prévision de  l'attaque suivante. 
+
+En l'an 14 E.U., le Marteau-Briseur a été très utilisé par Enote, prêtre de la Garde Fatale. Philosophe enclin à de violentes sautes d'humeur lorsqu'il débattait de théologie, ce dernier est connu pour avoir adopté les vertus du marteau comme moyen de favoriser le pourrissement de la matière morte. Quant à savoir si ce qu'il frappait avec le marteau était mort ou vivant avant le coup, le débat reste ouvert.
+
+PARAMETRES :
+
+TAC0 : +2
+Dégâts : 1d4+3, +1d6 points de dégâts d'acide
+Type de dégâts : Contondant
+Facteur de vitesse : 2
+Type de compétence : Marteau de Guerre
+Type: arme à 1 main
+Nécessite : 9 en Force
+
+Poids : 5~

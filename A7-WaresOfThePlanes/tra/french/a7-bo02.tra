@@ -1,0 +1,27 @@
+// Acidic Sponge Carreaux
+
+@0 = ~Carreaux à tête sphérique~
+@1 = ~Carreaux  d'éponges acide +1~
+
+@10 = ~Ces carreaux d'arbalète ont une tête sphérique et spongieuse. Tu n'as pas la moindre idée de quelle peut être leur fonction.
+
+PARAMETRES :
+
+Dégâts : 1d8 (missile)
+Arme à  distance : Arbalète
+
+Poids : 0~
+@11 = ~La minuscule sphère qui orne l'extrémité de chacun de ces carreaux est en réalité une éponge aquatique (séchée) que l'on trouve dans les grands lacs de Bytopie. Les savants n'accordent pas la moindre importance à ces éponges, mais on s'est aperçu par hasard qu'elles avaient la faculté d'absorber l'acide et de le stocker sans en souffrir le moins du monde.
+
+On en a donc recueilli de grandes quantités afin de les utiliser contre les fiélons lors de la Guerre Sanglante. On leur fait absorber de l'acide pendant plusieurs jours, après quoi on les sèche et on les recouvre d'une résine constituant une petite bulle autour d'elles. Il ne reste plus alors qu'à les fixer sur une pointe de flèche ou de carreau d'arbalète pour pouvoir les utiliser.
+
+Quand le carreau atteint sa cible, la bulle de résine éclate, l'éponge est compressée par le choc et l'acide est violemment libéré.
+
+PARAMETRES :
+
+TAC0 : +1
+Dégâts : 1d2+1, +6 points de dégâts d'acide (jet de sauvegarde contre les souffles pour la moitié)
+Type de dégâts : Projectile
+Arme à  distance : Arbalète
+
+Poids : 0~

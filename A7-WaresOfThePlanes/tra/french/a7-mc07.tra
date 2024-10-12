@@ -1,0 +1,24 @@
+// "The Justifier"
+
+// @0 = ~~  // #6337
+@1 = ~Le Viguier +2~
+
+// @10 = ~~ // #6709
+@11 = ~Cette masse d'armes a l'air on ne peut plus normale : elle comprend bien une boule à pointes fixée à l'extrémité d'un manche en bois et une poignée en cuir dotée d'une lanière pour éviter qu'on la perde dans la fureur du combat. Là où elle diffère, c'est dans l'oeil gravé à l'acide qui orne sa tête ; on dirait une version stylisée du symbole du dieu Horus.
+
+Cette arme est le Viguier, une masse d'armes créée dans la ville d'Héliopolis, sur le plan d'Arcadie. Elle a été forgée pour aider les forces du bien. Il peut guérir son propriétaire, si on le lui demande, et voue une haine particulière aux forces du chaos et du mal.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Régénération de 1 point de vie par round
+
+TAC0 : +2, +4 contre les créatures chaotiques mauvaises
+Dégâts : 1d6+3, +5 contre les créatures chaotiques mauvaises
+Type de dégâts : Contondant
+Facteur de vitesse : 5
+Type de compétence : Masse
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 4~

@@ -49,8 +49,9 @@ Installationsreihenfolge und Modkompatibilität
 Diese Mod sollte nach der Modkomponente „The Murder of Acton Balthis” von Unfinished Business
 installiert werden, um einen (hauptsächlich) ästhetischen Konflikt in einem Dialog aufzulösen.
 
-Eine kleine Anzahl von Gegenständen könnten mit der Mod „Made in Heaven - Item Pack” von Angel
-überlappen, was aber außer einigen gleichnamigen Gegenständen keine weiteren Probleme verursacht.
+Eine kleine Anzahl von Gegenständen könnten mit den Mods „Made in Heaven - Item Pack” von Angel
+und „The shooter's delight” von Deratiseur überlappen, was aber außer einigen gleichnamigen
+Gegenständen keine weiteren Probleme verursacht.
 
 
 Komponenten
@@ -118,6 +119,8 @@ Danksagungen
 
 Coding and testing: Argent77
 
+French translation: Deratiseur
+
 
 Urheberrechtshinweise
 ~~~~~~~~~~~~~~~~~~~~~
@@ -134,6 +137,12 @@ Merchant portrait based on "RPG Dwarf Males 41" by ttb2112-ai on DeviantArt.
 
 Versionshistorie
 ~~~~~~~~~~~~~~~~
+
+1.4
+- Added French translation (thanks Deratiseur)
+- Fixed missing strength bonus flag in Abigail +1
+- Rebalanced several weapons to fit better into the Baldur's Gate universe
+- Updated several item descriptions
 
 1.3
 - Added new items for sale: Grimoire of Pestilential Thought, Cowl of Deepest Shadows,

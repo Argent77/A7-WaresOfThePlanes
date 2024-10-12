@@ -20,12 +20,20 @@ LANGUAGE ~English~
          ~english~
          ~A7-WaresOfThePlanes/tra/english/setup.tra~
          ~A7-WaresOfThePlanes/tra/english/mod.tra~
+
 LANGUAGE ~Deutsch~
          ~german~
          ~A7-WaresOfThePlanes/tra/english/setup.tra~
          ~A7-WaresOfThePlanes/tra/english/mod.tra~
          ~A7-WaresOfThePlanes/tra/german/setup.tra~
          ~A7-WaresOfThePlanes/tra/german/mod.tra~
+
+LANGUAGE ~Francais (traduction : Deratiseur)~
+         ~french~
+         ~A7-WaresOfThePlanes/tra/english/setup.tra~
+         ~A7-WaresOfThePlanes/tra/english/mod.tra~
+         ~A7-WaresOfThePlanes/tra/french/setup.tra~
+         ~A7-WaresOfThePlanes/tra/french/mod.tra~
 
 
 ////////////////////////////////////////////////

@@ -1,0 +1,18 @@
+// Hammer of Quality
+
+@0 = ~Marteau de qualité~
+// @1 = ~~  // unused
+
+@10 = ~C'est un marteau de guerre forgé avec soin. Des gravures d'Hommes-Dieux et toute une série de symboles religieux ornent sa tête et son manche. Il est beaucoup plus léger qu'il en a l'air.
+
+PARAMETRES :
+
+TAC0 : +1
+Dégâts : 1d4+1 (contondant)
+Facteur de vitesse : 4
+Type de compétence : Marteau de Guerre
+Type: arme à 1 main
+Nécessite : 9 en Force
+
+Poids : 5~
+// @11 = ~~ // unused

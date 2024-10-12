@@ -1,0 +1,32 @@
+// Mad Splinter
+
+@0 = ~Éclat de pierre~
+@1 = ~Eclat fou +1~
+
+@10 = ~C'est un éclat de pierre en forme de dague.
+
+PARAMETRES :
+
+Dégâts : 1d4 (perçant)
+Facteur de vitesse : 2
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 1~
+@11 = ~Cet éclat de pierre en forme de dague provient de la statue de Gangroihydon. Il s'accompagne d'un puissant enchantement : chaque fois qu'il frappe une créature, cette dernière risque d'être maudite. Nul doute que c'est la malédiction que Gangroihydon s'apprêtait à proférer au moment où il a été pétrifié qui empoisonne la pierre et affecte ainsi ses victimes.
+
+PARAMETRES :
+
+Capacités de combat :
+– La cible touchée doit réussir un jet de sauvegarde contre la mort ou subir 1 point de dégâts de poison par seconde jusqu'à ce qu'elle meure ou qu'elle soit guérie.
+- L'objet ne peut être utilisé qu'un certain nombre de fois avant de se briser.
+
+TAC0 : +1
+Dégâts : 1d4+1 (perçant)
+Facteur de vitesse : 2
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 1~

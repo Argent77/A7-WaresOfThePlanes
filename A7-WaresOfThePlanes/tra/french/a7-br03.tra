@@ -1,0 +1,18 @@
+// Magus Guard
+
+@0 = ~Bracelet~
+@1 = ~Gardemage~
+
+@10 = ~Ce bracelet semble être en argent et est orné d'une pierre précieuse.
+
+PARAMETRES :
+
+Poids : 0~
+@11 = ~Les bracelets tels que celui-ci font partie de l'équipement standard des magiciens et on les trouve dans tous les plans. S'il faut en croire le style de celui que tu as devant les yeux, il provient de Sigil. Divers symboles de protection ont été méticuleusement gravés à sa surface ; ils produisent un effet presque hypnotique. Ce bracelet protège son porteur avec autant d'efficacité qu'une armure d'écailles.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Classe d'Armure : 6
+
+Poids : 2~

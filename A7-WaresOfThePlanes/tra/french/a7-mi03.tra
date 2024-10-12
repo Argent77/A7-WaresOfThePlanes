@@ -1,0 +1,21 @@
+// Gordian Knot
+
+@0 = ~Nœud compliqué~
+@1 = ~Nœud gordien~
+
+@10 = ~Quelqu'un a fait un nœud inhabituel avec ce bout de corde. Impossible de comprendre comment le dénouer... Les extrémités semblent enroulées et repliées à l'intérieur du nœud lui-même.
+
+PARAMETRES :
+
+Poids : 0~
+@11 = ~Le nœud qui lie les deux extrémités de cette corde renferme une puissante magie. Lorsqu'un guerrier le coupe à l'aide d'une arme tranchante, il bénéficie d'un regain d'arrogance et de confiance en lui, ce qui réduit sa Sagesse et augmente son Charisme. Il se sent également tenu de rassembler une armée et de conquérir les plans, mais ce désir ne prend pas le contrôle de ses actions.
+
+On prétend que ce nœud aurait été tranché par l'un des plus grands conquérants d'un lointain monde du Plan Primaire. Chaque fois que le nœud est coupé, il disparaît pour se rematérialiser, bien des années plus tard, dans les mains de quelqu'un d'autre qui pourra avoir besoin de lui.
+
+PARAMETRES :
+
+Capacité de charge :
+– Bonus permanent de +2 au Charisme
+– Malus permanent de -1 à la sagesse
+
+Poids : 0~

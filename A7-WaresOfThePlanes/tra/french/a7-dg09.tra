@@ -1,0 +1,27 @@
+// Silver Fork
+
+@0 = ~Fourchette~
+@1 = ~Fourchette en argent~
+
+@10 = ~C'est une fourchette en argent dont les dents sont particulièrement acérées. 
+
+PARAMETRES :
+
+Dégâts : 1d2 (perçant)
+Facteur de vitesse : 2
+Type de compétence : Dague
+Type: arme à 1 main
+
+Poids : 0~
+@11 = ~C'est une fourchette en argent dont les dents sont particulièrement acérées. En y réfléchissant, tu pourras peut-être l'utiliser comme une dague, mais ne t'attend pas à ce qu'elle inflige davantage de dégâts qu'une dague conventionnelle. Par contre, il se peut qu'elle soit utile contre les créatures qui ne sont touchées que par les armes en argent.
+
+PARAMETRES :
+
+TAC0 : +2 contre les lycanthropes
+Dégâts : 1d2, +2 contre les lycanthropes
+Type de dégâts : Perçant
+Facteur de vitesse : 2
+Type de compétence : Dague
+Type: arme à 1 main
+
+Poids : 0~

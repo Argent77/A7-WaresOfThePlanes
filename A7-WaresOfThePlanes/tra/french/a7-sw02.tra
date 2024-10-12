@@ -1,0 +1,27 @@
+// Abigail +1
+
+// @0 = ~~  // #6646
+@1 = ~Abigail +1~
+
+// @10 = ~~ // #6738
+@11 = ~Cette lame a été créée dans un seul but : éradiquer les limons, les vases et les gelées de toutes sortes. La lame, tranchante comme un rasoir, est faite d'obsidienne noire renforcée par l'alchimie, plus dure que l'acier et immunisée contre les effets corrosifs des limons et des monstres apparentés.
+
+On ne sait pas grand-chose sur les origines de la lame. Il n'existe pas de récits d'aventuriers tuant des hordes de gelées menaçant un village, ni de rumeurs faisant état de héros nettoyant à eux seuls des grottes infestées de vases. En fin de compte, l'élimination de limons et de gelées n'a rien à envier à la victoire sur les dragons.
+
+STATISTICS:
+
+Capacités de combat :
+– Les limons, les vases et les gelées touchées doivent réussir un jet de sauvegarde contre la mort où être détruites
+
+THAC0: +1, +3 contre les limons, les vases et les gelées
+Damage: 2d4+1,  +3 contre les limons, les vases et les gelées
+Type de dégâts : Tranchant
+Speed Factor: 7
+Type de compétence : Épée bâtarde
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 10~
+
+@20 = ~Gelée détruite~
+

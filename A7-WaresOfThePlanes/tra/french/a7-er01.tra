@@ -1,0 +1,19 @@
+// Amber Boucles d'oreilles
+
+@0 = ~Boucles d'oreilles~
+@1 = ~Boucles d'oreilles d'ambre~
+
+@10 = ~Les boucles d'oreilles sont de petites bandes de métal précieux auxquelles sont attachés des crochets et qui sont utilisées comme bijoux ou accessoires. Certaines boucles d'oreilles rares ont été enchantées, ce qui leur confère diverses capacités magiques.
+
+PARAMETRES :
+
+Poids : 0~
+@11 = ~Ces boucles d'oreilles ont été faites à partir de bourgeons durcis de lierre-rasoir. Quand on les prépare comme il se doit, les objets faits de cette matière peuvent être enchantés à l'aide de puissants sorts de protection.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Classe d'Armure : +2
+– Permet de mémoriser 2 sorts de Mage supplémentaires de niveau 1
+
+Poids : 0~

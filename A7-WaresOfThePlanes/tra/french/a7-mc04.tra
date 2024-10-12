@@ -1,0 +1,24 @@
+// Death of Desire
+
+// @0 = ~~  // #6337
+@1 = ~Mort du désir +2~
+
+// @10 = ~~ // #6709
+@11 = ~Les Hommes-Poussière se servent de cette masse pour faire disparaître tout désir chez les vivants.
+
+PARAMETRES :
+
+Capacités de combat :
+– Les créatures vivantes touchées par l'arme doivent réussir un jet de sauvegarde contre les sorts ou être étourdies pendant 1 round.
+
+TAC0 : +2
+Dégâts : 1d6+3, +1d6 points de dégâts perçants
+Type de dégâts : Contondant
+Facteur de vitesse : 5
+Type de compétence : Masse
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 11~
+
+@20 = ~Étourdi~

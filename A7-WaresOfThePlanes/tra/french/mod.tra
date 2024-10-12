@@ -1,0 +1,61 @@
+// Use tra numbers of 2000 or higher
+
+@2000 = ~Voyageur aguerri~
+@2001 = ~Ebb Craquerotule~
+@2002 = ~Butin d'Ebb~
+@2003 = ~Client~
+@2004 = ~gal~   // colloquial for "girl"
+@2005 = ~lad~   // colloquial for "boy"
+@2006 = ~Personne ne me vole !~
+@2007 = ~Vous allez payer pour cela.~
+@2008 = ~L'acier le plus fin des Plans !~
+@2009 = ~Un aventurier bien armé est un aventurier vivant !~
+@2010 = ~De bonnes affaires, des échanges honnêtes !~
+@2011 = ~Des articles à des prix incroyables !~
+@2012 = ~Armes à vendre !~
+@2013 = ~V'nez ici et utilisez votre or à bon escient !~
+
+// Cutscene: Ebb and customer
+@2100 = ~*soupir* Une autre journée tranquille.~
+@2101 = ~Oh, un client ?~
+@2102 = ~J'aimerais voir vos marchandises, s'il vous plaît.~
+@2103 = ~Certainement ! Vous ne serez pas déçu.~
+@2104 = ~Heu.. c'est une sacrée sélection.~
+@2105 = ~J'aimerais acheter ce joli bracelet.~
+@2106 = ~Un bon choix. Je l'ai acquis lors d'une de mes escarmouches sur l'Ysgard.~
+@2107 = ~Un beau spectacle. J'espère qu'il appréciera la balade.~
+@2108 = ~Voyons comment il fonctionne.~
+@2109 = ~Qu'est-ce que...~
+@2110 = ~NOOON !~
+@2111 = ~Armure de la toute-puissance : Transformation en combattant~
+@2112 = ~Armure de la toute-puissance : Transformation en Mage~
+@2113 = ~Armure de la toute-puissance : Transformation en voleur~
+@2114 = ~Armure de la toute-puissance : Appel au combat~
+
+// User journal entries
+@3000 = ~J'ai rencontré un homme peu ordinaire qui se fait appeler Ebb Craquerotule. Il prétend être un citoyen de Sigil, la "Cité des Portes". Il voyage actuellement à travers Faerûn pour découvrir le monde et vendre ses marchandises.~
+@3001 = ~Ebb Craquerotule m'a dit que lorsqu'il parcourt la Côte des épées, on peut le trouver à Beregost, au Carnaval de Nashkel ou à la Barbe d'Ulgoth.~
+@3002 = ~Ebb Craquerotule m'a dit que lorsqu'il fait des tournées à travers Amn, on peut le trouver soit à Francmarché, soit à Imnesvale dans les collines d'Umar, soit dans sur la promenade de Waukyne d'Athkatla.~
+
+// Quest-related journal entries
+@3100 = ~Un engin gnomique~
+
+@3101 = ~Un engin gnomique
+
+Ebb Craquerotule m'a parlé de sa dernière acquisition lorsque je l'ai rencontré à Amkethran. Il s'agit apparemment d'une sorte d'arme exotique qu'il s'est procurée auprès d'un sorcier gnome. Malheureusement, elle est cassée. Peut-être que je peux l'aider ?~
+
+@3102 = ~Un engin gnomique
+
+Selon les instructions de réparation qu'Ebb a reçues du gnome, les parties cassées de l'arme peuvent être remplacées. Pour cela, plusieurs objets sont nécessaires : une gemme beljuril et des parchemins de Protection contre l'énergie magique et de Désintégration. Je commence à me demander à quel point cette arme peut être mortelle.~
+
+@3103 = ~Un engin gnomique
+
+J'ai livré les objets nécessaires à la réparation de l'arme gnomique. Ebb est partie revoir le gnome, ce qui devrait prendre environ un jour.~
+
+@3150 = ~Un engin gnomique
+
+Ebb Craquerotule a tenu parole et est revenu avec l'artefact réparé. Il l'a placé dans son magasin où je peux l'acheter si je le souhaite.~
+
+@3151 = ~Un engin gnomique
+
+Il semble qu'Ebb Craquerotule soit parti définitivement, car les événements à Amkethran se succèdent à un rythme effréné. J'aurais dû lui rendre visite plus tôt, avant que l'enfer ne se déchaîne.~

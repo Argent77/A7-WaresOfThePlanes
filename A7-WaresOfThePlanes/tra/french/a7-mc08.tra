@@ -1,0 +1,33 @@
+// Club of Nettles
+
+@0 = ~Gourdin épineux~
+@1 = ~Gourdin d'orties~
+
+@10 = ~Ce gourdin semble avoir été taillé dans une plante épineuse. De nombreuses épines ornent sa tête, mais il est aisé de les casser.
+
+PARAMETRES :
+
+Dégâts : 1d6 (contondant)
+Facteur de vitesse : 4
+Type de compétence : Masse
+Type: arme à 1 main
+Nécessite : 5 en Force
+
+Poids : 3~
+@11 = ~Ce gourdin semble avoir été taillé dans une plante épineuse. De nombreuses épines ornent sa tête, mais il est aisé de les casser.
+
+Ce gourdin est l'une des armes préférées des voleurs. A chaque coup au but, ses minuscules épines se cassent sous la peau de la victime, ce qui génère une grande confusion chez cette dernière. Cela permet au voleur de la dépouiller et de s'enfuir sans coup férir.
+
+PARAMETRES :
+
+Capacités de combat :
+– La cible touchée doit réussir un jet de sauvegarde contre les sorts ou devenir confuse pendant un round.
+
+TAC0 : +2
+Dégâts : 1d6 (contondant)
+Facteur de vitesse : 3
+Type de compétence : Masse
+Type: arme à 1 main
+Nécessite : 5 en Force
+
+Poids : 4~

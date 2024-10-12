@@ -1,0 +1,18 @@
+// Green Steel Dagger
+
+// @0 = ~~  // #6343
+@1 = ~Dague d'acier vert +1~
+
+// @10 = ~~ // #6720
+@11 = ~Cette fine dague a été forgée à partir du célèbre acier vert de Baator. Obtenu à partir d'un minerai qui ne se trouve que dans les étendues désolées d'Avernus, cet alliage est bien plus léger que l'acier normal. De plus, les armes d'acier vert restent affûtées plus longtemps et délivrent davantage de dégâts que les autres.
+
+PARAMETRES :
+
+TAC0 : +1
+Dégâts : 1d4+1 (perçant)
+Facteur de vitesse : 1
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 0~

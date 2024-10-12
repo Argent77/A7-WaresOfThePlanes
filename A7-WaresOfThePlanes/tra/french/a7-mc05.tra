@@ -1,0 +1,44 @@
+// "Devil's Due"
+
+@0 = ~Masse à tête de mort~
+@1 = ~Dû du diable +2~
+
+@10 = ~Le crâne effilé qui surplombe cette arme semble ne faire qu'un avec son manche de métal noir. Le métal a l'air de surgir du crâne et les pointes de la masse sortent des orbites, de la mâchoire et du sommet de la tête de mort.
+
+Ce crâne n'est pas humain. Pour commencer, il avait autrefois des cornes (et ces dernières ont été arrachées à coups de dents, s'il faut en croire les traces qui sont encore visibles autour). Ensuite, ses dents sont bien trop acérées. Il te rappelle vaguement un crâne de reptile.
+
+PARAMETRES :
+
+Dégâts : 1d6 (contondant)
+Facteur de vitesse : 4
+Type de compétence : Masse
+Type: arme à 1 main
+Nécessite : 5 en Force
+
+Poids : 3~
+@11 = ~Le crâne effilé qui surplombe cette arme semble ne faire qu'un avec son manche de métal noir. Le métal a l'air de surgir du crâne et les pointes de la masse sortent des orbites, de la mâchoire et du sommet de la tête de mort.
+
+Le "métal" n'en est pas. Il s'agit en fait de l'avant-bras d'une créature qui a tué le propriétaire du crâne en le frappant au cerveau et qui fait aujourd'hui office de manche. Quant aux pointes, il s'agit vraisemblablement d'épines qui ornaient l'avant-bras de la créature.
+
+Quand les pointes transpercent les chairs de l'adversaire, elles libèrent un acide qui inflige des dégâts supplémentaires. Mais cet acide brûle également les mains du porteur et le blesse chaque fois qu'il porte un coup au but.
+
+Cette arme est couramment appelée "Dû du Diable", même si personne ne sait à qui (ou quoi) ce nom fait référence. Ce qui est sûr, c'est que sa création a dû être douloureuse pour les deux créatures directement concernées.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Classe d'Armure : +2 contre les projectiles et les armes perçantes
+– Ne peut être retirée qu'avec un sort de Délivrance de la Malédiction
+
+Capacités de combat :
+– 50% chance d'infliger 1d6 points de dégâts d'acide au porteur
+
+TAC0 : +2
+Dégâts : 1d6+2, +1d6 points de dégâts d'acide
+Type de dégâts : Contondant
+Facteur de vitesse : 4
+Type de compétence : Masse
+Type: arme à 1 main
+Nécessite : 5 en Force
+
+Poids : 3~

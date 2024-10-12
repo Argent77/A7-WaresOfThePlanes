@@ -1,0 +1,33 @@
+// "Last Resort"
+
+@0 = ~Dague malfaisante~
+@1 = ~Dernier Recours +6~
+
+@10 = ~Cette petite dague a l'air fragile, mais sa lame est dentelée sur toute la longueur. Son pommeau est couvert de sang séché.
+
+PARAMETRES :
+
+Dégâts : 1d4 (perçant)
+Facteur de vitesse : 2
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 1~
+@11 = ~Cette petite dague a l'air fragile, mais sa lame est dentelée sur toute la longueur. Son pommeau est couvert de sang séché, provenant sûrement des utilisateurs précédents, qui se sont retrouvé incapables de lâcher la dague après s'en être saisis.
+
+Les recherches indiquent que cette dague maudite a eu plusieurs noms, le plus courant étant "Dernier Recours". A partir du moment où on la prend en main, il devient impossible de la lâcher, à moins que la malédiction ne soit levée par un sort ou une intervention divine. Bien que la dague soit plus lente que la plupart des armes à deux mains et qu'elle n'inflige pas plus de dégâts qu'une simple égratignure, elle serait capable de toucher n'importe quelle créature, et ce quels que soient le plan d'origine ou les défenses magiques de cette dernière. Une voyageuse des plans qui s'était libérée de la malédiction a finalement décidé de conserver la dague, au cas où elle rencontrerait des créatures que ses autres armes seraient incapables de toucher.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Ne peut être retirée qu'avec un sort de Délivrance de la Malédiction
+
+TAC0 : +6
+Dégâts : 1d2 (tranchant)
+Facteur de vitesse : 10
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 1~

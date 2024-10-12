@@ -1,0 +1,26 @@
+// Widowmaker
+
+// @0 = ~~  // #6343
+@1 = ~Chant de la Veuve +2~
+
+// @10 = ~~ // #6720
+@11 = ~Cette dague magique a été forgée dans le venin d'une araignée à crochets. "Chant de la Veuve" est très appréciée des assassins, d'où qu'ils viennent. Le venin qui fait partie intégrante de la lame empoisonne automatiquement tous ceux qu'elle touche. Dans le même temps, le seul fait de tenir la dague à la main confère une grande résistance au poison.
+
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Résistance au poison : +25%
+
+Capacités de combat :La cible touchée doit réusir un jet de sauvegarde contre la mort ou subir 1 point de dégâts de poison toutes les 3 secondes pendant deux rounds.
+– Hit target must save vs. Death or suffer 1 point of poison damage every 3 seconds for two rounds
+
+TAC0 : +2
+Dégâts : 1d4+2, +2 points de dégâts tranchants
+Type de dégâts : Perçant
+Facteur de vitesse : 0
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 1~

@@ -1,0 +1,26 @@
+// Elixir of Horrific Separation
+
+@0 = ~Fiole étrange~
+@1 = ~Élixir d'horrifique séparation~
+
+@10 = ~Cette fiole solide est faite d'un matériau cristallin et ressemble à la tête d'un monstre. Elle contient un liquide transparent qui brille légèrement d'une teinte bleutée.
+
+PARAMETRES :
+
+Poids : 1~
+@11 = ~Cet élixir a été concocté par une chercheuse qui s'était rendue compte qu'elle possédait un côté sombre, une seconde personnalité qui prenait parfois le contrôle de ses actes et la forçait à agir de manière répréhensible. La potion était censée séparer ses deux personnalités une bonne fois pour toutes (et ainsi donner naissance à deux individus distincts). Mais les Rectifieurs, qui la poursuivaient depuis sa dernière série de meurtres, la rattrapèrent et la mirent à mort avant qu'elle ne puisse la boire.
+
+PARAMETRES :
+
+Séparation horrifique :
+Lorsque l'élixir est consommé, l'enchantement agit et sépare la partie la moins dominante de l'utilisateur en un être distinct de puissance comparable mais d'alignement opposé. Cet être peut être contrôlé pendant cinq tours avant de se libérer de l'enchantement et d'attaquer le groupe ou de s'échapper. De plus, la partie éthique de l'alignement de l'utilisateur change de façon permanente pour devenir neutre ("neutre bon", "neutre strict." ou "neutre mauvais").
+
+L'élixir n'aura aucun effet s'il est consommé par un utilisateur dont l'alignement éthique est déjà "neutre".
+
+Poids : 1~
+
+@20 = ~Alignement définitivement modifié en Neutre Bon.~
+@21 = ~Alignement définitivement modifié en Neutre Strict.~
+@22 = ~Alignement définitivement modifié en Neutre Mauvais.~
+
+@30 = ~Se libère de l'enchantement.~

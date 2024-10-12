@@ -1,0 +1,41 @@
+// Chaos Feather
+
+@0 = ~Plume étrange~
+@1 = ~Plume de Chaos +1~
+
+@10 = ~Cette plume de couleur cendre devient plus foncée sur les bords. Beaucoup plus grande qu'une plume d'oiseau, elle provoque une désagréable sensation de picotement lorsqu'on la tient plus d'une minute.
+
+PARAMETRES :
+
+Dégâts : 1d4 (perçant)
+Facteur de vitesse : 2
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 1~
+@11 = ~Cette plume de couleur cendre devient plus foncée sur les bords. Beaucoup plus grande qu'une plume d'oiseau, elle provoque une désagréable sensation de picotement lorsqu'on la tient plus d'une minute.
+vous vous apercevez qu'il s'agit d'une plume de vrock, l'une des nombreuses races de tanar'ris qui peuplent les Abysses. Les vrocks ressemblent à de gigantesques vautours et sont souvent utilisés comme éclaireurs par les armées tanar'ris dans la Guerre Sanglante.
+
+Cette plume aurait été arrachée à un shaman vrock, qui serait mort pour n'avoir pas cru en sa propre existence. Souffrant d'un indéniable déséquilibre mental et de la détestable habitude de dévorer ses disciples pour se fortifier, ce shaman déjanté était paraît-il capable d'inciter ses camarades vrocks à se comporter de manière plus imprévisible encore que les tanar'ris normaux. Il aurait ainsi réussi à en convaincre bon nombre de s'arracher les ailes et de s'enfoncer dans le sol. Il lui arrivait également de prêcher les vertus de l'honnêteté, arguant qu'elle était plus diabolique et destructrice que n'importe quel mensonge. Il est mort désintégré, et seule cette plume est restée comme testament de son existence exaltée. Une partie de son énergie vitale se trouverait encore dans la "Plume du Chaos".
+
+Au combat, la  Plume du Chaos s'utilise comme une dague et ne délivre que de faibles dégâts (à peu près autant qu'une dague conventionnelle). Mais elle a aussi le pouvoir d'emplir les ennemis de confusion et les créatures touchées s'enfuient ou restent étourdies, à moins qu'elles ne se retournent contre leurs alliés.
+
+La plupart des tannar'ris considèrent la plume comme un objet sacré. Les vrocks cherchent à tuer quiconque la détient pour la récupérer.
+
+PARAMETRES :
+
+Capacités de combat :
+– La cible touchée doit réussir un jet de sauvegarde contre les sorts, sinon elle est étourdie, confuse ou terrorisée.
+- L'objet ne peut être utilisé qu'un certain nombre de fois avant de se briser.
+
+TAC0 : +1
+Dégâts : 1d4+1 (perçant)
+Facteur de vitesse : 1
+Type de compétence : Dague
+Type: arme à 1 main
+Nécessite : 3 en Force
+
+Poids : 1~
+
+@20 = ~Stunned~

@@ -1,0 +1,18 @@
+// brassards of Evil's Warding
+
+// @0 = ~~  // #6341
+@1 = ~Brassards de protection contre le mal~
+
+// @10 = ~  // #6791
+@11 = ~Ces brassards, lorsqu'ils sont portés, protègent leur porteur des attaques des créatures maléfiques. Leurs pièces d'armure métalliques brillantes sont gravées de runes de protection qui attirent les dégâts vers les brassards où ils rebondissent sans dommage. Les attaques à zone d'effet qui ne visent pas directement la cible ne sont pas affectées.
+
+La rumeur veut que les brassards aient été créées par les esprits des pétitionnaires déchus de l'Arcadie, et que leur désir de combattre le mal soit toujours présent dans l'objet. Cette théorie est étayée par le fait que les personnages maléfiques qui s'équipent de ces brassards subissent des dégâts de manière répétée tous les dix rounds pendant qu'ils les portent.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Classe d'Armure : +2 contre les mauvais
+– Jets de sauvegarde : +2 contre les mauvais
+– Inflige 2d8 dégâts non-létaux au porteur tous les 10 rounds lorsqu'il est porté par des personnages mauvais (jet de sauvegarde contre la mort pour 1/2).
+
+Poids : 2~

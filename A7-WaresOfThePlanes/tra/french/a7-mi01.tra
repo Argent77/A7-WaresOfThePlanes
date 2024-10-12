@@ -1,0 +1,13 @@
+// Bandages
+
+@0 = ~Bandages~
+// @1 = ~~
+
+@10 = ~C'est un rouleau de bandages, utiles pour soigner les blessures mineures. Lorsqu'ils sont appliqués, ils soignent le personnage pour 3 points de dégâts.
+
+PARAMETRES :
+
+Spécial: Restaure 3 points de vie.
+
+Poids : 0~
+// @11 = ~~

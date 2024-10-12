@@ -1,0 +1,21 @@
+// Bell's Shield
+
+@0 = ~Bracelet~
+@1 = ~Bouclier de Bayle~
+
+@10 = ~Ce bracelet semble être en argent et est orné d'une pierre précieuse.
+
+PARAMETRES :
+
+Poids : 0~
+@11 = ~Les gravures de ce bracelet sont tout simplement magnifiques. L'artisanat reflète l'habileté des tribus nomades Meh'gahmi Sah'ma. Ce bracelet a été sculpté pour leur plus grande prêtresse guerrière, Bell, qui cherchait à apporter la paix dans la grande région des plaines du sud. Les pierres violettes enchâssées le long du bracelet émettent une douce et chaude lueur violette royale.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Sagesse : +3
+– Résistance à la magie : +10%
+– maximum de points de vie : +10
+– Peut mémoriser un sort divin supplémentaire de chaque niveau du 1er au 6ème
+
+Poids : 0~

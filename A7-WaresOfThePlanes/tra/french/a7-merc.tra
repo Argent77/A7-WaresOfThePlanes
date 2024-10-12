@@ -1,0 +1,57 @@
+// Ebb Craquerotule dialog
+@0 = ~Ah, bonjour. Vous êtes au bon endroit.~
+@1 = ~Je m’appelle Ebb Craquerotule. Troisième mesure de l'Harmonium à Sigil, comme si cela signifiait quelque chose ici, dans ce lieu lointain. Je suis à la retraite, semi-retraite en fait, et je passe mon temps et mon argent à voyager dans les plans.~
+@2 = ~J'ai également collecté de nombreux trésors au fil des ans lors de mes voyages dans les plans. Vous pouvez acheter tout ce que vous voulez. Cela me permet de remplir ma bourse.~
+@3 = ~Troisième mesure de l'harmonium ?~
+@4 = ~Que pouvez-vous me dire sur Sigil ?~
+@5 = ~Qu'est- ce qui est arrivé au client avec lequel vous vous êtes entretenu avant ?~
+@6 = ~Qu'avez-vous à vendre ?~
+@7 = ~Peu importe. Au revoir.~
+@8 = ~Autre chose que vous voudriez savoir ?~
+@9 = ~Vous avez mentionné l'Harmonium tout à l'heure. De qui s'agit-il ?~
+@10 = ~Rien. Au revoir.~
+@11 = ~Heureux de vous revoir, <LADGAL>. Vous en redemandez, hein ?~
+@12 = ~Que peut faire Ebb pour vous en cette belle journée ?~
+@13 = ~Pourquoi toutes vos marchandises ne sont-elles pas étiquetées ? J'ai l'impression que c'est un pari d'acheter quelque chose chez vous.~
+@14 = ~Pouvez-vous m'en dire plus sur l'artefact cassé ?~
+@15 = ~Pouvez-vous me reparler de l'artefact cassé ?~
+@16 = ~J'ai trouvé les éléments nécessaires pour réparer l'artefact cassé.~
+@17 = ~Montrez-moi vos marchandises s'il vous plaît.~
+@18 = ~Autre chose ?~
+@19 = ~Bon timing, en tout cas. J'ai réapprovisionné mon magasin avec encore plus de marchandises. N'hésitez pas à regarder et à acheter, mon ami.~~Cela tombe bien, en tout cas. J'ai réapprovisionné mon magasin avec encore plus de marchandises. N'hésitez pas à regarder et à acheter, mon amie.~
+@20 = ~J'ai participé à de nombreux combats et escarmouches pour l'Harmonium. Notre faction maintient la paix et l'ordre à Sigil, et sur d'autres plans également. C'est ainsi depuis aussi longtemps que je me souvienne. Et je peux me souvenir de bien des décennies en arrière.~
+@21 = ~Maintenant que je suis *presque* à la retraite, je veux visiter les plans à ma guise plutôt que de perdre mon temps dans les bars et les tavernes de Sigil.~
+@22 = ~De toute façon, les plans se comportent de manière inconnue, même pour le vieux Ebb. Ils l'ont toujours fait. Vous vous accrochez à l'entropie, mais ce n'est qu'une force parmi d'autres dans le multivers. Il y en a plus qu'il n'en faut pour contenir l'entropie. Mais en vieillissant, je ne me préoccupe plus de ça.~
+@23 = ~Sigil est un endroit merveilleux. On l'appelle la "cité des portes", et ce n'est pas sans raison. Tout arc, cadre, fenêtre ou porte peut être un portail vers un autre lieu. La plupart d'entre eux sont cependant dormants, à moins que vous ne possédiez la bonne clé.~
+@24 = ~Une clé peut être à peu près n'importe quoi : une clé littérale, une phrase prononcée à haute voix, une pensée exprimée à une heure précise avec un animal de compagnie lim-lim posé sur votre tête. La destination peut également être n'importe quel endroit du multivers. Nombreux sont ceux qui ont franchi un portail par accident et se sont retrouvés au beau milieu de la Guerre du Sang ou noyés dans les océans sans fin du Plan Élémentaire de l'Eau, sans aucun moyen de revenir en arrière.~
+@25 = ~La ville est dirigée par la Dame de la Douleur. Son règne est absolu. Il faut faire attention à ne pas provoquer son courroux. Vous n'y survivrez pas, même si vous êtes très fort. Si vous avez de la chance, elle vous enfermera dans l'un de ses plans de poche, sans possibilité de sortie. Sinon, vous pourriez découvrir une nouvelle façon de mourir. Ce serait déjà ça.~
+@26 = ~Je suis désolé de divaguer, mais vous ne pouvez vraiment comprendre la ville qu'en la découvrant par vous-même.~
+@27 = ~Eh, celui-là ? Il a acheté un artefact de première qualité. Comme neuf, sans aucun frais. Il est probablement en train de profiter des paysages et des merveilles de l'Ysgard en ce moment. Avec un peu de chance, il finira par trouver le chemin du retour.~
+@28 = ~Mais ne vous inquiétez pas trop à ce sujet. Aucune de mes marchandises ne vous tuera. Si vous gardez votre sang-froid, bien sûr.~
+@29 = ~Comme je l'ai déjà dit, ce sont des souvenirs collectés dans tous les coins des plans. Si je devais passer mon temps à identifier toutes ces choses, je mourrais de vieillesse avant d'avoir terminé.~
+@30 = ~Je peux vous assurer que tout est authentique et qu'il s'agit probablement d'une rareté sur ce plan.~
+@31 = ~J'ai tout ce qu'un aventurier comme vous peut désirer. Qu'il s'agisse d'un bijou qui vous rend invulnérable ou d'une arme qui réduit en cendres vos ennemis les plus mortels.~
+@32 = ~Oh, et de temps en temps, je réapprovisionne mon stock ; lorsque j'ai l'occasion de retournez chez moi. Je vous invite donc à revenir me voir de temps en temps.~
+@33 = ~Je vais rester ici un certain temps avant de repartir. Ma tournée sur la Côte de l'Épée me mènera probablement de Beregost au Carnaval de Nashkel, en passant par la Barbe d'Ulgoth, et vice-versa. Vous savez donc où me chercher si vous ne me trouvez pas ici.~
+@34 = ~Je vais rester ici un certain temps avant de repartir. Ma tournée à travers l'Amn me mènera probablement du quartier du marché d'Athkatla, en passant par Francmarché, Imnesvale, et retour. Vous savez donc où me chercher si vous ne me trouvez pas ici.~
+@35 = ~Dernièrement, je me suis procuré un curieux artefact auprès d'un sorcier gnome azimuté. D'après ses dires, il s'agit d'une arme mortelle. Mais il semble qu'elle soit cassée. Peut-être pourriez-vous m'aider à le réparer ?~
+@36 = ~Bien sûr. C'est une arme d'une conception que je n'ai jamais vue auparavant. Et croyez-moi, j'en ai déjà vu beaucoup dans ma vie. Le sorcier gnome m'a laissé des notes griffonnées qui sont censées être des instructions de réparation. Mais je n'y comprends rien.~
+@37 = ~Ce que je *peux* distinguer, ce sont les pièces détachées nécessaires à la réparation de l'appareil. Le cristal brisé doit être remplacé par une gemme beljuril de la plus haute qualité. De plus, un parchemin de protection contre les énergies magiques est nécessaire pour protéger le cristal de la surcharge. Les gribouillis mentionnent également un parchemin de désintégration, mais je ne vois pas à quoi il sert.~
+@38 = ~Si vous me fournissez ces objets, j'en reparlerai au gnome pour qu'il me dise comment réparer ce fichu engin. Êtes-vous à la hauteur de la tâche, <LADGAL> ?~
+@39 = ~C'est intriguant. Je ferai de mon mieux pour trouver ces éléments pour vous.~
+@40 = ~Non, ça ne m'intéresse pas.~
+@41 = ~Magnifique. Je vais continuer à étudier les notes. Je pourrai peut-être découvrir d'autres détails entre-temps.~
+@42 = ~Ce n'est pas grave. Ce serait une tâche considérable que de tout rassembler. Je vais quand même continuer à étudier les notes, au cas où vous changeriez d'avis.~
+@43 = ~Certainement. C'est une arme d'une conception que je n'ai jamais vue auparavant. Mais elle est cassée. D'après les gribouillis du gnome, elle peut être réparée avec une gemme beljuril et des parchemins de désintégration et de protection contre les énergies magiques. Si vous me les fournissez, j'en reparlerai au sorcier gnome pour qu'il me dise comment réparer cet engin.~
+@44 = ~Laissez-moi voir ça. Oui, le beljuril est très beau, pas vrai ? Et vous avez aussi les parchemins ? Très bien. Êtes-vous prêt à vous en séparer ?~~Laissez-moi voir ça. Oui, le beljuril est très beau, pas vrai ? Et vous avez aussi les parchemins ? Très bien. Êtes-vous prête à vous en séparer ?~
+@45 = ~Oui.~
+@46 = ~Pas encore. Peut-être plus tard.~
+@47 = ~Laissez-moi apporter ça au vieux gnome. Il saura mieux que moi ce qu'il faut en faire. Je suppose que la réparation de ce fichu engin va prendre un certain temps. Revenez demain.~
+@48 = ~Quand vous voudrez, <LADGAL>. Je serai là si vous changez d'avis.~
+@49 = ~Au fait, le sorcier gnome a fait l'impossible et a réparé ce drôle d'engin. Je l'ai ajouté à mon stock de marchandises si vous souhaitez l'acheter.~
+
+// Interjection: Jan
+@100 = ~Ce n'est pas de notre faute si les grandes personnes ne peuvent pas suivre le fil de nos pensées. À moins que le train ne soit qu'un tas d'engrenages en vrac, comme l'oncle Witherjar avait l'habitude de le dire. Mais ce n'est rien qu'on ne puisse résoudre avec un bon coup sur la tête.~
+
+// Interjection: Haer'Dalis
+@110 = ~Une tentative vaine face à l'entropie et à la décadence. Vos paroles et vos actes ne feront que retarder l'inévitable d'un minuscule laps de temps. Alors que vous devez travailler activement pour maintenir l'entropie à distance, nous pouvons simplement nous asseoir et regarder. Le temps est notre allié.~

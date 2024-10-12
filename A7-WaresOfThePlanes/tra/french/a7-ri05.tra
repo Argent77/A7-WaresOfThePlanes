@@ -1,0 +1,19 @@
+// Ring of the Traveler
+
+@0 = ~Anneau voyant~
+@1 = ~Anneau du voyageur~
+
+@10 = ~On dirait un anneau d'argent serti d'une grosse pierre précieuse. Peut-être s'agit-il d'une bague de fiançailles.
+
+PARAMETRES :
+
+Poids : 0~
+@11 = ~Ces anneaux sont très fréquents de par les plans. Faciles à fabriquer et très recherchés, ils sont généralement créés par les mages qui ont besoin d'argent. Cet anneau spécifique est doté d'un enchantement mineur protégeant son porteur.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Classe d'Armure : +1
+– Jets de sauvegarde : +1
+
+Poids : 0~

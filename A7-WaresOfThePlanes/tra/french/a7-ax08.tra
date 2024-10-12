@@ -1,0 +1,46 @@
+// Axe of the Jester
+
+@0 = ~Hache bigarrée~
+@1 = ~Hache du Bouffon +3~
+
+@10 = ~Cette hache étrange est peinte de manière si voyante et si mal équilibrée qu'il est impossible de l'utiliser au combat. Ses lames ont apparemment été sciemment émoussées afin que le porteur de l'arme ne risque de blesser personne. Nul doute qu'elle a été forgée pour une cérémonie bien particulière, ou comme ustensile pour un costume de bouffon.
+
+PARAMETRES :
+
+Dégâts : 1d8 (tranchant)
+Facteur de vitesse : 7
+Type de compétence : Hache
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 7~
+@11 = ~Le créateur de cette hache devait être un fou ou un génie. Seul un forgeron d'exception peut en effet avoir donné naissance à une arme faite de matière du chaos, l'élément le plus instable et le plus imprévisible qui soit.
+
+On raconte de nombreuses histoires sur cette hache dans tout le multivers. Elles expliquent comment les différents porteurs de l'arme sont venus à bout de créatures bien plus puissantes qu'eux en les touchant simplement de la hache, avant de mourir atrocement en accomplissant des tâches quotidiennes.
+
+Zaknar le Simple d'Esprit - A vaincu un dévoreur d'un seul coup de hache. Broyé par un rocher sur la vaste plaine de Tabor.
+
+Garkon le Juste - Terrassé par une étrange décharge d'énergie alors qu'il combattait un rat-crâne.
+
+Kannas - Marchand de profession. Enterré vif lorsque le pan de mur auquel la hache était fixée s'est effondré sur lui..
+
+Kvry Matterson  - Garçon de neuf ans qui, grâce à la hache, a réussi à repousser un vol de chauve-souris enflammées, et même à en tuer deux !
+
+La liste des exploits et tragédies associés à la hache n'a pas de fin.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– ???
+
+Capacités de combat :
+– ???
+
+TAC0 : +3
+Dégâts : 1d2 (tranchant)
+Facteur de vitesse : 3
+Type de compétence : Hache
+Type: arme à 1 main
+Nécessite : 10 en Force
+
+Poids : 2~
