@@ -17,11 +17,11 @@
 重量：2~
 
 //Misc.strings
-@20 = ~[Reducemax.HPby1]~
-@21 = ~[ReduceXPby10percent]~
-@22 = ~[Grant+1toall豁免检定s]~
-@23 = ~[Grant15percenttophysicaldamage]~
-@24 = ~[Shiftalignment]~
+@20 = ~[Reduce max. HP by 1]~
+@21 = ~[Reduce XP by 10 percent]~
+@22 = ~[Grant +1 to all Saving Throws]~
+@23 = ~[Grant 15 percent to physical damage]~
+@24 = ~[Shift alignment]~
 @25 = ~你的阵营已经改变。~[REPDOWN]
 @26 = ~杀害无辜者~
 @27 = ~杀害无辜者
