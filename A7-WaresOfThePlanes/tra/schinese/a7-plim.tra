@@ -20,9 +20,9 @@
 @31 = ~林林~
 
 //Creaturesoundslots（DONOTTRANSLATE!）
-@40 = ~[BattleCry1]~[a7-lim1]
-@41 = ~[BattleCry2]~[a7-lim2]
-@42 = ~[Death]~[a7-lim8]
+@40 = ~[Battle Cry 1]~ [a7-lim1]
+@41 = ~[Battle Cry 2]~ [a7-lim2]
+@42 = ~[Death]~ [a7-lim8]
 
 //林林dialoglines
 @100 = ~这是你的宠物林林。它注意到了你的关注，朝你“啾啾”地叫着。“皮优！”~
