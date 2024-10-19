@@ -35,7 +35,12 @@ LANGUAGE ~Francais (traduction : Deratiseur)~
          ~A7-WaresOfThePlanes/tra/french/setup.tra~
          ~A7-WaresOfThePlanes/tra/french/mod.tra~
 
-
+LANGUAGE ~Simplified Chinese~
+         ~schinese~
+         ~A7-WaresOfThePlanes/tra/schinese/prompts.tra~
+         ~A7-WaresOfThePlanes/tra/schinese/setup.tra~
+         ~A7-WaresOfThePlanes/tra/schinese/mod.tra~
+		 
 ////////////////////////////////////////////////
 // Wares of the Planes                        //
 ////////////////////////////////////////////////
