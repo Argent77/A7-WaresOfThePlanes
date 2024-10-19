@@ -121,6 +121,8 @@ Coding and testing: Argent77
 
 French translation: Deratiseur
 
+Simplified Chinese translation: MephistoSatanDevil
+
 
 Urheberrechtshinweise
 ~~~~~~~~~~~~~~~~~~~~~
@@ -140,6 +142,7 @@ Versionshistorie
 
 1.4
 - Added French translation (thanks Deratiseur)
+- Added Simplified Chinese translation (thanks MephistoSatanDevil)
 - Fixed missing strength bonus flag in Abigail +1
 - Rebalanced several weapons to fit better into the Baldur's Gate universe
 - Updated several item descriptions
