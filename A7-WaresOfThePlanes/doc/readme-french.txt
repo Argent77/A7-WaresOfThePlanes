@@ -105,6 +105,8 @@ Codage et tests : Argent77
 
 Traduction française : Deratiseur
 
+Traduction en chinois simplifié : MephistoSatanDevil
+
 
 Notes sur les droits d'auteur
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -123,6 +125,7 @@ historique des versions
 
 1.4
 - Ajout de la traduction française par Deratiseur.
+- Ajout de la traduction en chinois simplifié (merci à MephistoSatanDevil)
 - Correction du bonus de force manquant dans Abigail +1.
 - Rééquilibrage de plusieurs armes pour mieux les intégrer dans l'univers de Baldur's Gate.
 - Mise à jour de plusieurs descriptions d'objets.
