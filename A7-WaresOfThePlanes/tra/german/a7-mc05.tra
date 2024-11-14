@@ -20,7 +20,7 @@ Gewicht: 3~
 
 Das "Metall" ist überhaupt keines, sondern der Überrest des Unterarms eines Wesens, das von unten durch den Schädel eines Scheusals getrieben wurde, der nun den Kopf der Waffe schmückt. Die Stachel, die sich durch den Schädel gebohrt haben, scheinen so eine Art Federkiele aus dem Unterarm des Wesens zu sein.
 
-Wenn diese Waffe im Kampf eingesetzt wird, durchdringen die Stachel der Keule die Haut des Wesens, und aus den Federkielen rinnt Säure in das Opfer, und manchmal auch in den Träger der Waffe, wodurch zusätzlicher Schaden entsteht.
+Wenn diese Waffe im Kampf eingesetzt wird, durchdringen die Stachel der Keule die Haut des Wesens, und aus den Federkielen rinnt Säure entweder in das Opfer oder den Träger der Waffe, wodurch zusätzlicher Schaden entsteht.
 
 Der gebräuchliche Name für diese Waffe ist "Des Teufels Lohn". Auf wen oder welches Ereignis sich das bezieht, ist nicht bekannt, aber es muss offensichtlich eine schmerzvolle Erfahrung für beide Beteiligten gewesen sein.
 
@@ -31,11 +31,10 @@ Kann nur durch „Fluch brechen“ wieder abgenommen werden.
 RK-Bonus: -2 gg. Stichwaffen
 RK-Bonus: -2 gg. Geschosswaffen
 
-Bei jedem Treffer erleidet der Träger mit 50 % Wahrscheinlichkeit 1W6 Schadenspunkte durch Säure.
+Bei jedem Treffer erleidet entweder das Opfer oder der Träger 1W6 Schadenspunkte durch Säure.
 
 ETW0-Bonus: -2
 Schaden: 1W6 +2 (Wucht)
-Schadensbonus: +1W6 (Säure)
 Initiativefaktor: 4
 Fertigkeit: Keule
 Typ: 1-händig
