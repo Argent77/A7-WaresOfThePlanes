@@ -1013,8 +1013,8 @@ The "metal" is not metal at all, but the remnants of a creature's forearm that p
 base of the fiendish skull that now bedecks the head of this weapon. The spikes that have pierced 
 through the skull actually appear to be some sort of quills from the creature's forearm.
 
-When this weapon is used in combat and the spikes of the club penetrate a creature's skin, acid 
-oozes from the quills into the target, and sometimes also into the wielder, doing additional damage.
+When this weapon is used in combat and the spikes of the club penetrate a creature's skin, acid
+oozes from the quills either into the target or the wielder, doing additional damage.
 
 The common name of this weapon is "Devil's Due." To who or what event it refers to is unknown, but 
 it was obviously a painful experience for the two parties involved.
@@ -1026,10 +1026,10 @@ Equipped abilities:
 – May only be removed with a Remove Curse spell
 
 Combat abilities:
-– 50% chance to inflict 1d6 acid damage upon the wielder
+– Inflicts 1d6 acid damage either upon the target or the wielder
 
 THAC0: +2
-Damage: 1d6+2, +1d6 acid damage
+Damage: 1d6+2
 Damage type: Crushing
 Speed Factor: 4
 Proficiency Type: Club
