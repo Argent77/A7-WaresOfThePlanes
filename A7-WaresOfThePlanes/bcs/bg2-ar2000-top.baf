@@ -21,7 +21,7 @@ IF
   !GlobalTimerNotExpired("A7-TravelTrademeetTimer","GLOBAL")
   Global("A7-TourTrademeet","AR2000",0)  // indicates the next destination (0=Imnesvale, 1=Athkatla)
 THEN
-  RESPONSE #100
+  RESPONSE #75
     SetGlobal("A7-TourTrademeet","AR2000",1)
     SetGlobalTimer("A7-TravelTimeOut","GLOBAL",ONE_DAY)
     SetGlobalTimer("A7-TravelTimeOutForced","GLOBAL",TWO_DAYS)
@@ -31,6 +31,12 @@ THEN
     MoveGlobal("AR2000","a7-merc",[2060.920])
     ActionOverride("a7-merc",Face(SW))
     Continue()
+  RESPONSE #25
+    SetGlobal("A7-TourTrademeet","AR2000",1)
+    SetGlobalTimer("A7-TravelImnesvaleTimer","GLOBAL",TWO_DAYS)
+    SetGlobalTimer("A7-TravelTrademeetTimer","GLOBAL",FOUR_DAYS)
+    SetGlobalTimer("A7-TravelAthkatlaTimer","GLOBAL",SIX_DAYS)
+    Continue()
 END
 
 IF
@@ -39,10 +45,10 @@ IF
   GlobalLT("Chapter","GLOBAL",%bg2_chapter_8%)
   Global("A7-InitMerchant","GLOBAL",1)
   !GlobalTimerNotExpired("A7-TravelTrademeetTimer","GLOBAL")
-  Global("A7-TourTrademeet","AR2000",0)  // indicates the next destination (0=Imnesvale, 1=Athkatla)
+  !Global("A7-TourTrademeet","AR2000",0)  // indicates the next destination (0=Imnesvale, 1=Athkatla)
 THEN
-  RESPONSE #100
-    SetGlobal("A7-TourTrademeet","AR2000",1)
+  RESPONSE #75
+    SetGlobal("A7-TourTrademeet","AR2000",0)
     SetGlobalTimer("A7-TravelTimeOut","GLOBAL",ONE_DAY)
     SetGlobalTimer("A7-TravelTimeOutForced","GLOBAL",TWO_DAYS)
     SetGlobalTimer("A7-TravelAthkatlaTimer","GLOBAL",TWO_DAYS)
@@ -50,5 +56,11 @@ THEN
     SetGlobalTimer("A7-TravelImnesvaleTimer","GLOBAL",SIX_DAYS)
     MoveGlobal("AR2000","a7-merc",[2060.920])
     ActionOverride("a7-merc",Face(SW))
+    Continue()
+  RESPONSE #25
+    SetGlobal("A7-TourTrademeet","AR2000",0)
+    SetGlobalTimer("A7-TravelAthkatlaTimer","GLOBAL",TWO_DAYS)
+    SetGlobalTimer("A7-TravelTrademeetTimer","GLOBAL",FOUR_DAYS)
+    SetGlobalTimer("A7-TravelImnesvaleTimer","GLOBAL",SIX_DAYS)
     Continue()
 END

@@ -1,9 +1,9 @@
 // *** These blocks should come late in the script ***
 
-// SoD: Merchant leaves Coalition Camp after everyone moved on to Castle Dragonspear
+// SoD: Merchant leaves Coalition Camp when the battle begins
 IF
   Global("BD_HAVE_SOD","GLOBAL",1)
-  GlobalGT("Chapter","GLOBAL",10)
+  GlobalGT("bd_plot","global",394)
   AreaCheck("BD3000") // Coalition Camp
 THEN
   RESPONSE #100

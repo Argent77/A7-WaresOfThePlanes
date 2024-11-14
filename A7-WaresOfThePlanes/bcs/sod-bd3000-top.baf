@@ -26,3 +26,16 @@ THEN
     ActionOverride("a7-merc",Face(W))
     Continue()
 END
+
+// Merchant leaves
+IF
+  Global("A7-InitMerchant","GLOBAL",1)
+  Global("A7-TravelCoalitionCamp","BD3000",1)
+  GlobalGT("bd_plot","global",394)
+  InMyArea("a7-merc")
+THEN
+  RESPONSE #100
+    SetGlobal("A7-TravelCoalitionCamp","BD3000",2)
+    ActionOverride("a7-merc",DestroySelf())
+    Continue()
+END

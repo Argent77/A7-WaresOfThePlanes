@@ -14,6 +14,5 @@ THEN
   RESPONSE #100
     SetGlobal("A7-StoreItem-%sto_item_resref%-%sto_upgrade_stage%","GLOBAL",1)
     AddStoreItem("a7-merc","%sto_item_resref%",%sto_item_count%,0)
-    // DisplayString(Myself,~DEBUG: Adding item to store: %sto_item_resref%~)
     Continue()
 END

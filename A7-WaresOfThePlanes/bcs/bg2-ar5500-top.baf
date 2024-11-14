@@ -50,7 +50,6 @@ THEN
     MoveGlobal("AR5500","a7-merc",[2765.1500])
     ActionOverride("a7-merc",Face(W))
     AddStoreItem("a7-merc","a7-phazr",%sto_item_count%,0)
-    // DisplayString("a7-merc",~DEBUG: Adding item to store: a7-phazr~)
     Continue()
 END
 

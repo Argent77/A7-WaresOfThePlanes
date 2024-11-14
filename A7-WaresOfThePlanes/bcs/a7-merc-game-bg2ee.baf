@@ -11,7 +11,6 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7-Campaign","GLOBAL",3)
-    // DisplayString(Myself,~DEBUG: Campaign=3~)
     Continue()
 END
 
@@ -22,6 +21,5 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7-Campaign","GLOBAL",4)
-    // DisplayString(Myself,~DEBUG: Campaign=4~)
     Continue()
 END

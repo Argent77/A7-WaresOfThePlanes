@@ -20,7 +20,7 @@ IF
   Global("A7-InitMerchant","GLOBAL",1)
   !GlobalTimerNotExpired("A7-TravelImnesvaleTimer","GLOBAL")
 THEN
-  RESPONSE #100
+  RESPONSE #75
     SetGlobalTimer("A7-TravelTimeOut","GLOBAL",ONE_DAY)
     SetGlobalTimer("A7-TravelTimeOutForced","GLOBAL",TWO_DAYS)
     SetGlobalTimer("A7-TravelTrademeetTimer","GLOBAL",TWO_DAYS)
@@ -28,5 +28,10 @@ THEN
     SetGlobalTimer("A7-TravelImnesvaleTimer","GLOBAL",EIGHT_DAYS)
     MoveGlobal("AR1100","a7-merc",[3530.2940])
     ActionOverride("a7-merc",Face(SE))
+    Continue()
+  RESPONSE #25
+    SetGlobalTimer("A7-TravelTrademeetTimer","GLOBAL",TWO_DAYS)
+    SetGlobalTimer("A7-TravelAthkatlaTimer","GLOBAL",FOUR_DAYS)
+    SetGlobalTimer("A7-TravelImnesvaleTimer","GLOBAL",EIGHT_DAYS)
     Continue()
 END
