@@ -1,0 +1,29 @@
+// Holy Wrath of Amaunator
+
+@0 = ~Ornate Flask~
+@1 = ~Holy Wrath of Amaunator~
+
+@10 = ~This is an ornately decorated flask containing some kind of liquid.
+
+STATISTICS:
+
+Weight: 1~
+@11 = ~This flask contains holy water blessed by Amaunator himself. It is said that the relic was so powerful that a single drop could eradicate even powerful liches. With the decline of Amaunator's influence in Faerûn this relic lost most of its power over time and became only a shadow of its former self.
+
+The relic was originally safeguarded in the ancient Netherese city of Synod, but was lost in the tumultuous aftermath of Karsus' Folly. Many centuries later a group of adventurers discovered the ruins of an ancient temple dedicated to Amaunator where they plundered many artifacts and relics, including the Holy Ward.
+
+The renewed blessing of Amaunator restored a small measure of its former potency and fuelled the relic with His holy wrath.
+
+STATISTICS:
+
+Charge abilities:
+– Turn Undead
+  Special: Everyone may turn targets at their class level.
+  Range: 30 ft.
+  Area of Effect: 90-degree arc
+  Duration: Special
+
+Weight: 1~
+
+@20 = ~[Increment turn undead level by 2]~
+@21 = ~Undead~

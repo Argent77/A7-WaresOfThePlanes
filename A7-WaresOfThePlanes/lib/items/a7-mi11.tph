@@ -1,0 +1,147 @@
+// Items: Holy Ward of Amaunator, Holy Wrath of Amaunator
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-mi11~
+OUTER_SPRINT itm_resref_upgr ~a7-mi12~
+
+// Installing items
+ACTION_FOR_EACH resref IN ~%itm_resref%~ ~%itm_resref_upgr%~ BEGIN
+  COPY ~%MOD_FOLDER%/itm/%resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref = EVAL ~%resref%~
+      RET
+        icon_resref
+        desc_image_resref
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref = EVAL ~%resref%~
+    icon_resref
+    desc_image_resref
+  END
+END
+
+// Installing additional resources
+
+// Installing SPLPROT.2DA entries for Turn Undead levels: one entry for every two class levels up to level 50
+<<<<<<<< .../inlined/A7-WaresOfThePlanes/a7-mi11/splprot-append-level.2da
+%row%_%stat%>=%level%  %stat_val%  %level%  4
+>>>>>>>>
+<<<<<<<< .../inlined/A7-WaresOfThePlanes/a7-mi11/splprot-append-entries.2da
+%row%_ENTRIES=(%index1%||%index2%)  0x103  %index1%  %index2%
+>>>>>>>>
+COPY_EXISTING ~splprot.2da~ ~override~
+  COUNT_2DA_ROWS 4 num_rows
+  SET row = num_rows
+  SET splprot = 0
+  FOR (index = 0; index < 25; ++index) BEGIN
+    SET level = (index * 2) + 1
+
+    // xx_LEVEL>=n  34  n  4
+    SPRINT stat ~LEVEL~
+    SET stat_val = 34
+    APPEND_FILE_EVALUATE TEXT ~.../inlined/A7-WaresOfThePlanes/a7-mi11/splprot-append-level.2da~
+    SET row += 1
+
+    // xy_LEVEL2>=n  68  n  4
+    SPRINT stat ~LEVEL2~
+    SET stat_val = 68
+    APPEND_FILE_EVALUATE TEXT ~.../inlined/A7-WaresOfThePlanes/a7-mi11/splprot-append-level.2da~
+    SET row += 1
+
+    // xz_LEVEL3>=n  69  n  4
+    SPRINT stat ~LEVEL3~
+    SET stat_val = 69
+    APPEND_FILE_EVALUATE TEXT ~.../inlined/A7-WaresOfThePlanes/a7-mi11/splprot-append-level.2da~
+    SET row += 1
+
+    // yy_ENTRIES=(xx||xy)  0x103  xx  xy
+    SET index1 = row - 3
+    SET index2 = row - 2
+    APPEND_FILE_EVALUATE TEXT ~.../inlined/A7-WaresOfThePlanes/a7-mi11/splprot-append-entries.2da~
+    SET row += 1
+
+    // zz_ENTRIES=(xz||yy)  0x103  xz  yy
+    SET index1 = row - 2
+    SET index2 = row - 1
+    APPEND_FILE_EVALUATE TEXT ~.../inlined/A7-WaresOfThePlanes/a7-mi11/splprot-append-entries.2da~
+    // Relevant splprot.2da indices for each class level are stored in the array $splprot
+    SET $splprot(~%splprot%~) = row
+    SET splprot += 1
+    SET row += 1
+  END
+  PRETTY_PRINT_2DA
+
+COPY ~%MOD_FOLDER%/bam/a7-hwspr.bam~ ~override~
+     ~%MOD_FOLDER%/wav/a7-hwspr.wav~ ~override~
+
+ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-hwtr.pro~ ~Holy_Water_Sprinkles~
+OUTER_SET pro_id = "%a7-hwtr%"
+
+ACTION_FOR_EACH resref IN ~%itm_resref%~ ~%itm_resref_upgr%~ BEGIN
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    COPY ~%MOD_FOLDER%/spl/%resref%a.spl~ ~override~
+         ~%MOD_FOLDER%/spl/%resref%b.spl~ ~override~
+      SAY NAME1 @20 // [Increment turn undeal level by X]
+
+    COPY_EXISTING ~%resref%.itm~ ~override~
+      // updating usability information
+      LPF ALTER_ITEM_EFFECT
+        INT_VAR
+          check_globals = 1
+          match_opcode  = 319                   // Restrict item
+          special       = RESOLVE_STR_REF(@21)  // Undead
+      END
+
+      // updating projectile
+      LPF ALTER_ITEM_HEADER INT_VAR projectile = pro_id END
+
+      // setting caster's turn undead level
+      FOR (i = splprot - 1; i >= 0; --i) BEGIN
+        PATCH_IF (VARIABLE_IS_SET $splprot(~%i%~)) BEGIN
+          SET splprot_idx = $splprot(~%i%~)
+          LPF ADD_SPELL_EFFECT
+            INT_VAR
+              opcode        = 326   // Apply effects list
+              target        = 1     // Self
+              timing        = 1     // Instant/Permanent until death
+              parameter2    = splprot_idx
+              insert_point  = 0
+            STR_VAR
+              resource      = EVAL ~%resref%a~
+          END
+        END
+      END
+      // Paladin special
+      LPF ADD_SPELL_EFFECT
+        INT_VAR
+          opcode        = 326   // Apply effects list
+          target        = 1     // Self
+          timing        = 1     // Instant/Permanent until death
+          parameter2    = 39    // CLASS = PALADIN
+          insert_point  = 0
+        STR_VAR
+          resource      = EVAL ~%resref%b~
+      END
+
+    BUT_ONLY
+  END
+END
+
+// Item upgrade
+ACTION_IF (has_bg2) BEGIN
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    ADD_JOURNAL @300 @301 @302 @303 @350
+    COMPILE ~%MOD_FOLDER%/dlg/%itm_resref%.d~
+    EXTEND_BOTTOM ~cleanse.bcs~ ~%MOD_FOLDER%/bcs/%itm_resref%.baf~
+
+    COPY_EXISTING ~spholy.vvc~ ~override/a7-mi11x.vvc~
+      WRITE_LONG 0x20 (THIS | BIT6) // Not covered by wall
+  END
+END
