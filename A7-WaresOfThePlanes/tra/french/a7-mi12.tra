@@ -1,0 +1,29 @@
+// Sainte Colère d'Amaunator
+
+@0 = ~Flacon ornementé~
+@1 = ~Sainte Colère d'Amaunator~
+
+@10 = ~C'est un flacon ornementé contenant une sorte de liquide.
+
+STATISTIQUES :
+
+Poids : 1~
+@11 = ~Ce flacon contient de l'eau bénite par Amaunator lui-même. On dit que la relique était si puissante qu'une seule goutte pouvait éradiquer les liches les plus puissantes. Avec le déclin de l'influence d'Amaunator à Féerune, cette relique a perdu la majeure partie de son pouvoir au fil du temps et n'est plus que l'ombre d'elle-même.
+
+La relique était à l'origine conservée dans l'ancienne cité néthésienne de Synod, mais elle fut perdue dans les conséquences tumultueuses de la Folie de Karsus. Plusieurs siècles plus tard, un groupe d'aventuriers découvrit les ruines d'un ancien temple dédié à Amaunator, où ils pillèrent de nombreux artefacts et reliques, dont la Sainte Colère.
+
+La bénédiction renouvelée d'Amaunator restaura une petite partie de son ancienne puissance et alimenta la relique avec sa sainte colère.
+
+STATISTIQUES :
+
+Capacités de charge :
+- Renvoi des mort-vivants
+  Spécial : Chacun peut renvoyer les mort-vivants à son niveau de classe.
+  Portée : 10 m.
+  Zone d'effet : arc de 90 degrés
+  Durée : Spéciale
+
+Poids : 1~
+
+@20 = ~[Augmente de 2 le niveau de renvoi des mort-vivants]~
+@21 = ~Mort-vivant~

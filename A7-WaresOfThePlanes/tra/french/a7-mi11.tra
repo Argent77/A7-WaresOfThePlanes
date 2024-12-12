@@ -1,0 +1,66 @@
+// Sainte Garde d'Amaunator
+
+@0 = ~Flacon ornementé~
+@1 = ~Sainte Garde d'Amaunator~
+
+@10 = ~C'est un flacon ornementé contenant une sorte de liquide.
+
+STATISTIQUES :
+
+Poids : 1~
+@11 = ~Ce flacon contient de l'eau bénite par Amaunator lui-même. On dit que la relique était si puissante qu'une seule goutte pouvait éradiquer les liches les plus puissantes. Avec le déclin de l'influence d'Amaunator à Féerune, cette relique a perdu la majeure partie de son pouvoir au fil du temps et n'est plus que l'ombre d'elle-même.
+
+La relique était à l'origine conservée dans l'ancienne cité néthésienne de Synod, mais elle fut perdue dans les conséquences tumultueuses de la Folie de Karsus. Plusieurs siècles plus tard, un groupe d'aventuriers découvrit les ruines d'un ancien temple dédié à Amaunator, où ils pillèrent de nombreux artefacts et reliques, dont la Sainte Garde.
+
+STATISTIQUES :
+
+Charge abilities:
+– Renvoi des mort-vivants
+  Spécial : Les prêtres renvoyer les mort-vivants à leur niveau de classe. Les paladins peuventrenvoyer les mort-vivants avec un bonus de +1 à leur niveau actuel. Tous les autres peuvent renvoyer les mort-vivants à la moitié de leur niveau de classe.
+  Portée : 10 m.
+  Zone d'effet : arc de 90 degrés
+  Durée : Spéciale
+
+Poids : 1~
+
+@20 = ~[Augmente de 1 le niveau de renvoi des mort-vivants]~
+@21 = ~Mort-vivant~
+
+
+// Dialog lines
+// Cromwell
+@200 = ~Eh ? Vous avez mis la main sur une relique d'un Amaunator oublié depuis longtemps ? On dirait qu'il a perdu beaucoup de sa puissance au fil du temps.~
+@201 = ~Mais cela ne relève pas de mon domaine de compétence. Vous pourriez demander à l'un des Lathandriens du quartier du Temple de vous renseigner à ce sujet.~
+@202 = ~Bon, voyons ce que vous avez d'autre.~
+
+// Dawnmaster Kreel
+@210 = ~J'ai un artefact d'Amaunator en ma possession. Pouvez-vous faire quelque chose pour le rendre plus puissant ?~
+@211 = ~C'est une ancienne relique pour combattre les morts-vivants. Vous êtes des aventuriers courageux pour oser combattre les ennemis les plus détestés de Lathandre. Malheureusement, beaucoup de connaissances ont été perdues lorsque les temples d'Amaunator ont été abandonnés ou repris par ses ennemis.~
+@212 = ~C'est une ancienne relique pour combattre les morts-vivants. Vous êtes un aventurier courageux pour oser combattre les ennemis les plus détestés de Lathandre. Malheureusement, beaucoup de connaissances ont été perdues lorsque les temples d'Amaunator ont été abandonnés ou repris par ses ennemis.~~C'est une ancienne relique pour combattre les morts-vivants. Vous êtes une aventurière courageuse pour oser combattre les ennemis les plus détestés de Lathandre. Malheureusement, beaucoup de connaissances ont été perdues lorsque les temples d'Amaunator ont été abandonnés ou repris par ses ennemis.~
+@213 = ~Je ne peux que vous conseiller de vous rendre vous-même sur l'un de ces sites. Des rumeurs font état d'un temple abandonné d'Amaunator quelque part dans les collines d'Umar. Vous pourrez peut-être trouver plus d'indices à ce sujet dans le village d'Imnesvale.~
+
+// Statues in abandoned temple
+@220 = ~La statue d'Amaunator a été profanée. Elle doit être restaurée avant que vous puissiez demander la bénédiction d'Amaunator.~
+@221 = ~La statue d'Amaunator a été restaurée une fois de plus. Présentez le symbole d'Amaunator et vos offrandes pour recevoir ses dons.~
+
+
+// Journal entries
+@300 = ~La bénédiction d'Amaunator
+
+Cromwell m'a dit que les prêtres de Lathandre, dans le quartier des temples d'Athkatla, savaient peut-être comment améliorer la Sainte Garde d'Amaunator.~
+
+@301 = ~La bénédiction d'Amaunator
+
+Malheureusement, l'Aubemestre Kreel n'a pas pu m'aider pour la Sainte Garde d'Amaunator. Il m'a suggéré de visiter d'anciens temples dédiés à Amaunator pour trouver des indices. Les habitants d'Imnesvale, dans les collines d'Umar, connaissent peut-être l'emplacement d'un de ces temples.~
+
+@302 = ~La bénédiction d'Amaunator
+
+J'ai découvert une statue dédiée à Amaunator dans les ruines d'un temple abandonné, mais elle a été profanée. Je dois trouver un moyen de détruire le mal qui corrompt ce temple avant de pouvoir réessayer.~
+
+@303 = ~La bénédiction d'Amaunator
+
+Une statue dans le Temple d'Amaunator m'a informé qu'en détruisant le mal dans les ruines du temple, la Statue d'Amaunator a été restaurée. Je pourrais l'utiliser avec le Symbole d'Amaunator pour rendre l'artefact Sainte Garde plus puissante contre les morts-vivants.~
+
+@350 = ~La bénédiction d'Amaunator
+
+Amaunator a entendu mon appel à l'aide. Il a béni la Sainte Garde et l'a dotée de sa Sainte Colère. Elle devrait maintenant être une arme puissante contre toutes sortes de morts-vivants.~
