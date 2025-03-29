@@ -19,7 +19,7 @@ IF
   !GlobalTimerNotExpired("A7-TravelBeregostTimer","GLOBAL")
   Global("A7-TourBeregost","%bg1_are_prefix%3300",0)  // indicates the next destination (0=Nashkel Carnival, 1=Ulgoth's Beard)
 THEN
-  RESPONSE #100
+  RESPONSE #75
     SetGlobal("A7-TourBeregost","%bg1_are_prefix%3300",1)
     SetGlobalTimer("A7-TravelTimeOut","GLOBAL",ONE_DAY)
     SetGlobalTimer("A7-TravelTimeOutForced","GLOBAL",TWO_DAYS)
@@ -29,6 +29,12 @@ THEN
     MoveGlobal("%bg1_are_prefix%3300","a7-merc",[1440.2900])
     ActionOverride("a7-merc",Face(SE))
     Continue()
+  RESPONSE #25
+    SetGlobal("A7-TourBeregost","%bg1_are_prefix%3300",1)
+    SetGlobalTimer("A7-TravelNashkelTimer","GLOBAL",TWO_DAYS)
+    SetGlobalTimer("A7-TravelBeregostTimer","GLOBAL",FOUR_DAYS)
+    SetGlobalTimer("A7-TravelUBeardTimer","GLOBAL",SIX_DAYS)
+    Continue()
 END
 
 IF
@@ -37,7 +43,7 @@ IF
   !GlobalTimerNotExpired("A7-TravelBeregostTimer","GLOBAL")
   !Global("A7-TourBeregost","%bg1_are_prefix%3300",0) // indicates the next destination (0=Nashkel Carnival, 1=Ulgoth's Beard)
 THEN
-  RESPONSE #100
+  RESPONSE #75
     SetGlobal("A7-TourBeregost","%bg1_are_prefix%3300",0)
     SetGlobalTimer("A7-TravelTimeOut","GLOBAL",ONE_DAY)
     SetGlobalTimer("A7-TravelTimeOutForced","GLOBAL",TWO_DAYS)
@@ -46,5 +52,11 @@ THEN
     SetGlobalTimer("A7-TravelNashkelTimer","GLOBAL",SIX_DAYS)
     MoveGlobal("%bg1_are_prefix%3300","a7-merc",[1440.2900])
     ActionOverride("a7-merc",Face(SE))
+    Continue()
+  RESPONSE #25
+    SetGlobal("A7-TourBeregost","%bg1_are_prefix%3300",0)
+    SetGlobalTimer("A7-TravelUBeardTimer","GLOBAL",TWO_DAYS)
+    SetGlobalTimer("A7-TravelBeregostTimer","GLOBAL",FOUR_DAYS)
+    SetGlobalTimer("A7-TravelNashkelTimer","GLOBAL",SIX_DAYS)
     Continue()
 END

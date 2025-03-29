@@ -18,7 +18,7 @@ IF
   GlobalLT("Chapter","GLOBAL",8)
   !GlobalTimerNotExpired("A7-TravelUBeardTimer","GLOBAL")
 THEN
-  RESPONSE #100
+  RESPONSE #75
     SetGlobalTimer("A7-TravelTimeOut","GLOBAL",ONE_DAY)
     SetGlobalTimer("A7-TravelTimeOutForced","GLOBAL",TWO_DAYS)
     SetGlobalTimer("A7-TravelBeregostTimer","GLOBAL",TWO_DAYS)
@@ -26,5 +26,10 @@ THEN
     SetGlobalTimer("A7-TravelUBeardTimer","GLOBAL",EIGHT_DAYS)
     MoveGlobal("%bg1_are_prefix%1000","a7-merc",[2185.520])
     ActionOverride("a7-merc",Face(S))
+    Continue()
+  RESPONSE #25
+    SetGlobalTimer("A7-TravelBeregostTimer","GLOBAL",TWO_DAYS)
+    SetGlobalTimer("A7-TravelNashkelTimer","GLOBAL",FOUR_DAYS)
+    SetGlobalTimer("A7-TravelUBeardTimer","GLOBAL",EIGHT_DAYS)
     Continue()
 END

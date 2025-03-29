@@ -2,7 +2,7 @@
 [![Github downloads (all releases)](https://img.shields.io/github/downloads/Argent77/A7-WaresOfThePlanes/total.svg?color=gold)](https://github.com/Argent77/A7-WaresOfThePlanes/releases)
 [![Platform](https://img.shields.io/static/v1?label=platform&message=Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Project%20Infinity&color=informational)](https://github.com/Argent77/A7-WaresOfThePlanes/releases/latest)
 [![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BG%3AEE%20%7C%20SoD%20%7C%20BG2%3AEE%20%7C%20EET&color=indigo)](https://github.com/Argent77/A7-WaresOfThePlanes)
-[![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20German&color=limegreen)](https://github.com/Argent77/A7-WaresOfThePlanes)
+[![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Simplified%20Chinese&color=limegreen)](https://github.com/Argent77/A7-WaresOfThePlanes)
 
 # Wares of the Planes
 *A mod for BG:EE, SoD, BG2:EE and EET that imports a large number of items from the Planescape universe to the Baldur's Gate series and makes them available by a unique merchant.*

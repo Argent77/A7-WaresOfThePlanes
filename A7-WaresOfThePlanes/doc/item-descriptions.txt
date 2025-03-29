@@ -1013,8 +1013,8 @@ The "metal" is not metal at all, but the remnants of a creature's forearm that p
 base of the fiendish skull that now bedecks the head of this weapon. The spikes that have pierced 
 through the skull actually appear to be some sort of quills from the creature's forearm.
 
-When this weapon is used in combat and the spikes of the club penetrate a creature's skin, acid 
-oozes from the quills into the target, and sometimes also into the wielder, doing additional damage.
+When this weapon is used in combat and the spikes of the club penetrate a creature's skin, acid
+oozes from the quills either into the target or the wielder, doing additional damage.
 
 The common name of this weapon is "Devil's Due." To who or what event it refers to is unknown, but 
 it was obviously a painful experience for the two parties involved.
@@ -1026,10 +1026,10 @@ Equipped abilities:
 – May only be removed with a Remove Curse spell
 
 Combat abilities:
-– 50% chance to inflict 1d6 acid damage upon the wielder
+– Inflicts 1d6 acid damage either upon the target or the wielder
 
 THAC0: +2
-Damage: 1d6+2, +1d6 acid damage
+Damage: 1d6+2
 Damage type: Crushing
 Speed Factor: 4
 Proficiency Type: Club
@@ -2010,6 +2010,32 @@ STATISTICS:
 Constitution: Raised by 1 point permanently
 
 Weight: 0
+
+16.11. Holy Ward of Amaunator (available: SoD chapter 8 or later)
+This flask contains holy water blessed by Amaunator himself. It is said that the relic was so
+powerful that a single drop could eradicate even powerful liches. With the decline of Amaunator's
+influence in Faerûn this relic lost most of its power over time and became only a shadow of its
+former self.
+
+The relic was originally safeguarded in the ancient Netherese city of Synod, but was lost in the
+tumultuous aftermath of Karsus' Folly. Many centuries later a group of adventurers discovered the
+ruins of an ancient temple dedicated to Amaunator where they plundered many artifacts and relics,
+including the Holy Ward.
+
+STATISTICS:
+
+Charge abilities:
+– Turn Undead
+  Special: Priests may turn targets at their class level. Paladins may turn targets with a +1 bonus
+           to their current level. Everyone else may turn targets at half of their class level.
+  Range: 30 ft.
+  Area of Effect: 90-degree arc
+  Duration: Special
+
+Weight: 1
+
+16.12. Holy Wrath of Amaunator
+A small quest in BG2:SoA allows you to enhance the potency of the Holy Ward of Amaunator.
 
 
 17. Spell scrolls

@@ -1,7 +1,7 @@
 Marchandises venues des plans (pour BG:EE, SoD, BG2:EE et EET)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:    1.3
+Version:    1.4
 Author:     Argent77
 
 Download:   https://github.com/Argent77/A7-WaresOfThePlanes/releases/latest
@@ -105,6 +105,8 @@ Codage et tests : Argent77
 
 Traduction française : Deratiseur
 
+Traduction en chinois simplifié : MephistoSatanDevil
+
 
 Notes sur les droits d'auteur
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -123,9 +125,13 @@ historique des versions
 
 1.4
 - Ajout de la traduction française par Deratiseur.
-- Correction du bonus de force manquant dans Abigail +1.
+- Ajout de la traduction en chinois simplifié (merci à MephistoSatanDevil)
+- Added new items: Holy Ward of Amaunator and Holy Wrath of Amaunator
 - Rééquilibrage de plusieurs armes pour mieux les intégrer dans l'univers de Baldur's Gate.
+- Improved hit effects of Devil's Due +2
+- Correction du bonus de force manquant dans Abigail +1.
 - Mise à jour de plusieurs descriptions d'objets.
+- Improved Ebb's travel routes
 
 1.3
 - Ajout de nouveaux objets à vendre : Grimoire de la Pensée Pestilentielle, Manteau de noirceur,

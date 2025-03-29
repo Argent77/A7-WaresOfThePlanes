@@ -1,0 +1,65 @@
+// Holy Ward of Amaunator
+
+@0 = ~Verzierte Flasche~
+@1 = ~Amaunators Heilige Abwehr~
+
+@10 = ~Dies ist eine kunstvoll verzierte Flasche, die eine Flüssigkeit enthält.
+
+EIGENSCHAFTEN:
+
+Gewicht: 1~
+@11 = ~Diese Flasche beinhaltet Weihwasser, das von der Gottheit Amaunator selbst gesegnet wurde. Man sagt, dass diese Reliquie einst so mächtig war, dass ein Tropfen davon genügte, um selbst mächtige Leichname auslöschen zu können. Mit dem Niedergang Amaunators als Gottheit in Faerûn, verlor auch diese Reliquie im Laufe der Zeit einen Großteil ihrer Macht und ist inzwischen nur noch ein Schatten ihrer selbst.
+
+Die Reliquie wurde ursprünglich in der Stadt Synod des alten Nesseril aufbewahrt, verschwand aber inmitten der stürmischen Nachwirkungen von Karsus' Torheit. Viele Jahrhunderte später entdeckte eine Gruppe Abenteurer die Ruinen eines alten Tempels, der Amaunator geweiht war, und plünderte ihre Schätze und Artefakte, was auch Amaunators Heilige Abwehr beinhaltete.
+
+EIGENSCHAFTEN:
+
+Untote bannen:
+Reichweite: 9 m
+Bereich: Kegel von 90°
+Dauer: Speziell
+Priester bannen Untote mit ihrer aktuellen Bannstufe. Paladine bannen Untote mit einem +1 Bonus auf ihre aktuelle Bannstufe. Alle anderen Klassen bannen Untote mit halber Charakterstufe.
+
+Gewicht: 1~
+
+@20 = ~[Untote bannen Stufe um 1 erhöhen]~
+@21 = ~Untote~
+
+
+// Dialog lines
+// Cromwell
+@200 = ~Hm? Ihr seid wohl in den Besitz einer Reliquie der längst vergangenen Gottheit Amaunator gekommen? Sie scheint aber schon bessere Tage gesehen zu haben. Die Verzauberung ist fast vollständig verblasst.~
+@201 = ~So ein Problemfall liegt aber außerhalb meiner Zuständigkeit. Ihr könntet Euch ja mal an die Lathanderpriester im Tempelbezirk wenden.~
+@202 = ~Ich werde weiter nachschauen, mal sehen, hmmmm ...~
+
+// Dawnmaster Kreel
+@210 = ~Ich habe da ein Artefakt von Amaunator bei mir. Könnt Ihr etwas tun, um seine Verzauberungen zu verstärken?~
+@211 = ~Das ist eine antike Reliquie, um Untote zu bekämpfen. Ihr seid wahrhaftig mutige Abenteurer, wenn Ihr die Erzfeinde Lathanders bekämpfen wollt. Leider ging viel Wissen verloren, als die Tempel von Amaunator verlassen oder von seinen Gegnern erobert wurden.~
+@212 = ~Das ist eine antike Reliquie, um Untote zu bekämpfen. Ihr seid wahrhaftig ein mutiger Abenteurer, wenn Ihr die Erzfeinde Lathanders bekämpfen wollt. Leider ging viel Wissen verloren, als die Tempel von Amaunator verlassen oder von seinen Gegnern erobert wurden.~
+@213 = ~Ich kann Euch nur raten, selbst zu einem seiner Tempel zu pilgern. Gerüchteweise habe ich gehört, dass es irgendwo in den Umarhügeln noch einen solchen Tempel geben soll. Ihr könnt möglicherweise mehr darüber in Imnestal herausfinden.~
+
+// Statues in abandoned temple
+@220 = ~Die Statue des Amaunator wurde entweiht. Sie muss erst wieder eingeweiht werden, bevor Ihr um Amaunators Segen bitten könnt.~
+@221 = ~Die Statue des Amaunator wurde einmal mehr wiederhergestellt. Bietet Eure Opfer und das Symbol Amaunators dar, um seine Gaben zu empfangen.~
+
+
+// Journal entries
+@300 = ~Amaunators Segen
+
+Cromwell sagte mir, dass vielleicht die Priester von Lathander in Athkatlas Tempelbezirk wissen, wie man Amaunators Heilige Abwehr verbessern kann.~
+
+@301 = ~Amaunators Segen
+
+Leider konnte mir Morgenmeister Kreel mit Amaunators Heiliger Abwehr nicht wirklich weiterhelfen. Er schlug vor, in alten Tempeln von Amaunator nach Hinweisen zu suchen. Die Bewohner Imnestals könnten mir vielleicht den Weg zu einen der Tempel in den Umarhügeln weisen.~
+
+@302 = ~Amaunators Segen
+
+In einer verlassenen Tempelruine habe ich eine Statue entdeckt, die dem Gott Amaunator geweiht ist. Allerdings wurde sie durch dunkle Mächte entweiht, die diese Ruine übernommen haben. Ich muss zuerst eine Möglichkeit finden, diese Mächte zu vernichten, bevor ich um den Segen Amaunators bitten kann.~
+
+@303 = ~Amaunators Segen
+
+Eine Statue in den Ruinen des Tempels teilte mir mit, dass mit der Vernichtung der dunklen Mächte, die Statue des Amaunator wiederhergestellt wurde. Zusammen mit dem Symbol Amaunators kann ich weitere schlummernde Kräfte der Heiligen Abwehr erwecken, wenn ich sie der Statue als Opfer darbiete.~
+
+@350 = ~Amaunators Segen
+
+Amaunator hat meine Bitte erhört. Er segnete die Heilige Abwehr und verlieh ihr seinen Heiligen Zorn. Das Artefakt sollte jetzt eine potente Waffe gegenüber allen Arten von Untoten sein.~

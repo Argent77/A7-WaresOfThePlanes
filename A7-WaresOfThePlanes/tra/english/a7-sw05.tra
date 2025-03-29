@@ -4,11 +4,11 @@
 @1 = ~Thanatos +2~
 
 // @10 = ~~ // #22712
-@11 = ~This scimitar was once wielded by the caliph Jassan of the Djinn in ancient times. He lost it in a skirmish against a horde of plundering nabassus in -6155 DR. Since then the weapon was lost and forgotten for millenia. Ca. 367 DR it was rediscovered by a band of experienced planewalkers on the banks of the river Styx on Thanatos, the 333rd layer of the Abyss, which became the new namesake of the weapon.
+@11 = ~This scimitar was once wielded by the caliph Jassan of the Djinn in ancient times. He lost it in a skirmish against a horde of plundering nabassus in -6155 DR. Since then the weapon was lost and forgotten for millennia. Ca. 367 DR it was rediscovered by a band of experienced planewalkers on the banks of the river Styx on Thanatos, the 333rd layer of the Abyss, which became the new namesake of the weapon.
 
 After lying in the riverbed of the Styx for so long, the weapon gradually absorbed some of its properties. When a target is hit by the blade it causes temporary or permanent amnesia as if exposed to the water of the Styx itself.
 
-STATISTISCS:
+STATISTICS:
 
 Combat abilities:
 – Each successful hit causes the target to lose 1d4 memorized spells and has a 50% chance to apply either Miscast Magic, Confusion or Feeblemind for three rounds to the target (save vs. Spell at -2 to negate)

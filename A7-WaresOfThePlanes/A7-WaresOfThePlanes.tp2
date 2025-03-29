@@ -1,6 +1,6 @@
 BACKUP ~weidu_external/backup/A7-WaresOfThePlanes~
 AUTHOR ~https://www.gibberlings3.net/forums/topic/38054-wares-of-the-planes-planescape-items-for-baldurs-gate~
-VERSION ~1.3~
+VERSION ~1.4~
 
 ALWAYS
   // root folder for mutable data
@@ -37,6 +37,8 @@ LANGUAGE ~Francais (traduction : Deratiseur)~
 
 LANGUAGE ~Simplified Chinese~
          ~schinese~
+         ~A7-WaresOfThePlanes/tra/english/setup.tra~
+         ~A7-WaresOfThePlanes/tra/english/mod.tra~
          ~A7-WaresOfThePlanes/tra/schinese/setup.tra~
          ~A7-WaresOfThePlanes/tra/schinese/mod.tra~
 		 

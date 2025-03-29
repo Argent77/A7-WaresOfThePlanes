@@ -1,0 +1,41 @@
+// Append to bottom of CLEANSE.BCS: Altar script of abandoned Temple of Amaunator (AR1400)
+
+IF
+  GlobalLT("a7-mi11-upgrade","GLOBAL",3)
+  Contains("a7-mi11",Myself)
+  OR(2)
+    !Dead("SHALT01")
+    !Dead("SHADEL")
+THEN
+  RESPONSE #100
+    SetGlobal("a7-mi11-upgrade","GLOBAL",3)
+    DisplayString(Myself,@220)  // Amaunator's statue had been desecrated. It must be restored before you can ask for Amaunator's Blessing.
+    AddJournalEntry(@302,QUEST)
+END
+
+IF
+  GlobalLT("a7-mi11-upgrade","GLOBAL",9)
+  Contains("a7-mi11",Myself)  // Holy Ward of Amaunator
+  Contains("key23",Myself)  // Symbol of Amaunator
+  Dead("SHALT01")
+  Dead("SHADEL")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("a7-mi11-upgrade","GLOBAL",9)
+    MoveViewPoint([2620.1640],INSTANT)
+    DestroyItem("a7-mi11")
+    CreateVisualEffect("SPMETSW2",[2592.1701])
+    CreateVisualEffect("SPMETSW2",[2645.1742])
+    Wait(1)
+    CreateVisualEffect("A7-MI11X",[2620.1640])
+    Wait(3)
+    CreateItem("a7-mi12",50,0,0)
+    AddexperienceParty(20000)
+    EraseJournalEntry(@300)
+    EraseJournalEntry(@301)
+    EraseJournalEntry(@302)
+    EraseJournalEntry(@303)
+    AddJournalEntry(@350,QUEST_DONE)
+    SetInterrupt(TRUE)
+END

@@ -1,0 +1,66 @@
+// Holy Ward of Amaunator
+
+@0 = ~Ornate Flask~
+@1 = ~Holy Ward of Amaunator~
+
+@10 = ~This is an ornately decorated flask containing some kind of liquid.
+
+STATISTICS:
+
+Weight: 1~
+@11 = ~This flask contains holy water blessed by Amaunator himself. It is said that the relic was so powerful that a single drop could eradicate even powerful liches. With the decline of Amaunator's influence in Faerûn this relic lost most of its power over time and became only a shadow of its former self.
+
+The relic was originally safeguarded in the ancient Netherese city of Synod, but was lost in the tumultuous aftermath of Karsus' Folly. Many centuries later a group of adventurers discovered the ruins of an ancient temple dedicated to Amaunator where they plundered many artifacts and relics, including the Holy Ward.
+
+STATISTICS:
+
+Charge abilities:
+– Turn Undead
+  Special: Priests may turn targets at their class level. Paladins may turn targets with a +1 bonus to their current level. Everyone else may turn targets at half of their class level.
+  Range: 30 ft.
+  Area of Effect: 90-degree arc
+  Duration: Special
+
+Weight: 1~
+
+@20 = ~[Increment turn undead level by 1]~
+@21 = ~Undead~
+
+
+// Dialog lines
+// Cromwell
+@200 = ~Eh? Ye've gotten hold of a relic of long forgotten Amaunator? Looks like it lost much of its potency o'er the ages.~
+@201 = ~That does nae fall within my area of work, though. Ye could ask one of the Lathanderites over in th' Temple District about it.~
+@202 = ~Well, let's see what else ye got.~
+
+// Dawnmaster Kreel
+@210 = ~I have an artifact of Amaunator in my possession. Can you do something to make it more potent?~
+@211 = ~It's an ancient relic to combat undead. You are brave adventurers indeed to battle Lathander's most hated enemies. Unfortunately much knowledge was lost when the temples of Amaunator were abandoned or taken over by his enemies.~
+@212 = ~It's an ancient relic to combat undead. You are a brave adventurer indeed to battle Lathander's most hated enemies. Unfortunately much knowledge was lost when the temples of Amaunator were abandoned or taken over by his enemies.~
+@213 = ~I can only advise you to make a journey to one of these sites yourself. There are rumors about an abandoned temple of Amaunator somewhere in the Umar Hills. You may be able to find more clues about it in the village of Imnesvale.~
+
+// Statues in abandoned temple
+@220 = ~Amaunator's statue has been desecrated. It must be restored before you can ask for Amaunator's Blessing.~
+@221 = ~The Statue of Amaunator has been restored once again. Present the Symbol of Amaunator and your offerings to receive His gifts.~
+
+
+// Journal entries
+@300 = ~Amaunator's Blessing
+
+Cromwell told me that the priests of Lathander in Athkatla's Temple District may know how to improve the Holy Ward of Amaunator.~
+
+@301 = ~Amaunator's Blessing
+
+Unfortunately, Dawnmaster Kreel couldn't really help me with the Holy Ward of Amaunator. He suggested to visit old temples dedicated to Amaunator for clues. The residents of Imnesvale in the Umar Hills may know the location of one such temple.~
+
+@302 = ~Amaunator's Blessing
+
+I have discovered a statue dedicated to Amaunator in an abandoned temple ruin, but it has been desecrated. I have to find a way to destroy the evil that corrupts this temple before I should try again.~
+
+@303 = ~Amaunator's Blessing
+
+A statue in Amaunator's Temple informed me that by destroying the evil in the temple ruins the Statue of Amaunator has been restored. I could use it together with the Symbol of Amaunator to make the Holy Ward artifact more potent against undead.~
+
+@350 = ~Amaunator's Blessing
+
+Amaunator heard my plea for help. He blessed the Holy Ward and bestowed it with His holy wrath. It should now be a potent weapon against all kinds of undead.~

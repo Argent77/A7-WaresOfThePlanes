@@ -1,7 +1,7 @@
 Wares of the Planes (for BG:EE, SoD, BG2:EE and EET)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:    1.3
+Version:    1.4
 Author:     Argent77
 
 Download:   https://github.com/Argent77/A7-WaresOfThePlanes/releases/latest
@@ -117,6 +117,8 @@ Coding and testing: Argent77
 
 French translation: Deratiseur
 
+Simplified Chinese translation: MephistoSatanDevil
+
 
 Copyright Notices
 ~~~~~~~~~~~~~~~~~
@@ -136,9 +138,13 @@ Version History
 
 1.4
 - Added French translation (thanks Deratiseur)
-- Fixed missing strength bonus flag in Abigail +1
+- Added Simplified Chinese translation (thanks MephistoSatanDevil)
+- Added new items: Holy Ward of Amaunator and Holy Wrath of Amaunator
 - Rebalanced several weapons to fit better into the Baldur's Gate universe
+- Improved hit effects of Devil's Due +2
+- Fixed missing strength bonus flag in Abigail +1
 - Updated several item descriptions
+- Improved Ebb's travel routes
 
 1.3
 - Added new items for sale: Grimoire of Pestilential Thought, Cowl of Deepest Shadows,

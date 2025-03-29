@@ -21,3 +21,13 @@ STR_VAR
   icon_resref
   desc_image_resref
 END
+
+// Installing additional resources
+ACTION_FOR_EACH file IN ~%itm_resref%a.spl~
+                        ~%itm_resref%b.spl~
+BEGIN
+  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%file%~) BEGIN
+    LAF EXT_OF_FILESPEC STR_VAR filespec = EVAL ~%file%~ RET ext END
+    COPY ~%MOD_FOLDER%/%ext%/%file%~ ~override~
+  END
+END

@@ -1001,9 +1001,9 @@ durch den Schädel eines Scheusals getrieben wurde, der nun den Kopf der Waffe s
 Stachel, die sich durch den Schädel gebohrt haben, scheinen so eine Art Federkiele aus dem Unterarm 
 des Wesens zu sein.
 
-Wenn diese Waffe im Kampf eingesetzt wird, durchdringen die Stachel der Keule die Haut des Wesens, 
-und aus den Federkielen rinnt Säure in das Opfer, und manchmal auch in den Träger der Waffe, 
-wodurch zusätzlicher Schaden entsteht.
+Wenn diese Waffe im Kampf eingesetzt wird, durchdringen die Stachel der Keule die Haut des Wesens,
+und aus den Federkielen rinnt Säure entweder in das Opfer oder den Träger der Waffe, wodurch
+zusätzlicher Schaden entsteht.
 
 Der gebräuchliche Name für diese Waffe ist "Des Teufels Lohn". Auf wen oder welches Ereignis sich 
 das bezieht, ist nicht bekannt, aber es muss offensichtlich eine schmerzvolle Erfahrung für beide 
@@ -1016,11 +1016,10 @@ Kann nur durch „Fluch brechen“ wieder abgenommen werden.
 RK-Bonus: -2 gg. Stichwaffen
 RK-Bonus: -2 gg. Geschosswaffen
 
-Bei jedem Treffer erleidet der Träger mit 50 % Wahrscheinlichkeit 1W6 Schadenspunkte durch Säure.
+Bei jedem Treffer erleidet entweder das Opfer oder der Träger 1W6 Schadenspunkte durch Säure.
 
 ETW0-Bonus: -2
 Schaden: 1W6 +2 (Wucht)
-Schadensbonus: +1W6 (Säure)
 Initiativefaktor: 4
 Fertigkeit: Keule
 Typ: 1-händig
@@ -2002,6 +2001,32 @@ EIGENSCHAFTEN:
 Konstitution: +1 (permanent)
 
 Gewicht: 0
+
+16.11. Amaunators Heilige Abwehr (Verfügbar: ab SoD Kapitel 8)
+Diese Flasche beinhaltet Weihwasser, das von der Gottheit Amaunator selbst gesegnet wurde. Man sagt,
+dass diese Reliquie einst so mächtig war, dass ein Tropfen davon genügte, um selbst mächtige
+Leichname auslöschen zu können. Mit dem Niedergang Amaunators als Gottheit in Faerûn, verlor auch
+diese Reliquie im Laufe der Zeit einen Großteil ihrer Macht und ist inzwischen nur noch ein Schatten
+ihrer selbst.
+
+Die Reliquie wurde ursprünglich in der Stadt Synod des alten Nesseril aufbewahrt, verschwand aber
+inmitten der stürmischen Nachwirkungen von Karsus' Torheit. Viele Jahrhunderte später entdeckte eine
+Gruppe Abenteurer die Ruinen eines alten Tempels, der Amaunator geweiht war, und plünderte ihre
+Schätze und Artefakte, was auch Amaunators Heilige Abwehr beinhaltete.
+
+EIGENSCHAFTEN:
+
+Untote bannen:
+Reichweite: 9 m
+Bereich: Kegel von 90°
+Dauer: Speziell
+Priester bannen Untote mit ihrer aktuellen Bannstufe. Paladine bannen Untote mit einem +1 Bonus
+auf ihre aktuelle Bannstufe. Alle anderen Klassen bannen Untote mit halber Charakterstufe.
+
+Gewicht: 1
+
+16.12. Amaunators Heiliger Zorn
+Eine kleine Quest in BG2:SvA ermöglicht es, das Potenzial von Amaunators Heiliger Abwehr zu verbessern.
 
 
 17. Zauberschriftrollen
