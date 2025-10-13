@@ -16,7 +16,7 @@ COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
   // updating custom splprot references
   LPF get_splprot_entry
     INT_VAR
-      stat = 38     // STAT(INT)
+      stat = IDS_OF_SYMBOL(~stats~ ~INT~)
       value = "-1"  // custom value
       relation = 1  // equals
     STR_VAR name = ~*_STAT(INT)=n~

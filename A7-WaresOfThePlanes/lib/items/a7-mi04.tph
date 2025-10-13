@@ -6,6 +6,19 @@ OUTER_SPRINT itm_resref ~a7-mi04~
 
 ACTION_IF (has_bg2) BEGIN
   // Installing item
+
+  // Item should not work from a clone (Projected Image, Simulacrum, etc.)
+  LAF get_splprot_entry
+    INT_VAR
+      stat = IDS_OF_SYMBOL(~stats~ ~PUPPETMASTERTYPE~)
+      value = 0
+      relation = 5    // not equal
+    STR_VAR
+      name = ~*_STAT(PUPPETMASTERTYPE)!=0~
+    RET
+      puppetmastertype_not_0 = index
+  END
+
   COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
     LPF update_item_generic
       STR_VAR
@@ -13,6 +26,13 @@ ACTION_IF (has_bg2) BEGIN
       RET
         icon_resref
         desc_image_resref
+    END
+    LPF alter_item_effect_ex
+      INT_VAR
+        check_headers = 1
+        match_opcode = 324  // Immunity to resource and message
+        match_parameter2 = 1
+        parameter2 = puppetmastertype_not_0
     END
 
   // Installing associated resources

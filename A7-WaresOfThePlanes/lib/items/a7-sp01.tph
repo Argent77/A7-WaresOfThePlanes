@@ -26,7 +26,7 @@ END
 LAF get_splprot_entry
   INT_VAR
     stat = 0x10b  // GENERAL.IDS
-    value = 5     // GIANTHUMANOID
+    value = IDS_OF_SYMBOL(~general~ ~GIANTHUMANOID~)
     relation = 1  // Equals
   STR_VAR
     name = ~*_GENERAL=GIANTHUMANOID~
@@ -36,7 +36,7 @@ END
 
 LAF get_splprot_entry
   INT_VAR
-    stat = 38     // STAT(INT)
+    stat = IDS_OF_SYMBOL(~stats~ ~INT~)
     value = 5
     relation = 2  // Less than
   STR_VAR

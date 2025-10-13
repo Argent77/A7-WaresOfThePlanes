@@ -25,7 +25,7 @@ END
 // Appending SPLPROT table
 LAF get_splprot_entry
   INT_VAR
-    stat = 1      // MAXHITPOINTS
+    stat = IDS_OF_SYMBOL(~stats~ ~MAXHITPOINTS~)
     value = "-1"  // custom value
     relation = 4  // Greater than or equal
   STR_VAR
@@ -36,7 +36,7 @@ END
 
 LAF get_splprot_entry
   INT_VAR
-    stat = 1      // MAXHITPOINTS
+    stat = IDS_OF_SYMBOL(~stats~ ~MAXHITPOINTS~)
     value = "-1"  // custom value
     relation = 2  // Less than
   STR_VAR
