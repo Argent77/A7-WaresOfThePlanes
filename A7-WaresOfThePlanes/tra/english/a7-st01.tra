@@ -1,0 +1,27 @@
+// Lifeless Companion +2
+
+// @0 = ~~  // #6351
+@1 = ~Lifeless Companion +2~
+
+// @10 = ~~ // #6731
+@11 = ~The grip of the staff looks ordinary enough. The skull attached to it, however, seems to be one of a kind. It was once a servant in possession of Lothar, the master of the Bones of the Night. At that time it met another skull with an unusual repertoire of insults that it continuously spew at his fellow skull companions, and sometimes at his master as well (as long as he was out of earshot.) Some of the insults made enough of an impression that the skull attached to the tip of the staff repeats them when commanded, with the effect that any living creature within earshot lowers their guard and falls into a rage.
+
+STATISTICS:
+
+Charge abilities:
+– Litany of Curses three times per day
+  Effects: Berserk, -2 penalty to armor class, saving throws, as well as attack and damage rolls (Save vs. Wand at -2 negates)
+  Area of Effect: Any non-deaf hostile humanoid or giant-humanoid creature within 15 ft. radius
+  Duration: 1 turn
+
+THAC0: +2
+Damage: 1d6+2 (crushing)
+Speed Factor: 2
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+
+@20 = ~Litany of Curses~

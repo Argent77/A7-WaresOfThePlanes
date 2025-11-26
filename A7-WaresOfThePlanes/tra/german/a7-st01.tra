@@ -1,0 +1,26 @@
+// Lifeless Companion +2
+
+// @0 = ~~  // #6351
+@1 = ~Lebloser Gefährte +2~
+
+// @10 = ~~ // #6731
+@11 = ~Der Griff des Kampfstabs sieht ganz normal aus. Der hinzugefügte Schädel scheint allerdings wirklich einzigartig zu sein. Er war einmal das Eigentum von Lothar, dem Herrn der Knochen der Nacht. Zu jener Zeit begegnete er einem anderen Schädel mit einem ungewöhnlich großen Repertoire an Beleidigungen, mit denen er ständig die anderen Schädel (und auch seinen Herrn, wenn er außer Hörweite war) überschüttete. Einige seiner Beleidigungen hinterließen einen so starken Eindruck, dass der Schädel dieses Kampfstabs sie auf Befehl wiederholt. Gegner, die diese Beleidungen hören, werden dadurch so sehr gereizt, dass sie ihre Abwehr sinken lassen und einer Art Raserei verfallen.
+
+EIGENSCHAFTEN:
+
+Litanei der Flüche (3x täglich)
+ Effekt: Raserei, -2 Malus auf Rüstungsklasse, Rettungswürfe, ETW0 und Schaden
+ Dauer: 1 Phase
+ Bereich: Alle gegnerischen Humanoide und riesigen Humanoide in 4,5 m Radius. Taube Wesen sind davon nicht betroffen.
+ Rettungswurf: Ja (-2 gg. Zauberstäbe)
+
+ETW0-Bonus: -2
+Schaden: 1W6 +2 (Wucht)
+Initiativefaktor: 2
+Fertigkeit: Kampfstab
+Typ: 2-händig
+Mindeststärke: 5
+
+Gewicht: 3~
+
+@20 = ~Litanei der Flüche~

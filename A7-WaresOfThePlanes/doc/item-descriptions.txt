@@ -1386,10 +1386,42 @@ create this improved version that in addition to the original weapon abilities a
 arcane spells of the wielder.
 
 
-11. Rings
+11. Quarterstaves
+~~~~~~~~~~~~~~~~~
+
+11.1. Lifeless Companion +2 (available: BG2:SoA chapter 2 or later)
+The grip of the staff looks ordinary enough. The skull attached to it, however, seems to be one of
+a kind. It was once a servant in possession of Lothar, the master of the Bones of the Night.
+At that time it met another skull with an unusual repertoire of insults that it continuously spew
+at his fellow skull companions, and sometimes at his master as well (as long as he was out of
+earshot.) Some of the insults made enough of an impression that the skull attached to the tip of
+the staff repeats them when commanded, with the effect that any living creature within earshot
+lowers their guard and becomes enraged.
+
+STATISTICS:
+
+Charge abilities:
+– Litany of Curses three times per day
+  Effects: Berserk, -2 penalty to armor class, saving throws, as well as attack and damage rolls
+           (Save vs. Wand at -2 negates)
+  Area of Effect: Any non-deaf hostile humanoid or giant-humanoid creature within 15 ft. radius
+  Duration: 1 turn
+
+THAC0: +2
+Damage: 1d6+2 (crushing)
+Speed Factor: 2
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3
+
+
+12. Rings
 ~~~~~~~~~
 
-11.1. Aegis of Torment (available: BG2:ToB chapter 9 or later)
+12.1. Aegis of Torment (available: BG2:ToB chapter 9 or later)
 Aegis of Torment
 Rows and rows of minute skulls line the outer edge of this ring. It is crowned by an over-sized 
 skull with fire-red gems that serves as its eyes. This ring is the physical manifestation of the 
@@ -1406,7 +1438,7 @@ Equipped abilities:
 
 Weight: 0
 
-11.2. Mempa's Biting Ring (available: BG2:SoA chapter 6 or later)
+12.2. Mempa's Biting Ring (available: BG2:SoA chapter 6 or later)
 Mempa was a mage obsessed with the possibility of having her magic items lost or burgled while she 
 was asleep or otherwise incapacitated. While the vast majority of her carried possessions were 
 inseparable from her corpse and thus buried with her, some of her weaker items - early experiments, 
@@ -1424,7 +1456,7 @@ Equipped abilities:
 
 Weight: 0
 
-11.3. Gehraise's Ring (available: BG1 chapter 5 or later)
+12.3. Gehraise's Ring (available: BG1 chapter 5 or later)
 This small silver ring looks like it belongs on a woman's finger. It feels slightly warm to the 
 touch and has the power to ward off poison of any kind.
 
@@ -1436,7 +1468,7 @@ Equipped abilities:
 
 Weight: 0
 
-11.4. Twisted Ring (available: BG1 chapter 1 or later)
+12.4. Twisted Ring (available: BG1 chapter 1 or later)
 This ring looks like three rings that have been wrapped around each other. Just looking at it makes 
 you dizzy.
 
@@ -1447,7 +1479,7 @@ Equipped abilities:
 
 Weight: 0
 
-11.5. Ring of the Traveler (available: SoD chapter 8 or later)
+12.5. Ring of the Traveler (available: SoD chapter 8 or later)
 These rings are quite common across the planes. Simple to make and in great demand, Mages usually 
 create these items as a way to raise quick money. This particular ring has a minor enchantment on 
 it that protects the wearer from harm.
@@ -1460,7 +1492,7 @@ Equipped abilities:
 
 Weight: 0
 
-11.6. Displacer Ring (available: BG2:SoA chapter 2 or later)
+12.6. Displacer Ring (available: BG2:SoA chapter 2 or later)
 Created from the blood of a displacer beast, this ring is able to partially redirect the force of 
 any ordinary weapon. This results in making the user harder to hit and when hit takes less damage 
 than normal.
@@ -1473,7 +1505,7 @@ Equipped abilities:
 
 Weight: 0
 
-11.7. Ring of Almost Invisibility (available: SoD chapter 8 or later)
+12.7. Ring of Almost Invisibility (available: SoD chapter 8 or later)
 This is Yevrah's Ring of Almost Invisibility. It makes its wearer invisible - almost. Sometimes, 
 for brief periods, the wearer becomes really, *really* close to being invisible - an event which 
 is often disconcerting to an attacker - and is thus more difficult to strike in combat.
@@ -1485,7 +1517,7 @@ Equipped abilities:
 
 Weight: 0
 
-11.8. Serpent Ring (available: BG2:ToB chapter 8 or later)
+12.8. Serpent Ring (available: BG2:ToB chapter 8 or later)
 This appears to be a baby serpent of some sort that has been frozen into the shape of a ring. Its 
 eyes glitter and swirl like jewels and even appear to move occasionally.
 
@@ -1498,7 +1530,7 @@ Equipped abilities:
 
 Weight: 0
 
-11.9. Ring of Thex (available: BG2:ToB chapter 9 or later)
+12.9. Ring of Thex (available: BG2:ToB chapter 9 or later)
 This ornate silver ring is set with a single red stone of an unknown type. The ring is believed to 
 have been created by an adventuring mage named Thex. Thex claimed she was tired of sitting back and 
 flinging spells at enemies while the rest of her adventuring party was able to get into the thick 
@@ -1515,7 +1547,7 @@ Equipped abilities:
 
 Weight: 0
 
-11.10. Ring Zero (available: BG2:ToB chapter 9 or later)
+12.10. Ring Zero (available: BG2:ToB chapter 9 or later)
 From a Hero of ancient times during the Year of Gii 'on, AC195, this exquisite ring is smartly 
 carved, with spiked edges. The ring is made of a metal that is unidentifiable, with a center stone 
 that is ice cold to the touch. It emanates a powerful aura that protects its bearer from bodily 
@@ -1533,10 +1565,10 @@ Equipped abilities:
 Weight: 0
 
 
-12. Earrings
+13. Earrings
 ~~~~~~~~~~~~
 
-12.1. Amber Earrings (available: BG2:SoA chapter 3 or later)
+13.1. Amber Earrings (available: BG2:SoA chapter 3 or later)
 These earrings are made from hardened sap of the razorvine. When properly prepared, items made from 
 this substance can be enchanted with powerful spells of protection.
 
@@ -1548,7 +1580,7 @@ Equipped abilities:
 
 Weight: 0
 
-12.2. Crimson Sphere Earrings (available: SoD chapter 8 or later)
+13.2. Crimson Sphere Earrings (available: SoD chapter 8 or later)
 Small red gems set into these earrings act like a heat sponge, protecting the wearer from heat or 
 flame attacks. Whenever the wearer is exposed to fire, the gems draw some of the heat into 
 themselves, shielding their wearer from part of the damage.
@@ -1564,7 +1596,7 @@ Equipped abilities:
 
 Weight: 0
 
-12.3. Dustman Earrings (available: BG2:SoA chapter 2 or later)
+13.3. Dustman Earrings (available: BG2:SoA chapter 2 or later)
 These earrings have the smell of ash and dust about them and are icy cold to the touch. When worn, 
 the earrings shield the wearer from temperature extremes, granting the wearer partial resistance to 
 heat and cold. Furthermore, the earrings also protects the wearer from mind-influencing magics and 
@@ -1582,7 +1614,7 @@ Equipped abilities:
 
 Weight: 0
 
-12.4. Indep Earrings (available: BG2:SoA chapter 3 or later)
+13.4. Indep Earrings (available: BG2:SoA chapter 3 or later)
 These barbed earrings mark the wearer as a member of the Indep faction from Sigil. These earrings 
 are the home of an independent spirit which accompanies the wearer and does its best to protect 
 them from harm. Whenever possible, the spirit gives its wearer a mental nudge to get them out of 
@@ -1604,7 +1636,7 @@ Equipped abilities:
 
 Weight: 0
 
-12.5. Chained-Teeth Earrings (available: BG1 chapter 1 or later)
+13.5. Chained-Teeth Earrings (available: BG1 chapter 1 or later)
 These thin metal earrings are actually a series of well-crafted lockpicks. If need be, they can be 
 unhooked and used to pick open stubborn locks.
 
@@ -1615,7 +1647,7 @@ Equipped appearance:
 
 Weight: 0
 
-12.6. Obsidian Earrings (available: BG1 chapter 5 or later)
+13.6. Obsidian Earrings (available: BG1 chapter 5 or later)
 These small earrings are made from polished obsidian. Despite the smoothness of their surface, they 
 reflect no light whatsoever.
 
@@ -1632,7 +1664,7 @@ Equipped abilities:
 
 Weight: 0
 
-12.7. Stinger Earrings (available: SoD chapter 8 or later)
+13.7. Stinger Earrings (available: SoD chapter 8 or later)
 These earrings have been made from the hardened shell of a segmented, larva-like creature. Its 
 shell has been treated with some sort of glazed finish that makes it look disturbingly alive. The 
 wire that hooks to the ear looks like it is part of the larva itself, perhaps its stinger or antenna.
@@ -1649,10 +1681,10 @@ Equipped abilities:
 Weight: 0
 
 
-13. Bracelets and Bracers
+14. Bracelets and Bracers
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-13.1. Bell's Shield (available: BG2:ToB chapter 9 or later)
+14.1. Bell's Shield (available: BG2:ToB chapter 9 or later)
 The engravings on this bracelet are nothing short of beautiful. The craftsmanship reflects the 
 skilled work of the Meh 'gahmi Sah 'ma nomadic tribes. This bracelet was carved for their greatest 
 warrior-priestess, Bell, who sought to bring peace to the greater southern plains region. The 
@@ -1668,7 +1700,7 @@ Equipped abilities:
 
 Weight: 0
 
-13.2. Magus Guard (available: SoD chapter 8 or later)
+14.2. Magus Guard (available: SoD chapter 8 or later)
 Considered standard equipment for any adventuring mage, bracelets such as these can be found across 
 the planes. Judging by the markings on this particular bracelet it appears to have been made in a 
 style quite common to Sigil. Various glyphs of warding are meticulously carved along the surface 
@@ -1682,7 +1714,7 @@ Equipped abilities:
 
 Weight: 2
 
-13.3. Magus Shield (available: BG2:SoA chapter 2 or later)
+14.3. Magus Shield (available: BG2:SoA chapter 2 or later)
 This bracelet is a variation of the Magus Guard. Essentially using the same spells and glyphs as 
 its predecessor, the Magus Shield is better able to focus the energy of the enchantments placed 
 upon it.
@@ -1694,7 +1726,7 @@ Equipped abilities:
 
 Weight: 2
 
-13.4. Dread Bond (available: SoD chapter 10 or later)
+14.4. Dread Bond (available: SoD chapter 10 or later)
 Legend has it that this bracelet was created by Nacek the Sadistic. Tiny razor sharp spikes cover 
 the entire surface of this item injecting small amounts of rare reagents into the blood stream of 
 the user. The effect of these chemicals causes the user to feel a constant adrenaline rush of 
@@ -1708,7 +1740,7 @@ Equipped abilities:
 
 Weight: 3
 
-13.5. Spiked Gauntlets of Ogre Power (available: BG2:SoA chapter 6 or later)
+14.5. Spiked Gauntlets of Ogre Power (available: BG2:SoA chapter 6 or later)
 A ridge of huge black spikes bristle along the knuckles of these metal gauntlets, allowing the 
 wearer to perforate any target they punch. Clamps line the edges of the gauntlets to secure them 
 in place once worn. 
@@ -1727,7 +1759,7 @@ Equipped abilities:
 
 Weight: 2
 
-13.6. Spider Bracelet (available: BG2:SoA chapter 2 or later)
+14.6. Spider Bracelet (available: BG2:SoA chapter 2 or later)
 In actuality this is a living spider not jewelry. When attached to ones wrist, the spider will sink 
 its fangs into the users flesh and feed from the host, providing both beneficial and detrimental 
 effects.
@@ -1742,7 +1774,7 @@ Equipped abilities:
 
 Weight: 0
 
-13.7. Vambraces of Evil's Warding (available: BG1 chapter 5 or later)
+14.7. Vambraces of Evil's Warding (available: BG1 chapter 5 or later)
 These armbands, when worn, protect their wearer from the attacks of evil creatures. Their shiny 
 metallic pieces of armor are graven with warding runes that attract damage to the vambraces where 
 it bounces off harmlessly. Area of effect attacks there are not directly aimed at the target are 
@@ -1764,10 +1796,10 @@ Equipped abilities:
 Weight: 2
 
 
-14. Cloaks
+15. Cloaks
 ~~~~~~~~~~
 
-14.1. Cowl of Deepest Shadows (available: BG2:SoA chapter 6 or later)
+15.1. Cowl of Deepest Shadows (available: BG2:SoA chapter 6 or later)
 Just like the cowl itself the history of this artifact is shrouded in darkness. It was granted a 
 member of the Doomguard faction by the goddess Shar as a reward for corrupting a group of 
 worshippers of Hanali Celanil, the elven goddess of love and beauty, into self-destructive hedonism 
@@ -1799,10 +1831,10 @@ Charge abilities:
 Weight: 1
 
 
-15. Wands
+16. Wands
 ~~~~~~~~~
 
-15.1. Abyssal Pipe (available: SoD chapter 8 or later)
+16.1. Abyssal Pipe (available: SoD chapter 8 or later)
 This is a small wooden pipe, carved to resemble the head of a demon.
 
 When used, this pipe billows forth great gouts of deadly fumes from the planes of the Abyss.
@@ -1822,7 +1854,7 @@ Requires:
 
 Weight: 0
 
-15.2. Skeletal Key (available: BG1 chapter 5 or later)
+16.2. Skeletal Key (available: BG1 chapter 5 or later)
 This key has been be fashioned from the finger bones of a humanoid creature. Magical symbols have 
 been engraved on the surface to enchant it with a spell that opens any kinds of locks on chests, 
 boxes or doors.
@@ -1841,10 +1873,10 @@ Requires:
 Weight: 1
 
 
-16. Consumables and charged items
+17. Consumables and charged items
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-16.1. Bandages (available: BG1 chapter 1 or later)
+17.1. Bandages (available: BG1 chapter 1 or later)
 This is a roll of bandages, useful for stanching minor wounds. When applied they will heal a 
 character for 3 hit points of damage.
 
@@ -1854,7 +1886,7 @@ Special: Restores 3 Hit Points.
 
 Weight: 0
 
-16.2. Clipped Copper Charm (available: BG1 chapter 1 or later)
+17.2. Clipped Copper Charm (available: BG1 chapter 1 or later)
 This copper piece has been "clipped"… most of the copper has been shaved off, no doubt to still 
 keep the appearance it is a coin and allowing the 'clipper' to use the shaved copper to make 
 another coin. Although many Hive dwellers in Sigil practice this method of "making money," when 
@@ -1880,7 +1912,7 @@ Charge abilities:
 
 Weight: 0
 
-16.3. Gordian Knot (available: BG2:ToB chapter 8 or later)
+17.3. Gordian Knot (available: BG2:ToB chapter 8 or later)
 The knot binding the two ends of this rope together holds a powerful magic. When this knot is 
 severed by a fighter with an edged weapon, the warrior gains a rush of confidence and arrogance, 
 reducing their Wisdom but raising their Charisma. The user is also beset with the urge to gather an 
@@ -1898,7 +1930,7 @@ Charge abilities:
 
 Weight: 0
 
-16.4. Elixir of Horrific Separation (available: BG2:ToB chapter 9 or later)
+17.4. Elixir of Horrific Separation (available: BG2:ToB chapter 9 or later)
 This vial of Elixir of Horrific Separation was compounded by a scholar who'd found she possessed a 
 darker half - a side of her which took control, at times, and bade her do awful things. This potion 
 was to have 'split' the darker half away from her, creating two separate beings. Mercykillers from 
@@ -1917,7 +1949,7 @@ The elixir will have no effect when consumed by a user whose ethical alignment i
 
 Weight: 1
 
-16.5. Moridor's Box (available: SoD chapter 8 or later)
+17.5. Moridor's Box (available: SoD chapter 8 or later)
 This appears to be a small wooden box. Intricate designs etched in gold adorn the box. At one time 
 this box would have been worthy enough to be displayed at any aristocrat's estate. However, years 
 of neglect have taken their toll and it appears to be falling apart. If not for the large gem 
@@ -1939,7 +1971,7 @@ Requires:
 
 Weight: 2
 
-16.6. Baku's Horn (available: SoD chapter 8 or later)
+17.6. Baku's Horn (available: SoD chapter 8 or later)
 This nondescript wooden horn is in fact a magical item crafted on the Upper Planes. Similar to the 
 attack of the creature for which it is named, a Baku's Horn inflicts damage upon evil creatures 
 within the area of effect when it is sounded. Further, such creatures must make a save vs. 
@@ -1953,7 +1985,7 @@ Charge abilities:
 
 Weight: 1
 
-16.7. Wesley's Hourglass (available: BG2:ToB chapter 9 or later)
+17.7. Wesley's Hourglass (available: BG2:ToB chapter 9 or later)
 This item was originally fashioned by a powerful chronomancer with the intention to teach his 
 students about the nature of time. It looks like an ordinary hourglass in a wooden frame, but 
 instead of sand it is filled with mist-smoke of the Demiplane of Time, also known as Temporal Prime.
@@ -1976,7 +2008,7 @@ Requires:
 
 Weight: 1
 
-16.8. Wesley's Improved Hourglass
+17.8. Wesley's Improved Hourglass
 Cespenar can combine Wesley's Hourglass with the Rift Device from the Eyeless Cult quest to fashion 
 this improved version of the item.
 
@@ -1993,7 +2025,7 @@ STATISTICS:
 
 Weight: 2
 
-16.10. Tear of Salieru-Dei (available: BG2:SoA chapter 6 or later)
+17.10. Tear of Salieru-Dei (available: BG2:SoA chapter 6 or later)
 This glistening red tear was shed by the martyred Harmonium officer Salieru-Dei when he was put to 
 death on the Harmonium's home plane of Ortho. Mistaken as a member of the hated Revolutionary 
 League, Salieru-Dei's obedience and loyalty was such he could not bring himself to challenge the 
@@ -2011,7 +2043,7 @@ Constitution: Raised by 1 point permanently
 
 Weight: 0
 
-16.11. Holy Ward of Amaunator (available: SoD chapter 8 or later)
+17.11. Holy Ward of Amaunator (available: SoD chapter 8 or later)
 This flask contains holy water blessed by Amaunator himself. It is said that the relic was so
 powerful that a single drop could eradicate even powerful liches. With the decline of Amaunator's
 influence in Faerûn this relic lost most of its power over time and became only a shadow of its
@@ -2034,14 +2066,14 @@ Charge abilities:
 
 Weight: 1
 
-16.12. Holy Wrath of Amaunator
+17.12. Holy Wrath of Amaunator
 A small quest in BG2:SoA allows you to enhance the potency of the Holy Ward of Amaunator.
 
 
-17. Spell scrolls
+18. Spell scrolls
 ~~~~~~~~~~~~~~~~~
 
-17.1 Tasha's Unbearable Derisive Laughter (available: BG1 chapter 5 or later)
+18.1 Tasha's Unbearable Derisive Laughter (available: BG1 chapter 5 or later)
 (Enchantment/Charm)
 
 Level: 3
@@ -2060,7 +2092,7 @@ giant-humanoid creatures in range of the spell must make a Saving Throw vs. Spel
 their attack and damage rolls, -2 to their armor class, -2 to their Saving Throws, and have their 
 morale lowered for the duration of the spell.
 
-17.2. Modron Mind (available: SoD chapter 8 or later)
+18.2. Modron Mind (available: SoD chapter 8 or later)
 (Abjuration)
 
 Level: 3
@@ -2075,7 +2107,7 @@ to Saving Throws versus spells of the schools of Illusion and Enchantment. The s
 the caster's thought processes which results in an intelligence bonus of +1 every five levels, up 
 to a +5 bonus at level 20.
 
-17.3. Vrock's Screech (available: SoD chapter 10 or later)
+18.3. Vrock's Screech (available: SoD chapter 10 or later)
 (Evocation)
 
 Level: 4
@@ -2092,10 +2124,10 @@ may make a save vs. Spell to negate both effects. The area of effect is not bloc
 other obstacles.
 
 
-18. Special items
+19. Special items
 ~~~~~~~~~~~~~~~~~
 
-18.1. Lim-Lim Cage (available: BG1 chapter 1 or later)
+19.1. Lim-Lim Cage (available: BG1 chapter 1 or later)
 This sturdy steel cage has a thick leather handle on the top. It appears to be the home of a 
 Lim-Lim which can be unmistakably identified by their gleeful chirps. The cage itself seems to be 
 locked only by a simple latch.
@@ -2104,7 +2136,7 @@ STATISTICS:
 
 Weight: 10
 
-18.2. Stick with a handle? (available: BG2:ToB chapter 9 or later)
+19.2. Stick with a handle? (available: BG2:ToB chapter 9 or later)
 
 This item looks like a stick of polished metal with a handle of a shape that fits nicely in the hand. 
 Because of its small size only children or people of the short races can hold it comfortably.

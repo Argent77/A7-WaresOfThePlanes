@@ -80,6 +80,7 @@ Der reisende Händler bietet insgesamt
 - 2 Langschwerter
 - 2 Bastardschwerter
 - 2 Krummsäbel
+- 1 Kampfstab
 - 10 Ringe
 - 7 Ohrringe (können im Feld für Amulette platziert werden)
 - 7 Armbänder und Armschienen (können im Feld für Armschützer und Handschuhe platziert werden)

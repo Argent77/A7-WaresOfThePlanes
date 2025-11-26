@@ -1,0 +1,95 @@
+// Item: Lifeless Companion +2
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-st01~
+
+// Installing item
+COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+  LPF update_item_generic
+    STR_VAR
+      itm_resref
+    RET
+      icon_resref
+      desc_image_resref
+  END
+
+// Installing associated resources
+LAF install_item_resources_generic
+STR_VAR
+  itm_resref
+  icon_resref
+  desc_image_resref
+END
+
+// Installing additional resources
+// Adding splprot entries
+OUTER_SET splprot_humanoid = 5
+OUTER_SET splprot_giant_humanoid = "-1"
+COPY_EXISTING ~splprot.2da~ ~override~
+  READ_2DA_ENTRIES_NOW splprot_table 1
+  SET splprot_idx = splprot_table - 3
+  FOR (row = 3; splprot_giant_humanoid < 0 && row < splprot_table; ++row) BEGIN
+    SPRINT code $splprot_table(~%row%~ ~1~)
+    PATCH_IF (IS_AN_INT ~code~ && code == 0x10b) BEGIN
+      SPRINT value1 $splprot_table(~%row%~ ~2~)
+      SPRINT value2 $splprot_table(~%row%~ ~3~)
+      PATCH_IF (IS_AN_INT ~value1~ && value1 == 5 &&
+                IS_AN_INT ~value2~ && value2 == 1) BEGIN
+        SET splprot_giant_humanoid = row - 3
+      END
+    END
+  END
+BUT_ONLY
+
+ACTION_IF (splprot_giant_humanoid < 0) BEGIN
+  OUTER_SET splprot_giant_humanoid = splprot_idx
+  APPEND ~splprot.2da~ ~%splprot_giant_humanoid%_GENERAL=GIANTHUMANOID  0x10b  5  1~
+  OUTER_SET splprot_idx += 1
+END
+
+OUTER_SET splprot_not_giant_humanoid = splprot_idx
+APPEND ~splprot.2da~ ~%splprot_not_giant_humanoid%_ENTRIES!=(5||%splprot_giant_humanoid%)  0x104  5  %splprot_giant_humanoid%~
+OUTER_SET splprot_idx += 1
+
+COPY_EXISTING ~splprot.2da~ ~override~
+  PRETTY_PRINT_2DA
+
+WITH_TRA ~%MOD_FOLDER%/tra/english/%itm_resref%.tra~ ~%MOD_FOLDER%/tra/%LANGUAGE%/%itm_resref%.tra~ BEGIN
+  // Adding ability tooltips
+  OUTER_SET itm_name_strref = RESOLVE_STR_REF(@1)
+  OUTER_SET spl_name_strref = RESOLVE_STR_REF(@20)
+  APPEND ~tooltip.2da~ ~A7-ST01  %itm_name_strref%  %spl_name_strref%  -1~
+  COPY_EXISTING ~tooltip.2da~ ~override~
+    PRETTY_PRINT_2DA
+
+  // Installing spell
+  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%itm_resref%a.spl~) BEGIN
+    COPY ~%MOD_FOLDER%/spl/%itm_resref%a.spl~ ~override~
+      SAY NAME1 @20 // Litany of Curses
+      LPF alter_item_effect_ex
+        INT_VAR
+          check_headers = 1
+          match_opcode = 318
+          match_parameter2 = 1
+          parameter2 = splprot_not_giant_humanoid
+      END
+  END
+END
+
+// Installing spell-related resources
+ACTION_FOR_EACH file IN ~a7-sp04a.bam~
+                        ~a7-sp04b.bam~
+                        ~a7-sp04c.bam~
+                        ~a7-st01a.bam~
+                        ~a7-st01b.bam~
+                        ~a7-st01a.vvc~
+                        ~a7-st01b.vvc~
+BEGIN
+  LAF EXT_OF_FILESPEC STR_VAR filespec = EVAL ~%file%~ RET ext END
+  COPY ~%MOD_FOLDER%/%ext%/%file%~ ~override~
+END
+
+ACTION_FOR_EACH suffix IN ~a~ ~b~ ~c~ ~d~ ~e~ ~f~ ~g~ ~h~ ~i~ ~j~ ~k~ ~l~ ~m~ ~n~ ~o~ ~p~ ~q~ ~r~ ~s~ ~t~ BEGIN
+  COPY ~%MOD_FOLDER%/wav/%itm_resref%%suffix%.wav~ ~override~
+END
