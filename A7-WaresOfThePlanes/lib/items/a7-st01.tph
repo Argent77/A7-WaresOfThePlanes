@@ -70,9 +70,16 @@ WITH_TRA ~%MOD_FOLDER%/tra/english/%itm_resref%.tra~ ~%MOD_FOLDER%/tra/%LANGUAGE
       LPF alter_item_effect_ex
         INT_VAR
           check_headers = 1
-          match_opcode = 318
+          match_opcode = 318  // Protection from resource
           match_parameter2 = 1
           parameter2 = splprot_not_giant_humanoid
+      END
+      LPF alter_item_effect_ex
+        INT_VAR
+          check_headers = 1
+          match_opcode = 139  // Display string
+          match_parameter1 = 21
+          parameter1 = RESOLVE_STR_REF(@21)  // Enraged
       END
   END
 END
