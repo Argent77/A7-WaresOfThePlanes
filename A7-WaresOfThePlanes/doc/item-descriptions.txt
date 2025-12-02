@@ -1831,10 +1831,42 @@ Charge abilities:
 Weight: 1
 
 
-16. Wands
+16. Belts
 ~~~~~~~~~
 
-16.1. Abyssal Pipe (available: SoD chapter 8 or later)
+16.1. Planar Anchor (available: BG2:SoA chapter 6 or later)
+Legend has it that the aging planewalker Gojuc decided to retire in Sigil, the City of Doors, after
+a successful career as adventurer, mercenary, and even an emissary on special occasions. Since the
+travelling through the planes left their mark on his body he devised a spell to make him immune to
+the effects of teleportation magic and tasked a local gnomish enchanter to weave it into a piece of
+clothing of his choice. He was obviously pleased with the result since he lived several years
+without having to contend with the numerous portals spread over the city. To his surprise he was
+one day fatally injured by an errant pebble thrown by some children playing on the street. He died
+from his injuries soon after. The belt and many other of his belongings were eventually sold to a
+travelling merchant, and so the trail of the item was lost.
+
+The belt is enchanted with a spell that binds the user to the current plane of existence. As a
+result the user becomes immune to any effects that would involve planar travel. At the same time,
+however, the strengthened link with the plane makes the user susceptible to the primary attributes
+of the plane.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to Maze, Imprisonment, and teleportation effects
+– Slashing Resistance: -50%
+– Piercing Resistance: -50%
+– Crushing Resistance: -50%
+– Missile Resistance: -50%
+– May only be removed with a Remove Curse spell
+
+Weight: 2
+
+
+17. Wands
+~~~~~~~~~
+
+17.1. Abyssal Pipe (available: SoD chapter 8 or later)
 This is a small wooden pipe, carved to resemble the head of a demon.
 
 When used, this pipe billows forth great gouts of deadly fumes from the planes of the Abyss.
@@ -1854,7 +1886,7 @@ Requires:
 
 Weight: 0
 
-16.2. Skeletal Key (available: BG1 chapter 5 or later)
+17.2. Skeletal Key (available: BG1 chapter 5 or later)
 This key has been be fashioned from the finger bones of a humanoid creature. Magical symbols have 
 been engraved on the surface to enchant it with a spell that opens any kinds of locks on chests, 
 boxes or doors.
@@ -1873,10 +1905,10 @@ Requires:
 Weight: 1
 
 
-17. Consumables and charged items
+18. Consumables and charged items
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-17.1. Bandages (available: BG1 chapter 1 or later)
+18.1. Bandages (available: BG1 chapter 1 or later)
 This is a roll of bandages, useful for stanching minor wounds. When applied they will heal a 
 character for 3 hit points of damage.
 
@@ -1886,7 +1918,7 @@ Special: Restores 3 Hit Points.
 
 Weight: 0
 
-17.2. Clipped Copper Charm (available: BG1 chapter 1 or later)
+18.2. Clipped Copper Charm (available: BG1 chapter 1 or later)
 This copper piece has been "clipped"… most of the copper has been shaved off, no doubt to still 
 keep the appearance it is a coin and allowing the 'clipper' to use the shaved copper to make 
 another coin. Although many Hive dwellers in Sigil practice this method of "making money," when 
@@ -1912,7 +1944,7 @@ Charge abilities:
 
 Weight: 0
 
-17.3. Gordian Knot (available: BG2:ToB chapter 8 or later)
+18.3. Gordian Knot (available: BG2:ToB chapter 8 or later)
 The knot binding the two ends of this rope together holds a powerful magic. When this knot is 
 severed by a fighter with an edged weapon, the warrior gains a rush of confidence and arrogance, 
 reducing their Wisdom but raising their Charisma. The user is also beset with the urge to gather an 
@@ -1930,7 +1962,7 @@ Charge abilities:
 
 Weight: 0
 
-17.4. Elixir of Horrific Separation (available: BG2:ToB chapter 9 or later)
+18.4. Elixir of Horrific Separation (available: BG2:ToB chapter 9 or later)
 This vial of Elixir of Horrific Separation was compounded by a scholar who'd found she possessed a 
 darker half - a side of her which took control, at times, and bade her do awful things. This potion 
 was to have 'split' the darker half away from her, creating two separate beings. Mercykillers from 
@@ -1949,7 +1981,7 @@ The elixir will have no effect when consumed by a user whose ethical alignment i
 
 Weight: 1
 
-17.5. Moridor's Box (available: SoD chapter 8 or later)
+18.5. Moridor's Box (available: SoD chapter 8 or later)
 This appears to be a small wooden box. Intricate designs etched in gold adorn the box. At one time 
 this box would have been worthy enough to be displayed at any aristocrat's estate. However, years 
 of neglect have taken their toll and it appears to be falling apart. If not for the large gem 
@@ -1971,7 +2003,7 @@ Requires:
 
 Weight: 2
 
-17.6. Baku's Horn (available: SoD chapter 8 or later)
+18.6. Baku's Horn (available: SoD chapter 8 or later)
 This nondescript wooden horn is in fact a magical item crafted on the Upper Planes. Similar to the 
 attack of the creature for which it is named, a Baku's Horn inflicts damage upon evil creatures 
 within the area of effect when it is sounded. Further, such creatures must make a save vs. 
@@ -1985,7 +2017,7 @@ Charge abilities:
 
 Weight: 1
 
-17.7. Wesley's Hourglass (available: BG2:ToB chapter 9 or later)
+18.7. Wesley's Hourglass (available: BG2:ToB chapter 9 or later)
 This item was originally fashioned by a powerful chronomancer with the intention to teach his 
 students about the nature of time. It looks like an ordinary hourglass in a wooden frame, but 
 instead of sand it is filled with mist-smoke of the Demiplane of Time, also known as Temporal Prime.
@@ -2008,11 +2040,11 @@ Requires:
 
 Weight: 1
 
-17.8. Wesley's Improved Hourglass
+18.8. Wesley's Improved Hourglass
 Cespenar can combine Wesley's Hourglass with the Rift Device from the Eyeless Cult quest to fashion 
 this improved version of the item.
 
-16.9. The Grimoire of Pestilential Thought (available: BG2:SoA chapter 2 or later)
+18.9. The Grimoire of Pestilential Thought (available: BG2:SoA chapter 2 or later)
 This black-bound tome seems to radiate a slight rotting smell, and the covers are unpleasant to the 
 touch - like uncured human flesh left out in the sun. Rusted buckles on the cover seal it against 
 the elements.
@@ -2025,7 +2057,7 @@ STATISTICS:
 
 Weight: 2
 
-17.10. Tear of Salieru-Dei (available: BG2:SoA chapter 6 or later)
+18.10. Tear of Salieru-Dei (available: BG2:SoA chapter 6 or later)
 This glistening red tear was shed by the martyred Harmonium officer Salieru-Dei when he was put to 
 death on the Harmonium's home plane of Ortho. Mistaken as a member of the hated Revolutionary 
 League, Salieru-Dei's obedience and loyalty was such he could not bring himself to challenge the 
@@ -2043,7 +2075,7 @@ Constitution: Raised by 1 point permanently
 
 Weight: 0
 
-17.11. Holy Ward of Amaunator (available: SoD chapter 8 or later)
+18.11. Holy Ward of Amaunator (available: SoD chapter 8 or later)
 This flask contains holy water blessed by Amaunator himself. It is said that the relic was so
 powerful that a single drop could eradicate even powerful liches. With the decline of Amaunator's
 influence in Faerûn this relic lost most of its power over time and became only a shadow of its
@@ -2066,14 +2098,14 @@ Charge abilities:
 
 Weight: 1
 
-17.12. Holy Wrath of Amaunator
+18.12. Holy Wrath of Amaunator
 A small quest in BG2:SoA allows you to enhance the potency of the Holy Ward of Amaunator.
 
 
-18. Spell scrolls
+19. Spell scrolls
 ~~~~~~~~~~~~~~~~~
 
-18.1 Tasha's Unbearable Derisive Laughter (available: BG1 chapter 5 or later)
+19.1 Tasha's Unbearable Derisive Laughter (available: BG1 chapter 5 or later)
 (Enchantment/Charm)
 
 Level: 3
@@ -2092,7 +2124,7 @@ giant-humanoid creatures in range of the spell must make a Saving Throw vs. Spel
 their attack and damage rolls, -2 to their armor class, -2 to their Saving Throws, and have their 
 morale lowered for the duration of the spell.
 
-18.2. Modron Mind (available: SoD chapter 8 or later)
+19.2. Modron Mind (available: SoD chapter 8 or later)
 (Abjuration)
 
 Level: 3
@@ -2107,7 +2139,7 @@ to Saving Throws versus spells of the schools of Illusion and Enchantment. The s
 the caster's thought processes which results in an intelligence bonus of +1 every five levels, up 
 to a +5 bonus at level 20.
 
-18.3. Vrock's Screech (available: SoD chapter 10 or later)
+19.3. Vrock's Screech (available: SoD chapter 10 or later)
 (Evocation)
 
 Level: 4
@@ -2124,10 +2156,10 @@ may make a save vs. Spell to negate both effects. The area of effect is not bloc
 other obstacles.
 
 
-19. Special items
+20. Special items
 ~~~~~~~~~~~~~~~~~
 
-19.1. Lim-Lim Cage (available: BG1 chapter 1 or later)
+20.1. Lim-Lim Cage (available: BG1 chapter 1 or later)
 This sturdy steel cage has a thick leather handle on the top. It appears to be the home of a 
 Lim-Lim which can be unmistakably identified by their gleeful chirps. The cage itself seems to be 
 locked only by a simple latch.
@@ -2136,7 +2168,7 @@ STATISTICS:
 
 Weight: 10
 
-19.2. Stick with a handle? (available: BG2:ToB chapter 9 or later)
+20.2. Stick with a handle? (available: BG2:ToB chapter 9 or later)
 
 This item looks like a stick of polished metal with a handle of a shape that fits nicely in the hand. 
 Because of its small size only children or people of the short races can hold it comfortably.

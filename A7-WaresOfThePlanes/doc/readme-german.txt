@@ -85,6 +85,7 @@ Der reisende Händler bietet insgesamt
 - 7 Ohrringe (können im Feld für Amulette platziert werden)
 - 7 Armbänder und Armschienen (können im Feld für Armschützer und Handschuhe platziert werden)
 - 1 Mantel
+- 1 Gürtel
 - 2 Zauberstäbe
 - 3 Zauberschriftrollen
 - mehrere Gebrauchsgegenstände

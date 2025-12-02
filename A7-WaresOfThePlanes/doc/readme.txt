@@ -83,6 +83,7 @@ The travelling merchant offers a total of
 - 7 Earrings (can be equipped in the Amulets slot)
 - 7 Bracelets and Bracers (can be equipped in the Bracers/Gauntlets slot)
 - 1 Cloak
+- 1 Belt
 - 2 Wands
 - 3 Spell scrolls
 - several miscellaneous items
