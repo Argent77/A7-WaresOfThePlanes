@@ -39,6 +39,13 @@ IF ~~ Intro.2
 END
 
 
+// Triggers quest "Lure of Darkness"
+IF ~GlobalGT("Chapter","GLOBAL",%bg2_chapter_7%) Global("A7-DiscOffered","LOCALS",0)~ DarknessQuest.Intro
+  SAY @200 /* You come back at the right time. I have recently acquired a strange metal disc as payment for one of my items. */
+  IF ~~ + DarknessQuest.Disc.1
+END
+
+
 // Default state for talking to Ebb
 IF ~True()~ Default
   SAY @11 /* Good t'see ye again, <LADGAL>. Back for more, eh? */
@@ -61,6 +68,9 @@ IF ~~ Default.1
   + ~Global("A7-PhazorQuest","GLOBAL",2) OR(3) !PartyHasItem("MISC6Z") !PartyHasItem("SCRL7J") !PartyHasItem("SCRL7T")~ + @15 /* Can you tell me about the broken artifact again? */ + PhazorQuest.3
   + ~Global("A7-PhazorQuest","GLOBAL",2) PartyHasItem("MISC6Z") PartyHasItem("SCRL7J") PartyHasItem("SCRL7T")~ + @16 /* I have found the items required to repair the broken artifact. */ + PhazorQuest.4
 
+  + ~Global("A7-DiscOffered","LOCALS",1)~ + @218 /* I'd like to talk about the Green Steel Disc again. */ + DarknessQuest.Disc.Query.1
+  + ~Global("A7-DarknessQuest","GLOBAL",3) PartyHasItem("a7-mi13x")~ + @250 /* With the help of the metal disc we have discovered a tome written in an unknown language. Do you know how to translate it? */ + DarknessQuest.Translate.1
+
   + ~Global("TalkStore","LOCALS",0)~ + @6 /* What do you have for sale? */ DO ~SetGlobal("TalkStore","LOCALS",1)~ + Store.1
   + ~!Global("TalkStore","LOCALS",0)~ + @17 /* Please show me your wares. */ DO ~StartStore("a7-merc",LastTalkedToBy(Myself))~ EXIT
 
@@ -81,6 +91,9 @@ IF ~~ Default.2
   + ~Global("A7-PhazorQuest","GLOBAL",1)~ + @14 /* Can you tell me more about the broken artifact? */ DO ~SetGlobal("A7-PhazorQuest","GLOBAL",2)~ FLAGS 512 + PhazorQuest.2
   + ~Global("A7-PhazorQuest","GLOBAL",2) OR(3) !PartyHasItem("MISC6Z") !PartyHasItem("SCRL7J") !PartyHasItem("SCRL7T")~ + @15 /* Can you tell me about the broken artifact again? */ + PhazorQuest.3
   + ~Global("A7-PhazorQuest","GLOBAL",2) PartyHasItem("MISC6Z") PartyHasItem("SCRL7J") PartyHasItem("SCRL7T")~ + @16 /* I have found the items required to repair the broken artifact. */ + PhazorQuest.4
+
+  + ~Global("A7-DiscOffered","LOCALS",1)~ + @218 /* I'd like to talk about the Green Steel Disc again. */ + DarknessQuest.Disc.Query.1
+  + ~Global("A7-DarknessQuest","GLOBAL",3) PartyHasItem("a7-mi13x")~ + @250 /* With the help of the disc of green steel we have discovered a tome written in an unknown language. Do you know how to translate it? */ + DarknessQuest.Translate.1
 
   + ~Global("TalkStore","LOCALS",0)~ + @6 /* What do you have for sale? */ DO ~SetGlobal("TalkStore","LOCALS",1)~ + Store.1
   + ~!Global("TalkStore","LOCALS",0)~ + @17 /* Please show me your wares. */ DO ~StartStore("a7-merc",LastTalkedToBy(Myself))~ EXIT
@@ -230,6 +243,93 @@ END
 IF ~~ PhazorQuest.5
   SAY @49 /* By the way, the gnome wizard did the impossible and fixed that weird contraption. I have it added to my pile of wares if you'd like to buy it. */
   IF ~~ DO ~AddexperienceParty(15000) EraseJournalEntry(@3101) EraseJournalEntry(@3102) EraseJournalEntry(@3103)~ SOLVED_JOURNAL @3150 + Default.1
+END
+
+
+IF ~~ DarknessQuest.Disc.Query.1
+  SAY @219 /* Ah, you're still interested? */
+  IF ~~ + DarknessQuest.Disc.Offer.1
+END
+
+IF ~~ DarknessQuest.Disc.1
+  SAY @201 /* It's made from pure green steel, and judging by the adornments it may be enchanted as well. */
+  ++ @202 /* So, what makes this disc so special? */ + DarknessQuest.Disc.Question.1
+END
+
+IF ~~ DarknessQuest.Disc.Question.1
+  SAY @203 /* Firstly, green steel can only be mined and forged in Baator. */
+  + ~CheckStatLT(LastTalkedToBy,25,LORE)~ + @204 /* Baator? */ + DarknessQuest.Disc.Question.Baator.1
+  IF ~!CheckStatLT(LastTalkedToBy,25,LORE)~ + DarknessQuest.Disc.Question.2
+END
+
+IF ~~ DarknessQuest.Disc.Question.Baator.1
+  SAY @205 /* It's the Nine Hells, <LADGAL>. Home of the devils! */
+  IF ~~ + DarknessQuest.Disc.Question.2
+END
+
+IF ~~ DarknessQuest.Disc.Question.2
+  SAY @206 /* And if you know anything about that place, and their denizens, then you'd be extra wary of artifacts from there. */
+  = @207 /* Anyway, I bet that adventurers like yourself are usually dying to get their hands on exotic items like this. So, I'd like to make you an offer. */
+  IF ~~ + DarknessQuest.Disc.Offer.1
+END
+
+IF ~~ DarknessQuest.Disc.Offer.1
+  SAY @208 /* For just 500 gold it can be yours. What do you say? */
+  + ~PartyGoldGT(499)~ + @209 /* It's a deal. */ + DarknessQuest.Disc.Offer.Accepted.1
+  + ~PartyGoldGT(499) !CheckStatLT(LastTalkedToBy,16,CHR)~ + @210 /* Sounds pretty expensive. Can't you lower the price a bit? */ + DarknessQuest.Disc.Offer.Haggle.Succeed.1
+  + ~PartyGoldGT(499) CheckStatLT(LastTalkedToBy,16,CHR)~ + @210 /* Sounds pretty expensive. Can't you lower the price a bit? */ + DarknessQuest.Disc.Offer.Haggle.Fail.1
+  + ~!PartyGoldGT(499) !CheckStatLT(LastTalkedToBy,16,CHR)~ + @215 /* I don't have enough gold. Could you maybe lower the price a bit? */ + DarknessQuest.Disc.Offer.Haggle.Succeed.1
+  + ~!PartyGoldGT(499) CheckStatLT(LastTalkedToBy,16,CHR)~ + @215 /* I don't have enough gold. Could you maybe lower the price a bit? */ + DarknessQuest.Disc.Offer.Haggle.Fail.1
+  ++ @213 /* Sorry, but I'm not interested. */ + DarknessQuest.Disc.Offer.Refused.1
+END
+
+IF ~~ DarknessQuest.Disc.Offer.Haggle.Succeed.1
+  SAY @211 /* Hmm, alright. How about 300 gold? */
+  + ~PartyGoldGT(299)~ + @209 /* It's a deal. */ + DarknessQuest.Disc.Offer.Accepted.2
+  + ~!PartyGoldGT(299)~ + @212 /* It's still too much for me. Maybe later. */ + DarknessQuest.Disc.Offer.Refused.1
+  ++ @213 /* Sorry, but I'm not interested. */ + DarknessQuest.Disc.Offer.Refused.1
+END
+
+IF ~~ DarknessQuest.Disc.Offer.Haggle.Fail.1
+  SAY @214 /* No, I can't do that. It is a precious artifact after all. */
+  + ~PartyGoldGT(499)~ + @209 /* It's a deal. */ + DarknessQuest.Disc.Offer.Accepted.1
+  ++ @213 /* Sorry, but I'm not interested. */ + DarknessQuest.Disc.Offer.Refused.1
+END
+
+IF ~~ DarknessQuest.Disc.Offer.Refused.1
+  SAY @216 /* As you wish. My offer still stands if you change your mind later. */
+  IF ~!Global("A7-DiscOffered","LOCALS",0)~ EXIT
+  IF ~Global("A7-DiscOffered","LOCALS",0)~ DO ~SetGlobal("A7-DiscOffered","LOCALS",1)~ UNSOLVED_JOURNAL @3201 EXIT
+END
+
+IF ~~ DarknessQuest.Disc.Offer.Accepted.1
+  SAY @217 /* Very good. Come back again. */
+  IF ~~ DO ~SetGlobal("A7-DiscOffered","LOCALS",2)
+            SetGlobal("A7-DarknessQuest","GLOBAL",1)
+            TakePartyGold(500)
+            GiveItemCreate("a7-mi15",LastTalkedToBy,0,0,0)~
+            UNSOLVED_JOURNAL @3202 EXIT
+END
+
+IF ~~ DarknessQuest.Disc.Offer.Accepted.2
+  SAY @217 /* Very good. Come back again. */
+  IF ~~ DO ~SetGlobal("A7-DiscOffered","LOCALS",2)
+            SetGlobal("A7-DarknessQuest","GLOBAL",1)
+            TakePartyGold(300)
+            GiveItemCreate("a7-mi15",LastTalkedToBy,0,0,0)~
+            UNSOLVED_JOURNAL @3202 EXIT
+END
+
+IF ~~ DarknessQuest.Translate.1
+  SAY @251 /* I don't rightly know. Let me see it. */
+  ++ @252 /* Here you go. */ + DarknessQuest.Translate.2
+END
+
+IF ~~ DarknessQuest.Translate.2
+  SAY @253 /* Oh no, it's written in Abyssal! I won't touch it. */
+  = @254 /* If you're still hell-bent on translating that thing then you should ask a scholar. I've heard of one who resides in this area, but his name escapes me at the moment. He shouldn't be too hard to find, anyway. */
+  = @255 /* And now, kindly remove that book from my sight. */
+  IF ~~ DO ~SetGlobal("A7-DarknessQuest","GLOBAL",4)~ UNSOLVED_JOURNAL @3210 EXIT
 END
 
 

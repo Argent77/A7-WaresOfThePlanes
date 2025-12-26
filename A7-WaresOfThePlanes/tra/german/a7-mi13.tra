@@ -1,0 +1,366 @@
+// Book of Vile Darkness
+
+@1 = ~Buch der Abscheulichen Dunkelheit~
+@10 = ~Das „Buch der Abscheulichen Dunkelheit“ ist ein Artefakt von unaussprechlicher Boshaftigkeit, ein Nachschlagewerk des Bösen, verfasst, bearbeitet und zusammengestellt von einigen der mächtigsten und bösartigsten Wesen des Multiversums. Festgehalten sind darin die verdorbenen Ideen, verstörenden Gedanken, dunklen magischen Geheimnisse und abscheulichen Erkenntnisse, die seine Verfasser jemals ersonnen oder entdeckt haben.
+
+Diese Abschrift scheint nur ein kleiner Auszug aus dem Originalwerk zu sein. Aber selbst in ihrem gegenwärtigen Zustand hat sie die Macht, jeden zu verderben, der aus ihren Seiten liest.
+
+EIGENSCHAFTEN:
+
+Schutz vor Gutem
+ Dauer: 1 Phase
+ Bereich: Anwender
+
+Pakt des Abyss:
+Das Buch beschreibt ein dunkles Ritual, um einen Pakt mit dem mächtigen Dämonenfürsten Anarazel, der „Verwegenen Finsternis“. Es verlangt das Opfer eines mächtigen Sterblichen, um seine Aufmerksamkeit zu erregen, und eine beträchtliche Menge göttlicher oder höllischer Essenz, die freiwillig geopfert werden muss, um sich seine Unterstützung zu sichern. Im Gegenzug kämpft der Dämonenfürst für die Gruppe, bis er besiegt wurde oder acht Stunden vergangen sind, woraufhin er wieder in die höllischen Abgründe zurückkehrt. Das Buch wird durch das Ritual vernichtet.
+
+Gewicht: 3~
+
+@20 = ~untersuchen~  // button label to "converse" with an item
+@21 = ~Gesinnung geändert zu rechtschaffen böse~
+@22 = ~Gesinnung geändert zu neutral böse~
+@23 = ~Gesinnung geändert zu chaotisch böse~
+@24 = ~Gegenstand versiegeln: Altes Buch~
+
+// creatures
+@30 = ~Hoher Beschwörer~
+@31 = ~Kultist~
+@32 = ~Söldner~
+@33 = ~Bauer~
+@34 = ~Anarazel~
+@35 = ~Verwegene Finsternis~
+@36 = ~Dretch~
+@37 = ~Paladin des Helm~
+@38 = ~Meisterharfner~
+@39 = ~Harfner~
+@40 = ~Harfnerpriester~
+@41 = ~Harfnermagier~
+
+// spells
+@80 = ~Ebenenwechsel~
+@81 = ~Göttliche Essenz abgezogen~
+@82 = ~Schattengriff~
+@83 = ~Schattengriff
+Humanoide, riesige Humanoide oder Tiere, die von diesem Zauber getroffen werden, müssen einen Rettungswurf gg. Tod bestehen oder werden in ein untotes Wesen verwandelt, das vom Zauberer für eine Stunde kontrolliert werden kann. Wesen, die den Rettungswurf bestehen oder nicht vom Zauber betroffen sind, erleiden trotzdem 2W4 Schadenspunkte. Untote, Konstrukte und Wesen, die gegen Todesmagie immun sind, sind nicht betroffen.
+
+Die Verwandlung in ein untotes Wesen hängt von der Stufe des Zaubernden ab:
+  1. Stufe: Das Ziel muss einen Rettungswurf gg. Tod bestehen oder wird in einen Ghul verwandelt.
+  9. Stufe: Das Ziel muss einen Rettungswurf gg. Tod mit einem -2 Malus bestehen oder wird in einen Düsterschrecken verwandelt.
+  17. Stufe: Das Ziel muss einen Rettungswurf gg. Tod mit einem -4 Malus bestehen oder wird in einen Todesalb verwandelt.
+  25. Stufe: Das Ziel muss einen Rettungswurf gg. Tod mit einem -6 Malus bestehen oder wird in einen Vampirischen Todesalb verwandelt.~
+
+// area strings
+@100 = ~Ihr erblickt ein leeres Pentagramm. Ein Gefühl großen Übels durchdringt die Umgebung.~
+@101 = ~Ausgang~
+@102 = ~Geheimer Eingang~
+@103 = ~Eine unnatürliche Dunkelheit hindert Euch daran, die Höhle zu betreten.~
+@104 = ~Als ihr das Wort der Macht aussprecht, während sich der Schlüsselstein in Euren Händen befindet, löst sich die unnatürliche Dunkelheit auf, die den Zutritt verwehrte.~
+
+// misc. lines
+@150 = ~Ihr werdet von den Paladinen des Ordens des Strahlenden Herzens angegriffen. Offenbar hat man von Euren Missetaten gehört.~
+@151 = ~Ihr werdet von den Harfnern überrascht. Eure dunklen Taten haben offenbar eine feindseelige Reaktion hervorgerufen.~
+@152 = ~Schließt Euren Frieden mit den Göttern, <CHARNAME>!~
+@153 = ~<CHARNAME>, Ihr seid eine Gefahr für die gesamte Region!~
+
+// dialog: Book of Vile Darkness
+@200 = ~Dieses schwarz gebundene Buch fühlt sich unangenehm an und verströmt einen üblen Geruch, der ein ungutes Gefühl in Eurem Kopf hervorruft.~
+@201 = ~Das Buch ist mit arkanen Symbolen bedeckt und in unbekannten Runen geschrieben, die ein Gefühl der Furcht und etwas noch Schrecklicheres hervorrufen, das ein seltsames Unbehagen in Eurem Kopf hinterlässt. Es lässt sich nicht öffnen, egal wie sehr Ihr es auch versucht.~
+@202 = ~Das Buch ist mit arkanen Symbolen bedeckt und in unbekannten Runen geschrieben, die ein Gefühl der Furcht hervorrufen. Es lässt sich nicht öffnen, egal wie sehr Ihr es auch versucht.~
+@203 = ~Selbst nachdem Ihr das Buch weggelegt habt, könnt Ihr nicht anders, als noch eine Zeit lang darüber nachzudenken.~
+@204 = ~Als Ihr das Buch weglegen wollt, überkommt Euch ein unwiderstehliches Gefühl boshafter Befriedigung. Ihr wisst, dass sich tief in Eurem Inneren etwas verändert hat.~
+@205 = ~Als Ihr Eure Aufmerksamkeit auf das Buch richtet, drängt Euch eine mächtige Kraft, es nicht anzurühren. Alle Eure Sinne verraten Euch, dass das Buch Eure Seele schon allein durch das Betrachten verderben würde.~
+@206 = ~Mithilfe der Notizen über die Sprachen des Abyss könnt Ihr den Großteil des Buchinhalts entschlüsseln.~
+@207 = ~Mit der Einführung in die Sprachen des Abyss in Eurem Besitz wärt Ihr in der Lage, den Inhalt des Buches zu übersetzen.~
+@208 = ~Übersetzt das Buch.~
+@209 = ~Legt das Buch erstmal beiseite.~
+@210 = ~Das Buch ist von einer bedrohlichen Aura unnatürlicher Dunkelheit umgeben, die einem schon beim Anfassen ein ungutes Gefühl vermittelt. Durch das Aussprechen des auf dem Einband vermerkten Befehlsworts lässt sich das Buch öffnen.~
+@211 = ~Führt das dämonische Ritual „Pakt des Abyss“ durch.~
+@212 = ~Durchforstet das Buch nach geheimem Wissen.~
+@213 = ~Legt das Buch beiseite.~
+@214 = ~Der Umgang mit dem Buch kann verheerende Folgen haben, wenn der Leser nicht ausreichend vor seinem Bösen geschützt ist.~
+@215 = ~Fahrt trotz der Gefahren fort.~
+@216 = ~Ihr verbringt einige Zeit damit, Euch mit den Geheimnissen zu beschäftigen, die von einigen der berüchtigsten Anhänger der dunklen Künste in der Geschichte niedergeschrieben wurden.~
+@217 = ~Ein Aufsatz eines anonymen Autors fällt Euch sofort ins Auge, da er vollständig erhalten geblieben ist. Seine Erkenntnisse über das Wesen der nekromantischen Künste sind beachtlich.~
+@218 = ~Die enorme Menge an okkultem Wissen, die Ihr aus dem Buch gewonnen habt, hat Eure Seele nachhaltig geprägt. Sie zwingt Euch dazu, Eure eigene Sichtweise auf die Konzepte von Gut und Böse zu überdenken.~
+@219 = ~Die Einleitung zum Ritual macht schnell deutlich, dass der Beschwörer entweder eine starke Verbindung zu übernatürlichen Mächten herstellen oder besitzen muss. Ihr erfüllt keine dieser Voraussetzungen.~
+@220 = ~Die Einleitung zum Ritual macht schnell deutlich, dass der Beschwörer entweder eine starke Verbindung zu übernatürlichen Mächten herstellen oder besitzen muss. Als ein Kind Bhaals würdet Ihr diese Voraussetzungen erfüllen.~
+@221 = ~Oh nein, ich würde das nicht einmal im Traum in Erwägung ziehen. Es ist schon schlimm genug, dass ich seltsame Albträume über Bhaal habe.~
+@222 = ~Der vorbereitende Absatz geht näher darauf ein, was für den erfolgreichen Ablauf des Rituals erforderlich ist. Der Beschwörer muss einen Großteil seiner göttlichen Essenz aufgeben, um sich die Unterstützung des Dämons zu sichern.~
+@223 = ~Beendet die Vorbereitungen und legt das Buch beiseite.~
+@225 = ~Fangt mit den Vorbereitungen an.~
+@226 = ~Fangt mit den Vorbereitungen an und wählt <PLAYER2> als Opfer aus.~
+@227 = ~Fangt mit den Vorbereitungen an und wählt <PLAYER3> als Opfer aus.~
+@228 = ~Fangt mit den Vorbereitungen an und wählt <PLAYER4> als Opfer aus.~
+@229 = ~Fangt mit den Vorbereitungen an und wählt <PLAYER5> als Opfer aus.~
+@230 = ~Fangt mit den Vorbereitungen an und wählt <PLAYER6> als Opfer aus.~
+@231 = ~Es sind gerade keine geeigneten Begleiter in Reichweite, um sie in das Ritual einzubeziehen.~
+@232 = ~Ihr bereitet das Ritual mit größter Sorgfalt vor, um bei Euren Begleitern keinen Verdacht zu erregen.~
+@233 = ~Ihr vollzieht die notwendigen Riten, um Eure Seele auf das Ritual einzustimmen. Dann richtet Ihr Eure Aufmerksamkeit auf <PLAYER2> und spinnt das magische Netz so sorgfältig wie möglich. Nachdem Ihr Euch vergewissert habt, dass alles genauso durchgeführt wurde, wie im Buch beschrieben, beginnt Ihr mit der zweiten und letzten Phase des Rituals.~
+@234 = ~Ihr vollzieht die notwendigen Riten, um Eure Seele auf das Ritual einzustimmen. Dann richtet Ihr Eure Aufmerksamkeit auf <PLAYER3> und spinnt das magische Netz so sorgfältig wie möglich. Nachdem Ihr Euch vergewissert habt, dass alles genauso durchgeführt wurde, wie im Buch beschrieben, beginnt Ihr mit der zweiten und letzten Phase des Rituals.~
+@235 = ~Ihr vollzieht die notwendigen Riten, um Eure Seele auf das Ritual einzustimmen. Dann richtet Ihr Eure Aufmerksamkeit auf <PLAYER4> und spinnt das magische Netz so sorgfältig wie möglich. Nachdem Ihr Euch vergewissert habt, dass alles genauso durchgeführt wurde, wie im Buch beschrieben, beginnt Ihr mit der zweiten und letzten Phase des Rituals.~
+@236 = ~Ihr vollzieht die notwendigen Riten, um Eure Seele auf das Ritual einzustimmen. Dann richtet Ihr Eure Aufmerksamkeit auf <PLAYER5> und spinnt das magische Netz so sorgfältig wie möglich. Nachdem Ihr Euch vergewissert habt, dass alles genauso durchgeführt wurde, wie im Buch beschrieben, beginnt Ihr mit der zweiten und letzten Phase des Rituals.~
+@237 = ~Ihr vollzieht die notwendigen Riten, um Eure Seele auf das Ritual einzustimmen. Dann richtet Ihr Eure Aufmerksamkeit auf <PLAYER6> und spinnt das magische Netz so sorgfältig wie möglich. Nachdem Ihr Euch vergewissert habt, dass alles genauso durchgeführt wurde, wie im Buch beschrieben, beginnt Ihr mit der zweiten und letzten Phase des Rituals.~
+@238 = ~Bei der Vorbereitung der notwendigen Zauber wird Euch schnell klar, dass Euch die Erfahrung fehlt, um alle Feinheiten des Rituals vollständig zu verstehen. Da selbst der kleinste Fehler verheerende Folgen haben könnte, beschließt Ihr, die Vorbereitungen aufzuschieben, bis Ihr mehr Erfahrung gesammelt habt.
+
+^%color_cyan%(Der Beschwörer sollte %min_charname_xp% oder mehr Erfahrung gesammelt haben.)^-~
+@239 = ~Als Ihr Eure Aufmerksamkeit auf das geplante Opfer richtet, bemerkt Ihr, dass die Vorbereitungen nicht wie geplant verlaufen.~
+@240 = ~Es gelingt Euch nicht, einen entscheidenden Zauber des Rituals auf die Seele Eures Begleiters abzustimmen. Es scheint, als ob Euch eine Art göttlicher Eingriff daran hindert, fortzufahren. Ihr habt keine andere Wahl, als alle Vorbereitungen für das gesamte Ritual auszusetzen.~
+@241 = ~Darüber hinaus wird eine weitere mächtige Seele als Opfer benötigt, um überhaupt die Aufmerksamkeit des Dämonenfürsten zu erregen. Leider gibt es derzeit niemanden in der Nähe, der für diesen Zweck in Frage käme.~
+@242 = ~Darüber hinaus wird eine weitere mächtige Seele als Opfer benötigt, um überhaupt die Aufmerksamkeit des Dämonenfürsten zu erregen. Einer Eurer Begleiter würde diese Rolle gut ausfüllen.~
+@243 = ~Bei näherer Betrachtung werdet Ihr zunehmend unsicher, ob der ausgewählte Begleiter tatsächlich ein würdiges Opfer wäre, um die Aufmerksamkeit des Dämonenfürsten zu erregen. Schließlich entscheidet Ihr, nach einem stärkeren Kandidaten Ausschau zu halten.
+
+^%color_cyan%(Geeignete Kandidaten müssen mindestens %min_npc_xp% Erfahrungpunkte besitzen.)^-~
+@244 = ~Ihr versucht, die notwendigen Riten durchzuführen, um Eure Seele auf das Ritual einzustimmen, aber es scheint Euch einfach nicht zu gelingen, egal was Ihr tut. Die göttlichen Energien der Rechtschaffenheit, die diesen Ort umgeben, verhindern jeglichen Versuch, die niederen Ebenen zu erreichen. Euch bleibt nichts anderes übrig, als alle Vorbereitungen für das Ritual auszusetzen.~
+@245 = ~Untersucht es genauer.~
+@246 = ~Beim Durchblättern des Buches wird schnell klar, dass die Komplexität der Ideen und Theorien Eure geistigen Fähigkeiten bei weitem übersteigt.~
+@247 = ~Der Buchinhalt kommt Euch fremd vor. Ihr entdeckt mehrere komisch aussehende Zeichungen, die jedoch keinen Sinn ergeben.~
+@248 = ~Einige der im Buch beschriebenen Theorien enthüllen Geheimnisse, so finster und böse, dass Euer Verstand sie nicht erfassen kann.~
+
+// cutscene: ambush
+@300 = ~Ah, sie sind gekommen, wie vorhergesagt.~
+@301 = ~Hoffen wir, dass sie unsere Erwartungen erfüllen.~
+
+// dialog: cultist (ambush)
+@350 = ~Seid gegrüßt, Abenteurer. Uns ist zu Ohren gekommen, dass Ihr kürzlich in den Besitz eines bestimmten Artefakts gelangt seid.~
+@351 = ~Es handelt sich dabei um eine verzierte Metallscheibe, die ursprünglich uns gehörte, aber von einem ehemaligen Mitglied unserer Organisation gestohlen wurde.~
+@352 = ~Da Ihr nicht direkt in dem Vorfall verwickelt wart, möchte ich Euch ein Angebot machen. Gebt uns das Teil zurück, und wir entschädigen Euch für Eure Unannehmlichkeiten.~
+@353 = ~Wer seid Ihr?~
+@354 = ~Ich bin Orma, eine Beschwörerin von nicht unerheblicher Macht. Und dies sind meine Mitstreiter, die ebenfalls der arkanen Künste mächtig sind. Aber das sollte Euch nicht weiter interessieren.~
+@355 = ~Was ist an dieser Scheibe so besonders?~
+@356 = ~Das geht Euch nichts an. Es genügt zu wissen, dass es für uns wichtig ist. So wichtig, dass wir bereit sind, mit Euch zu verhandeln.~
+@357 = ~Und falls wir ablehnen?~
+@358 = ~Eine Ablehnung kommt nicht in Frage. Seid kein Narr. Wir werden den Gegenstand so oder so bekommen.~
+@359 = ~Na gut, Ihr könnt ihn haben.~
+@360 = ~Wir haben ihn nicht mehr.~
+@361 = ~Nein, ich werde ihn Euch nicht überlassen.~
+@362 = ~Ihr habt eine kluge Entscheidung getroffen. Das ist für Eure Mühen. Dann werde ich mich jetzt verabschieden.~
+@363 = ~Glaubt Ihr wirklich, ich würde Euch so eine plumpe Lüge abkaufen? Wenn Ihr es nicht freiwillig herausgebt, dann werden wir es stattdessen Euren toten Händen entreißen. Greift sie an!~
+@364 = ~Unser Orakel hat vorausgesagt, dass Ihr den Gegenstand in Eurem Besitz habt. Entweder lügt Ihr oder Ihr habt ihn erst kürzlich entsorgt. So oder so können wir es uns nicht leisten, Euch gehen zu lassen. Greift sie an!~
+@365 = ~Das ist bedauerlich. Aber meine Geduld ist ohnehin am Ende. Glaubt nicht, dass dies ein leichter Kampf wird. Wir alle beherrschen unser Handwerk. Greift an!~
+@366 = ~Seid gegrüßt. Unsere Anführerin möchte mit Euch über ein bestimmtes Artefakt sprechen, das kürzlich in Euren Besitz gelangt ist.~
+
+// cutscene: dark ritual
+@400 = ~Das Ritual kann beginnen.~
+@401 = ~Scio didici peto--~ [CHA_MM04]
+@402 = ~--Manus potentis paro--~ [CHA_FM02]
+@403 = ~--Cupio virtus licet--~ [CHA_MM05]
+@404 = ~--Presse alia fero--~ [CHA_MM08]
+@405 = ~--Vita mortis careo--~ [CHA_FM07]
+@406 = ~--Facio vaco ferre.~ [CHA_MM03]
+@407 = ~Was ist hier los? Wer wagt es, unser Ritual zu stören?~
+@408 = ~Tötet sie alle und schneidet ihnen ihre Herzen heraus, um sie unserer Schutzgottheit zu opfern!~
+@409 = ~Ja, Meister.~
+@410 = ~Neiiin!~
+
+// dialog: Lazarus Librarus
+@500 = ~Ich habe eine ungewöhnliche Bitte. Wir haben ein Buch gefunden, das in unbekannten Runen geschrieben wurde und sich allen magischen Identifierungsversuchen widersetzt. Wärt Ihr bereit, es zu übersetzen?~
+@501 = ~Ich kann es auf jeden Fall versuchen. Lasst mich mal sehen.~
+@502 = ~Ah, bei allen Mächten! Bitte deckt es sofort zu! Das Buch wurde in Runen des Abyss geschrieben und wahrscheinlich mit einer mächtigen Verzauberung versehen. Selbst ein flüchtiger Blick darauf könnte tiefgreifende Auswirkungen auf den Leser haben.~
+@503 = ~Ich kann Eurer Bitte unmöglich nachkommen. Das Buch sollte so schnell wie möglich vernichtet oder weggeschlossen werden.~
+@504 = ~Wovor habt Ihr solche Angst?~
+@505 = ~Falls Ihr es nicht wissen solltet: Diese Art Runen birgt immer ein wenig von den Kräften des Abyss in sich. Das bloße Lesen der Runen kann den Verstand unachtsamer Leser, die nicht die notwendigen Vorkehrungen getroffen haben, verderben.~
+@506 = ~Vielleicht habt Ihr recht. Was genau schlagt Ihr vor?~
+@507 = ~Ich könnte einen mächtigen Zauber sprechen, der das Buch, ähnlich wie der Einkerkerungszauber, in eine Miniaturtaschendimension verbannt. Dort wird es hoffentlich lange Zeit unentdeckt bleiben.~
+@508 = ~Da es eine erhebliche Gefahr für die Allgemeinheit darstellt, würde ich es sogar umsonst tun.~
+@509 = ~Na gut, beschwört Euren Zauber.~
+@510 = ~Wenn ich es mir recht überlege, möchte ich das Risiko eingehen. Könnt Ihr mir wenigsten sagen, wie ich es selbst übersetzen kann?~
+@511 = ~Auf keinen Fall. Ich möchte nicht dafür verantwortlich sein, jemanden in sein sicheres Verderben zu führen.~
+@512 = ~Andererseits scheint Ihr bereits weitreichende Erfahrungen mit den übernatürlichen Kräften des Universums gesammelt zu haben. Daher gebe ich Euch den Rat, die Bewohner der niederen Ebenen, also die Wesen des Abyss oder der Neun Höllen, aufzusuchen.~
+@513 = ~Ich danke Euch für die Hilfe.~
+@514 = ~Nein, dankt mir dafür nicht. Wenn Euch Euer Leben lieb ist, dann schließt dieses Buch weg und rührt es nie mehr an.~
+@515 = ~Ihr werdet mich nicht davon abbringen können. Könnt Ihr mir denn überhaupt nicht helfen?~
+@516 = ~Ich bereite den Zauber vor.~
+@517 = ~Ich habe es mir anders überlegt und möchte, dass das dämonische Buch weggeschlossen wird. Könnt Ihr das tun?~
+@518 = ~Ich bin erleichtert, dass Ihr Eure Meinung doch noch geändert habt. Ja, das kann ich tun, und zwar gerne. Bitte reicht mir das Buch.~
+@519 = ~Bitte sehr.~
+@520 = ~Sie verfügen über das erforderliche Wissen, um Euch zu helfen, vorausgesetzt, Ihr seid bereit, den Preis für ihre Dienste zu zahlen.~
+@521 = ~Es ist vollbracht. Das Buch befindet sich jetzt an einem sicheren Ort. Zumindest für eine Weile. Artefakte wie dieses neigen dazu, irgendwann wieder aufzutauchen.~
+
+@550 = ~Der Zauber zieht das Buch aus der Taschendimension, in der es versteckt wurde, und fällt zu Boden. Ihr hebt es schnell auf und legt es in Euer Gepäck.~
+
+// dialog: Cespenar
+@600 = ~Könnt Ihr dieses Buch für uns übersetzen?~
+@601 = ~Igitt! Wurde in der Sprache des Abyss geschrieben. Hässliche Sprache. Ihr wollt wirklich lesen das Ding? Könnte Euch einen Sprachführer verkaufen für einen schwarzen Opal und 1.000 GM. Wollt Ihr?~
+@602 = ~Das kann ich mir im Moment nicht leisten.~
+@603 = ~Na gut, dann kommt wieder wenn bereit Ihr seid.~
+@604 = ~Ja, das will ich.~
+@605 = ~Könnt Ihr mir den Sprachführer für den Abyss verkaufen?~
+@606 = ~Ja, könnte ich. Ihr habt schwarzen Opal und 1.000 GM?~
+@607 = ~Jetzt gerade nicht.~
+@608 = ~Sicher, nur zu.~
+
+// dialog: Anarazel
+@700 = ~„EURE OPFERGABE IST ANGEMESSEN. IM GEGENZUG WERDE ICH EURE FEINDE ZERMALMEN, BIS ICH ZUFRIEDEN BIN.“~
+@701 = ~„MEINE SEITE DES PAKTS WURDE ERFÜLLT. ICH WERDE MICH ZURÜCKZIEHEN.“~
+@702 = ~„IHR HABT MICH MEINER HEIMATEBENE ENTRISSEN!“~
+@703 = ~„ICH WERDE MIR JETZT MEINEN PREIS NEHMEN!“~
+@704 = ~„GEBT EURE BITTE AN!“~
+@705 = ~Ich fordere Euch zu einem Duell heraus, Monster!~
+@706 = ~Kehrt in den Abyss zurück, Dämon!~
+@707 = ~Ich habe es mir anders überlegt.~
+@708 = ~„WAGT ES NICHT MIT EUREM SINNLOSEN GESCHWÄTZ EINEN FÜRSTEN DES ABYSS ZU BEHELLIGEN.“~
+@709 = ~„HAHAHAHA, SO SEI ES. MÖGT IHR IN MEINER GEGENWART ERZITTERN UND EWIGE SCHMERZEN ERLEIDEN.“~
+@710 = ~„SO SEI ES! MEINE SEITE DES PAKTS WURDE ERFÜLLT. ICH WERDE MICH ZURÜCKZIEHEN.“~
+@711 = ~„STELLT MEINE GEDULD NICHT AUF DIE PROBE, STERBLICHER!“~
+
+@750 = ~„KOMMT, MEINE DIENER!“~
+@751 = ~„LEIDET UNTER DEN HÄNDEN MEINER GENERÄLE!“~
+@752 = ~Kommt, Anarazel! Dient mir gut und werdet belohnt!~
+@753 = ~„JA, HERR. ICH ERWARTE EURE BEFEHLE.“~
+
+// various NPC lines
+// Korgan
+@800 = ~Der Narr ist also tot, was? Verraten, wie ich einst war, har! Hoffentlich ist es die Mühen wert. Lasst uns weitermachen, bevor wir mehr darüber nachdenken, als es wert ist!~
+// Sarevok
+@810 = ~Ihr enttäuscht mich, <CHARNAME>. Ungeachtet all Eurer schönen Worte über gute Taten, scheint Ihr immer noch nicht davor zurückzuschrecken, dem Grundsatz „Der Zweck heiligt die Mittel“ zu folgen.~
+@811 = ~Ich habe ebenfalls andere aus einer Laune heraus getötet. Und letztendlich brachte es mir nur jede Menge Ärger und den Verlust von allem, was mir wirklich wichtig war.~
+@812 = ~Eine beeindruckende Demonstration Eurer Skrupellosigkeit, <CHARNAME>. Ich weiß, wie es sich anfühlt, einen guten Handel abzuschließen. Es kann so berauschen sein, wie sembianischer Wein, oder einen Narren zu töten, der Euch auf dem Weg zum Sieg im Weg steht.~
+// Dorn
+@820 = ~Ihr seid ein Feigling und ein Narr, ein Artefakt von solch großer Macht so leichtfertig aufzugeben, <CHARNAME>. Denkt nur an all die Möglichkeiten, die uns das Buch geboten hätte, wenn es richtig angewandt worden wäre.~
+@821 = ~Ihr habt eine gute Wahl getroffen, <CHARNAME>. Mir sind blutige Abmachungen nichts Neues, und manche lohnen sich sogar.~
+// Hexxat
+@830 = ~Der Tod kommt sowohl zu denen, die ihn erwarten, als auch zu denen, die ihn nie kommen sahen.~
+// Viconia
+@840 = ~Nun, Abbil, es scheint, als hättet Ihr endlich einen Weg gefunden, Euch eine mächtige Gefälligkeit zu sichern, ohne dafür viel bezahlen zu müssen.~
+@841 = ~Seien wir ehrlich: Euer Begleiter musste den maßgeblichen Anteil des Preises bezahlen. Lu'oh yutri. Es fühlt sich fast so an, als wäre ich wieder in Menzoberranzan!~
+@842 = ~Als Drow hättet ihr sicherlich bereits die Aufmerksamkeit der Mutter Oberin auf Euch gezogen. Wenn nicht mit Eurer Unverschämtheit, dann mit Eurem Mut.~
+@843 = ~Das wirft bei mir die Frage auf: Würdet Ihr mich gegen einen Gefallen eintauschen, <CHARNAME>, wenn es verlockend genug wäre?~
+@844 = ~Was? Nein! Natürlich nicht!~
+@845 = ~Wenn die Belohnung groß genug wäre…?~
+@846 = ~Hmm. Nun, Ihr solltet wissen, dass Drow solche Beleidigungen selten vergessen. Und wenn wir einen Weg finden, es zu ertragen, dann revanchieren wir uns mit aller Kraft.~
+@847 = ~Ich bin… froh, dass zu hören, ussta ku'nal. Ich wurde schon viel zu oft betrogen, und ich finde, ich habe endlich etwas aufrichtigen Beistand verdient!~
+@848 = ~Das dachte ich mir. Dann lasst mich in Ruhe, og'elend. Ihr verdient meine Aufmerksamkeit nicht!~
+// Edwin
+@860 = ~So bedankt man sich also bei denen, die sich bereit erklärt haben, einem bei ihren törichten Unternehmungen zu helfen. Gut zu wissen. (Wenigstens war ich es nicht, der einen so unsinnigen, vorzeitigen Tod sterben musste.)~
+// Haer'Dalis
+@870 = ~Wie kühn, mein Rabe. Ihr habt ein Verbrechen begangen, eine mörderische Tat. Ich frage mich, ob Euch diese Entscheidung im Schlaf verfolgen wird? Oder werdet Ihr einfach akzeptieren, dass Ihr Euch gar nicht so sehr von Eurem Vater unterscheidet, wie es den Anschein hatte?~
+@871 = ~Wir sollten jetzt besser Vorsicht walten lassen. Die Wesen der niederen Ebenen sind selten, wenn überhaupt, so großzügig, wie sie erscheinen. Sie verdrehen ihre Worte so sehr, dass sogar diesem Spatz der Kopf brummt, wie nach einer Tour durch die Bierstuben Sigils.~
+// Jan
+@880 = ~Wisst Ihr, ich muss gerade unweigerlich an die Zeit zurückdenken, als ich Onkel Gerhardt in unserem Gemüsegarten aushalf. Es war ein besonders gutes Jahr für Gemüse. Die Mischung aus Sonne und Regen wirkte Wunder. Aber ich schweife ab.~
+@881 = ~Jedenfalls hatten wir auch ständig mit diesen lästigen Schädlingen auf unseren Kartoffelpflanzen zu kämpfen. Sie waren eine echte Plage. Ich habe allerdings noch nie einen in Menschengröße gesehen. Aber jetzt, wo ich Euch vor mir sehe und Herr Dämon im Hintergrund herumtobt, bin ich mir da nicht mehr so sicher.~
+// Neera
+@890 = ~WAS habt Ihr gerade getan? Wie konntet Ihr nur? Ich bin einfach… NEIN. Darüber will ich nicht einmal nachdenken. Ich habe selbst schon aus Versehen Dämonen beschworen, aber niemals zu so einem Preis.~
+@891 = ~Tun wir—tun wir einfach so, als ob das ein Zauber war, der schiefgegangen ist. Denn sonst werde ich für den Rest meines Lebens Albträume haben.~
+// Wilson
+@900 = ~Grr! Brüll! Schnauf brummel!~
+@901 = ~Habt Ihr mich gerade mit einer Art Enttäuschung verglichen? Einer Narbe, die fast zum Untergang einer Löwenfamilie geführt hätte?! Im Ernst?!~
+@902 = ~BRÜLL!~
+// Cernd
+@910 = ~Ich habe Menschen gesehen, die mich fürchteten, als ich mich in ein mit Fell bedecktes Monster verwandelte. Aber was ich jetzt erlebt habe, ist viel beängstigender als jede Verwandlung, die ich jemals zuvor gesehen habe.~
+@911 = ~Eure Entscheidung, Chaos und Zerstörung über diese Länder zu bringen, besorgt mich zutiefst. Ich kann bereits die Erde unter den Füßen dieses Dämons vor Schmerz aufschreien hören, wo immer es auch hintritt.~
+@912 = ~Ich werde lange und gründlich über diese dramatische Wendung der Ereignisse und meine eigene Zusammenarbeit mit Euch nachdenken müssen.~
+// Jaheira
+@920 = ~<CHARNAME>, ich kann nicht glauben, was Ihr gerade getan habt!~
+@921 = ~Ihr verbündet Euch nicht nur mit Dämonen, sondern habt auch das schlimmste aller Verbrechen begangen, indem Ihr unseren Gefährten verraten habt! Bei Silvanus, ich kann nicht tatenlos zusehen, wie Ihr diesen Weg des Irrsinns weitergeht. Was würde Gorion sagen, wenn er bei uns wäre!~
+@922 = ~Das ist er aber nicht. Er ist tot, Jaheira.~
+@923 = ~Bitte, Jaheira…~
+@924 = ~Das weiß ich. Aber—Ihr versteht es offensichtlich nicht.~
+@925 = ~Die Harfner werden es herausfinden. Ich werde Euch weiter begleiten, aber nur, weil Gorion wollte, dass ich auf Euch aufpasse. Und um Torils willen. Ihr solltet jedoch wissen, dass ich Euch für einen besseren Menschen gehalten habe!~
+@926 = ~Sagt nicht ein weiteres Wort, <CHARNAME>.~
+@927 = ~Die Harfner werden es bald herausfinden. Ich werde in dieser Gruppe bleiben, aber nur, weil Gorion wollte, dass ich auf Euch aufpasse. Und um Torils willen. Aber—Ihr solltet jedoch wissen, dass ich Euch für einen besseren Menschen gehalten habe.~
+@928 = ~Ihr habt unseren Gefährten kaltblütig ermordet! Das ist das schlimmste aller Verbrechen! Ich dachte, Ihr wärt etwas Besseres als das! Aber—was Ihr getan habt, erinnert mich an Euren mörderischen Vater. Genau das ist es, was er von seinem Sohn erwarten würde.~
+       ~Ihr habt unseren Gefährten kaltblütig ermordet! Das ist das schlimmste aller Verbrechen! Ich dachte, Ihr wärt etwas Besseres als das! Aber—was Ihr getan habt, erinnert mich an Euren mörderischen Vater. Genau das ist es, was er von seiner Tochter erwarten würde.~
+@929 = ~Das war wirklich gemein von Euch.~
+@930 = ~Jaheira, bitte… Ich hatte Angst! Ich musste das tun! Ich benötige jede Hilfe, die ich bekommen kann. Aller verfügbaren Kräfte—oder ich werde diesen Krieg verlieren.~
+@931 = ~Es tut mir Leid, <CHARNAME>, aber ich glaube, Ihr musstet das hören. Was war es denn sonst, wenn nicht Mord?~
+@932 = ~Und kommt Euch irgendetwas davon wie ein Gewinn vor?~
+@933 = ~Wenn ich daran denke, dass ich mein Leben mit Euch verbringen wollte. Aber jetzt sehe ich immer mehr das Monster in Euch, welches mir einst meinen Mann genommen und getötet hat.~
+@934 = ~Angesichts der Herausforderungen, denen wir gegenüberstehen, wird unsere Liste an Möglichkeiten immer kürzer. Ich hatte keine andere Wahl, als zu verzweifelten Maßnahmen zu greifen.~
+@935 = ~Ich gebe zu, dass meine Handlungen unüberlegt und rücksichtslos waren. Aber ich kann diese Entscheidung nicht mehr rückgängig machen, Jaheira…~
+@936 = ~Ist das alles, was Ihr zu sagen habt? Das ist zu viel für mich. Ich… ich kann nicht länger an Eurer Seite bleiben. Ich sollte auf Euch aufpassen. Ich wollte es für Gorion tun, aber nun ist meine Grenze erreicht.~
+@937 = ~Ich hoffe, dass Ihr Eure Feinde besiegt und anderen helft. Ich werde Euch aus der Ferne beobachten, aber ich kann nicht bei jemandem bleiben, dem ich nicht mehr vertrauen kann.~
+@938 = ~Leider kommt diese Erkenntnis zu spät. Ich werde weiter Teil dieser Gruppe bleiben, aber nur, weil Gorion wollte, dass ich auf Euch aufpasse. Und um Torils willen. Aber seid Euch bewusst, dass dies die Dinge zwischen uns verändert. Ich würde lieber sterben, als zuzugeben, dass ich Euch immer noch liebe.~
+// Nalia
+@950 = ~Bei allen Göttern! Was habt Ihr getan, <CHARNAME>? Das hier ist weitaus schlimmer als alles, wozu Adlige wie die Roenalls jemals fähig wären.~
+@951 = ~Ich möchte mir gar nicht vorstellen, wozu Ihr das nächste Mal fähig sein könntet. Ich muss jetzt gehen.~
+// Imoen
+@960 = ~Nein, <CHARNAME>! Warum habt Ihr das <A7_SACRIFICE> angetan? Gorion hätte das niemals gutgeheißen, selbst unter den widrigsten Umständen nicht.~
+@961 = ~Als ich in der Gewalt von Irenicus war, habe ich im Laufe seiner Experimente viele schreckliche Dinge miterlebt. Sie verfolgen mich noch immer in meinen Träumen. Ich bin mir ziemlich sicher, dass Euch das, was Ihr getan habt, in Euren Träumen verfolgen wird. Wenn nicht heute, dann in irgendwann in der Zukunft.~
+// Minsc
+@970 = ~Boo zittert, wie er noch nie zuvor gezittert hat. Selbst Minsk ist verwirrt darüber, was mit unserem Gefährten <A7_SACRIFICE> geschehen ist.~
+@971 = ~Ich musste eine Entscheidung treffen, die mir nicht leicht fiel. Aber sie war notwendig. Habt Ihr Dynaheir und die Hexen aus Rashemen immer verstehen können? Sind Wege zum Ruhm nicht mit schwierigen Entscheidungen gepflastert?~
+@972 = ~Wer nicht wagt, der nicht gewinnt. Ich bin mir sicher, dass unser Gefährte dieses notwendige Opfer verstanden hätte.~
+@973 = ~Ich schäme mich und bin wütend. Aber weder Minsk noch Boo verstehen so richtig, was Ihr wirklich denkt. Wir werden Euch im Auge behalten.~
+@974 = ~Ein Krieger wagt sein eigenes Leben, aber fügt seinen Freunden keinen Schaden zu. Selbst Boo stimmt mir voll und ganz zu. Wir werden Euch im Auge behalten, <CHARNAME>.~
+// Valygar
+@980 = ~Ihr Narr! Ihr habt einen treuen Gefährten für diese Abscheulichkeit geopfert? Das ist schlimmer als alles, was Lavok jemals getan hätte.~
+@981 = ~Selbst mit dem Dämon an Eurer Seite werde ich das nicht hinnehmen!~
+// Rasaad
+@990 = ~<CHARNAME>, mit dieser Opfergabe habt Ihr die Dunkelheit in Euer Herz gelassen.~
+@991 = ~Sie wird sich weiter ausbreiten und Eure Seele aus dem Gleichgewicht bringen. Ich bitte Euch inständig, Euch Zeit zu nehmen und darüber nachzudenken, was Ihr heute getan habt. Oder die Schatten werden das verbleibende Licht in Eurer Seele auslöschen.~
+@992 = ~Ich habe darüber nachgedacht, Euch zu verlassen, da ich diese Dunkelheit nicht in mein Herz lassen möchte. Mir ist aber auch bewusst, dass wir die Reiche vor dem grausamen Schicksal retten müssen, dass ihnen droht. Ich kann aber nicht ignorieren, was Ihr getan habt. Jetz weiß ich, dass Ihr nicht nur ein Held seid, sondern auch ein Ungeheuer, das alle töten könnte, die Euch im Weg stehen.~
+@993 = ~Ich verstehe nicht, wie Ihr so etwas auch nur in Betracht ziehen konntet. Ich dachte, Ihr wärt besser als das. Ich dachte, Ihr wolltet Frieden und Hoffnung verbreiten. Aber was Ihr getan habt, hat mit all dem nichts zu tun.~
+@994 = ~Um die vor uns liegenden Herausforderungen zu meistern, sind wir manchmal gezwungen, schwierige Entscheidungen zu treffen.~
+@995 = ~Ihr übertreibt maßlos, Rasaad.~
+@996 = ~Ich dachte, dass ich Euch verstehe, <CHARNAME>. Das dachte ich wirklich. Jetzt bin ich mir nicht mehr so sicher.~
+@997 = ~Ihr müss mir glauben, dass ich diese Entscheidung nicht leichtfertig getroffen habe.~
+@998 = ~Ihr müss mir glauben, dass ich diese Entscheidung nicht leichtfertig getroffen habe. Das Opfern useres Gefährten wird mich wahrscheinlich für den Rest meines Lebens verfolgen.~
+@999 = ~Ernsthaft? Na gut, dann geh. Ich weiß, worauf das hinausläuft.~
+@1000 = ~Ich kann nicht behaupten, dass ich Eure Entscheidung verstehe, <CHARNAME>. Aber solange ich das Licht des Lebens in Euren Augen sehe, werde ich alles in meiner Macht Stehende tun, um die Last Eurer Schuld über das, was heute passiert ist, mitzutragen.~
+@1001 = ~Wirklich? Es tut mir Leid, <CHARNAME>, wirklich. Aber langsam habe ich das Gefühl, dass ich Euch nicht mehr erkenne. Ich bin mir nicht mehr sicher, ob Euch das Gleichgewicht wirklich etwas bedeutet: weder das um uns herum, noch das in Eurem Herzen. Es ist wohl das Beste, wenn ich gehe. Vielleicht werdet Ihr eines Tages verstehen, dass das ein Fehler war.~
+@1002 = ~Wie kann ich Euren Worten Glauben schenken? Das Licht des Lebens, das ich einst in Euren Augen sah, ist erloschen. Ich glaube nicht, dass ich so weitermachen kann.~
+@1003 = ~Danke für alles, was Ihr mir gegeben habt. Aber Euch so zu sehen, ist zu schmerzhaft, um weiter an Eurer Seite zu bleiben. Lebt wohl.~
+@1004 = ~Es tut mir Leid, <CHARNAME>, wirklich. Aber langsam habe ich das Gefühl, dass ich Euch nicht mehr erkenne. Ich bin mir nicht mehr sicher, ob Euch das Gleichgewicht wirklich etwas bedeutet: weder das um uns herum, noch das in Eurem Herzen. Ich hoffe, dass Ihr eines Tages verstehen werdet, dass das ein Fehler war.~
+// Mazzy
+@1010 = ~Ihr habt soeben die abscheulichste Tat begangen, die man sich vorstellen kann, indem Ihr Euren Gefährten geopfert habt, <CHARNAME>!~
+@1011 = ~Wie konnte ich nur so blind sein und die Dunkelheit nicht bemerken, die in Eurer Seele wuchert? Das ist etwas, worüber ich nachdenken muss.~
+@1012 = ~Ich kann mit gutem Gewissen nicht länger in Eurer Gruppe bleiben. Ich werde für Euer Seelenheil beten, <CHARNAME>. Mögen wir uns nie wieder begegnen.~
+@1013 = ~Ich hätte schon viel früher handeln sollen, bevor es so weit gekommen ist. Jetzt bin ich ebenso verantwortlich wie Ihr dafür, dass diese arme Seele in den Abyss geschickt wurde.~
+@1014 = ~Ich kann und werde diese Machenschaften nicht länger tolerieren. Selbst wenn ich angesichts solch überwältigender Gegner unterliegen sollte, weiß ich, dass meine Seele für meine Untätigkeit Erlösung finden wird. Für Arvoreen!~
+// Aerie
+@1020 = ~<CHARNAME>? Wie konntet… Wie konntet Ihr nur so beiläufig einen unserer Gefährten opfern?! Keine Umstände können das jemals rechtfertigen…!~
+@1021 = ~Und dann auch noch, um einen Dämonen der Hölle zu beschwören? Ihr macht mir in mehrfacher Hinsicht Angst.~
+@1022 = ~Manchmal sind drastische Mittel erforderlich, um zu überleben. Aerie, wir kämpfen gegen Götter und das Schicksal selbst! Ich sah in dieser Angelegenheit kaum eine andere Wahl.~
+@1023 = ~Wirklich nicht? Was wird noch passieren? Später? Werde ich das nächste Opfer Eurer Pläne sein? Es gibt Dinge, die man niemals rechtfertigen sollte, egal was passiert. Ich… Ich kann nicht länger bleiben.~
+@1024 = ~Nein, es gibt immer eine Wahl. Es muss eine geben. Bitte sagt mir, dass es nur eine unüberlegte Handlung war. Sagt mir, dass dies nicht Ihr seid! Das KÖNNT Ihr nicht sein…!~
+@1025 = ~Ihr habt Recht. Ich habe nicht alle Konsequenzen bedacht, als ich das Ritual durchgeführt habe. So ein Fehler wird mir nicht noch einmal passieren.~
+@1026 = ~Es mag andere Möglichkeiten geben. Aber keine davon hätte mir das ermöglicht, was ich brauchte. Ich stehe zu meiner Entscheidung mit allen Konsequenzen.~
+@1027 = ~Ich… Ich finde das nicht gut. Ganz und gar nicht. Aber ich versuche, mit der Situation zurechtzukommen. Ich brauche jetzt etwas Zeit. Lasst mich allein. Bitte. Ich brauche etwas Abstand.~
+@1028 = ~Ich wollte es nicht glauben. Aber jetzt sehe ich, wie Ihr wirklich seid. Ich… ich kann nicht länger bleiben. Wenn ich Euch in die Augen schaue, dann sehe ich nur einen bodenlosen Abgrund, und das halte ich nicht aus.~
+@1029 = ~Ich… Ich dachte, ich würde Euch kennen. Aber dass Ihr zu so etwas Schrecklichem fähig seid? Ich… kann es einfach nicht glauben. Wart Ihr schon immer so? Oder ist etwas in Euch einfach… zerbrochen?~
+@1030 = ~Ich sah keine andere Möglichkeit, ohne Euch oder jemand anderes zu verlieren. Es tut mir wirklich leid, was ich tun musste, aber ich würde ALLES tun, damit wir zusammenbleiben können. Selbst wenn es bedeuten würde, jemanden umzubringen! Ich liebe Euch, Aerie.~
+@1031 = ~Manchmal sind beherzte Taten notwendig, um zu überleben. Ich hatte in dieser Angelegenheit kaum eine andere Wahl.~
+@1032 = ~Wie könnt Ihr nur so etwas sagen? Und das auch noch mit so einem Bekenntnis verbinden…! <A7_SACRIFICE> starb durch Eure eigene Hand!~
+@1033 = ~Ich wollte Euch niemals wehtun, Aerie. Ich schwöre es, aber wir stehen Göttern, Monstern und dem Schicksal selbst gegenüber! Ich kann uns nicht mehr mit normalen Schilden und Mitteln beschützen, nicht mehr. Ich musste das tun.~
+@1034 = ~Ich wollte Euch niemals wehtun, Aerie. Ich schwöre es, aber wir stehen Göttern, Monstern und dem Schicksal selbst gegenüber! Ich kann uns nicht mehr mit normalen Schilden und Mitteln beschützen, nicht mehr. Aber seid Euch bewusst, dass mich das, was ich für uns getan habe, wahrscheinlich für den Rest meines Lebens verfolgen wird.~
+@1035 = ~Ich… Ich wünschte mir von ganzen Herzen, ich könnte Euch glauben. Aber ich kann es nicht. Ich spüre eine bösartige Dunkelheit in Euren Worten, die mir Angst macht, <CHARNAME>. Ich… Ich muss von Euch weg.~
+@1036 = ~Ich finde das nicht gut. Ist das wirklich der richtige Weg, um jemanden zu retten…? Nein. Ich glaube nicht, dass das richtig ist. Ich kann verstehen, dass Ihr Angst habt, denn ich habe auch Angst, aber das hier…?~
+@1037 = ~Ich werde weiter bei Euch bleiben, <CHARNAME>, aber was Ihr getan habt—ich kann es nicht vergessen—und ich kann Euch auch nicht vergeben. Es ist einfach… zu viel.~
+@1038 = ~Musstet Ihr das wirklich? Ich höre Eure Worte, aber sie sind kalt und distanziert. Eher die eines Monsters als die eines Menschen. Ihr macht mir Angst. Ich… muss von Euch weg.~
+// Anomen
+@1050 = ~Als ein Mitglied des Ordens des Strahlenden Herzens kann ich dieses schlimmste aller Verbrechen, einen unheiligen Pakt mit einem Dämonen des Abyss zu schließen, nicht tolerieren.~
+@1051 = ~Mein gerechter Zorn wird Euch vernichten, <CHARNAME>!~
+@1052 = ~Ehrlich gesagt, <CHARNAME>, überrascht es mich nicht wirklich, dass Ihr Euch so tief erniedrigt und Euch sogar mit Dämonen einlasst.~
+@1053 = ~Ich bin mir nicht sicher, ob ich überhaupt sagen kann, dass Ihr mich mit all dem enttäuscht. Dieser Gedanke kam mir zunächst in den Sinn, aber vielleicht ist es gar keine Enttäuschung, die ich empfinde. Es ist eher die Erkenntnis, dass Ihr nicht so sehr der Held seid, wie manche es von Euch erwarten würden.~
+@1054 = ~Was geschehen ist, ist geschehen. Ich habe Euch nichts mehr zu sagen, <CHARNAME>.~
+@1055 = ~Aber es bricht mir das Herz, dass die Frau, die ich liebe, mich die ganze Zeit über so täuschen konnte. Ich… Ich kann Euch jetzt nicht ins Gesicht schauen, denn sonst würde ich verrückt werden.~
+@1056 = ~Lebt wohl, meine frühere Liebe.~
+@1057 = ~Es bricht mir fast das Herz, dass die Person, die ich liebe, mich die ganze Zeit über getäuscht haben könnte. Mich glauben machen konnte, dass Ihr vertrauenswürdig seid. Aber das Stichwort ist hier „fast“. Ich möchte, dass Ihr mich anschaut.~
+@1058 = ~Lasst mich eine Frage stellen. Waren Eure Gefühle für mich echt? Oder war es für Euch immer nur ein Spiel?~
+@1059 = ~Ich liebe Euch, Anomen.~
+@1060 = ~Es tut mir leid, Anomen. Diese Frage kann ich nicht beantworten.~
+@1061 = ~Ich verstehe. Insgeheim hatte ich auf diese Antwort gehofft, auch wenn das nicht alles ungeschehen macht, was Ihr getan habt. Im Hinblick auf Eure Berufung macht es jedoch Sinn. Ihr spielt mit dem Chaos. Ihr seid so etwas wie eine unberechenbare Größe.~
+@1062 = ~Ich entscheide mich, Euch zu glauben. Aber bevor wir weiterreden können, brauche ich vielleicht einen Moment, um mich zu beruhigen. Je früher wir das tun, umso besser.~
+@1063 = ~Ich verstehe. Selbst jetzt bin ich mir noch nicht sicher, ob Eure Worte der Wahrheit entsprechen oder ob Ihr nur mit mir spielt. So oder so, wenn ich bei Euch bleibe, würde ich nur noch mehr daran zweifeln, dass ich Eure Maske durchschauen kann, die Ihr hin und wieder tragt. Daher sehe ich keine andere Wahl, als zu gehen.~
+@1064 = ~Ich verstehe. Ich war ein Narr, Euch zu vertrauen. Euch sogar zu lieben. Aber das wird nicht wieder vorkommen.~
+// Keldorn
+@1070 = ~Das Böse wurde weggesperrt und kann keinen weiteren Schaden anrichten. Dafür bin ich dankbar. Aber wir müssen stets wachsam bleiben. Viele Artefakte verderben den Verstand ihrer Besitzer auf subtilere Weise als dieses Buch.~
+@1071 = ~Ich kann nicht glauben, dass Ihr einen Pakt mit der Macht von solch unvorstellbarem Bösen geschlossen habt. Erklärt mir das augenblicklich, <CHARNAME>!~
+@1072 = ~Angesichts immer mächtigerer Widersacher blieb mir nichts anderes übrig, als drastische Maßnahmen zu ergreifen. Ich bedauere es zutiefst, unseren Gefährten opfern zu müssen, aber ich halte es für gerechtfertigt. <A7_SACRIFICE> machte keinen Hehl aus seinen bösartigen Absichten.~
+@1073 = ~Angesichts immer mächtigerer Widersacher blieb mir nichts anderes übrig, als drastische Maßnahmen zu ergreifen. Ich bedauere es zutiefst, unseren Gefährten opfern zu müssen, aber ich halte es für gerechtfertigt. <A7_SACRIFICE> machte keinen Hehl aus ihren bösartigen Absichten.~
+@1074 = ~Im Nachhinein betrachtet war diese Entscheidung wahrscheinlich leichtsinnig und dumm. Mit den ungeheuren Kräften des Buches in meinen Händen war mir nicht ganz klar, welche Konsequenzen das haben würde.~
+@1075 = ~Ihr habt kein Recht, über mich zu urteilen. Ich stehe zu meiner Entscheidung und ihren Konsequenzen.~
+@1076 = ~Die Zerschlagung eines Übels kann niemals die Begehung eines anderen rechtfertigen, <CHARNAME>. Ihr habt heute eine abscheuliche Tat begangen, die das pure Böse verkörpert, auch wenn Euch das ganze Ausmaß Eurer Handlungen vielleicht nicht bewusst war.~
+@1077 = ~Ich wünschte, ich könnte Euch glauben. Aber ich kann es nicht.~
+@1078 = ~Die Versuche, Euer Handeln zu rechtfertigen, klingen unaufrichtig und eigennützig.~
+@1079 = ~Eure Absichten mögen nicht wirklich böse sein, aber der Schaden ist dennoch angerichtet.~
+@1080 = ~Ihr habt eine Begabung für schöne Worte, <CHARNAME>, aber ich durchschaue sie nur zu gut. Mit Eurem halbherzigen Versuch, diese Gräueltaten zu rechtfertigen, verhöhnt Ihr das Opfer auch noch.~
+@1081 = ~Ich muss jedoch auch zugeben, dass Eure Taten in der Vergangenheit ehrenhaft waren.~
+@1082 = ~Auch wenn ich ein großes Risiko eingehe, glaube ich dennoch, dass Eure Seele gerettet werden kann. Der Weg wird lang und beschwerlich sein. Aber ich bin bereit, Euch durch die Herausforderungen zu begleiten, falls Ihr mich an Eurer Seite akzeptiert.~
+@1083 = ~Ich nehme Euer Angebot and und bin dankbar für Eure Nachsicht.~
+@1084 = ~Nein, ich denke nicht, dass es die Mühe wert ist. Ich muss leider ablehnen.~
+@1085 = ~Ich bedauere Eure Entscheidung sehr, <CHARNAME>. Aber man kann niemanden gegen seinen Willen dazu zwingen, ein besserer Mensch zu werden. Ich werde mich nun verabschieden.~
+@1086 = ~Ich kann nach besten Wissen und Gewissen nicht länger bei Euch bleiben.~
+@1087 = ~Der Orden wird über Eure Untaten erfahren und angemessen reagieren.~
+@1088 = ~Selbst wenn ich dabei mein Leben verlieren sollte, kann ich nicht guten Gewissens tatenlos zusehen und zulassen, dass Ihr damit davonkommt.~
+@1089 = ~Für Torm und den Orden!~

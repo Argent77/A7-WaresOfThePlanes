@@ -1,0 +1,17 @@
+// Demogorgon's combat script: Reaction to Anarazel's presence
+IF
+  Detect("a7-demlord")
+  !Allegiance("a7-demlord",ENEMY)
+  !GlobalTimerNotExpired("CharmDemon","LOCALS")
+  Global("A7-AnarazelServant","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("A7-AnarazelServant","GLOBAL",1)
+    SetGlobalTimer("CharmDemon","LOCALS",4)
+    FaceObject("a7-demlord")
+    DisplayStringHead(Myself,@752)  // Come, Anarazel! Serve me well and be rewarded!
+    SmallWait(5)
+    ClearActions("a7-demlord")
+    SetInterrupt(TRUE)
+END

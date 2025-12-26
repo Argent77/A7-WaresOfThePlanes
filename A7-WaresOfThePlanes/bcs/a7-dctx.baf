@@ -1,0 +1,39 @@
+// *** Clean-up script for broken cutscenes ***
+IF
+  CutSceneBroken()
+THEN
+  RESPONSE #100
+    SetCutSceneBreakable(FALSE)
+    StartCutSceneMode()
+    ClearAllActions()
+    FadeToColor([0.0],0)
+    SetCursorState(FALSE)
+    SetAreaScript("",OVERRIDE)
+    SetGlobal("A7_WOTP_CUTSCENE_BREAKABLE","GLOBAL",0)
+    Continue()
+END
+
+IF
+  CutSceneBroken()
+  Switch("A7_WOTP_CUTSCENE_BREAKABLE","GLOBAL")
+THEN
+  RESPONSE #1
+    ActionOverride("Sacrifice",DestroySelf())
+    ActionOverride("a7-demp2",DestroySelf())
+    ActionOverride("High Summoner",FaceObject(Player1))
+    ActionOverride("Cultist 1",FaceObject(Player1))
+    ActionOverride("Cultist 2",FaceObject(Player1))
+    ActionOverride("Cultist 3",FaceObject(Player1))
+    ActionOverride("Cultist 4",FaceObject(Player1))
+    ActionOverride("High Summoner",Enemy())
+    ActionOverride("Cultist 1",Enemy())
+    ActionOverride("Cultist 2",Enemy())
+    ActionOverride("Cultist 3",Enemy())
+    ActionOverride("Cultist 4",Enemy())
+    SmallWait(1)
+    CreateCreature("a7-demp2",[337.438],S)
+    MoveViewObject(Player1,INSTANT)
+    FadeFromColor([10.0],0)
+    SmallWait(5)
+    EndCutSceneMode()
+END

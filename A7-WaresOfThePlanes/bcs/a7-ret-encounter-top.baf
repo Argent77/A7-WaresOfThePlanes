@@ -1,0 +1,23 @@
+// Quest "Lure of Darkness": Triggers cultist ambush
+IF
+  OnCreation()
+  BitCheck("A7-DarknessRetribution","GLOBAL",BIT1)  // The Order
+  !GlobalTimerNotExpired("A7-DarknessRetributionTimer","GLOBAL")
+  !IsForcedRandomEncounterActive("")  // Wildcard - any forced random encounter
+THEN
+  RESPONSE #100
+    ForceRandomEncounterEntry("%encounter_area%","ExitSE")
+    Continue()
+END
+
+IF
+  OnCreation()
+  BitCheck("A7-DarknessRetribution","GLOBAL",BIT2)  // Harpers
+  !GlobalTimerNotExpired("A7-DarknessRetributionTimer","GLOBAL")
+  !IsForcedRandomEncounterActive("")  // Wildcard - any forced random encounter
+  RandomNum(2,1)  // make it less likely
+THEN
+  RESPONSE #100
+    ForceRandomEncounterEntry("%encounter_area%","ExitSE")
+    Continue()
+END

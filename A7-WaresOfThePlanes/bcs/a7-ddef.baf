@@ -1,0 +1,25 @@
+// Default combat script for demons
+
+IF
+  AttackedBy([GOODCUTOFF],DEFAULT)
+  !Allegiance(Myself,EVILCUTOFF)
+  !Specifics(LastAttackerOf(Myself),%demon_specifics%)
+THEN
+  RESPONSE #100
+    Enemy()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+  AttackedBy([ANYONE],DEFAULT)
+  !Specifics(LastAttackerOf(Myself),%demon_specifics%)
+THEN
+  RESPONSE #100
+    Attack(LastAttackerOf(Myself))
+END

@@ -1,0 +1,63 @@
+// Anarazel override script
+
+IF
+  Global("battletimer_init","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("battletimer_init","LOCALS",1)
+    SetGlobalTimer("a7-battletimer","LOCALS",EIGHT_HOURS)
+    Continue()
+END
+
+IF
+  !Global("depart","LOCALS",0)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  OR(2)
+    GlobalTimerExpired("a7-battletimer","LOCALS")
+    !Global("A7-DarknessDemonGone","GLOBAL",0)
+  Global("depart","LOCALS",0)
+  Allegiance(Myself,GOODCUTOFF)
+THEN
+  RESPONSE #100
+    SetGlobal("depart","LOCALS",1)
+    SetGlobal("A7-DarknessDemonGone","GLOBAL",1)
+    ClearAllActions()
+    StartCutSceneMode()
+    SmallWait(10)
+    FadeToColor([10.0],0)
+    MoveViewObject(Myself,VERY_FAST)
+    SmallWait(10)
+    MoveViewObject(Myself,INSTANT)
+    SmallWait(10)
+    FadeFromColor([15.0],0)
+    SmallWait(10)
+    FaceObject(Player1)
+    DisplayStringHead(Myself,@701)  // ** MY PART OF THE PACT HAS BEEN FULFILLED. I SHALL DEPART. **
+    Wait(3)
+    Wait(1)
+    ApplySpellRES("a7-dspx",Myself) // Return to the Abyss
+    Wait(1)
+    EndCutSceneMode()
+END
+
+IF
+  OR(2)
+    GlobalTimerExpired("a7-battletimer","LOCALS")
+    !Global("A7-DarknessDemonGone","GLOBAL",0)
+  Global("depart","LOCALS",0)
+  !Allegiance(Myself,GOODCUTOFF)
+THEN
+  RESPONSE #100
+    SetGlobal("depart","LOCALS",0)
+    SetGlobal("A7-DarknessDemonGone","GLOBAL",1)
+    ClearAllActions()
+    StartCutSceneMode()
+    ApplySpellRES("a7-dspx",Myself) // Return to the Abyss
+    Wait(1)
+    EndCutSceneMode()
+END

@@ -1,0 +1,36 @@
+// Morrow's End +5
+
+@0 = ~Bedrohlich aussehendes Schwert~
+@1 = ~Morgenende +5~
+// @10 = ~~  // #6742
+@11 = ~Diese Klinge der Abyss wurde ursprünglich für einen unbekannten Balorgeneral geschmiedet, der viele Jahrhunderte im Blutkrieg mitkämpfte. Mit der Zeit saugte die Klinge den allgegenwärtigen Schrecken des Schlachtfelds in sich auf und entwickelte die spezielle Fähigkeit, jedes Wesen, das von ihr berührt wurde, mit einem Bruchteil der absorbierten Qualen zu verfluchen.
+
+Als die Klinge in den Besitz des Dämonenfürsten Anarazel gelangte, wurde sie weiter aufgewertet und verwandelte sich durch das Opfern tausender Seelen in ein Todesschwert.
+
+Die Waffe besitzt eine gezackte Klinge und erstrahlt beim Führen in einem hellen Rot. Nur absolut gewissenlose Wesen, die sich dem Bösen verschrieben haben, können das volle Potenzial der Klinge ausschöpfen.
+
+EIGENSCHAFTEN:
+
+Der Träger ist immun gegen jegliche Todesmagie.
+
+-1 Abzug auf Stärke, Geschicklichkeit und Konstitution für Träger mit guter Gesinnung, sofern sie nicht vor Bösem geschützt sind.
+
+Kann nur durch „Fluch brechen“ wieder abgenommen werden.
+
+Bei 25 % der Treffer muss das Ziel einen Rettungswurf mit einem Malus von -2 gegen Tod bestehen oder stirbt.
+
+Jeder Treffer steckt das Ziel mit einer Krankheit an, die für eine Phase -5 Stärke abzieht, einen Schadenspunkt alle 3 Sekunden verursacht und das Ziel verlangsamt (Rettungswurf gegen Zauber).
+
+Bei 25 % der Treffer verliert das Ziel eine Stufe und heilt den Träger um 1W4 Trefferpunkte, falls die Klinge von einer Person böser Gesinnung geführt wird.
+
+ETW0-Bonus: -5
+Schaden:
+ 2W4 +5 (Klinge)
+ Doppelt gg. Teufel
+Damage type: Slashing
+Initiativefaktor: 3
+Fertigkeit: Bastardschwert
+Typ: 1-händig
+Mindeststärke: 11
+
+Gewicht: 5~

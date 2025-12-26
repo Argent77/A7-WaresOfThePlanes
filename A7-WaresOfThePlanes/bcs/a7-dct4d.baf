@@ -1,0 +1,17 @@
+// Ritual for the "Abyssal Pact" cutscene - completing ritual
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-demlord")  // Lesser Demon Lord
+    FaceObject(Player1)
+    DisplayStringHead(Myself,@702)  // ** YOU HAVE WRESTED ME FROM MY HOME PLANE! **
+    Wait(4)
+    DisplayStringHead(Myself,@703)  // ** I SHALL TAKE MY PRIZE NOW! **
+    Wait(1)
+    ForceSpellRES("a7-dsm2",Player1)  // [reduce Charname XP]
+    ActionOverride(Player1,PlayDead(30))
+    Wait(4)
+    StartDialogueNoSet(Player1)
+END

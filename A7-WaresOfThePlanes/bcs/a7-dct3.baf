@@ -1,0 +1,103 @@
+// *** Lure of Darkness: Demonic Ritual cutscene ***
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("High Summoner")
+    SetAreaScript("a7-dctx",OVERRIDE)
+    SetGlobal("A7_WOTP_CUTSCENE_BREAKABLE","GLOBAL",1)
+    SetCutSceneBreakable(TRUE)
+    FaceObject("Sacrifice")
+    MoveViewObject("Sacrifice",STANDARD)
+    Wait(1)
+    DisplayStringHead(Myself,@400)  // The ritual is about to begin.
+    Wait(3)
+    DisplayStringHead(Myself,@401)  // Scio didici peto--
+    ForceSpellRES("a7-dc03a","Sacrifice")
+    Wait(19)
+    DisplayStringHead(Myself,@406)  // --Facio vaco ferre.
+    ForceSpellRES("a7-dc03f","Sacrifice")
+    Wait(4)
+    FaceObject(Player1)
+    SmallWait(5)
+    DisplayStringHead(Myself,@407)  // What is this? Who dares to disturb our ritual?
+    SmallWait(9)
+    ActionOverride("Cultist 1",FaceObject(Player1))
+    SmallWait(2)
+    ActionOverride("Cultist 2",FaceObject(Player1))
+    SmallWait(3)
+    ActionOverride("Cultist 3",FaceObject(Player1))
+    SmallWait(2)
+    ActionOverride("Cultist 4",FaceObject(Player1))
+    Wait(4)
+    DisplayStringHead(Myself,@408)  // Kill them all and cut out their hearts as an offering to our patron!
+    Wait(4)
+    ActionOverride("Cultist 1",DisplayStringHead(Myself,@409))  // Yes, master.
+    SmallWait(2)
+    ActionOverride("Cultist 2",DisplayStringHead(Myself,@409))  // Yes, master.
+    SmallWait(3)
+    ActionOverride("Cultist 3",DisplayStringHead(Myself,@409))  // Yes, master.
+    SmallWait(2)
+    ActionOverride("Cultist 4",DisplayStringHead(Myself,@409))  // Yes, master.
+    Wait(2)
+    ActionOverride("Cultist 1",Enemy())
+    ActionOverride("Cultist 2",Enemy())
+    ActionOverride("Cultist 3",Enemy())
+    ActionOverride("Cultist 4",Enemy())
+    Enemy()
+    MoveViewObject(Player1,INSTANT)
+    EndCutSceneMode()
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("Cultist 1")
+    FaceObject("Sacrifice")
+    Wait(9)
+    DisplayStringHead(Myself,@402)  // --Manus potentis paro--
+    ForceSpellRES("a7-dc03b","Sacrifice")
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("Cultist 2")
+    FaceObject("Sacrifice")
+    Wait(14)
+    DisplayStringHead(Myself,@403)  // --Cupio virtus licet--
+    ForceSpellRES("a7-dc03c","Sacrifice")
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("Cultist 3")
+    FaceObject("Sacrifice")
+    Wait(19)
+    DisplayStringHead(Myself,@404)  // --Presse alia fero--
+    ForceSpellRES("a7-dc03d","Sacrifice")
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("Cultist 4")
+    FaceObject("Sacrifice")
+    Wait(24)
+    DisplayStringHead(Myself,@405)  // --Vita mortis careo--
+    ForceSpellRES("a7-dc03e","Sacrifice")
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("Sacrifice")
+    Wait(35)
+    DisplayStringHead(Myself,@410)  // Nooo!
+END

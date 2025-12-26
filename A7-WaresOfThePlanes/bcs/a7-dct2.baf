@@ -1,0 +1,15 @@
+// *** Lure of Darkness: Sealing tome cutscene ***
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("25spell")
+    Wait(1)
+    TakePartyItemNum("a7-mi13x",1)
+    DestroyItem("a7-mi13x")
+    TakePartyItemNum("a7-mi13",1)
+    DestroyItem("a7-mi13")
+    ForceSpellRES("a7-dc02a",Myself)  // Seal item: Ancient Tome
+    Wait(3)
+    StartDialogNoSet(Player1)
+END

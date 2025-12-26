@@ -6,9 +6,12 @@ INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 // Required to solve script execution issues in dialogs
 APPEND ~instant.ids~ ~288 SetName(I:STRREF*)~ UNLESS ~\bSetName\b~
 
-// Phazor quest journal entries
 ACTION_IF (has_bg2) BEGIN
+  // Phazor quest journal entries
   ADD_JOURNAL @3101 @3102 @3103 @3150 @3151
+
+  // Lure of Darkness journal entries
+  ADD_JOURNAL @3201 @3202 @3203 @3204 @3205 @3206 @3207 @3208 @3209 @3210 @3211 @3212 @3213 @3214 @3250 @3251 @3252
 END
 
 // Defining custom token: Use "gal" or "lad" based on character's gender

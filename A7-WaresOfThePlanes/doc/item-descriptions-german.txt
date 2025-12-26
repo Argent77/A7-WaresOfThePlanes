@@ -1,5 +1,5 @@
 =====================================
-= Gegenstände in "Waren der Ebenen" =
+= Gegenstände in „Waren der Ebenen“ =
 =====================================
 
 Diese Datei enthält detailierte Beschreibungen aller angebotenen Gegenstände.
@@ -96,8 +96,8 @@ Mindeststärke: 3
 Gewicht: 0
 
 1.6. Erleuchtung +2 (Verfügbar: ab BG2:SvA Kapitel 2)
-Dieser Dolch ist die zweite Waffe der "Triade der Prüfungen" - die anderen beiden sind 
-"Auferstehung" und "Vernunft". Er ist schlank, liegt perfekt in der Hand und ist leicht wie eine 
+Dieser Dolch ist die zweite Waffe der „Triade der Prüfungen“ - die anderen beiden sind 
+„Auferstehung“ und „Vernunft“. Er ist schlank, liegt perfekt in der Hand und ist leicht wie eine 
 Feder. Entlang der Klinge ist das Symbol der Göttermenschen von Sigil eingraviert, und die ganze 
 Waffe scheint vor Erwartung zu beben.
 
@@ -165,7 +165,7 @@ unberechenbar zu verhalten - noch viel unberechenbarer als normale Tanar'ri. Er 
 aus seinem Schwarm davon, sich die Flügel herauszureißen und in der Erde einzubuddeln. Dann wieder 
 predigte er, dass die Tugenden der Ehrlichkeit böser und zerstörerischer seien als jede Lüge. Von 
 ihm blieb nur diese Feder als Testament seiner fiebrigen Existenz zurück. Ein Rest des Schamanen 
-soll sich nun noch in dieser "Chaos-Feder" befinden.
+soll sich nun noch in dieser „Chaos-Feder“ befinden.
 
 Wenn die Chaos-Feder im Kampf als Dolch verwendet wird, verursacht sie einen geringen Schaden (etwa 
 so viel wie ein normaler Dolch) und hat die Kraft, den getroffenen Gegner zu verwirren. Wesen, die 
@@ -291,7 +291,7 @@ Gewicht: 1
 
 1.14. Runenklinge (Verfügbar: ab BG2:SvA Kapitel 6)
 Diese verzauberten Klingen, geschaffen von einer legendären Gilde von Kriegsmagiern, die als die 
-"Scharlachroten Seher" bekannt waren, wurden speziell zur Verteidigung gegen gegnerische 
+„Scharlachroten Seher“ bekannt waren, wurden speziell zur Verteidigung gegen gegnerische 
 Zauberwirker erdacht. Die in die Klinge eingeätzten winzigen Runen sind machtvolle Schutzzauber vor 
 jeglicher Art von Magie. Unglücklicherweise ist die so völlig auf die magische Verteidigung 
 ausgelegte Waffe aufgrund ihres eher unhandlichen Designs im Nahkampf nahezu wirkungslos.
@@ -316,7 +316,7 @@ Zähne versehen. Der Griff selbst ist mit getrocknetem Blut verkrustet, wahrsche
 derjenigen, die die Waffe hielten und dann nicht mehr loslassen konnten.
 
 Forschungsergebnisse besagen, dass dieser verfluchte Dolch eine ganze Reihe von Namen hatte, von 
-denen der bekannteste "Letzte Rettung" ist. Wenn dieser Dolch angelegt ist, kann der Träger ihn 
+denen der bekannteste „Letzte Rettung“ ist. Wenn dieser Dolch angelegt ist, kann der Träger ihn 
 nicht mehr loslassen, bis er stirbt oder der Fluch durch einen Zauber oder göttlichen Eingriff 
 aufgehoben wird. Obwohl der Dolch langsamer ist als die meisten zweihändigen Waffen und der Schaden 
 mit einem Kratzer vergleichbar ist, soll er beinahe jedes Wesen, das er trifft, Schaden zufügen 
@@ -363,7 +363,7 @@ Mindeststärke: 3
 Gewicht: 1
 
 1.17. Witwenmacher +2 (Verfügbar: ab BG2:SvA Kapitel 2)
-Dieses Schwert, bekannt unter der Bezeichnung "Witwenmacher", ist mit dem tödlichen Gift der 
+Dieses Schwert, bekannt unter der Bezeichnung „Witwenmacher“, ist mit dem tödlichen Gift der 
 gefürchteten Hakenspinne versehen und auf Grund der magischen Eigenschaften seiner Klinge ein 
 begehrtes Arbeitsmittel praktizierender Meuchelmörder auf allen Ebenen. Das Gift, das durch Magie 
 dauerhaft in den Dolch eingelagert wurde, infiziert jeden, der durch das Schwert verletzt wird. 
@@ -392,9 +392,9 @@ Gewicht: 1
 ~~~~~~~~~~~~~
 
 2.1. Auferstehung +2 (Verfügbar: ab BG2:SvA Kapitel 2)
-"Auferstehung" ist eine der besten Waffen, die in der Großen Gießerei, der Heimat der Gläubigen 
-der Quelle in Sigil, hergestellt werden. Gemeinsam mit dem Hammer "Vernunft" und dem Dolch 
-"Erleuchtung" bildet sie eine Dreiergruppe, die unter dem Namen "Triade der Prüfungen" bekannt ist. 
+„Auferstehung“ ist eine der besten Waffen, die in der Großen Gießerei, der Heimat der Gläubigen 
+der Quelle in Sigil, hergestellt werden. Gemeinsam mit dem Hammer „Vernunft“ und dem Dolch 
+„Erleuchtung“ bildet sie eine Dreiergruppe, die unter dem Namen „Triade der Prüfungen“ bekannt ist. 
 Das Symbol des Bundes ist in den Kopf der Axt eingraviert, und die Schneiden der Klingen sind so 
 scharf, dass man damit ein Haar längs spalten könnte.
 
@@ -451,11 +451,11 @@ Mindeststärke: 10
 Gewicht: 8
 
 2.4. Blindseiter +1 (Verfügbar: ab SoD Kapitel 8)
-Diese prachtvolle Axt, bekannt als der "Blindseiter", ist wirklich einmalig. Es wird gemunkelt, dass 
+Diese prachtvolle Axt, bekannt als der „Blindseiter“, ist wirklich einmalig. Es wird gemunkelt, dass 
 sie das Werk eines gewissen Akyzum Yar ist, der Chefmetallurge eines alten Kaiserreichs der 
 Materiellen Ebene gewesen sein soll. Der Kaiser, dem Yar diente, war ein eitler und hinterhältiger 
-Mann. Er beauftragte Yar mit der Herstellung einer "Waffe von unübertroffener Schönheit". Als Yar 
-nach Jahren mühseliger Plackerei dem Kaiser endlich den "Blindseiter" präsentieren konnte, wurde er 
+Mann. Er beauftragte Yar mit der Herstellung einer „Waffe von unübertroffener Schönheit“. Als Yar 
+nach Jahren mühseliger Plackerei dem Kaiser endlich den „Blindseiter“ präsentieren konnte, wurde er 
 umgehend getötet, damit seine Arbeit nicht reproduziert werden konnte.
 
 Die verschiedenen Erze und Verzauberungen, die beim Schmieden dieser Waffe verwendet wurden, haben 
@@ -511,7 +511,7 @@ Gewicht: 4
 
 2.6. Herzensbrecher +3 (Verfügbar: ab BG2:SvA Kapitel 2)
 Ein einziger Tropfen des Blutes des Trägers, der auf die Grenze zwischen Axtkopf und Griff fällt, 
-reicht aus, den "Herzensbrecher" aufzuwecken. Der Blutstropfen läuft dann über die Klinge und den 
+reicht aus, den „Herzensbrecher“ aufzuwecken. Der Blutstropfen läuft dann über die Klinge und den 
 Griff der Axt, wodurch sie einen dumpfen roten Schimmer bekommt. Der Glanz des Herzensbrechers 
 pulsiert im Takt mit dem Herzschlag des Trägers.
 
@@ -537,8 +537,8 @@ Mindeststärke: 10
 Gewicht: 4
 
 2.7. Geschenk des Hasses +1 (Verfügbar: ab SoD Kapitel 8)
-Aus den Annalen der bekannten Geschichte der Ebenen geht nicht deutlich hervor, wann das "Geschenk 
-des Hasses" hergestellt wurde, aber die blutige Spur, die sie über die Ebenen hinweg hinterlassen 
+Aus den Annalen der bekannten Geschichte der Ebenen geht nicht deutlich hervor, wann das „Geschenk 
+des Hasses“ hergestellt wurde, aber die blutige Spur, die sie über die Ebenen hinweg hinterlassen 
 hat, scheint dich nun endlich erreicht zu haben.
 
 Die Axt erweckt in den Feinden des Besitzers Hass, und im Träger selbst eine rasende Wut. Im Kampf 
@@ -546,7 +546,7 @@ werden die Totenköpfe im Schaft zu Leben erweckt, klappern mit ihren Zähnen. D
 (Überreste böser Opfer, die in die Klinge eingearbeitet wurden) wachsen aus der Klinge heraus, um 
 den Gegner mit jedem Schlag zu beißen und sein Fleisch zu zerreißen.
 
-Wenn das "Geschenk des Hasses" erst einmal angelegt ist, kann es nicht wieder abgelegt werden, bis 
+Wenn das „Geschenk des Hasses“ erst einmal angelegt ist, kann es nicht wieder abgelegt werden, bis 
 der Fluch aufgehoben wird.
 
 EIGENSCHAFTEN:
@@ -608,7 +608,7 @@ Kraft.
 
 Diese Axt ist ebenso Teil von Vhailor wie seine Rüstung, und die Axt selbst trägt einen Teil seiner 
 Essenz in sich. Dadurch ist sie der Gerechtigkeit völlig ergeben und gewährt dem Träger keine Ruhe, 
-solange noch "Urteile" ausgeführt werden müssen. Der beachtliche Schaden, den sie dem Gegner 
+solange noch „Urteile“ ausgeführt werden müssen. Der beachtliche Schaden, den sie dem Gegner 
 zufügt, wird verdoppelt, wenn die Axt ein schuldiges oder chaotisches Wesen trifft. Außerdem 
 verleiht die Axt ihrem Träger einen Teil ihrer Kraft, wodurch er zusätzlichen Schutz vor Angriffen 
 erhält.
@@ -635,12 +635,12 @@ Mindeststärke: 16
 Gewicht: 12
 
 2.10. Klinge der Vergessenheit +2 (Verfügbar: ab BG2:SvA Kapitel 2)
-Wenn ihre Kräfte erwacht sind und ihr Name bekannt ist, wird die "Klinge der Vergessenheit" völlig 
+Wenn ihre Kräfte erwacht sind und ihr Name bekannt ist, wird die „Klinge der Vergessenheit“ völlig 
 schwarz… Während vorher nur die Schneiden ebenholzfarben waren, hat sich die Schwärze nun über die 
 gesamte Klinge ausgebreitet. Die Kälte, die die Klinge ausstrahlt, wird verzehnfacht, so dass es 
 schmerzvoll ist, sie zu lange zu halten.
 
-Die "Klinge der Vergessenheit" fügt dem Gegner bei jedem Schlag Auflösungsschaden zu, denn sie löst 
+Die „Klinge der Vergessenheit“ fügt dem Gegner bei jedem Schlag Auflösungsschaden zu, denn sie löst 
 das Fleisch um jede Wunde herum, die sie schlägt, auf und ätzt die Wunde beim Schlagen aus.
 
 Es gibt auch Vermutungen, dass irgendwo in der Axt selbst eine Sphäre des Nichts eingeschlossen sein 
@@ -714,7 +714,7 @@ Schusswaffe: Armbrust
 
 Gewicht: 0
 
-3.3. Bolzen der "Regel der Drei" (Verfügbar: ab SoD Kapitel 10)
+3.3. Bolzen der „Regel der Drei“ (Verfügbar: ab SoD Kapitel 10)
 Diese Armbrustbolzen sind das Werk eines verdrehten mechanischen Genies. Genau unterhalb der Spitze 
 jedes Bolzen befindet sich ein kleiner Verschluss, der sich durch Drücken entriegeln lässt und damit 
 dem Bolzen ermöglicht, sich zu teilen. Soweit du sehen kannst, wurden die Spitzen der Bolzen 
@@ -804,7 +804,7 @@ Schusswaffe: Armbrust
 Gewicht: 0
 
 3.9. Bolzen von Kessek, dem Verschlingenden +2 (Verfügbar: ab BG2:SvA Kapitel 3)
-Diese Bolzen werden auch "Kesseks Zähne" genannt. Die Spitzen jener verzauberten Bolzen sind aus 
+Diese Bolzen werden auch „Kesseks Zähne“ genannt. Die Spitzen jener verzauberten Bolzen sind aus 
 Knochen gefertigt und verfügen über zwei lange Fangzähne, die in einem Bogen von ihrer Mitte 
 ausgehen. Wenn einer dieser Bolzen einen Gegner trifft, erwachen die Zähne zum Leben und beginnen, 
 sich langsam und schmerzhaft durch den Körper des Opfers zu fressen.
@@ -815,9 +815,9 @@ verhungerte. Da sie wegen der heftigen Schneefälle in der Kluft festsaßen, san
 aus, um seine Nachbarn in der Provinz Ohinru um Hilfe zu bitten.
 
 Als die Handelsfürsten von Ohinru von der Not der Bariaur erfuhren, sahen sie darin die 
-Gelegenheit, diese "nomadische Plage" auszulöschen und ihr Land für sich zu beanspruchen. Die 
-Kundschafter der Bariaur wurden hingerichtet und ihre Köpfe auf Mauersimse gestellt, damit "die 
-Geier etwas zu fressen hätten, während die Bariaur verhungerten".
+Gelegenheit, diese „nomadische Plage“ auszulöschen und ihr Land für sich zu beanspruchen. Die 
+Kundschafter der Bariaur wurden hingerichtet und ihre Köpfe auf Mauersimse gestellt, damit „die 
+Geier etwas zu fressen hätten, während die Bariaur verhungerten“.
 
 Als die Stürme vorüber waren und mehr als die Hälfte seines Volkes verhungert war, erfuhr Kessek 
 schließlich, was mit seinen Kundschaftern geschehen war. Vor Wut fast in den Wahnsinn getrieben 
@@ -878,7 +878,7 @@ dickem Holz, das zu schwach aussieht, um das Gewicht des Hammerkopfes auszuhalte
 
 Dieser verzauberte Hammer wurde einst von den Athar als Werkzeug verwendet, nämlich während der 
 Zeit ihrer religiösen Verfolgung in der Geschichte ihres Bundes. Der magische Kriegshammer 
-"Narrentöter" war so konstruiert, dass er besonders dummen Gegnern zusätzlichen Schaden zufügte. Als 
+„Narrentöter“ war so konstruiert, dass er besonders dummen Gegnern zusätzlichen Schaden zufügte. Als 
 er jedoch hergestellt wurde, wurde dieser Zauber so umgedreht, dass ein Träger, der noch dümmer war 
 als sein Opfer ebenfalls Schaden erlitt. Viele Jahre lang wurde der Hammer unter rivalisierenden 
 Mitgliedern der Athar rituell als ein primitiver (und tödlicher) Intelligenztest verwendet. Er 
@@ -925,8 +925,8 @@ Mindeststärke: 9
 Gewicht: 5
 
 4.4. Vernunft +2 (Verfügbar: ab BG2:SvA Kapitel 2)
-Dieser enorme Hammer ist neben der Axt "Auferstehung" und dem Dolch "Erleuchtung" die dritte Waffe 
-aus der "Triade der Prüfungen" der Göttermenschen in Sigil. Sein Kopf ist mit mystischen Runen und 
+Dieser enorme Hammer ist neben der Axt „Auferstehung“ und dem Dolch „Erleuchtung“ die dritte Waffe 
+aus der „Triade der Prüfungen“ der Göttermenschen in Sigil. Sein Kopf ist mit mystischen Runen und 
 mit dem Symbol der Göttermenschen verziert. Er vibriert in deinen Händen.
 
 EIGENSCHAFTEN:
@@ -946,10 +946,10 @@ Gewicht: 5
 
 4.5. Hammer des Zerschmetterns +2 (Verfügbar: ab BG2:SvA Kapitel 6)
 Forschunsergebnissen zufolge ist dies eine wahrhaft hervorragende Waffe. Dieser Kriegshammer (der 
-auch "Hammer des Zerschmetterns" genannt wird) ist jedem herkömmlichen Vorschlaghammer weit 
+auch „Hammer des Zerschmetterns“ genannt wird) ist jedem herkömmlichen Vorschlaghammer weit 
 überlegen. Sein vernichtender Schlag zerschmettert das Opfer nicht nur, sondern bricht auch jede 
 getroffene Oberfläche auf, sei es nun Knochen, Metall oder Holz, und fügt so zusätzlichen Schaden 
-zu… Wenn das Opfer den Angriff überlebt, wird es außerdem für den nächsten Angriff "geschwächt".
+zu… Wenn das Opfer den Angriff überlebt, wird es außerdem für den nächsten Angriff „geschwächt“.
 
 Der Hammer des Zerschmetterns wurde ausgiebig von Enote genutzt, einem Priester der Schicksalsgarde
 , im Jahr 14 E.U. Er war ein Philosoph, der gewalttätigen Stimmungsumschwüngen unterlag, wenn er 
@@ -996,7 +996,7 @@ Diese Waffe hat einen schwarzen Metallgriff, der in den schmalen Schädel gewach
 der am oberen Ende befestigt ist. Das Metall sieht so aus, als ob es aus dem Schädel gewachsen sei, 
 und Stachel bohren sich durch die Augenlöcher, den Kiefer und die Schädeldecke selbst.
 
-Das "Metall" ist überhaupt keines, sondern der Überrest des Unterarms eines Wesens, das von unten 
+Das „Metall“ ist überhaupt keines, sondern der Überrest des Unterarms eines Wesens, das von unten 
 durch den Schädel eines Scheusals getrieben wurde, der nun den Kopf der Waffe schmückt. Die 
 Stachel, die sich durch den Schädel gebohrt haben, scheinen so eine Art Federkiele aus dem Unterarm 
 des Wesens zu sein.
@@ -1005,7 +1005,7 @@ Wenn diese Waffe im Kampf eingesetzt wird, durchdringen die Stachel der Keule di
 und aus den Federkielen rinnt Säure entweder in das Opfer oder den Träger der Waffe, wodurch
 zusätzlicher Schaden entsteht.
 
-Der gebräuchliche Name für diese Waffe ist "Des Teufels Lohn". Auf wen oder welches Ereignis sich 
+Der gebräuchliche Name für diese Waffe ist „Des Teufels Lohn“. Auf wen oder welches Ereignis sich 
 das bezieht, ist nicht bekannt, aber es muss offensichtlich eine schmerzvolle Erfahrung für beide 
 Beteiligten gewesen sein.
 
@@ -1113,7 +1113,7 @@ Gewicht: 4
 
 6.2. Baatezu-Streitkolben +1 (Verfügbar: ab BG1 Kapitel 5)
 Dieser Streitkolben ist aus einem Erz geschaffen, dass es nur in den Ödländern von Avernus gibt. Die 
-Baatezu haben daraus ein Metall namens "Baatorianischem Grünstahl" entwickelt. Waffen aus diesem 
+Baatezu haben daraus ein Metall namens „Baatorianischem Grünstahl“ entwickelt. Waffen aus diesem 
 Metall sind leichter und stärker als jene, die aus gewöhnlichem Metall geschmiedet wurden, und 
 verursachen in der Regel einen größeren Schaden. Obwohl diese Waffen während der Blutkriege in 
 großen Mengen produziert wurden, findet man sie nur selten außerhalb Baators.
@@ -1207,7 +1207,7 @@ Gewicht: 6
 ~~~~~~~~~~~~~~~~
 
 8.1. Himmelsfeuer +3 (Verfügbar: ab BG2:TdB Kapitel 8)
-Das "Himmelsfeuer" ist das einzige, was Trias noch an die Oberen Ebenen erinnert. Diese schwere 
+Das “Himmelsfeuer“ ist das einzige, was Trias noch an die Oberen Ebenen erinnert. Diese schwere 
 Klinge fühlt sich warm an, und entlang der Oberfläche der Klinge sind Flammen eingraviert. Die 
 Feinheit dieser Gravuren ist atemberaubend und mit solcher Meisterhaftigkeit gearbeitet, dass das 
 Schwert aus metallischen Flammen zu bestehen scheint… Jemand muss Jahrhunderte daran gearbeitet 
@@ -1215,8 +1215,8 @@ haben. Das Metall der Klinge kommt dir nicht bekannt vor… es ist schwer, aber 
 
 Das Schwert sieht aus, als wär es schon Tausende von Jahren alt. Ein leichtes Summen lässt sich in 
 ihm spüren, und die Schwingungen werden stärker, wenn es menschliches Fleisch berührt. Es 
-überrascht einen nicht, dass das "Himmelsfeuer" nur von Trägern mit ausreichender Stärke und 
-Reinheit des Herzens verwendet werden kann. Im Zweikampf geht von dem "Himmelsfeuer" plötzlich 
+überrascht einen nicht, dass das „Himmelsfeuer“ nur von Trägern mit ausreichender Stärke und 
+Reinheit des Herzens verwendet werden kann. Im Zweikampf geht von dem „Himmelsfeuer“ plötzlich 
 eine heilige Strahlung aus, die sämtlichen bösen Wesen, die es im Kampf trifft, verbrennt.
 
 EIGENSCHAFTEN:
@@ -1606,10 +1606,10 @@ Beratergeist gewährt dem Benutzer +1 auf alle Rettungswürfe, und seine bloße 
 dem Träger einen zusätzlichen Bonus zum Bannen von Zaubersprüchen und verwirrenden Auswirkungen.
 
 Viele dieser verzauberten Gegenstände wurden auf dem Basar von Sigil von einem Silberschmied aus 
-Oerth hergestellt, der einen Weg gefunden hatte, das Metall so zu formen, dass es "freie Geister" 
+Oerth hergestellt, der einen Weg gefunden hatte, das Metall so zu formen, dass es „freie Geister“ 
 anzog und sie dazu verleitete, im Metall ihren Wohnsitz einzurichten. Der Geist ist in keiner Weise 
 an die Ohrringe gebunden. Soweit die Gelehrten herausfinden konnten, haben die Ohrringe für den 
-Geist irgend etwas "Behagliches".
+Geist irgend etwas „Behagliches“.
 
 EIGENSCHAFTEN:
 
@@ -1635,8 +1635,8 @@ Gewicht: 0
 Diese kleinen Ohrringe bestehen aus poliertem Obsidian. Trotz der Glätte ihrer Oberfläche 
 reflektieren sie überhaupt kein Licht.
 
-Die schwarzen Edelsteine in diesen Ohrringen werden in der Regel als "der beste Freund eines 
-Gauners" bezeichnet und besitzt magische Eigenschaften, die das Licht absorbieren, wodurch sich 
+Die schwarzen Edelsteine in diesen Ohrringen werden in der Regel als „der beste Freund eines 
+Gauners“ bezeichnet und besitzt magische Eigenschaften, die das Licht absorbieren, wodurch sich 
 der Träger leichter unentdeckt im Schatten bewegen kann.
 
 EIGENSCHAFTEN:
@@ -1653,7 +1653,7 @@ Der Draht, mit dem die Ohrringe am Ohr befestigt werden, sieht aus wie ein Teil 
 vielleicht ihr Stachel oder Fühler.
 
 Um die Kraft der Ohrringe zu aktivieren, muss der Träger seinen Daumen an dem Stachel stechen und 
-ihm so die Bindung mit seinem neuen Besitzer ermöglichen. Wenn die Ohrringe "aufgeweckt" wurden, 
+ihm so die Bindung mit seinem neuen Besitzer ermöglichen. Wenn die Ohrringe „aufgeweckt“ wurden, 
 helfen sie, den Träger vor Angriffen zu schützen, und verleihen der Haut des Trägers dieselbe 
 Stärke und Widerstandskraft wie die eines Larvenpanzers.
 
@@ -1905,9 +1905,9 @@ Heilt 3 Trefferpunkte.
 Gewicht: 0
 
 18.2. Abgeschnittenes Kupferstück (Verfügbar: ab BG1 Kapitel 1)
-Dieses Kupferstück wurde "abgeschnitten"… das meiste Kupfer wurde abrasiert, offensichtlich, damit 
-es noch wie eine Münze aussieht, der "Barbier" aber aus dem abrasierten Kupfer eine neue Münze 
-machen kann. Obwohl viele Bewohner des Stocks diese Methode des "Geldverdienens" praktizieren, tun 
+Dieses Kupferstück wurde „abgeschnitten“… das meiste Kupfer wurde abrasiert, offensichtlich, damit 
+es noch wie eine Münze aussieht, der „Barbier“ aber aus dem abrasierten Kupfer eine neue Münze 
+machen kann. Obwohl viele Bewohner des Stocks diese Methode des „Geldverdienens“ praktizieren, tun 
 die Anhänger des Bundes des Prädestinats dies mit einer furchterregenden Zweckgebundenheit und 
 erstellen Talismane, die ihre eigene kleinliche Natur widerspiegeln.
 
@@ -1916,7 +1916,7 @@ Geschäftsleute und andere Personen auf, die einmal vermögend waren und dann du
 Schicksalsumschwung in Verzweiflung gestürzt wurden. Diesen Individuen werden dann verzauberte 
 Schnitzklingen gegeben, und sie werden gebeten, für das Prädestinat in einem langwierigen, den 
 ganzen Tag andauernden Ritual, durch das die Kupfermünze mit den letzten Resten ihres früheren 
-Glücks imprägniert werden, "ein Kupferstück abzuschneiden". Das Ritual sowie die Natur der Person, 
+Glücks imprägniert werden, „ein Kupferstück abzuschneiden“. Das Ritual sowie die Natur der Person, 
 die das Kupferstück abschneidet, lassen eine kleinere Verzauberung in die Münze sickern und das 
 Geschick desjenigen beeinflussen, der die Münze dann verwendet.
 
@@ -2035,7 +2035,7 @@ Mindestintelligenz: 6
 Gewicht: 1
 
 18.8. Wesleys verbessertes Stundenglas
-Cespenar kann Wesleys Stundenglas mit dem Dimensionsreißer aus der "Kult des Augenlosen"-Quest 
+Cespenar kann Wesleys Stundenglas mit dem Dimensionsreißer aus der „Kult des Augenlosen“-Quest 
 kombinieren, um eine verbesserte Version des Gegenstands zu erschaffen.
 
 18.9. Zauberbuch der ekelhaften Gedanken (Verfügbar: ab BG2:SvA Kapitel 2)
@@ -2095,6 +2095,16 @@ Gewicht: 1
 
 18.12. Amaunators Heiliger Zorn
 Eine kleine Quest in BG2:SvA ermöglicht es, das Potenzial von Amaunators Heiliger Abwehr zu verbessern.
+
+18.13. Scheibe aus Grünstahl (Verfügbar: ab BG2:TdB Kapitel 8)
+Diese verzierte Scheibe wurde aus dem berühmten Baatorianischen Grünstahl gefertigt, den man nur in
+den Ödländern von Avernus finden kann. Die gesamte Oberfläche der Scheibe ist mit Spuren von seltsamen
+Runen und Markierungen bedeckt. Es ist nicht klar, ob sie einem bestimmten Zweck dient.
+
+Gewicht: 2
+
+Hinweis: Dieser Gegenstand startet eine neue Quest, die einen dunklen Kult, herausfordernde Kämpfe und
+einige sehr ungewöhnliche „Belohnungen“ bereithält.
 
 
 19. Zauberschriftrollen

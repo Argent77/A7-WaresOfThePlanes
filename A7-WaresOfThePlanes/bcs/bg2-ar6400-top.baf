@@ -1,0 +1,28 @@
+// *** BG2-ToB: River area ***
+
+// Trigger fallback option to advance quest "Lure of Darkness"
+IF
+  OnCreation()
+  Global("A7-DarknessQuest","GLOBAL",2)
+  Global("A7-DarknessQuestNote","GLOBAL",0)
+  Global("A7-DarknessQuestInitNote","AR6400",0)
+  InMyArea(Player1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-DarknessQuestInitNote","AR6400",1)
+    CreateCreature("a7-demh1",[2102.718],S)
+    ActionOverride("a7-demh1",DropInventory())
+    ActionOverride("a7-demh1",DestroySelf())
+    Continue()
+END
+
+IF
+  Global("A7-DarknessQuestInitNote","AR6400",1)
+  Global("A7-DarknessQuestNote","GLOBAL",0)
+  PartyHasItem("a7-mi16a")
+THEN
+  RESPONSE #100
+    SetGlobal("A7-DarknessQuestNote","GLOBAL",1)
+    AddJournalEntry(@3207,QUEST)
+    Continue()
+END

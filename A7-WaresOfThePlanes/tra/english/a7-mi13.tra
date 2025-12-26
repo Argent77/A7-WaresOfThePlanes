@@ -1,0 +1,364 @@
+// Book of Vile Darkness
+
+@1 = ~Book of Vile Darkness~
+@10 = ~The Book of Vile Darkness is an artifact of ineffable wickedness, a reference work of evil authored, edited and compiled by some of the most powerful and maleficent entities across the multiverse. Recorded in its pages are the rotten ideas, unhinged thoughts, dark magical secrets, and heinous insights its collection of writers had ever devised or discovered.
+
+This copy appears to be only a small excerpt from the original work. But even in its current state it has the power to corrupt anyone reading from its pages.
+
+STATISTICS:
+
+Charge abilities:
+– Protection from Good on the user for one turn
+
+Special ability:
+– Abyssal Pact: The book describes a dark ritual to make a deal with the powerful demon lord Anarazel, the Daring Darkness. It requires the sacrifice of a powerful mortal to get the demon's attention and a substantial amount of divine or infernal essence, given up willingly, to ensure its aid. In return the demon lord will fight for the party until defeated or eight hours have passed, whereupon it returns to the Abyss. The book is consumed upon use.
+
+Weight: 3~
+
+@20 = ~examine~  // button label to "converse" with an item
+@21 = ~Alignment changed to lawful evil~
+@22 = ~Alignment changed to neutral evil~
+@23 = ~Alignment changed to chaotic evil~
+@24 = ~Seal item: Ancient Tome~
+
+// creatures
+@30 = ~High Summoner~
+@31 = ~Cultist~
+@32 = ~Mercenary~
+@33 = ~Peasant~
+@34 = ~Anarazel~
+@35 = ~Daring Darkness~
+@36 = ~Dretch~
+@37 = ~Paladin of Helm~
+@38 = ~Master Harper~
+@39 = ~Harper~
+@40 = ~Harper Priest~
+@41 = ~Harper Mage~
+
+// spells
+@80 = ~Plane Shift~
+@81 = ~Divine essence removed~
+@82 = ~Shadow Touch~
+@83 = ~Shadow Touch
+Any humanoid, giant humanoid, or animal hit by the spell must make a Saving Throw or is transformed into a mindless undead creature and put under control of the caster for one hour. Any creature not affected by the transformation or successfully making the Saving Throw still suffers 2d4 points of magic damage. Undead creatures, constructs, and creatures protected from death effects are immune to the spell.
+
+The transformation into an undead creature is based on the caster's level:
+  1st level: Target must save vs. Death or is transformed into a ghoul.
+  9th level: Target must save vs. Death with a -2 penalty or is transformed into a ghast.
+  17th level: Target must save vs. Death with a -4 penalty or is transformed into a wraith.
+  25th level: Target must save vs. Death with a -6 penalty or is transformed into a vampiric wraith.~
+
+// area strings
+@100 = ~You see an empty pentagram. A feeling of great evil permeates the area.~
+@101 = ~Exit~
+@102 = ~Secret Entrance~
+@103 = ~An unnatural darkness keeps you from entering the hole.~
+@104 = ~Invoking the word of power while holding the wardstone in your hands dispels the unnatural darkness that prevented entry.~
+
+// misc. lines
+@150 = ~You are approached by the Order of the Radiant Heart. Word of your misdeeds have reached the authorities.~
+@151 = ~You are ambushed by the Harpers. Your dark deeds have apparently forced a hostile reaction.~
+@152 = ~Make peace with your gods, <CHARNAME>!~
+@153 = ~<CHARNAME>, you are a threat to the entire region!~
+
+// dialog: Book of Vile Darkness
+@200 = ~This black-bound tome is unpleasant to the touch and radiates a foul smell that stirs an uneasy feeling in your mind.~
+@201 = ~The tome is covered in arcane symbols and written in unknown runes that trigger a feeling of dread and something even more terrifying that leaves a strange sensation in your mind. It does not open no matter how much you try.~
+@202 = ~The tome is covered in arcane symbols and written in unknown runes that trigger a feeling of dread. It does not open no matter how much you try.~
+@203 = ~Even after turning the tome away you can't do much but think of it for a while.~
+@204 = ~As you're about to turn the tome away an irresistable feeling of malicious satisfaction overwhelms you. You know that something changed deep inside you.~
+@205 = ~As you turn your attention to the tome a powerful force urges you to keep away from it. All your senses tell you that the tome would corrupt your soul just by examining it.~
+@206 = ~Using the notes on abyssal languages as reference you are able to decipher most of the tome's content.~
+@207 = ~With the Primer on Abyssal Languages in your possession you would be able to translate the content of the tome.~
+@208 = ~Translate the tome.~
+@209 = ~Put the book away for now.~
+@210 = ~The book is surrounded by a sinister aura of unnatural darkness that makes you feel uneasy just by holding it in your hands. Speaking the command word written on the book's cover allows you to open it.~
+@211 = ~Perform the demonic ritual "Abyssal Pact."~
+@212 = ~Scour the book for secret knowledge.~
+@213 = ~Put the book away.~
+@214 = ~Handling the book may have dire consequences if the reader is not properly protected from its evil.~
+@215 = ~Continue despite the dangers.~
+@216 = ~You spend some time pouring over the secrets written down by some of the most notorious practitioners of the dark arts in history.~
+@217 = ~One essay from an anonymous scholar catches your eye as it has been preserved in its entirety. Its insight into the nature of the necromantic arts is considerable.~
+@218 = ~The vast amount of dark knowledge absorbed from the book left its mark on your soul and forces you to reconsider your own perspective on the concepts of good and evil.~
+@219 = ~Reading the introductory passage about the ritual makes it clear very quickly that the summoner must either provide or contain a strong link to supernatural forces. You can't meet either of the requirements.~
+@220 = ~As you read the introductory passage about the ritual, it quickly becomes apparent that the summoner must either provide or contain a strong link to supernatural forces. As a child of Bhaal you would apparently meet that requirement.~
+@221 = ~Oh no, there is no way in hell I'd even consider it. Having odd dreams about Bhaal is bad enough.~
+@222 = ~The preparatory paragraph goes into more detail what is required to successfully perform the ritual. The summoner must surrender a good portion of their spiritual essence to ensure the aid of the demon.~
+@223 = ~Stop the preparations and put the book away.~
+@225 = ~Begin with the preparations.~
+@226 = ~Begin with the preparations and choose <PLAYER2> as your sacrifice.~
+@227 = ~Begin with the preparations and choose <PLAYER3> as your sacrifice.~
+@228 = ~Begin with the preparations and choose <PLAYER4> as your sacrifice.~
+@229 = ~Begin with the preparations and choose <PLAYER5> as your sacrifice.~
+@230 = ~Begin with the preparations and choose <PLAYER6> as your sacrifice.~
+@231 = ~No suitable companions are currently within reach to incorporate them in the ritual.~
+@232 = ~You prepare the ritual with utmost care so as not to arouse any suspicion among your companions.~
+@233 = ~You perform the necessary rites to attune your soul to the ritual. Then you turn your attention to <PLAYER2> and spin the magical web as carefully as possible. After making sure that everything was done exactly as described in the book you begin the second and final stage of the ritual.~
+@234 = ~You perform the necessary rites to attune your soul to the ritual. Then you turn your attention to <PLAYER3> and spin the magical web as carefully as possible. After making sure that everything was done exactly as described in the book you begin the second and final stage of the ritual.~
+@235 = ~You perform the necessary rites to attune your soul to the ritual. Then you turn your attention to <PLAYER4> and spin the magical web as carefully as possible. After making sure that everything was done exactly as described in the book you begin the second and final stage of the ritual.~
+@236 = ~You perform the necessary rites to attune your soul to the ritual. Then you turn your attention to <PLAYER5> and spin the magical web as carefully as possible. After making sure that everything was done exactly as described in the book you begin the second and final stage of the ritual.~
+@237 = ~You perform the necessary rites to attune your soul to the ritual. Then you turn your attention to <PLAYER6> and spin the magical web as carefully as possible. After making sure that everything was done exactly as described in the book you begin the second and final stage of the ritual.~
+@238 = ~As you prepare the required spells you quickly realize that you lack the experience to fully grasp all the intricacies of the ritual. Since even the smallest mistake could have disastrous consequences, you decide to put off the preparations until you've gained more experience.
+
+^%color_cyan%(The summoner should have gained %min_charname_xp% or more experience.)^-~
+@239 = ~When you turn your attention to the intended sacrifice you notice that the preparations don't work as planned.~
+@240 = ~You are unable to attune a crucial spell of the ritual to the soul of your companion. It appears as if some kind of divine intervention prevents you from proceeding. You have no choice but to put all preparations for the whole ritual on hold.~
+@241 = ~Furthermore, another powerful soul is required as a sacrifice to get the attention of the abyssal lord in the first place. Unfortunately, there is no one nearby for this purpose at the moment.~
+@242 = ~Furthermore, another powerful soul is required as a sacrifice to get the attention of the abyssal lord in the first place. One of your companions would fill that role nicely.~
+@243 = ~Upon closer inspection, you become increasingly uncertain whether the chosen companion would be a worthy sacrifice to get the attention of the demon lord. Finally, you decide to look for a more powerful candidate.
+
+^%color_cyan%(Eligible candidates must have gained %min_npc_xp% or more experience.)^-~
+@244 = ~You try to perform the necessary rites to attune your soul to the ritual, but it seems to fail no matter what you do. The righteous energies of this place prevent any attempts to reach the lower planes. You have no choice but to put all preparations for the ritual on hold.~
+@245 = ~Examine it more closely.~
+@246 = ~As you browse through the tome, it quickly becomes apparent that the complexity of the ideas and theories far exceeds your mental capacities.~
+@247 = ~The content of the tome looks alien to you. You can spot several funny-looking drawings but they don't make any sense.~
+@248 = ~Some of the theories described in the tome reveal secrets so dark and evil that your conscious mind cannot grasp them.~
+
+// cutscene: ambush
+@300 = ~Ah, they came as predicted.~
+@301 = ~Let's hope they live up to our expectations.~
+
+// dialog: cultist (ambush)
+@350 = ~Greetings, adventurers. It has come to our attention that you have recently come into the possession of a certain artifact.~
+@351 = ~It's an ornate metal disc that originally belonged to us but was stolen by a former member of our organization.~
+@352 = ~Since you were not directly involved in the incident I'd like to make you an offer. Return the item to us and we will compensate you for your trouble.~
+@353 = ~Who are you?~
+@354 = ~I am Orma, a conjurer of no mean power. And these are my collegues who have also mastered the arcane arts. But that shouldn't concern you.~
+@355 = ~What's so special about the item?~
+@356 = ~That is not for you to know. Suffice to say that it's important to us. Important enough that we're willing to bargain with you.~
+@357 = ~And if we refuse?~
+@358 = ~A refusal is out of the question. Don't be a fool. We will get the item one way or another.~
+@359 = ~Alright, you can have it.~
+@360 = ~We don't have it anymore.~
+@361 = ~No, I won't give it to you.~
+@362 = ~You've made a wise choice. This is for your trouble. Then I'll take my leave now.~
+@363 = ~Do you really think I would buy such a simplistic lie? If you aren't willing to hand it over then we'll take it from your dead hands. Attack them!~
+@364 = ~Our divinations revealed that you have the item in your possession. You are either lying to us or have discarded it only recently. In either case we can't afford to let you go. Attack them!~
+@365 = ~That's regrettable. But my patience has run out anyway. Don't think this will be an easy fight. We have all mastered our professions. Attack them!~
+@366 = ~Greetings. Our leader wants to talk to you about a certain item that came into your possession recently.~
+
+// cutscene: dark ritual
+@400 = ~The ritual is about to begin.~
+@401 = ~Scio didici peto--~ [CHA_MM04]
+@402 = ~--Manus potentis paro--~ [CHA_FM02]
+@403 = ~--Cupio virtus licet--~ [CHA_MM05]
+@404 = ~--Presse alia fero--~ [CHA_MM08]
+@405 = ~--Vita mortis careo--~ [CHA_FM07]
+@406 = ~--Facio vaco ferre.~ [CHA_MM03]
+@407 = ~What is this? Who dares to disturb our ritual?~
+@408 = ~Kill them all and cut out their hearts as an offering to our patron!~
+@409 = ~Yes, master.~
+@410 = ~Nooo!~
+
+// dialog: Lazarus Librarus
+@500 = ~I have an unusual request. We have found a tome written in unknown runes that resists any attempts of magical identification. Would you be willing to translate it?~
+@501 = ~I can certainly try. Let me take a look.~
+@502 = ~Ah, by all the powers! Please cover it immediately! The tome is written in abyssal runes and probably heavily enchanted. Even glancing at it could have a profound effect on the reader.~
+@503 = ~I cannot possibly fulfill your request. The tome should be destroyed or lock away as quickly as possible.~
+@504 = ~What are you so afraid of?~
+@505 = ~In case you're not aware, these kinds of runes always carry a bit of the abyssal powers with them. Simply reading the runes may corrupt the minds of unwitting readers who didn't take the necessary precautions.~
+@506 = ~Maybe you are right. What exactly do you suggest?~
+@507 = ~I could cast a powerful spell, similarly to Imprisonment, that will transport the tome to a miniature pocket dimension where it hopefully won't be discovered for a long time.~
+@508 = ~Since it poses a considerable threat to everyone, I would even do it for free.~
+@509 = ~Alright, please cast your spell.~
+@510 = ~On second thought, I'd like to take the risk. Can you please tell me a way how to translate it myself?~
+@511 = ~Absolutely not. I don't want to be responsible for guiding someone to their certain doom.~
+@512 = ~However, since your very being is already touched by supernatural forces I can give you the advice to seek out members of the demonic races, namely the denizens of the Abyss or the Nine Hells.~
+@513 = ~Thank you for your help.~
+@514 = ~No, don't thank me for that. If you value your life then lock the tome away and never touch it again.~
+@515 = ~You won't dissuade me from it. Can't you help me at all?~
+@516 = ~Let me prepare the spell.~
+@517 = ~I reconsidered and want to have the demonic tome locked away. Can you do it?~
+@518 = ~I'm relieved that you changed your mind. Yes, I can do that, and gladly so. Please hand me the tome.~
+@519 = ~Here you are.~
+@520 = ~They possess the necessary knowledge to help you, provided you can pay their services.~
+@521 = ~It is done. The tome rests now in a safe location. At least for a while. Artifacts like that have a tendency to reappear eventually.~
+
+@550 = ~The spell pulls the tome out of the pocket dimension where it was locked away and drops it to the ground. You quickly pick it up and put it in your inventory.~
+
+// dialog: Cespenar
+@600 = ~Could you translate this book for us?~
+@601 = ~Yech! Written in Abyssal it is. Ugly language. Yous really want to read it? I could sell you language guide for black opal and 1,000 gold. You wants?~
+@602 = ~I can't afford it right now.~
+@603 = ~Oh well, come back when ready you are.~
+@604 = ~Yes, I do.~
+@605 = ~Could you sell me your Abyssal language guide?~
+@606 = ~Yes, I could. You have black opal and 1,000 gold?~
+@607 = ~Not right now.~
+@608 = ~Sure, go ahead.~
+
+// dialog: Anarazel
+@700 = ~** YOUR OFFERING IS ADEQUATE. IN RETURN I WILL WREAK HAVOC UPON YOUR FOES UNTIL I AM SATISFIED. **~
+@701 = ~** MY PART OF THE PACT HAS BEEN FULFILLED. I SHALL DEPART. **~
+@702 = ~** YOU HAVE WRESTED ME FROM MY HOME PLANE! **~
+@703 = ~** I SHALL TAKE MY PRIZE NOW! **~
+@704 = ~** STATE YOUR REQUEST! **~
+@705 = ~I challenge you to a duel, fiend!~
+@706 = ~Return to the Abyss, demon!~
+@707 = ~I changed my mind.~
+@708 = ~** DARE NOT TO BOTHER A LORD OF THE ABYSS WITH MEANINGLESS PRATTLE, MORTAL! **~
+@709 = ~** HAHAHAHA, SO BE IT. MAY YOU TREMBLE IN MY PRESENCE AND FEEL ETERNAL PAIN! **~
+@710 = ~** SO BE IT! MY PART OF THE PACT HAS BEEN FULFILLED. I SHALL DEPART. **~
+@711 = ~** DO NOT TEST MY PATIENCE, MORTAL! **~
+
+@750 = ~** COME, MY MINIONS! **~
+@751 = ~** SUFFER AT THE HANDS OF MY GENERALS! **~
+@752 = ~Come, Anarazel! Serve me well and be rewarded!~
+@753 = ~** YES, MASTER. I AWAIT YOUR ORDERS. **~
+
+// various NPC lines
+// Korgan
+@800 = ~So, th' fool's dead, eh? Betrayed as I once was, har! Let's hope this be worth all th' hassle. Let's be movin' before we give all o' this more thought than it's worth!~
+// Sarevok
+@810 = ~You disappoint me, <CHARNAME>. For all your talk about doing good deeds you still don't seem averse to following the principle that "the end justifies the means."~
+@811 = ~I killed others on a whim, too. And all it ultimately brought me was a great deal of trouble and losing everything that mattered to me.~
+@812 = ~An impressive display of your ruthlessness, <CHARNAME>. I know how it feels to make a fine deal. It can be intoxicating, just like Sembian wine, or killing a fool that stands on your way to victory.~
+// Dorn
+@820 = ~You are a coward and a fool to give an artifact of such great power up so lightly, <CHARNAME>. Just think of all the possibilities it would have offered us if used properly.~
+@821 = ~You made a fine choice, <CHARNAME>. I am no stranger to bloody deals, and some of them are even worth it.~
+// Hexxat
+@830 = ~Death comes for both those that expect it, and those that never saw it coming.~
+// Viconia
+@840 = ~Well, abbil, it looks like you have finally found a way to gain some powerful boon without paying too much in return.~
+@841 = ~Let us be blunt. It is your companion that paid the decisive share of the price. Lu'oh yutri. It almost feels as if I were again in Menzoberranzan!~
+@842 = ~As a drow you would have certainly aroused the matron mother's attention by now, colnbluth. If not with your impertinence, then with your guts.~
+@843 = ~It makes me wonder, <CHARNAME>, would you exchange me for a boon, considering it was tempting enough?~
+@844 = ~What? No! Of course not!~
+@845 = ~If the reward was big enough…~
+@846 = ~Mhm. Well, know that drow rarely forget such offense. And if we find a way to endure, we return it with all we've got.~
+@847 = ~I'm… glad to hear that, ussta ku'nal. I was betrayed far too many times already, and I think I finally deserve some genuine comfort!~
+@848 = ~I've suspected that. Leave me then, og'elend. You do not deserve my attention!~
+// Edwin
+@860 = ~So, this is how you thank those that agreed to help you with your fatuous endeavors. That is good to know. (At least it wasn't me, Edwin Odesseiron, who had to face such ridiculous untimely death.)~
+// Haer'Dalis
+@870 = ~How bold, my raven. 'Tis quite a crime you have committed, a murderous act. I wonder if this decision shall haunt you in your sleep, or will you just accept that you aren't as different from your father as it may have seemed?~
+@871 = ~We'd best have a care now. The denizens of the nether planes are seldom if ever as generous as they appear. They twist their words back and forth to make even this sparrow's head ache like after a round tour of Sigil's ale houses.~
+// Jan
+@880 = ~You know, I can't help but think back to the time when I helped out Uncle Gerhardt in our kitchen garden. It was an especially good year for our vegetables. The mix of sun and rain did wonders, but I digress.~
+@881 = ~Anyway, we were also constantly battling these pesky parasites on our potato plants. They were a real nuisance. I have never seen one that is human-sized, though. But now that I see you before me with Mr. Demon roaring in the background, I'm not so sure anymore.~
+// Neera
+@890 = ~You just did WHAT? How could you? I'm just— NO. I won't even think about it. I did summon demons by accident before, but never at that price.~
+@891 = ~Let's—let's just pretend that was a spell that went awry, like the time before. Or I will have nightmares for the rest of my life.~
+// Wilson
+@900 = ~Grr! Roar! Snort growl!~
+@901 = ~Have you just compared me to some sort of disappointment? A scar that almost became the doom of a lion's pride?! Seriously?!~
+@902 = ~ROAR!~
+// Cernd
+@910 = ~I have seen people fear me as I became a monster covered in fur, but what I have seen now—it is much more terrifying than any transformation I have ever seen before.~
+@911 = ~Your decision to bring chaos and destruction to these lands worries me greatly. I can already hear the earth scream in pain under the touch of the demon's corruption wherever it treads.~
+@912 = ~I need to think long and hard about this catastrophic turn of events and my own association with you.~
+// Jaheira
+@920 = ~<CHARNAME>, I can't believe what you just did!~
+@921 = ~Not only are you associating with demons, but you've also committed the worst crime of all by betraying our companion! By Silvanus, I can't stand by and let you continue on this path of madness. What would Gorion say were he with us!~
+@922 = ~He's not. He's dead, Jaheira.~
+@923 = ~Jaheira, please…~
+@924 = ~I know. But—you clearly don't get it.~
+@925 = ~Those Who Harp will find out about this. I will stay with you, but only because Gorion wanted me to watch over you, and for the sake of Toril. Know, however, that I thought you were better than this!~
+@926 = ~Don't say anything else, <CHARNAME>.~
+@927 = ~Those Who Harp will find out about this eventually. I will stay as part of this group, but only because Gorion wanted me to watch over you, and for the sake of Toril. But—know that I thought you were better than this.~
+@928 = ~You sacrificed our companion in cold blood? This is the worst of crimes! I thought you were better than this! But—what you did reminds me of your murderous father. This is what Bhaal would expect his <PRO_SONDAUGHTER> to do.~
+@929 = ~That was really low of you.~
+@930 = ~Jaheira, please… I was scared! I had to do this! I need all the aid I can get. All the power—or I may lose this war.~
+@931 = ~I am sorry, <CHARNAME>, but I think you needed to hear this. What else was this if not murder?~
+@932 = ~And does any of this feel like a win to you?~
+@933 = ~To think that I wanted to spend my life with you. But now I see more and more of the monster in you that took and killed my husband once.~
+@934 = ~With the challenges before us our list of options grows short. I had no choice but to take desperate measures.~
+@935 = ~I confess that my actions were rash and reckless. But I can no longer undo this decision, Jaheira…~
+@936 = ~That's all you have to say? This is too much to bear. I… I can no longer stay by your side, <CHARNAME>. I was supposed to watch over you. I wanted to do this for Gorion, but this is my limit.~
+@937 = ~I hope you will defeat your enemies, help others, and I will watch you from a distance, but I cannot stay with someone whom I can no longer trust.~
+@938 = ~Sadly, that realization comes too late. I will stay as part of this group, but only because Gorion wanted me to watch over you, and for the sake of Toril. But—know that this changes things between us. I would rather die than admit that I still love you.~
+// Nalia
+@950 = ~By all the gods! What did you do, <CHARNAME>? This is far worse than what nobles like the Roenalls would ever be capable of doing.~
+@951 = ~I don't want to imagine what you might be capable of next time. I have to leave now.~
+// Imoen
+@960 = ~No, <CHARNAME>! Why did you do this to <A7_SACRIFICE>? Gorion would never have approved of that, even under the direst of circumstances.~
+@961 = ~When I was in the custody of Irenicus I had witnessed many horrible things in the course of his experiments. They still plague me in my sleep. I'm pretty sure what you've done will haunt you in your dreams. If not today, then in the future.~
+// Minsc
+@970 = ~Boo's shaking like he's never shaken before. Even Minsc is puzzled as to what happened to our companion <A7_SACRIFICE>.~
+@971 = ~I had to make a decision that wasn't easy to me. But it was necessary. Have you always understood Dynaheir and the witches of Rashemen? Aren't paths to glory paved with difficult decisions?~
+@972 = ~Sometimes we have to break an egg, or skull, to achieve our goals. I'm certain that our companion would have understood the necessary sacrifice.~
+@973 = ~I feel ashamed and angry. But neither Minsc nor Boo do not really understand what's truly on your mind. We shall keep an eye on you.~
+@974 = ~A warrior breaks skulls, and eggs, with their own weapon in hand. Even Boo agrees wholeheartedly. We will keep a watchful eye on you, <CHARNAME>.~
+// Valygar
+@980 = ~You fool! You sacrificed a trusted companion for that abomination? This is worse than Lavok would have ever done.~
+@981 = ~Even with the demon on your side I will not stand for this!~
+// Rasaad
+@990 = ~<CHARNAME>, with this sacrifice, you have invited the darkness into your heart.~
+@991 = ~It will spread further and throw your soul off balance. I implore you to take time and reflect on what you did today, before the shadows extinguish the remaining light in your soul.~
+@992 = ~I considered leaving you, as I do not want to invite such darkness into my own heart, but I also know that we need to save the realms from the cruel fate that threatens them. But I cannot ignore what you did; now I know that you aren't just a hero, but also a beast that may kill those on your way.~
+@993 = ~I do not understand how you could even consider such an act? I thought you were better than that, that you want to spread peace and hope, but what you have done—it has nothing to do with any of these.~
+@994 = ~To survive the challenges before us, we are sometimes forced to make difficult decisions.~
+@995 = ~You are being overly dramatic, Rasaad.~
+@996 = ~I thought I understood you, <CHARNAME>. I really did. Now I'm not so sure anymore.~
+@997 = ~You must believe me that I didn't make this decision lightly.~
+@998 = ~You must believe me that I didn't make this decision lightly. The sacrifice of our companion will probably haunt me for the rest of my life.~
+@999 = ~Seriously? Fine then. Leave. I know where this is heading.~
+@1000 = ~I won't pretend to understand your decision, <CHARNAME>. But as long as I can see the light in your eyes, I will do everything in my power to help you ease the weight of your guilt about what happened today.~
+@1001 = ~Truly? I am sorry, <CHARNAME>, I truly am, but I'm starting to feel like I do not know you. I am no longer sure if you truly care about the balance: nor the one around us, nor the one in your heart. I think it's best if I leave. I hope that one day you'll understand that this was a mistake.~
+@1002 = ~How can I believe what you said is true? The light I once saw in your eyes is gone. I do not think I can go on like that.~
+@1003 = ~Thank you for everything you have given me. But seeing you as you are now is too painful for me to stay by your side. Goodbye.~
+@1004 = ~I am sorry, <CHARNAME>, I truly am, but I'm starting to feel like I do not know you. I am no longer sure if you truly care about the balance: nor the one around us, nor the one in your heart. I hope that one day you'll understand that this was a mistake.~
+// Mazzy
+@1010 = ~You have just performed the most atrocious act possible by sacrificing your companion, <CHARNAME>!~
+@1011 = ~How could I've been so blind and not notice the darkness festering in your soul? That is something I have to ponder on.~
+@1012 = ~I cannot, in good conscience, remain with your group anymore. I shall pray for your soul, <CHARNAME>. May we meet never again.~
+@1013 = ~I should have acted long before it came to this. Now, I am just as responsible as you are, <CHARNAME>, for having this poor soul sent to the Abyss.~
+@1014 = ~I cannot, and will not, tolerate these activities any longer. Even if I fall in the face of such overwhelming adversaries, I know that my soul will be redeemed for my inaction in this matter. For Arvoreen!~
+// Aerie
+@1020 = ~<CHARNAME>? How could… how could you so casually sacrifice one of our companions?! There are no circumstances under which that could be considered just…!~
+@1021 = ~And to summon a demon from hell, no less? You frighten me in more than one way.~
+@1022 = ~Sometimes drastic actions are required to survive. Aerie, we are fighting gods and fate itself! I saw little other choice in this matter.~
+@1023 = ~Did you really? What else is going to happen? Later? Will I be the next victim in your plans? There are things one should never justify, no matter what. I… I can't stay anymore.~
+@1024 = ~No, there is always a choice. There must be. Please tell me it was just a reckless decision. Tell me that this isn't you. This CANNOT be you…!~
+@1025 = ~You are right. I didn't think of all the consequences when I performed the ritual. A mistake like that won't happen again.~
+@1026 = ~There may be other choices. But none of those would have achieved what I needed. I stand by my decision with all their consequences.~
+@1027 = ~I… I don't like it. Not at all. But I try to cope with the situation. But I need some time now. Leave me. Please. I need some space.~
+@1028 = ~I didn't want to believe it. But I see now what you really are. I… I can't stay anymore. Now, when I look you in the eyes, I see the abyss, and I can't stand it.~
+@1029 = ~I… I thought that I knew you. But to think you were capable of doing such a horrible thing? I can't… believe it. Were you always like this? Or has something inside you just… broke?~
+@1030 = ~I saw no other option without losing you or anyone else. I'm truly sorry for what I had to do, but I would do ANYTHING so you and me could stay together. Even if that meant killing someone else! I love you, Aerie.~
+@1031 = ~Sometimes bold actions are required to survive. I had little choice in this matter.~
+@1032 = ~How can you even say such a thing? And combine it with such a confession…! <A7_SACRIFICE> died at your own hands!~
+@1033 = ~I never meant to hurt you, Aerie. I swear, but—we are facing gods, monsters and fate itself! I cannot protect us with just normal shields and tricks, not anymore. I had to do this.~
+@1034 = ~I never meant to hurt you, Aerie. I swear, but—we are facing gods, monsters and fate itself! I cannot protect us with just normal shields and tricks, not anymore. Know, however, that what I did for us will probably haunt me for the rest of my life.~
+@1035 = ~I… I wished with all my heart that I could believe you. But I don't. I sense a malevolent darkness in your words that frightens me, <CHARNAME>. I… I have to get away from you.~
+@1036 = ~I don't like it. Is that really the way to save anyone…? No. I don't think that is right. I can accept that you are afraid, because I am afraid too, but this…?~
+@1037 = ~I'll stay with you, <CHARNAME>, but what you did—I can't forget it—nor I can forgive you. It's just… too much.~
+@1038 = ~Did you really? I hear your words but they are cold and distant. More like that of a monster than a man. You frighten me, <CHARNAME>. I… I have to get away from you.~
+// Anomen
+@1050 = ~As a member of the Order of the Radiant Heart, I cannot tolerate this most evil of crimes of making an unholy pact with a demon from the Abyss.~
+@1051 = ~My righteous wrath will smite you, <CHARNAME>!~
+@1052 = ~Honestly, <CHARNAME>, it doesn't really surprise me that you would stoop so low and even consort with demons.~
+@1053 = ~I'm not sure I can even say that you disappoint me by doing all of this. That thought occurred to me, at first, but perhaps it's not disappointment that I feel. It's more like a realization that you aren't as much of a hero as some would expect you to be.~
+@1054 = ~What is done is done. I have nothing more to say to you, <CHARNAME>.~
+@1055 = ~But it breaks my heart that the woman I love could deceive me all this time. I… I cannot look at you now, or I would go mad.~
+@1056 = ~Farewell, my former love.~
+@1057 = ~It almost breaks my heart that a person I love could deceive me all this time. Make me see you as trustworthy. But the keyword here is "almost". I want you to look at me.~
+@1058 = ~Let me ask you one question. Were your feelings for me genuine? Or was it always a game to you?~
+@1059 = ~I do love you, Anomen.~
+@1060 = ~I'm sorry, Anomen. I cannot answer that question.~
+@1061 = ~I see. I was secretly hoping for this answer, even if that does not erase everything you have done. In the scope of your mission, however, it… does make sense. You do play with chaos. You are somewhat of a wild card.~
+@1062 = ~I choose to believe you. But before we can talk again, I may need a moment to calm down. We should move on. The sooner we do so, the better.~
+@1063 = ~I see. Even now I am unsure if your words hold any truth or if you are toying with me. Either way, staying with you would only make me doubt my ability to see through the mask you wear every now and then, thus I see no choice but to leave.~
+@1064 = ~I see. I was a fool to trust you. To love you, even. But it won't happen again.~
+// Keldorn
+@1070 = ~The evil has been sealed away and won't do any further harm. For that I am glad. But we must always remain vigilant. Many artifacts corrupt the minds of their owners in more subtle ways than this tome.~
+@1071 = ~I cannot believe that you made a pact with a force of such unfathomable evil. Explain yourself immediately, <CHARNAME>!~
+@1072 = ~In the face of increasingly powerful adversaries I had little choice but to take drastic measures. I truly regret the sacrifice of our companion, but I think it was justified. <A7_SACRIFICE> made no secret of his evil intent.~
+@1073 = ~In the face of increasingly powerful adversaries I had little choice but to take drastic measures. I truly regret the sacrifice of our companion, but I think it was justified. <A7_SACRIFICE> made no secret of her evil intent.~
+@1074 = ~In hindsight, that decision was probably reckless and stupid. With the incredible powers of the tome in my hands I didn't fully realize all the consequences.~
+@1075 = ~You have no right to judge me. I stand by my decision and their consequences.~
+@1076 = ~Destroying one evil can never justify the act of another evil, <CHARNAME>. You performed an atrocious act of pure evil today, even if you may not be aware of the full extent of your actions.~
+@1077 = ~I wish I could believe you, but I don't.~
+@1078 = ~Your attempts to justify your actions sound insincere and self-serving.~
+@1079 = ~Your intentions may not be truly evil, but the damage has been done nonetheless.~
+@1080 = ~You have a way with pretty words, <CHARNAME>, but I can see through them well enough. With your half-hearted attempt to justify this atrocity you are merely adding insult to injury.~
+@1081 = ~However, I must also admit that your actions in the past were honorable.~
+@1082 = ~Even though I take a great risk I still believe that you can be redeemed. The road will be a long and hard one, but I am willing to guide you through the trials if you accept me on your side.~
+@1083 = ~I accept your offer and thank you for your mercy.~
+@1084 = ~No, I don't think this is worth it. I have to refuse.~
+@1085 = ~I truly regret your decision, <CHARNAME>. But one cannot be forced against their will to become a better <PRO_MANWOMAN>. I will take my leave now.~
+@1086 = ~I cannot, in conscience, remain with you any longer.~
+@1087 = ~The Order will be made aware of your misdeeds and act appropriately.~
+@1088 = ~Even if I should fall in the line of duty, I cannot, in good conscience, stand idly by and let you get away with this.~
+@1089 = ~For Torm and the Order!~

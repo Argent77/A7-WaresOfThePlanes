@@ -1,0 +1,105 @@
+// Cutscene: Drop reputation by amount based on current reputation
+
+IF
+  OR(2)
+    Reputation(Player1,20)
+    Reputation(Player1,19)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ReputationInc(-10)
+    EndCutSceneMode()
+END
+
+IF
+  Reputation(Player1,18)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ReputationInc(-9)
+    EndCutSceneMode()
+END
+
+IF
+  Reputation(Player1,17)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ReputationInc(-8)
+    EndCutSceneMode()
+END
+
+IF
+  Reputation(Player1,16)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ReputationInc(-7)
+    EndCutSceneMode()
+END
+
+IF
+  Reputation(Player1,15)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ReputationInc(-6)
+    EndCutSceneMode()
+END
+
+IF
+  OR(3)
+    Reputation(Player1,14)
+    Reputation(Player1,13)
+    Reputation(Player1,12)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ReputationInc(-5)
+    EndCutSceneMode()
+END
+
+IF
+  OR(2)
+    Reputation(Player1,11)
+    Reputation(Player1,10)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ReputationInc(-4)
+    EndCutSceneMode()
+END
+
+IF
+  Reputation(Player1,9)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ReputationInc(-3)
+    EndCutSceneMode()
+END
+
+IF
+  OR(4)
+    Reputation(Player1,8)
+    Reputation(Player1,7)
+    Reputation(Player1,6)
+    Reputation(Player1,5)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ReputationInc(-2)
+    EndCutSceneMode()
+END
+
+IF
+  OR(3)
+    Reputation(Player1,4)
+    Reputation(Player1,3)
+    Reputation(Player1,2)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ReputationInc(-1)
+    EndCutSceneMode()
+END

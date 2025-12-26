@@ -670,3 +670,165 @@ BEGIN
     PATCH_WARN ~WARNING: Not an ITM resource. Skipping operation.~
   END
 END
+
+
+/**
+ * Installs a set of EFF files that allows to apply a spell effect which ignores the target's probability, immunity,
+ * and saving throws. Multiple function calls will only install the required EFF files once.
+ *
+ * INT_VAR opcode       Opcode of the spell effect. (required)
+ * INT_VAR target       Target of the spell effect. (default: 2 / preset target)
+ * INT_VAR parameter1   Parameter 1 value of the spell effect. (default: 0)
+ * INT_VAR parameter2   Parameter 2 value of the spell effect. (default: 0)
+ * INT_VAR dicenumber   Dice number value of the spell effect. (default: 0)
+ * INT_VAR dicesize     Dice size value of the spell effect. (default: 0)
+ * INT_VAR special      Special value of the spell effect. (default: 0)
+ * STR_VAR resource     Resource reference of the spell effect. (default: empty string)
+ * STR_VAR eff_prefix   Prefix of the installed EFF resources. Must not be longer than 7 characters. (default: a7-x%opcode%)
+ * RET eff_resref       EFF resref to be assigned to the op177 effect of the CRE, ITM, or SPL resource.
+ */
+DEFINE_DIMORPHIC_FUNCTION create_irresistible_effect
+INT_VAR
+  opcode = "-1"
+  target = 2
+  parameter1 = 0
+  parameter2 = 0
+  dicenumber = 0
+  dicesize = 0
+  special = 0
+STR_VAR
+  resource = ~~
+  eff_prefix = EVAL ~a7-x%opcode%~
+RET
+  eff_resref
+BEGIN
+  OUTER_SPRINT eff_resref ~~
+
+  // validating parameters
+  OUTER_SET success = (opcode >= 0 && opcode < 1000) && (STRING_LENGTH ~%eff_prefix%~ < 8)
+
+  ACTION_IF (success) BEGIN
+    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%eff_prefix%a.eff~ && NOT FILE_EXISTS_IN_GAME ~%eff_prefix%b.eff~) BEGIN
+      // outer EFF file
+      CREATE ~eff~ ~%eff_prefix%a~
+        WRITE_LONG 0x10 177   // opcode: Use EFF file
+        WRITE_LONG 0x14 target
+        WRITE_LONG 0x1c 0     // param1: ANYONE
+        WRITE_LONG 0x20 2     // param2: EA.IDS
+        WRITE_LONG 0x24 1     // timing: Instant/Permanent until death
+        WRITE_SHORT 0x2c 100  // probability 1
+        WRITE_ASCIIE 0x30 ~%eff_prefix%b~ (8)
+        WRITE_LONG 0x68 1     // param5: bypass probability/immunity/saving throws
+        WRITE_LONG 0xa4 "-1"
+
+      // inner EFF file
+      CREATE ~eff~ ~%eff_prefix%b~
+        WRITE_LONG 0x10 opcode
+        WRITE_LONG 0x14 target
+        WRITE_LONG 0x1c parameter1
+        WRITE_LONG 0x20 parameter2
+        WRITE_LONG 0x24 1     // timing: Instant/Permanent until death
+        WRITE_SHORT 0x2c 100  // probability 1
+        WRITE_ASCIIE 0x30 ~%resource%~ (8)
+        WRITE_LONG 0x38 dicenumber
+        WRITE_LONG 0x3c dicesize
+        WRITE_LONG 0x48 special
+        WRITE_LONG 0xa4 "-1"
+    END
+
+    OUTER_SPRINT eff_resref ~%eff_prefix%a~
+  END
+END
+
+
+/**
+ * Adds a new XP definition or updates an existing definition in XPLIST.2DA
+ * for use with the AddXP2DA() action.
+ *
+ * INT_VAR prettify   Whether to prettify table content. (Default: 1)
+ * INT_VAR party      Specify 1 to indicate that XP should by distributed across the party.
+ *                    Otherwise it is applied per party member. (Default: 0)
+ * INT_VAR xp         The XP amount to grant. (Required)
+ * INT_VAR xp_1, xp_2, ...  Optional level-specific XP amounts. (Default: unused)
+ * STR_VAR name       Short name that identifies the XP definition. (Required)
+ * STR_VAR comment    Optional comment for debugging purposes. Spaces are automatically converted to underscores. (Default: "cmt")
+ * RET result         Returns the row index of the added or updated xp definition. Row index does not include table headers.
+ *                    Returns -1 if no definition was added or updated.
+ */
+DEFINE_ACTION_FUNCTION add_xplist_entry
+INT_VAR
+  prettify = 1
+  party = 0
+  xp = 0
+  // xp_1, xp_2, ...
+STR_VAR
+  name = ~~
+  comment = ~cmt~
+RET
+  result
+BEGIN
+  OUTER_SET result = "-1"
+  ACTION_IF (NOT ~%name%~ STR_EQ ~~ && xp >= 0) BEGIN
+    // no whitespace allowed in comments
+    OUTER_PATCH_SAVE comment ~%comment%~ BEGIN REPLACE_TEXTUALLY ~[ %TAB%%WNL%]+~ ~_~ END
+
+    // party xp?
+    ACTION_IF (party) BEGIN
+      OUTER_SPRINT p ~P_~
+    END ELSE BEGIN
+      OUTER_SPRINT p ~~
+    END
+
+    COPY_EXISTING ~xplist.2da~ ~override~
+      COUNT_2DA_COLS num_cols
+      COUNT_2DA_ROWS 1 num_rows
+      SET match = (INDEX_BUFFER(~^%name%\b~) > 0)
+      PATCH_IF (match) BEGIN
+        // patch existing entry
+        READ_2DA_ENTRIES_NOW xplist_table 1
+        FOR (row = 3; row < xplist_table; ++row) BEGIN
+          READ_2DA_ENTRY_FORMER xplist_table row 0 old_name
+          PATCH_IF (~%name%~ STR_EQ ~%old_name%~) BEGIN
+            SET_2DA_ENTRY_LATER xplist_table_out row 1 ~%comment%~
+            SET_2DA_ENTRY_LATER xplist_table_out row 2 ~%p%%xp%~
+            FOR (col = 3; col < num_cols; ++col) BEGIN
+              SET idx = col - 2
+              SET value = IS_AN_INT $xp(~%idx%~) ? $xp(~%idx%~) : "-1"
+              READ_2DA_ENTRY_FORMER xplist_table row col old_value
+              PATCH_IF (NOT ~%value%~ STR_EQ ~%old_value%~) BEGIN
+                PATCH_IF (value >= 0) BEGIN
+                  SPRINT value ~%p%%value%~
+                END
+                SET_2DA_ENTRY_LATER xplist_table_out row col ~%value%~
+              END
+            END
+            SET_2DA_ENTRIES_NOW xplist_table_out 1
+            SET result = row - 3  // excluding table headers
+            SET row = xplist_table
+          END
+        END
+      END
+    BUT_ONLY
+
+    ACTION_IF (result < 0) BEGIN
+      // adding new entry
+      OUTER_SPRINT line ~%name% %comment% %p%%xp%~
+      OUTER_FOR (col = 3; col < num_cols; ++col) BEGIN
+        OUTER_SET idx = col - 2
+        OUTER_SET value = IS_AN_INT $xp(~%idx%~) ? $xp(~%idx%~) : "-1"
+        ACTION_IF (value >= 0) BEGIN
+          OUTER_SPRINT value ~%p%%value%~
+        END
+        OUTER_SPRINT line ~%line% %value%~
+      END
+      APPEND ~xplist.2da~ ~%line%~
+      OUTER_SET result = num_rows - 2 // excluding table headers
+    END
+
+    ACTION_IF (prettify && result >= 0) BEGIN
+      COPY_EXISTING ~xplist.2da~ ~override~
+        PRETTY_PRINT_2DA
+      BUT_ONLY
+    END
+  END
+END

@@ -1,0 +1,37 @@
+// *** BG2 Random Encounter area (rocks) script ***
+
+// retribution from the Order
+IF
+  OnCreation()
+  Global("A7-DarknessQuest","GLOBAL",9)
+  BitCheck("A7-DarknessRetribution","GLOBAL",BIT1)
+THEN
+  RESPONSE #100
+    BitClear("A7-DarknessRetribution","GLOBAL",BIT1)
+    SetGlobalTimer("A7-DarknessRetributionTimer","GLOBAL",THREE_DAYS)
+    DisplayString(Myself,@150) // You are approached by the Order of the Radiant Heart. Word of your misdeeds have reached the authorities.
+    CreateCreature("a7-rord1",[587.593],SE) // Paladin of Helm
+    CreateCreature("a7-rord2",[601.487],SE) // Paladin of Helm
+    CreateCreature("a7-rord3",[490.627],SE) // Paladin of Helm
+    CreateCreature("a7-rord4",[471.751],E)  // Shield Knight
+    CreateCreature("a7-rord5",[462.501],SE) // Mage
+    CreateCreature("a7-rord6",[401.677],E)  // Priest of Helm
+END
+
+// retribution from the Harpers
+IF
+  OnCreation()
+  Global("A7-DarknessQuest","GLOBAL",9)
+  BitCheck("A7-DarknessRetribution","GLOBAL",BIT2)
+THEN
+  RESPONSE #100
+    BitClear("A7-DarknessRetribution","GLOBAL",BIT2)
+    SetGlobalTimer("A7-DarknessRetributionTimer","GLOBAL",THREE_DAYS)
+    DisplayString(Myself,@151) // You are ambushed by the Harpers. Your dark deeds have apparently forced a hostile reaction.
+    CreateCreature("a7-rhrp1",[535.571],SE) // Master Harper
+    CreateCreature("a7-rhrp2",[691.533],SE) // Harper Agent
+    CreateCreature("a7-rhrp3",[551.698],E)  // Harper Agent
+    CreateCreature("a7-rhrp4",[911.565],S)  // Harper Agent
+    CreateCreature("a7-rhrp5",[598.450],SE) // Harper Priest
+    CreateCreature("a7-rhrp6",[448.632],E)  // Harper Mage
+END

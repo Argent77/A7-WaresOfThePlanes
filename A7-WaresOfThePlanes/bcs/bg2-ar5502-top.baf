@@ -1,0 +1,49 @@
+// Arcana Archives (Amkethran)
+
+// Untranslated tome was sealed away; primer hasn't been acquired yet
+IF
+  Global("A7-DarknessTomeSealed","MYAREA",1)
+  Global("A7-AbyssalPrimer","GLOBAL",0)
+  SpellCast([GOODCUTOFF],WIZARD_FREEDOM)
+  InMyArea(Player1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-DarknessTomeSealed","MYAREA",0)
+    SetGlobal("A7-DarknessQuest","GLOBAL",5)
+    DisplayStringHead(Player1,@550) // The spell pulls the tome out of the pocket dimension where it was locked away and drops it to the ground. You quickly pick it up and put it in your inventory.
+    EraseJournalEntry(@3251)
+    AddJournalEntry(@3214,QUEST)
+    GiveItemCreate("a7-mi13x",Player1,0,0,0)
+    Continue()
+END
+
+// Untranslated tome was sealed away; primer has already been acquired
+IF
+  Global("A7-DarknessTomeSealed","MYAREA",1)
+  !Global("A7-AbyssalPrimer","GLOBAL",0)
+  SpellCast([GOODCUTOFF],WIZARD_FREEDOM)
+  InMyArea(Player1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-DarknessTomeSealed","MYAREA",0)
+    DisplayStringHead(Player1,@550) // The spell pulls the tome out of the pocket dimension where it was locked away and drops it to the ground. You quickly pick it up and put it in your inventory.
+    EraseJournalEntry(@3251)
+    AddJournalEntry(@3214,QUEST)
+    GiveItemCreate("a7-mi13x",Player1,0,0,0)
+    Continue()
+END
+
+// Translated tome was sealed away
+IF
+  Global("A7-DarknessTomeSealed","MYAREA",2)
+  SpellCast([GOODCUTOFF],WIZARD_FREEDOM)
+  InMyArea(Player1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-DarknessTomeSealed","MYAREA",0)
+    DisplayStringHead(Player1,@550) // The spell pulls the tome out of the pocket dimension where it was locked away and drops it to the ground. You quickly pick it up and put it in your inventory.
+    EraseJournalEntry(@3251)
+    AddJournalEntry(@3214,QUEST_DONE)
+    GiveItemCreate("a7-mi13",Player1,0,0,0)
+    Continue()
+END

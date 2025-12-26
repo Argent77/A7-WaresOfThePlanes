@@ -21,3 +21,7 @@ END ELSE BEGIN
   OUTER_SPRINT bg1_are_prefix ~AR~
   OUTER_SET bg1_strref_base = 0
 END
+
+// Custom text colors
+OUTER_SPRINT color_cyan ~0xFFD7C8A0~
+OUTER_SPRINT color_violet ~0xFFD7C8A0~

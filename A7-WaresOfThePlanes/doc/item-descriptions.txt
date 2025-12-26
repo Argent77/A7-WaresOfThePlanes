@@ -2101,6 +2101,16 @@ Weight: 1
 18.12. Holy Wrath of Amaunator
 A small quest in BG2:SoA allows you to enhance the potency of the Holy Ward of Amaunator.
 
+18.13. Ornate Green Steel Disc (offered in BG2:ToB chapter 8 or later)
+This ornate disc has been forged out of the famed Baatorian green steel that can only be found in
+the wastelands of Avernus. A tracery of strange runes and markings cover the whole surface of the
+disc. It is unclear whether it serves a specific purpose.
+
+Weight: 2
+
+Note: This item starts a new quest that involves a dark cult, challenging fights, and some very
+      unique "rewards".
+
 
 19. Spell scrolls
 ~~~~~~~~~~~~~~~~~

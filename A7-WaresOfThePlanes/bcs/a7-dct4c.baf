@@ -1,0 +1,115 @@
+// Ritual for the "Abyssal Pact" cutscene - summoning demon lord
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(14)
+    StartCutScene("a7-dct4d")
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",2)
+THEN
+  RESPONSE #100
+    CutSceneId(Player2)
+    MoveViewObject(Myself,BD_VERY_SLOW)
+    Wait(3)
+    ApplySpellRES("OHSMODE3",Myself)  // [remove Story Mode effects]
+    ApplySpellRES("a7-disp",Myself)   // [dispel all effects]
+    CreateCreatureObject("cutspy",Myself,0,0,0)
+    SmallWait(2)
+    LeaveParty()
+    ApplySpellRES("a7-dsm1a",Myself)  // [character -> demon lord]
+    Wait(4)
+    DropInventory()
+    TakePartyItemNum("a7-mi13",1)
+    DestroyItem("a7-mi13")
+    Wait(2)
+    ActionOverride("cutspy",DestroySelf())
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",3)
+THEN
+  RESPONSE #100
+    CutSceneId(Player3)
+    MoveViewObject(Myself,BD_VERY_SLOW)
+    Wait(3)
+    ApplySpellRES("OHSMODE3",Myself)  // [remove Story Mode effects]
+    ApplySpellRES("a7-disp",Myself)   // [dispel all effects]
+    CreateCreatureObject("cutspy",Myself,0,0,0)
+    SmallWait(2)
+    LeaveParty()
+    ApplySpellRES("a7-dsm1a",Myself)  // [character -> demon lord]
+    Wait(4)
+    DropInventory()
+    TakePartyItemNum("a7-mi13",1)
+    DestroyItem("a7-mi13")
+    Wait(2)
+    ActionOverride("cutspy",DestroySelf())
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",4)
+THEN
+  RESPONSE #100
+    CutSceneId(Player4)
+    MoveViewObject(Myself,BD_VERY_SLOW)
+    Wait(3)
+    ApplySpellRES("OHSMODE3",Myself)  // [remove Story Mode effects]
+    ApplySpellRES("a7-disp",Myself)   // [dispel all effects]
+    CreateCreatureObject("cutspy",Myself,0,0,0)
+    SmallWait(2)
+    LeaveParty()
+    ApplySpellRES("a7-dsm1a",Myself)  // [character -> demon lord]
+    Wait(4)
+    DropInventory()
+    TakePartyItemNum("a7-mi13",1)
+    DestroyItem("a7-mi13")
+    Wait(2)
+    ActionOverride("cutspy",DestroySelf())
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",5)
+THEN
+  RESPONSE #100
+    CutSceneId(Player5)
+    MoveViewObject(Myself,BD_VERY_SLOW)
+    Wait(3)
+    ApplySpellRES("OHSMODE3",Myself)  // [remove Story Mode effects]
+    ApplySpellRES("a7-disp",Myself)   // [dispel all effects]
+    CreateCreatureObject("cutspy",Myself,0,0,0)
+    SmallWait(2)
+    LeaveParty()
+    ApplySpellRES("a7-dsm1a",Myself)  // [character -> demon lord]
+    Wait(4)
+    DropInventory()
+    TakePartyItemNum("a7-mi13",1)
+    DestroyItem("a7-mi13")
+    Wait(2)
+    ActionOverride("cutspy",DestroySelf())
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",6)
+THEN
+  RESPONSE #100
+    CutSceneId(Player6)
+    MoveViewObject(Myself,BD_VERY_SLOW)
+    Wait(3)
+    ApplySpellRES("OHSMODE3",Myself)  // [remove Story Mode effects]
+    ApplySpellRES("a7-disp",Myself)   // [dispel all effects]
+    CreateCreatureObject("cutspy",Myself,0,0,0)
+    SmallWait(2)
+    LeaveParty()
+    ApplySpellRES("a7-dsm1a",Myself)  // [character -> demon lord]
+    Wait(4)
+    DropInventory()
+    TakePartyItemNum("a7-mi13",1)
+    DestroyItem("a7-mi13")
+    Wait(2)
+    ActionOverride("cutspy",DestroySelf())
+END

@@ -1,0 +1,10 @@
+// Quest "Lure of Darkness": Triggers cultist ambush
+IF
+  OnCreation()
+  Global("A7-DarknessQuest","GLOBAL",1)
+  !IsForcedRandomEncounterActive("")  // Wildcard - any forced random encounter
+THEN
+  RESPONSE #100
+    ForceRandomEncounterEntry("A7WP02","ExitSE")
+    Continue()
+END

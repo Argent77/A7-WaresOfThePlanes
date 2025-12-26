@@ -1,0 +1,9 @@
+// Lure of Darkness: Retribution from the Order of the Radiant Heart
+IF
+  Global("greetings","LOCALS",0)
+  See([GOODCUTOFF])
+THEN
+  RESPONSE #100
+    SetGlobal("greetings","LOCALS",1)
+    DisplayStringHead(Myself,@152)  // Make peace with your gods, <CHARNAME>!
+END

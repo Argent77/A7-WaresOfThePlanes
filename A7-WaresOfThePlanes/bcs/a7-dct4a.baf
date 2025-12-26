@@ -1,0 +1,267 @@
+// Ritual for the "Abyssal Pact" cutscene - preparations
+
+// Failsafe script block
+IF
+  OR(2)
+    GlobalLT("A7-DarknessRitualSacrifice","GLOBAL",2)
+    GlobalGT("A7-DarknessRitualSacrifice","GLOBAL",6)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    MoveViewObject(Myself,INSTANT)
+    EndCutSceneMode()
+END
+
+
+// Corrupting Player1
+IF
+  !GlobalLT("A7-DarknessRitualSacrifice","GLOBAL",2)
+  !GlobalGT("A7-DarknessRitualSacrifice","GLOBAL",6)
+  !CheckStat(Player1,1,PROTECTION_FROM_EVIL)
+  !Alignment(Player1,MASK_EVIL)
+  Alignment(Player1,MASK_LAWFUL)
+  Class(Player1,RANGER)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetGlobal("a7-mi13_corrupted","LOCALS",1)
+    ChangeAlignment(Myself,LAWFUL_EVIL)
+    DisplayString(Myself,%align_le_strref%)
+    RemoveRangerHood()
+    SmallWait(1)
+    StartCutSceneEx("a7-dct4b",TRUE)
+END
+
+IF
+  !GlobalLT("A7-DarknessRitualSacrifice","GLOBAL",2)
+  !GlobalGT("A7-DarknessRitualSacrifice","GLOBAL",6)
+  !CheckStat(Player1,1,PROTECTION_FROM_EVIL)
+  !Alignment(Player1,MASK_EVIL)
+  Alignment(Player1,MASK_LAWFUL)
+  !Class(Player1,RANGER)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetGlobal("a7-mi13_corrupted","LOCALS",1)
+    ChangeAlignment(Myself,LAWFUL_EVIL)
+    DisplayString(Myself,%align_le_strref%)
+    SmallWait(1)
+    StartCutSceneEx("a7-dct4b",TRUE)
+END
+
+IF
+  !GlobalLT("A7-DarknessRitualSacrifice","GLOBAL",2)
+  !GlobalGT("A7-DarknessRitualSacrifice","GLOBAL",6)
+  !CheckStat(Player1,1,PROTECTION_FROM_EVIL)
+  !Alignment(Player1,MASK_EVIL)
+  Alignment(Player1,MASK_LCNEUTRAL)
+  Class(Player1,RANGER)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetGlobal("a7-mi13_corrupted","LOCALS",1)
+    ChangeAlignment(Myself,NEUTRAL_EVIL)
+    DisplayString(Myself,%align_ne_strref%)
+    RemoveRangerHood()
+    SmallWait(1)
+    StartCutSceneEx("a7-dct4b",TRUE)
+END
+
+IF
+  !GlobalLT("A7-DarknessRitualSacrifice","GLOBAL",2)
+  !GlobalGT("A7-DarknessRitualSacrifice","GLOBAL",6)
+  !CheckStat(Player1,1,PROTECTION_FROM_EVIL)
+  !Alignment(Player1,MASK_EVIL)
+  Alignment(Player1,MASK_LCNEUTRAL)
+  !Class(Player1,RANGER)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetGlobal("a7-mi13_corrupted","LOCALS",1)
+    ChangeAlignment(Myself,NEUTRAL_EVIL)
+    DisplayString(Myself,%align_ne_strref%)
+    SmallWait(1)
+    StartCutSceneEx("a7-dct4b",TRUE)
+END
+
+IF
+  !GlobalLT("A7-DarknessRitualSacrifice","GLOBAL",2)
+  !GlobalGT("A7-DarknessRitualSacrifice","GLOBAL",6)
+  !CheckStat(Player1,1,PROTECTION_FROM_EVIL)
+  !Alignment(Player1,MASK_EVIL)
+  Alignment(Player1,MASK_CHAOTIC)
+  Class(Player1,RANGER)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetGlobal("a7-mi13_corrupted","LOCALS",1)
+    ChangeAlignment(Myself,CHAOTIC_EVIL)
+    DisplayString(Myself,%align_ce_strref%)
+    RemoveRangerHood()
+    SmallWait(1)
+    StartCutSceneEx("a7-dct4b",TRUE)
+END
+
+IF
+  !GlobalLT("A7-DarknessRitualSacrifice","GLOBAL",2)
+  !GlobalGT("A7-DarknessRitualSacrifice","GLOBAL",6)
+  !CheckStat(Player1,1,PROTECTION_FROM_EVIL)
+  !Alignment(Player1,MASK_EVIL)
+  Alignment(Player1,MASK_CHAOTIC)
+  !Class(Player1,RANGER)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetGlobal("a7-mi13_corrupted","LOCALS",1)
+    ChangeAlignment(Myself,CHAOTIC_EVIL)
+    DisplayString(Myself,%align_ce_strref%)
+    SmallWait(1)
+    StartCutSceneEx("a7-dct4b",TRUE)
+END
+
+
+// Proceed without corrupting Player1
+IF
+  !GlobalLT("A7-DarknessRitualSacrifice","GLOBAL",2)
+  !GlobalGT("A7-DarknessRitualSacrifice","GLOBAL",6)
+  OR(2)
+    CheckStat(Player1,1,PROTECTION_FROM_EVIL)
+    Alignment(Player1,MASK_EVIL)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SmallWait(1)
+    StartCutSceneEx("a7-dct4b",TRUE)
+END
+
+
+// Storing attributes of the intended sacrifice for later (name, alignment, and gender)
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",2)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetTokenObject("A7_SACRIFICE",Player2)
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",2)
+  Alignment(Player2,MASK_EVIL)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetGlobal("A7-DarknessRitualSacrificeEvil","GLOBAL",1)
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",2)
+  Gender(Player2,FEMALE)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetGlobal("A7-DarknessRitualSacrificeFemale","GLOBAL",1)
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",3)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetTokenObject("A7_SACRIFICE",Player3)
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",3)
+  Alignment(Player3,MASK_EVIL)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetGlobal("A7-DarknessRitualSacrificeEvil","GLOBAL",1)
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",3)
+  Gender(Player3,FEMALE)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetGlobal("A7-DarknessRitualSacrificeFemale","GLOBAL",1)
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",4)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetTokenObject("A7_SACRIFICE",Player4)
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",4)
+  Alignment(Player4,MASK_EVIL)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetGlobal("A7-DarknessRitualSacrificeEvil","GLOBAL",1)
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",4)
+  Gender(Player4,FEMALE)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetGlobal("A7-DarknessRitualSacrificeFemale","GLOBAL",1)
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",5)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetTokenObject("A7_SACRIFICE",Player5)
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",5)
+  Alignment(Player5,MASK_EVIL)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetGlobal("A7-DarknessRitualSacrificeEvil","GLOBAL",1)
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",5)
+  Gender(Player5,FEMALE)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetGlobal("A7-DarknessRitualSacrificeFemale","GLOBAL",1)
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",6)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetTokenObject("A7_SACRIFICE",Player6)
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",6)
+  Alignment(Player6,MASK_EVIL)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetGlobal("A7-DarknessRitualSacrificeEvil","GLOBAL",1)
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",6)
+  Gender(Player6,FEMALE)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetGlobal("A7-DarknessRitualSacrificeFemale","GLOBAL",1)
+END

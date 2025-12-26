@@ -1,0 +1,21 @@
+// Area script: Ritual Chamber
+IF
+  Global("A7-RitualCutScene","A7WP01",0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-RitualCutScene","A7WP01",1)
+    SetGlobal("A7-DarknessQuest","GLOBAL",3)
+    ClearAllActions()
+    StartCutSceneMode()
+    StartCutScene("a7-dct3")
+END
+
+IF
+  Global("A7-DarknessQuest","GLOBAL",3)
+  Global("A7-FoundTome","A7WP01",0)
+  PartyHasItem("a7-mi13x")
+THEN
+  RESPONSE #100
+    SetGlobal("A7-FoundTome","A7WP01",1)
+    AddJournalEntry(@3209,QUEST)
+END

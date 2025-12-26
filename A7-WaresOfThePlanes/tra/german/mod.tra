@@ -37,7 +37,7 @@
 @3001 = ~Ebb Knarrknie sagte mir, dass man ihn entweder in Beregost, dem Jahrmarkt von Nashkell oder in Ulgoths Bart antreffen kann, solange er die Schwertküste bereist.~
 @3002 = ~Ebb Knarrknie sagte mir, dass man ihn entweder in Handelstreff, in Imnestal in den Umarhügeln oder in Athkatlas Marktbezirk antreffen kann, solange er Amn bereist.~
 
-// Quest-related journal entries
+// Quest: A gnomish contraption
 @3100 = ~Ein gnomischer Apparat~
 
 @3101 = ~Ein gnomischer Apparat
@@ -59,3 +59,74 @@ Ebb Knarrknie hat sein Wort gehalten und ist mit der reparierten Waffe zurückge
 @3151 = ~Ein gnomischer Apparat
 
 Es sieht so aus, als ob Ebb Knarrknie Amkethran für immer verlassen hat, da sich die Ereignisse gerade überschlagen. Ich hätte ihn schon früher aufsuchen sollen, bevor die Hölle ausbrach.~
+
+// Quest: Lure of Darkness
+@3200 = ~Verlockung der Dunkelheit~
+
+@3201 = ~Verlockung der Dunkelheit
+
+Ebb Knarrknie bot mir eine verzierte Scheibe aus Grünstahl zum Verkauf an. Aus Grünstahl geschmiedete Gegenstände werden nur in den niederen Ebenen gefertigt und sind daher bei Zauberern und Okkultisten sehr begehrt.~
+
+@3202 = ~Verlockung der Dunkelheit
+
+Ich habe eine einzigartige verzierte Scheibe aus Grünstahl erworben. Exotische Gegenstände wie dieser sind normalerweise auf die eine oder andere Weise verzaubert. Ebb konnte mir allerdings nicht sagen, ob das auch auf diese Scheibe zutrifft.~
+
+@3203 = ~Verlockung der Dunkelheit
+
+Auf dem Weg zu meinem nächsten Ziel kam eine Gruppe von Kultmitgliedern auf mich zu und bot mir an, die Metallscheibe abzukaufen, die ich von Ebb Knarrknie erworben hatte. Ich versuchte Unwissenheit vorzutäuschen, aber die Kultisten durschauten meinen Bluff und griffen mich an.~
+
+@3204 = ~Verlockung der Dunkelheit
+
+Auf dem Weg zu meinem nächsten Ziel kam eine Gruppe von Kultmitgliedern auf mich zu und bot mir an, die Metallscheibe abzukaufen, die ich von Ebb Knarrknie erworben hatte. Als ich ihr Angebot ablehnte, griffen sie mich an.~
+
+@3205 = ~Verlockung der Dunkelheit
+
+Auf dem Weg zu meinem nächsten Ziel traf ich auf eine Gruppe Kultmitglieder. Ich nutzte die Gelegenheit und griff sie an.~
+
+@3206 = ~Verlockung der Dunkelheit
+
+Einer der Kultisten hinterließ eine Notiz, auf der die Metallscheibe in meinem Besitz und ein „Wort der Macht“ erwähnt wurden, mit denen man sich Zutritt zu einem versiegelten Eingang irgendwo in der Region verschaffen kann. Die Notiz warnte auch vor einer verstärkten Präsenz von Banditen und Kopfgeldjägern, die in der Region nach Bhaalabkömmlingen suchen. Ich sollte diese Gebiete in der Region aufsuchen und nach dem versteckten Eingang Ausschau halten.~
+
+@3207 = ~Verlockung der Dunkelheit
+
+Ich habe eine Notiz bei den sterblichen Überresten eines Magiers gefunden. Darin werden ein „Wort der Macht“ und einer Art Schlüsselstein erwähnt, der eine starke Ähnlichkeit mit der Metallscheibe hat, die ich von Ebb Knarrknie erworben hatte. Beide Teile werden offenbar benötigt, um einen versiegelten Eingang in der Nähe zu betreten.~
+
+@3208 = ~Verlockung der Dunkelheit
+
+Als ich das Wort der Macht aussprach und dabei die Metallscheibe in meinen Händen hielt, verschwand die Schutzbarriere um den versteckten Eingang. Wer auch immer sich die Mühe machte, sie zu errichten, hält sich höchstwahrscheinlich im unterirdischen Versteck auf.~
+
+@3209 = ~Verlockung der Dunkelheit
+
+Offenbar habe ich ein wichtiges Ritual eines Dämonenkultes unterbrochen. Die Kultmitglieder „dankten“ mir, indem sie versuchten, mich als ihr nächstes Opfer darzubringen. Aber ich konnte mich behaupten. Bei der Leiche des Kultanführers fand ich ein bedrohlich aussehendes Buch, das in einer mir unbekannten Sprache geschrieben war. Es widersteht jedem Versuch, es zu Identifizieren. Vielleicht kann mir Ebb mehr darüber verraten, da er schließlich zuvor die Metallscheibe in die Hände bekommen hatte.~
+
+@3210 = ~Verlockung der Dunkelheit
+
+Überraschenderweise konnte Ebb die Schrift des Buches sofort bestimmen. Es scheint sich um Runen des Abyss zu handeln. Auf jeden Fall wollte Ebb damit nichts weiter zu tun haben und verwies mich an einen Gelehrten, der irgendwo in der Nähe leben soll.~
+
+@3211 = ~Verlockung der Dunkelheit
+
+Lazarus Librarus war sichtlich erschüttet, als ich ihm das Buch der Kultisten zeigte. Er bestand darauf, es vernichten zu lassen. Schließlich konnte ich ihn doch noch überzeugen, mir einige Hinweise zur Übersetzung zu geben. Anscheinend verfügen nur die Bewohner der niederen Ebenen, also die Tanar'ri und die Baatezu, über das notwendige Wissen, diese Sprache zu lesen. Die Frage ist nun, wo ich einen Vertreter dieser Rassen finden kann, der bereit wäre, mich anzuhören *und* mir zu helfen?~
+
+@3212 = ~Verlockung der Dunkelheit
+
+Cespenar war nicht gerade begeistert, mir mit dem dämonischen Buch zu helfen, bot mir jedoch an, mir einen Leitfaden zur Übersetzung für einen schwarzen Opal und 1000 Goldmünzen zu beschaffen.~
+
+@3213 = ~Verlockung der Dunkelheit
+
+Ich konnte Cespenar davon überzeugen, mir einen Leitfaden für die Sprachen des Abyss zu beschaffen. Er ermöglicht es mir hoffentlich, das Werk, das ich vom Dämonenkult erhalten habe, zu übersetzen und sein volles Potenzial auszuschöpfen.~
+
+@3214 = ~Verlockung der Dunkelheit
+
+Es gelang mir, die Verzauberung zu brechen, mit der Lazarus Librarus das Buch verschwinden ließ, und es wieder zurückzubekommen.~
+
+@3250 = ~Verlockung der Dunkelheit
+
+Auf dem Weg zu meinem nächsten Ziel kam eine Gruppe von Kultmitgliedern auf mich zu und bot mir an, die Metallscheibe abzukaufen, die ich von Ebb Knarrknie erworben hatte. Ich beschloss, ihr Angebot anzunehmen. Sie schienen ihr Wort zu halten und zahlten mir das versprochene Gold, bevor sie sich von mir verabschiedeten. Nun werde ich nie erfahren, welchem Zweck diese verzierte Metallscheibe wirklich dient.~
+
+@3251 = ~Verlockung der Dunkelheit
+
+Lazarus Librarus warnte mich eindringlich, das dämonische Buch wegzuschließen. Ich willigte schließlich ein und erlaubte ihm, es in eine Art Miniaturtaschendimension seiner Wahl zu verbannen. Dort sollte es nun für lange Zeit für alle außer den mächtigsten Wesen unauffindbar sein.~
+
+@3252 = ~Verlockung der Dunkelheit
+
+Mit Hilfe der Notizen über die Sprachen des Abyss gelang es mir, das Werk zu übersetzen. Es stellte sich heraus, dass es sich um das „Buch der Abscheulichen Dunkelheit“ handelte, oder zumindest um eine unvollständige Kopie davon. Aber auch so ist es eine Quelle großer und bösartiger Macht, mit der man äußerst vorsichtig umgehen sollte.~

@@ -107,6 +107,8 @@ Traduction française : Deratiseur
 
 Traduction en chinois simplifié : MephistoSatanDevil
 
+Additional help: Lava
+
 
 Notes sur les droits d'auteur
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -117,11 +119,31 @@ Les objets sont basés sur les ressources de Planescape : Torment, (c) par Black
 
 Certains graphismes d'icônes sont basés sur des ressources de Age of Wonders - Shadow Magic, (c) Triumph Studios.
 
+Barazhad truetype font by Pixel Sagas Freeware Fonts.
+
 Portrait de marchand basé sur "RPG Dwarf Males 41" par ttb2112-ai sur DeviantArt.
 
 
 historique des versions
 ~~~~~~~~~~~~~~~~~~~~~~~
+
+2.0
+- Added new ToB quest: Lure of Darkness
+- Added new item: Planar Anchor
+- Added new item: Lifeless Companion +2
+- Fixed or improved several items:
+  - Final Judgment +3: fixed double damage amount
+  - Jagged Bolts +1: added bleeding effect
+  - Spiked Gauntlets of Ogre Power: Fixed item description
+  - Vambraces of Evil's Warding: Fixed self-damage interval for evil characters
+  - Cowl of Deepest Shadows: Fixed casting level of Mislead ability
+  - Phantom Dagger +3: Increased THAC0 bonus
+  - Changed effect durations from seconds to rounds/turns for Fiend's Blood Dagger and Blind Terror +2
+  - Fixed poison resistance types of Fiend's Blood Dagger, Vroc's Club, and Club of Nettles
+  - Chaos Feather: Mention effect durations in item description
+  - Devil's Due: Fixed incorrect AC bonus definition
+  - Fixed and improved several item descriptions
+  - Elixir of Horrific Separation and Moridor's Box should not be available to Project Image/Simulacrum clones
 
 1.4
 - Ajout de la traduction française par Deratiseur.

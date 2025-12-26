@@ -55,3 +55,32 @@
 
 // Interjection: Haer'Dalis
 @110 = ~A futile attempt in the face of entropy and decay. Your words and deeds will only delay the inevitable by a miniscule span of time. While you have to work actively to keep entropy at bay we can simply sit back and watch. Time is our ally.~
+
+// additional lines for quest "Lure of Darkness"
+@200 = ~You come back at the right time. I have recently acquired a strange metal disc as payment for one of my items.~
+@201 = ~It's made from pure green steel, and judging by the adornments it may be enchanted as well.~
+@202 = ~So, what makes this disc so special?~
+@203 = ~Firstly, green steel can only be mined and forged in Baator.~
+@204 = ~Baator?~
+@205 = ~It's the Nine Hells, <LADGAL>. Home of the devils!~
+@206 = ~And if you know anything about that place, and their denizens, then you'd be extra wary of artifacts from there.~
+@207 = ~Anyway, I bet that adventurers like yourself are usually dying to get their hands on exotic items like this. So, I'd like to make you an offer.~
+@208 = ~For just 500 gold it can be yours. What do you say?~
+@209 = ~It's a deal.~
+@210 = ~Sounds pretty expensive. Can't you lower the price a bit?~
+@211 = ~Hmm, alright. How about 300 gold?~
+@212 = ~It's still too much for me. Maybe later.~
+@213 = ~Sorry, but I'm not interested.~
+@214 = ~No, I can't do that. It is a precious artifact after all.~
+@215 = ~I don't have enough gold. Could you maybe lower the price a bit?~
+@216 = ~As you wish. My offer still stands if you change your mind later.~
+@217 = ~Very good. Come back again.~
+@218 = ~I'd like to talk about the Green Steel Disc again.~
+@219 = ~Ah, you're still interested?~
+
+@250 = ~With the help of the metal disc we have discovered a tome written in an unknown language. Do you know how to translate it?~
+@251 = ~I don't rightly know. Let me see it.~
+@252 = ~Here you go.~
+@253 = ~Oh no, it's written in Abyssal! I won't touch it.~
+@254 = ~If you're still hell-bent on translating that thing then you should ask a scholar. I've heard of one who resides in this area, but his name escapes me at the moment. He shouldn't be too hard to find, anyway.~
+@255 = ~And now, kindly remove that book from my sight.~

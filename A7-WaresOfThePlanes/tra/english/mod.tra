@@ -37,7 +37,7 @@
 @3001 = ~Ebb Creakknees told me that while he tours across the Sword Coast he can be found either in Beregost, Nashkel's Carnival or Ulgoth's Beard.~
 @3002 = ~Ebb Creakknees told me that while he tours across Amn he can be found either in Trademeet, Imnesvale in the Umar Hills, or the Athkatla's market district.~
 
-// Quest-related journal entries
+// Quest: A gnomish contraption
 @3100 = ~A gnomish contraption~
 
 @3101 = ~A gnomish contraption
@@ -59,3 +59,74 @@ Ebb Creakknees was true to his word and returned with the repaired artifact. He 
 @3151 = ~A gnomish contraption
 
 It looks as if Ebb Creakknees has left permanently, as events in Amkethran have come thick and fast. I should have visited him sooner, before all hell broke loose.~
+
+// Quest: Lure of Darkness
+@3200 = ~Lure of Darkness~
+
+@3201 = ~Lure of Darkness
+
+Ebb Creakknees offered me an ornate disc made of green steel for sale. Items forged from green steel are only produced on the lower planes and therefore highly prized by wizards and occultists.~
+
+@3202 = ~Lure of Darkness
+
+I have purchased a unique ornate disc made of green steel. Exotic items like this are usually enchanted in one way or another. Ebb couldn't tell me, however, whether that also applies to this disc.~
+
+@3203 = ~Lure of Darkness
+
+While travelling to my next destination a group of cult members approached me and offered to purchase the metal disc I received from Ebb Creakknees. I tried to feign ignorance, but the cultists called my bluff and attacked me.~
+
+@3204 = ~Lure of Darkness
+
+While travelling to my next destination a group of cult members approached me and offered to purchase the metal disc I received from Ebb Creakknees. They attacked me when I refused their offer.~
+
+@3205 = ~Lure of Darkness
+
+While travelling to my next destination a group of cult members crossed my path. I seized the opportunity and attacked them.~
+
+@3206 = ~Lure of Darkness
+
+One of the cultists dropped a note that mentioned the metal disc in my possession and a "word of power" that is supposed to unseal a hidden entrance somewhere in the region. The note also warns about increased activity of bandits and bounty hunters after bhaalspawns in the region. I should visit these areas in the region and keep an eye out for that entrance.~
+
+@3207 = ~Lure of Darkness
+
+I picked up a note from the remains of a mage. It mentions a "word of power" and some kind of wardstone that bears a strong resemblance to the ornate metal disc I received from Ebb Creakknees. Both parts are apparently needed to pass a sealed entrance nearby.~
+
+@3208 = ~Lure of Darkness
+
+Invoking the word of power while holding the metal disc in my hands dispelled a protective barrier around a hidden entrance. Whoever went through the trouble of erecting it in the first place can most likely be found underground.~
+
+@3209 = ~Lure of Darkness
+
+I seem to have interrupted an important ritual of a demonic cult. The cult members "thanked" me by trying to turn me into their next offering, but I prevailed. On the body of the cult leader I found a dangerous-looking tome written in a language I have never seen before. It resists any kind of identification and divination attempts. Maybe Ebb can tell me more, considering he got his hands on the metal disc before.~
+
+@3210 = ~Lure of Darkness
+
+To my surprise Ebb identified the writing in the tome immediately. They seem to be some kind of Abyssal runes. In any case, Ebb didn't want to have anything to do with it and referred me to a scholar in town instead.~
+
+@3211 = ~Lure of Darkness
+
+Lazarus Librarus was visibly shaken when I showed him the tome from the cultists. He insisted to have it destroyed, but I could eventually convince him to provide some clues how to translate it. Apparently only the denizens of the lower planes, namely the tanar'ri or baatezu races, have the knowledge to read this language. The question is now where I can find a representative of one of those races who would be willing to talk to *and* help me?~
+
+@3212 = ~Lure of Darkness
+
+Cespenar wasn't too happy to help me with the abyssal tome but offered to sell a translation guide for the price of a black opal and 1,000 gold.~
+
+@3213 = ~Lure of Darkness
+
+I was able to convince Cespenar to sell me a primer on abyssal languages which hopefully allows me to translate the tome I received from the demonic cult and unlock its full potential.~
+
+@3214 = ~Lure of Darkness
+
+I managed to undo the enchantment Lazarus Librarus had cast on the tome to lock it away and retrieve it again.~
+
+@3250 = ~Lure of Darkness
+
+While travelling to my next destination a group of cult members approached me and offered to purchase the metal disc I received from Ebb Creakknees. I decided to agree to their offer. They appeared to be good to their word and paid me the promised gold before leaving my presence. Now I'll never find out what purpose that ornate metal disc really serves.~
+
+@3251 = ~Lure of Darkness
+
+Lazarus Librarus warned me insistently to lock the demonic tome away. I finally agreed and allowed him to transport it to a miniature pocket plane of his chosing. It should now be out of reach of everyone but the most powerful beings for a long time.~
+
+@3252 = ~Lure of Darkness
+
+With the help of the notes on abyssal languages I was able to translate the tome. It turned out to be the "Book of Vile Darkness", or at least an incomplete copy of it. But even so it is a source of great, and evil, power that should be handled with utmost care.~

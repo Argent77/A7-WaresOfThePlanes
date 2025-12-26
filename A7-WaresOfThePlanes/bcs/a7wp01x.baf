@@ -1,0 +1,31 @@
+IF
+  Global("A7-DarknessQuest","GLOBAL",2)
+  Global("A7-DarknessQuestNote","GLOBAL",1)
+  PartyHasItem("a7-mi15")
+  Clicked([ANYONE])
+  Range(LastTrigger,10)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@104)  // Invoking the word of power while holding the ward stone in your hands dispels the unnatural darkness that prevented entry.
+    AddXP2DA("a7-dark1")
+    AddJournalEntry(@3208,QUEST)
+    TriggerActivation("tran-a7wp01_info",FALSE)
+    TriggerActivation("tran-a7wp01",TRUE)
+    AddMapNote([2070.662],@102) // Secret Entrance
+END
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger,10)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@103)  // An unnatural darkness keeps you from entering the hole.
+END
+
+IF
+  Clicked([ANYONE])
+  !Range(LastTrigger,10)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,14702)  // You are too far away to use that.
+END

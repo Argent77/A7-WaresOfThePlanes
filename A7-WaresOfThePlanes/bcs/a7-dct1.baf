@@ -1,0 +1,84 @@
+// *** Lure of Darkness: Ambush cutscene ***
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-demc1")
+    Wait(1)
+    MoveViewObject(Myself,VERY_FAST)
+    Face(SE)
+    DisplayStringHead(Myself,@300)  // Ah, they came as predicted.
+    Wait(3)
+    DisplayStringHead("a7-demc2",@301)  // Let's hope they live up to our expectations.
+    Wait(2)
+    FaceObject(Player1)
+    Wait(2)
+    StartDialogNoSet(Player1)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1)
+    SmallWait(5)
+    MoveToPoint([578.540])
+    FaceObject("a7-demc1")
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player2)
+    Wait(1)
+    SmallWait(7)
+    MoveToPoint([517.555])
+    FaceObject("a7-demc1")
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player3)
+    Wait(1)
+    SmallWait(8)
+    MoveToPoint([642.557])
+    FaceObject("a7-demc1")
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player4)
+    Wait(1)
+    SmallWait(10)
+    MoveToPoint([578.602])
+    FaceObject("a7-demc1")
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player5)
+    Wait(1)
+    SmallWait(12)
+    MoveToPoint([518.632])
+    FaceObject("a7-demc1")
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player6)
+    Wait(1)
+    SmallWait(13)
+    MoveToPoint([640.636])
+    FaceObject("a7-demc1")
+END
+

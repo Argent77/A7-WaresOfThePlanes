@@ -1,0 +1,33 @@
+// Morrow's End +5
+
+@0 = ~Menacing-looking Sword~
+@1 = ~Morrow's End +5~
+// @10 = ~~  // #6742
+@11 = ~This abyssal blade had been originally forged for an unknown balor general who fought in the Blood War for many centuries. Over time the blade soaked up the ever-present horrors on the battlefield and eventually developed the unique ability to curse everyone it touches with a fraction of the accumulated anguish in return.
+
+When the blade came into possession of the demon lord Anarazel it was further upgraded and turned into a vorpal sword through the sacrifice of thousands of souls.
+
+The weapon has a jagged edge and glows with a bright red color when wielded. Only those of little conscience who open themselves up to its evil can wield the blade to the fullest potential.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to all forms of death magic
+– -1 penalty to strength, dexterity and constitution for characters of good alignment, unless protected from evil
+– May only be removed with a Remove Curse spell
+
+Combat abilities:
+– 25% chance per hit that target must save vs. Death at -2 or die
+– Disease for one turn that inflicts a -5 strength penalty, 1 damage per 3 seconds, and slows the target (save vs. Spell to negate all effects)
+– 25% chance with every hit to drain 1 level from the target and heal the wielder by 1d4 Hit Points at the same time, if used by a character of evil alignment
+
+THAC0: +5
+Damage: 2d4+5, double damage against devils
+Damage type: Slashing
+Speed Factor: 3
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 5~

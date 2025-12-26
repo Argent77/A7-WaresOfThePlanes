@@ -55,3 +55,32 @@
 
 // Interjection: Haer'Dalis
 @110 = ~Ein aussichtsloser Versuch im Angesicht von Entropie und Verfall. Eure Worte und Taten zögern nur das Unvermeidliche um einen winzigen Zeitraum hinaus. Während ihr hart arbeiten müsst, um Entropie in Schach zu halten, können wir uns gemütlich zurücklehnen und zuschauen. Zeit ist unsere Verbündete.~
+
+// additional lines for quest "Lure of Darkness"
+@200 = ~Du kommst genau zum richtigen Zeitpunkt zurück. Ich habe kürzlich eine seltsame Metallscheibe als Bezahlung für einen meiner Artikel erhalten.~
+@201 = ~Sie besteht aus reinem Grünstahl. Und den Verzierungen nach zu urteilen, könnte sie auch verzaubert sein.~
+@202 = ~Also, was macht diese Scheibe so besonders?~
+@203 = ~Erstens kann Grünstahl nur in Baator abgebaut und geschmiedet werden.~
+@204 = ~Baator?~
+@205 = ~Das sind die Neun Höllen, <LADGAL>. Heimat der Teufel!~
+@206 = ~Und wenn du auch nur etwas über diesen Ort und seine Bewohner weißt, dann würdest du Artefakten, die von dort stammen, mit besonderem Respekt begegnen.~
+@207 = ~Wie auch immer, ich wette, dass Abenteurer wie du darauf brennen, solche exotischen Gegenstände in die Hände zu bekommen. Also möchte ich dir ein Angebot machen.~
+@208 = ~Für nur 500 Goldmünzen kann sie dir gehören. Hört sich das nicht großartig an?~
+@209 = ~Abgemacht!~
+@210 = ~Nee, das hört sich eher etwas kostspielig an. Kannst du den Preis nicht etwas senken?~
+@211 = ~Hmm, na gut. Wie wäre es mit 300 Goldmünzen?~
+@212 = ~Das ist mir immer noch zu teuer. Vielleicht später.~
+@213 = ~Tut mir leid, aber ich bin daran nicht interessiert.~
+@214 = ~Nein, das kann ich nicht machen. Es ist schließlich ein wertvolles Artefakt.~
+@215 = ~Ich habe nicht genug Goldmünzen parat. Kannst du den Preis nicht etwas senken?~
+@216 = ~Wie du willst. Mein Angebot gilt weiterhin, falls du später deine Meinung ändern solltest.~
+@217 = ~Wunderbar. Komm bald wieder.~
+@218 = ~Ich möchte nochmal auf die Scheibe aus Grünstahl zurückkommen.~
+@219 = ~Ah, du bist immer noch daran interessiert?~
+
+@250 = ~Mit Hilfe der Metallscheibe haben wir ein Buch entdeckt, das in einer uns unbekannten Sprache geschrieben ist. Kannst du es für uns übersetzen?~
+@251 = ~Ich weiß nicht so recht. Lass mich mal sehen.~
+@252 = ~Hier, bitte sehr.~
+@253 = ~Oh nein, das ist ja in der Schrift des Abyss verfasst! Das rühre ich nicht an.~
+@254 = ~Wenn du immer noch so versessen darauf bist, dieses Ding zu übersetzen, dann frag einen Gelehrten. Hier scheint einer in der Gegend zu leben, aber sein Name fällt mir gerade nicht ein. Er sollte jedenfalls nicht allzu schwer zu finden sein.~
+@255 = ~Jetzt nimm aber bitte das Buch aus meinem Blickfeld.~

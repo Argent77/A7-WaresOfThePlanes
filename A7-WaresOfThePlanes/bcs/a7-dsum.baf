@@ -1,0 +1,74 @@
+// Override script for gated demons
+
+IF
+  !Global("A7-DarknessDemonGone","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    ApplySpellRES("a7-dspx",Myself) // Return to the Abyss
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("ea_init","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ea_init","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("ea_init","LOCALS",0)
+  Exists("a7-demlord")
+  Allegiance("a7-demlord",GOODCUTOFF)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    Enemy()   // enforces instant removal of player control
+    ChangeEnemyAlly(Myself,ALLY)
+    SetInterrupt(TRUE)
+END
+
+IF
+  !Allegiance(Myself,EVILCUTOFF)
+  Exists("a7-demlord")
+  Allegiance("a7-demlord",EVILCUTOFF)
+THEN
+  RESPONSE #100
+    Enemy()
+END
+
+// Hostility counter goes up if attacked by allies (amount depends on demon rank)
+IF
+  !Allegiance(Myself,EVILCUTOFF)
+  AttackedBy([GOODCUTOFF],DEFAULT)
+  !Specifics(LastAttackerOf(Myself),%demon_specifics%)
+  CheckStatLT(Myself,25,XP)
+THEN
+  RESPONSE #100
+    IncrementGlobal("A7-DarknessDemonAttacked","GLOBAL",1)
+    Continue()
+END
+
+IF
+  !Allegiance(Myself,EVILCUTOFF)
+  AttackedBy([GOODCUTOFF],DEFAULT)
+  !Specifics(LastAttackerOf(Myself),%demon_specifics%)
+  !CheckStatLT(Myself,25,XP)
+  CheckStatLT(Myself,100,XP)
+THEN
+  RESPONSE #100
+    IncrementGlobal("A7-DarknessDemonAttacked","GLOBAL",4)
+    Continue()
+END
+
+IF
+  !Allegiance(Myself,EVILCUTOFF)
+  AttackedBy([GOODCUTOFF],DEFAULT)
+  !Specifics(LastAttackerOf(Myself),%demon_specifics%)
+  !CheckStatLT(Myself,100,XP)
+THEN
+  RESPONSE #100
+    IncrementGlobal("A7-DarknessDemonAttacked","GLOBAL",16)
+    Continue()
+END

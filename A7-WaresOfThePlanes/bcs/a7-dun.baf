@@ -1,0 +1,17 @@
+// Override script for undead created by "Shadow Touch"
+
+IF
+  Global("init","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("init","LOCALS",1)
+    SetGlobalTimer("summonedtimer","LOCALS",ONE_HOUR)
+    Continue()
+END
+
+IF
+  GlobalTimerExpired("summonedtimer","LOCALS")
+THEN
+  RESPONSE #100
+    Kill(Myself)
+END

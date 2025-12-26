@@ -89,7 +89,7 @@ Der reisende Händler bietet insgesamt
 - 2 Zauberstäbe
 - 3 Zauberschriftrollen
 - mehrere Gebrauchsgegenstände
-- ein einzigartiges Quest-bezogenes Artefakt
+- zwei Artefakte mit einzigartigen Quests
 - und ein Haustier
 zum Verkauf an.
 
@@ -125,6 +125,8 @@ French translation: Deratiseur
 
 Simplified Chinese translation: MephistoSatanDevil
 
+Additional help: Lava
+
 
 Urheberrechtshinweise
 ~~~~~~~~~~~~~~~~~~~~~
@@ -136,11 +138,31 @@ Items are based on resources from Planescape: Torment, (c) by Black Isle Studios
 
 Some icon graphics based on resources from Age of Wonders - Shadow Magic, (c) Triumph Studios.
 
+Barazhad truetype font by Pixel Sagas Freeware Fonts.
+
 Merchant portrait based on "RPG Dwarf Males 41" by ttb2112-ai on DeviantArt.
 
 
 Versionshistorie
 ~~~~~~~~~~~~~~~~
+
+2.0
+- Added new ToB quest: Lure of Darkness
+- Added new item: Planar Anchor
+- Added new item: Lifeless Companion +2
+- Fixed or improved several items:
+  - Final Judgment +3: fixed double damage amount
+  - Jagged Bolts +1: added bleeding effect
+  - Spiked Gauntlets of Ogre Power: Fixed item description
+  - Vambraces of Evil's Warding: Fixed self-damage interval for evil characters
+  - Cowl of Deepest Shadows: Fixed casting level of Mislead ability
+  - Phantom Dagger +3: Increased THAC0 bonus
+  - Changed effect durations from seconds to rounds/turns for Fiend's Blood Dagger and Blind Terror +2
+  - Fixed poison resistance types of Fiend's Blood Dagger, Vroc's Club, and Club of Nettles
+  - Chaos Feather: Mention effect durations in item description
+  - Devil's Due: Fixed incorrect AC bonus definition
+  - Fixed and improved several item descriptions
+  - Elixir of Horrific Separation and Moridor's Box should not be available to Project Image/Simulacrum clones
 
 1.4
 - Added French translation (thanks Deratiseur)

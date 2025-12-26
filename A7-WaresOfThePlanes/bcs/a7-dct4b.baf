@@ -1,0 +1,55 @@
+// Ritual for the "Abyssal Pact" cutscene - preparations
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",2)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    FaceObject(Player2)
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",3)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    FaceObject(Player3)
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",4)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    FaceObject(Player4)
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",5)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    FaceObject(Player5)
+END
+
+IF
+  Global("A7-DarknessRitualSacrifice","GLOBAL",6)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    FaceObject(Player6)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1)
+    ForceSpell(Myself,DO_NOTHING)
+    Wait(2)
+    ForceSpell(Myself,DO_NOTHING)
+    Wait(2)
+    ForceSpell(Myself,DO_NOTHING)
+    StartCutSceneEx("a7-dct4c",TRUE)
+END

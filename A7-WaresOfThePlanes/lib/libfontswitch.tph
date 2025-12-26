@@ -1,0 +1,1070 @@
+/*
+ * A library that allows to display item descriptions in a custom font. Font-switching is controlled through global variables.
+ *
+ * The following UI mods are compatible:
+ * - vanilla UIs of BGEE, SoD, BG2EE, IWDEE, PSTEE
+ * - EET and EET+SoD UI
+ * - Dragonspear UI++
+ * - Infinity UI
+ * - IWDEE-UI
+ * - K4f4r's Classic BG UI
+ * - LeUI (all variants)
+ * - tipun's GUI
+ */
+
+// Available functions:
+// create_meta_command        Returns a full meta command definition string that can be added to the item description text string.
+// install_font               Provides support of a new font. The font file itself must already be installed before this function call.
+
+/*
+// Sample code: Installs a custom font and patches a specific item description
+// How to turn off custom font for the item: SetGlobal("a7_sw1h01_legible","GLOBAL",1)
+
+OUTER_SET remap           = 1                       // whether to remap non-ASCII characters to the ASCII code range
+OUTER_SET restrict        = 0                       // whether to further restrict ASCII code range to digits and letters
+OUTER_SET style_size      = 13                      // point size of the font (specify 0 to use same size as original font)
+OUTER_SET safe            = 1                       // whether to enforce installation failure for custom UIs that are not fully compatible
+OUTER_SPRINT font_resref  ~dethek~                  // resref of the TTF file
+OUTER_SPRINT style_name   ~%font_resref%_parchment~ // name of the font style definition
+
+// installing font definition
+LAF install_font
+  INT_VAR style_size safe
+  STR_VAR style_name font_resref
+  RET success
+END
+
+ACTION_IF (NOT success) BEGIN
+  FAIL ~Custom font could not be installed.~
+END
+
+// TTF and OTF fonts are supported (TTF file extension required)
+COPY ~%MOD_FOLDER%/ttf/%font_resref%.ttf~ ~override~
+
+COPY_EXISTING ~sw1h01.itm~ ~override~
+  // adding meta command to item description
+  LPF create_meta_command
+    INT_VAR
+      remap restrict
+      var_test = 1
+    STR_VAR
+      style_name
+      var_name = EVAL ~a7_%SOURCE_RES%_legible~
+    RET command
+  END
+  READ_STRREF IDENTIFIED_DESC text
+  SAY IDENTIFIED_DESC ~%command%%text%~
+  WRITE_SHORT 0x42 0  // lore=0; not needed since description is illegible through font-switching
+BUT_ONLY
+*/
+
+
+/**
+ * Default name of the meta command key for controlling the font style.
+ */
+OUTER_SPRINT META_KEY_LEGIBLE ~key_legible~
+
+/**
+ * Lua functions for controlling the font-switching behavior
+ */
+<<<<<<<< .../libfontswitch/menu_functions.lua
+
+-- Decode UTF-8 string into a table of Unicode code points
+function decodeUtf8(str)
+  local defaultcode = 32
+  local codepoints = {}
+  local i = 1
+  local len = #str
+
+  while i <= len do
+    local c = str:byte(i)
+    local code = nil
+    local bytes = 1
+
+    if c < 0x80 then
+      -- 1-byte sequence
+      code = c
+    elseif c >= 0xC2 and c < 0xE0 then
+      -- 2-byte sequence
+      bytes = 2
+      local c2 = str:byte(i + 1)
+      if not c2 or c2 < 0x80 or c2 >= 0xC0 then error("Invalid UTF-8 sequence") end
+      code = bit32.bor(bit32.lshift(bit32.band(c, 0x1F), 6),
+                       bit32.band(c2, 0x3F))
+    elseif c >= 0xE0 and c < 0xF0 then
+      -- 3-byte sequence
+      bytes = 3
+      local c2, c3 = str:byte(i + 1, i + 2)
+      if not c3 or c2 < 0x80 or c2 >= 0xC0 or c3 < 0x80 or c3 >= 0xC0 then
+        -- use default placeholder code point
+        code = defaultcode
+      else
+        code = bit32.bor(bit32.lshift(bit32.band(c, 0x0F), 12),
+                         bit32.lshift(bit32.band(c2, 0x3F), 6),
+                         bit32.band(c3, 0x3F))
+      end
+    elseif c >= 0xF0 and c < 0xF5 then
+      -- 4-byte sequence
+      bytes = 4
+      local c2, c3, c4 = str:byte(i + 1, i + 3)
+      if not c4 or c2 < 0x80 or c2 >= 0xC0 or c3 < 0x80 or c3 >= 0xC0 or c4 < 0x80 or c4 >= 0xC0 then
+        -- use default placeholder code point
+        code = defaultcode
+      else
+        code = bit32.bor(bit32.lshift(bit32.band(c, 0x07), 18),
+                         bit32.lshift(bit32.band(c2, 0x3F), 12),
+                         bit32.lshift(bit32.band(c3, 0x3F), 6),
+                         bit32.band(c4, 0x3F))
+      end
+    else
+      -- use default placeholder code point
+      code = defaultcode
+    end
+
+    table.insert(codepoints, code)
+    i = i + bytes
+  end
+
+  return codepoints
+end
+
+-- Remaps an array of unicode code points to ascii range and returns the result as a string.
+-- "alphaNumeric" is a boolean that specifies whether to further limit code range to letters and digits.
+function remapAscii(codepoints, alphaNumeric)
+  local parts = {}
+
+  if alphaNumeric == nil then
+    alphaNumeric = false
+  end
+
+  for _, cp in ipairs(codepoints) do
+    local ch = cp
+    if alphaNumeric then
+      -- control characters: 1..31, space: 32
+      -- digits: 48..57
+      -- upper:  65..90
+      -- lower:  97..122
+      if ch > 32 and ch < 48 or ch > 57 and ch < 65 or ch > 90 and ch < 97 or ch > 122 then
+        ch = ch % 62
+        if ch < 10 then
+          ch = ch + 48
+        elseif ch < 36 then
+          ch = ch - 10 + 65
+        else
+          ch = ch - 36 + 97
+        end
+      end
+    else
+      if ch > 0x7F then
+      -- only non-ascii characters are remapped
+      -- code range is limited to printable characters
+        ch = bit32.band(ch - 0x20, 0x5F) + 0x20
+      end
+    end
+    table.insert(parts, string.char(ch))
+  end
+
+  return table.concat(parts)
+end
+
+-- Returns an array of matching meta command definitions.
+-- @param text:   string with optional meta command [required]
+-- @param key:    unique identifier of the meta command [required]
+-- @param filter: optional boolean that indicates whether the meta command should be removed from the "text" string (default: true)
+-- @result 1:   modified "text" string if "filter" parameter is true; the input text string otherwise
+-- @result 2:   array with of structures if match is found:
+--                [1]: {key, value, test}, [2...]: {key, value}
+--              empty array if match isn't found.
+function getTextMetaCommand(text, key, filter)
+-- meta command: {<meta_key>=<var_name>:<test>;<key>=<value>;...}
+--   where <meta_key> is a unique identifier specified by the "key" param,
+--        <var_name> is the name of the global variable associated with the command
+--        <test> is a numeric value that indicates a match
+--   Optionally, more <key>=<value> pairs can be specified after semicolons.
+  if filter == nil then
+    filter = true
+  end
+  local retVal = {}
+
+  if text ~= nil and key ~= nil and key ~= '' then
+    local startPos = 1
+    if string.sub(text, startPos, startPos) == '{' then
+      local pos = startPos + 1
+      local pattern1 = "([-_%w]+)=([-_%w]+):(%d+)"  -- captures: 1=key, 2=value, 3=test value
+      local pattern2 = ";([-_%w]+)=([-_%w]+)"       -- captures: 1=key, 2=value
+      local endPos = string.find(text, '}', pos, true)
+      while pos ~= nil and endPos ~= nil do
+        if #retVal == 0 then
+          -- first meta definition is special
+          local p1, p2, groupKey, groupValue, groupTest = string.find(text, pattern1, pos, false)
+          if p1 == pos and groupKey == key then
+            -- meta command matches: parsing first definition
+            table.insert(retVal, { key = groupKey, value = groupValue, test = tonumber(groupTest) })
+            pos = p2 + 1
+          elseif string.sub(text, endPos + 1, endPos + 1) == '{' then
+            -- meta command doesn't match: try next one
+            pos = endPos + 2
+            endPos = string.find(text, '}', pos, true)
+          else
+            -- meta command doesn't match: terminate loop
+            pos = nil
+          end
+        else
+          -- additional meta definition
+          local p1, p2, groupKey, groupValue = string.find(text, pattern2, pos, false)
+          if p1 == pos then
+            -- try to autodetect intended data type
+            if string.match(groupValue, '^-?%d+$') or string.match(groupValue, '^-?%x+$') then
+              table.insert(retVal, { key = groupKey, value = tonumber(groupValue) })
+            else
+              table.insert(retVal, { key = groupKey, value = groupValue })
+            end
+            pos = p2 + 1
+          else
+            -- no further meta definition found: terminate search
+            pos = nil
+          end
+        end
+      end
+
+      -- removing meta command from text
+      if filter and startPos ~= nil and endPos ~= nil then
+        local beforeText = ''
+        if startPos > 1 then
+          beforeText = string.sub(text, 1, startPos - 1)
+        end
+        local afterText = string.sub(text, endPos + 1, -1)
+        text = beforeText .. afterText
+      end
+    end
+  end
+
+  return text, retVal
+end
+
+-- Returns a filtered version of the specified text string.
+-- Expects 4 parameters:
+--    text string with a potential meta command
+--    optional key that identifies the meta command (default: '%meta_key%')
+--    optional boolean that indicates whether string characters are remapped to ascii range (default: true)
+--    optional boolean that specifies whether remapping should be limited to letters and digits only (default: false)
+-- Returns the filtered text.
+function getFilteredText(text, key, remap, restrict)
+  if key == nil then
+    key = '%meta_key%'
+  end
+  if remap == nil then
+    remap = true
+  end
+  if restrict == nil then
+    restrict = false
+  end
+  local is_illegible = false
+
+  local text, info = getTextMetaCommand(text, key, true)
+  local len = #info
+  if len > 0 then
+    is_illegible = Infinity_GetScriptVarInt(info[1].value) ~= info[1].test
+    if is_illegible then
+      for index = 2, len, 1 do
+        if info[index].key == 'remap' then
+          -- override remap option
+          remap = info[index].value ~= 0
+        elseif info[index].key == 'restrict' then
+          -- override restrict option
+          restrict = info[index].value ~= 0
+        end
+      end
+    end
+  end
+
+  -- remapping special characters to ascii code range
+  if is_illegible and remap then
+    text = remapAscii(decodeUtf8(text), restrict)
+  end
+
+  return text
+end
+
+-- Item database
+a7_items_db = {
+}
+
+-- Checks whether the specified string parameter contains a valid meta command and evaluates the definitions.
+-- Expects 3 parameters:
+--    resref of the item
+--    text string with a potential meta command
+--    optional key that identifies the meta command (default: '%meta_key%')
+-- Returns 2 values:
+--    <bool> that indicates whether text should be readable
+--    <string> with the font style to use if the text is not readable
+function isTextLegible(res, text, key)
+  local is_found = false
+  local is_legible = false
+  local style_name = '%default_style%'
+  if key == nil then
+    key = '%meta_key%'
+  end
+
+  if a7_items_db[res] == nil then
+    local _, info = getTextMetaCommand(text, key, false)
+    if info ~= nil and #info > 0 then
+      a7_items_db[res] = info
+    end
+  end
+
+  local meta_info = a7_items_db[res]
+  if meta_info ~= nil then
+  local len = #meta_info
+    if len > 0 then
+      is_found = true
+      is_legible = Infinity_GetScriptVarInt(meta_info[1].value) == meta_info[1].test
+      for index = 2, len, 1 do
+        if meta_info[index].key == 'style' and styles[meta_info[index].value] ~= nil then
+          style_name = meta_info[index].value
+          break
+        end
+      end
+    end
+  end
+
+  return not is_found or is_legible, style_name
+end
+>>>>>>>>  // "
+
+/**
+ * "onOpen" lua code for the item description UI screen
+ */
+<<<<<<<< .../libfontswitch/on_open.menu
+		local legible_key = '%meta_key%'
+		is_legible, style_name = isTextLegible(itemDesc.item.res, itemDesc.item.description, legible_key)
+		itemDesc.item.description = getFilteredText(itemDesc.item.description, legible_key)
+>>>>>>>>
+
+/**
+ * "enabled" condition for font-switched UI control
+ */
+<<<<<<<< .../libfontswitch/text_illegible-enabled.menu
+not is_legible and style_name == '%style_name%'
+>>>>>>>>
+
+/**
+ * Style for the font-switched UI control
+ */
+<<<<<<<< .../libfontswitch/text_illegible-style.menu
+text style "%style_name%"
+>>>>>>>>
+
+/**
+ * "enabled" condition for original UI control
+ */
+<<<<<<<< .../libfontswitch/text_normal-enabled.menu
+is_legible or style_name == '%default_style%'
+>>>>>>>>
+
+
+/**
+ * Returns a complete meta command definition string that can be added to the item description text string.
+ * Format of a meta command: {<meta_key>=<var_name>:<var_test>;style=<style_name>;remap=<remap>;restrict=<restrict>}
+ *
+ * INT_VAR remap        Specifies whether non-ASCII characters should be remapped to the ASCII code range.
+ *                      This option is helpful to avoid printing placeholder symbols of undefined font characters.
+ *                      (Default: 1)
+ * INT_VAR restrict     Specifies whether ASCII code range should be further restricted to digits and letters only.
+ *                      This option is only considered if "remap" is enabled. (Default: 0)
+ * INT_VAR var_test     Value of the global variable "var_name" that controls whether item description text is displayed
+ *                      in the custom font.
+ *                      Value == var_test: Text is displayed in the game's default (readable) font.
+ *                      Value != var_test: Text is displayed in the custom font style specified by "style_name".
+ *                      (Default: 1)
+ * STR_VAR var_name     Name of the global variable that controls whether item description text is displayed in the
+ *                      custom font. (Required)
+ * STR_VAR style_name   Name of the custom font style to use for displaying the item description text. (Required)
+ * STR_VAR meta_key     Key string that identifies the meta command. (Default: %META_KEY_LEGIBLE%)
+ * RET command          The fully configured meta command string based on the given parameters. Returns an empty
+ *                      string if required parameters are missing.
+ */
+DEFINE_DIMORPHIC_FUNCTION create_meta_command
+INT_VAR
+  remap = 1
+  restrict = 0
+  var_test = 1
+STR_VAR
+  var_name = ~~
+  style_name = ~~
+  meta_key = ~~
+RET
+  command
+BEGIN
+  OUTER_SPRINT command ~~
+  ACTION_IF NOT (~%var_name%~ STR_EQ ~~ || ~%style_name%~ STR_EQ ~~) BEGIN
+    ACTION_IF (~%meta_key%~ STR_EQ ~~) BEGIN
+      OUTER_SPRINT meta_key ~%META_KEY_LEGIBLE%~
+    END
+    OUTER_SET remap = (remap != 0)
+    OUTER_SET restrict = (restrict != 0)
+
+    OUTER_SPRINT command ~{%meta_key%=%var_name%:%var_test%;style=%style_name%;remap=%remap%;restrict=%restrict%}~
+  END
+END
+
+
+/**
+ * Provides support of a new font. The font file itself must already be installed before this function call.
+ * Item description strings should add a meta command of the following scheme:
+ *    {<meta_key>=<var_name>:<test_value>;style=<style_name>;remap=<0_or_1>;restrict=<0_or_1>}
+ *    where the "remap" and "restrict" definitions are optional.
+ * The meta command must be added before the description text to be detected correctly. Multiple consecutive meta
+ * command definitions are allowed.
+ *
+ * INT_VAR style_size   Size of the font style. Positive values specify absolute size. Negative values are interpreted
+ *                      as percentage relative to the default style size.
+ *                      (Default: same as the font style for the item description text)
+ * INT_VAR safe         Indicates whether to ensure safe compatibility with custom UI mods. Specify 1 to fail for
+ *                      custom UIs where font-switching would introduce unwanted side effects. Currently affected are
+ *                      all of LeUI variants and K4f4r's classic BG UI. (Default: 1)
+ * STR_VAR style_name   A unique name that identifies the new font style. (Required)
+ * STR_VAR font_resref  Resref of the installed true type font file. (Required)
+ * STR_VAR meta_key     Unique meta command key. (Default: %META_KEY_LEGIBLE%)
+ */
+DEFINE_ACTION_FUNCTION install_font
+INT_VAR
+  style_size = 0
+  safe = 1
+STR_VAR
+  style_name = ~~
+  font_resref = ~~
+  meta_key = ~~
+RET
+  success
+BEGIN
+  OUTER_SET success = IS_COMPATIBLE_UI &&
+                      (NOT safe || IS_FULLY_COMPATIBLE_UI) &&
+                      NOT (~%style_name%~ STR_EQ ~~ || ~%font_resref%~ STR_EQ ~~)
+
+  ACTION_IF (~%meta_key%~ STR_EQ ~~) BEGIN
+    OUTER_SPRINT meta_key ~%META_KEY_LEGIBLE%~
+  END
+
+  ACTION_IF (success) BEGIN
+    // initializing base functionality for scrambling item description text
+    LAF a7_init_ui_font_replacement
+      STR_VAR meta_key
+      RET success
+    END
+  END
+
+  ACTION_IF (success) BEGIN
+    // adding ui control for displaying scrambled item description text
+    LAF a7_install_ui_font_replacement
+      STR_VAR style_name
+      RET success
+    END
+  END
+
+  ACTION_IF (success) BEGIN
+    // adding new style definition to lua array "styles"
+    LAF a7_install_style
+      INT_VAR style_size
+      STR_VAR style_name font_resref
+      RET success
+    END
+  END
+END
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Internal functions                                                        //
+///////////////////////////////////////////////////////////////////////////////
+
+// Available functions:
+// a7_get_default_style                   Returns the default font style used for displaying item description text.
+// a7_is_font_replacement_initialized     Returns whether the base functionality for font switching was already installed.
+// a7_init_ui_font_replacement            Called internally for UI.MENU to initialize the base functionality for font switching.
+// a7_install_ui_font_replacement         Called internally for UI.MENU to add a new font replacement definition.
+// a7_install_style                       Called internally to install a new font style.
+// a7_get_menu_block                      Returns the start and end offsets of the first ui.menu structure matching the specified parameters.
+// trim                                   Removes whitespace from beginning and end of the given string.
+
+// GUI mods that require special handling:
+// - LeUI (all variants) -> disables iconized initials
+OUTER_SET INSTALLED_LEUI = (MOD_IS_INSTALLED ~leui.tp2~ 0) ||
+                           (MOD_IS_INSTALLED ~leui-iwdee.tp2~ 0) ||
+                           (MOD_IS_INSTALLED ~leui-sod.tp2~ 0) ||
+                           (MOD_IS_INSTALLED ~leui-bg1ee.tp2~ 0)
+// - K4f4r's Classic BG UI -> disables iconized initials
+OUTER_SET INSTALLED_CBGUI = (GAME_IS ~bgee~ &&
+                             RESOURCE_CONTAINS ~ui.menu~ ~\bGUIWPKPC\b~)
+
+/**
+ * Indicates whether the currently detected GUI is compatible with the font-switching feature.
+ * There are currently no known GUI mods incompatible with the feature.
+ * There are currently several mods with cosmetic compatibility issues.
+ */
+OUTER_SET IS_COMPATIBLE_UI = 1
+OUTER_SET IS_FULLY_COMPATIBLE_UI = NOT (INSTALLED_LEUI || INSTALLED_CBGUI)
+
+
+/**
+ * Returns the default font style used for displaying item description text.
+ *
+ * RET default_style  Name of the font style definition.
+ */
+DEFINE_ACTION_FUNCTION a7_get_default_style
+RET
+  default_style
+BEGIN
+  OUTER_SPRINT default_style ~normal_parchment~
+  SILENT
+  COPY_EXISTING ~ui.menu~ ~override~
+    LPF a7_get_menu_block
+      STR_VAR
+        type = ~menu~
+        contains = EVAL ~\bname[ %TAB%]*['"]?ITEM_DESCRIPTION['"]?~
+      RET
+        menu_start = block_start
+        menu_end = block_end
+    END
+
+    PATCH_IF (menu_start >= 0) BEGIN
+      READ_ASCII menu_start menu_block (menu_end - menu_start)
+      INNER_PATCH ~%menu_block%~ BEGIN
+        LPF a7_get_menu_block
+          STR_VAR
+            type = ~text~
+            contains = ~\bitemDesc\.item\.description~
+          RET
+            block_start block_end
+        END
+
+        PATCH_IF (block_start >= 0) BEGIN
+          READ_ASCII block_start block (block_end - block_start)
+          INNER_PATCH ~%block%~ BEGIN
+            REPLACE_EVALUATE ~\btext[ %TAB%]*style[ %TAB%]*['"]\([^'"]+\)['"]~ BEGIN
+              SPRINT default_style ~%MATCH1%~
+            END ~%MATCH0%~
+          END
+        END
+      END
+    END
+  BUT_ONLY
+  VERBOSE
+END
+
+
+/**
+ * Returns whether the base functionality for font switching was already installed.
+ *
+ * RET success    Returns 1 if initialization was already performed, 0 otherwise.
+ */
+DEFINE_DIMORPHIC_FUNCTION a7_is_font_replacement_initialized
+RET
+  success
+BEGIN
+  OUTER_SET success = RESOURCE_CONTAINS ~ui.menu~ ~isTextLegible(itemDesc\.item\.res,[ %TAB%]*itemDesc\.item\.description,[ %TAB%]*legible_key)~
+END
+
+
+/**
+ * Called internally for UI.MENU to initialize the base functionality for font switching.
+ *
+ * STR_VAR default_style  Name of the default font style definition used for item description text. Leave empty to
+ *                        autodetect value.
+ * STR_VAR meta_key       Unique meta command key.
+ * RET success            Returns whether the initialization was successful.
+ */
+DEFINE_ACTION_FUNCTION a7_init_ui_font_replacement
+STR_VAR
+  default_style = ~~
+  meta_key = ~~
+RET
+  success
+BEGIN
+  OUTER_SET success = NOT ~%meta_key%~ STR_EQ ~~
+  LAF a7_is_font_replacement_initialized RET patched = success END
+
+  ACTION_IF (success && NOT patched) BEGIN
+    ACTION_IF (~%default_style%~ STR_EQ ~~) BEGIN
+      LAF a7_get_default_style RET default_style END
+    END
+
+    SILENT
+    COPY - ~.../libfontswitch/text_normal-enabled.menu~ ~.../libfontswitch/text_normal-enabled.menu~
+      // "enabled" condition for default text control
+      READ_ASCII 0 enabled_normal (BUFFER_LENGTH)
+      LPF trim STR_VAR string = EVAL ~%enabled_normal%~ RET enabled_normal = string END
+      INNER_PATCH_SAVE enabled_normal ~%enabled_normal%~ BEGIN EVAL END
+    BUT_ONLY
+    COPY - ~.../libfontswitch/menu_functions.lua~ ~.../libfontswitch/menu_functions.lua~
+      // lua functions block
+      READ_ASCII 0 menu_functions (BUFFER_LENGTH)
+      INNER_PATCH_SAVE menu_functions ~%menu_functions%~ BEGIN EVAL END
+    BUT_ONLY
+    VERBOSE
+
+    COPY_EXISTING ~ui.menu~ ~override~
+      LPF a7_get_menu_block
+        STR_VAR
+          type = ~menu~
+          contains = EVAL ~\bname[ %TAB%]*['"]?ITEM_DESCRIPTION['"]?~
+        RET
+          menu_start = block_start
+          menu_end = block_end
+      END
+      SET success = (menu_start >= 0)
+
+      PATCH_IF (success) BEGIN
+        READ_ASCII menu_start menu_block (menu_end - menu_start)
+        INNER_PATCH_SAVE menu_block_patched ~%menu_block%~ BEGIN
+          SET start_ofs = INDEX_BUFFER(~{~) + 1
+          // find offset of first substructure
+          LPF a7_get_menu_block
+            INT_VAR start_ofs
+            RET ctrl_ofs = block_start
+          END
+          SET success = (ctrl_ofs >= 0)
+
+          // patching onOpen
+          PATCH_IF (success) BEGIN
+            // check if onOpen already exists
+            SET on_open_ofs = INDEX_BUFFER(~^[ %TAB%]*onOpen\b~)
+            PATCH_IF (on_open_ofs < 0) BEGIN
+              // onOpen doesn't exist: create
+              SET on_open_ofs = ctrl_ofs
+              SPRINT on_open ~onOpen%WNL%%TAB%"%WNL%%TAB%"%WNL%~
+              SET len = STRING_LENGTH ~%on_open%~
+              INSERT_BYTES on_open_ofs len
+              WRITE_ASCIIE on_open_ofs ~%on_open%~ (len)
+              SET ctrl_ofs += len
+            END ELSE BEGIN
+              // onOpen exists: normalize
+              SET ofs = INDEX_BUFFER(~"~ on_open_ofs) // opening quote
+              SET success = (ofs >= on_open_ofs)
+              PATCH_IF (success) BEGIN
+                SET ofs = INDEX_BUFFER(~"~ ofs + 1) // closing quote
+                SET success = (ofs >= on_open_ofs && ofs < ctrl_ofs)
+              END
+              PATCH_IF (success) BEGIN
+                READ_ASCII on_open_ofs on_open (ofs - on_open_ofs + 1)
+                INNER_PATCH_SAVE on_open_new ~%on_open%~ BEGIN
+                  REPLACE_TEXTUALLY ~^\([ %TAB%]*\)onOpen[ %TAB%]*"\([^"]*\)"~
+                                    ~\1onOpen%WNL%\1"%WNL%\1\1\2%WNL%\1"~
+                  // LeUI and Classic BG GUI require special handling
+                  PATCH_IF (INSTALLED_LEUI || INSTALLED_CBGUI) BEGIN
+                    REPLACE_TEXTUALLY ~^\([ %TAB%]*\)\(computeSplitPosition[^%WNL%]*\)\([%WNL%]+\)~
+                                      ~\1-- Incompatible with font-switching option\3\1-- \2\3\1startPos, splitPos, curPos = -1, -1, -1\3~
+                  END
+                END
+                PATCH_IF (NOT ~%on_open%~ STR_EQ ~%on_open_new%~) BEGIN
+                  SET len1 = STRING_LENGTH ~%on_open%~
+                  SET len2 = STRING_LENGTH ~%on_open_new%~
+                  DELETE_BYTES on_open_ofs len1
+                  INSERT_BYTES on_open_ofs len2
+                  WRITE_ASCIIE on_open_ofs ~%on_open_new%~ (len2)
+                  SPRINT on_open ~%on_open_new%~
+                  SET ctrl_ofs = ctrl_ofs - len1 + len2
+                END
+              END
+            END
+          END
+
+          PATCH_IF (success) BEGIN
+            // inserting patched "onOpen" block
+            INNER_PATCH_SAVE on_open_patched ~%on_open%~ BEGIN
+              SET insert_ofs = INDEX_BUFFER(~^[ %TAB%]*"~)
+              SET insert_ofs = (insert_ofs >= 0) ? INDEX_BUFFER(~[%WNL%]~ insert_ofs) : insert_ofs
+              SET insert_ofs = (insert_ofs >= 0) ? INDEX_BUFFER(~[^%WNL%]~ insert_ofs) : insert_ofs
+              SET success = (insert_ofs >= 0)
+              PATCH_IF (success) BEGIN
+                INSERT_FILE insert_ofs ~.../libfontswitch/on_open.menu~
+              END
+            END
+            PATCH_IF (success) BEGIN
+              SET len1 = STRING_LENGTH ~%on_open%~
+              SET len2 = STRING_LENGTH ~%on_open_patched%~
+              DELETE_BYTES on_open_ofs len1
+              INSERT_BYTES on_open_ofs len2
+              WRITE_ASCIIE on_open_ofs ~%on_open_patched%~ (len2)
+              SET ctrl_ofs = ctrl_ofs - len1 + len2
+            END
+          END
+
+          // patching original text control (and possibly other controls)
+          SET block_start = start_ofs
+          WHILE (block_start >= 0) BEGIN
+            LPF a7_get_menu_block
+              INT_VAR
+                start_ofs = block_start
+              STR_VAR
+                contains = ~itemDesc\.item\.description~
+              RET
+                block_start block_end
+            END
+
+            PATCH_IF (block_start >= 0) BEGIN
+              READ_ASCII block_start block (block_end - block_start)
+              INNER_PATCH_SAVE block_patched ~%block%~ BEGIN
+                // patching "enabled" attribute (add or expand)
+                SET match = 0
+                REPLACE_EVALUATE ~\benabled[ %TAB%%WNL%]+"\([^"]+\)"~ BEGIN
+                  // expand existing "enabled" definition
+                  SPRINT MATCH0 ~enabled "(%enabled_normal%) and (%MATCH1%)"~
+                  SET match = 1
+                END ~%MATCH0%~
+
+                PATCH_IF (NOT match) BEGIN
+                  // add new "enabled" definition
+                  SET ofs1 = RINDEX_BUFFER(~^[ %TAB%]*}~ BUFFER_LENGTH)
+                  PATCH_IF (ofs1 >= 0) BEGIN
+                    SET ofs2 = INDEX_BUFFER(~}~ ofs1)
+                    READ_ASCII ofs1 indent (ofs2 - ofs1)
+                    SPRINT line ~%indent%%TAB%enabled "%enabled_normal%"%WNL%~
+                    SET len = STRING_LENGTH ~%line%~
+                    INSERT_BYTES ofs1 len
+                    WRITE_ASCIIE ofs1 ~%line%~ (len)
+                  END
+                END
+              END
+
+              // replacing block
+              SET len1 = STRING_LENGTH ~%block%~
+              SET len2 = STRING_LENGTH ~%block_patched%~
+              DELETE_BYTES block_start len1
+              INSERT_BYTES block_start len2
+              WRITE_ASCIIE block_start ~%block_patched%~ (len2)
+
+              SET block_start += len2
+            END
+          END
+        END
+      END
+
+      PATCH_IF (success) BEGIN
+        // updating menu structure in file
+        SET len1 = STRING_LENGTH ~%menu_block%~
+        SET len2 = STRING_LENGTH ~%menu_block_patched%~
+        DELETE_BYTES menu_start len1
+        INSERT_BYTES menu_start len2
+        WRITE_ASCIIE menu_start ~%menu_block_patched%~ (len2)
+      END
+
+      // adding lua functionality
+      PATCH_IF (success) BEGIN
+        SET lua_pos = RINDEX_BUFFER(~^[ %TAB%]*`~ menu_start)
+        SET success = (lua_pos >= 0)
+      END
+      PATCH_IF (success) BEGIN
+        SET lua_len = STRING_LENGTH ~%menu_functions%~
+        INSERT_BYTES lua_pos lua_len
+        WRITE_ASCIIE lua_pos ~%menu_functions%~ (lua_len)
+      END
+    BUT_ONLY
+  END
+END
+
+
+/**
+ * Called internally for UI.MENU to add a new font replacement definition.
+ * Requires that function "a7_init_ui_font_replacement" was called before.
+ *
+ * STR_VAR style_name   A unique name that identifies the new font style.
+ * RET success          Returns whether the operation was successful.
+ */
+DEFINE_ACTION_FUNCTION a7_install_ui_font_replacement
+STR_VAR
+  style_name = ~~
+RET
+  success
+BEGIN
+  // checking whether initialization was performed
+  LAF a7_is_font_replacement_initialized RET success END
+
+  // adding new text definition
+  ACTION_IF (success) BEGIN
+    SILENT
+    COPY - ~.../libfontswitch/text_illegible-style.menu~ ~.../libfontswitch/text_illegible-style.menu~
+      // "text style" definition for new text control
+      READ_ASCII 0 style_illegible (BUFFER_LENGTH)
+      LPF trim STR_VAR string = EVAL ~%style_illegible%~ RET style_illegible = string END
+      INNER_PATCH_SAVE style_illegible ~%style_illegible%~ BEGIN EVAL END
+    BUT_ONLY
+    COPY - ~.../libfontswitch/text_illegible-enabled.menu~ ~.../libfontswitch/text_illegible-enabled.menu~
+      // "enabled" condition for new text control
+      READ_ASCII 0 enabled_illegible (BUFFER_LENGTH)
+      LPF trim STR_VAR string = EVAL ~%enabled_illegible%~ RET enabled_illegible = string END
+      INNER_PATCH_SAVE enabled_illegible ~%enabled_illegible%~ BEGIN EVAL END
+    BUT_ONLY
+    COPY - ~.../libfontswitch/text_normal-enabled.menu~ ~.../libfontswitch/text_normal-enabled.menu~
+      // generating regexp of "enabled" condition for default text control
+      READ_ASCII 0 enabled_normal_pat (BUFFER_LENGTH)
+      LPF trim STR_VAR string = EVAL ~%enabled_normal_pat%~ RET enabled_normal_pat = string END
+      INNER_PATCH_SAVE enabled_normal_pat ~%enabled_normal_pat%~ BEGIN REPLACE_TEXTUALLY ~'[^']*'~ ~'[^']*'~ END
+    BUT_ONLY
+    VERBOSE
+
+    COPY_EXISTING ~ui.menu~ ~override~
+      LPF a7_get_menu_block
+        STR_VAR
+          type = ~menu~
+          contains = EVAL ~\bname[ %TAB%]*['"]?ITEM_DESCRIPTION['"]?~
+        RET
+          menu_start = block_start
+          menu_end = block_end
+      END
+      SET success = (menu_start >= 0)
+
+      PATCH_IF (success) BEGIN
+        READ_ASCII menu_start menu_block (menu_end - menu_start)
+        INNER_PATCH_SAVE menu_block_patched ~%menu_block%~ BEGIN
+          SET block_start = INDEX_BUFFER(~{~) + 1
+          WHILE (block_start >= 0) BEGIN
+            LPF a7_get_menu_block
+              INT_VAR
+                start_ofs = block_start
+              STR_VAR
+                contains = ~is_legible or style_name~
+              RET
+                block_start
+                block_end
+            END
+
+            PATCH_IF (block_start >= 0) BEGIN
+              READ_ASCII block_start block (block_end - block_start)
+              INNER_PATCH_SAVE patched_block ~%block%~ BEGIN
+                REPLACE_TEXTUALLY ~text[ %TAB%]+style.*~ ~%style_illegible%~
+                REPLACE_TEXTUALLY ~%enabled_normal_pat%~ ~%enabled_illegible%~
+              END
+
+              // adding block
+              SET ofs = RINDEX_BUFFER(~^~ block_start)
+              PATCH_IF (ofs >= 0) BEGIN
+                READ_ASCII ofs indent (block_start - ofs)
+              END ELSE BEGIN
+                SPRINT indent ~~
+              END
+              SPRINT patched_block ~%WNL%%indent%%patched_block%~
+              SET len = STRING_LENGTH ~%patched_block%~
+              INSERT_BYTES block_end len
+              WRITE_ASCIIE block_end ~%patched_block%~ (len)
+
+              SET block_start = block_end + len
+            END
+          END
+        END
+
+        PATCH_IF (success) BEGIN
+          // updating menu structure in file
+          SET len1 = STRING_LENGTH ~%menu_block%~
+          SET len2 = STRING_LENGTH ~%menu_block_patched%~
+          DELETE_BYTES menu_start len1
+          INSERT_BYTES menu_start len2
+          WRITE_ASCIIE menu_start ~%menu_block_patched%~ (len2)
+        END
+      END
+    BUT_ONLY
+  END
+END
+
+
+/**
+ * Called internally to install a new font style.
+ *
+ * INT_VAR style_size     Size of the font style. Positive values specify absolute size. Negative values are interpreted
+ *                        as percentage relative to the default style size. (Default: same as the template style)
+ * STR_VAR style_name     A unique name that identifies the new font style.
+ * STR_VAR template_name  Name of the original font style used for displaying item description text. Leave empty to
+ *                        autodetect.
+ * STR_VAR font_resref    Resref of the installed true type font file.
+ *
+ */
+DEFINE_ACTION_FUNCTION a7_install_style
+INT_VAR
+  style_size = 0
+STR_VAR
+  style_name = ~~
+  template_name = ~~
+  font_resref = ~~
+RET
+  success
+BEGIN
+  OUTER_SET success = NOT (~%style_name%~ STR_EQ ~~ || ~%font_resref%~ STR_EQ ~~)
+
+  ACTION_IF (success) BEGIN
+    ACTION_IF (~%template_name%~ STR_EQ ~~) BEGIN
+      LAF a7_get_default_style RET template_name = default_style END
+    END
+
+    COPY_EXISTING ~bgee.lua~ ~override~
+                  ~ui.menu~ ~override~
+      // checking whether a font style of the same name already exists
+      SET patched = (INDEX_BUFFER(~^[ %TAB%]*%style_name%[ %TAB%]*=[ %TAB%%WNL%]*{[ %TAB%%WNL%]*color[ %TAB%]*=~) >= 0)
+
+      PATCH_IF (NOT patched) BEGIN
+        SET styles_pos = INDEX_BUFFER(~^[ %TAB%]*styles[ %TAB%%WNL%]*=\([ %TAB%]*--.*[%WNL%]+\)*[ %TAB%%WNL%]*{~)
+        PATCH_IF (styles_pos >= 0) BEGIN
+          SET normal_start_pos = INDEX_BUFFER(~^[ %TAB%]*%template_name%[ %TAB%%WNL%]*=[ %TAB%%WNL%]*~ styles_pos)
+          SET success = (normal_start_pos >= 0)
+          PATCH_IF (success) BEGIN
+            SET normal_end_pos = INDEX_BUFFER(~},~ normal_start_pos)
+            PATCH_IF (normal_end_pos > normal_start_pos) BEGIN
+            SET normal_end_pos = INDEX_BUFFER(~[%WNL%]~ normal_end_pos)
+            END
+            SET success = (normal_end_pos > normal_start_pos)
+          END
+
+          PATCH_IF (success) BEGIN
+            READ_ASCII normal_start_pos normal_block (normal_end_pos - normal_start_pos)
+            SPRINT normal_block ~%WNL%%normal_block%~
+            INNER_PATCH_SAVE normal_block ~%normal_block%~ BEGIN
+              // updating style name
+              REPLACE_TEXTUALLY ~^\([ %TAB%]*\)%template_name%\([ %TAB%%WNL%]*=[ %TAB%%WNL%]*\)~ ~\1%style_name%\2~
+              // updating font resref
+              REPLACE_TEXTUALLY ~^\([ %TAB%]*font[ %TAB%]*=[ %TAB%]*\)['"][^'"]+['"][ %TAB%]*,~ ~\1'%font_resref%',~
+              PATCH_IF (style_size != 0) BEGIN
+                // updating font size
+                REPLACE_EVALUATE ~^\([ %TAB%]*point[ %TAB%]*=[ %TAB%]*\)\([0-9]+\),~ BEGIN
+                  PATCH_IF (style_size < 0 AND IS_AN_INT ~%MATCH2%~) BEGIN
+                    // relative font size
+                    SET size = 0 - style_size
+                    SET size = MATCH2 * size / 100
+                    SPRINT MATCH0 ~%MATCH1%%size%,~
+                  END ELSE BEGIN
+                    // absolute font size
+                    SPRINT MATCH0 ~%MATCH1%%style_size%,~
+                  END
+                END ~%MATCH0%~
+              END
+            END
+            SET len = STRING_LENGTH ~%normal_block%~
+
+            SET insert_pos = INDEX_BUFFER(~{~ styles_pos)
+            PATCH_IF (insert_pos > styles_pos) BEGIN
+              SET insert_pos = INDEX_BUFFER(~[%WNL%]~ insert_pos)
+            END
+            SET success = (insert_pos > styles_pos)
+          END
+          PATCH_IF (success) BEGIN
+            INSERT_BYTES insert_pos len
+            WRITE_ASCIIE insert_pos ~%normal_block%~ (len)
+          END
+        END
+      END
+    BUT_ONLY
+  END
+END
+
+
+/**
+ * Returns the start and end offsets of the first ui.menu structure matching the specified parameters.
+ * Note: Parser does not work correctly for deeply nested substructures or if incomplete structures are defined
+ *       inside comments.
+ *
+ * INT_VAR start_ofs  Offset to start searching for a match. (Default: 0)
+ * STR_VAR type       Type of the structure type (e.g. menu, label, button, text, ...).
+ *                    Leave empty to find the next structure of any type. (Default: empty)
+ * STR_VAR contains   Regular expression pattern matching content inside the requested structure.
+ *                    Leave empty to return the offsets of the first structure of "type". (Default: empty)
+ * RET block_start    Start offset of the structure if a match is found, -1 otherwise.
+ * RET block_end      End offset of the structure if a match is found, -1 otherwise.
+ */
+DEFINE_PATCH_FUNCTION a7_get_menu_block
+INT_VAR
+  start_ofs = 0
+STR_VAR
+  type = ~~
+  contains = ~~
+RET
+  block_start
+  block_end
+BEGIN
+  SET block_start = "-1"
+  SET block_end = "-1"
+
+  PATCH_IF (~%type%~ STR_EQ ~~) BEGIN
+    // find next structure of any type
+    SPRINT type ~[a-z]+~
+  END
+
+  SET start_ofs = (start_ofs < 0) ? 0 : (start_ofs > BUFFER_LENGTH) ? BUFFER_LENGTH : start_ofs
+  SET match = 0   // set if a block with a matching "contains" pattern is found
+  WHILE (NOT match && start_ofs >= 0) BEGIN
+    SET ofs1 = INDEX_BUFFER(~\b%type%\([ %TAB%%WNL%]*--.*[%WNL%]+\)*[ %TAB%%WNL%]*{~ start_ofs)
+    // PATCH_PRINT ~Parsing block at offset: %ofs1%~
+    SET ofs2 = "-1"
+    SET ofs_sub = "-1"
+    SET ofs = ofs1
+    SET braces = 0  // keeps track of opened curly braces
+    WHILE (ofs >= 0) BEGIN
+      SET ofs = INDEX_BUFFER(~[{}]~ ofs + 1)
+      PATCH_IF (ofs >= 0) BEGIN
+        READ_ASCII ofs ch (1)
+        PATCH_IF (~%ch%~ STR_EQ ~{~) BEGIN
+          SET braces += 1
+        END ELSE BEGIN
+          SET braces -= 1
+        END
+
+        PATCH_IF (braces == 2 && ofs_sub < 0) BEGIN
+          // storing offset of first substructure: consider "contains" only in root structure
+          SET ofs_sub = ofs
+        END
+
+        PATCH_IF (braces <= 0) BEGIN
+          SET ofs2 = ofs + 1
+          SET ofs = "-1"
+          PATCH_IF (braces < 0) BEGIN
+            PATCH_WARN ~WARNING: Possibly malformed structure between offsets %ofs1% and %ofs2%.~
+          END
+        END
+      END
+    END
+
+    PATCH_IF (ofs1 >= 0 && ofs2 >= ofs1) BEGIN
+      SET ofs_sub = ofs_sub < 0 ? ofs2 : ofs_sub
+      READ_ASCII ofs1 block (ofs_sub - ofs1)
+      SET match = (~%contains%~ STR_EQ ~~) || (INDEX(~%contains%~ ~%block%~) >= 0)
+      PATCH_IF (match) BEGIN
+        SET block_start = ofs1
+        SET block_end = ofs2
+      END
+    END
+
+    SET start_ofs = ofs2
+  END
+END
+
+
+/**
+ * Removes whitespace from beginning and end of the given string.
+ *
+ * INT_VAR from_start     Whether to remove whitespace from the beginning of the string.
+ * INT_VAR from_end       Whether to remove whitespace from the end of the string.
+ * INT_VAR trim_spaces    Whether to remove space characters.
+ * INT_VAR trim_tabs      Whether to remove tab characters.
+ * INT_VAR trim_newlines  Whether to remove CR and LF control characters.
+ * STR_VAR string         Input string.
+ * RET string             Output string.
+ */
+DEFINE_DIMORPHIC_FUNCTION trim
+INT_VAR
+  from_start = 1
+  from_end = 1
+  trim_spaces = 1
+  trim_tabs = 1
+  trim_newlines = 1
+STR_VAR
+  string = ~~
+RET
+  string
+BEGIN
+  OUTER_SPRINT ws ~~
+  ACTION_IF (trim_spaces) BEGIN OUTER_SPRINT ws ~%ws% ~ END
+  ACTION_IF (trim_tabs) BEGIN OUTER_SPRINT ws ~%ws%%TAB%~ END
+  ACTION_IF (trim_newlines) BEGIN OUTER_SPRINT ws ~%ws%%WNL%~ END
+  ACTION_IF (NOT ~%ws%~ STR_EQ ~~ && (from_start || from_end)) BEGIN
+    OUTER_PATCH_SAVE string ~%string%~ BEGIN
+      PATCH_IF (from_start) BEGIN REPLACE_TEXTUALLY ~^[%ws%]+~ ~~ END
+      PATCH_IF (from_end) BEGIN REPLACE_TEXTUALLY ~[%ws%]+$~ ~~ END
+    END
+  END
+END

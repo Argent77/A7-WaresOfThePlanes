@@ -1,0 +1,321 @@
+// Demon Lord combat script enhancements
+// Basic combat behavior is controlled by Balor combat script
+
+// Demogorgon is able to subjugate Anarazel
+IF
+  Global("A7-AnarazelServant","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-AnarazelServant","GLOBAL",2)
+    DisplayStringHead(Myself,@753)  // ** YES, MASTER. I AWAIT YOUR ORDERS. **
+    Enemy()
+END
+
+IF
+  Allegiance(Myself,GOODCUTOFF)
+  // TODO: May be erroneously triggered by charmed creatures
+  AttackedBy([GOODCUTOFF],DEFAULT)
+  !Specifics(LastAttackerOf(Myself),%demon_specifics%)
+THEN
+  RESPONSE #100
+    Enemy()
+END
+
+// Turns hostile after party attacks a number of summoned demons (number depends on their rank)
+IF
+  Allegiance(Myself,GOODCUTOFF)
+  GlobalGT("A7-DarknessDemonAttacked","GLOBAL",15)
+THEN
+  RESPONSE #100
+    Enemy()
+END
+
+IF
+  !GlobalTimerNotExpired("can_cast","LOCALS")
+  !GlobalTimerNotExpired("CanCastPlaneShift","LOCALS")
+  HPPercentLT(Myself,25)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    SetGlobalTimer("CanCastPlaneShift","LOCALS",TWO_TURNS)
+    ReallyForceSpellRES("a7-dsp1",Myself)  // Plane Shift
+END
+
+IF
+  !GlobalTimerNotExpired("can_cast","LOCALS")
+  Detect(NearestEnemyOf(Myself))
+  CheckStat(Myself,0,STONESKINS)
+  GlobalLT("stoneskin","LOCALS",3)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    IncrementGlobal("stoneskin","LOCALS",1)
+    ForceSpellRES("melstone",Myself)
+END
+
+IF
+  !GlobalTimerNotExpired("can_cast","LOCALS")
+  Detect(NearestEnemyOf(Myself))
+  !StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+  !CheckSpellState(Myself,CANNOT_TURN_INVISIBLE)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    ForceSpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+END
+
+IF
+  !GlobalTimerNotExpired("can_cast","LOCALS")
+  !GlobalTimerNotExpired("can_summon","LOCALS")
+  GlobalLT("summon_counter","LOCALS",4)
+  Detect(NearestEnemyOf(Myself))
+  RandomNum(2,1)
+THEN
+  RESPONSE #15
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    SetGlobalTimer("can_summon","LOCALS",ONE_TURN)
+    IncrementGlobal("summon_counter","LOCALS",1)
+    DisplayStringHead(Myself,@751)  // Suffer at the hands of my generals!
+    ForceSpellRES("a7-dsp4",Myself)  // Summon true tanar'ri
+  RESPONSE #35
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    SetGlobalTimer("can_summon","LOCALS",ONE_TURN)
+    IncrementGlobal("summon_counter","LOCALS",1)
+    DisplayStringHead(Myself,@750)  // Come, my minions!
+    ForceSpellRES("a7-dsp3",Myself)  // Summon greater tanar'ri
+  RESPONSE #50
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    SetGlobalTimer("can_summon","LOCALS",ONE_TURN)
+    IncrementGlobal("summon_counter","LOCALS",1)
+    DisplayStringHead(Myself,@750)  // Come, my minions!
+    ForceSpellRES("a7-dsp2",Myself)  // Summon lesser tanar'ri
+END
+
+IF
+  !GlobalTimerNotExpired("can_cast","LOCALS")
+  !GlobalTimerNotExpired("CanCastDeathSpell","LOCALS")
+  Allegiance(Myself,GOODCUTOFF)
+  OR(3)
+    See([EVILCUTOFF.0.0.0.0.SUMMONED])
+    See([EVILCUTOFF.WEAPON.SWORD.0.0.SUMMONED])
+    See([EVILCUTOFF.0.MIST.0.0.SUMMONED])
+  OR(3)
+    HasItem("MORSWORD",LastSeenBy(Myself))  // Mordenkainen's Sword
+    HasItem("NISHRUU",LastSeenBy(Myself))  // Attack
+    NumCreatureGT([EVILCUTOFF.0.0.0.0.SUMMONED],2)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    SetGlobalTimer("CanCastDeathSpell","LOCALS",THREE_ROUNDS)
+    ForceSpell(LastSeenBy(Myself),WIZARD_DEATH_SPELL)
+    SetInterrupt(TRUE)
+END
+
+IF
+  !GlobalTimerNotExpired("can_cast","LOCALS")
+  !GlobalTimerNotExpired("CanCastDeathSpell","LOCALS")
+  Allegiance(Myself,EVILCUTOFF)
+  OR(3)
+    See([GOODCUTOFF.0.0.0.0.SUMMONED])
+    See([GOODCUTOFF.WEAPON.SWORD.0.0.SUMMONED])
+    See([GOODCUTOFF.0.MIST.0.0.SUMMONED])
+  OR(3)
+    HasItem("MORSWORD",LastSeenBy(Myself))  // Mordenkainen's Sword
+    HasItem("NISHRUU",LastSeenBy(Myself))  // Attack
+    NumCreatureGT([GOODCUTOFF.0.0.0.0.SUMMONED],2)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    SetGlobalTimer("CanCastDeathSpell","LOCALS",THREE_ROUNDS)
+    ForceSpell(LastSeenBy(Myself),WIZARD_DEATH_SPELL)
+    SetInterrupt(TRUE)
+END
+
+IF
+  !GlobalTimerNotExpired("can_cast","LOCALS")
+  !GlobalTimerNotExpired("CanCastUnholyWord","LOCALS")
+  Allegiance(Myself,GOODCUTOFF)
+  HaveSpell(CLERIC_UNHOLY_WORD)
+  OR(4)
+    Range([EVILCUTOFF.0.0.MAGE_ALL.0.0.MASK_GOOD],12)
+    Range([EVILCUTOFF.0.0.CLERIC_ALL.0.0.MASK_GOOD],12)
+    Range([EVILCUTOFF.0.0.DRUID_ALL.0.0.MASK_GOOD],12)
+    Range([EVILCUTOFF.0.0.BARD_ALL.0.0.MASK_GOOD],12)
+  RandomNumLT(3,3)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    SetGlobalTimer("CanCastUnholyWord","LOCALS",FIVE_ROUNDS)
+    ForceSpell(Myself,CLERIC_UNHOLY_WORD)
+    SetInterrupt(TRUE)
+END
+
+IF
+  !GlobalTimerNotExpired("can_cast","LOCALS")
+  !GlobalTimerNotExpired("CanCastUnholyWord","LOCALS")
+  Allegiance(Myself,EVILCUTOFF)
+  HaveSpell(CLERIC_UNHOLY_WORD)
+  DifficultyGT(EASY)
+  OR(4)
+    Range([GOODCUTOFF.0.0.MAGE_ALL.0.0.MASK_GOOD],12)
+    Range([GOODCUTOFF.0.0.CLERIC_ALL.0.0.MASK_GOOD],12)
+    Range([GOODCUTOFF.0.0.DRUID_ALL.0.0.MASK_GOOD],12)
+    Range([GOODCUTOFF.0.0.BARD_ALL.0.0.MASK_GOOD],12)
+  RandomNumLT(3,3)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    SetGlobalTimer("CanCastUnholyWord","LOCALS",FIVE_ROUNDS)
+    ForceSpell(Myself,CLERIC_UNHOLY_WORD)
+    SetInterrupt(TRUE)
+END
+
+IF
+  !GlobalTimerNotExpired("can_cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  OR(3)
+    General(LastSeenBy(Myself),HUMANOID)
+    General(LastSeenBy(Myself),GIANTHUMANOID)
+    General(LastSeenBy(Myself),MONSTER)
+  !StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+  RandomNum(3,1)
+THEN
+  RESPONSE #50
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),TANARI_DEATH_GAZE)
+  RESPONSE #50
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),TANARI_PARALYZE)
+  RESPONSE #50
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),TANARI_VAMPIRIC_TOUCH)
+  RESPONSE #50
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),TANARI_SILENCE)
+END
+
+IF
+  !GlobalTimerNotExpired("can_cast","LOCALS")
+  Allegiance(Myself,GOODCUTOFF)
+  See([EVILCUTOFF.0.DEMONIC.TANARI])
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    ReallyForceSpellRES("demochm",[EVILCUTOFF.0.DEMONIC.TANARI])  // Domination
+END
+
+IF
+  !GlobalTimerNotExpired("can_cast","LOCALS")
+  Allegiance(Myself,EVILCUTOFF)
+  See([GOODCUTOFF.0.DEMONIC.TANARI])
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    ReallyForceSpellRES("demochm",[GOODCUTOFF.0.DEMONIC.TANARI])  // Domination
+END
+
+IF
+  !GlobalTimerNotExpired("can_cast","LOCALS")
+  !GlobalTimerNotExpired("can_cast_harm","LOCALS")
+  See(NearestEnemyOf(Myself))
+  OR(3)
+    General(LastSeenBy(Myself),HUMANOID)
+    General(LastSeenBy(Myself),GIANTHUMANOID)
+    General(LastSeenBy(Myself),MONSTER)
+  CheckStatLT(LastSeenBy(Myself),2,STONESKINS)
+  Range(LastSeenBy(Myself),5)
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    SetGlobalTimer("can_cast_harm","LOCALS",THREE_ROUNDS)
+    ForceSpell(LastSeenBy(Myself),ENEMY_CLERIC_HARM)
+    AttackReevaluate(LastSeenBy(Myself),30)
+    SetInterrupt(TRUE)
+END
+
+IF
+  !GlobalTimerNotExpired("can_cast","LOCALS")
+  Allegiance(Myself,GOODCUTOFF)
+  See([EVILCUTOFF.0.TROLL])
+  CheckStatGT(LastSeenBy(Myself),90,RESISTSLASHING)
+  !CheckStatGT(LastSeenBy(Myself),50,RESISTFIRE)
+  !CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    ReallyForceSpell(LastSeenBy(Myself),TRAP_FLAMESTRIKE)
+END
+
+IF
+  !GlobalTimerNotExpired("can_cast","LOCALS")
+  Allegiance(Myself,EVILCUTOFF)
+  See([GOODCUTOFF.0.TROLL])
+  CheckStatGT(LastSeenBy(Myself),90,RESISTSLASHING)
+  !CheckStatGT(LastSeenBy(Myself),50,RESISTFIRE)
+  !CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    ReallyForceSpell(LastSeenBy(Myself),TRAP_FLAMESTRIKE)
+END
+
+IF
+  !GlobalTimerNotExpired("can_cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  OR(2)
+    CheckStatGT(LastSeenBy(Myself),90,RESISTSLASHING)
+    RandomNum(2,1)
+  !CheckStatGT(LastSeenBy(Myself),50,RESISTFIRE)
+  !CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    ReallyForceSpell(LastSeenBy(Myself),TRAP_FLAMESTRIKE)
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("can_cast","LOCALS")
+  See(SecondNearestEnemyOf(Myself))
+  OR(2)
+    CheckStatGT(LastSeenBy(Myself),90,RESISTSLASHING)
+    RandomNum(2,1)
+  !CheckStatGT(LastSeenBy(Myself),50,RESISTFIRE)
+  !CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    ReallyForceSpell(LastSeenBy(Myself),TRAP_FLAMESTRIKE)
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("can_cast","LOCALS")
+  See(ThirdNearestEnemyOf(Myself))
+  OR(2)
+    CheckStatGT(LastSeenBy(Myself),90,RESISTSLASHING)
+    RandomNum(2,1)
+  !CheckStatGT(LastSeenBy(Myself),50,RESISTFIRE)
+  !CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("can_cast","LOCALS",ONE_ROUND)
+    ReallyForceSpell(LastSeenBy(Myself),TRAP_FLAMESTRIKE)
+  RESPONSE #100
+    Continue()
+END

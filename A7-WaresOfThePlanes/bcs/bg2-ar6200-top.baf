@@ -1,0 +1,31 @@
+// ** BG2-ToB: The Throne of Bhaal **
+
+// Having performed the "Abyssal Pact" causes a shift towards evil
+IF
+  GlobalGT("A7-DarknessRitualSacrifice","GLOBAL",0)
+  Global("A7-DarknessRitualEvil","AR6200",0)
+  GlobalLT("PPEvilChoices","GLOBAL",4)
+THEN
+  RESPONSE #100
+    IncrementGlobal("PPEvilChoices","GLOBAL",2)
+    Continue()
+END
+
+IF
+  GlobalGT("A7-DarknessRitualSacrifice","GLOBAL",0)
+  Global("A7-DarknessRitualEvil","AR6200",0)
+  Global("PPEvilChoices","GLOBAL",4)
+THEN
+  RESPONSE #100
+    IncrementGlobal("PPEvilChoices","GLOBAL",1)
+    Continue()
+END
+
+IF
+  GlobalGT("A7-DarknessRitualSacrifice","GLOBAL",0)
+  Global("A7-DarknessRitualEvil","AR6200",0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-DarknessRitualEvil","AR6200",1)
+    Continue()
+END
