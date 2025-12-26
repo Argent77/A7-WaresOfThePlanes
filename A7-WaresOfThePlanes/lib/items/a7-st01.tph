@@ -97,6 +97,15 @@ BEGIN
   COPY ~%MOD_FOLDER%/%ext%/%file%~ ~override~
 END
 
+// Installing taunt sound clips (language-specific)
+OUTER_SPRINT lang_def ~english~
+OUTER_SPRINT lang ~%LANGUAGE%~
 ACTION_FOR_EACH suffix IN ~a~ ~b~ ~c~ ~d~ ~e~ ~f~ ~g~ ~h~ ~i~ ~j~ ~k~ ~l~ ~m~ ~n~ ~o~ ~p~ ~q~ ~r~ ~s~ ~t~ BEGIN
-  COPY ~%MOD_FOLDER%/wav/%itm_resref%%suffix%.wav~ ~override~
+  OUTER_SPRINT wav_file ~%itm_resref%%suffix%.wav~
+  ACTION_IF (FILE_EXISTS ~%MOD_FOLDER%/tra/%lang%/wav/%wav_file%~) BEGIN
+    OUTER_SPRINT wav_path ~%MOD_FOLDER%/tra/%lang%/wav/%wav_file%~
+  END ELSE BEGIN
+    OUTER_SPRINT wav_path ~%MOD_FOLDER%/tra/%lang_def%/wav/%wav_file%~
+  END
+  COPY ~%wav_path%~ ~override~
 END
