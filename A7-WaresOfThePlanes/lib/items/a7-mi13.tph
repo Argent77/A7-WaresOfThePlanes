@@ -1,6 +1,8 @@
 // Item: Book of Vile Darkness
 // Quest: Lure of Darkness
 
+ACTION_IF (has_bg2) BEGIN
+
 INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 INCLUDE ~%MOD_FOLDER%/lib/add_areas_lua.tpa~
 INCLUDE ~%MOD_FOLDER%/lib/a7_wed_lib.tph~
@@ -179,674 +181,668 @@ END
 APPEND ~tooltip.2da~ ~%itm_resref%  101735  -1  -1~  // Protection from Good
 COPY_EXISTING ~tooltip.2da~ ~override~ PRETTY_PRINT_2DA BUT_ONLY
 
-ACTION_IF (has_bg2) BEGIN
-  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
-    // cultists
-    // High Summoner
-    COPY ~%MOD_FOLDER%/cre/a7-dems1.cre~ ~override~
-      SAY NAME1 @30 // High Summoner
-      SAY NAME2 @30 // High Summoner
+WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+  // cultists
+  // High Summoner
+  COPY ~%MOD_FOLDER%/cre/a7-dems1.cre~ ~override~
+    SAY NAME1 @30 // High Summoner
+    SAY NAME2 @30 // High Summoner
 
-    // Cultist Leader (ambush)
-    COPY ~%MOD_FOLDER%/cre/a7-demc1.cre~ ~override~
-      SAY NAME1 @31 // Cultist
-      SAY NAME2 @31 // Cultist
+  // Cultist Leader (ambush)
+  COPY ~%MOD_FOLDER%/cre/a7-demc1.cre~ ~override~
+    SAY NAME1 @31 // Cultist
+    SAY NAME2 @31 // Cultist
 
-    // Male Cultist (ambush)
-    COPY ~%MOD_FOLDER%/cre/a7-demc2.cre~ ~override~
-      SAY NAME1 @31 // Cultist
-      SAY NAME2 @31 // Cultist
+  // Male Cultist (ambush)
+  COPY ~%MOD_FOLDER%/cre/a7-demc2.cre~ ~override~
+    SAY NAME1 @31 // Cultist
+    SAY NAME2 @31 // Cultist
 
-    // Male Cultist (ritual)
-    COPY ~%MOD_FOLDER%/cre/a7-demc3.cre~ ~override~
-      SAY NAME1 @31 // Cultist
-      SAY NAME2 @31 // Cultist
+  // Male Cultist (ritual)
+  COPY ~%MOD_FOLDER%/cre/a7-demc3.cre~ ~override~
+    SAY NAME1 @31 // Cultist
+    SAY NAME2 @31 // Cultist
 
-    // Female Cultist (ritual)
-    COPY ~%MOD_FOLDER%/cre/a7-demc4.cre~ ~override~
-      SAY NAME1 @31 // Cultist
-      SAY NAME2 @31 // Cultist
+  // Female Cultist (ritual)
+  COPY ~%MOD_FOLDER%/cre/a7-demc4.cre~ ~override~
+    SAY NAME1 @31 // Cultist
+    SAY NAME2 @31 // Cultist
 
-    // Mercenary Cleric (ambush)
-    COPY ~%MOD_FOLDER%/cre/a7-demm1.cre~ ~override~
-      SAY NAME1 @32 // Mercenary
-      SAY NAME2 @32 // Mercenary
+  // Mercenary Cleric (ambush)
+  COPY ~%MOD_FOLDER%/cre/a7-demm1.cre~ ~override~
+    SAY NAME1 @32 // Mercenary
+    SAY NAME2 @32 // Mercenary
 
-    // Male Mercenary Thief (ambush)
-    COPY ~%MOD_FOLDER%/cre/a7-demm2.cre~ ~override~
-      SAY NAME1 @32 // Mercenary
-      SAY NAME2 @32 // Mercenary
+  // Male Mercenary Thief (ambush)
+  COPY ~%MOD_FOLDER%/cre/a7-demm2.cre~ ~override~
+    SAY NAME1 @32 // Mercenary
+    SAY NAME2 @32 // Mercenary
 
-    // Female Mercenary Thief (ambush)
-    COPY ~%MOD_FOLDER%/cre/a7-demm3.cre~ ~override~
-      SAY NAME1 @32 // Mercenary
-      SAY NAME2 @32 // Mercenary
+  // Female Mercenary Thief (ambush)
+  COPY ~%MOD_FOLDER%/cre/a7-demm3.cre~ ~override~
+    SAY NAME1 @32 // Mercenary
+    SAY NAME2 @32 // Mercenary
 
-    // Male Peasant (ritual, sacrifice)
-    COPY ~%MOD_FOLDER%/cre/a7-demp1.cre~ ~override~
-      SAY NAME1 @33 // Peasant
-      SAY NAME2 @33 // Peasant
+  // Male Peasant (ritual, sacrifice)
+  COPY ~%MOD_FOLDER%/cre/a7-demp1.cre~ ~override~
+    SAY NAME1 @33 // Peasant
+    SAY NAME2 @33 // Peasant
 
-    // Maurezhi (ritual)
-    COPY ~%MOD_FOLDER%/cre/a7-demp2.cre~ ~override~
+  // Maurezhi (ritual)
+  COPY ~%MOD_FOLDER%/cre/a7-demp2.cre~ ~override~
 
-    // Helper creature (drops notes)
-    COPY ~%MOD_FOLDER%/cre/a7-demh1.cre~ ~override~
+  // Helper creature (drops notes)
+  COPY ~%MOD_FOLDER%/cre/a7-demh1.cre~ ~override~
 
-    COMPILE ~%MOD_FOLDER%/dlg/a7-demc1.d~
-            ~%MOD_FOLDER%/dlg/a7-demc2.d~
+  COMPILE ~%MOD_FOLDER%/dlg/a7-demc1.d~
+          ~%MOD_FOLDER%/dlg/a7-demc2.d~
 
-    COMPILE ~%MOD_FOLDER%/bcs/a7-dct1.baf~
-            ~%MOD_FOLDER%/bcs/a7-dct2.baf~
-            ~%MOD_FOLDER%/bcs/a7-dct3.baf~
-            ~%MOD_FOLDER%/bcs/a7-dctx.baf~
-            ~%MOD_FOLDER%/bcs/a7-dema.baf~
-            ~%MOD_FOLDER%/bcs/a7-demb.baf~
+  COMPILE ~%MOD_FOLDER%/bcs/a7-dct1.baf~
+          ~%MOD_FOLDER%/bcs/a7-dct2.baf~
+          ~%MOD_FOLDER%/bcs/a7-dct3.baf~
+          ~%MOD_FOLDER%/bcs/a7-dctx.baf~
+          ~%MOD_FOLDER%/bcs/a7-dema.baf~
+          ~%MOD_FOLDER%/bcs/a7-demb.baf~
 
-    COPY ~%MOD_FOLDER%/spl/a7-dc03a.spl~ ~override~
-         ~%MOD_FOLDER%/spl/a7-dc03b.spl~ ~override~
-         ~%MOD_FOLDER%/spl/a7-dc03c.spl~ ~override~
-         ~%MOD_FOLDER%/spl/a7-dc03d.spl~ ~override~
-         ~%MOD_FOLDER%/spl/a7-dc03e.spl~ ~override~
-         ~%MOD_FOLDER%/spl/a7-dc03f.spl~ ~override~
-      SAY NAME1 ~[vfx]~
+  COPY ~%MOD_FOLDER%/spl/a7-dc03a.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-dc03b.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-dc03c.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-dc03d.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-dc03e.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-dc03f.spl~ ~override~
+    SAY NAME1 ~[vfx]~
 
-    COPY ~%MOD_FOLDER%/vvc/a7-dc03a.vvc~ ~override~
-         ~%MOD_FOLDER%/vvc/a7-dc03b.vvc~ ~override~
-         ~%MOD_FOLDER%/vvc/a7-dc03c.vvc~ ~override~
-         ~%MOD_FOLDER%/vvc/a7-dc03d.vvc~ ~override~
-         ~%MOD_FOLDER%/vvc/a7-dc03e.vvc~ ~override~
-         ~%MOD_FOLDER%/vvc/a7-dc03f.vvc~ ~override~
-         ~%MOD_FOLDER%/bmp/a7-dc03b.bmp~ ~override~
-         ~%MOD_FOLDER%/bmp/a7-dc03c.bmp~ ~override~
-         ~%MOD_FOLDER%/bmp/a7-dc03d.bmp~ ~override~
-         ~%MOD_FOLDER%/bmp/a7-dc03e.bmp~ ~override~
-         ~%MOD_FOLDER%/bmp/a7-dc03f.bmp~ ~override~
+  COPY ~%MOD_FOLDER%/vvc/a7-dc03a.vvc~ ~override~
+       ~%MOD_FOLDER%/vvc/a7-dc03b.vvc~ ~override~
+       ~%MOD_FOLDER%/vvc/a7-dc03c.vvc~ ~override~
+       ~%MOD_FOLDER%/vvc/a7-dc03d.vvc~ ~override~
+       ~%MOD_FOLDER%/vvc/a7-dc03e.vvc~ ~override~
+       ~%MOD_FOLDER%/vvc/a7-dc03f.vvc~ ~override~
+       ~%MOD_FOLDER%/bmp/a7-dc03b.bmp~ ~override~
+       ~%MOD_FOLDER%/bmp/a7-dc03c.bmp~ ~override~
+       ~%MOD_FOLDER%/bmp/a7-dc03d.bmp~ ~override~
+       ~%MOD_FOLDER%/bmp/a7-dc03e.bmp~ ~override~
+       ~%MOD_FOLDER%/bmp/a7-dc03f.bmp~ ~override~
 
-    // specifics value of the demons from the ritual
-    OUTER_SET demon_specifics = 169
+  // specifics value of the demons from the ritual
+  OUTER_SET demon_specifics = 169
 
-    // Demon Lord Anarazel
-    COPY ~%MOD_FOLDER%/cre/a7-deman.cre~ ~override~
-      SAY NAME1 @34 // Anarazel
-      SAY NAME2 @35 // Daring Darkness
-      WRITE_BYTE 0x274 demon_specifics
-      WRITE_ASCII SCRIPT_OVERRIDE ~a7-deman~ (8)  // creature-specific scripting
-      WRITE_ASCII SCRIPT_CLASS ~a7-dlrd~ (8)      // Enhanced combat scripting for demon lord
-      WRITE_ASCII SCRIPT_RACE ~a7-dbal~ (8)       // default Balor combat script
-      WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)    // default attack script
-      WRITE_ASCII DIALOG ~a7-deman~ (8)
+  // Demon Lord Anarazel
+  COPY ~%MOD_FOLDER%/cre/a7-deman.cre~ ~override~
+    SAY NAME1 @34 // Anarazel
+    SAY NAME2 @35 // Daring Darkness
+    WRITE_BYTE 0x274 demon_specifics
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7-deman~ (8)  // creature-specific scripting
+    WRITE_ASCII SCRIPT_CLASS ~a7-dlrd~ (8)      // Enhanced combat scripting for demon lord
+    WRITE_ASCII SCRIPT_RACE ~a7-dbal~ (8)       // default Balor combat script
+    WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)    // default attack script
+    WRITE_ASCII DIALOG ~a7-deman~ (8)
 
-    COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-deman.baf~
-                 ~%MOD_FOLDER%/bcs/a7-dlrd.baf~
-                 ~%MOD_FOLDER%/bcs/a7-ddef.baf~
+  COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-deman.baf~
+               ~%MOD_FOLDER%/bcs/a7-dlrd.baf~
+               ~%MOD_FOLDER%/bcs/a7-ddef.baf~
 
-    // Demogorgon can subjugate Anarazel
-    COPY_EXISTING ~demogor2.bcs~ ~override~
-      DECOMPILE_AND_PATCH BEGIN
-        SET ofs = INDEX_BUFFER(~DisplayStringHead(Myself,71008)~)
-        PATCH_IF (ofs < 0) BEGIN
-          SET ofs = INDEX_BUFFER(~SetGlobalTimer("CharmDemon","LOCALS"~)
-        END
-        PATCH_IF (ofs > 0) BEGIN
-          SET ofs = RINDEX_BUFFER(~^IF$~ ofs)
-        END
-        PATCH_IF (ofs > 0) BEGIN
-          INSERT_FILE ofs ~%MOD_FOLDER%/bcs/a7-demogorgon-anarazel.baf~
-        END
+  // Demogorgon can subjugate Anarazel
+  COPY_EXISTING ~demogor2.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      SET ofs = INDEX_BUFFER(~DisplayStringHead(Myself,71008)~)
+      PATCH_IF (ofs < 0) BEGIN
+        SET ofs = INDEX_BUFFER(~SetGlobalTimer("CharmDemon","LOCALS"~)
       END
-    BUT_ONLY
-
-    COPY ~%MOD_FOLDER%/itm/a7-dem01.itm~ ~override~
-      SAY NAME1 ~[Blur vfx, Fire Shield+]~
-
-    COPY ~%MOD_FOLDER%/itm/a7-dem02.itm~ ~override~
-      SAY NAME1 ~[Vorpal sword +5]~
-
-    COPY ~%MOD_FOLDER%/itm/a7-dem04.itm~ ~override~
-      SAY NAME1 ~[Aura of Fear]~
-
-    COPY ~%MOD_FOLDER%/eff/a7-dem04.eff~ ~override~
-         ~%MOD_FOLDER%/spl/a7-dem01.spl~ ~override~
-
-    ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-dem04.pro~ ~AoE_8_ft_Not_Party~
-    COPY ~%MOD_FOLDER%/spl/a7-dem04.spl~ ~override~
-      SAY NAME1 ~[Aura of Fear]~
-      GET_OFFSET_ARRAY dem04_abils SPL_V10_HEADERS
-      PHP_EACH dem04_abils AS _ => ofs BEGIN
-        WRITE_SHORT (ofs + 0x26) a7-dem04
+      PATCH_IF (ofs > 0) BEGIN
+        SET ofs = RINDEX_BUFFER(~^IF$~ ofs)
       END
-
-    // spell: Plane Shift
-    COPY ~%MOD_FOLDER%/spl/a7-dsp1.spl~ ~override~
-      SAY NAME1 @80 // Plane Shift
-
-    // spells: Gate Tanar'ri (lesser, greater, true)
-    COPY_EXISTING ~smtables.2da~ ~override~
-      COUNT_2DA_ROWS 1 num_rows
-      SET next_index = num_rows - 3
-    BUT_ONLY
-
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY smtables_entries BEGIN
-      ~a7-dsp2~ => ~lesser_tanarri~
-      ~a7-dsp3~ => ~greater_tanarri~
-      ~a7-dsp4~ => ~true_tanarri~
-    END
-
-    ACTION_PHP_EACH smtables_entries AS resref => label BEGIN
-      APPEND ~smtables.2da~ ~%next_index%_%label%   %resref%~
-      COPY ~%MOD_FOLDER%/2da/%resref%.2da~ ~override~
-      COPY ~%MOD_FOLDER%/spl/%resref%.spl~ ~override~
-        LPF alter_item_effect_ex
-          INT_VAR
-            check_headers = 1
-            match_opcode = 331  // Summon creatures 2
-            match_parameter2 = 1
-            parameter2 = next_index
-        END
-      OUTER_SET next_index += 1
-    END
-
-    COPY_EXISTING ~smtables.2da~ ~override~
-      PRETTY_PRINT_2DA
-    BUT_ONLY
-
-    COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dsum.baf~
-
-    // quasit
-    COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dqua.baf~
-    COPY ~%MOD_FOLDER%/cre/a7-dqua.cre~ ~override~
-      WRITE_BYTE 0x274 demon_specifics
-      WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
-      WRITE_ASCII SCRIPT_RACE ~a7-dqua~ (8)
-      WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
-
-    // mane
-    COPY ~%MOD_FOLDER%/cre/a7-dman.cre~ ~override~
-      WRITE_BYTE 0x274 demon_specifics
-      WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
-      WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
-
-    // dretch
-    COPY ~%MOD_FOLDER%/cre/a7-ddre.cre~ ~override~
-      SAY NAME1 @36 // Dretch
-      SAY NAME2 @36 // Dretch
-      WRITE_BYTE 0x274 demon_specifics
-      WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
-      WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
-
-    // alu-fiend
-    COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dalu.baf~
-    COPY ~%MOD_FOLDER%/cre/a7-dalu.cre~ ~override~
-      WRITE_BYTE 0x274 demon_specifics
-      WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
-      WRITE_ASCII SCRIPT_RACE ~a7-dalu~ (8)
-      WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
-
-    // maurezhi
-    COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dmau.baf~
-    COPY ~%MOD_FOLDER%/cre/a7-dmau.cre~ ~override~
-      WRITE_BYTE 0x274 demon_specifics
-      WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
-      WRITE_ASCII SCRIPT_RACE ~a7-dmau~ (8)
-      WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
-
-    // nabassu
-    COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dnab.baf~
-    COPY ~%MOD_FOLDER%/cre/a7-dnab.cre~ ~override~
-      WRITE_BYTE 0x274 demon_specifics
-      WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
-      WRITE_ASCII SCRIPT_RACE ~a7-dnab~ (8)
-      WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
-
-    // succubus
-    COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dsuc.baf~
-    COPY ~%MOD_FOLDER%/cre/a7-dsuc.cre~ ~override~
-      WRITE_BYTE 0x274 demon_specifics
-      WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
-      WRITE_ASCII SCRIPT_RACE ~a7-dsuc~ (8)
-      WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
-
-    // balor
-    COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dbal.baf~
-    COPY ~%MOD_FOLDER%/cre/a7-dbal.cre~ ~override~
-      WRITE_BYTE 0x274 demon_specifics
-      WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
-      WRITE_ASCII SCRIPT_RACE ~a7-dbal~ (8)
-      WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
-
-    // glabrezu
-    COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dgla.baf~
-    COPY ~%MOD_FOLDER%/cre/a7-dgla.cre~ ~override~
-      WRITE_BYTE 0x274 demon_specifics
-      WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
-      WRITE_ASCII SCRIPT_RACE ~a7-dgla~ (8)
-      WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
-
-    // marilith
-    COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dmar.baf~
-    COPY ~%MOD_FOLDER%/cre/a7-dmar.cre~ ~override~
-      WRITE_BYTE 0x274 demon_specifics
-      WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
-      WRITE_ASCII SCRIPT_RACE ~a7-dmar~ (8)
-      WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
-
-    // spell: Teleport
-    COPY ~%MOD_FOLDER%/spl/a7-dsp5.spl~ ~override~
-
-    // spell: Mane Gas
-    COPY ~%MOD_FOLDER%/spl/a7-dsp6.spl~ ~override~
-
-    // Charm spells: need to be patched to instantly break ongoing script actions
-    OUTER_SET index = 7 // start index for new a7-dsp?.spl files
-    ACTION_FOR_EACH spell_name IN ~SUCCUBUS_CHARM_MALE~ ~WIZARD_CHARM_PERSON~ BEGIN
-      OUTER_SET spell_id = IDS_OF_SYMBOL(~spell~ ~%spell_name%~)
-      ACTION_IF (spell_id > 0) BEGIN
-        LAF create_irresistible_effect INT_VAR opcode = 76 RET eff_resref END
-        LAF RES_NAME_OF_SPELL_NUM INT_VAR spell_num = spell_id RET spell_res END
-        OUTER_SPRINT dst_resref ~a7-dsp%index%~
-        COPY_EXISTING ~%spell_res%.spl~ ~override/%dst_resref%.spl~
-          LPF CLONE_EFFECT
-            INT_VAR
-              match_opcode = 5  // Charm
-              opcode = 177      // Use EFF file
-              parameter1 = 0    // ANYONE
-              parameter2 = 2    // EA.IDS
-              timing = 0        // instant/limited
-              duration = 0
-            STR_VAR
-              resource = EVAL ~%eff_resref%~
-              insert = ~last~
-          END
-
-        // updating spellcasting instances in scripts
-        COPY_EXISTING ~a7-dalu.bcs~ ~override~
-                      ~a7-dgla.bcs~ ~override~
-                      ~a7-dsuc.bcs~ ~override~
-          DECOMPILE_AND_PATCH BEGIN
-            REPLACE_TEXTUALLY ~\(ForceSpell\|SpellNoDec\)(\([^,]+\),%spell_name%)~
-                              ~\1RES("%dst_resref%",\2)~
-          END
-
-        OUTER_SET index += 1
+      PATCH_IF (ofs > 0) BEGIN
+        INSERT_FILE ofs ~%MOD_FOLDER%/bcs/a7-demogorgon-anarazel.baf~
       END
     END
+  BUT_ONLY
 
-    // spell: Return to the Abyss
-    COPY ~%MOD_FOLDER%/spl/a7-dspx.spl~ ~override~
-      SAY NAME1 ~[Return to the Abyss]~
+  COPY ~%MOD_FOLDER%/itm/a7-dem01.itm~ ~override~
+    SAY NAME1 ~[Blur vfx, Fire Shield+]~
 
-    // "Abyssal Pact" ritual
-    // spell: remove all removable cre effects
-    COPY ~%MOD_FOLDER%/spl/a7-disp.spl~ ~override~
-      SAY NAME1 ~[Dispel Everything]~
+  COPY ~%MOD_FOLDER%/itm/a7-dem02.itm~ ~override~
+    SAY NAME1 ~[Vorpal sword +5]~
 
-    // spell: summoning ritual (replace character by demon lord)
-    COPY ~%MOD_FOLDER%/spl/a7-dsm1a.spl~ ~override~
-      SAY NAME1 ~[Replace by Demon Lord]~
-    COPY ~%MOD_FOLDER%/spl/a7-dsm1b.spl~ ~override~
-         ~%MOD_FOLDER%/spl/a7-dsm1c.spl~ ~override~
+  COPY ~%MOD_FOLDER%/itm/a7-dem04.itm~ ~override~
+    SAY NAME1 ~[Aura of Fear]~
 
-    // spell: reduce target XP
-    COPY ~%MOD_FOLDER%/spl/a7-dsm2.spl~ ~override~
+  COPY ~%MOD_FOLDER%/eff/a7-dem04.eff~ ~override~
+       ~%MOD_FOLDER%/spl/a7-dem01.spl~ ~override~
+
+  ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-dem04.pro~ ~AoE_8_ft_Not_Party~
+  COPY ~%MOD_FOLDER%/spl/a7-dem04.spl~ ~override~
+    SAY NAME1 ~[Aura of Fear]~
+    GET_OFFSET_ARRAY dem04_abils SPL_V10_HEADERS
+    PHP_EACH dem04_abils AS _ => ofs BEGIN
+      WRITE_SHORT (ofs + 0x26) a7-dem04
+    END
+
+  // spell: Plane Shift
+  COPY ~%MOD_FOLDER%/spl/a7-dsp1.spl~ ~override~
+    SAY NAME1 @80 // Plane Shift
+
+  // spells: Gate Tanar'ri (lesser, greater, true)
+  COPY_EXISTING ~smtables.2da~ ~override~
+    COUNT_2DA_ROWS 1 num_rows
+    SET next_index = num_rows - 3
+  BUT_ONLY
+
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY smtables_entries BEGIN
+    ~a7-dsp2~ => ~lesser_tanarri~
+    ~a7-dsp3~ => ~greater_tanarri~
+    ~a7-dsp4~ => ~true_tanarri~
+  END
+
+  ACTION_PHP_EACH smtables_entries AS resref => label BEGIN
+    APPEND ~smtables.2da~ ~%next_index%_%label%   %resref%~
+    COPY ~%MOD_FOLDER%/2da/%resref%.2da~ ~override~
+    COPY ~%MOD_FOLDER%/spl/%resref%.spl~ ~override~
       LPF alter_item_effect_ex
         INT_VAR
           check_headers = 1
-          match_opcode = 139  // Display String
-          match_parameter1 = 1
-          parameter1 = RESOLVE_STR_REF(@81) // Divine essence removed
+          match_opcode = 331  // Summon creatures 2
+          match_parameter2 = 1
+          parameter2 = next_index
       END
+    OUTER_SET next_index += 1
+  END
 
-    COPY ~%MOD_FOLDER%/vef/a7-dsig.vef~ ~override~
-         ~%MOD_FOLDER%/vvc/a7-dsiga.vvc~ ~override~
-         ~%MOD_FOLDER%/vvc/a7-dsigb.vvc~ ~override~
-         ~%MOD_FOLDER%/vvc/a7-dsigc.vvc~ ~override~
-         ~%MOD_FOLDER%/bam/a7-dsiga.bam~ ~override~
-         ~%MOD_FOLDER%/bam/a7-dsigb.bam~ ~override~
-         ~%MOD_FOLDER%/bam/a7-dsigc.bam~ ~override~
+  COPY_EXISTING ~smtables.2da~ ~override~
+    PRETTY_PRINT_2DA
+  BUT_ONLY
 
-    COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dct4a.baf~
-                 ~%MOD_FOLDER%/bcs/a7-dct4b.baf~
-                 ~%MOD_FOLDER%/bcs/a7-dct4c.baf~
-                 ~%MOD_FOLDER%/bcs/a7-dct4d.baf~
-                 ~%MOD_FOLDER%/bcs/a7-rep.baf~
+  COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dsum.baf~
 
-    // Arcana Archives: More options for dealing with the tome
-    EXTEND_TOP ~ar5011.bcs~ ~%MOD_FOLDER%/bcs/bg2-ar5011-top.baf~
-    EXTEND_TOP ~ar5502.bcs~ ~%MOD_FOLDER%/bcs/bg2-ar5502-top.baf~
+  // quasit
+  COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dqua.baf~
+  COPY ~%MOD_FOLDER%/cre/a7-dqua.cre~ ~override~
+    WRITE_BYTE 0x274 demon_specifics
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
+    WRITE_ASCII SCRIPT_RACE ~a7-dqua~ (8)
+    WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
 
-    // ritual influences judgement of the Solar at the Throne of Bhaal
-    EXTEND_TOP ~ar6200.bcs~ ~%MOD_FOLDER%/bcs/bg2-ar6200-top.baf~
+  // mane
+  COPY ~%MOD_FOLDER%/cre/a7-dman.cre~ ~override~
+    WRITE_BYTE 0x274 demon_specifics
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
+    WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
 
-    // misc. resources used by party reactions after the ritual
-    COPY ~%MOD_FOLDER%/spl/a7-dc04a.spl~ ~override~
-      SAY NAME1 ~[Leave in Fear]~
+  // dretch
+  COPY ~%MOD_FOLDER%/cre/a7-ddre.cre~ ~override~
+    SAY NAME1 @36 // Dretch
+    SAY NAME2 @36 // Dretch
+    WRITE_BYTE 0x274 demon_specifics
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
+    WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
 
-    // retribution: Order of the Radiant Heart
-    COMPILE ~%MOD_FOLDER%/bcs/a7-rord.baf~
-    COPY ~%MOD_FOLDER%/cre/a7-rord1.cre~ ~override~
-      SAY NAME1 @37 // Paladin of Helm
-      SAY NAME2 @37 // Paladin of Helm
-      WRITE_ASCII SCRIPT_OVERRIDE ~a7-rord~ (8)
+  // alu-fiend
+  COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dalu.baf~
+  COPY ~%MOD_FOLDER%/cre/a7-dalu.cre~ ~override~
+    WRITE_BYTE 0x274 demon_specifics
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
+    WRITE_ASCII SCRIPT_RACE ~a7-dalu~ (8)
+    WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
 
-    COPY ~%MOD_FOLDER%/cre/a7-rord2.cre~ ~override~
-         ~%MOD_FOLDER%/cre/a7-rord3.cre~ ~override~
-      SAY NAME1 @37 // Paladin of Helm
-      SAY NAME2 @37 // Paladin of Helm
+  // maurezhi
+  COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dmau.baf~
+  COPY ~%MOD_FOLDER%/cre/a7-dmau.cre~ ~override~
+    WRITE_BYTE 0x274 demon_specifics
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
+    WRITE_ASCII SCRIPT_RACE ~a7-dmau~ (8)
+    WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
 
-    COPY ~%MOD_FOLDER%/cre/a7-rord4.cre~ ~override~
-         ~%MOD_FOLDER%/cre/a7-rord5.cre~ ~override~
-         ~%MOD_FOLDER%/cre/a7-rord6.cre~ ~override~
+  // nabassu
+  COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dnab.baf~
+  COPY ~%MOD_FOLDER%/cre/a7-dnab.cre~ ~override~
+    WRITE_BYTE 0x274 demon_specifics
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
+    WRITE_ASCII SCRIPT_RACE ~a7-dnab~ (8)
+    WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
 
-    // retribution: Harpers
-    COMPILE ~%MOD_FOLDER%/bcs/a7-rhrp.baf~
-    COPY ~%MOD_FOLDER%/cre/a7-rhrp1.cre~ ~override~
-      SAY NAME1 @38 // Master Harper
-      SAY NAME2 @38 // Master Harper
-      WRITE_ASCII SCRIPT_OVERRIDE ~a7-rhrp~ (8)
+  // succubus
+  COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dsuc.baf~
+  COPY ~%MOD_FOLDER%/cre/a7-dsuc.cre~ ~override~
+    WRITE_BYTE 0x274 demon_specifics
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
+    WRITE_ASCII SCRIPT_RACE ~a7-dsuc~ (8)
+    WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
 
-    COPY ~%MOD_FOLDER%/cre/a7-rhrp2.cre~ ~override~
-         ~%MOD_FOLDER%/cre/a7-rhrp3.cre~ ~override~
-         ~%MOD_FOLDER%/cre/a7-rhrp4.cre~ ~override~
-      SAY NAME1 @39 // Harper
-      SAY NAME2 @39 // Harper
+  // balor
+  COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dbal.baf~
+  COPY ~%MOD_FOLDER%/cre/a7-dbal.cre~ ~override~
+    WRITE_BYTE 0x274 demon_specifics
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
+    WRITE_ASCII SCRIPT_RACE ~a7-dbal~ (8)
+    WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
 
-    COPY ~%MOD_FOLDER%/cre/a7-rhrp5.cre~ ~override~
-      SAY NAME1 @40 // Harper Priest
-      SAY NAME2 @40 // Harper Priest
+  // glabrezu
+  COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dgla.baf~
+  COPY ~%MOD_FOLDER%/cre/a7-dgla.cre~ ~override~
+    WRITE_BYTE 0x274 demon_specifics
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
+    WRITE_ASCII SCRIPT_RACE ~a7-dgla~ (8)
+    WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
 
-    COPY ~%MOD_FOLDER%/cre/a7-rhrp6.cre~ ~override~
-      SAY NAME1 @41 // Harper Mage
-      SAY NAME2 @41 // Harper Mage
+  // marilith
+  COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dmar.baf~
+  COPY ~%MOD_FOLDER%/cre/a7-dmar.cre~ ~override~
+    WRITE_BYTE 0x274 demon_specifics
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7-dsum~ (8)
+    WRITE_ASCII SCRIPT_RACE ~a7-dmar~ (8)
+    WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)
+
+  // spell: Teleport
+  COPY ~%MOD_FOLDER%/spl/a7-dsp5.spl~ ~override~
+
+  // spell: Mane Gas
+  COPY ~%MOD_FOLDER%/spl/a7-dsp6.spl~ ~override~
+
+  // Charm spells: need to be patched to instantly break ongoing script actions
+  OUTER_SET index = 7 // start index for new a7-dsp?.spl files
+  ACTION_FOR_EACH spell_name IN ~SUCCUBUS_CHARM_MALE~ ~WIZARD_CHARM_PERSON~ BEGIN
+    OUTER_SET spell_id = IDS_OF_SYMBOL(~spell~ ~%spell_name%~)
+    ACTION_IF (spell_id > 0) BEGIN
+      LAF create_irresistible_effect INT_VAR opcode = 76 RET eff_resref END
+      LAF RES_NAME_OF_SPELL_NUM INT_VAR spell_num = spell_id RET spell_res END
+      OUTER_SPRINT dst_resref ~a7-dsp%index%~
+      COPY_EXISTING ~%spell_res%.spl~ ~override/%dst_resref%.spl~
+        LPF CLONE_EFFECT
+          INT_VAR
+            match_opcode = 5  // Charm
+            opcode = 177      // Use EFF file
+            parameter1 = 0    // ANYONE
+            parameter2 = 2    // EA.IDS
+            timing = 0        // instant/limited
+            duration = 0
+          STR_VAR
+            resource = EVAL ~%eff_resref%~
+            insert = ~last~
+        END
+
+      // updating spellcasting instances in scripts
+      COPY_EXISTING ~a7-dalu.bcs~ ~override~
+                    ~a7-dgla.bcs~ ~override~
+                    ~a7-dsuc.bcs~ ~override~
+        DECOMPILE_AND_PATCH BEGIN
+          REPLACE_TEXTUALLY ~\(ForceSpell\|SpellNoDec\)(\([^,]+\),%spell_name%)~
+                            ~\1RES("%dst_resref%",\2)~
+        END
+
+      OUTER_SET index += 1
+    END
+  END
+
+  // spell: Return to the Abyss
+  COPY ~%MOD_FOLDER%/spl/a7-dspx.spl~ ~override~
+    SAY NAME1 ~[Return to the Abyss]~
+
+  // "Abyssal Pact" ritual
+  // spell: remove all removable cre effects
+  COPY ~%MOD_FOLDER%/spl/a7-disp.spl~ ~override~
+    SAY NAME1 ~[Dispel Everything]~
+
+  // spell: summoning ritual (replace character by demon lord)
+  COPY ~%MOD_FOLDER%/spl/a7-dsm1a.spl~ ~override~
+    SAY NAME1 ~[Replace by Demon Lord]~
+  COPY ~%MOD_FOLDER%/spl/a7-dsm1b.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-dsm1c.spl~ ~override~
+
+  // spell: reduce target XP
+  COPY ~%MOD_FOLDER%/spl/a7-dsm2.spl~ ~override~
+    LPF alter_item_effect_ex
+      INT_VAR
+        check_headers = 1
+        match_opcode = 139  // Display String
+        match_parameter1 = 1
+        parameter1 = RESOLVE_STR_REF(@81) // Divine essence removed
+    END
+
+  COPY ~%MOD_FOLDER%/vef/a7-dsig.vef~ ~override~
+       ~%MOD_FOLDER%/vvc/a7-dsiga.vvc~ ~override~
+       ~%MOD_FOLDER%/vvc/a7-dsigb.vvc~ ~override~
+       ~%MOD_FOLDER%/vvc/a7-dsigc.vvc~ ~override~
+       ~%MOD_FOLDER%/bam/a7-dsiga.bam~ ~override~
+       ~%MOD_FOLDER%/bam/a7-dsigb.bam~ ~override~
+       ~%MOD_FOLDER%/bam/a7-dsigc.bam~ ~override~
+
+  COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-dct4a.baf~
+               ~%MOD_FOLDER%/bcs/a7-dct4b.baf~
+               ~%MOD_FOLDER%/bcs/a7-dct4c.baf~
+               ~%MOD_FOLDER%/bcs/a7-dct4d.baf~
+               ~%MOD_FOLDER%/bcs/a7-rep.baf~
+
+  // Arcana Archives: More options for dealing with the tome
+  EXTEND_TOP ~ar5011.bcs~ ~%MOD_FOLDER%/bcs/bg2-ar5011-top.baf~
+  EXTEND_TOP ~ar5502.bcs~ ~%MOD_FOLDER%/bcs/bg2-ar5502-top.baf~
+
+  // ritual influences judgement of the Solar at the Throne of Bhaal
+  EXTEND_TOP ~ar6200.bcs~ ~%MOD_FOLDER%/bcs/bg2-ar6200-top.baf~
+
+  // misc. resources used by party reactions after the ritual
+  COPY ~%MOD_FOLDER%/spl/a7-dc04a.spl~ ~override~
+    SAY NAME1 ~[Leave in Fear]~
+
+  // retribution: Order of the Radiant Heart
+  COMPILE ~%MOD_FOLDER%/bcs/a7-rord.baf~
+  COPY ~%MOD_FOLDER%/cre/a7-rord1.cre~ ~override~
+    SAY NAME1 @37 // Paladin of Helm
+    SAY NAME2 @37 // Paladin of Helm
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7-rord~ (8)
+
+  COPY ~%MOD_FOLDER%/cre/a7-rord2.cre~ ~override~
+       ~%MOD_FOLDER%/cre/a7-rord3.cre~ ~override~
+    SAY NAME1 @37 // Paladin of Helm
+    SAY NAME2 @37 // Paladin of Helm
+
+  COPY ~%MOD_FOLDER%/cre/a7-rord4.cre~ ~override~
+       ~%MOD_FOLDER%/cre/a7-rord5.cre~ ~override~
+       ~%MOD_FOLDER%/cre/a7-rord6.cre~ ~override~
+
+  // retribution: Harpers
+  COMPILE ~%MOD_FOLDER%/bcs/a7-rhrp.baf~
+  COPY ~%MOD_FOLDER%/cre/a7-rhrp1.cre~ ~override~
+    SAY NAME1 @38 // Master Harper
+    SAY NAME2 @38 // Master Harper
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7-rhrp~ (8)
+
+  COPY ~%MOD_FOLDER%/cre/a7-rhrp2.cre~ ~override~
+       ~%MOD_FOLDER%/cre/a7-rhrp3.cre~ ~override~
+       ~%MOD_FOLDER%/cre/a7-rhrp4.cre~ ~override~
+    SAY NAME1 @39 // Harper
+    SAY NAME2 @39 // Harper
+
+  COPY ~%MOD_FOLDER%/cre/a7-rhrp5.cre~ ~override~
+    SAY NAME1 @40 // Harper Priest
+    SAY NAME2 @40 // Harper Priest
+
+  COPY ~%MOD_FOLDER%/cre/a7-rhrp6.cre~ ~override~
+    SAY NAME1 @41 // Harper Mage
+    SAY NAME2 @41 // Harper Mage
+END
+
+// perform safe triggering of forced random encounter (Retribution)
+OUTER_SPRINT encounter_area ~A7WP02~
+ACTION_FOR_EACH are_resref IN ~ar5200~ ~ar5500~ ~ar6000~ ~ar6300~ BEGIN
+  // sand area
+  EXTEND_TOP ~%are_resref%.bcs~ ~%MOD_FOLDER%/bcs/a7-ret-encounter-top.baf~ EVAL
+END
+OUTER_SPRINT encounter_area ~A7WP03~
+ACTION_FOR_EACH are_resref IN ~ar3000~ ~ar5202~ ~ar5203~ ~ar6100~ ~ar6400~ ~oh4200~ BEGIN
+  // rock area
+  EXTEND_TOP ~%are_resref%.bcs~ ~%MOD_FOLDER%/bcs/a7-ret-encounter-top.baf~ EVAL
+END
+
+// perform safe triggering of forced random encounter (Cultists)
+ACTION_FOR_EACH are_resref IN ~ar3000~ ~ar5200~ ~ar5202~ ~ar5203~ ~ar5500~
+                              ~ar6000~ ~ar6100~ ~ar6300~ ~ar6400~ ~oh4200~ BEGIN
+  EXTEND_TOP ~%are_resref%.bcs~ ~%MOD_FOLDER%/bcs/a7-dem-encounter-top.baf~
+END
+
+WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+  // patching random encounter area: clone of AR0044 (outdoor, sand)
+  COPY_EXISTING ~ar0044.are~ ~override/a7wp02.are~
+    WRITE_ASCII AREA_SCRIPT ~a7wp02~ (8)
+    // adding new entrance
+    LPF fj_are_structure
+      INT_VAR
+        fj_loc_x = 962
+        fj_loc_y = 758
+        fj_orientation = 6  // NW
+      STR_VAR
+        fj_structure_type = ~entrance~
+        fj_name = ~ExitSE~
+    END
+  COMPILE ~%MOD_FOLDER%/bcs/a7wp02.baf~
+
+  // patching random encounter area: clone of AR0043 (outdoor, rocks)
+  COPY_EXISTING ~ar0043.are~ ~override/a7wp03.are~
+    WRITE_ASCII AREA_SCRIPT ~a7wp03~ (8)
+    // adding new entrance
+    LPF fj_are_structure
+      INT_VAR
+        fj_loc_x = 832
+        fj_loc_y = 732
+        fj_orientation = 6  // NW
+      STR_VAR
+        fj_structure_type = ~entrance~
+        fj_name = ~ExitSE~
+    END
+  COMPILE ~%MOD_FOLDER%/bcs/a7wp03.baf~
+
+  // patching area AR6400 (River Area)
+  // installing tileset pvrz
+  OUTER_SPRINT pvrz_base ~a6400~
+  OUTER_SET pvrz_index = "-1"
+  OUTER_FOR (idx = 0; idx < 100; ++idx) BEGIN
+    ACTION_IF (idx < 10) BEGIN
+      OUTER_SPRINT pvrz_resref ~%pvrz_base%0%idx%~
+    END ELSE BEGIN
+      OUTER_SPRINT pvrz_resref ~%pvrz_base%%idx%~
+    END
+    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%pvrz_resref%.pvrz~) BEGIN
+      OUTER_SET pvrz_index = idx
+      OUTER_SET idx = 100
+    END
+  END
+  COPY ~%MOD_FOLDER%/pvrz/a6400-entrance.pvrz~ ~override/%pvrz_resref%.pvrz~
+
+  // patching tileset
+  ACTION_DEFINE_ARRAY tile_indices BEGIN 382 383 421 422 END
+  OUTER_SET coord_ofs = 2
+  COPY_EXISTING ~ar6400.tis~ ~override~
+    READ_LONG 0x08 num_tiles
+    READ_LONG 0x0c tile_size
+    READ_LONG 0x10 ofs_tiles
+    READ_LONG 0x14 tile_dim
+    PATCH_IF (tile_size == 0x0c) BEGIN
+      // only pvrz-based tileset supported
+      PHP_EACH tile_indices AS idx => tile_idx BEGIN
+        SET ofs_tile = ofs_tiles + tile_idx * tile_size
+        SET x = coord_ofs + ((idx MODULO 2) * tile_dim)
+        SET y = coord_ofs + ((idx / 2) * tile_dim)
+        WRITE_LONG (ofs_tile + 0x00) pvrz_index
+        WRITE_LONG (ofs_tile + 0x04) x
+        WRITE_LONG (ofs_tile + 0x08) y
+      END
+    END
+  BUT_ONLY
+
+  // patching wed
+  COPY_EXISTING ~ar6400.wed~ ~override~
+    LPF ADD_WED_WALL_POLY
+      INT_VAR
+        flags = BIT0  // shade wall
+        vertex_0 = 2035 | (637 << 16)
+        vertex_1 = 2040 | (634 << 16)
+        vertex_2 = 2046 | (660 << 16)
+        vertex_3 = 2042 | (662 << 16)
+    END
+    LPF ADD_WED_WALL_POLY
+      INT_VAR
+        flags = BIT0  // shade wall
+        vertex_0 = 2045 | (650 << 16)
+        vertex_1 = 2077 | (633 << 16)
+        vertex_2 = 2079 | (638 << 16)
+        vertex_3 = 2059 | (649 << 16)
+        vertex_4 = 2056 | (656 << 16)
+        vertex_5 = 2051 | (658 << 16)
+        vertex_6 = 2051 | (652 << 16)
+    END
+    LPF ADD_WED_WALL_POLY
+      INT_VAR
+        flags = BIT0  // shade wall
+        vertex_0 = 2074 | (620 << 16)
+        vertex_1 = 2081 | (619 << 16)
+        vertex_2 = 2086 | (639 << 16)
+        vertex_3 = 2081 | (641 << 16)
+    END
+    LPF UPDATE_WED_WALLGROUPS END
+  BUT_ONLY
+
+  // patching search map
+  OUTER_SET sr_patched = 0
+  COPY_EXISTING ~ar6400sr.bmp~ ~override~
+    // pixel definitions (x-pos, y-pos, color index)
+    DEFINE_ARRAY sr_x BEGIN 130 128 129 130 127 128 129 130 131 128 129 130 128 129 END
+    DEFINE_ARRAY sr_y BEGIN 53 54 54 54 55 55 55 55 55 56 56 56 57 57 END
+    DEFINE_ARRAY sr_col BEGIN 8 8 8 8 8 8 8 9 9 8 9 9 9 9 END
+
+    READ_ASCII 0x00 sig (2)
+    READ_LONG 0x02 file_size
+    PATCH_IF (~%sig%~ STR_EQ ~BM~ && file_size <= BUFFER_LENGTH) BEGIN
+      READ_LONG 0x0a ofs_pixels
+      READ_LONG 0x0e header_size
+      PATCH_MATCH header_size WITH
+        40 108 124 BEGIN  // BITMAPINFOHEADER, BITMAPV4HEADER, or BITMAPV5HEADER
+          READ_LONG 0x12 width
+          READ_LONG 0x16 height
+          READ_SHORT 0x1c bpp
+          READ_LONG 0x1e compression
+          // only uncompressed 4-bit pixel data is supported
+          PATCH_IF (bpp == 4 && compression == 0) BEGIN
+            SET stride = (width * bpp + 31) / 32 * 4  // bytes per pixel row
+            PHP_EACH sr_x AS idx => x BEGIN
+              SET y = $sr_y(~%idx%~)
+              SET col = $sr_col(~%idx%~)
+              SET x_pos = x / 2
+              SET is_high = (x & 1) == 0
+              SET clear_mask = BNOT (0xf << (is_high * 4))
+              SET color = col << (is_high * 4)
+              SET ofs = ofs_pixels + ((height - y - 1) * stride) + x_pos
+              WRITE_BYTE ofs (THIS & clear_mask) | color
+            END
+            SET sr_patched = 1
+          END
+        END
+        DEFAULT
+      END
+    END
+  BUT_ONLY
+
+  ACTION_IF (NOT sr_patched) BEGIN
+    // fall-back solution
+    COPY ~%MOD_FOLDER%/bmp/ar6400sr.bmp~ ~override~
+  END
+
+  // patching are
+  COPY_EXISTING ~ar6400.are~ ~override~
+    // info trigger
+    LPF fj_are_structure
+      INT_VAR
+        fj_type = 1 // info trigger
+        fj_box_left = 2039
+        fj_box_top = 643
+        fj_box_right = 2109
+        fj_box_bottom = 693
+        fj_cursor_idx = 28
+        fj_flags = 0
+        fj_loc_x = 2070
+        fj_loc_y = 662
+        fj_vertex_0 = 2039 | (665 << 16)
+        fj_vertex_1 = 2091 | (643 << 16)
+        fj_vertex_2 = 2109 | (670 << 16)
+        fj_vertex_3 = 2058 | (693 << 16)
+      STR_VAR
+        fj_structure_type = ~region~
+        fj_name = ~tran-a7wp01_info~
+        fj_reg_script = ~a7wp01x~
+    END
+    // travel trigger
+    LPF fj_are_structure
+      INT_VAR
+        fj_type = 2 // travel trigger
+        fj_box_left = 2039
+        fj_box_top = 643
+        fj_box_right = 2109
+        fj_box_bottom = 693
+        fj_cursor_idx = 28
+        fj_flags = BIT2 | BIT8 | BIT9 // Party required, Trigger deactivated, Cannot be passed by NPC
+        fj_loc_x = 2100
+        fj_loc_y = 700
+        fj_vertex_0 = 2039 | (665 << 16)
+        fj_vertex_1 = 2091 | (643 << 16)
+        fj_vertex_2 = 2109 | (670 << 16)
+        fj_vertex_3 = 2058 | (693 << 16)
+      STR_VAR
+        fj_structure_type = ~region~
+        fj_name = ~tran-a7wp01~
+        fj_destination_area = ~a7wp01~
+        fj_destination_name = ~fr6400~
+    END
+      // entrance
+    LPF fj_are_structure
+      INT_VAR
+        fj_loc_x = 2112
+        fj_loc_y = 714
+        fj_orientation = 14 // SE
+      STR_VAR
+        fj_structure_type = ~entrance~
+        fj_name = ~fr-a7wp01~
+    END
+
+    // replace and relocate dead body
+    GET_OFFSET_ARRAY actors_array ARE_V10_ACTORS
+    PHP_EACH actors_array AS _ => ofs BEGIN
+      READ_SHORT (ofs + 0x20) x
+      READ_SHORT (ofs + 0x22) y
+      PATCH_IF (x >= 2080 && x < 2100 && y >= 690 && y < 710) BEGIN
+        // move to the bottom-right
+        FOR (i = 0; i < 4; ++i) BEGIN
+          WRITE_SHORT (ofs + 0x20 + i * 2) (THIS + 16)
+        END
+        WRITE_ASCII (ofs + 0x80) ~a7-wpdb1~ (8)
+      END
+    END
+  BUT_ONLY
+
+  // permanent corpse required for the fallback option to advance the quest
+  COPY_EXISTING ~deadb02.cre~ ~override/a7-wpdb1.cre~
+    WRITE_LONG 0x10 (THIS | BIT2) // enable flag "Permanent corpse"
+
+  EXTEND_TOP ~ar6400.bcs~ ~%MOD_FOLDER%/bcs/bg2-ar6400-top.baf~
+
+  COMPILE ~%MOD_FOLDER%/bcs/a7wp01x.baf~
+
+  // installing new area: Ritual Chamber
+  COPY ~%MOD_FOLDER%/are/a7wp01.are~ ~override~
+    // updating region text
+    GET_OFFSET_ARRAY regions_array ARE_V10_REGIONS
+    PHP_EACH regions_array AS _ => region_ofs BEGIN
+      READ_ASCII region_ofs region_name (32) NULL
+      PATCH_IF (~%region_name%~ STR_EQ ~Pentragram~) BEGIN
+        SAY (region_ofs + 0x64) @100  // You see an empty pentagram...
+      END
+    END
+    // updating automap notes
+    GET_OFFSET_ARRAY notes_array 0xc4 4 0xc8 4 0 0 0x34
+    PHP_EACH notes_array AS _ => note_ofs BEGIN
+      SAY (note_ofs + 0x04) @101  // Exit
+    END
+
+  COMPILE ~%MOD_FOLDER%/bcs/a7wp01.baf~
+
+  COPY ~%MOD_FOLDER%/bmp/a7wp01ht.bmp~ ~override~
+       ~%MOD_FOLDER%/bmp/a7wp01lm.bmp~ ~override~
+       ~%MOD_FOLDER%/bmp/a7wp01sr.bmp~ ~override~
+       ~%MOD_FOLDER%/pvrz/awp0100.pvrz~ ~override~
+       ~%MOD_FOLDER%/tis/a7wp01.tis~ ~override~
+       ~%MOD_FOLDER%/wav/a7wp01a.wav~ ~override~
+       ~%MOD_FOLDER%/wed/a7wp01.wed~ ~override~
+
+  // adding area names to debug menu
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY area_lua BEGIN
+    ~A7WP01~ => ~Ritual Chamber (Wares of the Planes)~
+    ~A7WP02~ => ~Random Encounter Outdoor, sand (Wares of the Planes)~
+    ~A7WP03~ => ~Random Encounter Outdoor, rocks (Wares of the Planes)~
+  END
+  LAF add_areas_lua
+    INT_VAR
+      tob = 1
+    STR_VAR
+      comment = ~Areas from Wares of the Planes~
+      map_array = ~area_lua~
   END
 END
 
-ACTION_IF (has_bg2) BEGIN
-  // perform safe triggering of forced random encounter (Retribution)
-  OUTER_SPRINT encounter_area ~A7WP02~
-  ACTION_FOR_EACH are_resref IN ~ar5200~ ~ar5500~ ~ar6000~ ~ar6300~ BEGIN
-    // sand area
-    EXTEND_TOP ~%are_resref%.bcs~ ~%MOD_FOLDER%/bcs/a7-ret-encounter-top.baf~ EVAL
-  END
-  OUTER_SPRINT encounter_area ~A7WP03~
-  ACTION_FOR_EACH are_resref IN ~ar3000~ ~ar5202~ ~ar5203~ ~ar6100~ ~ar6400~ ~oh4200~ BEGIN
-    // rock area
-    EXTEND_TOP ~%are_resref%.bcs~ ~%MOD_FOLDER%/bcs/a7-ret-encounter-top.baf~ EVAL
-  END
-
-  // perform safe triggering of forced random encounter (Cultists)
-  ACTION_FOR_EACH are_resref IN ~ar3000~ ~ar5200~ ~ar5202~ ~ar5203~ ~ar5500~
-                                ~ar6000~ ~ar6100~ ~ar6300~ ~ar6400~ ~oh4200~ BEGIN
-    EXTEND_TOP ~%are_resref%.bcs~ ~%MOD_FOLDER%/bcs/a7-dem-encounter-top.baf~
-  END
-
-  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
-    // patching random encounter area: clone of AR0044 (outdoor, sand)
-    COPY_EXISTING ~ar0044.are~ ~override/a7wp02.are~
-      WRITE_ASCII AREA_SCRIPT ~a7wp02~ (8)
-      // adding new entrance
-      LPF fj_are_structure
-        INT_VAR
-          fj_loc_x = 962
-          fj_loc_y = 758
-          fj_orientation = 6  // NW
-        STR_VAR
-          fj_structure_type = ~entrance~
-          fj_name = ~ExitSE~
-      END
-    COMPILE ~%MOD_FOLDER%/bcs/a7wp02.baf~
-
-    // patching random encounter area: clone of AR0043 (outdoor, rocks)
-    COPY_EXISTING ~ar0043.are~ ~override/a7wp03.are~
-      WRITE_ASCII AREA_SCRIPT ~a7wp03~ (8)
-      // adding new entrance
-      LPF fj_are_structure
-        INT_VAR
-          fj_loc_x = 832
-          fj_loc_y = 732
-          fj_orientation = 6  // NW
-        STR_VAR
-          fj_structure_type = ~entrance~
-          fj_name = ~ExitSE~
-      END
-    COMPILE ~%MOD_FOLDER%/bcs/a7wp03.baf~
-
-    // TODO: implement retribution encounters
-    // - The Order: consists of paladins, knights, and clerics
-    // - Harpers: consists of thieves (initially invisible), mages, bards, and clerics
-
-    // patching area AR6400 (River Area)
-    // installing tileset pvrz
-    OUTER_SPRINT pvrz_base ~a6400~
-    OUTER_SET pvrz_index = "-1"
-    OUTER_FOR (idx = 0; idx < 100; ++idx) BEGIN
-      ACTION_IF (idx < 10) BEGIN
-        OUTER_SPRINT pvrz_resref ~%pvrz_base%0%idx%~
-      END ELSE BEGIN
-        OUTER_SPRINT pvrz_resref ~%pvrz_base%%idx%~
-      END
-      ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%pvrz_resref%.pvrz~) BEGIN
-        OUTER_SET pvrz_index = idx
-        OUTER_SET idx = 100
-      END
-    END
-    COPY ~%MOD_FOLDER%/pvrz/a6400-entrance.pvrz~ ~override/%pvrz_resref%.pvrz~
-
-    // patching tileset
-    ACTION_DEFINE_ARRAY tile_indices BEGIN 382 383 421 422 END
-    OUTER_SET coord_ofs = 2
-    COPY_EXISTING ~ar6400.tis~ ~override~
-      READ_LONG 0x08 num_tiles
-      READ_LONG 0x0c tile_size
-      READ_LONG 0x10 ofs_tiles
-      READ_LONG 0x14 tile_dim
-      PATCH_IF (tile_size == 0x0c) BEGIN
-        // only pvrz-based tileset supported
-        PHP_EACH tile_indices AS idx => tile_idx BEGIN
-          SET ofs_tile = ofs_tiles + tile_idx * tile_size
-          SET x = coord_ofs + ((idx MODULO 2) * tile_dim)
-          SET y = coord_ofs + ((idx / 2) * tile_dim)
-          WRITE_LONG (ofs_tile + 0x00) pvrz_index
-          WRITE_LONG (ofs_tile + 0x04) x
-          WRITE_LONG (ofs_tile + 0x08) y
-        END
-      END
-    BUT_ONLY
-
-    // patching wed
-    COPY_EXISTING ~ar6400.wed~ ~override~
-      LPF ADD_WED_WALL_POLY
-        INT_VAR
-          flags = BIT0  // shade wall
-          vertex_0 = 2035 | (637 << 16)
-          vertex_1 = 2040 | (634 << 16)
-          vertex_2 = 2046 | (660 << 16)
-          vertex_3 = 2042 | (662 << 16)
-      END
-      LPF ADD_WED_WALL_POLY
-        INT_VAR
-          flags = BIT0  // shade wall
-          vertex_0 = 2045 | (650 << 16)
-          vertex_1 = 2077 | (633 << 16)
-          vertex_2 = 2079 | (638 << 16)
-          vertex_3 = 2059 | (649 << 16)
-          vertex_4 = 2056 | (656 << 16)
-          vertex_5 = 2051 | (658 << 16)
-          vertex_6 = 2051 | (652 << 16)
-      END
-      LPF ADD_WED_WALL_POLY
-        INT_VAR
-          flags = BIT0  // shade wall
-          vertex_0 = 2074 | (620 << 16)
-          vertex_1 = 2081 | (619 << 16)
-          vertex_2 = 2086 | (639 << 16)
-          vertex_3 = 2081 | (641 << 16)
-      END
-      LPF UPDATE_WED_WALLGROUPS END
-    BUT_ONLY
-
-    // patching search map
-    OUTER_SET sr_patched = 0
-    COPY_EXISTING ~ar6400sr.bmp~ ~override~
-      // pixel definitions (x-pos, y-pos, color index)
-      DEFINE_ARRAY sr_x BEGIN 130 128 129 130 127 128 129 130 131 128 129 130 128 129 END
-      DEFINE_ARRAY sr_y BEGIN 53 54 54 54 55 55 55 55 55 56 56 56 57 57 END
-      DEFINE_ARRAY sr_col BEGIN 8 8 8 8 8 8 8 9 9 8 9 9 9 9 END
-
-      READ_ASCII 0x00 sig (2)
-      READ_LONG 0x02 file_size
-      PATCH_IF (~%sig%~ STR_EQ ~BM~ && file_size <= BUFFER_LENGTH) BEGIN
-        READ_LONG 0x0a ofs_pixels
-        READ_LONG 0x0e header_size
-        PATCH_MATCH header_size WITH
-          40 108 124 BEGIN  // BITMAPINFOHEADER, BITMAPV4HEADER, or BITMAPV5HEADER
-            READ_LONG 0x12 width
-            READ_LONG 0x16 height
-            READ_SHORT 0x1c bpp
-            READ_LONG 0x1e compression
-            // only uncompressed 4-bit pixel data is supported
-            PATCH_IF (bpp == 4 && compression == 0) BEGIN
-              SET stride = (width * bpp + 31) / 32 * 4  // bytes per pixel row
-              PHP_EACH sr_x AS idx => x BEGIN
-                SET y = $sr_y(~%idx%~)
-                SET col = $sr_col(~%idx%~)
-                SET x_pos = x / 2
-                SET is_high = (x & 1) == 0
-                SET clear_mask = BNOT (0xf << (is_high * 4))
-                SET color = col << (is_high * 4)
-                SET ofs = ofs_pixels + ((height - y - 1) * stride) + x_pos
-                WRITE_BYTE ofs (THIS & clear_mask) | color
-              END
-              SET sr_patched = 1
-            END
-          END
-          DEFAULT
-        END
-      END
-    BUT_ONLY
-
-    ACTION_IF (NOT sr_patched) BEGIN
-      // fall-back solution
-      COPY ~%MOD_FOLDER%/bmp/ar6400sr.bmp~ ~override~
-    END
-
-    // patching are
-    COPY_EXISTING ~ar6400.are~ ~override~
-      // info trigger
-      LPF fj_are_structure
-        INT_VAR
-          fj_type = 1 // info trigger
-          fj_box_left = 2039
-          fj_box_top = 643
-          fj_box_right = 2109
-          fj_box_bottom = 693
-          fj_cursor_idx = 28
-          fj_flags = 0
-          fj_loc_x = 2070
-          fj_loc_y = 662
-          fj_vertex_0 = 2039 | (665 << 16)
-          fj_vertex_1 = 2091 | (643 << 16)
-          fj_vertex_2 = 2109 | (670 << 16)
-          fj_vertex_3 = 2058 | (693 << 16)
-        STR_VAR
-          fj_structure_type = ~region~
-          fj_name = ~tran-a7wp01_info~
-          fj_reg_script = ~a7wp01x~
-      END
-      // travel trigger
-      LPF fj_are_structure
-        INT_VAR
-          fj_type = 2 // travel trigger
-          fj_box_left = 2039
-          fj_box_top = 643
-          fj_box_right = 2109
-          fj_box_bottom = 693
-          fj_cursor_idx = 28
-          fj_flags = BIT2 | BIT8 | BIT9 // Party required, Trigger deactivated, Cannot be passed by NPC
-          fj_loc_x = 2100
-          fj_loc_y = 700
-          fj_vertex_0 = 2039 | (665 << 16)
-          fj_vertex_1 = 2091 | (643 << 16)
-          fj_vertex_2 = 2109 | (670 << 16)
-          fj_vertex_3 = 2058 | (693 << 16)
-        STR_VAR
-          fj_structure_type = ~region~
-          fj_name = ~tran-a7wp01~
-          fj_destination_area = ~a7wp01~
-          fj_destination_name = ~fr6400~
-      END
-        // entrance
-      LPF fj_are_structure
-        INT_VAR
-          fj_loc_x = 2112
-          fj_loc_y = 714
-          fj_orientation = 14 // SE
-        STR_VAR
-          fj_structure_type = ~entrance~
-          fj_name = ~fr-a7wp01~
-      END
-
-      // replace and relocate dead body
-      GET_OFFSET_ARRAY actors_array ARE_V10_ACTORS
-      PHP_EACH actors_array AS _ => ofs BEGIN
-        READ_SHORT (ofs + 0x20) x
-        READ_SHORT (ofs + 0x22) y
-        PATCH_IF (x >= 2080 && x < 2100 && y >= 690 && y < 710) BEGIN
-          // move to the bottom-right
-          FOR (i = 0; i < 4; ++i) BEGIN
-            WRITE_SHORT (ofs + 0x20 + i * 2) (THIS + 16)
-          END
-          WRITE_ASCII (ofs + 0x80) ~a7-wpdb1~ (8)
-        END
-      END
-    BUT_ONLY
-
-    // permanent corpse required for the fallback option to advance the quest
-    COPY_EXISTING ~deadb02.cre~ ~override/a7-wpdb1.cre~
-      WRITE_LONG 0x10 (THIS | BIT2) // enable flag "Permanent corpse"
-
-    EXTEND_TOP ~ar6400.bcs~ ~%MOD_FOLDER%/bcs/bg2-ar6400-top.baf~
-
-    COMPILE ~%MOD_FOLDER%/bcs/a7wp01x.baf~
-
-    // installing new area: Ritual Chamber
-    COPY ~%MOD_FOLDER%/are/a7wp01.are~ ~override~
-      // updating region text
-      GET_OFFSET_ARRAY regions_array ARE_V10_REGIONS
-      PHP_EACH regions_array AS _ => region_ofs BEGIN
-        READ_ASCII region_ofs region_name (32) NULL
-        PATCH_IF (~%region_name%~ STR_EQ ~Pentragram~) BEGIN
-          SAY (region_ofs + 0x64) @100  // You see an empty pentagram...
-        END
-      END
-      // updating automap notes
-      GET_OFFSET_ARRAY notes_array 0xc4 4 0xc8 4 0 0 0x34
-      PHP_EACH notes_array AS _ => note_ofs BEGIN
-        SAY (note_ofs + 0x04) @101  // Exit
-      END
-
-    COMPILE ~%MOD_FOLDER%/bcs/a7wp01.baf~
-
-    COPY ~%MOD_FOLDER%/bmp/a7wp01ht.bmp~ ~override~
-         ~%MOD_FOLDER%/bmp/a7wp01lm.bmp~ ~override~
-         ~%MOD_FOLDER%/bmp/a7wp01sr.bmp~ ~override~
-         ~%MOD_FOLDER%/pvrz/awp0100.pvrz~ ~override~
-         ~%MOD_FOLDER%/tis/a7wp01.tis~ ~override~
-         ~%MOD_FOLDER%/wav/a7wp01a.wav~ ~override~
-         ~%MOD_FOLDER%/wed/a7wp01.wed~ ~override~
-
-    // adding area names to debug menu
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY area_lua BEGIN
-      ~A7WP01~ => ~Ritual Chamber (Wares of the Planes)~
-      ~A7WP02~ => ~Random Encounter Outdoor, sand (Wares of the Planes)~
-      ~A7WP03~ => ~Random Encounter Outdoor, rocks (Wares of the Planes)~
-    END
-    LAF add_areas_lua
-      INT_VAR
-        tob = 1
-      STR_VAR
-        comment = ~Areas from Wares of the Planes~
-        map_array = ~area_lua~
-    END
-  END
 END

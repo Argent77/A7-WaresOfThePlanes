@@ -40,7 +40,7 @@ END
 
 
 // Triggers quest "Lure of Darkness"
-IF ~GlobalGT("Chapter","GLOBAL",%bg2_chapter_7%) Global("A7-DiscOffered","LOCALS",0)~ DarknessQuest.Intro
+IF ~Global("A7-Campaign","GLOBAL",4) GlobalGT("Chapter","GLOBAL",%bg2_chapter_7%) Global("A7-DiscOffered","LOCALS",0)~ DarknessQuest.Intro
   SAY @200 /* You come back at the right time. I have recently acquired a strange metal disc as payment for one of my items. */
   IF ~~ + DarknessQuest.Disc.1
 END

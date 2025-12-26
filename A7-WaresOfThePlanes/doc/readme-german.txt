@@ -157,12 +157,12 @@ Versionshistorie
   - Vambraces of Evil's Warding: Fixed self-damage interval for evil characters
   - Cowl of Deepest Shadows: Fixed casting level of Mislead ability
   - Phantom Dagger +3: Increased THAC0 bonus
+  - Elixir of Horrific Separation and Moridor's Box should not be available to Project Image/Simulacrum clones
   - Changed effect durations from seconds to rounds/turns for Fiend's Blood Dagger and Blind Terror +2
   - Fixed poison resistance types of Fiend's Blood Dagger, Vroc's Club, and Club of Nettles
   - Chaos Feather: Mention effect durations in item description
   - Devil's Due: Fixed incorrect AC bonus definition
   - Fixed and improved several item descriptions
-  - Elixir of Horrific Separation and Moridor's Box should not be available to Project Image/Simulacrum clones
 
 1.4
 - Added French translation (thanks Deratiseur)
