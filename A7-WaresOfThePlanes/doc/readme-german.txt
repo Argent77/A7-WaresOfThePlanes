@@ -53,6 +53,10 @@ Eine kleine Anzahl von Gegenständen könnten mit den Mods „Made in Heaven - I
 und „The shooter's delight” von Deratiseur überlappen, was aber außer einigen gleichnamigen
 Gegenständen keine weiteren Probleme verursacht.
 
+Lefreut's GUI Mods (alle Varianten) sind nicht vollständig kompatibel mit einem GUI-Feature, das
+in dieser Mod genutzt wird. Stattdessen wird eine Ersatzlösung installiert, die den gleichen Zweck
+erfüllt, aber nicht ganz so überzeugend wirkt.
+
 
 Komponenten
 ~~~~~~~~~~~

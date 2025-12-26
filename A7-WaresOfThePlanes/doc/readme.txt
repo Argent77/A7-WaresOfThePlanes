@@ -50,6 +50,9 @@ A small number of items may overlap with items from Angel's "Made in Heaven - It
 Deratiseur's "The shooter's delight". They won't interfere with each other except by having the
 same item names.
 
+Lefreut's GUI mods (all variants) are not fully compatible with a GUI feature used by this mod.
+A replacement is used instead which serves the same purpose but is not as immersive.
+
 
 Components
 ~~~~~~~~~~
