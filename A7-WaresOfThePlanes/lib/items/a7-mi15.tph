@@ -1,5 +1,7 @@
 // Item: Ornate Green Steel Disc
 
+ACTION_IF (has_bg2) BEGIN
+
 INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 
 OUTER_SPRINT itm_resref ~a7-mi15~
@@ -20,4 +22,6 @@ STR_VAR
   itm_resref
   icon_resref
   desc_image_resref
+END
+
 END

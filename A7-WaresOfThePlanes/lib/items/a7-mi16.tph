@@ -1,5 +1,7 @@
 // Item: Cultist Notes (two variants)
 
+ACTION_IF (has_bg2) BEGIN
+
 INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 
 OUTER_SPRINT itm_resref ~a7-mi16~
@@ -23,4 +25,6 @@ ACTION_FOR_EACH resref IN ~%itm_resref%~ ~%itm_resref_alt%~ BEGIN
     icon_resref
     desc_image_resref
   END
+END
+
 END

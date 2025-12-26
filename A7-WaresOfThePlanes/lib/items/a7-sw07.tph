@@ -1,5 +1,7 @@
 // Item: Morrow's End +5
 
+ACTION_IF (has_bg2) BEGIN
+
 INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 
 OUTER_SPRINT itm_resref ~a7-sw07~
@@ -69,3 +71,5 @@ COPY ~%MOD_FOLDER%/spl/%itm_resref%c.spl~ ~override~
       match_parameter2 = 1
       parameter2 = splprot_ldi
   END
+
+END
