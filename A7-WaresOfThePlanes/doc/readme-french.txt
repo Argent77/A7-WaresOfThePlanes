@@ -123,6 +123,8 @@ Barazhad truetype font by Pixel Sagas Freeware Fonts.
 
 Portrait de marchand basé sur "RPG Dwarf Males 41" par ttb2112-ai sur DeviantArt.
 
+Anarazel portrait based on "Nyxaroth" by DragonGrognard on DeviantArt.
+
 
 historique des versions
 ~~~~~~~~~~~~~~~~~~~~~~~

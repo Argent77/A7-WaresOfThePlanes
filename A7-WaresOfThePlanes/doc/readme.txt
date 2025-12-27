@@ -141,6 +141,8 @@ Barazhad truetype font by Pixel Sagas Freeware Fonts.
 
 Merchant portrait based on "RPG Dwarf Males 41" by ttb2112-ai on DeviantArt.
 
+Anarazel portrait based on "Nyxaroth" by DragonGrognard on DeviantArt.
+
 
 Version History
 ~~~~~~~~~~~~~~~

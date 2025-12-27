@@ -9,10 +9,12 @@ END
 IF ~True()~ tome.intro
   SAY @210 /* The book is surrounded by a sinister aura of unnatural darkness that makes you feel uneasy just by holding it in your hands. Speaking the command word written on the book's cover allows you to open it. */
   // Perform "Abyssal Pact"
-  + ~CheckStatGT(LastTalkedToBy,8,INT) !InPartySlot(LastTalkedToBy,0) !Name("Imoen2",LastTalkedToBy)~
+  + ~CheckStatGT(LastTalkedToBy,8,INT) !InPartySlot(LastTalkedToBy,0) !Name("Imoen2",LastTalkedToBy) !Name("Sarevok",LastTalkedToBy)~
     + @211 /* Perform the demonic ritual "Abyssal Pact." */ + tome.pact.npc.1
   + ~CheckStatGT(LastTalkedToBy,8,INT)  !InPartySlot(LastTalkedToBy,0) Name("Imoen2",LastTalkedToBy)~
-    + @211 /* Perform the demonic ritual "Abyssal Pact." */ EXTERN ~imoen25j~ imoen.pact.1
+    + @211 /* Perform the demonic ritual "Abyssal Pact." */ + tome.pact.imoen.1
+  + ~CheckStatGT(LastTalkedToBy,8,INT)  !InPartySlot(LastTalkedToBy,0) Name("Sarevok",LastTalkedToBy)~
+    + @211 /* Perform the demonic ritual "Abyssal Pact." */ + tome.pact.sarevok.1
   + ~CheckStatGT(LastTalkedToBy,8,INT) InPartySlot(LastTalkedToBy,0) Alignment(LastTalkedToBy,MASK_EVIL)~
     + @211 /* Perform the demonic ritual "Abyssal Pact." */ + tome.pact.1
   + ~CheckStatGT(LastTalkedToBy,8,INT) InPartySlot(LastTalkedToBy,0) !Alignment(LastTalkedToBy,MASK_EVIL) CheckStat(LastTalkedToBy,1,PROTECTION_FROM_EVIL)~
@@ -106,9 +108,22 @@ IF ~~ tome.knowledge.changed.1
 END
 
 
-// Anyone EXCEPT Charname or Imoen: ritual cannot be performed
+// Anyone EXCEPT Charname: ritual cannot be performed
 IF ~~ tome.pact.npc.1
   SAY @219 /* Reading the introductory passage about the ritual makes it clear very quickly that the practitioner must either provide or contain a strong link to supernatural forces. You can't meet either of the requirements. */
+  IF ~~ EXIT
+END
+
+// Imoen's reaction to the "Abyssal Pact" ritual
+IF ~~ tome.pact.imoen.1
+  SAY @221 /* Oh no, there is no way in hell I'd even consider it. Having odd dreams about Bhaal is bad enough. */
+  IF ~~ EXIT
+END
+
+// Sarevok's reaction to the "Abyssal Pact" ritual
+IF ~~ tome.pact.sarevok.1
+  SAY @249 /* Ha, it's ironic that I'm only getting my hands on this book now that it has become useless to me. */
+  = @250 /* Find another fool to use its powers, <CHARNAME>. Looking at it just puts me into a foul mood. */
   IF ~~ EXIT
 END
 
@@ -135,11 +150,11 @@ END
 IF ~~ tome.pact.2
   SAY @222 /* The preparatory paragraph goes into more detail what is required to successfully perform the ritual. The practitioner must surrender a good portion of their spiritual essence to ensure the aid of the demon. */
   IF ~~ + tome.pact.2a
-  IF ~OR(3) !InParty(Player2) !See(Player2) !Range(Player2,15)
-      OR(3) !InParty(Player3) !See(Player3) !Range(Player3,15)
-      OR(3) !InParty(Player4) !See(Player4) !Range(Player4,15)
-      OR(3) !InParty(Player5) !See(Player5) !Range(Player5,15)
-      OR(3) !InParty(Player6) !See(Player6) !Range(Player6,15)~ + tome.pact.2b
+  IF ~OR(3) !InParty(Player2) !Detect(Player2) !Range(Player2,15)
+      OR(3) !InParty(Player3) !Detect(Player3) !Range(Player3,15)
+      OR(3) !InParty(Player4) !Detect(Player4) !Range(Player4,15)
+      OR(3) !InParty(Player5) !Detect(Player5) !Range(Player5,15)
+      OR(3) !InParty(Player6) !Detect(Player6) !Range(Player6,15)~ + tome.pact.2b
 END
 
 IF ~~ tome.pact.2a
@@ -148,29 +163,29 @@ IF ~~ tome.pact.2a
   + ~XPLT(LastTalkedToBy,%min_charname_xp%)~ + @225 /* Begin with the preparations. */ + tome.pact.failed.xp.1
 
   // Choose a party member to sacrifice
-  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player2) See(Player2) Range(Player2,15) !XPLT(Player2,%min_npc_xp%)~
+  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player2) Detect(Player2) Range(Player2,15) !XPLT(Player2,%min_npc_xp%)~
     + @226 /* Begin with the preparations and choose <PLAYER2> as your sacrifice. */ + tome.pact.p2.1
-  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player2) See(Player2) Range(Player2,15) XPLT(Player2,%min_npc_xp%)~
+  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player2) Detect(Player2) Range(Player2,15) XPLT(Player2,%min_npc_xp%)~
     + @226 /* Begin with the preparations and choose <PLAYER2> as your sacrifice. */ + tome.pact.failed.sacrifice.1
 
-  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player3) See(Player3) Range(Player3,15) !XPLT(Player3,%min_npc_xp%)~
+  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player3) Detect(Player3) Range(Player3,15) !XPLT(Player3,%min_npc_xp%)~
     + @227 /* Begin with the preparations and choose <PLAYER3> as your sacrifice. */ + tome.pact.p3.1
-  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player3) See(Player3) Range(Player3,15) XPLT(Player3,%min_npc_xp%)~
+  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player3) Detect(Player3) Range(Player3,15) XPLT(Player3,%min_npc_xp%)~
     + @227 /* Begin with the preparations and choose <PLAYER3> as your sacrifice. */ + tome.pact.failed.sacrifice.1
 
-  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player4) See(Player4) Range(Player4,15) !XPLT(Player4,%min_npc_xp%)~
+  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player4) Detect(Player4) Range(Player4,15) !XPLT(Player4,%min_npc_xp%)~
     + @228 /* Begin with the preparations and choose <PLAYER4> as your sacrifice. */ + tome.pact.p4.1
-  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player4) See(Player4) Range(Player4,15) XPLT(Player4,%min_npc_xp%)~
+  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player4) Detect(Player4) Range(Player4,15) XPLT(Player4,%min_npc_xp%)~
     + @228 /* Begin with the preparations and choose <PLAYER4> as your sacrifice. */ + tome.pact.failed.sacrifice.1
 
-  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player5) See(Player5) Range(Player5,15) !XPLT(Player5,%min_npc_xp%)~
+  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player5) Detect(Player5) Range(Player5,15) !XPLT(Player5,%min_npc_xp%)~
     + @229 /* Begin with the preparations and choose <PLAYER5> as your sacrifice. */ + tome.pact.p5.1
-  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player5) See(Player5) Range(Player5,15) XPLT(Player5,%min_npc_xp%)~
+  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player5) Detect(Player5) Range(Player5,15) XPLT(Player5,%min_npc_xp%)~
     + @229 /* Begin with the preparations and choose <PLAYER5> as your sacrifice. */ + tome.pact.failed.sacrifice.1
 
-  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player6) See(Player6) Range(Player6,15) !XPLT(Player6,%min_npc_xp%)~
+  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player6) Detect(Player6) Range(Player6,15) !XPLT(Player6,%min_npc_xp%)~
     + @230 /* Begin with the preparations and choose <PLAYER6> as your sacrifice. */ + tome.pact.p6.1
-  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player6) See(Player6) Range(Player6,15) XPLT(Player6,%min_npc_xp%)~
+  + ~!XPLT(LastTalkedToBy,%min_charname_xp%) InParty(Player6) Detect(Player6) Range(Player6,15) XPLT(Player6,%min_npc_xp%)~
     + @230 /* Begin with the preparations and choose <PLAYER6> as your sacrifice. */ + tome.pact.failed.sacrifice.1
 
   ++ @223 /* Stop the preparations and put the book away. */ EXIT
@@ -270,14 +285,6 @@ END
 IF ~~ tome.pact.holyground.1
   SAY @244 /* You try to perform the necessary rites to attune your soul to the ritual, but it seems to fail no matter what you do. The righteous energies of this place prevent any attempts to reach the lower planes. You have no choice but to put all preparations for the ritual on hold. */
   IF ~~ EXIT
-END
-
-// Imoen's reaction to the "Abyssal Pact" ritual
-APPEND ~imoen25j~
-  IF ~~ imoen.pact.1
-    SAY @221 /* Oh no, there is no way in hell I'd even consider it. Having odd dreams about Bhaal is bad enough. */
-    IF ~~ EXIT
-  END
 END
 
 

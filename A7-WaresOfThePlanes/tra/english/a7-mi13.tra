@@ -114,6 +114,8 @@ The transformation into an undead creature is based on the caster's level:
 @246 = ~As you browse through the tome, it quickly becomes apparent that the complexity of the ideas and theories far exceeds your mental capacities.~
 @247 = ~The content of the tome looks alien to you. You can spot several funny-looking drawings but they don't make any sense.~
 @248 = ~Some of the theories described in the tome reveal secrets so dark and evil that your conscious mind cannot grasp them.~
+@249 = ~Ha, it's ironic that I'm only getting my hands on this book now that it has become useless to me.~
+@250 = ~Find another fool to use its powers, <CHARNAME>. Looking at it just puts me into a foul mood.~
 
 // cutscene: ambush
 @300 = ~Ah, they came as predicted.~

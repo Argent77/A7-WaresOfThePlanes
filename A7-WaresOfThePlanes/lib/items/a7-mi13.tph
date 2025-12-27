@@ -278,6 +278,8 @@ WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
     WRITE_ASCII SCRIPT_DEFAULT ~a7-ddef~ (8)    // default attack script
     WRITE_ASCII DIALOG ~a7-deman~ (8)
 
+  COPY ~%MOD_FOLDER%/bmp/a7-deman.bmp~ ~override~
+
   COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-deman.baf~
                ~%MOD_FOLDER%/bcs/a7-dlrd.baf~
                ~%MOD_FOLDER%/bcs/a7-ddef.baf~
@@ -497,6 +499,10 @@ WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
         match_parameter1 = 1
         parameter1 = RESOLVE_STR_REF(@81) // Divine essence removed
     END
+
+  COPY ~%MOD_FOLDER%/spl/a7-dsm2a.spl~ ~override~
+       ~%MOD_FOLDER%/vvc/a7-dsm2a.vvc~ ~override~
+       ~%MOD_FOLDER%/bmp/a7-dsm2a.bmp~ ~override~
 
   COPY ~%MOD_FOLDER%/vef/a7-dsig.vef~ ~override~
        ~%MOD_FOLDER%/vvc/a7-dsiga.vvc~ ~override~
