@@ -1,11 +1,12 @@
 Waren der Ebenen (für BG:EE, SoD, BG2:EE und EET)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:    1.4
+Version:    2.0
 Autor:      Argent77
 
 Download:   https://github.com/Argent77/A7-WaresOfThePlanes/releases/latest
-Diskussion: https://www.gibberlings3.net/forums/topic/38054-wares-of-the-planes-planescape-items-for-baldurs-gate
+Diskussion: https://www.baldurs-gate.de/index.php?threads/waren-der-ebenen.45916
+            https://www.gibberlings3.net/forums/topic/38054-wares-of-the-planes-planescape-items-for-baldurs-gate
             https://forums.beamdog.com/discussion/88361/wares-of-the-planes-planescape-items-for-baldurs-gate
 
 
