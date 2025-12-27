@@ -116,7 +116,7 @@ Die Verwandlung in ein untotes Wesen hängt von der Stufe des Zaubernden ab:
 @247 = ~Der Buchinhalt kommt Euch fremd vor. Ihr entdeckt mehrere komisch aussehende Zeichungen, die jedoch keinen Sinn ergeben.~
 @248 = ~Einige der im Buch beschriebenen Theorien enthüllen Geheimnisse, so finster und böse, dass Euer Verstand sie nicht erfassen kann.~
 @249 = ~Ha, es ist eine Ironie des Schicksals, dass ich dieses Buch erst jetzt in die Finger bekomme, wo es für mich nutzlos geworden ist.~
-@250 = ~Finde einen anderen Narren, der damit etwas anfangen kann, <CHARNAME>. Wenn ich es nur anschaue, bekomme ich schlechte Laune.~
+@250 = ~Findet einen anderen Narren, der damit etwas anfangen kann, <CHARNAME>. Wenn ich es nur anschaue, bekomme ich schlechte Laune.~
 
 // cutscene: ambush
 @300 = ~Ah, sie sind gekommen, wie vorhergesagt.~
