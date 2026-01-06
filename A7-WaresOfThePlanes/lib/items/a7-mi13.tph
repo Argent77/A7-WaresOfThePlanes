@@ -311,6 +311,7 @@ WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
 
   COPY ~%MOD_FOLDER%/eff/a7-dem04.eff~ ~override~
        ~%MOD_FOLDER%/spl/a7-dem01.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-xdem4.spl~ ~override~
 
   ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-dem04.pro~ ~AoE_8_ft_Not_Party~
   COPY ~%MOD_FOLDER%/spl/a7-dem04.spl~ ~override~
