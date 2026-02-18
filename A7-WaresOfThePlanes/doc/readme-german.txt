@@ -78,7 +78,7 @@ Der reisende Händler bietet insgesamt
 - 17 Dolche
 - 10 Streitäxte
 - 9 verschiedene Bolzentypen
-- 5 Kriegshämmer
+- 6 Kriegshämmer
 - 5 Keulen
 - 4 Streitkolben
 - 1 Morgenstern

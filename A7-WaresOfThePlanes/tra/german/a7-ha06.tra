@@ -1,0 +1,61 @@
+// Soul Mirror (related lines)
+
+@20 = ~Spürt ein leichtes Kitzeln~
+@21 = ~Attribut gesenkt~
+
+
+// Dialog lines
+// Jegg Hillcarver (100-199)
+@100 = ~Ich habe vor kurzem diesen Kriegshammer erworben. Da er offensichtlich eine Zwergenkonstruktion ist, frage ich mich, ob Ihr ihn noch weiter verbessern könnt?~
+@101 = ~Oh, das ist eine Konstruktion, die ich schon lange nicht mehr gesehen habe. Von unseren Verwanden aus den Außenländern, würde ich sagen. Lasst mich mal sehen. Vielleicht kann ich damit was anfangen.~
+@102 = ~Bitte sehr.~
+@103 = ~Ich habe mich anders entschieden. Die Waffe ist gut genug, wie sie ist.~
+@104 = ~Das wars. Ich konnte die Grundverzauberung des Hammers erneuern. Er sollte jetzt genauer treffen. Hier, nehmt ihn!~
+
+// Cromwell (200-299)
+@200 = ~Ach jetzt… hab nie gedacht, jemals eine Arbeit unserer Verwandten aus den Außenländern zu sehen. Das ist Seelenspiegel—eine wirklich mächtige Waffe.~
+@201 = ~Hmm, die Verzauberung der Waffe scheint sich mit der Zeit abgeschwächt zu haben. Ich könnte den ursprünglichen Zustand wiederherstellen. Das würde Euch aber 2.000 Goldmünzen kosten.~
+@202 = ~Ich werde weiter nachschauen, mal sehen, hmmmm…~
+@203 = ~Nun, mit der wiederhergestellten Verzauberung könnte ich Seelenspiegel noch weiter verbessern.~
+@204 = ~Ihr habt Schriftrollen zum Beschwören von Feuer-, Luft- und Erdelementaren bei Euch. Wenn Ihr wollt, dann könnte ich ihren Zorn in die Waffe einbinden.~
+@205 = ~Wenn Ihr Schriftrollen zum Beschwören von Feuer-, Luft- und Erdelementaren besitzen würdet, dann könnte ich sie noch gefährlicher machen.~
+
+// Cespenar (300-399)
+@300 = ~Ooh, was ist das hier? Ein großer Hammer? Ah, Seelenspiegel! Das ist ein Hammer für Leute mit Gehirnschmalz. Für 3.000 Goldmünzen könnte ich ich Staub entfernen und ihn besser zuschlagen lassen. Wollt Ihr das?~
+@301 = ~Mal sehen, was Ihr noch habt.~
+@302 = ~Ooh, was ist das hier? Ein großer Hammer? Ah, Seelenspiegel! Das ist ein Hammer für Leute mit Gehirnschmalz. Vielleicht braucht Ihr davon etwas mehr? Hi-hi!~
+@303 = ~Oh, schon wieder Seelenspiegel? War Staubwischen nicht genug für Euch?~
+@304 = ~Wenn Ihr Schriftrollen zum Beschwören von Feuer-, Luft- und Erdelementaren hättet, dann könnte ich ihn noch schlagkräftiger machen. Leider habt ihr keine.~
+@305 = ~Mit Schriftrollen zum Beschwören von Feuer-, Luft- und Erdelementaren könnte ich ihn noch schlagkräftiger machen. Das geht aber nur für schlaue Leute. Schmieden kostet 7.500 Goldmünzen. Wollt Ihr?~
+@306 = ~Oh, schon wieder Seelenspiegel? Vielleicht seid Ihr nicht schlau genug?~
+@307 = ~Oh, schon wieder Seelenspiegel? Der Hammer ist wie eine Falschmünze. Er kommt immer wieder zurück, auch wenn man es nicht will.~
+@308 = ~Mit einem Haufen Schriftrollen könnte er noch mehr Schaden anrichten, selbst wenn Euer Hirn nicht richtig arbeitet. Ihr habt Schriftrollen für Blindheit, Taubheit, Verlangsamen, Verwirrung, Unsichtbarkeit und Glück. Jetzt brauche ich nur noch 10.000 GP für die Zauberarbeit. Wollt Ihr?~
+@309 = ~Jedenfalls habe ich Rezept, um Hammer Zusatzschaden anrichten zu lassen, falls Euer Hirn nicht richtig arbeitet. Dafür brauche ich Schriftrollen für Blindheit, Taubheit, Verlangsamen, Verwirrung, Unsichtbarkeit und Glück. Habt Ihr aber nicht. Kann daher Rezept nicht anwenden.~
+
+
+// Journal entries
+@500 = ~Verbesserung des Seelenspiegels
+
+Jegg Hügelschneider konnte den Kriegshammer Seelenspiegel verbessern. Die Waffe kann jetzt genauer treffen.~
+
+
+@510 = ~Verbesserung des Seelenspiegels
+
+Cromwell nutzte Runenmagie der Zwerge, um weitere Verzauberungen des Seelenspiegels zu erwecken. Er sollte jetzt zusätzlichen Elementarschaden austeilen, falls der Träger die notwendige geistige Disziplin besitzt.~
+
+@511 = ~Verbesserung des Seelenspiegels
+
+Cromwell konnte den Kriegshammer Seelenspiegel verbessern. Die Waffe kann jetzt genauer treffen.~
+
+
+@520 = ~Verbesserung des Seelenspiegels
+
+Cespenar benutzte seine Magie, um das volle Potenzial des Seelenspiegels freizusetzen. Die Waffe kann jetzt den geistigen Zustand des Trägers in Spezialeffekte umwandeln.~
+
+@521 = ~Verbesserung des Seelenspiegels
+
+Cespenar nutzte Runenmagie der Zwerge, um weitere Verzauberungen des Seelenspiegels zu erwecken. Er sollte jetzt zusätzlichen Elementarschaden austeilen, falls der Träger die notwendige geistige Disziplin besitzt.~
+
+@522 = ~Verbesserung des Seelenspiegels
+
+Cespenar konnte den Kriegshammer Seelenspiegel verbessern. Die Waffe kann jetzt genauer treffen.~

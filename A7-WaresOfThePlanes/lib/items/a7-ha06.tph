@@ -1,0 +1,198 @@
+// Item: Soul Mirror
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-ha06~
+
+// Installing SPLPROT.2DA entries
+OUTER_SET splprot_entries = 10
+ACTION_DEFINE_ASSOCIATIVE_ARRAY splprot_entries BEGIN
+  ~0~, ~label~    => ~STAT(WIS)=n~
+  ~0~, ~stat~     => ~39~
+  ~0~, ~value~    => ~-1~
+  ~0~, ~relation~ => ~1~
+
+  ~1~, ~label~    => ~STAT(INT)=n~
+  ~1~, ~stat~     => ~38~
+  ~1~, ~value~    => ~-1~
+  ~1~, ~relation~ => ~1~
+
+  ~2~, ~label~    => ~STAT(LUCK)>0~
+  ~2~, ~stat~     => ~32~
+  ~2~, ~value~    => ~0~
+  ~2~, ~relation~ => ~3~
+
+  ~3~, ~label~    => ~STATEBITS=STATE_BERSERK~
+  ~3~, ~stat~     => ~0x111~
+  ~3~, ~value~    => ~0x00000002~
+  ~3~, ~relation~ => ~8~
+
+  ~4~, ~label~    => ~STATEBITS=STATE_SILENCED~
+  ~4~, ~stat~     => ~0x111~
+  ~4~, ~value~    => ~0x00001000~
+  ~4~, ~relation~ => ~8~
+
+  ~5~, ~label~    => ~STATEBITS=STATE_HASTED~
+  ~5~, ~stat~     => ~0x111~
+  ~5~, ~value~    => ~0x00008000~
+  ~5~, ~relation~ => ~8~
+
+  ~6~, ~label~    => ~STATEBITS=STATE_SLOWED~
+  ~6~, ~stat~     => ~0x111~
+  ~6~, ~value~    => ~0x00010000~
+  ~6~, ~relation~ => ~8~
+
+  ~7~, ~label~    => ~STATEBITS=STATE_BLESS~
+  ~7~, ~stat~     => ~0x111~
+  ~7~, ~value~    => ~0x00800000~
+  ~7~, ~relation~ => ~8~
+
+  ~8~, ~label~    => ~STATEBITS=STATE_DRAWUPONHOLYMIGHT~
+  ~8~, ~stat~     => ~0x111~
+  ~8~, ~value~    => ~0x02000000~
+  ~8~, ~relation~ => ~8~
+
+  ~9~, ~label~    => ~STATEBITS=STATE_CONFUSED~
+  ~9~, ~stat~     => ~0x111~
+  ~9~, ~value~    => ~0x80000000~
+  ~9~, ~relation~ => ~8~
+END
+
+OUTER_FOR (i = 0; i < splprot_entries; ++i) BEGIN
+  OUTER_SPRINT name $splprot_entries(~%i%~ ~label~)
+  OUTER_SPRINT name ~*_%name%~
+  LAF get_splprot_entry
+    INT_VAR
+      stat = $splprot_entries(~%i%~ ~stat~)
+      value = $splprot_entries(~%i%~ ~value~)
+      relation = $splprot_entries(~%i%~ ~relation~)
+    STR_VAR name
+    RET $splprot_entries(~%i%~ ~ref~) = index
+  END
+END
+
+// Installing items
+ACTION_FOR_EACH suffix IN ~a~ ~b~ ~c~ ~d~ BEGIN
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%%suffix%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref = EVAL ~%itm_resref%%suffix%~
+      RET
+        icon_resref
+        desc_image_resref
+    END
+    // updating SPLPROT indices
+    FOR (i = 0; i < splprot_entries; ++i) BEGIN
+      LPF alter_item_effect_ex
+        INT_VAR
+          check_headers = 1
+          match_opcode = 326  // Apply effects list
+          match_parameter2 = i
+          parameter2 = $splprot_entries(~%i%~ ~ref~)
+      END
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    icon_resref
+    desc_image_resref
+  END
+END
+
+// Installing additional resources
+COPY ~%MOD_FOLDER%/spl/a7-ha06.spl~ ~override~
+  FOR (i = 0; i < splprot_entries; ++i) BEGIN
+    LPF alter_item_effect_ex
+      INT_VAR
+        check_headers = 1
+        match_opcode = 326  // Apply effects list
+        match_parameter2 = i
+        parameter2 = $splprot_entries(~%i%~ ~ref~)
+    END
+  END
+
+COPY ~%MOD_FOLDER%/eff/a7-ha06a.eff~ ~override~
+     ~%MOD_FOLDER%/eff/a7-ha06b.eff~ ~override~
+     ~%MOD_FOLDER%/eff/a7-ha06c.eff~ ~override~
+     ~%MOD_FOLDER%/eff/a7-ha06d.eff~ ~override~
+
+COPY ~%MOD_FOLDER%/spl/a7-ha061.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha062.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha064.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha065.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha066.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha067.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha068.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha069.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06#.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06_.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06a.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06b.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06c.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06d.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06e.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06f.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06g.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06h.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06i.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06j.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06k.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06l.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06m.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06s.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06t.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06u.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06v.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06w.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06x.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06y.spl~ ~override~
+     ~%MOD_FOLDER%/spl/a7-ha06z.spl~ ~override~
+
+// Add BG1>BG2 item import
+ACTION_IF (is_eet) BEGIN
+  EXTEND_BOTTOM ~bdsodimp.bcs~ ~%MOD_FOLDER%/bcs/a7-ha06-import.baf~
+  EXTEND_BOTTOM ~ar0319.bcs~ ~%MOD_FOLDER%/bcs/a7-ha06-import-spawn.baf~
+
+  // remove alarm script from table in Oghma Temple
+  COPY_EXISTING ~ar0319.are~ ~override~
+    LPF ALTER_AREA_CONTAINER
+      STR_VAR
+        container_name = ~Table 1~
+        container_script = ~~
+    END
+  BUT_ONLY
+END
+
+LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+  COPY ~%MOD_FOLDER%/spl/a7-ha06!.spl~ ~override~
+    LPF alter_item_effect_ex
+      INT_VAR
+        check_headers = 1
+        match_opcode = 139  // Display string
+        match_parameter1 = 20
+        parameter1 = RESOLVE_STR_REF(@20) // Feels a slight tickle
+    END
+
+  COPY ~%MOD_FOLDER%/spl/a7-ha063.spl~ ~override~
+    LPF alter_item_effect_ex
+      INT_VAR
+        check_headers = 1
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21) // Ability Score Drained
+    END
+
+  // item upgrade
+  ADD_JOURNAL @500 @510 @511 @520 @521 @522
+
+  ACTION_IF (has_sod) BEGIN
+    COMPILE ~%MOD_FOLDER%/dlg/a7-ha06-sod.d~
+  END
+
+  ACTION_IF (has_bg2) BEGIN
+    EXTEND_BOTTOM ~ar0334.bcs~ ~%MOD_FOLDER%/bcs/a7-ha06-wsmith.baf~
+    EXTEND_BOTTOM ~botsmith.bcs~ ~%MOD_FOLDER%/bcs/a7-ha06-botsmith.baf~
+    COMPILE ~%MOD_FOLDER%/dlg/a7-ha06-bg2.d~
+  END
+END

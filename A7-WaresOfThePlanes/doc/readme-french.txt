@@ -63,7 +63,7 @@ Le marchand ambulant offre un total de
 - 17 dagues
 - 10 haches d'armes
 - 9 types de carreaux différents
-- 5 marteaux de guerre
+- 6 marteaux de guerre
 - 5 gourdins
 - 4 masses
 - 1 Étoile du matin

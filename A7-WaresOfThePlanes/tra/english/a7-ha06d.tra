@@ -1,0 +1,81 @@
+// Soul Mirror +4
+
+@0 = ~Dwarven War Hammer~
+@1 = ~Soul Mirror +4~
+
+@10 = ~This war hammer is made of an unknown material that emits a soft argent glow. The surface of the hammerhead is covered with dwarven runes which indicates that powerful magic had been woven into the weapon.
+
+STATISTICS:
+
+Damage: 1d4+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6~
+@11 = ~Forged in the depths of the Dwarvish Mountains of the Outlands, Soul Mirror is a war hammer that was revered as both a relic and a test within the clan that forged it. The dwarves of this remote stronghold followed the triad of divine patrons—Dugmaren Brightmantle, Dumathoin the Keeper of Secrets Under the Mountain, and Vergadain the Laughing Dwarf—and the hammer embodies aspects of all three.
+
+The weapon is forged from star-iron which resonates faintly with planar neutrality inherent to the Outlands, with a single crystal inlaid in a niche on one side of the hammerhead. Like many things wrought in the Outlands, the hammer is suffused with the plane's tendency towards balance and neutrality. It does not reward fury, strength, or raw will to dominate, but instead amplifies the wielder's clarity of thought, intuition and mental discipline. A dwarf who wields the hammer is said to "carry the weight of their own thoughts into battle", making it as much a religious tool as a martial one.
+
+The artifact was lost during a raid on a neighboring elven settlement. It eventually wound up in the possession of a member of Sigil's faction of the Believers of the Source where it continued to be used as a test of faith and clarity for new faction members.
+
+Unlike regular weapons Soul Mirror draws its power from the wielder's mental strength, which makes it a deadly tool for a wise sage but reduces it to nothing more than a toy for savage barbarians. Although originally forged by and for dwarves, this weapon can be wielded by members of any race without apparent restrictions. However, given the craftmanship of dwarven weaponsmiths, one can never be certain.
+
+Cespenar was able to draw out the full potential of the weapon. In addition to drawing power from the wielder's clarity of thought and mental discipline, the weapon is now able to transform the state of the wielder's mind into specific effects.
+
+STATISTICS:
+
+Equipped abilities:
+– THAC0: +2 bonus vs. Elves (dwarves only)
+– Damage: +2 bonus vs. Elves (dwarves only)
+– THAC0: -2 penalty vs. Dwarves (elves only)
+– Damage: -2 penalty vs. Dwarves (elves only)
+
+Combat abilities:
+– Amount of physical damage depends on the wielder's wisdom.
+  5-7: 1d2 damage
+  8-9: 1d4 damage
+  10-11: 1d4+2 damage
+  12-13: 1d6+2 damage
+  14-15: 1d6+4 damage
+  16-17: 1d8+4 damage
+  18-19: 1d8+6 damage
+  20: 1d10+6 damage
+  21: 1d10+8 damage
+  22: 1d12+8 damage
+  23: 1d12+10 damage
+  24: 1d16+10 damage
+  25: 1d20+10 damage
+
+– Amount of elemental bonus damage depends on the wielder's intelligence:
+  15-17: +1 fire
+  18-19: +1 fire, +1 cold
+  20: +1 fire, +1 cold, +1 acid
+  21: +1 fire, +1 cold, +1 acid, +1 electrical
+  22: +1 fire, +1 cold, +1 acid, +1 electrical, +1 poison
+  23: +1d2 fire, +1d2 cold, +1 acid, +1 electrical, +1 poison
+  24: +1d4 fire, +1d4 cold, +1d2 acid, +1d2 electrical, +1d2 poison
+  25: +1d4 fire, +1d4 cold, +1d4 acid, +1d4 electrical, +1d4 poison
+
+– The mental state of the wielder may trigger additional effects:
+  Blinded: 20% chance to turn the wielder invisible for one round.
+  Draw Upon Holy Might: 20% chance to drain 5 points of strength from the target for one round (no save).
+  Bless: 20% chance to curse the target for one round (no save).
+  Luck: 20% chance to cause "Bad Luck" on the target for one round (no save).
+  Silenced: 20% chance to cause "Miscast Magic" on the target for one round (no save).
+  Berserk: Causes "Panic" on the target for one round (Save vs. Spell negates).
+  Slowed: Holds the target for one round (Save vs. Spell negates). Constructs and Undead are unaffected.
+  Confused: Causes "Feeblemind" on the target for one round (Save vs. Spell negates).
+  Hasted: Slows the target for one round (Save vs. Spell negates).
+
+THAC0: +4
+Damage: Special (crushing)
+Speed Factor: 0
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 3~

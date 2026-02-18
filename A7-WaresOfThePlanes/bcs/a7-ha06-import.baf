@@ -1,0 +1,26 @@
+// BG2 item import script (added to BDSODIMP.BCS)
+
+IF
+  Global("A7_IMPORT_SOULMIRROR_1","GLOBAL",0)
+  PartyHasItem("a7-ha06a")
+  !PartyHasItem("a7-ha06b")
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    TakePartyItem("a7-ha06a")
+    DestroyItem("a7-ha06a")
+    SetGlobal("A7_IMPORT_SOULMIRROR_1","GLOBAL",0)
+    Continue()
+END
+
+IF
+  Global("A7_IMPORT_SOULMIRROR_2","GLOBAL",0)
+  PartyHasItem("a7-ha06b")
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    TakePartyItem("a7-ha06b")
+    DestroyItem("a7-ha06b")
+    SetGlobal("A7_IMPORT_SOULMIRROR_2","GLOBAL",0)
+    Continue()
+END

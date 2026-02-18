@@ -1,0 +1,64 @@
+// Soul Mirror (related lines)
+
+@20 = ~Feels a slight tickle~
+@21 = ~Ability Score Drained~ // BG2 strref: 8320
+// DE: @21 = ~Attribut gesenkt~
+// FR: @21 = ~Score de capacité absorbé~
+// CN: @21 = ~被吸取能力值~
+
+
+// Dialog lines
+// Jegg Hillcarver (100-199)
+@100 = ~I've purchased this war hammer recently. Since it's obviously of dwarven design I wondered whether you could make it better?~
+@101 = ~Oh, that's a design I haven't seen in a long while. From our outsider kin, I'd say? Let me take a look. Maybe there is something I can do.~
+@102 = ~Here you go.~
+@103 = ~I've changed my mind. The weapon is good as it is.~
+@104 = ~It is done. I was able to restore the base enchantment of the hammer. It should hit more accurately now. Here, take it!~
+
+// Cromwell (200-299)
+@200 = ~Aye now… ne'er thought to see the work of our outsider kin. It's Soul Mirror—a mighty weapon indeed.~
+@201 = ~Hmm, the enchantments on that weapon seem to have weakened o'er time. I could restore them to their original state. It would cost ye 2,000 gold though.~
+@202 = ~Well, let's see what else ye got.~
+@203 = ~Well… with the original enchantment restored I could improve Soul Mirror even further.~
+@204 = ~Ye've scrolls of conjuring fire, air, and earth elementals. If ye like, I could add their wrath to the weapon.~
+@205 = ~If ye had scrolls of conjuring fire, air, and earth elementals with ye I could make it even more deadly.~
+
+// Cespenar (300-399)
+@300 = ~Ooh, what this? Big hammer? Ah, Soul Mirror! Hammer for peoples with brainpower. For 3,000 gp I could remove dust to make it hit better. You wants me to do that?~
+@301 = ~Let me see what else you have.~
+@302 = ~Ooh, what this? Big hammer? Ah, Soul Mirror! Hammer for peoples with brainpower. Maybe you needs help with that? Tee-hee!~
+@303 = ~Oh, big hammer Soul Mirror again? You not happy enough with cleaning?~
+@304 = ~If you had scrolls to summon elementals of fire, air, and earth I could makes it hit even harder. But you don't.~
+@305 = ~With scrolls to summon elementals of fire, air, and earth I could makes it hit even harder. Only for smart peoples though. Forging cost 7,500 gold, too. You wants?~
+@306 = ~Oh, big hammer Soul Mirror again? Maybe you not smart enough?~
+@307 = ~Oh, Soul Mirror again? Hammer like bad penny. Always comes back even if you not wants.~
+@308 = ~With a pile of scrolls it could make extra damage even if your brain not working right. You have scrolls of Blindness, Deafness, Slow, Confusion, Invisibility, and Luck. Just needs 10,000 gp for casting job. You wants?~
+@309 = ~Anyway, I have recipe to have hammer make extra damage even if your brain not working right. I needs scrolls of Blindness, Deafness, Slow, Confusion, Invisibility, and Luck for that. You not have, so I can not use recipe.~
+
+
+// Journal entries
+@500 = ~Soul Mirror Upgrade
+
+Jegg Hillcarver upgraded the war hammer Soul Mirror and made it more powerful.~
+
+
+@510 = ~Soul Mirror Upgrade
+
+Cromwell used dwarven rune magic to awaken even more enchantments of Soul Mirror. It should deal additional elemental damage if the wielder possesses the mental discipline.~
+
+@511 = ~Soul Mirror Upgrade
+
+Cromwell upgraded the war hammer Soul Mirror and made it more powerful.~
+
+
+@520 = ~Soul Mirror Upgrade
+
+Cespenar used his magic to reveal the full potential of Soul Mirror. The weapon can now be used to transform the state of the wielder's mind into special effects.~
+
+@521 = ~Soul Mirror Upgrade
+
+Cespenar used a dwarven recipe to awaken even more enchantments of Soul Mirror. It should deal additional elemental damage if the wielder possesses the mental discipline.~
+
+@522 = ~Soul Mirror Upgrade
+
+Cespenar upgraded the war hammer Soul Mirror and made it more powerful.~

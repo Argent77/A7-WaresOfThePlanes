@@ -1,0 +1,56 @@
+// Soul Mirror +2
+
+@0 = ~Zwergenkriegshammer~
+@1 = ~Seelenspiegel +2~
+
+@10 = ~Dieser Kriegshammer wurde aus einem unbekannten Material gefertigt, das einen sanften silbernen Schimmer ausstrahlt. Die Oberfläche des Hammerkopfs ist mit Zwergenrunen bedeckt, was darauf hindeutet, dass mächtige Magie in die Waffe eingewoben wurde.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W4 +1 (Wucht)
+Initiativefaktor: 4
+Fertigkeit: Kriegshammer
+Typ: 1-händig
+Mindeststärke: 9
+
+Gewicht: 6~
+@11 = ~Geschmiedet in den Tiefen des Zwergengebirges der Außenländer ist Seelenspiegel ein Kriegshammer, der vom ansässigen Zwergenklan sowohl als Reliquie als auch als Glaubenstest verehrt wurde. Die Zwerge dieser abgelegenen Festung folgten den Lehren der zwergischen Dreiheiligkeit Dugmaren Leuchtmantel, Dumathoin, dem Hüter der Geheimnisse unter dem Berge und Vergadain, dem lachenden Zwerg. Der Hammer vereinigt Aspekte aller drei Götter.
+
+Die Waffe wurde aus Sterneneisen geschmiedet, das die absolute Neutralität widerspiegelt, die den Außenländern innewohnt. Ein einzelner Kristall ist in eine Vertiefung auf einer Seite des Hammerkopfs eingelassen. Wie viele Dinge, die in den Außenländern erschaffen wurden, ist auch der Hammer von der Bestrebung der Ebene nach Ausgeglichenheit und Neutralität durchdrungen. Er belohnt weder Stärke, Wut, noch den blanken Willen zur Herrschaft, sondern verstärkt stattdessen die Klarheit des Denkens, die Intuition und die mentale Disziplin des Trägers. Ein Zwerg, der den Hammer schwingt, soll „das Gewicht seiner eigenen Gedanken in die Schlacht tragen“, wodurch dieser sowohl ein religiöses als auch kriegerisches Werkzeug ist.
+
+Das Artefakt ging bei einem Überfall auf eine benachbarte Elfensiedlung verloren. Einige Zeit später tauchte es im Besitz eines Mitglieds von Sigils Bund der „Gläubigen der Quelle“ auf. Der Hammer wurde weiterhin als Test für den Glauben und die Klarheit des Denkens für neue Mitglieder des Bundes verwendet.
+
+Im Gegensatz zu gewöhnlichen Waffen bezieht Seelenspiegel seine Kraft aus der mentalen Stärke seines Trägers. Das macht ihn zu einem tödlichen Werkzeug für weise Gelehrte, lässt ihn jedoch für wilde Barbaren zu nichts weiter als einem Spielzeug verkommen. Obwohl Seelenspiegel ursprünglich von und für Zwerge geschaffen wurde, kann er von Vertretern aller Rassen ohne erkennbare Einschränkungen geführt werden. Angesichts der Schmiedekünste der Zwerge kann man sich dessen jedoch nie ganz sicher sein.
+
+Die ursprüngliche Stärke der Verzauberungen wurde kürzlich wiederhergestellt.
+
+EIGENSCHAFTEN:
+
+– ETW0: +2 Bonus gg. Elfen (nur Zwerge)
+– Schaden: +2 Bonus gg. Elfen (nur Zwerge)
+– ETW0: -2 Malus gg. Zwerge (nur Elfen)
+– Schaden: -2 Malus gg. Zwerge (nur Elfen)
+
+Physischer Schaden hängt von der Weisheit des Trägers ab:
+  5-7: 1W2 Schaden
+  8-9: 1W4 Schaden
+  10-11: 1W4 +2 Schaden
+  12-13: 1W6 +2 Schaden
+  14-15: 1W6 +4 Schaden
+  16-17: 1W8 +4 Schaden
+  18-19: 1Wd8 +6 Schaden
+  20: 1W10 +6 Schaden
+  21: 1W10 +8 Schaden
+  22: 1W12 +8 Schaden
+  23: 1W12 +10 Schaden
+  24: 1W16 +10 Schaden
+  25: 1W20 +10 Schaden
+
+ETW0-Bonus: -2
+Schaden: Speziell (Wucht)
+Initiativefaktor: 2
+Fertigkeit: Kriegshammer
+Typ: 1-händig
+Mindeststärke: 9
+
+Gewicht: 5~

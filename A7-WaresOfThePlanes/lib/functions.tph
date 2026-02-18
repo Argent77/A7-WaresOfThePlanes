@@ -272,7 +272,7 @@ BEGIN
       PATCH_IF (IS_AN_INT ~cur_stat~ && cur_stat = stat) BEGIN
         READ_2DA_ENTRY_FORMER ~splprot~ row 2 cur_value
         READ_2DA_ENTRY_FORMER ~splprot~ row 3 cur_rel
-        PATCH_IF (IS_AN_INT ~cur_value~ && cur_value = value && IS_AN_INT ~cur_rel~ && cur_rel = relation) BEGIN
+        PATCH_IF (IS_AN_INT ~cur_value~ && cur_value == value && IS_AN_INT ~cur_rel~ && cur_rel == relation) BEGIN
           // match found: retrieving index
           SET index = row - 3
           SET splprot_exists = 1
@@ -301,11 +301,28 @@ BEGIN
 
     ACTION_IF (stat >= 256) BEGIN
       OUTER_PATCH ~~ BEGIN
-        SPRINTF line ~%s %x %d %d~ (~%name%~ ~%stat%~ ~%value%~ ~%relation%~)
+        SPRINTF stat_entry ~%x~ (stat)
+        PATCH_IF (stat == 0x110 || stat == 0x111) BEGIN
+          // ALIGNMEN.IDS or STATE.IDS: value is added in hexadecimal notation
+          SET min_len = (stat == 0x111) ? 10 : 4
+          SPRINTF value_entry ~%x~ (value)
+          SET len = STRING_LENGTH ~%value_entry%~
+          INNER_PATCH_SAVE value_entry ~%value_entry%~ BEGIN
+            FOR (i = len; i < min_len; ++i) BEGIN
+              INSERT_BYTES 2 1
+              WRITE_BYTE 2 48 // "0"
+            END
+          END
+        END ELSE BEGIN
+          // value is added in decimal notation
+          SET value_entry = value
+        END
       END
     END ELSE BEGIN
-      OUTER_SPRINT line ~%name% %stat% %value% %relation%~
+      OUTER_SET stat_entry = stat
+      OUTER_SET value_entry = value
     END
+    OUTER_SPRINT line ~%name% %stat_entry% %value_entry% %relation%~
     APPEND ~splprot.2da~ ~%line%~
 
     COPY_EXISTING ~splprot.2da~ ~override~

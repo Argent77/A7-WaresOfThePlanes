@@ -74,7 +74,7 @@ The travelling merchant offers a total of
 - 17 Daggers
 - 10 Battle Axes
 - 9 different types of Bolts
-- 5 War Hammers
+- 6 War Hammers
 - 5 Clubs
 - 4 Maces
 - 1 Morning Star

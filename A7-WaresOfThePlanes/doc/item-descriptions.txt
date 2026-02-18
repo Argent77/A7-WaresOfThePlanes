@@ -981,6 +981,76 @@ Requires:
 
 Weight: 5
 
+4.6. Soul Mirror +1 (available: BG1 chapter 5 or later)
+Forged in the depths of the Dwarvish Mountains of the Outlands, Soul Mirror is a war hammer that
+was revered as both a relic and a test within the clan that forged it. The dwarves of this remote
+stronghold followed the triad of divine patrons—Dugmaren Brightmantle, Dumathoin the Keeper of
+Secrets Under the Mountain, and Vergadain the Laughing Dwarf—and the hammer embodies aspects of
+all three.
+
+The weapon is forged from star-iron which resonates faintly with planar neutrality inherent to the
+Outlands, with a single crystal inlaid in a niche on one side of the hammerhead. Like many things
+wrought in the Outlands, the hammer is suffused with the plane's tendency towards balance and
+neutrality. It does not reward fury, strength, or raw will to dominate, but instead amplifies the
+wielder's clarity of thought, intuition and mental discipline. A dwarf who wields the hammer is
+said to "carry the weight of their own thoughts into battle", making it as much a religious tool
+as a martial one.
+
+The artifact was lost during a raid on a neighboring elven settlement. It eventually wound up in
+the possession of a member of Sigil's faction of the Believers of the Source where it continued
+to be used as a test of faith and clarity for new faction members.
+
+Unlike regular weapons Soul Mirror draws its power from the wielder's mental strength, which makes
+it a deadly tool for a wise sage but reduces it to nothing more than a toy for savage barbarians.
+Although originally forged by and for dwarves, this weapon can be wielded by members of any race
+without apparent restrictions. However, given the craftmanship of dwarven weaponsmiths, one can
+never be certain.
+
+STATISTICS:
+
+Equipped abilities:
+– THAC0: +2 bonus vs. Elves (dwarves only)
+– Damage: +2 bonus vs. Elves (dwarves only)
+– THAC0: -2 penalty vs. Dwarves (elves only)
+– Damage: -2 penalty vs. Dwarves (elves only)
+
+Combat abilities:
+– Amount of physical damage depends on the wielder's wisdom:
+  5-7: 1d2 damage
+  8-9: 1d4 damage
+  10-11: 1d4+2 damage
+  12-13: 1d6+2 damage
+  14-15: 1d6+4 damage
+  16-17: 1d8+4 damage
+  18-19: 1d8+6 damage
+  20: 1d10+6 damage
+  21: 1d10+8 damage
+  22: 1d12+8 damage
+  23: 1d12+10 damage
+  24: 1d16+10 damage
+  25: 1d20+10 damage
+
+THAC0: +1
+Damage: Special (crushing)
+Speed Factor: 3
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6
+
+4.7. Soul Mirror +2
+Jegg Hillcarver in Bridgefort (SoD) can restore the original enchantments of the hammer.
+
+4.8. Soul Mirror +3
+Cromwell in Athkatla (SoA) can use scrolls for Conjuring Fire, Air, and Earth Elementals to add some
+improvements to the war hammer.
+
+4.9. Soul Mirror +4
+Cespenar can use scrolls of Blindness, Deafness, Slow, Confusion, Invisibility, and Luck to draw
+out the full potential of the war hammer.
+
 
 5. Clubs
 ~~~~~~~~

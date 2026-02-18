@@ -1,0 +1,27 @@
+// Append to Cromwell's Forge area script (ar0334.bcs)
+
+IF
+  Global("A7WOTP-SoulMirrorUpgrade1","AR0334",1)
+  Global("ForgeStuff","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7WOTP-SoulMirrorUpgrade1","AR0334",2)
+    SetGlobal("ForgeStuff","GLOBAL",0)
+    SetGlobal("ForgeItem","GLOBAL",32767)
+    AddJournalEntry(@511,INFO)
+    GiveItemCreate("a7-ha06b",Player1,0,0,0)
+    ActionOverride("wsmith01",StartDialogueNoSet([PC]))
+END
+
+IF
+  Global("A7WOTP-SoulMirrorUpgrade2","AR0334",1)
+  Global("ForgeStuff","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7WOTP-SoulMirrorUpgrade2","AR0334",2)
+    SetGlobal("ForgeStuff","GLOBAL",0)
+    SetGlobal("ForgeItem","GLOBAL",32767)
+    AddJournalEntry(@510,INFO)
+    GiveItemCreate("a7-ha06c",Player1,0,0,0)
+    ActionOverride("wsmith01",StartDialogueNoSet([PC]))
+END

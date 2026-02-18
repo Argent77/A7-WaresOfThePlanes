@@ -1,0 +1,20 @@
+// Spawn script for imported item (add to AR0319.BCS)
+
+IF
+  Global("A7_IMPORT_SOULMIRROR_1","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7_IMPORT_SOULMIRROR_1","GLOBAL",2)
+    ActionOverride("Table 1",CreateItem("a7-ha06a",0,0,0))
+    ActionOverride("Table 1",SetItemFlags("a7-ha06a",IDENTIFIED,TRUE))
+    Continue()
+END
+
+IF
+  Global("A7_IMPORT_SOULMIRROR_2","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7_IMPORT_SOULMIRROR_2","GLOBAL",2)
+    ActionOverride("Table 1",CreateItem("a7-ha06b",0,0,0))
+    Continue()
+END

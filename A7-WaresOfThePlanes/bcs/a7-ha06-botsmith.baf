@@ -1,0 +1,37 @@
+// Append to Cespenar's item upgrade script (botsmith.bcs)
+
+IF
+  Global("A7WOTP-SoulMirrorUpgrade1","AR4500",1)
+  Global("ImpForgeStuff","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7WOTP-SoulMirrorUpgrade1","AR4500",2)
+    SetGlobal("ImpForgeStuff","GLOBAL",0)
+    SetGlobal("ItemMaker","GLOBAL",999) // required to trigger Cespenar's post-forge dialog
+    GiveItemCreate("a7-ha06b",Player1,0,0,0)
+    StartDialogueNoSet(Player1)
+END
+
+IF
+  Global("A7WOTP-SoulMirrorUpgrade2","AR4500",1)
+  Global("ImpForgeStuff","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7WOTP-SoulMirrorUpgrade2","AR4500",2)
+    SetGlobal("ImpForgeStuff","GLOBAL",0)
+    SetGlobal("ItemMaker","GLOBAL",999) // required to trigger Cespenar's post-forge dialog
+    GiveItemCreate("a7-ha06c",Player1,0,0,0)
+    StartDialogueNoSet(Player1)
+END
+
+IF
+  Global("A7WOTP-SoulMirrorUpgrade3","AR4500",1)
+  Global("ImpForgeStuff","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7WOTP-SoulMirrorUpgrade3","AR4500",2)
+    SetGlobal("ImpForgeStuff","GLOBAL",0)
+    SetGlobal("ItemMaker","GLOBAL",999) // required to trigger Cespenar's post-forge dialog
+    GiveItemCreate("a7-ha06d",Player1,0,0,0)
+    StartDialogueNoSet(Player1)
+END
