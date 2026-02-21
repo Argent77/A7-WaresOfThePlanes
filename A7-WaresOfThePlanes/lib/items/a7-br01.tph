@@ -4,33 +4,35 @@ INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 
 OUTER_SPRINT itm_resref ~a7-br01~
 
-// Installing item
-COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
-  LPF update_item_generic
-    STR_VAR
-      itm_resref
-    RET
-      icon_resref
-      desc_image_resref
-  END
-  // Restrict anti-paladin kits
-  LPF get_anti_paladin_kits RET_ARRAY kits END
-  PHP_EACH kits AS kit_id => kit_title BEGIN
-    LPF ADD_ITEM_EQEFFECT
-      INT_VAR
-        opcode = 319    // Restrict item
-        target = 1      // Self
-        timing = 2      // Instant/While equipped
-        parameter1 = kit_id
-        parameter2 = 9  // KIT.IDS
-        special = kit_title
+ACTION_IF (has_bg2) BEGIN
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        desc_image_resref
     END
-  END
+    // Restrict anti-paladin kits
+    LPF get_anti_paladin_kits RET_ARRAY kits END
+    PHP_EACH kits AS kit_id => kit_title BEGIN
+      LPF ADD_ITEM_EQEFFECT
+        INT_VAR
+          opcode = 319    // Restrict item
+          target = 1      // Self
+          timing = 2      // Instant/While equipped
+          parameter1 = kit_id
+          parameter2 = 9  // KIT.IDS
+          special = kit_title
+      END
+    END
 
-// Installing associated resources
-LAF install_item_resources_generic
-STR_VAR
-  itm_resref
-  icon_resref
-  desc_image_resref
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    desc_image_resref
+  END
 END

@@ -1,0 +1,37 @@
+// *** Cutscene: Merchant and customer, part 2a (BG1) ***
+
+// Location: Ulgoth's Beard
+IF
+  Global("A7-Campaign","GLOBAL",1)
+  AreaCheck("%bg1_are_prefix%1000")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    CreateCreature("a7-mcust",[2050.720],NE)
+    MoveViewObject(Myself,INSTANT)
+    StartCutSceneEx("a7-mct03",TRUE)
+END
+
+// Location: Beregost
+IF
+  Global("A7-Campaign","GLOBAL",1)
+  AreaCheck("%bg1_are_prefix%3300")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    CreateCreature("a7-mcust",[1790.3000],NWW)
+    MoveViewObject(Myself,INSTANT)
+    StartCutSceneEx("a7-mct03",TRUE)
+END
+
+// Location: Nashkel Carnival
+IF
+  Global("A7-Campaign","GLOBAL",1)
+  AreaCheck("%bg1_are_prefix%4900")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    CreateCreature("a7-mcust",[2760.3140],NW)
+    MoveViewObject(Myself,INSTANT)
+    StartCutSceneEx("a7-mct03",TRUE)
+END

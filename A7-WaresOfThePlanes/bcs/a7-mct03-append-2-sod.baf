@@ -1,0 +1,25 @@
+// *** Cutscene: Merchant and customer, part 3 (SoD) ***
+
+// Location: Coast Way Crossing
+IF
+  Global("A7-Campaign","GLOBAL",2)
+  AreaCheck("BD1000")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-mcust")
+    Wait(3)
+    MoveToObjectOffset("a7-merc",[-30.30])
+    StartCutSceneEx("a7-mct04",TRUE)
+END
+
+// Location: Coalition Camp
+IF
+  Global("A7-Campaign","GLOBAL",2)
+  AreaCheck("BD3000")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-mcust")
+    Wait(3)
+    MoveToObjectOffset("a7-merc",[-30.30])
+    StartCutSceneEx("a7-mct04",TRUE)
+END

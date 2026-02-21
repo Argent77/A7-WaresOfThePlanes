@@ -1043,9 +1043,12 @@ Weight: 6
 4.7. Soul Mirror +2
 Jegg Hillcarver in Bridgefort (SoD) can restore the original enchantments of the hammer.
 
+In EET the weapon can be imported from SoD to BG2. Look for it in the Temple of Oghma in
+Athkatla's Docks.
+
 4.8. Soul Mirror +3
-Cromwell in Athkatla (SoA) can use scrolls for Conjuring Fire, Air, and Earth Elementals to add some
-improvements to the war hammer.
+Cromwell in Athkatla (SoA) can use scrolls for Conjuring Fire, Air, and Earth Elementals to add
+some improvements to the war hammer.
 
 4.9. Soul Mirror +4
 Cespenar can use scrolls of Blindness, Deafness, Slow, Confusion, Invisibility, and Luck to draw

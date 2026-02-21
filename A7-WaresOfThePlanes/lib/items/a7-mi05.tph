@@ -4,159 +4,161 @@ INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 
 OUTER_SPRINT itm_resref ~a7-mi05~
 
-// Installing item
+ACTION_IF (has_sod || has_bg2) BEGIN
+  // Installing item
 
-// Appending SPLPROT.2DA
-LAF get_splprot_entry
-  INT_VAR
-    stat = IDS_OF_SYMBOL(~stats~ ~XP~)
-    value = 250000
-    relation = 2    // less than
-  STR_VAR
-    name = ~*_STAT(XP)<250k~
-  RET
-    splprot_lt_250k = index
-END
-
-LAF get_splprot_entry
-  INT_VAR
-    stat = IDS_OF_SYMBOL(~stats~ ~XP~)
-    value = 2500000
-    relation = 4    // greater than or equal
-  STR_VAR
-    name = ~*_STAT(XP)>=2.5M~
-  RET
-    splprot_ge_2_5M = index
-END
-
-LAF get_splprot_entry
-  INT_VAR
-    stat = 0x104    // Negate match of two entries
-    value = splprot_lt_250k
-    relation = splprot_ge_2_5M
-  STR_VAR
-    name = EVAL ~*_ENTRIES!=(%splprot_lt_250k%||%splprot_ge_2_5M%)~
-  RET
-    splprot_in_range = index
-END
-
-// Item should not work from a clone (Projected Image, Simulacrum, etc.)
-LAF get_splprot_entry
-  INT_VAR
-    stat = IDS_OF_SYMBOL(~stats~ ~PUPPETMASTERTYPE~)
-    value = 0
-    relation = 5    // not equal
-  STR_VAR
-    name = ~*_STAT(PUPPETMASTERTYPE)!=0~
-  RET
-    puppetmastertype_not_0 = index
-END
-
-COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
-  LPF update_item_generic
+  // Appending SPLPROT.2DA
+  LAF get_splprot_entry
+    INT_VAR
+      stat = IDS_OF_SYMBOL(~stats~ ~XP~)
+      value = 250000
+      relation = 2    // less than
     STR_VAR
-      itm_resref
+      name = ~*_STAT(XP)<250k~
     RET
-      icon_resref
-      desc_image_resref
+      splprot_lt_250k = index
   END
-  LPF alter_item_effect_ex
+
+  LAF get_splprot_entry
     INT_VAR
-      check_headers = 1
-      match_opcode = 324  // Immunity to resource and message
-      match_parameter2 = 4
-      parameter2 = puppetmastertype_not_0
+      stat = IDS_OF_SYMBOL(~stats~ ~XP~)
+      value = 2500000
+      relation = 4    // greater than or equal
+    STR_VAR
+      name = ~*_STAT(XP)>=2.5M~
+    RET
+      splprot_ge_2_5M = index
   END
-  LPF alter_item_effect_ex
+
+  LAF get_splprot_entry
     INT_VAR
-      check_headers = 1
-      match_opcode = 326  // Apply effects list
-      match_parameter2 = 1
-      parameter2 = splprot_lt_250k
+      stat = 0x104    // Negate match of two entries
+      value = splprot_lt_250k
+      relation = splprot_ge_2_5M
+    STR_VAR
+      name = EVAL ~*_ENTRIES!=(%splprot_lt_250k%||%splprot_ge_2_5M%)~
+    RET
+      splprot_in_range = index
   END
-  LPF alter_item_effect_ex
+
+  // Item should not work from a clone (Projected Image, Simulacrum, etc.)
+  LAF get_splprot_entry
     INT_VAR
-      check_headers = 1
-      match_opcode = 326  // Apply effects list
-      match_parameter2 = 2
-      parameter2 = splprot_ge_2_5M
-  END
-  LPF alter_item_effect_ex
-    INT_VAR
-      check_headers = 1
-      match_opcode = 326  // Apply effects list
-      match_parameter2 = 3
-      parameter2 = splprot_in_range
+      stat = IDS_OF_SYMBOL(~stats~ ~PUPPETMASTERTYPE~)
+      value = 0
+      relation = 5    // not equal
+    STR_VAR
+      name = ~*_STAT(PUPPETMASTERTYPE)!=0~
+    RET
+      puppetmastertype_not_0 = index
   END
 
-// Installing associated resources
-LAF install_item_resources_generic
-STR_VAR
-  itm_resref
-  icon_resref
-  desc_image_resref
-END
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        desc_image_resref
+    END
+    LPF alter_item_effect_ex
+      INT_VAR
+        check_headers = 1
+        match_opcode = 324  // Immunity to resource and message
+        match_parameter2 = 4
+        parameter2 = puppetmastertype_not_0
+    END
+    LPF alter_item_effect_ex
+      INT_VAR
+        check_headers = 1
+        match_opcode = 326  // Apply effects list
+        match_parameter2 = 1
+        parameter2 = splprot_lt_250k
+    END
+    LPF alter_item_effect_ex
+      INT_VAR
+        check_headers = 1
+        match_opcode = 326  // Apply effects list
+        match_parameter2 = 2
+        parameter2 = splprot_ge_2_5M
+    END
+    LPF alter_item_effect_ex
+      INT_VAR
+        check_headers = 1
+        match_opcode = 326  // Apply effects list
+        match_parameter2 = 3
+        parameter2 = splprot_in_range
+    END
 
-COPY ~%MOD_FOLDER%/bam/a7-c456.bam~ ~override~
-     ~%MOD_FOLDER%/bam/a7-i456.bam~ ~override~
-     ~%MOD_FOLDER%/eff/a7-mi05a.eff~ ~override~
-     ~%MOD_FOLDER%/eff/a7-mi05b.eff~ ~override~
-     ~%MOD_FOLDER%/eff/a7-mi05c.eff~ ~override~
-     ~%MOD_FOLDER%/eff/a7-mi05d.eff~ ~override~
-     ~%MOD_FOLDER%/eff/a7-mi05e.eff~ ~override~
-     ~%MOD_FOLDER%/eff/a7-mi05f.eff~ ~override~
-     ~%MOD_FOLDER%/eff/a7-mi05g.eff~ ~override~
-     ~%MOD_FOLDER%/eff/a7-mi05h.eff~ ~override~
-     ~%MOD_FOLDER%/eff/a7-mi05i.eff~ ~override~
-     ~%MOD_FOLDER%/spl/a7-mi05a.spl~ ~override~
-     ~%MOD_FOLDER%/spl/a7-mi05b.spl~ ~override~
-     ~%MOD_FOLDER%/spl/a7-mi05c.spl~ ~override~
-
-
-// Installing creatures
-
-// Potentially missing combat scripts
-ACTION_FOR_EACH resref IN ~cornugon~ ~demimp~ ~demmau01~ BEGIN
-  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%resref%.bcs~) BEGIN
-    COMPILE ~%MOD_FOLDER%/bcs/%resref%.baf~
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    desc_image_resref
   END
-END
 
-// Potentially missing creature items
-ACTION_FOR_EACH resref IN ~maurezhi~ ~seeinvis~ BEGIN
-  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%resref%.itm~) BEGIN
-    COPY ~%MOD_FOLDER%/itm/%resref%.itm~ ~override~
+  COPY ~%MOD_FOLDER%/bam/a7-c456.bam~ ~override~
+       ~%MOD_FOLDER%/bam/a7-i456.bam~ ~override~
+       ~%MOD_FOLDER%/eff/a7-mi05a.eff~ ~override~
+       ~%MOD_FOLDER%/eff/a7-mi05b.eff~ ~override~
+       ~%MOD_FOLDER%/eff/a7-mi05c.eff~ ~override~
+       ~%MOD_FOLDER%/eff/a7-mi05d.eff~ ~override~
+       ~%MOD_FOLDER%/eff/a7-mi05e.eff~ ~override~
+       ~%MOD_FOLDER%/eff/a7-mi05f.eff~ ~override~
+       ~%MOD_FOLDER%/eff/a7-mi05g.eff~ ~override~
+       ~%MOD_FOLDER%/eff/a7-mi05h.eff~ ~override~
+       ~%MOD_FOLDER%/eff/a7-mi05i.eff~ ~override~
+       ~%MOD_FOLDER%/spl/a7-mi05a.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-mi05b.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-mi05c.spl~ ~override~
+
+
+  // Installing creatures
+
+  // Potentially missing combat scripts
+  ACTION_FOR_EACH resref IN ~cornugon~ ~demimp~ ~demmau01~ BEGIN
+    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%resref%.bcs~) BEGIN
+      COMPILE ~%MOD_FOLDER%/bcs/%resref%.baf~
+    END
   END
-END
 
-// Placeholder items for random treasure
-ACTION_FOR_EACH resref IN ~RNDMAG01~ ~RNDMAG02~ BEGIN
-  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%resref%.itm~) BEGIN
-    COPY_EXISTING ~rndtre01.itm~ ~override/%resref%.itm~ IF_EXISTS
+  // Potentially missing creature items
+  ACTION_FOR_EACH resref IN ~maurezhi~ ~seeinvis~ BEGIN
+    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%resref%.itm~) BEGIN
+      COPY ~%MOD_FOLDER%/itm/%resref%.itm~ ~override~
+    END
   END
-END
 
-WITH_TRA ~%MOD_FOLDER%/tra/english/%itm_resref%.tra~ ~%MOD_FOLDER%/tra/%LANGUAGE%/%itm_resref%.tra~ BEGIN
-  // Creatures
-  OUTER_SET tra_ref = 20
-  ACTION_FOR_EACH resref IN ~a7-balor~ ~a7-cornu~ ~a7-glabr~ ~a7-imp~ ~a7-maril~
-                            ~a7-maure~ ~a7-nabas~ ~a7-pitfi~ ~a7-quasi~ BEGIN
-    COPY ~%MOD_FOLDER%/cre/%resref%.cre~ ~override~
-      SAY NAME1 (AT ~tra_ref~)
-      SAY NAME2 (AT ~tra_ref~)
-      PATCH_IF (~%resref%~ STR_EQ ~a7-quasi~) BEGIN
-        PATCH_IF (has_bg2) BEGIN
-          WRITE_ASCII SCRIPT_CLASS ~QUASIT~ (8)
-        END ELSE BEGIN
-          WRITE_ASCII SCRIPT_CLASS ~QUASIT01~ (8)
+  // Placeholder items for random treasure
+  ACTION_FOR_EACH resref IN ~RNDMAG01~ ~RNDMAG02~ BEGIN
+    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%resref%.itm~) BEGIN
+      COPY_EXISTING ~rndtre01.itm~ ~override/%resref%.itm~ IF_EXISTS
+    END
+  END
+
+  WITH_TRA ~%MOD_FOLDER%/tra/english/%itm_resref%.tra~ ~%MOD_FOLDER%/tra/%LANGUAGE%/%itm_resref%.tra~ BEGIN
+    // Creatures
+    OUTER_SET tra_ref = 20
+    ACTION_FOR_EACH resref IN ~a7-balor~ ~a7-cornu~ ~a7-glabr~ ~a7-imp~ ~a7-maril~
+                              ~a7-maure~ ~a7-nabas~ ~a7-pitfi~ ~a7-quasi~ BEGIN
+      COPY ~%MOD_FOLDER%/cre/%resref%.cre~ ~override~
+        SAY NAME1 (AT ~tra_ref~)
+        SAY NAME2 (AT ~tra_ref~)
+        PATCH_IF (~%resref%~ STR_EQ ~a7-quasi~) BEGIN
+          PATCH_IF (has_bg2) BEGIN
+            WRITE_ASCII SCRIPT_CLASS ~QUASIT~ (8)
+          END ELSE BEGIN
+            WRITE_ASCII SCRIPT_CLASS ~QUASIT01~ (8)
+          END
         END
-      END
-    OUTER_SET tra_ref += 1
-  END
+      OUTER_SET tra_ref += 1
+    END
 
-  ACTION_IF (has_bg2) BEGIN
-    // Cutscene
-    COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-mbcut.baf~
-    EXTEND_TOP ~ar4500.bcs~ ~%MOD_FOLDER%/bcs/bg2-ar4500-top.baf~ EVAL
+    ACTION_IF (has_bg2) BEGIN
+      // Cutscene
+      COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-mbcut.baf~
+      EXTEND_TOP ~ar4500.bcs~ ~%MOD_FOLDER%/bcs/bg2-ar4500-top.baf~ EVAL
+    END
   END
 END

@@ -4,36 +4,38 @@ INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 
 OUTER_SPRINT itm_resref ~a7-br05~
 
-// Installing item
-COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
-  LPF update_item_generic
-    STR_VAR
-      itm_resref
-    RET
-      icon_resref
-      desc_image_resref
-  END
-  // updating strref in opcode 319 instance
-  LPF get_class_title STR_VAR class_name = ~MONK~ RET title END // Getting native strref for "Monk" string
-  LPF alter_item_effect_ex
-    INT_VAR
-      check_globals = 1
-      match_opcode = 319  // Restrict item
-      special = title
+ACTION_IF (has_bg2) BEGIN
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        desc_image_resref
+    END
+    // updating strref in opcode 319 instance
+    LPF get_class_title STR_VAR class_name = ~MONK~ RET title END // Getting native strref for "Monk" string
+    LPF alter_item_effect_ex
+      INT_VAR
+        check_globals = 1
+        match_opcode = 319  // Restrict item
+        special = title
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    desc_image_resref
   END
 
-// Installing associated resources
-LAF install_item_resources_generic
-STR_VAR
-  itm_resref
-  icon_resref
-  desc_image_resref
-END
-
-// Installing additional resources
-ACTION_FOR_EACH file IN ~%itm_resref%a.eff~ BEGIN
-  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%file%~) BEGIN
-    LAF EXT_OF_FILESPEC STR_VAR filespec = EVAL ~%file%~ RET ext END
-    COPY ~%MOD_FOLDER%/%ext%/%file%~ ~override~
+  // Installing additional resources
+  ACTION_FOR_EACH file IN ~%itm_resref%a.eff~ BEGIN
+    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%file%~) BEGIN
+      LAF EXT_OF_FILESPEC STR_VAR filespec = EVAL ~%file%~ RET ext END
+      COPY ~%MOD_FOLDER%/%ext%/%file%~ ~override~
+    END
   END
 END

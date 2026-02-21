@@ -4,32 +4,34 @@ INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 
 OUTER_SPRINT itm_resref ~a7-sw03~
 
-// Installing item
-COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
-  LPF update_item_generic
-    STR_VAR
-      itm_resref
-    RET
-      icon_resref
-      desc_image_resref
+ACTION_IF (has_bg2) BEGIN
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        desc_image_resref
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    desc_image_resref
   END
 
-// Installing associated resources
-LAF install_item_resources_generic
-STR_VAR
-  itm_resref
-  icon_resref
-  desc_image_resref
-END
+  // Installing additional resources
+  COPY ~%MOD_FOLDER%/vvc/a7-sw03a.vvc~ ~override~
 
-// Installing additional resources
-COPY ~%MOD_FOLDER%/vvc/a7-sw03a.vvc~ ~override~
+  OUTER_SPRINT itm_resref_upper ~%itm_resref%~
+  ACTION_TO_UPPER ~itm_resref_upper~
+  APPEND ~itemspec.2da~ ~%itm_resref_upper% 1~
 
-OUTER_SPRINT itm_resref_upper ~%itm_resref%~
-ACTION_TO_UPPER ~itm_resref_upper~
-APPEND ~itemspec.2da~ ~%itm_resref_upper% 1~
-
-WITH_TRA ~%MOD_FOLDER%/tra/english/%itm_resref%.tra~ ~%MOD_FOLDER%/tra/%LANGUAGE%/%itm_resref%.tra~ BEGIN
-  OUTER_SET item_name = RESOLVE_STR_REF(@1) // Dûrgaläd +3
-  APPEND ~tooltip.2da~ ~%itm_resref_upper%    %item_name%     12096      12040~
+  WITH_TRA ~%MOD_FOLDER%/tra/english/%itm_resref%.tra~ ~%MOD_FOLDER%/tra/%LANGUAGE%/%itm_resref%.tra~ BEGIN
+    OUTER_SET item_name = RESOLVE_STR_REF(@1) // Dûrgaläd +3
+    APPEND ~tooltip.2da~ ~%itm_resref_upper%    %item_name%     12096      12040~
+  END
 END

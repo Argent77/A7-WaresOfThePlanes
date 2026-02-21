@@ -4,54 +4,56 @@ INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 
 OUTER_SPRINT itm_resref ~a7-bl01~
 
-// Installing item
-COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
-  LPF update_item_generic
-    STR_VAR
-      itm_resref
-    RET
-      icon_resref
-      desc_image_resref
+ACTION_IF (has_bg2) BEGIN
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        desc_image_resref
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    desc_image_resref
   END
 
-// Installing associated resources
-LAF install_item_resources_generic
-STR_VAR
-  itm_resref
-  icon_resref
-  desc_image_resref
-END
-
-// Appending STATDESC table
+  // Appending STATDESC table
 <<<<<<<< .../inlined/A7-WaresOfThePlanes/a7-bl01/statdesc-append.2da
 %statdesc_idx%   %statdesc_tra_20%   A7-BL01D
 >>>>>>>>
-COPY_EXISTING ~statdesc.2da~ ~override~
-  READ_2DA_ENTRIES_NOW ~statdesc~ 1
-  SET statdesc_idx = 0
-  FOR (row = 3; row < statdesc; ++row) BEGIN
-    READ_2DA_ENTRY_FORMER ~statdesc~ row 0 index
-    PATCH_IF (IS_AN_INT ~index~ && index > statdesc_idx) BEGIN
-      SET statdesc_idx = index
+  COPY_EXISTING ~statdesc.2da~ ~override~
+    READ_2DA_ENTRIES_NOW ~statdesc~ 1
+    SET statdesc_idx = 0
+    FOR (row = 3; row < statdesc; ++row) BEGIN
+      READ_2DA_ENTRY_FORMER ~statdesc~ row 0 index
+      PATCH_IF (IS_AN_INT ~index~ && index > statdesc_idx) BEGIN
+        SET statdesc_idx = index
+      END
     END
-  END
-  SET statdesc_idx += 1
-  LPF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
-  PATCH_WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
-    SET statdesc_tra_20 = RESOLVE_STR_REF(@20)  // Anchored
-  END
-  APPEND_FILE_EVALUATE TEXT ~.../inlined/A7-WaresOfThePlanes/a7-bl01/statdesc-append.2da~
-  PRETTY_PRINT_2DA
-BUT_ONLY
+    SET statdesc_idx += 1
+    LPF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+    PATCH_WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+      SET statdesc_tra_20 = RESOLVE_STR_REF(@20)  // Anchored
+    END
+    APPEND_FILE_EVALUATE TEXT ~.../inlined/A7-WaresOfThePlanes/a7-bl01/statdesc-append.2da~
+    PRETTY_PRINT_2DA
+  BUT_ONLY
 
-COPY ~%MOD_FOLDER%/bam/a7-bl01d.bam~ ~override~
+  COPY ~%MOD_FOLDER%/bam/a7-bl01d.bam~ ~override~
 
-COPY_EXISTING ~%itm_resref%.itm~ ~override~
-  LPF alter_item_effect_ex
-    INT_VAR
-      check_globals = 1
-      match_opcode = 142  // Display portrait icon
-      match_parameter2 = 94
-      parameter2 = statdesc_idx
-  END
-BUT_ONLY
+  COPY_EXISTING ~%itm_resref%.itm~ ~override~
+    LPF alter_item_effect_ex
+      INT_VAR
+        check_globals = 1
+        match_opcode = 142  // Display portrait icon
+        match_parameter2 = 94
+        parameter2 = statdesc_idx
+    END
+  BUT_ONLY
+END

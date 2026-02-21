@@ -1,0 +1,13 @@
+// *** Cutscene: Merchant and customer, part 2b ***
+
+// Failsafe conditions
+IF
+  OR(2)
+    GlobalLT("A7-Campaign","GLOBAL",1)
+    GlobalGT("A7-Campaign","GLOBAL",4)
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    SetGlobal("CustomerScene","LOCALS",3)
+    EndCutSceneMode()
+END

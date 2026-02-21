@@ -1,15 +1,5 @@
 // *** These blocks should come late in the script ***
 
-// SoD: Merchant leaves Coalition Camp when the battle begins
-IF
-  Global("BD_HAVE_SOD","GLOBAL",1)
-  GlobalGT("bd_plot","global",394)
-  AreaCheck("BD3000") // Coalition Camp
-THEN
-  RESPONSE #100
-    DestroySelf()
-END
-
 // Merchant leaves for the next destination
 IF
   !Global("A7-TravelTimeOutForced","GLOBAL",0)

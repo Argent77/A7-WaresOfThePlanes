@@ -1,0 +1,12 @@
+// *** Cutscene: Merchant and customer, part 2c (SoD) ***
+
+IF
+  Global("A7-Campaign","GLOBAL",2)
+  !AreaCheck("BD1000")
+  !AreaCheck("BD3000")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    SetGlobal("CustomerScene","LOCALS",3)
+    EndCutSceneMode()
+END

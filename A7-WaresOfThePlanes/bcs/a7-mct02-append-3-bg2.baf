@@ -1,0 +1,24 @@
+// *** Cutscene: Merchant and customer, part 2c (BG2) ***
+
+IF
+  Global("A7-Campaign","GLOBAL",3)
+  !AreaCheck("AR0700")
+  !AreaCheck("AR1100")
+  !AreaCheck("AR2000")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    SetGlobal("CustomerScene","LOCALS",3)
+    EndCutSceneMode()
+END
+
+IF
+  Global("A7-Campaign","GLOBAL",4)
+  !AreaCheck("AR5003")
+  !AreaCheck("AR5500")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    SetGlobal("CustomerScene","LOCALS",3)
+    EndCutSceneMode()
+END

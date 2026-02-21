@@ -1,0 +1,61 @@
+// *** Cutscene: Merchant and customer, part 2a (BG2) ***
+
+// Location: Waukeen's Promenade
+IF
+  Global("A7-Campaign","GLOBAL",3)
+  AreaCheck("AR0700")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    CreateCreature("a7-mcust",[1970.1940],NE)
+    MoveViewObject(Myself,INSTANT)
+    StartCutSceneEx("a7-mct03",TRUE)
+END
+
+// Location: Imnesvale
+IF
+  Global("A7-Campaign","GLOBAL",3)
+  AreaCheck("AR1100")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    CreateCreature("a7-mcust",[3530.3220],N)
+    MoveViewObject(Myself,INSTANT)
+    StartCutSceneEx("a7-mct03",TRUE)
+END
+
+// Location: Trademeet
+IF
+  Global("A7-Campaign","GLOBAL",3)
+  AreaCheck("AR2000")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    CreateCreature("a7-mcust",[1830.1030],NE)
+    MoveViewObject(Myself,INSTANT)
+    StartCutSceneEx("a7-mct03",TRUE)
+END
+
+// Location: Saradush Tavern
+IF
+  Global("A7-Campaign","GLOBAL",4)
+  AreaCheck("AR5003")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    CreateCreature("a7-mcust",[512.930],E)
+    MoveViewObject(Myself,INSTANT)
+    StartCutSceneEx("a7-mct03",TRUE)
+END
+
+// Location: Amkethran
+IF
+  Global("A7-Campaign","GLOBAL",4)
+  AreaCheck("AR5500")
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    CreateCreature("a7-mcust",[2500.1445],SEE)
+    MoveViewObject(Myself,INSTANT)
+    StartCutSceneEx("a7-mct03",TRUE)
+END

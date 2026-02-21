@@ -4,67 +4,69 @@ INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 
 OUTER_SPRINT itm_resref ~a7-sw05~
 
-// Installing item
-COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
-  LPF update_item_generic
-    STR_VAR
-      itm_resref
-    RET
-      icon_resref
-      desc_image_resref
+ACTION_IF (has_bg2) BEGIN
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        desc_image_resref
+    END
+
+    // BGEE uses a different strref
+    PATCH_IF (GAME_IS ~bgee~) BEGIN
+      LPF alter_item_effect_ex
+        INT_VAR
+          check_globals = 1
+          match_opcode = 319    // Restrict item
+          match_parameter1 = 21 // SHAMAN
+          match_parameter2 = 5  // CLASS.IDS
+          special = 32342       // Shaman
+      END
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    desc_image_resref
   END
 
-  // BGEE uses a different strref
-  PATCH_IF (GAME_IS ~bgee~) BEGIN
-    LPF alter_item_effect_ex
-      INT_VAR
-        check_globals = 1
-        match_opcode = 319    // Restrict item
-        match_parameter1 = 21 // SHAMAN
-        match_parameter2 = 5  // CLASS.IDS
-        special = 32342       // Shaman
+  // Installing additional resources
+  WITH_TRA ~%MOD_FOLDER%/tra/english/%itm_resref%.tra~ ~%MOD_FOLDER%/tra/%LANGUAGE%/%itm_resref%.tra~ BEGIN
+    OUTER_SET index = 1
+    ACTION_FOR_EACH file IN ~%itm_resref%a.spl~
+                            ~%itm_resref%b.spl~
+                            ~%itm_resref%c.spl~
+                            ~%itm_resref%d.spl~
+    BEGIN
+      ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%file%~) BEGIN
+        LAF EXT_OF_FILESPEC STR_VAR filespec = EVAL ~%file%~ RET ext END
+        COPY ~%MOD_FOLDER%/%ext%/%file%~ ~override~
+          // updating target string
+          SET tra_ref = index + 20
+          LPF alter_item_effect_ex
+            INT_VAR
+              check_headers = 1
+              match_opcode = 139  // Display string
+              match_parameter1 = index
+              parameter1 = RESOLVE_STR_REF((AT ~tra_ref~))
+          END
+      END
+      OUTER_SET index += 1
     END
   END
 
-// Installing associated resources
-LAF install_item_resources_generic
-STR_VAR
-  itm_resref
-  icon_resref
-  desc_image_resref
-END
-
-// Installing additional resources
-WITH_TRA ~%MOD_FOLDER%/tra/english/%itm_resref%.tra~ ~%MOD_FOLDER%/tra/%LANGUAGE%/%itm_resref%.tra~ BEGIN
-  OUTER_SET index = 1
-  ACTION_FOR_EACH file IN ~%itm_resref%a.spl~
-                          ~%itm_resref%b.spl~
-                          ~%itm_resref%c.spl~
-                          ~%itm_resref%d.spl~
+  ACTION_FOR_EACH file IN ~%itm_resref%e.spl~
+                          ~%itm_resref%f.spl~
+                          ~%itm_resref%g.spl~
   BEGIN
     ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%file%~) BEGIN
       LAF EXT_OF_FILESPEC STR_VAR filespec = EVAL ~%file%~ RET ext END
       COPY ~%MOD_FOLDER%/%ext%/%file%~ ~override~
-        // updating target string
-        SET tra_ref = index + 20
-        LPF alter_item_effect_ex
-          INT_VAR
-            check_headers = 1
-            match_opcode = 139  // Display string
-            match_parameter1 = index
-            parameter1 = RESOLVE_STR_REF((AT ~tra_ref~))
-        END
     END
-    OUTER_SET index += 1
-  END
-END
-
-ACTION_FOR_EACH file IN ~%itm_resref%e.spl~
-                        ~%itm_resref%f.spl~
-                        ~%itm_resref%g.spl~
-BEGIN
-  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%file%~) BEGIN
-    LAF EXT_OF_FILESPEC STR_VAR filespec = EVAL ~%file%~ RET ext END
-    COPY ~%MOD_FOLDER%/%ext%/%file%~ ~override~
   END
 END

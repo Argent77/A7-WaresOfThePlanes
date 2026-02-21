@@ -4,69 +4,71 @@ INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 
 OUTER_SPRINT itm_resref ~a7-sp02~
 
-// Installing item
-COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
-  LPF update_item_generic
-    STR_VAR
-      itm_resref
-    RET
-      icon_resref
-      desc_image_resref
+ACTION_IF (has_sod || has_bg2) BEGIN
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        desc_image_resref
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    desc_image_resref
   END
 
-// Installing associated resources
-LAF install_item_resources_generic
-STR_VAR
-  itm_resref
-  icon_resref
-  desc_image_resref
-END
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    OUTER_SET tra_20 = RESOLVE_STR_REF(@20)  // Focused
 
-LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
-WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
-  OUTER_SET tra_20 = RESOLVE_STR_REF(@20)  // Focused
-
-  // Appending STATDESC table
-<<<<<<<< .../inlined/A7-WaresOfThePlanes/a7-sp02/statdesc-append.2da
-%statdesc_idx%   %tra_20%   A7-SP02D
->>>>>>>>
-  COPY_EXISTING ~statdesc.2da~ ~override~
-    READ_2DA_ENTRIES_NOW ~statdesc~ 1
-    SET statdesc_idx = 0
-    FOR (row = 3; row < statdesc; ++row) BEGIN
-      READ_2DA_ENTRY_FORMER ~statdesc~ row 0 index
-      PATCH_IF (IS_AN_INT ~index~ && index > statdesc_idx) BEGIN
-        SET statdesc_idx = index
+    // Appending STATDESC table
+  <<<<<<<< .../inlined/A7-WaresOfThePlanes/a7-sp02/statdesc-append.2da
+  %statdesc_idx%   %tra_20%   A7-SP02D
+  >>>>>>>>
+    COPY_EXISTING ~statdesc.2da~ ~override~
+      READ_2DA_ENTRIES_NOW ~statdesc~ 1
+      SET statdesc_idx = 0
+      FOR (row = 3; row < statdesc; ++row) BEGIN
+        READ_2DA_ENTRY_FORMER ~statdesc~ row 0 index
+        PATCH_IF (IS_AN_INT ~index~ && index > statdesc_idx) BEGIN
+          SET statdesc_idx = index
+        END
       END
-    END
-    SET statdesc_idx += 1
-    APPEND_FILE_EVALUATE TEXT ~.../inlined/A7-WaresOfThePlanes/a7-sp02/statdesc-append.2da~
-    PRETTY_PRINT_2DA
-  BUT_ONLY
+      SET statdesc_idx += 1
+      APPEND_FILE_EVALUATE TEXT ~.../inlined/A7-WaresOfThePlanes/a7-sp02/statdesc-append.2da~
+      PRETTY_PRINT_2DA
+    BUT_ONLY
 
-  // Installing spell
-  COPY ~%MOD_FOLDER%/spl/%itm_resref%.spl~ ~override~
-    SAY NAME1 @1  // Modron Mind
-    SAY UNIDENTIFIED_DESC @11
-    READ_LONG 0x64 ofs_abils
-    READ_SHORT 0x68 num_abils
-    LPF alter_item_effect_ex
-      INT_VAR
-        check_headers = 1
-        match_opcode = 142  // Display portrait icon
-        parameter2 = statdesc_idx
-    END
-END
+    // Installing spell
+    COPY ~%MOD_FOLDER%/spl/%itm_resref%.spl~ ~override~
+      SAY NAME1 @1  // Modron Mind
+      SAY UNIDENTIFIED_DESC @11
+      READ_LONG 0x64 ofs_abils
+      READ_SHORT 0x68 num_abils
+      LPF alter_item_effect_ex
+        INT_VAR
+          check_headers = 1
+          match_opcode = 142  // Display portrait icon
+          parameter2 = statdesc_idx
+      END
+  END
 
-// Additional resources
-ACTION_FOR_EACH file IN ~%itm_resref%a.bam~
-                        ~%itm_resref%b.bam~
-                        ~%itm_resref%c.bam~
-                        ~%itm_resref%d.bam~
-                        ~%itm_resref%a.wav~
-BEGIN
-  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%file%~) BEGIN
-    LAF EXT_OF_FILESPEC STR_VAR filespec = EVAL ~%file%~ RET ext END
-    COPY ~%MOD_FOLDER%/%ext%/%file%~ ~override~
+  // Additional resources
+  ACTION_FOR_EACH file IN ~%itm_resref%a.bam~
+                          ~%itm_resref%b.bam~
+                          ~%itm_resref%c.bam~
+                          ~%itm_resref%d.bam~
+                          ~%itm_resref%a.wav~
+  BEGIN
+    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%file%~) BEGIN
+      LAF EXT_OF_FILESPEC STR_VAR filespec = EVAL ~%file%~ RET ext END
+      COPY ~%MOD_FOLDER%/%ext%/%file%~ ~override~
+    END
   END
 END

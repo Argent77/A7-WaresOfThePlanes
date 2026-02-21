@@ -1031,6 +1031,9 @@ Gewicht: 6
 4.7. Seelenspiegel +2
 Jegg Hügelschneider in Brückenfort (SoD) kann die Verzauberungen des Hammers verbessern.
 
+In EET kann die Waffe von SoD nach BG2 importiert werden. Ihr findet sie irgendwo im Tempel des
+Oghma in Athkatlas Docks.
+
 4.8. Seelenspiegel +3
 Cromwell in Athkatla (SoA) kann Schriftrollen zum Beschwören von Feuer-, Luft- und Erdelementaren
 nutzen, um der Waffe weitere Fähigkeiten hinzuzufügen.

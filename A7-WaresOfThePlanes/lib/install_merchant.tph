@@ -69,6 +69,9 @@ END
 ACTION_IF (has_bg2) BEGIN
   EXTEND_BOTTOM ~a7-merc.bcs~ ~%MOD_FOLDER%/bcs/a7-merc-game-bg2ee.baf~ EVAL
 END
+ACTION_IF (has_sod) BEGIN
+  EXTEND_BOTTOM ~a7-merc.bcs~ ~%MOD_FOLDER%/bcs/a7-merc-sod.baf~ EVAL
+END
 
 EXTEND_BOTTOM ~a7-merc.bcs~ ~%MOD_FOLDER%/bcs/a7-merc-bottom.baf~ EVAL
 
@@ -91,20 +94,29 @@ WITH_SCOPE BEGIN
       READ_2DA_ENTRY_FORMER ~item_table~ row 1 sto_upgrade_stage
       READ_2DA_ENTRY_FORMER ~item_table~ row 2 sto_item_count
 
-      PATCH_IF (sto_item_count < 0) BEGIN
-        // retrieve required item count dynamicall from item stack or charges
-        SET multiplier = 0 - sto_item_count // absolute value indicates "count" to add
-        SET sto_item_count = 1
-        INNER_ACTION BEGIN
-          COPY_EXISTING ~%sto_item_resref%.itm~ ~override~
-            LPF get_item_charges RET sto_item_count = count END
-          BUT_ONLY IF_EXISTS
-        END
-        SET sto_item_count *= multiplier
+      // determine game support
+      PATCH_MATCH sto_upgrade_stage WITH
+        1 2 3 4 BEGIN SET can_add = has_bg || has_sod || has_bg2 END
+        5 6 7 8 BEGIN SET can_add = has_sod || has_bg2 END
+        DEFAULT SET can_add = has_bg2
       END
 
-      INNER_PATCH_SAVE store_upgrade_script ~%store_upgrade_script%~ BEGIN
-        APPEND_FILE_EVALUATE TEXT ~%MOD_FOLDER%/bcs/a7-mupgr-store-upgrade-item-template.baf~
+      PATCH_IF (can_add) BEGIN
+        PATCH_IF (sto_item_count < 0) BEGIN
+          // retrieve required item count dynamically from item stack or charges
+          SET multiplier = 0 - sto_item_count // absolute value indicates "count" to add
+          SET sto_item_count = 1
+          INNER_ACTION BEGIN
+            COPY_EXISTING ~%sto_item_resref%.itm~ ~override~
+              LPF get_item_charges RET sto_item_count = count END
+            BUT_ONLY IF_EXISTS
+          END
+          SET sto_item_count *= multiplier
+        END
+
+        INNER_PATCH_SAVE store_upgrade_script ~%store_upgrade_script%~ BEGIN
+          APPEND_FILE_EVALUATE TEXT ~%MOD_FOLDER%/bcs/a7-mupgr-store-upgrade-item-template.baf~
+        END
       END
     END
   BUT_ONLY
@@ -170,11 +182,34 @@ END
 
 // Cutscene resources
 COMPILE EVAL ~%MOD_FOLDER%/bcs/a7-mct01.baf~
-             ~%MOD_FOLDER%/bcs/a7-mct02.baf~
-             ~%MOD_FOLDER%/bcs/a7-mct03.baf~
              ~%MOD_FOLDER%/bcs/a7-mct04.baf~
              ~%MOD_FOLDER%/bcs/a7-mct05.baf~
              ~%MOD_FOLDER%/bcs/a7-mctx.baf~
+
+// Cutscenes #2 and #3 are game-dependent
+EXTEND_BOTTOM ~a7-mct03.bcs~ ~%MOD_FOLDER%/bcs/a7-mct03-append-1.baf~ EVAL
+ACTION_IF (has_bg) BEGIN
+  EXTEND_BOTTOM ~a7-mct02.bcs~ ~%MOD_FOLDER%/bcs/a7-mct02-append-1-bg1.baf~ EVAL
+  EXTEND_BOTTOM ~a7-mct03.bcs~ ~%MOD_FOLDER%/bcs/a7-mct03-append-2-bg1.baf~ EVAL
+END
+ACTION_IF (has_sod) BEGIN
+  EXTEND_BOTTOM ~a7-mct02.bcs~ ~%MOD_FOLDER%/bcs/a7-mct02-append-1-sod.baf~ EVAL
+  EXTEND_BOTTOM ~a7-mct03.bcs~ ~%MOD_FOLDER%/bcs/a7-mct03-append-2-sod.baf~ EVAL
+END
+ACTION_IF (has_bg2) BEGIN
+  EXTEND_BOTTOM ~a7-mct02.bcs~ ~%MOD_FOLDER%/bcs/a7-mct02-append-1-bg2.baf~ EVAL
+  EXTEND_BOTTOM ~a7-mct03.bcs~ ~%MOD_FOLDER%/bcs/a7-mct03-append-2-bg2.baf~ EVAL
+END
+EXTEND_BOTTOM ~a7-mct02.bcs~ ~%MOD_FOLDER%/bcs/a7-mct02-append-2.baf~ EVAL
+ACTION_IF (has_bg) BEGIN
+  EXTEND_BOTTOM ~a7-mct02.bcs~ ~%MOD_FOLDER%/bcs/a7-mct02-append-3-bg1.baf~ EVAL
+END
+ACTION_IF (has_sod) BEGIN
+  EXTEND_BOTTOM ~a7-mct02.bcs~ ~%MOD_FOLDER%/bcs/a7-mct02-append-3-sod.baf~ EVAL
+END
+ACTION_IF (has_bg2) BEGIN
+  EXTEND_BOTTOM ~a7-mct02.bcs~ ~%MOD_FOLDER%/bcs/a7-mct02-append-3-bg2.baf~ EVAL
+END
 
 COPY ~%MOD_FOLDER%/cre/a7-mcust.cre~ ~override~
      ~%MOD_FOLDER%/cre/a7-mcusf.cre~ ~override~

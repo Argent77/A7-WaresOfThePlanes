@@ -4,50 +4,52 @@ INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 
 OUTER_SPRINT itm_resref ~a7-phazr~
 
-// Installing custom projectiles
-ADD_PROJECTILE ~%MOD_FOLDER%/pro/%itm_resref%.pro~ ~Phazor_Beam~
-ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-pkill.pro~ ~Phazor_Beam_Invisible~
+ACTION_IF (has_bg2) BEGIN
+  // Installing custom projectiles
+  ADD_PROJECTILE ~%MOD_FOLDER%/pro/%itm_resref%.pro~ ~Phazor_Beam~
+  ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-pkill.pro~ ~Phazor_Beam_Invisible~
 
-// Installing item
-COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
-  LPF update_item_generic
-    STR_VAR
-      itm_resref
-    RET
-      icon_resref
-      desc_image_resref
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        desc_image_resref
+    END
+    // updating projectile
+    READ_LONG 0x64 ofs_abil
+    WRITE_SHORT (ofs_abil + 0x2a) EVAL "%itm_resref%"
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    desc_image_resref
   END
-  // updating projectile
-  READ_LONG 0x64 ofs_abil
-  WRITE_SHORT (ofs_abil + 0x2a) EVAL "%itm_resref%"
 
-// Installing associated resources
-LAF install_item_resources_generic
-STR_VAR
-  itm_resref
-  icon_resref
-  desc_image_resref
-END
-
-// Installing additional resources
-ACTION_FOR_EACH file IN ~a7-pdust.bam~
-                        ~a7-ppuls.bam~
-                        ~a7-pdust.vvc~
-                        ~%itm_resref%.wav~
-BEGIN
-  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%file%~) BEGIN
-    LAF EXT_OF_FILESPEC STR_VAR filespec = EVAL ~%file%~ RET ext END
-    COPY ~%MOD_FOLDER%/%ext%/%file%~ ~override~
-  END
-END
-
-COPY ~%MOD_FOLDER%/spl/a7-pkill.spl~ ~override~
-  LPF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
-  PATCH_WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
-    PATCH_IF (TRA_ENTRY_EXISTS(20)) BEGIN
-      SAY NAME1 @20  // Disintegrate
+  // Installing additional resources
+  ACTION_FOR_EACH file IN ~a7-pdust.bam~
+                          ~a7-ppuls.bam~
+                          ~a7-pdust.vvc~
+                          ~%itm_resref%.wav~
+  BEGIN
+    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%file%~) BEGIN
+      LAF EXT_OF_FILESPEC STR_VAR filespec = EVAL ~%file%~ RET ext END
+      COPY ~%MOD_FOLDER%/%ext%/%file%~ ~override~
     END
   END
-  // updating projectile
-  READ_LONG 0x64 ofs_abil
-  WRITE_SHORT (ofs_abil + 0x26) "a7-pkill"
+
+  COPY ~%MOD_FOLDER%/spl/a7-pkill.spl~ ~override~
+    LPF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+    PATCH_WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+      PATCH_IF (TRA_ENTRY_EXISTS(20)) BEGIN
+        SAY NAME1 @20  // Disintegrate
+      END
+    END
+    // updating projectile
+    READ_LONG 0x64 ofs_abil
+    WRITE_SHORT (ofs_abil + 0x26) "a7-pkill"
+END

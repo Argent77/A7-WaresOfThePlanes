@@ -1,0 +1,10 @@
+// *** Cutscene: Merchant and customer, part 3a ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-merc")
+    Wait(2)
+    DisplayStringHead(Myself,@2100) // *sigh* Another slow day.
+END
