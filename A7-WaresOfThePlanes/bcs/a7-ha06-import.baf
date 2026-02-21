@@ -9,7 +9,7 @@ THEN
     CutSceneId(Player1)
     TakePartyItem("a7-ha06a")
     DestroyItem("a7-ha06a")
-    SetGlobal("A7_IMPORT_SOULMIRROR_1","GLOBAL",0)
+    SetGlobal("A7_IMPORT_SOULMIRROR_1","GLOBAL",1)
     Continue()
 END
 
@@ -21,6 +21,6 @@ THEN
     CutSceneId(Player1)
     TakePartyItem("a7-ha06b")
     DestroyItem("a7-ha06b")
-    SetGlobal("A7_IMPORT_SOULMIRROR_2","GLOBAL",0)
+    SetGlobal("A7_IMPORT_SOULMIRROR_2","GLOBAL",1)
     Continue()
 END
