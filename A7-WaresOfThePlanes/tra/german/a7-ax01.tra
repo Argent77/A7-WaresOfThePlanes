@@ -1,9 +1,19 @@
 // "Ascension"
 
-// @0 = ~~  // #6654
+@0 = ~Scharfe Streitaxt~
 @1 = ~Auferstehung +2~
 
-// @10 = ~~ // #6656
+@10 = ~Die gängigste Ausführung einer Streitaxt besteht aus einem dicken Stab von ungefähr 1,20 m Länge mit einer einschneidigen, trompetenförmigen Klinge an einem Ende. Diese Waffe wird auch Breitbeil genannt. Auf dem Kopf der Axt ist das Symbol einer Klinge unter einem aufsteigenden Feuer zu erkennen.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Klinge)
+Initiativefaktor: 7
+Fertigkeit: Axt
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 7~
 @11 = ~"Auferstehung" ist eine der besten Waffen, die in der Großen Gießerei, der Heimat der Gläubigen der Quelle in Sigil, hergestellt werden. Gemeinsam mit dem Hammer "Vernunft" und dem Dolch "Erleuchtung" bildet sie eine Dreiergruppe, die unter dem Namen "Triade der Prüfungen" bekannt ist. Das Symbol des Bundes ist in den Kopf der Axt eingraviert, und die Schneiden der Klingen sind so scharf, dass man damit ein Haar längs spalten könnte.
 
 EIGENSCHAFTEN:

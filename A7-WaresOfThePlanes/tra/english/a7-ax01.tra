@@ -1,9 +1,20 @@
 // "Ascension"
 
-// @0 = ~~  // #6654
+@0 = ~Sharp Battle Axe~
 @1 = ~Ascension +2~
 
-// @10 = ~~ // #6656
+@10 = ~The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes. On the axe head you can make out a symbol of a blade underneath a rising fire.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7~
 @11 = ~"Ascension" is one of the finest weapons created at the Great Foundry, the home of the Believers of the Source in Sigil. It is one of three weapons called the "Triad of Tests," including the hammer "Reason" and the dagger "Enlightenment." The symbol of the faction is engraved on the axe head, and the edges of the blades are so sharp they could split a hair lengthwise.
 
 STATISTICS:

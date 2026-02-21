@@ -3,7 +3,17 @@
 // @0 = ~~  // #6337
 @1 = ~Der Rechtfertiger +2~
 
-// @10 = ~~ // #6709
+@10 = ~Dieser Streitkolben sieht genau wie jeder andere aus - eine stachelige Kugel an einem hölzernen Schaft sowie einem Lederhandgriff mit Lederriemen, um zu verhindern, daß man ihn in der Hitze des Kampfes verliert. Anders ist nur das Auge, das mit Säure auf den Kopf der Waffe geätzt wurde, ein stilisiertes Siegel des Gottes Horus.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W6 +1 (Wucht)
+Initiativefaktor: 7
+Fertigkeit: Streitkolben
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 10~ // #6709
 @11 = ~Dieser Streitkolben sieht genau wie jeder andere aus - eine stachelige Kugel an einem hölzernen Schaft sowie einem Lederhandgriff mit Lederriemen, um zu verhindern, dass man ihn in der Hitze des Kampfes verliert. Anders ist nur das Auge, das mit Säure auf den Kopf der Waffe geätzt wurde, ein stilisiertes Siegel des Gottes Horus.
 
 Diese Waffe ist der Rechtfertiger, ein Streitkolben, der in der Stadt Heliopolis auf der Ebene Arkadien hergestellt und so entworfen wurde, dass er den Anhängern des Guten hilft und die Anhänger des Bösen verstümmelt. Er kann seinen Besitzer bei Bedarf heilen und hegt einen besonderen Hass auf die Kräfte des Chaos und des Bösen.

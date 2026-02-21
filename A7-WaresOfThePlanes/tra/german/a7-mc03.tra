@@ -3,7 +3,17 @@
 // @0 = ~~  // #6701
 @1 = ~Vrock-Keule +2~
 
-// @10 = ~~ // #6703
+@10 = ~Eine grobe Keule, die aus der Wirbelsäule und dem Kopf eines großen Vogels hergestellt wurde.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W6 (Wucht)
+Initiativefaktor: 4
+Fertigkeit: Keule
+Typ: 1-händig
+Mindeststärke: 5
+
+Gewicht: 3~
 @11 = ~Diese Keule wurde aus den Knochen eines Vrocks hergestellt und ist eine schreckliche Waffe.
 
 EIGENSCHAFTEN:

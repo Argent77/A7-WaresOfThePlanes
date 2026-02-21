@@ -3,7 +3,18 @@
 // @0 = ~~  // #6701
 @1 = ~Vrock Club +2~
 
-// @10 = ~~ // #6703
+@10 = ~A crude club fashioned from the spine and head of a large bird.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
 @11 = ~Created from the bones of a Vrock, this club makes a formidable weapon.
 
 STATISTICS:

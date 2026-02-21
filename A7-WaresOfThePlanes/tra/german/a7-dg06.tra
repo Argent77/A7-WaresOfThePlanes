@@ -1,9 +1,19 @@
 // "Enlightenment"
 
-// @0 = ~~  // #6343
+@0 = ~Schlanker Dolch~
 @1 = ~Erleuchtung +2~
 
-// @10 = ~~ // #6720
+@10 = ~Ein typischer Dolch ist mit einer spitzen, normalerweise zweischneidigen Klinge versehen, wodurch er sich von einem Messer unterscheidet. Entlang der Klinge ist das Symbol einer Klinge unter einem aufsteigenden Feuer zu erkennen.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W4 (Stich)
+Initiativefaktor: 2
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 1~ // #6720
 @11 = ~Dieser Dolch ist die zweite Waffe der "Triade der Prüfungen" - die anderen beiden sind "Auferstehung" und "Vernunft". Er ist schlank, liegt perfekt in der Hand und ist leicht wie eine Feder. Entlang der Klinge ist das Symbol der Göttermenschen von Sigil eingraviert, und die ganze Waffe scheint vor Erwartung zu beben.
 
 EIGENSCHAFTEN:

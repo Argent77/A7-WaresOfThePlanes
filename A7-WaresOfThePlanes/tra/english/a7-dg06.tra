@@ -1,9 +1,20 @@
 // "Enlightenment"
 
-// @0 = ~~  // #6343
+@0 = ~Slim Dagger~
 @1 = ~Enlightenment +2~
 
-// @10 = ~~ // #6720
+@10 = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter. Along the blade you can make out a symbol of a blade underneath a rising fire.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
 @11 = ~"Enlightenment", along with "Ascension" and "Reason", are weapons called the "Triad of Tests" by the Believers of the Source in Sigil. This dagger is slim, perfectly balanced, and light as a feather. The symbol of the Godsmen is engraved along the blade, and the entire weapon seems to shiver as if in anticipation.
 
 STATISTICS:

@@ -1,9 +1,19 @@
 // Hammer of Comminution
 
-// @0 = ~~  // #6345
+@0 = ~Vorschlaghammer~
 @1 = ~Hammer des Zerschmetterns +2~
 
-// @10 = ~~ // #6716
+@10 = ~Dieser riesige Hammer war ursprünglich für Schwerarbeit vorgesehen, würde aber auch eine hervorragende Waffe abgeben. Im Gegensatz zu anderen Hämmern, die du gesehen hast, hat dieser jedoch einen runden Kopf, und seine Metalloberfläche sieht nagelneu aus. Wenn du ihn näher betrachtest, findest du überall in der Oberfläche des Hammerkopfes Risse, aber der Kopf selbst scheint nicht schwach oder zerbrechlich zu sein. Seltsam.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W4 +1 (Wucht)
+Initiativefaktor: 4
+Fertigkeit: Kriegshammer
+Typ: 1-händig
+Mindeststärke: 9
+
+Gewicht: 6~
 @11 = ~Forschunsergebnissen zufolge ist dies eine wahrhaft hervorragende Waffe. Dieser Kriegshammer (der auch "Hammer des Zerschmetterns" genannt wird) ist jedem herkömmlichen Vorschlaghammer weit überlegen. Sein vernichtender Schlag zerschmettert das Opfer nicht nur, sondern bricht auch jede getroffene Oberfläche auf, sei es nun Knochen, Metall oder Holz, und fügt so zusätzlichen Schaden zu… Wenn das Opfer den Angriff überlebt, wird es außerdem für den nächsten Angriff "geschwächt".
 
 Der Hammer des Zerschmetterns wurde ausgiebig von Enote genutzt, einem Priester der Schicksalsgarde, im Jahr 14 E.U. Er war ein Philosoph, der gewalttätigen Stimmungsumschwüngen unterlag, wenn er über Theologie diskutierte, und setzte die Tugenden des Hammers als Mittel zur Förderung des Verfalls toter Materie ein. Ob das, was er mit dem Hammer traf, vorher bereits tot war, bleibt dabei offen.

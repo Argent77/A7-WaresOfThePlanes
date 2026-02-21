@@ -3,7 +3,18 @@
 // @0 = ~~  // #6337
 @1 = ~The Justifier +2~
 
-// @10 = ~~ // #6709
+@10 = ~This mace looks much like any other mace - a spiked ball atop a wooden shaft, leather handgrip with a thong to prevent losing it in the heat of battle. Where it differs is in the Eye etched in acid on the head of the weapon, a stylized sigil of the god Horus.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10~ // #6709
 @11 = ~This mace looks much like any other mace - a spiked ball atop a wooden shaft, leather handgrip with a thong to prevent losing it in the heat of battle. Where it differs is in the Eye etched in acid on the head of the weapon, a stylized sigil of the god Horus.
 
 This weapon is The Justifier, a mace created in the city of Heliopolis on the plane of Arcadia, designed to aid the followers of law and good. It can heal its owner, if asked, and harbors a special hatred for the forces of chaos and evil.

@@ -1,9 +1,20 @@
 // "Reason"
 
-// @0 = ~~  // #6345
+@0 = ~Massive War Hammer~
 @1 = ~Reason +2~
 
-// @10 = ~~ // #6716
+@10 = ~This is a heavy war hammer. It has a long handle and a metal head that looks like it could shape steel and crush skulls with ease. On the hammerhead you can make out a symbol of a blade underneath a rising fire.
+
+STATISTICS:
+
+Damage: 1d4+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6~
 @11 = ~This enormous hammer is the third weapon in the "Triad of Tests" of the Believers of the Source in Sigil. The other two are the axe "Ascension" and the dagger "Enlightenment." Its head is covered with mystic runes and engraved with the symbol of the Godsmen. It thrums in your hands.
 
 STATISTICS:

@@ -1,9 +1,19 @@
 // "Reason"
 
-// @0 = ~~  // #6345
+@0 = ~Massiver Kriegshammer~
 @1 = ~Vernunft +2~
 
-// @10 = ~~ // #6716
+@10 = ~Dies ist ein schwerer Arbeitshammer. Er hat einen langen Griff und einen Metallkopf, der so aussieht, als ob er mit Leichtigkeit Stahl formen und Schädel zertrümmern könnte. Auf dem Hammerkopf ist das Symbol einer Klinge unter einem aufsteigenden Feuer zu erkennen.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W4 +1 (Wucht)
+Initiativefaktor: 4
+Fertigkeit: Kriegshammer
+Typ: 1-händig
+Mindeststärke: 9
+
+Gewicht: 6~
 @11 = ~Dieser enorme Hammer ist neben der Axt "Auferstehung" und dem Dolch "Erleuchtung" die dritte Waffe aus der "Triade der Prüfungen" der Göttermenschen in Sigil. Sein Kopf ist mit mystischen Runen und mit dem Symbol der Göttermenschen verziert. Er vibriert in deinen Händen.
 
 EIGENSCHAFTEN:

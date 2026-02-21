@@ -1,9 +1,19 @@
 // Runeblade
 
-// @0 = ~~  // #6343
+@0 = ~Unhandlich geformter Dolch~
 @1 = ~Runenklinge~
 
-// @10 = ~~ // #6720
+@10 = ~Ein typischer Dolch ist mit einer spitzen, normalerweise zweischneidigen Klinge versehen, wodurch er sich von einem Messer unterscheidet. Die ungünstige Form der Klinge spricht gegen ihre Wirksamkeit im Nahkampf.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W4 (Stich)
+Initiativefaktor: 2
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 1~
 @11 = ~Diese verzauberten Klingen, geschaffen von einer legendären Gilde von Kriegsmagiern, die als die "Scharlachroten Seher" bekannt waren, wurden speziell zur Verteidigung gegen gegnerische Zauberwirker erdacht. Die in die Klinge eingeätzten winzigen Runen sind machtvolle Schutzzauber vor jeglicher Art von Magie. Unglücklicherweise ist die so völlig auf die magische Verteidigung ausgelegte Waffe aufgrund ihres eher unhandlichen Designs im Nahkampf nahezu wirkungslos.
 
 EIGENSCHAFTEN:
