@@ -1,0 +1,53 @@
+// Tribal Necklace of the Rengarth
+
+@0 = ~Bone Necklace~
+@1 = ~Tribal Necklace of the Rengarth~
+
+@10 = ~A necklace is a piece of ornamental jewelry usually made of precious metal and adorned with gems. This piece, however, seems to be made purely from the bones, teeth, and claws of animals.
+
+STATISTICS:
+
+Weight: 2~
+@11 = ~Necklaces like this were crafted by the nomadic Rengarth tribes over 1700 years ago. They were primarily used by the shamans of the tribes in ceremonies and occasionally as support in their skirmishes with rival tribes and the ever-present threat posed by the Netheril Empire.
+
+These necklaces consist of bones, teeth and claws from wolves, bears, boars, and several other animals, held together by strong but flexible leather thongs. They provide a number of superficial magic abilities. But the more powerful enchantments are mysterious and resist even powerful divination attempts.
+
+This particular necklace wound up in the possession of a Netherese noble of Thultanthar before the city was lost for centuries when it shifted into the Plane of Shadow. About 1279 DR a member of the Doomguard faction returned with it from a planar excursion and sold it to a band of adventurers in Sigil where the trail of the item was lost again until it showed up recently in possesion of Ebb Creakknees' store.
+
+Despite its crude appearance the necklace is surprisingly well made and seems to be enchanted to withstand the test of time. Every bone and claw fits seamlessly into each other, making it very sturdy but comfortably to wear at the same time. However, given its barbaric appearance, people in more civilized regions may feel repulsed if the necklace is worn openly.
+
+STATISTICS:
+
+Equipped abilities:
+– Charisma: -1
+– Undetectable by animals (only Druids, Shamans, and Rangers)
+
+Charge abilities:
+– Charm Animal three times per day (Save vs. Spell negates)
+  Range: 30 feet
+  Duration: 2 turns
+  Area of Effect: 1 creature
+
+Weight: 2~
+
+@100 = ~examine~
+
+// dialog lines
+@1000 = ~The necklace is made from bones, teeth and claws of various animals.~
+@1001 = ~Put the necklace away.~
+@1002 = ~The necklace is made from bones, teeth and claws of various animals. You can make out wolf and bear claws, boar tusks, as well as several other bones you can't identify.~
+@1003 = ~The necklace is made from bones, teeth and claws of various animals. You can make out claws from wolves, bears, panthers, and lions, but also teeth from boars and several other animals.~
+@1004 = ~Upon closer examination you notice a faint afterglow when touching certain pieces of the necklace.~
+@1005 = ~Try to remove the wolf claw from the necklace.~
+@1006 = ~Try to remove a smaller dangerous-looking claw from the necklace.~
+@1007 = ~Try to remove the panther claw from the necklace.~
+@1008 = ~Try to remove a bigger dangerous-looking claw from the necklace.~
+@1009 = ~Try to remove the lion claw from the necklace.~
+@1010 = ~Try to remove the boar tusk from the necklace.~
+@1011 = ~Try to remove the bear claw from the necklace.~
+@1012 = ~What else do you want to do?~
+@1013 = ~You carefully attempt to loosen the piece from the necklace but an unknown force keeps it in place no matter how much effort you put into it.~
+@1014 = ~You carefully attempt to loosen the piece from the necklace. At first it doesn't appear to yield. After a while, however, you feel a dormant magic awakening, and the piece literally slips into your hands.~
+@1015 = ~After removing the last piece with a special afterglow, the necklace suddenly breaks into many pieces which almost instantly turn into a handful of dirt and dust.~
+@1016 = ~The necklace suddenly breaks into many pieces which almost instantly turn into a handful of dirt and dust.~
+@1017 = ~It seems the magic that held the necklace together has been spent and the ravages of time finally caught up with it.~

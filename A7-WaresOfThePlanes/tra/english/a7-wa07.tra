@@ -1,0 +1,33 @@
+// Rengarth Bear Claw
+
+@0 = ~Animal Claw~
+@1 = ~Rengarth Bear Claw~
+
+@10 = ~This appears to be the claw of an animal.
+
+STATISTICS:
+
+Weight: 1~
+@11 = ~This is the claw of a bear. It was prepared by the nomadic Rengarth tribes in ancient times and seems to be fuelled with an aspect of the forbidden epic magic spell "Summon Behemoth."
+
+Due to prolonged exposure to the Plane of Shadow the original enchantment was slightly corrupted. As a result, the magic does not behave entirely as intended.
+
+A strong will is required to call forth the artifact's magic.
+
+STATISTICS:
+
+Charge abilities:
+– Summon a Bear Behemoth from the Outer Planes
+  The summoned creature can be a Black Bear, Brown Bear, or Grizzly Bear.
+  There is a 5% chance to draw the attention of a hostile shadow version of the behemoth instead, unless summoned by druids, shamans, or rangers.
+  Duration: 2 turns
+
+Requires:
+ Class level 26
+
+Weight: 1~
+
+@100 = ~Black Bear Behemoth~
+@101 = ~Brown Bear Behemoth~
+@102 = ~Grizzly Bear Behemoth~
+@110 = ~Shadow Bear Behemoth~

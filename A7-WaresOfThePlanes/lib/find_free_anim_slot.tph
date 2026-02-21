@@ -1,0 +1,440 @@
+OUTER_SPRINT FIND_FREE_ANIM_SLOT_VERSION ~2.1~
+
+/**
+ * Action and patch function that returns the first unoccupied creature animation slot in the defined range or
+ * of the defined animation type.
+ *
+ * This function supports all EE games and original BG2 with TobEx AfterLife.
+ *
+ * INT_VAR slot_min   Lower bound of the requested animation slot range for creature animations.
+ *                    Optional, if "type" parameter is specified.
+ * INT_VAR slot_max   Upper bound (exclusive) of the requested animation slot range for creature animations.
+ *                    Optional, if "type" parameter is specified.
+ * INT_VAR slot_step  Specifies how many slots to skip after each iteration. This parameter can be specified for
+ *                    slot ranges or types. (Default: 1)
+ * STR_VAR type       Instructs the function to find the first free creature animation slot that is compatible with
+ *                    the specified animation type. Optionally, "slot_min" and "slot_max" parameters can be used to
+ *                    further narrow down the applicable slot range.
+ *                    Supported types:
+ *                    - effect                  0x0000 - 0x0fff
+ *                    - monster_quadrant        0x1000 - 0x1fff
+ *                    - monster_multi           0x1000 - 0x1fff
+ *                    - multi_new               0x1000 - 0x1fff
+ *                    - monster_layered_spell   0x2000 - 0x2fff
+ *                    - monster_ankheg          0x3000 - 0x3fff
+ *                    - town_static             0x4000 - 0x4fff
+ *                    - character               0x5000 - 0x5fff, 0x6000 - 0x6fff
+ *                    - character_old           0x5000 - 0x5fff, 0x6000 - 0x6fff
+ *                    - monster                 0x7000 - 0x7fff
+ *                    - monster_old             0x7000 - 0x7fff
+ *                    - monster_layered         0x8000 - 0x8fff
+ *                    - monster_large           0x9000 - 0x9fff
+ *                    - monster_large16         0xa000 - 0xafff
+ *                    - ambient_static          0xb000 - 0xbfff
+ *                    - ambient                 0xc000 - 0xcfff
+ *                    - flying                  0xd000 - 0xdfff
+ *                    - monster_icewind         0xe000 - 0xefff
+ *                    - monster_planescape      0xf000 - 0xffff   (PST:EE only)
+ * RET slot           Returns the first free creature animation slot according to the specifications.
+ *                    Returns -1 if no free slots were found, the game isn't supported, or parameters are invalid.
+ */
+DEFINE_DIMORPHIC_FUNCTION FIND_FREE_ANIM_SLOT
+INT_VAR
+  slot_min = "-1"
+  slot_max = "-1"
+  slot_step = 1
+STR_VAR
+  type = ~~
+RET
+  slot
+BEGIN
+  OUTER_SET slot = "-1"
+  OUTER_SET slot_step = (slot_step < 1) ? 1 : slot_step
+
+  OUTER_SET valid_game = (FILE_EXISTS_IN_GAME ~extanim.2da~) || (FILE_EXISTS ~engine.lua~ && GAME_IS ~bgee bg2ee eet iwdee pstee~)
+
+  ACTION_IF (NOT valid_game) BEGIN
+    WARN ~Game is not supported.~
+  END ELSE ACTION_IF (NOT ~%type%~ STR_EQ ~~) BEGIN
+    OUTER_SET match = 0
+    ACTION_PHP_EACH anim_slot_types AS header => _ BEGIN
+      ACTION_IF (NOT match && ~%header%~ STR_EQ ~%type%~) BEGIN
+        OUTER_SET match = 1
+        OUTER_SPRINT type ~%header%~  // to ensure case-sensitive match
+        // LOG ~DEBUG: __FIND_FREE_ANIMATION_SLOT_BY_TYPE(slot_step: %slot_step%, type: %type%)~
+        LAF __FIND_FREE_ANIMATION_SLOT_BY_TYPE INT_VAR slot_min slot_max slot_step STR_VAR type RET slot END
+      END
+    END
+  END ELSE ACTION_IF (slot_min >= 0 && slot_max >= slot_min) BEGIN
+    LAF __FIND_FREE_ANIMATION_SLOT_BY_RANGE INT_VAR slot_min slot_max slot_step RET slot END
+  END ELSE BEGIN
+    WARN ~Invalid animation range or type.~
+  END
+END
+
+
+/**
+* Used internally: Returns a free creature animation slot in a slot range that is compatible with the specified animation type.
+*/
+DEFINE_DIMORPHIC_FUNCTION __FIND_FREE_ANIMATION_SLOT_BY_TYPE
+INT_VAR
+  slot_min = "-1"
+  slot_max = "-1"
+  slot_step = 1
+STR_VAR
+  type = ~~
+RET
+  slot
+BEGIN
+  OUTER_SET slot = "-1"
+
+  // normalizing slot range
+  OUTER_SET slot_min = (slot_min < 0) ? 0 : (slot_min > 0xffff) ? 0xffff : slot_min
+  OUTER_SET slot_max = (slot_max < 0) ? 0x10000 : (slot_max >= 0x10000) ? 0x10000 : slot_max
+  ACTION_IF (slot_min > slot_max) BEGIN
+    OUTER_SET v = slot_min
+    OUTER_SET slot_min = slot_max
+    OUTER_SET slot_max = v
+  END
+
+  // finding free slot
+  ACTION_IF (NOT ~%type%~ STR_EQ ~~ && VARIABLE_IS_SET $anim_slot_types(~%type%~)) BEGIN
+    OUTER_SET count = $anim_slot_types(~%type%~)
+    OUTER_SET match = 0
+    OUTER_FOR (index = 0; NOT match && index < count; ++index) BEGIN
+      OUTER_SET min = $anim_slot_types(~%type%~ ~%index%~ ~base~)
+      OUTER_SET max = min | $anim_slot_types(~%type%~ ~%index%~ ~mask~)
+      OUTER_FOR (value = min; NOT match && value <= max; value += slot_step) BEGIN
+        ACTION_IF (value >= min && value <= max && value >= slot_min && value < slot_max) BEGIN
+          LAF __VERIFY_FREE_SLOT INT_VAR value RET match = success END
+          ACTION_IF (match) BEGIN
+            OUTER_SET slot = value
+          END
+        END
+      END
+    END
+  END
+END
+
+/**
+ * Used internally: Returns a free creature animation slot in the specified slot range.
+ */
+DEFINE_DIMORPHIC_FUNCTION __FIND_FREE_ANIMATION_SLOT_BY_RANGE
+INT_VAR
+  slot_min = "-1"
+  slot_max = "-1"
+  slot_step = 1
+RET
+  slot
+BEGIN
+  OUTER_SET slot = "-1"
+
+  OUTER_SET match = 0
+  OUTER_FOR (value = slot_min; NOT match && value < slot_max; value += slot_step) BEGIN
+    LAF __VERIFY_FREE_SLOT INT_VAR value RET match = success END
+    ACTION_IF (match) BEGIN
+      OUTER_SET slot = value
+    END
+  END
+END
+
+/**
+ * Used internally: Returns whether the specified animation slot is free for the taking.
+ */
+DEFINE_DIMORPHIC_FUNCTION __VERIFY_FREE_SLOT
+INT_VAR
+  value = "-1"
+RET
+  success
+BEGIN
+  OUTER_SET success = 0
+
+  ACTION_IF (value >= 0 && value <= 0xffff) BEGIN
+    // constructing 4-digits hex value
+    OUTER_PATCH ~~ BEGIN SPRINTF hex ~%x~ (value) END
+    OUTER_PATCH_SAVE hex ~%hex%~ BEGIN DELETE_BYTES 0 2 END
+    OUTER_WHILE (STRING_LENGTH ~%hex%~ < 4) BEGIN OUTER_SPRINT hex ~0%hex%~ END
+
+    // try ini files first
+    OUTER_SET success = NOT FILE_EXISTS_IN_GAME ~%hex%.ini~
+
+    ACTION_IF (success) BEGIN
+      // try EXTANIM.2DA entries next
+      COPY_EXISTING ~extanim.2da~ ~override~
+        SET match = 0
+        REPLACE_EVALUATE ~^[ %TAB%]*\(0[xX][0-9a-fA-F]+\|[0-9]+\)[ %TAB%]+-?[0-9]+[ %TAB%]+-?[0-9]+~ BEGIN
+          SET match = match || (IS_AN_INT ~MATCH1~ && value == MATCH1)
+        END ~%MATCH0%~
+        SET success = NOT match
+      BUT_ONLY IF_EXISTS
+    END
+
+    ACTION_IF (success) BEGIN
+      // try ANISND.IDS entries last
+      COPY_EXISTING ~anisnd.ids~ ~override~
+        SET match = 0
+        REPLACE_EVALUATE ~^[ %TAB%]*\(0[xX][0-9a-fA-F]+\|[0-9]+\)[ %TAB%]+\([^ %TAB%]+\)[ %TAB%]+~ BEGIN
+          PATCH_IF (NOT match && IS_AN_INT ~MATCH1~ && value == MATCH1) BEGIN
+            SET len = STRING_LENGTH ~%MATCH2%~
+            PATCH_IF (len > 5 && ~%MATCH2%~ STRING_MATCHES_REGEXP ~^.+_..$~ == 0) BEGIN
+              // removing palette override from resref
+              LPF SUBSTRING INT_VAR start = 0 length = len - 3 STR_VAR string = EVAL ~%MATCH2%~ RET MATCH2 = substring END
+            END
+            LPF __ANIM_RESOURCE_EXISTS INT_VAR value STR_VAR resref = EVAL ~%MATCH2%~ RET match = success END
+          END
+        END ~%MATCH0%~
+        SET success = NOT match
+      BUT_ONLY IF_EXISTS
+    END
+  END
+END
+
+/**
+ * Used internally: Resolves given slot value and resref parameters into a creature animation file
+ *                  and returns 1 if it exists in the game.
+ */
+DEFINE_DIMORPHIC_FUNCTION __ANIM_RESOURCE_EXISTS
+INT_VAR
+  value = "-1"
+STR_VAR
+  resref = ~~
+RET
+  success
+BEGIN
+  OUTER_SET success = 0
+  ACTION_IF (value >= 0 && value <= 0xffff && NOT ~%resref%~ STR_EQ ~~) BEGIN
+    ACTION_FOR_EACH type IN ~effect~ ~monster_quadrant~ ~monster_multi~ ~multi_new~
+                            ~monster_layered_spell~ ~monster_ankheg~ ~town_static~
+                            ~character~ ~character_old~ ~monster~ ~monster_old~
+                            ~monster_layered~ ~monster_large~ ~monster_large16~
+                            ~ambient_static~ ~ambient~ ~flying~ ~monster_icewind~
+                            ~monster_planescape~
+    BEGIN
+      ACTION_IF (NOT success) BEGIN
+        OUTER_SET num_entries = IS_AN_INT $anim_slot_types(~%type%~) ? $anim_slot_types(~%type%~) : 0
+        OUTER_FOR (i = 0; NOT success && i < num_entries; ++i) BEGIN
+          OUTER_SET slot_min = $anim_slot_types(~%type%~ ~%i%~ ~base~)
+          OUTER_SET slot_max = slot_min | $anim_slot_types(~%type%~ ~%i%~ ~mask~)
+          ACTION_IF (value >= slot_min && value <= slot_max) BEGIN
+            OUTER_FOR (j = 0; NOT success && VARIABLE_IS_SET $anim_slot_types(~%type%~ ~suffix~ ~%j%~); ++j) BEGIN
+              OUTER_SPRINT file $anim_slot_types(~%type%~ ~suffix~ ~%j%~)
+              OUTER_SPRINT file ~%resref%%file%.bam~
+              OUTER_SET success = FILE_EXISTS_IN_GAME ~%file%~
+            END
+          END
+        END
+      END
+    END
+  END
+END
+
+
+// Available animation types and associated slot ranges.
+// "suffix" definitions are used to check for existing creature animation resources in the game.
+ACTION_DEFINE_ASSOCIATIVE_ARRAY anim_slot_types BEGIN
+  ~effect~ => 1
+  ~effect~, ~suffix~, 0 => ~~
+  ~effect~, 0, ~base~ => 0x0000
+  ~effect~, 0, ~mask~ => 0x0fff
+
+  ~monster_quadrant~ => 1
+  ~monster_quadrant~, ~suffix~, 0 => ~g11~
+  ~monster_quadrant~, 0, ~base~ => 0x1000
+  ~monster_quadrant~, 0, ~mask~ => 0x01ff
+
+  ~monster_multi~ => 2
+  ~monster_multi~, ~suffix~, 0 => ~g11~
+  ~monster_multi~, ~suffix~, 1 => ~1100~
+  ~monster_multi~, 0, ~base~ => 0x1200
+  ~monster_multi~, 0, ~mask~ => 0x00ff
+  ~monster_multi~, 1, ~base~ => 0x1400
+  ~monster_multi~, 1, ~mask~ => 0x0bff
+
+  ~multi_new~ => 1
+  ~multi_new~, ~suffix~, 0 => ~g11~
+  ~multi_new~, 0, ~base~ => 0x1300
+  ~multi_new~, 0, ~mask~ => 0x00ff
+
+  ~monster_layered_spell~ => 1
+  ~monster_layered_spell~, ~suffix~, 0 => ~g1~
+  ~monster_layered_spell~, 0, ~base~ => 0x2000
+  ~monster_layered_spell~, 0, ~mask~ => 0x0fff
+
+  ~monster_ankheg~ => 1
+  ~monster_ankheg~, ~suffix~, 0 => ~g1~
+  ~monster_ankheg~, 0, ~base~ => 0x3000
+  ~monster_ankheg~, 0, ~mask~ => 0x0fff
+
+  ~town_static~ => 1
+  ~town_static~, ~suffix~, 0 => ~~
+  ~town_static~, 0, ~base~ => 0x4000
+  ~town_static~, 0, ~mask~ => 0x0fff
+
+  ~character~ => 4
+  ~character~, ~suffix~, 0 => ~1g1~
+  ~character~, 0, ~base~ => 0x5000
+  ~character~, 0, ~mask~ => 0x03ff
+  ~character~, 1, ~base~ => 0x5500
+  ~character~, 1, ~mask~ => 0x00ff
+  ~character~, 2, ~base~ => 0x6000
+  ~character~, 2, ~mask~ => 0x03ff
+  ~character~, 3, ~base~ => 0x6500
+  ~character~, 3, ~mask~ => 0x00ff
+
+  ~character_old~ => 4
+  ~character_old~, ~suffix~, 0 => ~1g1~
+  ~character_old~, 0, ~base~ => 0x5400
+  ~character_old~, 0, ~mask~ => 0x00ff
+  ~character_old~, 1, ~base~ => 0x5600
+  ~character_old~, 1, ~mask~ => 0x09ff
+  ~character_old~, 2, ~base~ => 0x6400
+  ~character_old~, 2, ~mask~ => 0x00ff
+  ~character_old~, 3, ~base~ => 0x6600
+  ~character_old~, 3, ~mask~ => 0x09ff
+
+  // placeholder: created dynamically below
+  ~monster~ => 0
+  ~monster~, ~suffix~, 0 => ~g1~
+
+  // placeholder: created dynamically below
+  ~monster_old~ => 0
+  ~monster_old~, ~suffix~, 0 => ~g1~
+
+  ~monster_layered~ => 1
+  ~monster_layered~, ~suffix~, 0 => ~g1~
+  ~monster_layered~, 0, ~base~ => 0x8000
+  ~monster_layered~, 0, ~mask~ => 0x0fff
+
+  ~monster_large~ => 1
+  ~monster_large~, ~suffix~, 0 => ~g1~
+  ~monster_large~, 0, ~base~ => 0x9000
+  ~monster_large~, 0, ~mask~ => 0x0fff
+
+  ~monster_large16~ => 1
+  ~monster_large16~, ~suffix~, 0 => ~g1~
+  ~monster_large16~, 0, ~base~ => 0xa000
+  ~monster_large16~, 0, ~mask~ => 0x0fff
+
+  ~ambient_static~ => 1
+  ~ambient_static~, ~suffix~, 0 => ~g1~
+  ~ambient_static~, 0, ~base~ => 0xb000
+  ~ambient_static~, 0, ~mask~ => 0x0fff
+
+  ~ambient~ => 1
+  ~ambient~, ~suffix~, 0 => ~g1~
+  ~ambient~, 0, ~base~ => 0xc000
+  ~ambient~, 0, ~mask~ => 0x0fff
+
+  ~flying~ => 1
+  ~flying~, ~suffix~, 0 => ~~
+  ~flying~, ~suffix~, 1 => ~g1~
+  ~flying~, 0, ~base~ => 0xd000
+  ~flying~, 0, ~mask~ => 0x0fff
+
+  ~monster_icewind~ => 1
+  ~monster_icewind~, ~suffix~, 0 => ~sd~
+  ~monster_icewind~, ~suffix~, 1 => ~wk~
+  ~monster_icewind~, 0, ~base~ => 0xe000
+  ~monster_icewind~, 0, ~mask~ => 0x0fff
+
+  ~monster_planescape~ => 1
+  ~monster_planescape~, 0, ~base~ => 0xf000
+  ~monster_planescape~, 0, ~mask~ => 0x0fff
+END
+
+
+// monster
+OUTER_SET count = $anim_slot_types(~monster~)
+ACTION_FOR_EACH base IN 0x300 0xf00 BEGIN
+  OUTER_SET $anim_slot_types(~monster~ ~%count%~ ~base~) = 0x7000 + base
+  OUTER_SET $anim_slot_types(~monster~ ~%count%~ ~mask~) = 0xff
+  OUTER_SET count += 1
+END
+ACTION_FOR_EACH base IN 0x000 0x100 0x500 0xc00 0xe00 BEGIN
+  OUTER_FOR (i = base; i < base + 0x100;  i += 0x10) BEGIN
+    OUTER_SET $anim_slot_types(~monster~ ~%count%~ ~base~) = 0x7002 + i
+    OUTER_SET $anim_slot_types(~monster~ ~%count%~ ~mask~) = 0x0d
+    OUTER_SET count += 1
+  END
+END
+ACTION_FOR_EACH base IN 0x400 0x700 BEGIN
+  OUTER_FOR (i = base; i < base + 0x100; i += 0x10) BEGIN
+    OUTER_SET $anim_slot_types(~monster~ ~%count%~ ~base~) = 0x7003 + i
+    OUTER_SET $anim_slot_types(~monster~ ~%count%~ ~mask~) = 0x0c
+    OUTER_SET count += 1
+  END
+END
+OUTER_FOR (i = 0x200; i < 0x300; i += 0x10) BEGIN
+  OUTER_SET $anim_slot_types(~monster~ ~%count%~ ~base~) = 0x7004 + i
+  OUTER_SET $anim_slot_types(~monster~ ~%count%~ ~mask~) = 0x0b
+  OUTER_SET count += 1
+END
+ACTION_FOR_EACH base IN 0x900 0xa00 BEGIN
+  OUTER_FOR (i = base; i < base + 0x100; i += 0x10) BEGIN
+    OUTER_SET $anim_slot_types(~monster~ ~%count%~ ~base~) = 0x7005 + i
+    OUTER_SET $anim_slot_types(~monster~ ~%count%~ ~mask~) = 0x0a
+    OUTER_SET count += 1
+  END
+END
+OUTER_FOR (i = 0xb00; i < 0xc00; i += 0x10) BEGIN
+  OUTER_SET $anim_slot_types(~monster~ ~%count%~ ~base~) = 0x7007 + i
+  OUTER_SET $anim_slot_types(~monster~ ~%count%~ ~mask~) = 0x08
+  OUTER_SET count += 1
+END
+OUTER_SET $anim_slot_types(~monster~) = count
+
+
+// monster_old
+OUTER_SET count = $anim_slot_types(~monster_old~)
+ACTION_FOR_EACH base IN 0x600 0x800 0xd00 BEGIN
+  OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~base~) = 0x7000 + base
+  OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~mask~) = 0xff
+  OUTER_SET count += 1
+END
+ACTION_FOR_EACH base IN 0x000 0x100 0x500 0xc00 0xe00 BEGIN
+  OUTER_FOR (i = base; i < base + 0x100;  i += 0x10) BEGIN
+    OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~base~) = 0x7000 + i
+    OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~mask~) = 0x01
+    OUTER_SET count += 1
+  END
+END
+ACTION_FOR_EACH base IN 0x400 0x700 BEGIN
+  OUTER_FOR (i = base; i < base + 0x100; i += 0x10) BEGIN
+    OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~base~) = 0x7000 + i
+    OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~mask~) = 0x01
+    OUTER_SET count += 1
+    OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~base~) = 0x7002 + i
+    OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~mask~) = 0x02
+    OUTER_SET count += 1
+  END
+END
+OUTER_FOR (i = 0x200; i < 0x300; i += 0x10) BEGIN
+  OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~base~) = 0x7000 + i
+  OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~mask~) = 0x03
+  OUTER_SET count += 1
+END
+ACTION_FOR_EACH base IN 0x900 0xa00 BEGIN
+  OUTER_FOR (i = base; i < base + 0x100; i += 0x10) BEGIN
+    OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~base~) = 0x7000 + i
+    OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~mask~) = 0x03
+    OUTER_SET count += 1
+    OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~base~) = 0x7004 + i
+    OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~mask~) = 0x04
+    OUTER_SET count += 1
+  END
+END
+OUTER_FOR (i = 0xb00; i < 0xc00; i += 0x10) BEGIN
+  OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~base~) = 0x7000 + i
+  OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~mask~) = 0x03
+  OUTER_SET count += 1
+  OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~base~) = 0x7004 + i
+  OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~mask~) = 0x04
+  OUTER_SET count += 1
+  OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~base~) = 0x7005 + i
+  OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~mask~) = 0x05
+  OUTER_SET count += 1
+  OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~base~) = 0x7006 + i
+  OUTER_SET $anim_slot_types(~monster_old~ ~%count%~ ~mask~) = 0x06
+  OUTER_SET count += 1
+END
+OUTER_SET $anim_slot_types(~monster_old~) = count

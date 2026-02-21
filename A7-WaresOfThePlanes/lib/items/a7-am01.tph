@@ -1,0 +1,41 @@
+// Item: Tribal Necklace of the Rengarth
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-am01~
+OUTER_SPRINT itm_resref_upper ~%itm_resref%~
+ACTION_TO_UPPER ~itm_resref_upper~
+
+ACTION_IF (has_bg2) BEGIN
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        desc_image_resref
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    desc_image_resref
+  END
+
+  COPY ~%MOD_FOLDER%/eff/%itm_resref%a.eff~ ~override~
+       ~%MOD_FOLDER%/eff/%itm_resref%b.eff~ ~override~
+
+  // adding ability tooltips
+  APPEND ~tooltip.2da~ ~%itm_resref_upper%    20678      -1         -1~
+
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    // making item conversable
+    OUTER_SET examine_strref = RESOLVE_STR_REF(@100)  // examine
+    APPEND ~itemdial.2da~ ~%itm_resref_upper%       %examine_strref% %itm_resref_upper%~
+    COMPILE ~%MOD_FOLDER%/dlg/%itm_resref%.d~
+  END
+END

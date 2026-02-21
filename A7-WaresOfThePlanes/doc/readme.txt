@@ -82,6 +82,7 @@ The travelling merchant offers a total of
 - 2 Bastard Swords
 - 2 Scimitars
 - 1 Quarterstaff
+- 1 Necklace
 - 10 Rings
 - 7 Earrings (can be equipped in the Amulets slot)
 - 7 Bracelets and Bracers (can be equipped in the Bracers/Gauntlets slot)

@@ -1,0 +1,29 @@
+// Rengarth Panther Claw
+
+@0 = ~Tierkralle~
+@1 = ~Pantherkralle der Rengarth~
+
+@10 = ~Dies scheint die Kralle eines Tiers zu sein.
+
+EIGENSCHAFTEN:
+
+Gewicht: 1~
+@11 = ~Dies ist die Kralle eines Panthers. Sie wurde in längst vergangenen Zeiten von den Nomandenstämmen der Rengarth hergestellt und scheint mit einem Aspekt des verbotenen epischen Zaubers „Koloss beschwören“ versehen worden zu sein.
+
+Durch die lange Einwirkung der Energien der Schattenebene wurden die ursprünglichen Verzauberungen beeinträchtigt. Infolgedessen verhält sich die Magie des Gegenstands nicht ganz so wie vorgesehen.
+
+Ein starker Wille wird benötigt, um die Magie des Artefakts zu erwecken.
+
+EIGENSCHAFTEN:
+
+Pantherkoloss der äußeren Ebenen beschwören
+ 5 % Wahrscheinlichkeit, dass der Zauber die Aufmerksamkeit einer feindlichen Schattenversion des Kolosses erregt, wenn er nicht von einem Druiden, Schamanen oder Waldläufer gewirkt wurde.
+ Reichweite: 18,5 m
+ Dauer: 2 Phasen
+
+Mindeststufe: 20
+
+Gewicht: 1~
+
+@100 = ~Pantherkoloss~
+@110 = ~Schattenpantherkoloss~

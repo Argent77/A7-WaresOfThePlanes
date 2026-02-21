@@ -1,0 +1,30 @@
+// Rengarth Lion Claw
+
+@0 = ~Animal Claw~
+@1 = ~Rengarth Lion Claw~
+
+@10 = ~This appears to be the claw of an animal.
+
+STATISTICS:
+
+Weight: 1~
+@11 = ~This is the claw of a lion. It was prepared by the nomadic Rengarth tribes in ancient times and seems to be fuelled with an aspect of the forbidden epic magic spell "Summon Behemoth."
+
+Due to prolonged exposure to the Plane of Shadow the original enchantment was slightly corrupted. As a result, the magic does not behave entirely as intended.
+
+A strong will is required to call forth the artifact's magic.
+
+STATISTICS:
+
+Charge abilities:
+– Summon a Lion Behemoth from the Outer Planes
+  There is a 5% chance to draw the attention of a hostile shadow version of the behemoth instead, unless summoned by druids, shamans, or rangers.
+  Duration: 2 turns
+
+Requires:
+ Class level 22
+
+Weight: 1~
+
+@100 = ~Lion Behemoth~
+@110 = ~Shadow Lion Behemoth~

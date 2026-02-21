@@ -1,0 +1,84 @@
+// Item: Rengarth Wolf Claw
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+INCLUDE ~%MOD_FOLDER%/lib/find_free_anim_slot.tph~
+
+OUTER_SPRINT itm_resref ~a7-wa03~
+
+ACTION_IF (has_bg2) BEGIN
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        ground_icon_resref
+        desc_image_resref
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    ground_icon_resref
+    desc_image_resref
+  END
+
+  COPY ~%MOD_FOLDER%/eff/%itm_resref%a.eff~ ~override~
+       ~%MOD_FOLDER%/eff/%itm_resref%b.eff~ ~override~
+
+  // installing creature animations
+  OUTER_SPRINT ini_resref ~monster_old-wolf~
+  OUTER_SPRINT ini_type   ~monster_old~
+  OUTER_SPRINT bam_resref ~a7bwf~
+  OUTER_SPRINT wav_resref ~a7-wlf~
+  OUTER_SPRINT ids_label  ~A7_BEHEMOTH_WOLF~
+  LAF FIND_FREE_ANIM_SLOT STR_VAR type = EVAL ~%ini_type%~ RET anim_slot = slot END
+
+  ACTION_IF (anim_slot > 0) BEGIN
+    OUTER_PATCH ~~ BEGIN
+      SPRINTF slot_hex ~%x~ (anim_slot)
+      INNER_PATCH_SAVE slot_hex ~%slot_hex%~ BEGIN DELETE_BYTES 0 2 END
+      WHILE (STRING_LENGTH ~%slot_hex%~ < 4) BEGIN SPRINT slot_hex ~0%slot_hex%~ END
+    END
+
+    // installing INI file
+    COPY ~%MOD_FOLDER%/ini/%ini_resref%.ini~ ~override/%slot_hex%.ini~
+
+    // installing BAM files
+    ACTION_BASH_FOR ~%MOD_FOLDER%/bam~ ~^%bam_resref%.*\.bam$~ BEGIN
+      COPY ~%BASH_FOR_FILESPEC%~ ~override~
+    END
+
+    // installing sound files
+    ACTION_BASH_FOR ~%MOD_FOLDER%/wav~ ~^%wav_resref%.*\.wav$~ BEGIN
+      COPY ~%BASH_FOR_FILESPEC%~ ~override~
+    END
+
+    // adding ANIMATE.IDS entry
+    APPEND ~animate.ids~ ~0x%slot_hex% %ids_label%~
+    CLEAR_IDS_MAP
+  END ELSE BEGIN
+    FAIL ~No free animation slot found for %ini_resref%.ini~
+  END
+
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    // Installing creatures
+    COPY ~%MOD_FOLDER%/cre/a7-bwf.cre~ ~override~
+      SAY NAME1 @100  // Wolf Behemoth
+      SAY NAME2 @100  // Wolf Behemoth
+      WRITE_LONG 0x28 anim_slot
+
+    COPY ~%MOD_FOLDER%/cre/a7-bwfx.cre~ ~override~
+      SAY NAME1 @110  // Shadow Wolf Behemoth
+      SAY NAME2 @110  // Shadow Wolf Behemoth
+      WRITE_LONG 0x28 anim_slot
+
+    COPY ~%MOD_FOLDER%/itm/a7-bspr.itm~ ~override~
+         ~%MOD_FOLDER%/itm/a7-bsprx.itm~ ~override~
+         ~%MOD_FOLDER%/itm/a7-wbwf.itm~ ~override~
+  END
+END

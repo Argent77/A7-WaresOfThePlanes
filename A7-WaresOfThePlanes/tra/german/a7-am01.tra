@@ -1,0 +1,52 @@
+// Tribal Necklace of the Rengarth
+
+@0 = ~Knochenhalskette~
+@1 = ~Stammeshalskette der Rengarth~
+
+@10 = ~Eine Halskette ist ein Schmuckstück, das in der Regel aus Edelmetall gefertigt und mit Edelsteinen verziert ist. Dieses Exemplar scheint jedoch ausschließlich aus Knochen, Zähnen und Krallen von Tieren zu bestehen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 2~
+@11 = ~Halsketten wie diese wurden vor über 1700 Jahren von den Nomandenstämmen der Rengarth gefertigt. Sie wurden in erster Linie von den Schamanen der Stämme bei Zeremonien und gelegentlich auch als Unterstützung bei ihren Gefechten mit rivalisierenden Stämmen und der allgegenwärtigen Bedrohung durch das Nesserilreich verwendet.
+
+Diese Halsketten bestehen hauptsächlich aus Knochen, Zähnen und Krallen von Wölfen, Bären, Wildschweinen und weiteren Tierarten und werden von eine starken, aber flexiblen Lederbändern zusammengehalten. Sie verfügen über einige oberflächliche magische Eigenschaften. Die mächtigeren Verzauberungen sind allerdings geheimnisvoll und widerstehen selbst den stärksten hellseherischen Versuchen.
+
+Dieses spezielle Exemplar gelangte in den Besitz eines Adligen aus Thultanthar, einer der fliegende Städte des Nesserilreiches, bevor sie in die Schattenebene gezogen wurde. Um 1279 TZ herum kehrte ein Mitglied des Bundes der Schicksalswächter von einer Reise durch die Ebenen mit der Halskette zurück und verkaufte sie wenig später an eine Gruppe Abenteurer in Sigil. Danach verlor sich ihre Spur erneut, bis sie vor kurzer Zeit im Besitz von Ebb Knarrknie auftauchte.
+
+Trotz ihres primitiven Aussehens ist die Halskette überraschend gut verarbeitet und scheint Verzauberungen zu besitzen, die sie vor dem Altern schützen. Alle Knochen und Krallen passen nahtlos ineinander, wodurch sie sehr robust, aber gleichzeitig angenehm zu tragen ist. Angesichts ihres barbarischen Erscheinungsbilds könnten Menschen in zivilisierteren Gegenden jedoch Abscheu empfinden, wenn die Halskette offen getragen wird.
+
+EIGENSCHAFTEN:
+
+Charisma: -1
+Druiden, Schamanen und Waldläufer sind von Tieren unauffindbar
+
+Tiere bezaubern (3x täglich)
+ Reichweite: 18,5 m
+ Dauer: 120 Sekunden
+ Bereich: 1 Wesen
+ Rettungswurf: Ja (gg. Zauber)
+
+Gewicht: 2~
+
+@100 = ~untersuchen~
+
+// dialog lines
+@1000 = ~Die Halskette wurde aus Knochen, Zähnen und Krallen verschiedener Tierarten gefertigt.~
+@1001 = ~Legt die Halskette beiseite.~
+@1002 = ~Die Halskette wurde aus Knochen, Zähnen und Krallen verschiedener Tierarten gefertigt. Ihr könnt Wolfs- und Bärenkrallen, Eberzähne sowie einige weitere Knochen erkennen, die Ihr nicht zuordnen könnt.~
+@1003 = ~Die Halskette wurde aus Knochen, Zähnen und Krallen verschiedener Tierarten gefertigt. Ihr könnt Wolfs, Bären-, Panther- und Löwenkrallen sowie Stoßzähne von Wildschweinen und Knochen weiterer Tierarten erkennen.~
+@1004 = ~Bei näherer Betrachtung bemerkt Ihr ein schwaches Nachglühen, wenn Ihr bestimmte Teile der Halskette berührt.~
+@1005 = ~Versucht, die Wolfskralle von der Halskette zu trennen.~
+@1006 = ~Versucht, eine kleinere, gefährlich aussehende Kralle von der Halskette zu trennen.~
+@1007 = ~Versucht, die Pantherkralle von der Halskette zu trennen.~
+@1008 = ~Versucht, eine größere, gefährlich aussehende Kralle von der Halskette zu trennen.~
+@1009 = ~Versucht, die Löwenkralle von der Halskette zu trennen.~
+@1010 = ~Versucht, den Wildschweinstoßzahn von der Halskette zu trennen.~
+@1011 = ~Versucht, die Bärenkralle von der Halskette zu trennen.~
+@1012 = ~Was wollt Ihr als nächstes tun?~
+@1013 = ~Ihr versucht vorsichtig, das Teil von der Halskette zu lösen, aber eine unbekannte Macht hält es fest, egal wieviel Kraft Ihr auch aufwendet.~
+@1014 = ~Ihr versucht vorsichtig, das Teil von der Halskette zu lösen. Zuerst scheint es sich nicht zu rühren. Aber nach einer Weile spürt Ihr, wie eine schlafende Magie in ihm erwacht. Das Stück gleitet Euch buchstäblich in die Hände.~
+@1015 = ~Nachdem Ihr das letzte Teil mit dem besonderen Nachglühen entfernt habt, zerbricht die Halskette plötzlich in viele Teile, die sich fast augenblicklich in eine Handvoll Schmutz und Staub verwandeln.~
+@1016 = ~Die Halskette zerbricht plötzlich in viele Teile, die sich fast augenblicklich in eine Handvoll Schmutz und Staub verwandeln.~
+@1017 = ~Es scheint, als sei die Magie, die die Halskette zusammengehalten hat, verflogen. Der Zahn der Zeit hat sie schließlich eingeholt.~

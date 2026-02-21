@@ -1,0 +1,122 @@
+// Item: Rengarth Bear Claw
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+INCLUDE ~%MOD_FOLDER%/lib/find_free_anim_slot.tph~
+
+OUTER_SPRINT itm_resref ~a7-wa07~
+
+ACTION_IF (has_bg2) BEGIN
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        ground_icon_resref
+        desc_image_resref
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    ground_icon_resref
+    desc_image_resref
+  END
+
+  COPY ~%MOD_FOLDER%/eff/%itm_resref%a.eff~ ~override~
+       ~%MOD_FOLDER%/eff/%itm_resref%b.eff~ ~override~
+       ~%MOD_FOLDER%/eff/%itm_resref%c.eff~ ~override~
+       ~%MOD_FOLDER%/eff/%itm_resref%d.eff~ ~override~
+
+  // installing creature animations
+  OUTER_SET anim_map = 3
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY anim_map BEGIN
+    0, ~ini~    => ~monster_old-bear-black~
+    0, ~type~   => ~monster_old~
+    0, ~resref~ => ~a7bbr~
+    0, ~sound~  => ~a7-rbr~
+    0, ~label~  => ~A7_BEHEMOTH_BEAR_BLACK~
+
+    1, ~ini~    => ~monster_old-bear-brown~
+    1, ~type~   => ~monster_old~
+    1, ~resref~ => ~a7bbr~
+    1, ~sound~  => ~a7-cbr~
+    1, ~label~  => ~A7_BEHEMOTH_BEAR_BROWN~
+
+    2, ~ini~    => ~monster_old-bear-grizzly~
+    2, ~type~   => ~monster_old~
+    2, ~resref~ => ~a7bbr~
+    2, ~sound~  => ~a7-pbr~
+    2, ~label~  => ~A7_BEHEMOTH_BEAR_GRIZZLY~
+  END
+
+  OUTER_FOR (i = 0; i < anim_map; ++i) BEGIN
+    OUTER_SPRINT ini_resref $anim_map(~%i%~ ~ini~)
+    OUTER_SPRINT ini_type $anim_map(~%i%~ ~type~)
+    OUTER_SPRINT bam_resref $anim_map(~%i%~ ~resref~)
+    OUTER_SPRINT wav_resref $anim_map(~%i%~ ~sound~)
+    OUTER_SPRINT ids_label $anim_map(~%i%~ ~label~)
+    LAF FIND_FREE_ANIM_SLOT STR_VAR type = EVAL ~%ini_type%~ RET slot END
+    OUTER_SET $anim_map(~%i%~ ~slot~) = slot
+
+    ACTION_IF (slot > 0) BEGIN
+      OUTER_PATCH ~~ BEGIN
+        SPRINTF slot_hex ~%x~ (slot)
+        INNER_PATCH_SAVE slot_hex ~%slot_hex%~ BEGIN DELETE_BYTES 0 2 END
+        WHILE (STRING_LENGTH ~%slot_hex%~ < 4) BEGIN SPRINT slot_hex ~0%slot_hex%~ END
+      END
+
+      // installing INI file
+      COPY ~%MOD_FOLDER%/ini/%ini_resref%.ini~ ~override/%slot_hex%.ini~
+
+      // installing BAM files
+      ACTION_BASH_FOR ~%MOD_FOLDER%/bam~ ~^%bam_resref%.*\.bam$~ BEGIN
+        COPY ~%BASH_FOR_FILESPEC%~ ~override~
+      END
+
+      // installing sound files
+      ACTION_BASH_FOR ~%MOD_FOLDER%/wav~ ~^%wav_resref%.*\.wav$~ BEGIN
+        COPY ~%BASH_FOR_FILESPEC%~ ~override~
+      END
+
+      // adding ANIMATE.IDS entry
+      APPEND ~animate.ids~ ~0x%slot_hex% %ids_label%~
+    END ELSE BEGIN
+      FAIL ~No free animation slot found for %ini_resref%.ini~
+    END
+  END
+  CLEAR_IDS_MAP
+
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    // Installing creatures
+    COPY ~%MOD_FOLDER%/cre/a7-bbrk.cre~ ~override~
+      SAY NAME1 @100  // Black Bear Behemoth
+      SAY NAME2 @100  // Black Bear Behemoth
+      WRITE_LONG 0x28 $anim_map(~0~ ~slot~)
+
+    COPY ~%MOD_FOLDER%/cre/a7-bbrr.cre~ ~override~
+      SAY NAME1 @101  // Brown Bear Behemoth
+      SAY NAME2 @101  // Brown Bear Behemoth
+      WRITE_LONG 0x28 $anim_map(~1~ ~slot~)
+
+    COPY ~%MOD_FOLDER%/cre/a7-bbrg.cre~ ~override~
+      SAY NAME1 @102  // Grizzly Bear Behemoth
+      SAY NAME2 @102  // Grizzly Bear Behemoth
+      WRITE_LONG 0x28 $anim_map(~2~ ~slot~)
+
+    COPY ~%MOD_FOLDER%/cre/a7-bbox.cre~ ~override~
+      SAY NAME1 @110  // Shadow Bear Behemoth
+      SAY NAME2 @110  // Shadow Bear Behemoth
+      WRITE_LONG 0x28 $anim_map(~0~ ~slot~)
+
+    COPY ~%MOD_FOLDER%/itm/a7-bspr.itm~ ~override~
+         ~%MOD_FOLDER%/itm/a7-bsprx.itm~ ~override~
+         ~%MOD_FOLDER%/itm/a7-wbbrk.itm~ ~override~
+         ~%MOD_FOLDER%/itm/a7-wbbrr.itm~ ~override~
+         ~%MOD_FOLDER%/itm/a7-wbbrg.itm~ ~override~
+  END
+END
