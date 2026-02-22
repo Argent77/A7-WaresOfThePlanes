@@ -148,6 +148,15 @@ Anarazel portrait based on "Nyxaroth" by DragonGrognard on DeviantArt.
 Version History
 ~~~~~~~~~~~~~~~
 
+2.1
+- Added new item: Tribal Necklace of the Rengarth
+- Added new item: Soul Mirror +1 (can be upgraded multiple times throughout the game)
+- Added upgrade option to Magus Guard (Cromwell and Cespenar)
+- Added upgrade option to Entropic Blade (Cespenar)
+- Added upgrade option to Final Judgment +3 (Cespenar)
+- Fixed aura effect of a creature from the "Lure of Darkness" quest
+- Various code optimizations and improvements
+
 2.0
 - Added new ToB quest: Lure of Darkness
 - Added new item: Planar Anchor

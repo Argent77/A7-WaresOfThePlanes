@@ -129,6 +129,15 @@ Anarazel portrait based on "Nyxaroth" by DragonGrognard on DeviantArt.
 historique des versions
 ~~~~~~~~~~~~~~~~~~~~~~~
 
+2.1
+- Added new item: Tribal Necklace of the Rengarth
+- Added new item: Soul Mirror +1 (can be upgraded multiple times throughout the game)
+- Added upgrade option to Magus Guard
+- Added upgrade option to Entropic Blade
+- Added upgrade option to Final Judgment +3
+- Fixed aura effect of a creature from the "Lure of Darkness" quest
+- Various code optimizations and improvements
+
 2.0
 - Added new ToB quest: Lure of Darkness
 - Added new item: Planar Anchor
@@ -164,7 +173,8 @@ historique des versions
 - Correction d'un conflit de nom de ressource avec le mod "Skip Chateau Irenicus".
 
 1.2
-- Ajout de nouveaux objets à vendre : Brassards de protection contre le mal, Cor de Baku, Abigail +1, Dûrgaläd +3, Fléau des diables +2, Sablier de Wesley, Sablier de Wesley (amélioré par Cespenar), Thanatos +2, Thanatos +4 (amélioré par Cespenar)
+- Ajout de nouveaux objets à vendre : Brassards de protection contre le mal, Cor de Baku, Abigail +1, Dûrgaläd +3,
+  Fléau des diables +2, Sablier de Wesley, Sablier de Wesley (amélioré par Cespenar), Thanatos +2, Thanatos +4 (amélioré par Cespenar)
 - Correction des fautes d'orthographe
 
 1.1
