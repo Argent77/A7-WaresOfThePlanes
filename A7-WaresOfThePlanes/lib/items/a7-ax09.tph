@@ -24,10 +24,52 @@ ACTION_IF (has_bg2) BEGIN
   END
 
   // Installing additional resources
-  ACTION_FOR_EACH file IN ~%itm_resref%a.eff~ BEGIN
-    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%file%~) BEGIN
-      LAF EXT_OF_FILESPEC STR_VAR filespec = EVAL ~%file%~ RET ext END
-      COPY ~%MOD_FOLDER%/%ext%/%file%~ ~override~
-    END
+  COPY ~%MOD_FOLDER%/eff/%itm_resref%a.eff~ ~override~
+
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    // Uncursed version of the weapon
+    COPY_EXISTING ~%itm_resref%.itm~ ~override/%itm_resref%a.itm~
+      WRITE_ASCIIE 0x10 ~%itm_resref%b~ (8) // Used up item
+      WRITE_LONG 0x18 (THIS BAND BNOT BIT4) // clear "Cursed" flag
+      WRITE_SHORT 0x42 0  // Lore = 0
+      SAY IDENTIFIED_DESC @12
+      LPF DELETE_ITEM_EQEFFECT
+        INT_VAR
+          opcode_to_delete = 142  // Display portrait icon
+      END
+      LPF ADD_ITEM_EFFECT
+        INT_VAR
+          header = 1  // add to first ability only
+          type = 1  // Melee ability
+          opcode = 146  // Cast spell
+          target = 9  // Original caster
+          parameter1 = 1
+          parameter2 = 1  // Cast instantly
+          timing = 1  // Instant/Permanent until death
+          probability1 = 1  // 2% probability
+        STR_VAR
+          resource = EVAL ~%itm_resref%a~
+      END
+
+    COPY_EXISTING ~%itm_resref%.itm~ ~override~
+      LPF DELETE_ITEM_HEADER INT_VAR header_type = 3 END  // removing unused magic ability
+
+    // Copy of original weapon without Lore requirement
+    COPY_EXISTING ~%itm_resref%.itm~ ~override/%itm_resref%b.itm~
+      WRITE_SHORT 0x42 0  // Lore = 0
+      SAY IDENTIFIED_DESC @13
+
+    COPY ~%MOD_FOLDER%/spl/%itm_resref%a.spl~ ~override~
+      LPF alter_item_effect_ex
+        INT_VAR
+          check_headers = 1
+          match_opcode = 139  // Display string
+          parameter1 = RESOLVE_STR_REF(@100)  // Vhailor's spirit has awakened again
+      END
+
+    // item upgrade
+    EXTEND_BOTTOM ~botsmith.bcs~ ~%MOD_FOLDER%/bcs/a7-ax09-botsmith.baf~
+    COMPILE ~%MOD_FOLDER%/dlg/a7-ax09.d~
   END
 END

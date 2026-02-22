@@ -37,3 +37,63 @@ Typ: 1-händig
 Mindeststärke: 16
 
 Gewicht: 12~
+
+@12 = ~Diese uralte doppelklingige Streitaxt erinnert an eine Henkersaxt. Der Kopf wurde in Form des Symbols der Gnadentöter (ein roter Drache mit ausgebreiteten Flügeln, die die Klingen der Axt bilden) geschmiedet. Die Axt selbst ist riesig und erfordert zur effektiven Nutzung eine ungemeine Kraft.
+
+Diese Axt ist ebenso Teil von Vhailor wie seine Rüstung, und die Axt selbst trägt einen Teil seiner Essenz in sich. Dadurch ist sie der Gerechtigkeit völlig ergeben und gewährt dem Träger keine Ruhe, solange noch "Urteile" ausgeführt werden müssen. Der beachtliche Schaden, den sie dem Gegner zufügt, wird verdoppelt, wenn die Axt ein schuldiges oder chaotisches Wesen trifft. Außerdem verleiht die Axt ihrem Träger einen Teil ihrer Kraft, wodurch er zusätzlichen Schutz vor Angriffen erhält.
+
+Die Herkunft dieser Axt ist unbekannt. Wenn du raten solltest, würdest du sagen, dass die Axt ihre Kräfte einfach aus Vhailors Glauben gewonnen hat.
+
+Cespenar konnte Vhailors Geist gerade so weit unterdrücken, dass der Träger für eine Weile von seinem Gerechtigkeitssinn befreit ist.
+
+EIGENSCHAFTEN:
+
+RK-Bonus: -1
+
+ETW0-Bonus: -3
+Schaden:
+ 1W8 +3 (Klinge)
+ 2W8 +6 gg. chaotische Wesen
+Schadensbonus: +1W6 (Feuer)
+Initiativefaktor: 4
+Fertigkeit: Axt
+Typ: 1-händig
+Mindeststärke: 16
+
+Gewicht: 12~
+
+@13 = ~Diese uralte doppelklingige Streitaxt erinnert an eine Henkersaxt. Der Kopf wurde in Form des Symbols der Gnadentöter (ein roter Drache mit ausgebreiteten Flügeln, die die Klingen der Axt bilden) geschmiedet. Die Axt selbst ist riesig und erfordert zur effektiven Nutzung eine ungemeine Kraft.
+
+Diese Axt ist ebenso Teil von Vhailor wie seine Rüstung, und die Axt selbst trägt einen Teil seiner Essenz in sich. Dadurch ist sie der Gerechtigkeit völlig ergeben und gewährt dem Träger keine Ruhe, solange noch "Urteile" ausgeführt werden müssen. Der beachtliche Schaden, den sie dem Gegner zufügt, wird verdoppelt, wenn die Axt ein schuldiges oder chaotisches Wesen trifft. Außerdem verleiht die Axt ihrem Träger einen Teil ihrer Kraft, wodurch er zusätzlichen Schutz vor Angriffen erhält.
+
+Die Herkunft dieser Axt ist unbekannt. Wenn du raten solltest, würdest du sagen, dass die Axt ihre Kräfte einfach aus Vhailors Glauben gewonnen hat.
+
+Cespenar konnte Vhailors Geist gerade so weit unterdrücken, dass der Träger für eine Weile von seinem Gerechtigkeitssinn befreit war. Inzwischen ist sein Geist aber wieder erwacht.
+
+EIGENSCHAFTEN:
+
+Kann nur durch „Fluch brechen“ wieder abgenommen werden.
+
+RK-Bonus: -1
+
+ETW0-Bonus: -3
+Schaden:
+ 1W8 +3 (Klinge)
+ 2W8 +6 gg. chaotische Wesen
+Schadensbonus: +1W6 (Feuer)
+Initiativefaktor: 4
+Fertigkeit: Axt
+Typ: 1-händig
+Mindeststärke: 16
+
+Gewicht: 12~
+
+@100 = ~Vhailors Geist ist wieder erwacht.~
+
+// Dialog lines
+@1000 = ~Oh nein, Ihr habt Axt vom Henker! Cespenar wurde also doch noch erwischt?~
+@1001 = ~Ah, es ist Jüngstes Gericht. Fluch kann ich mit Schriftrolle "Fluch brechen" von Axt nehmen, aber nur für kurze Zeit. Fluch ist ziemlich mächtig wegen sturem Geist in Axt. Er kann jederzeit wiederkommen.~
+@1002 = ~Ah, Axt ist wieder verflucht? Mit Schriftrolle "Fluch brechen" kann ich Geist wieder schlafen legen.~
+@1003 = ~Ihr habt Schriftrolle nicht, also muss Fluch bleiben.~
+@1004 = ~Ihr habt Schriftrolle "Fluch brechen". Für 2.000 Goldmünzen kann ich mich an die Arbeit machen.~
+@1005 = ~Mal sehen, was Ihr noch habt.~

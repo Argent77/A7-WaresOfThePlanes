@@ -37,3 +37,64 @@ Requires:
  16 Strength
 
 Weight: 12~
+
+// Copy of the item description without "cursed" line and with remark about Cespenar's work
+@12 = ~This archaic double-bladed battle-axe is reminiscent of an executioner's axe; the axe head has been forged into the symbol of the Mercykiller Faction (a red dragon with its wings outspread… the outstretched wings have been shaped into the blades of the axe.) The axe itself is huge; it would require tremendous strength to use effectively.
+
+This axe carries part of Vhailor's essence within it. As a result, it is utterly devoted to justice and will not allow the user to rest while "judgments" are left to be delivered. The considerable damage it causes to an opponent is doubled if the axe strikes a guilty or chaotic creature. Furthermore, the axe itself lends some of its strength to the wielder, giving them added protection from attacks.
+
+The origin of this axe is unknown. If you were to hazard a guess, the axe gained its powers simply from Vhailor's belief.
+
+Cespenar was able to suppress Vhailor's spirit just enough for the wielder to be free of his sense of justice for a while.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+
+THAC0: +3
+Damage: 1d8+3, +1d6 fire damage, does double damage against chaotic creatures
+Damage type: Slashing
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 16 Strength
+
+Weight: 12~
+
+// Copy of the item description with remarks that the item curse has awakened again
+@13 = ~This archaic double-bladed battle-axe is reminiscent of an executioner's axe; the axe head has been forged into the symbol of the Mercykiller Faction (a red dragon with its wings outspread… the outstretched wings have been shaped into the blades of the axe.) The axe itself is huge; it would require tremendous strength to use effectively.
+
+This axe carries part of Vhailor's essence within it. As a result, it is utterly devoted to justice and will not allow the user to rest while "judgments" are left to be delivered. The considerable damage it causes to an opponent is doubled if the axe strikes a guilty or chaotic creature. Furthermore, the axe itself lends some of its strength to the wielder, giving them added protection from attacks.
+
+The origin of this axe is unknown. If you were to hazard a guess, the axe gained its powers simply from Vhailor's belief.
+
+Cespenar was able to suppress Vhailor's spirit just enough for the wielder to be free of his sense of justice for a while. But now his spirit has been reawakened.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– May only be removed with a Remove Curse spell
+
+THAC0: +3
+Damage: 1d8+3, +1d6 fire damage, does double damage against chaotic creatures
+Damage type: Slashing
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 16 Strength
+
+Weight: 12~
+
+@100 = ~Vhailor's spirit has awakened again.~
+
+// Dialog lines
+@1000 = ~Oh no, you has axe from executioner! Cespenar got caught after all?~
+@1001 = ~Ah, Final Judgment it is. Curse from axe I can take with scroll of Remove Curse. But only for a while. Curse is pretty strong because stubborn spirit lives in axe. It come back any time.~
+@1002 = ~Ah, axe is cursed again? With scroll of Remove Curse I can puts it to sleep once more.~
+@1003 = ~You no have scroll, so curse must remain.~
+@1004 = ~You have scroll of Remove Curse. For 2,000 gold I can get to work.~
+@1005 = ~Let me see what else you have.~
