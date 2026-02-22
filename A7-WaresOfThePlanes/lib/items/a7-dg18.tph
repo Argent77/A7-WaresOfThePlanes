@@ -1,8 +1,8 @@
-// Item: Entropic Blade +3
+// Item: Entropic Blade +4 (upgraded by Cespenar)
 
 INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 
-OUTER_SPRINT itm_resref ~a7-dg05~
+OUTER_SPRINT itm_resref ~a7-dg18~
 
 ACTION_IF (has_bg2) BEGIN
   // Installing item
@@ -23,10 +23,6 @@ ACTION_IF (has_bg2) BEGIN
     desc_image_resref
   END
 
-  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
-  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
-    // item upgrade
-    EXTEND_BOTTOM ~botsmith.bcs~ ~%MOD_FOLDER%/bcs/a7-dg05-botsmith.baf~
-    COMPILE ~%MOD_FOLDER%/dlg/a7-dg05.d~
-  END
+  // Installing additional resources
+  COPY ~%MOD_FOLDER%/spl/%itm_resref%a.spl~ ~override~
 END

@@ -1,20 +1,23 @@
-// Entropic Blade
+// Entropic Blade (upgraded)
 
 // @0 = ~~  // #6343
-@1 = ~Entropic Blade +3~
+@1 = ~Entropic Blade +4~
 
 // @10 = ~~ // #6720
 @11 = ~The surface of this small dagger twists and bends as you watch, as if struggling to break free from its shape.
 
 It looks to be made of iron, silver, and any of a number of different metals. Sometimes they blend together, other times, they submerge into the core of the blade, only to resurface again minutes later.
 
+With Cespenar's improvements the weapon has now a chance to draw life energy from the target and heal the wielder in the process.
+
 STATISTICS:
 
 Combat abilities:
 – Bonuses to hit and damage based on strength do not apply to this weapon
+– With every hit, it has a 15% chance of draining one level from the target. At the same time the wielder's max. Hit Points are temporarily increased for 5 rounds and current health is restored by 8 Hit Points
 
-THAC0: +3
-Damage: 1d20+3 (piercing)
+THAC0: +4
+Damage: 1d20+4 (piercing)
 Speed Factor: 0
 Proficiency Type: Dagger
 Type: One-handed
@@ -22,9 +25,3 @@ Requires:
  3 Strength
 
 Weight: 0~
-
-// Dialog lines
-@1000 = ~Ooh, Entropic Blade? Is nice dagger. But can be even nicer if weapon heals you when hitting enemies. Just needs scrolls of Energy Drain and Larloch's Minor Drain for that.~
-@1001 = ~You not have all scrolls though, so no free healing from poking.~
-@1002 = ~You have scrolls already? Then add them I can for just 5,000 gold.~
-@1003 = ~Let me see what else you have.~

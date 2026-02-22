@@ -1,0 +1,26 @@
+// Entropic Blade (upgraded)
+
+// @0 = ~~  // #6343
+@1 = ~Entropische Klinge +4~
+
+// @10 = ~~ // #6720
+@11 = ~Die Oberfläche dieses kleinen Dolchs krümmt und windet sich, als ob sie sich aus dieser Form zu befreien suche.
+
+Er sieht so aus, als sei er aus Eisen, Silber und noch ein paar anderen unterschiedlichen Metallen hergestellt. Manchmal verschmelzen sie miteinander, und dann wieder verschwinden sie in das Herz der Klinge, nur, um Minuten später wieder an die Oberfläche zu kommen.
+
+Durch Cespenars Verbesserungen besitzt die Waffe jetzt zusätzlich die Fähigkeit, dem Ziel Lebensenergie zu entziehen und direkt auf den Träger zu übertragen.
+
+EIGENSCHAFTEN:
+
+Boni auf Treffer- und Schadenswürfe aufgrund hoher Stärke werden nicht angerechnet.
+
+Bei 15 % der Treffer verliert das Ziel eine Stufe. Dadurch wird der Träger um 8 Trefferpunkte geheilt, und max. Trefferpunkte für 20 Sekunden um 8 Trefferpunkte erhöht.
+
+ETW0-Bonus: -4
+Schaden: 1W20 +4 (Stich)
+Initiativefaktor: 0
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 0~
