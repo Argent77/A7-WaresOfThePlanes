@@ -15,3 +15,18 @@ EIGENSCHAFTEN:
 Rüstungsklasse: 6
 
 Gewicht: 2~
+
+// Dialog lines for Cromwell
+@1000 = ~Hmm, Ihr habt da ja ein netten Armreif.~
+@1001 = ~Wenn Ihr auch eine Panzer-Schriftrolle und einen Diamanten hättet, dann könnte ich die Verzauberungen des Magus-Schutzes verbessern.~
+@1002 = ~Ihr habt eine Panzer-Schriftrolle und einen Diamanten. Damit könnte ich die Verzauberungen des Magus-Schutzes verbessern.~
+@1003 = ~Zunächst einmal 3.000 Goldmünzen für die Arbeit und keinen Heller weniger. Und weil mein Lehrling nicht da ist, kostet es Euch auch noch Zeit; einen vollen Tag, denn ich brauche jemanden, der mir in der Schmiede hilft und das Feuer anheizt.~
+@1004 = ~Ich werde weiter nachschauen, mal sehen, hmmmm…~
+
+// Dialog lines for Cespenar
+@1100 = ~Oh, funkelnder Armreif? Ich kann Magus-Schutz besser machen mit Diamant und Panzer-Schriftrolle. Das ist doch ein Angebot, oder?~
+@1101 = ~Ihr habt keine Panzer-Schriftrolle? Ihr seid ja noch ärmer als Cespenar.~
+@1102 = ~Ihr habt keinen Diamanten? Ihr seid ja noch ärmer als Cespenar.~
+@1103 = ~Habt Ihr aber nicht.~
+@1104 = ~Scheint alles da zu sein. Brauche nur noch 3.000 Goldmünzen, um alles zusammenzufügen.~
+@1105 = ~Mal sehen, was Ihr noch habt.~

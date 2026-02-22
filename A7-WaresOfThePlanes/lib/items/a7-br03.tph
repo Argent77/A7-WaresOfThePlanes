@@ -23,3 +23,13 @@ ACTION_IF (has_sod || has_bg2) BEGIN
     desc_image_resref
   END
 END
+
+ACTION_IF (has_bg2) BEGIN
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    // item upgrade
+    EXTEND_BOTTOM ~ar0334.bcs~ ~%MOD_FOLDER%/bcs/%itm_resref%-wsmith.baf~
+    EXTEND_BOTTOM ~botsmith.bcs~ ~%MOD_FOLDER%/bcs/%itm_resref%-botsmith.baf~
+    COMPILE ~%MOD_FOLDER%/dlg/%itm_resref%.d~
+  END
+END

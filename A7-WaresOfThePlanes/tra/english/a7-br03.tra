@@ -16,3 +16,18 @@ Equipped abilities:
 – Armor Class: 6
 
 Weight: 2~
+
+// Dialog lines for Cromwell
+@1000 = ~Hmm, ye've got a nice enough bracelet there.~
+@1001 = ~If ye had a scroll of Armor and a diamond I could reinforce the enchantments on the Magus Guard.~
+@1002 = ~Ye've got a scroll of Armor and a diamond. With it I could reinforce the enchantments on the Magus Guard.~
+@1003 = ~Two things, me friend. It will cost ye 3,000 gp for the work, no less, and without an apprentice, ye'll have to stay here a full day and help me run the forge.~
+@1004 = ~Well, let's see what else ye got.~
+
+// Dialog lines for Cespenar
+@1100 = ~Oh, shiny bracelet? Making Magus Guard better can I with diamond and scroll of Armor. A bargain it is, isn't it?~
+@1101 = ~You not have scroll of Armor? You even poorer than Cespenar.~
+@1102 = ~You not have diamond? You even poorer than Cespenar.~
+@1103 = ~You not got all that, though.~
+@1104 = ~You got all that. Just needs 3,000 gold to put all together.~
+@1105 = ~Let me see what else you have.~

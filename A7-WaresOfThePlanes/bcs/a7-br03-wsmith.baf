@@ -1,0 +1,16 @@
+// Append to Cromwell's Forge area script (ar0334.bcs)
+
+IF
+  Global("A7WOTP-MagusGuardUpgrade","AR0334",1)
+  Global("ForgeStuff","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7WOTP-MagusGuardUpgrade","AR0334",0)
+    SetGlobal("ForgeStuff","GLOBAL",0)
+    SetGlobal("ForgeItem","GLOBAL",32767)
+    // GiveItemCreate("a7-br02",Player1,0,0,0)
+    ActionOverride("wsmith01",CreateItem("a7-br02",0,0,0))
+    ActionOverride("wsmith01",SetItemFlags("a7-br02",IDENTIFIED,TRUE))
+    ActionOverride("wsmith01",GiveItem("a7-br02",Player1))
+    ActionOverride("wsmith01",StartDialogueNoSet([PC]))
+END
