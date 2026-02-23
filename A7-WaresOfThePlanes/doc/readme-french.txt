@@ -1,7 +1,7 @@
 Marchandises venues des plans (pour BG:EE, SoD, BG2:EE et EET)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:    2.0
+Version:    2.1
 Author:     Argent77
 
 Download:   https://github.com/Argent77/A7-WaresOfThePlanes/releases/latest
