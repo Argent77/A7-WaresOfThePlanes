@@ -22,7 +22,7 @@ IF ~~ bdjegg.ask.1
   ++ @103 /* I've changed my mind. The weapon is good as it is. */ + 59
 END
 
-IF WEIGHT #-1 ~Global("bd_jegg_forge","BD2100",1) Global("a7_upgrade_soul_mirror","GLOBAL",1)~ bdjegg.deliver
+IF WEIGHT #7 ~Global("bd_jegg_forge","BD2100",1) Global("a7_upgrade_soul_mirror","GLOBAL",1)~ bdjegg.deliver
   SAY @104 /* It is done. I was able to restore the base enchantment of the hammer. It should hit more accurately now. Here, take it! */
   IF ~~ DO ~GiveItemCreate("a7-ha06b",LastTalkedToBy,0,0,0) SetGlobal("a7_upgrade_soul_mirror","GLOBAL",2) SetGlobal("bd_jegg_forge","MYAREA",0) AddJournalEntry(@500,INFO)~ EXIT
 END
