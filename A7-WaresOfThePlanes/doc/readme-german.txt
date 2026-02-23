@@ -157,9 +157,10 @@ Versionshistorie
 2.1
 - Added new item: Tribal Necklace of the Rengarth
 - Added new item: Soul Mirror +1 (can be upgraded multiple times throughout the game)
-- Added upgrade option to Magus Guard
-- Added upgrade option to Entropic Blade
-- Added upgrade option to Final Judgment +3
+- Added upgrade options to Magus Guard (Cromwell and Cespenar)
+- Added upgrade option to Entropic Blade (Cespenar)
+- Added upgrade option to Final Judgment +3 (Cespenar)
+- Improved many unidentified item names and descriptions
 - Fixed aura effect of a creature from the "Lure of Darkness" quest
 - Various code optimizations and improvements
 
