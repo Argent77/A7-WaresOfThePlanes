@@ -1,0 +1,3240 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOD: Wares of the Planes</title>
+    <meta name="description" content="A mod for BG:EE, SoD, BG2:EE and EET that imports a large number of items from the Planescape universe to the Baldur's Gate series and makes them available for sale through a travelling merchant." />
+    <meta name="keywords" content="bgee, sod, bg2ee, eet, mod, items, merchant" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div><a name="top" id="top"></a></div>
+    <div id="language">
+      <ul>
+        <li>English</li>
+        <li title="French"><a href="readme-french.html">Français</a></li>
+        <li title="German"><a href="readme-german.html">Deutsch</a></li>
+      </ul>
+    </div>
+
+    <header>
+      <h1 class="title">Wares of the Planes</h1>
+      <div class="subtitle">A mod for BG:EE, SoD, BG2:EE and EET that imports a large number of items from the Planescape universe to the Baldur's Gate series and makes them available by a unique merchant.</div>
+      <hr />
+      <p class="about"><strong>Author: Argent77</strong></p>
+      <ul id="globalnav" class="about">
+        <li><strong>Download</strong> (<a href="https://github.com/Argent77/A7-WaresOfThePlanes/releases/latest">GitHub</a>)</li>
+        <li><strong>Discussion</strong> (<a href="https://www.gibberlings3.net/forums/topic/38054-wares-of-the-planes-planescape-items-for-baldurs-gate">G3 Forums</a>)</li>
+        <li><strong>Discussion</strong> (<a href="https://forums.beamdog.com/discussion/88361/wares-of-the-planes-planescape-items-for-baldurs-gate">Beamdog Forums</a>)</li>
+        <li><a href="https://github.com/Argent77/A7-WaresOfThePlanes">Project</a></li>
+        <li>Version: 2.1</li>
+      </ul>
+      <hr />
+      <nav>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#installation">Installation</a></li>
+          <li><a href="#components">Components</a></li>
+          <li><a href="#item-details">Item Details</a></li>
+          <li><a href="#credits">Credits</a></li>
+          <li><a href="#changelog">Version History</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ================== O V E R V I E W ================== -->
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>This mod introduces a large number of weapons and accessories from the Planescape universe to the Baldur's Gate series. The items can be purchased from a travelling merchant who is available throughout the whole game.</p>
+        <p>Several items from Planescape: Torment have been slightly altered to fit better into the BG series since items from the Planescape universe are generally more powerful and unique than their Forgotten Realms counterparts.</p>
+        <p>The mod is available for BG:EE, Siege of Dragonspear, BG2:EE and EET (Enhanced Edition Trilogy).</p>
+        <hr class="spacer" />
+        <p>Visit the <a href="https://www.gibberlings3.net/forums/topic/38054-wares-of-the-planes-planescape-items-for-baldurs-gate">G3 Forums</a> or the <a href="https://forums.beamdog.com/discussion/88361/">Beamdog Forums</a> if you have questions, or download the latest version from <a href="https://github.com/Argent77/A7-WaresOfThePlanes/releases/latest">GitHub</a>.</p>
+        <div class="back">
+          <a class="novisit" href="#top">BACK TO TOP</a>
+        </div>
+      </section>
+
+      <!-- ================== I N S T A L L A T I O N ================== -->
+      <section id="installation">
+        <h2>Installation</h2>
+        <p>This is a WeiDU mod, that means it is very easy to install. Simply unpack the downloaded archive into your game's installation directory (where you can find the file "chitin.key") and run <em>"setup-A7-WaresOfThePlanes.exe"</em> (Windows) or <em>"setup-A7-WaresOfThePlanes.command"</em> (macOS). Follow the instructions and you are ready to start.</p>
+        <p>It is not required to start a new game after installing the mod.</p>
+        <p>To uninstall, run <em>"setup-A7-WaresOfThePlanes.exe"</em> or <em>"setup-A7-WaresOfThePlanes.command"</em> again and follow the prompts.</p>
+        <hr class="spacer" />
+        <h3>Note for Siege of Dragonspear (SoD)</h3>
+        <p>GOG and Steam both install the <em>Siege of Dragonspear</em> expansion in a way that is not moddable out of the box. You must install the mod <a href="https://github.com/Argent77/A7-DlcMerger/releases/latest">DLC Merger</a> on your SoD installation before this or any other WeiDU-based mods can be installed.</p>
+        <hr class="spacer" />
+        <h3>Compatibility and mod order</h3>
+        <p>This mod should be installed after the Unfinished Business component "The Murder of Acton Balthis" to resolve a (mostly) cosmetic dialog conflict.</p>
+        <p>A small number of items may overlap with items from Angel's "Made in Heaven - Item Pack" and Deratiseur's "The shooter's delight". They won't interfere with each other except by having the same item names.</p>
+        <p>Lefreut's GUI mods (all variants) are not fully compatible with a GUI feature used by this mod. A replacement is used instead which serves the same purpose but is not as immersive.</p>
+        <div class="back">
+          <a class="novisit" href="#top">BACK TO TOP</a>
+        </div>
+      </section>
+
+      <!-- ================== C O M P O N E N T S ================== -->
+      <section id="components">
+        <h2>Mod Components</h2>
+        <ol class="gappedlist">
+          <li>
+            <p><strong>Wares of the Planes</strong> <em>(requires BG:EE, SoD, BG2:EE or EET patched to 2.0 or higher)</em></p>
+            <p>This is the main component. It installs a large number of items from the Planescape universe which includes weapons, accessories, utility items, and more. They can be purchased from a unique travelling merchant who can be found in several towns and settlements throughout the whole Baldur's Gate series.</p>
+            <p>The merchant can be found at the following locations:</p>
+            <ul>
+              <li><strong>BG1:</strong> Beregost, Nashkel's Carnival or Ulgoth's Beard</li>
+              <li><strong>SoD:</strong> Coast Way Crossing or Coalition Camp</li>
+              <li><strong>BG2-SoA:</strong> Athkatla's market district, Trademeet or Imnesvale in the Umar Hills</li>
+              <li><strong>BG2-ToB:</strong> Saradush or Amkethran</li>
+            </ul>
+            <p>The travelling merchant offers a total of</p>
+            <ul>
+              <li>17 Daggers</li>
+              <li>10 Battle Axes</li>
+              <li>9 different types of Bolts</li>
+              <li>6 War Hammers</li>
+              <li>5 Clubs</li>
+              <li>4 Maces</li>
+              <li>1 Morning Star</li>
+              <li>2 Long Swords</li>
+              <li>2 Bastard Swords</li>
+              <li>2 Scimitars</li>
+              <li>1 Quarterstaff</li>
+              <li>1 Necklace</li>
+              <li>10 Rings</li>
+              <li>7 Earrings (can be equipped in the Amulets slot)</li>
+              <li>7 Bracelets and Bracers (can be equipped in the Bracers/Gauntlets slot)</li>
+              <li>1 Cloak</li>
+              <li>1 Belt</li>
+              <li>2 Wands</li>
+              <li>3 Spell scrolls</li>
+              <li>several miscellaneous items</li>
+              <li>two artifacts attached with unique quests</li>
+              <li>and a pet</li>
+            </ul>
+            <p>for sale.</p>
+            <p>More details about available items can be found in the <a href="#item-details">Item Details</a> section below.</p>
+            <p>As the items vary greatly in power, they are only gradually made available as the main story of the game progresses.</p>
+          </li>
+          <li>
+            <p><strong>Identify all wares</strong> <em>(not recommended; requires the main component)</em></p>
+            <p>This tweak automatically identifies all wares offered by the travelling merchant.</p>
+            <p><strong>Notes:</strong> It is generally not recommended to install this tweak as it diminishes the mod experience. Install it only if you want to complement Tweaks Anthology's subcomponent "Identify All Items" or similar tweaks.</p>
+          </li>
+          <li>
+            <p><strong>Alternate merchant portrait</strong> <em>(requires the main component)</em></p>
+            <p>This tweak installs Ebb Creakknees' original character portrait from Planescape: Torment.</p>
+          </li>
+        </ol>
+        <div class="back">
+          <a class="novisit" href="#top">BACK TO TOP</a>
+        </div>
+      </section>
+
+      <!-- ================== I T E M   D E T A I L S ================== -->
+      <section id="item-details">
+        <h2>Item Details</h2>
+        <p>This section provides detailed descriptions of all items that can be purchased from Ebb's store. Don't read on if you do not want to be spoiled.</p>
+        <details>
+          <summary title="Click to show or hide item details"><strong>Daggers</strong></summary>
+          <table summary="Daggers" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i251.webp"</td>
+                <td>Dagger</td>
+                <td>Backbiter +1</td>
+                <td>BG1 chapter 5 or later</td>
+                <td>
+                  <div class="itemdesc">
+Crafted specifically with the adept thief in mind, this magical blade masks the approach of the wielder by muffling any sounds he or she might make in passing, thus improving his or her chances of approaching a target by stealth.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Hide In Shadows: +10%<br/>
+– Move Silently: +10%<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 1d4+2 (piercing)<br/>
+Speed Factor: 1<br/>
+Proficiency Type: Dagger<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;3 Strength<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i105.webp"</td>
+                <td>Dagger</td>
+                <td>Bone Dagger +1</td>
+                <td>BG1 chapter 1 or later</td>
+                <td>
+                  <div class="itemdesc">
+The blade of this dagger seems to be made from the bone of some creature. The edge of this blade is extremely sharp.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 1d4+1 (piercing)<br/>
+Speed Factor: 1<br/>
+Proficiency Type: Dagger<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;3 Strength<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i003.webp"</td>
+                <td>Dagger</td>
+                <td>Notched Dagger +2</td>
+                <td>BG1 chapter 1 or later</td>
+                <td>
+                  <div class="itemdesc">
+This dagger has various notches strategically placed about the blade. When used correctly, this dagger has the ability to catch incoming blows from bladed weapons.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: +1 vs. slashing attacks<br/>
+<br/>
+THAC0: +2<br/>
+Damage: 1d4+2 (piercing)<br/>
+Speed Factor: 0<br/>
+Proficiency Type: Dagger<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;3 Strength<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i106.webp"</td>
+                <td>Dagger</td>
+                <td>Phantom Dagger +3</td>
+                <td>BG2:SoA chapter 3 or later</td>
+                <td>
+                  <div class="itemdesc">
+As if of its own volition, this dagger seems to reach out to its enemies, instinctively finding the most vulnerable spots on any creature.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+THAC0: +5<br/>
+Damage: 1d4+3 (piercing)<br/>
+Speed Factor: 0<br/>
+Proficiency Type: Dagger<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;3 Strength<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i118.webp"</td>
+                <td>Dagger</td>
+                <td>Entropic Blade +3</td>
+                <td>BG2:ToB chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+The surface of this small dagger twists and bends as you watch, as if struggling to break free from its shape.<br/>
+<br/>
+It looks to be made of iron, silver, and any of a number of different metals. Sometimes they blend together, other times, they submerge into the core of the blade, only to resurface again minutes later.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Combat abilities:<br/>
+– Bonuses to hit and damage based on strength do not apply to this weapon<br/>
+<br/>
+THAC0: +3<br/>
+Damage: 1d20+3 (piercing)<br/>
+Speed Factor: 0<br/>
+Proficiency Type: Dagger<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;3 Strength<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i266.webp"</td>
+                <td>Slim Dagger</td>
+                <td>Enlightenment +2</td>
+                <td>BG2:SoA chapter 2 or later</td>
+                <td>
+                  <div class="itemdesc">
+"Enlightenment", along with "Ascension" and "Reason", are weapons called the "Triad of Tests" by the Believers of the Source in Sigil. This dagger is slim, perfectly balanced, and light as a feather. The symbol of the Godsmen is engraved along the blade, and the entire weapon seems to shiver as if in anticipation.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: +1<br/>
+– Charisma: +1<br/>
+<br/>
+THAC0: +2<br/>
+Damage: 1d6+2 (piercing)<br/>
+Speed Factor: 0<br/>
+Proficiency Type: Dagger<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;3 Strength<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i203.webp"</td>
+                <td>Rusted Dagger</td>
+                <td>Fiend's Blood Dagger</td>
+                <td>BG1 chapter 1 or later</td>
+                <td>
+                  <div class="itemdesc">
+Years of being embedded in the flesh of a fiend have imbued this once ordinary dagger with qualities best left with their kind. Blood of the fiend has infused itself with the dagger causing it to feel slightly warm to the touch.<br/>
+<br/>
+When in combat the user of this dagger can hear a constant chittering in the back of his mind causing him to lose all self-control making him unstoppable in combat, but vulnerable to spells.<br/>
+<br/>
+The history of this dagger is for the most part unknown. More than likely some fool perished while fighting the fiend, losing his dagger as well as his life. For now the name is but a description, it has yet to earn a proper title.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Save vs. spells: -4<br/>
+– Causes the wielder to go berserk in combat<br/>
+– May only be removed with a Remove Curse spell<br/>
+<br/>
+Combat abilities:<br/>
+– Hit target must save vs. Death at +2 or suffer 3 points of poison damage per round for 2 turns (non-cumulative)<br/>
+<br/>
+THAC0: +2<br/>
+Damage: 1d4+2 (piercing)<br/>
+Speed Factor: 1<br/>
+Proficiency Type: Dagger<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;3 Strength<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i010.webp"</td>
+                <td>Strange Feather</td>
+                <td>Chaos Feather +1</td>
+                <td>SoD chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+This feather is ash-gray, fading to black around the edges. It is much larger than a bird feather, and it creates an unpleasant tingling sensation when held for more than a minute.<br/>
+<br/>
+Examination of the feather reveals that is the feather from a Vrock, one of the many races of tanar'ri that fill the Abyss. The Vrock resemble huge vultures, and they are often used as scouts for the tanar'ri forces in the Blood War.<br/>
+<br/>
+This particular feather is believed to have been taken from a Vrock shaman, who is reported to have died by simply disbelieving himself. Possessed of a certain mental imbalance and with an odious habit of devouring his followers to gain strength, this crazy Vrock was rumored to be capable of causing others of his flock to behave erratically - much more so than for a normal tanar'ri. He convinced many of his flock to tear off their wings and take up burrowing in the ground. Other times, he preached the virtues of honesty as being more evil and destructive than any lie. When he disintegrated, only the feather was left behind as testament to his fevered existence. Some of the shaman's residue is believed to reside in this "Chaos Feather."<br/>
+<br/>
+The Chaos Feather, when used in combat as a dagger, inflicts a minor amount of damage (about the same as a conventional dagger) and has the power to confuse any target it strikes. Creatures struck by the feather may be stunned, run away, or attack their allies.<br/>
+<br/>
+Most tanar'ri consider the feather to be a sacred object. Vrocks will kill anyone possessing it in order to retrieve it.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Combat abilities:<br/>
+– Hit target must save vs. Spell or are either stunned for 1 round, or confused or flee in terror for 5 rounds<br/>
+– Item can only be used a number of times before it breaks<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 1d4+1 (piercing)<br/>
+Speed Factor: 1<br/>
+Proficiency Type: Dagger<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;3 Strength<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i150.webp"</td>
+                <td>Fork</td>
+                <td>Silver Fork</td>
+                <td>BG1 chapter 1 or later</td>
+                <td>
+                  <div class="itemdesc">
+This is a silver dining fork. Its tines are especially sharp. Upon further consideration, it might be able to be used as a dagger, though it most likely wouldn't do any more damage than a conventional dagger. It might prove useful against creatures damaged only by weapons of silver or cold iron.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Combat abilities:<br/>
+– Bonuses to hit and damage based on strength do not apply to this weapon<br/>
+<br/>
+THAC0: +2 vs. lycanthropes<br/>
+Damage: 1d2, +2 vs. lycanthropes<br/>
+Damage type: Piercing<br/>
+Speed Factor: 2<br/>
+Proficiency Type: Dagger<br/>
+Type: One-handed<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i253.webp"</td>
+                <td>Dagger</td>
+                <td>Green Steel Dagger +1</td>
+                <td>BG1 chapter 1 or later</td>
+                <td>
+                  <div class="itemdesc">
+This slim dagger has been forged out of the famed Baatorian green steel. Found only in the wastelands of Avernus, this peculiar green ore can be tempered into metal much lighter than normal steel. In addition, green steel weapons tend to retain their remarkably fine edges and are capable of dealing out more damage than their standard counterparts.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 1d4+1 (piercing)<br/>
+Speed Factor: 1<br/>
+Proficiency Type: Dagger<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;3 Strength<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i135.webp"</td>
+                <td>Curved Knife</td>
+                <td>Kaarlac's Knife</td>
+                <td>BG1 chapter 5 or later</td>
+                <td>
+                  <div class="itemdesc">
+The final achievement of one Kaarlac Cragenmoor, this enchanted knife is a boon to those who practice the mystic arts. Kaarlac, ever one to aspire to greatness, sought to create a magic item that could retain an imprint of a portion of his memory - particularly the short term memory that contained his considerable spell repertoire. He theorized that, if successful, he could effectively double the amount of spell knowledge he could retain at any given time.<br/>
+<br/>
+Unfortunately, the enchantment was beyond his capability and in the midst of his fervent casting, Kaarlac went mad and plunged the knife into his own chest. His sacrifice, however, was not completely in vain, for the knife possesses enough of the intended enchantment to bestow upon its wielder the ability to memorize several additional first level spells.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Can memorize three extra 1st-level wizard spells<br/>
+<br/>
+Damage: 1d4 (piercing)<br/>
+Speed Factor: 2<br/>
+Proficiency Type: Dagger<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;3 Strength<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i466.webp"</td>
+                <td>Dagger</td>
+                <td>Porphatys Dagger +3</td>
+                <td>BG2:ToB chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+The acids of Porphatys, the fifth layer of Carceri, are dangerous to more than a body's physical form - they tear at his mind and soul, eating away at his reason. Weapons forged in this heart of betrayal do the same thing to their owners, but too many believe that the acidic powers of a weapon created in Porphatys are worth the risk.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Causes the wielder to go berserk<br/>
+– May only be removed with a Remove Curse spell<br/>
+<br/>
+THAC0: +3<br/>
+Damage: 1d4+3, +1d6 acid damage<br/>
+Damage type: Piercing<br/>
+Speed Factor: 0<br/>
+Proficiency Type: Dagger<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;3 Strength<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i158.webp"</td>
+                <td>High Quality Stiletto</td>
+                <td>High Quality Stiletto</td>
+                <td>BG1 chapter 1 or later</td>
+                <td>
+                  <div class="itemdesc">
+This slim dagger is a beauty among its kind. It is a one-handed thrusting weapon.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 1d4 (piercing)<br/>
+Speed Factor: 1<br/>
+Proficiency Type: Dagger<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;3 Strength<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i061.webp"</td>
+                <td>Awkwardly Shaped Dagger</td>
+                <td>Runeblade</td>
+                <td>BG2:SoA chapter 6 or later</td>
+                <td>
+                  <div class="itemdesc">
+Created by a legendary guild of battle mages known as "the Scarlet Seers," these enchanted blades were specifically designed as a defensive countermeasure against opposing spellcasters. The tiny runes etched into the blade are powerful wards that offer the wielder increased resistance against all types of magic. Unfortunately, with its emphasis on magical defense, the weapon's awkward design makes it virtually ineffective in physical combat.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Magic Resistance: +25%<br/>
+– Save vs. Spell: +2<br/>
+<br/>
+THAC0: -4<br/>
+Damage: 1d4 (piercing)<br/>
+Speed Factor: 3<br/>
+Proficiency Type: Dagger<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;3 Strength<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i204.webp"</td>
+                <td>Wicked Dagger</td>
+                <td>Last Resort +6</td>
+                <td>BG1 chapter 5 or later</td>
+                <td>
+                  <div class="itemdesc">
+This small dagger looks fragile, but a series of jagged teeth line the edge of the blade. The hilt itself is covered with dried blood, most likely the blood of the users who held the weapon and were unable to release their grip.<br/>
+<br/>
+Research indicates that this cursed dagger has had many names, the most prominent of which was "Last Resort." When equipped, the user cannot release the grip until death, or until the curse is lifted by spell or divine intervention. Although the dagger is slower than most two-handed weapons and the damage it inflicts is comparable to a scratch, it is rumored to be able to hurt almost any creature it strikes, no matter what the creature's plane of origin or its defenses. One adventurer who had freed herself from its curse actually chose to travel with it, figuring that in any instance where she *had* to use it couldn't be worsened by having it in her possession.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– May only be removed with a Remove Curse spell<br/>
+<br/>
+Combat abilities:<br/>
+– Bonus to damage based on strength do not apply to this weapon<br/>
+<br/>
+THAC0: +6<br/>
+Damage: 1d2 (slashing)<br/>
+Speed Factor: 10<br/>
+Proficiency Type: Dagger<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;3 Strength<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i097.webp"</td>
+                <td>Stone Splinter</td>
+                <td>Mad Splinter +1</td>
+                <td>BG2:SoA chapter 2 or later</td>
+                <td>
+                  <div class="itemdesc">
+This is a dagger-shaped fragment of stone taken from the statue of the Etherserian sorcerer Gangroighydon. It bears a powerful enchantment - each time someone is stabbed by the splinter, they have a chance of being Cursed. It is most likely that the fell curse trapped upon Gangroighydon's lips has soaked into the very stone of his petrified form, and "poisons" those the splinter stabs with his malicious magic.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Combat abilities:<br/>
+– Hit target must save vs. Death or suffers 1 point of poison damage per second until death or getting cured<br/>
+– Item can only be used a number of times before it breaks<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 1d4+1 (piercing)<br/>
+Speed Factor: 2<br/>
+Proficiency Type: Dagger<br/>
+Type: One-handed<br/>
+Requires:<br/>
+ 3 Strength<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i250.webp"</td>
+                <td>Dagger</td>
+                <td>Widowmaker +2</td>
+                <td>BG2:SoA chapter 2 or later</td>
+                <td>
+                  <div class="itemdesc">
+Tempered with the lethal venom of the dreaded hook spider, the magical properties of this blade, known simply as "Widowmaker," are much sought after by practicing assassins throughout the planes. The poison that has been magically and permanently infused into the dagger immediately infects those cut by it. Additionally, the wielder of "Widowmaker" immediately develops an improved resistance to poison simply from holding the blade.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Poison Resistance: +25%<br/>
+<br/>
+Combat abilities:<br/>
+– Hit target must save vs. Death or suffer 1 point of poison damage every 3 seconds for two rounds<br/>
+<br/>
+THAC0: +2<br/>
+Damage: 1d4+2, +2 slashing damage<br/>
+Damage type: Piercing<br/>
+Speed Factor: 0<br/>
+Proficiency Type: Dagger<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;3 Strength<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>Battle Axes</strong></summary>
+          <table summary="Battle Axes" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i027.webp"</td>
+                <td>Sharp Battle Axe</td>
+                <td>Ascension +2</td>
+                <td>BG2:SoA chapter 2 or later</td>
+                <td>
+                  <div class="itemdesc">
+"Ascension" is one of the finest weapons created at the Great Foundry, the home of the Believers of the Source in Sigil. It is one of three weapons called the "Triad of Tests," including the hammer "Reason" and the dagger "Enlightenment." The symbol of the faction is engraved on the axe head, and the edges of the blades are so sharp they could split a hair lengthwise.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: +1<br/>
+– Charisma: +1<br/>
+<br/>
+THAC0: +2<br/>
+Damage: 1d8+2 (slashing)<br/>
+Speed Factor: 4<br/>
+Proficiency Type: Axe<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;10 Strength<br/>
+<br/>
+Weight: 4
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i028.webp"</td>
+                <td>Battle Axe</td>
+                <td>Enchanted Battle Axe +1</td>
+                <td>BG1 chapter 1 or later</td>
+                <td>
+                  <div class="itemdesc">
+Closer examination of the weapon reveals a strange symbol, very faint, on the surface of the axe head. Tracing it with your finger, there is a sudden charge, and the axe head changes before your eyes into a silvery-looking metal.<br/>
+<br/>
+The edge is incredibly sharp, so much so it looks like it could hack through stone if necessary. The symbol you traced on the weapon is now glowing brilliantly, and if anything, the axe has become even lighter than before.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 1d8+1 (slashing)<br/>
+Speed Factor: 6<br/>
+Proficiency Type: Axe<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;10 Strength<br/>
+<br/>
+Weight: 4
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i025.webp"</td>
+                <td>Battle Axe of Quality</td>
+                <td>Battle Axe of Quality</td>
+                <td>BG1 chapter 1 or later</td>
+                <td>
+                  <div class="itemdesc">
+Intricate runes are etched on the shaft and the blades of this axe. The edges of the axe are razor-sharp; it looks like it would be possible to shave with it, though that's not something that you would try until you had consumed several tankards of ale. The handle itself is made of ironwood, and leather is wrapped tightly around the handle to help secure the user's grip.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 1d8+1 (slashing)<br/>
+Speed Factor: 7<br/>
+Proficiency Type: Axe<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;10 Strength<br/>
+<br/>
+Weight: 8
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i026.webp"</td>
+                <td>Polished Battle Axe</td>
+                <td>Blindsider +1</td>
+                <td>SoD chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+This magnificent axe, known as "Blindsider," is truly one of a kind. It is rumored that it was the creation of one Akyzum Yar, chief metallurgist of an ancient empire on the Prime Material Plane. The Emperor whom Yar served, a vain and wicked man, commissioned the creation of "a weapon of unsurpassed beauty." After years of toiling, Yar succeeded and presented the Emperor with "Blindsider," whereupon he was promptly put to death so that his work could never be reproduced.<br/>
+<br/>
+The various ores and enchantments employed in the forging of this weapon yielded a new type of metal that is lightweight, durable, and highly reflective. The axe earned its name from its tendency to reflect light into the eyes of its opponent, temporarily blinding the target so that its wielder can easily cut him down. Additionally, its wielder is granted immunity to blinding attacks as a magical byproduct of its reflective nature.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor class: +2<br/>
+– Wearer is immune to Blindness<br/>
+<br/>
+Combat abilities:<br/>
+– Hit target must save vs. Death or is blinded for one round<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 1d8+1 (slashing)<br/>
+Speed Factor: 6<br/>
+Proficiency Type: Axe<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;10 Strength<br/>
+<br/>
+Weight: 4
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i047.webp"</td>
+                <td>Meat Cleaver</td>
+                <td>Butcherer of Innocents +2</td>
+                <td>BG2:SoA chapter 3 or later</td>
+                <td>
+                  <div class="itemdesc">
+This giant, axe-like cleaver earned its nickname while in the hands of Oswell Breck, a butcher who once serviced the Clerk's Ward of Sigil. The rumor goes that one day this affable and well-respected citizen suddenly went on a murderous and bloody rampage that lasted ten days and ten nights. Cleaver in hand, Oswell stalked the streets of the ward, brutally hacking down every man, woman, and child unlucky enough to cross his path until the Lady of Pain herself intervened. It is rumored that he suffered from a strange disease that slowly caused his body to waste away, and it was this disease that eroded his sanity and prompted the murder spree.<br/>
+<br/>
+The origin of this instrument of carnage is shrouded in mystery. However, the various wizards and scholars who examined the discarded weapon after Oswell's mazing have catalogued the nature of its enchantment. The cleaver seems to feed upon its victims, sucking the very life force from them and bestowing a portion of it upon its wielder.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Combat abilities:<br/>
+– Transfers 2 Hit Points from target to wielder<br/>
+<br/>
+THAC0: +2<br/>
+Damage: 1d8+2 (slashing)<br/>
+Speed Factor: 5<br/>
+Proficiency Type: Axe<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;10 Strength<br/>
+<br/>
+Weight: 4
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i029.webp"</td>
+                <td>Weak Battle Axe</td>
+                <td>Heartgrinder +3</td>
+                <td>BG2:SoA chapter 2 or later</td>
+                <td>
+                  <div class="itemdesc">
+A single teardrop of the wielder's blood, applied at the border where the axe meets the handle, is sufficient to awaken "Heartgrinder." Once applied, the drop of blood freckles across the blade and handle, giving it a dull red radiance. The glow from Heartgrinder pulses, matching the heartbeat of its wielder.<br/>
+<br/>
+No matter what the target, Heartgrinder is a powerful weapon, capable of tearing through nearly any defenses. Against targets with blood running in their veins (whether their own or another's - vampires beware), Heartgrinder inflicts additional damage, as every stroke also smashes the target's heart, no matter what location the axe struck.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+THAC0: +3<br/>
+Damage: 1d8+3, +3 electrical damage, +1d4 slashing damage vs. corporeal creatures<br/>
+Damage type: Slashing<br/>
+Speed Factor: 4<br/>
+Proficiency Type: Axe<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;10 Strength<br/>
+<br/>
+Weight: 4
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i344.webp"</td>
+                <td>Bizarre Blood-Red Axe</td>
+                <td>Hatred's Gift +1</td>
+                <td>SoD chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+It is not exactly clear in the annals of known planar history when "Hatred's Gift" was created, but by the bloody trail it has left across the planes seems to have finally reached you.<br/>
+<br/>
+The axe exists to inspire hatred in one's enemies and fill its wielder with a berserker rage. When entering combat, the skulls along the shaft come alive, chittering their teeth, and the teeth (remnants of fiendish victims absorbed into the axe blade) extend outwards, biting and tearing into opponents with each strike.<br/>
+<br/>
+Once equipped, "Hatred's Gift" cannot be dropped unless its curse is removed.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Causes the wielder to go berserk<br/>
+– May only be removed with a Remove Curse spell<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 2d8+1 (slashing)<br/>
+Speed Factor: 6<br/>
+Proficiency Type: Axe<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;10 Strength<br/>
+<br/>
+Weight: 7
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i030.webp"</td>
+                <td>Motley Axe</td>
+                <td>Axe of the Jester +3</td>
+                <td>BG2:SoA chapter 6 or later</td>
+                <td>
+                  <div class="itemdesc">
+The person who created this axe must have been mad or a genius. Only the most skilled of smiths could have forged a weapon using Chaos Matter, the most unstable and unpredictable element in all the planes.<br/>
+<br/>
+Stories of this particular axe have been told and retold across the planes. Heroic deeds of men defeating creatures of immense power simply by touching the axe to the creature… and of these same men dying horrible deaths while doing simple everyday tasks.<br/>
+<br/>
+Zaknar the Simple - Defeated a devourer with a single swipe of this axe. Crushed to death by a falling boulder in the vast plains of Tabor.<br/>
+<br/>
+Garkon the Righteous - Struck by a mysterious discharge of energy while fighting a cranium rat.<br/>
+<br/>
+Kannas - Tradesman by profession. Buried alive as the stone wall the axe was mounted on collapsed on him.<br/>
+<br/>
+Kvry Matterson - A child of only nine seasons, was not only able to ward off a group of marauding fire bats, he even managed to kill 2 of them!<br/>
+<br/>
+The list of tragedies and deeds goes on and on.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– ???<br/>
+<br/>
+Combat abilities:<br/>
+– ???<br/>
+<br/>
+THAC0: +3<br/>
+Damage: 1d2 (slashing)<br/>
+Speed Factor: 3<br/>
+Proficiency Type: Axe<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;10 Strength<br/>
+<br/>
+Weight: 2
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i196.webp"</td>
+                <td>Executioner's Axe</td>
+                <td>Final Judgment +3</td>
+                <td>BG2:SoA chapter 6 or later</td>
+                <td>
+                  <div class="itemdesc">
+This archaic double-bladed battle-axe is reminiscent of an executioner's axe; the axe head has been forged into the symbol of the Mercykiller Faction (a red dragon with its wings outspread… the outstretched wings have been shaped into the blades of the axe.) The axe itself is huge; it would require tremendous strength to use effectively.<br/>
+<br/>
+This axe carries part of Vhailor's essence within it. As a result, it is utterly devoted to justice and will not allow the user to rest while "judgments" are left to be delivered. The considerable damage it causes to an opponent is doubled if the axe strikes a guilty or chaotic creature. Furthermore, the axe itself lends some of its strength to the wielder, giving them added protection from attacks.<br/>
+<br/>
+The origin of this axe is unknown. If you were to hazard a guess, the axe gained its powers simply from Vhailor's belief.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: +1<br/>
+– May only be removed with a Remove Curse spell<br/>
+<br/>
+THAC0: +3<br/>
+Damage: 1d8+3, +1d6 fire damage, does double damage against chaotic creatures<br/>
+Damage type: Slashing<br/>
+Speed Factor: 4<br/>
+Proficiency Type: Axe<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;16 Strength<br/>
+<br/>
+Weight: 12
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i027a.webp"</td>
+                <td>Freezing Axe</td>
+                <td>Edge of Oblivion +2</td>
+                <td>BG2:SoA chapter 2 or later</td>
+                <td>
+                  <div class="itemdesc">
+When its powers are awakened and its name known, "Edge of Oblivion" becomes entirely black… where once just the edges were ebony, now the blackness has spread across the entire blade. The chill the blade radiates has increased ten-fold, so much so that it is painful to hold it for too long.<br/>
+<br/>
+"Edge of Oblivion" does disintegration damage every time it strikes an opponent… for every wound it causes, it also disintegrates the flesh around the target area, simultaneously cauterizing the wound as it strikes.<br/>
+<br/>
+There is some speculation that a Sphere of Annihilation has somehow been encaged within the axe itself, but again this is only speculation. Given that the planes are infinite, anything is possible.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Cold resistance: +50%<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 1d8+1, +1d6 cold damage<br/>
+Damage type: Slashing<br/>
+Speed Factor: 5<br/>
+Proficiency Type: Axe<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;10 Strength<br/>
+<br/>
+Weight: 5
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>Bolts</strong></summary>
+          <table summary="Bolts" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i053.webp"</td>
+                <td>Cube-Shaped Bolts</td>
+                <td>Bolts of Acheron +1</td>
+                <td>BG1 chapter 5 or later</td>
+                <td>
+                  <div class="itemdesc">
+These enchanted bolts have been fashioned from one of the great cubes of Acheron. According to many planar scholars, Acheron is a plane in perpetual war with itself, where huge cubes the size of continents float through the ether and smash against each other. On the surface of these cubes, legions of soldiers wage war on each other, swarming from cube to cube and attacking whoever else they can find. The plane is filled with the ringing of steel and the great thundering impacts of the cubes striking each other.<br/>
+<br/>
+These bolts carry a portion of Acheron's heart within them. When these bolts strike an opponent, they do so with so much force that the impact has the potential to stun an opponent and leave him helpless for a period of time.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Combat abilities:<br/>
+– Target must save vs. Death or be stunned for one round<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 1d4+1 (crushing)<br/>
+Launcher: Crossbow<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i054.webp"</td>
+                <td>Spherical Bolts</td>
+                <td>Acidic Sponge Bolts +1</td>
+                <td>SoD chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+The putty-like globes on the heads of these crossbow bolts are actually dried-up aquatic sponges found in many of the great lakes of Bytopia. Seemingly unremarkable to most scholars, these tiny sponges were accidentally discovered to have the property of being able to absorb acids and store them in their bodies with no harm to themselves.<br/>
+<br/>
+As a result, great masses of these creatures were gathered and bred for use as weapons against fiends in the Blood War. After being fed a steady diet of acid for a few days, the sponges are harvested, dried, and covered with a resin that keeps a soft bubble around the sponge. The sponge is then mounted on the head of an arrow or crossbow bolt and is ready for use.<br/>
+<br/>
+When the tip of the bolt strikes a creature with sufficient force, the resin bubble bursts, the sponge flattens, and the target is doused with acid.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 1d2+1, +6 acid damage (Save vs. Breath for half)<br/>
+Damage type: Missile<br/>
+Launcher: Crossbow<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i055.webp"</td>
+                <td>Pyramid Bolts</td>
+                <td>"Rule of Threes" Bolts</td>
+                <td>SoD chapter 10 or later</td>
+                <td>
+                  <div class="itemdesc">
+These crossbow bolts are the work of a twisted mechanical genius. Just beneath the head of each bolt is a small catch, that when pressed, unlocks the head of the bolt, allowing it to divide. From what you can tell, once the bolts are unlocked, the pyramid-shaped heads are carefully fashioned so that each one splits into three on impact. Each triangle-shaped fragment then tears a different route through the target's body, wreaking havoc on his internal organs.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Damage: 1d10+5 (missile)<br/>
+Launcher: Crossbow<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i056.webp"</td>
+                <td>Bolt</td>
+                <td>Zephyr Bolts +1</td>
+                <td>BG1 chapter 1 or later</td>
+                <td>
+                  <div class="itemdesc">
+These crossbow bolts have heads with grooves cut into the sides. They do no more damage than normal crossbow bolts, but they bear a minor enchantment that allows them to correct their path in flight, making them more likely to hit an opponent.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 1d8 (missile)<br/>
+Launcher: Crossbow<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i056.webp"</td>
+                <td>Whistling Bolts</td>
+                <td>Bolts of Whistling Doom +2</td>
+                <td>BG2:SoA chapter 6 or later</td>
+                <td>
+                  <div class="itemdesc">
+These bolts have somehow captured the deadly harmonic of Pandemonium and then added insult to injury by imprisoning an enraged air elemental inside the head of the bolt. When one of these bolts strike an opponent, the head shatters, and the air elemental is released. The elemental will whip around the opponent in a frenzy, making one strike before it vanishes.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+THAC0: +2<br/>
+Damage: 4d4 (crushing)<br/>
+Launcher: Crossbow<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i057.webp"</td>
+                <td>Splayed Bolts</td>
+                <td>Bolts of Wincing +1</td>
+                <td>SoD chapter 10 or later</td>
+                <td>
+                  <div class="itemdesc">
+These crotch-shaped bolts have been enchanted with one thing in mind: emasculation. When fired, they home in on the most vulnerable point on a victim's body, sink into the flesh, then the head of each bolt scissors outwards, making it nearly impossible to pull out and increasing the damage considerably. The name of the bolts comes from the reactions of spectators after the bolts are fired.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Chance to score a critical hit: +15%<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 1d8+1, +4 slashing damage<br/>
+Damage type: Missile<br/>
+Launcher: Crossbow<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i057.webp"</td>
+                <td>Winged Bolts</td>
+                <td>Winged Bolts</td>
+                <td>BG1 chapter 1 or later</td>
+                <td>
+                  <div class="itemdesc">
+The heads of these bolts have been carved to resemble a pair of feathered wings. The bolts are extremely light and look more like arrows than crossbow bolts. Although not magical, they are more accurate and do more damage when they strike an opponent than standard crossbow bolts.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 1d8+2 (missile)<br/>
+Launcher: Crossbow<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i057.webp"</td>
+                <td>Bolt</td>
+                <td>Jagged Bolts +1</td>
+                <td>SoD chapter 5 or later</td>
+                <td>
+                  <div class="itemdesc">
+These enchanted bolts have a series of jagged black runes traced along the shaft. When fired, the runes rise upwards like spines, forming an additional row of vicious edges that tear into a target.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Combat abilities:<br/>
+– 4 extra bleeding damage spread over two rounds<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 1d4+2 (missile)<br/>
+Launcher: Crossbow<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i057.webp"</td>
+                <td>Fanged Bolts</td>
+                <td>Bolts of Kessek the Devourer +2</td>
+                <td>BG2:SoA chapter 3 or later</td>
+                <td>
+                  <div class="itemdesc">
+Also called "Kessek's Teeth," the head of these enchanted bolts are made of bone and have two long fangs curving out from the center. When one of these bolts strikes an opponent, the fangs takes on a life of their own and begin eating their way slowly and painfully through the victim's body.<br/>
+<br/>
+According to legend, Kessek was a bariaur chieftain on the Outlands who was forced to watch his people starve during a winter storm in the Cleft of Tears many centuries ago. Trapped in the Cleft because of heavy snows, he sent scouts from his tribe out to seek aid from his neighbors, the province of Ohinru.<br/>
+<br/>
+Learning of the bariaurs' plight, the merchant princes of Ohinru saw an opportunity to wipe out the "nomadic pests" and claim their lands for their own. The bariaur scouts were executed and their heads mounted on the walls so that, "the vultures might feed while the bariaurs starved."<br/>
+<br/>
+When the storms cleared and more than half of his tribe had died of starvation, Kessek finally learned what had happened to his scouts. Consumed with an insane fire, he fashioned a sheaf of bolts from the teeth and bones of his people who had starved to death. Once he had finished, he traveled to Ohinru in the night and fired his bolts blindly in the city streets, the name of each bariaur that had died whispered on his lips as he released each shaft.<br/>
+<br/>
+Each bolt he fired twisted in flight, hungrily searching for a victim and each found one… then another, then another. The night was filled with the choked screams of the citizens of Ohinru as the devourers claimed their bodies.<br/>
+<br/>
+When dawn touched the city, the vultures fed again. No trace of Kessek could be found.<br/>
+<br/>
+The bolts of Kessek the Devourer can still be found scattered across the planes. It is said that for each victim the bolts claim, that another bolt is born… with the same hunger as the first.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+THAC0: +4<br/>
+Damage: 1d8+2, +8 piercing damage (Save vs. Death for half)<br/>
+Damage type: Missile<br/>
+Launcher: Crossbow<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>War Hammers</strong></summary>
+          <table summary="War Hammers" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i255.webp"</td>
+                <td>War Hammer</td>
+                <td>Brimstone Hammer +1</td>
+                <td>BG2:SoA chapter 2 or later</td>
+                <td>
+                  <div class="itemdesc">
+This type of weapon, thought to be forged by the flames of the Elemental Plane of Fire, is extremely rare, even in Sigil. The elemental properties of the hammer grants its wielder an increased resistance to fire and fire-based attacks. In addition, when used in combat, the hammer deals out additional damage when it successfully connects, searing its target with crackling flames.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Fire resistance: +25%<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 1d8+1, +4 fire damage<br/>
+Damage type: Crushing<br/>
+Speed Factor: 3<br/>
+Proficiency Type: War Hammer<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;9 Strength<br/>
+<br/>
+Weight: 5
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i257.webp"</td>
+                <td>Heavy-Headed Hammer</td>
+                <td>Foolsmiter +2</td>
+                <td>BG2:SoA chapter 2 or later</td>
+                <td>
+                  <div class="itemdesc">
+This war hammer has a huge stone head in the shape of a rectangular block. Faint traces of gore and blood are on all sides of the hammer's head. The shaft is of a thick wood that looks too weak to support the hammer head's weight.<br/>
+<br/>
+This enchanted hammer was used as a tool by the Athar at one time during their religious persecution phase of their faction history. The magical war-hammer "Foolsmiter" was constructed so that it did additional damage against opponents who were particularly stupid. When it was crafted, however, the enchantment was twisted such that if the user was less intelligent than the target struck by the hammer, the wielder would take damage as well. For many years, the hammer became a test rite between rival members of the Athar as a primitive (and lethal) IQ test. It was stolen from their headquarters in the Shattered Temple many years ago and has resurfaced once or twice across the planes.<br/>
+<br/>
+It is believed that the Intelligence vs. Intelligence contest the hammer once inflicted on the wielder and his enemies has dissipated from the hammer over time, but no one has been confident enough to put it to the test.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Combat abilities:<br/>
+– May inflict 1d4+3 crushing damage upon the wielder, based on their intelligence:<br/>
+&nbsp;&nbsp;6 or lower: always<br/>
+&nbsp;&nbsp;7: 75% chance<br/>
+&nbsp;&nbsp;8: 50% chance<br/>
+&nbsp;&nbsp;9: 35% chance<br/>
+&nbsp;&nbsp;10 to 14: 25% chance<br/>
+&nbsp;&nbsp;15 or higher: never<br/>
+<br/>
+THAC0: +2<br/>
+Damage: 1d4+3 (crushing)<br/>
+Speed Factor: 2<br/>
+Proficiency Type: War Hammer<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;9 Strength<br/>
+<br/>
+Weight: 5
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i092.webp"</td>
+                <td>Hammer of Quality</td>
+                <td>Hammer of Quality</td>
+                <td>BG1 chapter 1 or later</td>
+                <td>
+                  <div class="itemdesc">
+This is a finely crafted war hammer. Godsmen etchings and symbology decorate the head of the weapon and work their way down the shaft. Despite its heavy appearance, it feels much lighter than it looks.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 1d4+1 (crushing)<br/>
+Speed Factor: 4<br/>
+Proficiency Type: War Hammer<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;9 Strength<br/>
+<br/>
+Weight: 5
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i258.webp"</td>
+                <td>Massive War Hammer</td>
+                <td>Reason +2</td>
+                <td>BG2:SoA chapter 2 or later</td>
+                <td>
+                  <div class="itemdesc">
+This enormous hammer is the third weapon in the "Triad of Tests" of the Believers of the Source in Sigil. The other two are the axe "Ascension" and the dagger "Enlightenment." Its head is covered with mystic runes and engraved with the symbol of the Godsmen. It thrums in your hands.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: +1<br/>
+– Charisma: +1<br/>
+<br/>
+THAC0: +2<br/>
+Damage: 1d4+3, +2 additional crushing damage<br/>
+Damage type: Crushing<br/>
+Speed Factor: 2<br/>
+Proficiency Type: War Hammer<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;9 Strength<br/>
+<br/>
+Weight: 5
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i256.webp"</td>
+                <td>Sledgehammer</td>
+                <td>Hammer of Comminution +2</td>
+                <td>BG2:SoA chapter 6 or later</td>
+                <td>
+                  <div class="itemdesc">
+Research reveals that this is a formidable weapon indeed. Far superior to a normal hammer, this war hammer (also called "The Hammer of Comminution") delivers a devastating strike that not only inflicts crushing damage, but also fractures any surface it contacts, whether bone, metal, or wood, inflicting extra damage… and if the victim survives, it also "softens" him up for the next attack.<br/>
+<br/>
+The Hammer of Comminution was used extensively by Enote, a Doomguard priest, in 14 E.U. A philosopher who was prone to violent mood swings while debating theology, he was known to espouse the virtues of the hammer as a means of furthering the decay of dead matter. Whether or not what he struck with the hammer was dead or alive before the blow is open to debate.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+THAC0: +2<br/>
+Damage: 1d4+3, +1d6 acid damage<br/>
+Damage type: Crushing<br/>
+Speed Factor: 2<br/>
+Proficiency Type: War Hammer<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;9 Strength<br/>
+<br/>
+Weight: 5
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i518.webp"</td>
+                <td>Dwarven War Hammer</td>
+                <td>Soul Mirror +1</td>
+                <td>BG1 chapter 5 or later</td>
+                <td>
+                  <div class="itemdesc">
+Forged in the depths of the Dwarvish Mountains of the Outlands, Soul Mirror is a war hammer that was revered as both a relic and a test within the clan that forged it. The dwarves of this remote stronghold followed the triad of divine patrons—Dugmaren Brightmantle, Dumathoin the Keeper of Secrets Under the Mountain, and Vergadain the Laughing Dwarf—and the hammer embodies aspects of all three.<br/>
+<br/>
+The weapon is forged from star-iron which resonates faintly with planar neutrality inherent to the Outlands, with a single crystal inlaid in a niche on one side of the hammerhead. Like many things wrought in the Outlands, the hammer is suffused with the plane's tendency towards balance and neutrality. It does not reward fury, strength, or raw will to dominate, but instead amplifies the wielder's clarity of thought, intuition and mental discipline. A dwarf who wields the hammer is said to "carry the weight of their own thoughts into battle", making it as much a religious tool as a martial one.<br/>
+<br/>
+The artifact was lost during a raid on a neighboring elven settlement. It eventually wound up in the possession of a member of Sigil's faction of the Believers of the Source where it continued to be used as a test of faith and clarity for new faction members.<br/>
+<br/>
+Unlike regular weapons Soul Mirror draws its power from the wielder's mental strength, which makes it a deadly tool for a wise sage but reduces it to nothing more than a toy for savage barbarians. Although originally forged by and for dwarves, this weapon can be wielded by members of any race without apparent restrictions. However, given the craftmanship of dwarven weaponsmiths, one can never be certain.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– THAC0: +2 bonus vs. Elves (dwarves only)<br/>
+– Damage: +2 bonus vs. Elves (dwarves only)<br/>
+– THAC0: -2 penalty vs. Dwarves (elves only)<br/>
+– Damage: -2 penalty vs. Dwarves (elves only)<br/>
+<br/>
+Combat abilities:<br/>
+– Amount of physical damage depends on the wielder's wisdom:<br/>
+&nbsp;&nbsp;5-7: 1d2 damage<br/>
+&nbsp;&nbsp;8-9: 1d4 damage<br/>
+&nbsp;&nbsp;10-11: 1d4+2 damage<br/>
+&nbsp;&nbsp;12-13: 1d6+2 damage<br/>
+&nbsp;&nbsp;14-15: 1d6+4 damage<br/>
+&nbsp;&nbsp;16-17: 1d8+4 damage<br/>
+&nbsp;&nbsp;18-19: 1d8+6 damage<br/>
+&nbsp;&nbsp;20: 1d10+6 damage<br/>
+&nbsp;&nbsp;21: 1d10+8 damage<br/>
+&nbsp;&nbsp;22: 1d12+8 damage<br/>
+&nbsp;&nbsp;23: 1d12+10 damage<br/>
+&nbsp;&nbsp;24: 1d16+10 damage<br/>
+&nbsp;&nbsp;25: 1d20+10 damage<br/>
+<br/>
+THAC0: +1<br/>
+Damage: Special (crushing)<br/>
+Speed Factor: 3<br/>
+Proficiency Type: War Hammer<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;9 Strength<br/>
+<br/>
+Weight: 6
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>Clubs</strong></summary>
+          <table summary="Clubs" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i024.webp"</td>
+                <td>Club</td>
+                <td>Vrock Club +2</td>
+                <td>SoD chapter 10 or later</td>
+                <td>
+                  <div class="itemdesc">
+Created from the bones of a Vrock, this club makes a formidable weapon.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Combat abilities:<br/>
+– 25% chance the hit target must save vs. Death or suffers 1 point of poison damage per second for 8 seconds<br/>
+<br/>
+THAC0: +2<br/>
+Damage: 1d6+2 (crushing)<br/>
+Speed Factor: 2<br/>
+Proficiency Type: Club<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;5 Strength<br/>
+<br/>
+Weight: 4
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i267.webp"</td>
+                <td>Skull-Tipped Club</td>
+                <td>Devil's Due +2</td>
+                <td>SoD chapter 10 or later</td>
+                <td>
+                  <div class="itemdesc">
+This weapon has a black metal handle that seems to have grown into the narrow skull that is affixed to its top. The metal looks as if it has grown out from the skull, and spikes pierce through the eye sockets, jaw, and from the skull cap itself.<br/>
+<br/>
+The "metal" is not metal at all, but the remnants of a creature's forearm that punched through the base of the fiendish skull that now bedecks the head of this weapon. The spikes that have pierced through the skull actually appear to be some sort of quills from the creature's forearm.<br/>
+<br/>
+When this weapon is used in combat and the spikes of the club penetrate a creature's skin, acid oozes from the quills either into the target or the wielder, doing additional damage.<br/>
+<br/>
+The common name of this weapon is "Devil's Due." To who or what event it refers to is unknown, but it was obviously a painful experience for the two parties involved.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: +2 vs. missile and piercing attacks<br/>
+– May only be removed with a Remove Curse spell<br/>
+<br/>
+Combat abilities:<br/>
+– Inflicts 1d6 acid damage either upon the target or the wielder<br/>
+<br/>
+THAC0: +2<br/>
+Damage: 1d6+2<br/>
+Damage type: Crushing<br/>
+Speed Factor: 4<br/>
+Proficiency Type: Club<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;5 Strength<br/>
+<br/>
+Weight: 3
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i083.webp"</td>
+                <td>Fiend Bone Club</td>
+                <td>Fiend Femur +2</td>
+                <td>BG2:SoA chapter 6 or later</td>
+                <td>
+                  <div class="itemdesc">
+This tanar'ri femur carries the last traces of a balor's essence within its marrow. Disgraced in battle and torn apart by its fellow fiends in a ceremonial execution, the bone has since carried with it a vengeful spite towards all of its kind.<br/>
+<br/>
+When the femur strikes any tanar'ri or baatezu, serrated teeth bristle up and down the length of the bone and cause tremendous damage to any tanar'ri or baatezu.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+THAC0: +2, +3 vs. devils and demons<br/>
+Damage: 1d6+2, +3 vs. devils and demons<br/>
+Damage type: Crushing<br/>
+Speed Factor: 4<br/>
+Proficiency Type: Club<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;5 Strength<br/>
+<br/>
+Weight: 4
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i246.webp"</td>
+                <td>Prickly Club</td>
+                <td>Club of Nettles</td>
+                <td>BG1 chapter 5 or later</td>
+                <td>
+                  <div class="itemdesc">
+This club seems to be made from some sort of prickly plant. Small thorns adorn the head of the club and can easily be broken off.<br/>
+<br/>
+This particular club is one of the more favored weapons of thieves. Upon making a successful hit on an opponent, tiny barbed thorns lodge into the skin and cause the victim to become disoriented for a brief period of time. This allows the thief time to safely rob and escape the victim.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Combat abilities:<br/>
+– Hit target must save vs. Spell or is confused for one round<br/>
+<br/>
+THAC0: +2<br/>
+Damage: 1d6 (crushing)<br/>
+Speed Factor: 3<br/>
+Proficiency Type: Club<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;5 Strength<br/>
+<br/>
+Weight: 4
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i247.webp"</td>
+                <td>Spiked Club</td>
+                <td>Club of Piercing +1</td>
+                <td>SoD chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+This is a heavy iron club that is covered with sharp spikes.<br/>
+<br/>
+Enchantments have been placed on this club so that it can be wielded with greater accuracy.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+THAC0: +3<br/>
+Damage: 1d6, +1d6 piercing damage<br/>
+Damage type: Crushing<br/>
+Speed Factor: 6<br/>
+Proficiency Type: Club<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;8 Strength<br/>
+<br/>
+Weight: 12
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>Maces</strong></summary>
+          <table summary="Maces" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i248.webp"</td>
+                <td>Practice Mace</td>
+                <td>Blind Terror +2</td>
+                <td>SoD chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+When an opponent is struck with sufficient force, acid is released thru the spongy surface of the mace. From the resulting spray of acid, the adversary can become temporarily blinded making him easier to hit.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Combat abilities: <br/>
+– Hit target must save vs. Spell or is blinded for one round<br/>
+<br/>
+THAC0: +2<br/>
+Damage: 1d6+3, +2d4 acid damage<br/>
+Damage type: Crushing<br/>
+Speed Factor: 5<br/>
+Proficiency Type: Mace<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;10 Strength<br/>
+<br/>
+Weight: 4
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i244.webp"</td>
+                <td>Mace</td>
+                <td>Baatezu Mace +1</td>
+                <td>BG1 chapter 5 or later</td>
+                <td>
+                  <div class="itemdesc">
+Made from ore found only in the wastelands of Avernus. Baatezu have created a metal called Baatorian green steel. Weapons produced from this metal are lighter and stronger than those forged of ordinary steel and tend to inflict greater damage. Although produced in great quantities for the Blood Wars, weapons such as these are rarely found outside of Baator.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+THAC0: +1<br/>
+Damage: 2d4+2 (crushing)<br/>
+Speed Factor: 6<br/>
+Proficiency Type: Mace<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;10 Strength<br/>
+<br/>
+Weight: 10
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i249.webp"</td>
+                <td>Mace</td>
+                <td>Death of Desire +2</td>
+                <td>BG2:SoA chapter 3 or later</td>
+                <td>
+                  <div class="itemdesc">
+This mace is used by the Dustman faction of Sigil to remove all desires from the living.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Combat abilities:<br/>
+– Living creatures hit by the weapon must save vs. Spell or be stunned for 1 round<br/>
+<br/>
+THAC0: +2<br/>
+Damage: 1d6+3, +1d6 piercing damage<br/>
+Damage type: Crushing<br/>
+Speed Factor: 5<br/>
+Proficiency Type: Mace<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;10 Strength<br/>
+<br/>
+Weight: 11
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i208.webp"</td>
+                <td>Mace</td>
+                <td>The Justifier +2</td>
+                <td>SoD chapter 10 or later</td>
+                <td>
+                  <div class="itemdesc">
+This mace looks much like any other mace - a spiked ball atop a wooden shaft, leather handgrip with a thong to prevent losing it in the heat of battle. Where it differs is in the Eye etched in acid on the head of the weapon, a stylized sigil of the god Horus.<br/>
+<br/>
+This weapon is The Justifier, a mace created in the city of Heliopolis on the plane of Arcadia, designed to aid the followers of law and good. It can heal its owner, if asked, and harbors a special hatred for the forces of chaos and evil.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Regenerate 1 Hit Point per round<br/>
+<br/>
+THAC0: +2, +4 vs. chaotic evil creatures<br/>
+Damage: 1d6+3, +5 vs. chaotic evil creatures<br/>
+Damage type: Crushing<br/>
+Speed Factor: 5<br/>
+Proficiency Type: Mace<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;10 Strength<br/>
+<br/>
+Weight: 4
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>Morning Stars</strong></summary>
+          <table summary="Morning Stars" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i245.webp"</td>
+                <td>Morning Star</td>
+                <td>Heaven and Earth +4</td>
+                <td>BG2:ToB chapter 9 or later</td>
+                <td>
+                  <div class="itemdesc">
+A fearsome aura of power emanates from this massive weapon. Sharp, powerful lines adorn the shaft of this mace, which streak directly to a perfect sphere that serves as this weapon's contact point. Perfectly curved spikes emanate from the perfectly-shaped sphere, yielding an image that is at once both arresting, yet awe-inspiring. A vibrant, royal purple hue surrounds this weapon of power.<br/>
+<br/>
+Upon holding the weapon it is instantly apparent that only those that are pure of heart can truly wield it.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Strength: +2<br/>
+<br/>
+THAC0: +4<br/>
+Damage: 2d4+4, +4 additional crushing damage<br/>
+Damage type: Crushing<br/>
+Speed Factor: 3<br/>
+Proficiency Type: Flail/Morning Star<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;10 Strength<br/>
+<br/>
+Weight: 6
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>Long Swords</strong></summary>
+          <table summary="Long Swords" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i259.webp"</td>
+                <td>Radiant Long Sword</td>
+                <td>Celestial Fire +3</td>
+                <td>BG2:ToB chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+"Celestial Fire" is the only object that the angelic deva Trias had left to remind him of the Upper Planes. It is warm to the touch, and flames have been carved across the surface of the head. The intricacy of the carvings is breathtaking; they are done with such skill that the sword seems to be burning with metallic flames… someone must have spent several centuries rendering them. The metal of the sword is unfamiliar… it is heavy, but it shines like silver.<br/>
+<br/>
+The sword looks several millennia old. A faint hum can be felt within it, and the vibration becomes stronger when it touches human flesh. Not surprisingly, "Celestial Fire" can be wielded only by those with sufficient strength and purity of heart. When used in combat, "Celestial Fire" bursts into a holy radiance that burns any evil creature it strikes in combat.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: +2<br/>
+– +10% resistance to slashing damage<br/>
+<br/>
+THAC0: +3, +5 vs. evil creatures<br/>
+Damage: 2d6, +10 fire damage vs. evil creatures<br/>
+Damage type: Slashing<br/>
+Speed Factor: 2<br/>
+Proficiency Type: Long Sword<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;12 Strength<br/>
+<br/>
+Weight: 10
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i504.webp"</td>
+                <td>Long Sword</td>
+                <td>Dûrgaläd +3</td>
+                <td>BG2:SoA chapter 6 or later</td>
+                <td>
+                  <div class="itemdesc">
+This magnificient weapon was forged by the svartalves of Svartalfheim in Nidavellir, the third layer of Ysgard. It was made from mithral, and ancient Drow magic imbued it with the radiance of the caves of Svartalfheim. The sword was originally given to Garadun of Sigil for his bravery when he aided the svartalves in their battle against giant fiendish bats.<br/>
+<br/>
+The weapon allows the wielder to see the true nature of all things by dispelling any illusions and deceptions that would otherwise mislead the unwary.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Combat abilities: <br/>
+– Dispels illusionary protections, including projected images, when the sword strikes an opponent<br/>
+<br/>
+Charge abilities:<br/>
+– True Seeing once per day<br/>
+– Identify items three times per day<br/>
+<br/>
+THAC0: +3<br/>
+Damage: 1d8+3 (slashing)<br/>
+Speed Factor: 2<br/>
+Proficiency Type: Long Sword <br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;6 Strength<br/>
+<br/>
+Weight: 3
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>Bastard Swords</strong></summary>
+          <table summary="Bastard Swords" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i503.webp"</td>
+                <td>Bastard Sword</td>
+                <td>Abigail +1</td>
+                <td>BG1 chapter 5 or later</td>
+                <td>
+                  <div class="itemdesc">
+This blade has been created for a single purpose: to eradicate oozes, slimes and jellies of all kind. The razor sharp blade is made from alchemically-strengthened black obsidian which is harder than steel and immune to the corrosive effects of oozes and related monsters.<br/>
+<br/>
+Not much is known about the origins of the blade. There are no tales recorded about adventurers slaying hordes of jellies threatening a village, nor rumors known about heroes cleaning out slime-infested caves single-handedly. Dispatching ooze and slime cannot match up to vanquishing dragons after all.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Combat abilities:<br/>
+– Oozes, slimes and jellies must save vs. Death or be utterly destroyed<br/>
+<br/>
+THAC0: +1, +3 vs. oozes, slimes and jellies<br/>
+Damage: 2d4+1, +3 vs. oozes, slimes and jellies<br/>
+Damage type: Slashing<br/>
+Speed Factor: 7<br/>
+Proficiency Type: Bastard Sword<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;10 Strength<br/>
+<br/>
+Weight: 10
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i505.webp"</td>
+                <td>Bastard Sword</td>
+                <td>Fiendblight +2</td>
+                <td>SoD chapter 10 or later</td>
+                <td>
+                  <div class="itemdesc">
+Fiendblight was originally forged by the Tanar'ri for the endless Blood War that raged across countless planes of existence. It was given to promising contenders for higher ranks or mercenaries who wanted to prove themselves in battle.<br/>
+<br/>
+When activated the weapon forces the wielder to clutch the grip of the sword tightly, unable to release it without the help of divine intervention or a Remove Curse spell. The true danger of the weapon, however, is revealed only in actual combat. Each successful hit causes a rush of adrenaline so intense that the wielder goes into a frenzy with the goal to score yet another hit unless a successful save vs. Spell is made. To further incentivize the wielder to reach peak performance they are rewarded with a piece of life energy from their target on a critical hit and punished with self-injury on a critical miss.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– May only be removed with a Remove Curse spell<br/>
+<br/>
+Combat abilities:<br/>
+– Casts Larloch's Minor Drain on the target on a critical hit (no save)<br/>
+– Applies 1d4 points of slashing damage to the wielder on a critical miss (no save)<br/>
+– Each successful hit the wielder must save vs. Spell or go into a frenzy for one round with the following effects:<br/>
+&nbsp;&nbsp;THAC0: +2 bonus<br/>
+&nbsp;&nbsp;Damage: +2 bonus<br/>
+&nbsp;&nbsp;Armor Class: -2 penalty<br/>
+&nbsp;&nbsp;Save vs. Spell: -2 penalty<br/>
+&nbsp;&nbsp;Immunity to panic<br/>
+&nbsp;&nbsp;Causes the wielder to go berserk<br/>
+<br/>
+THAC0: +2<br/>
+Damage: 2d4+2 (slashing)<br/>
+Speed Factor: 6<br/>
+Proficiency Type: Bastard Sword<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;11 Strength<br/>
+<br/>
+Weight: 9
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>Scimitars</strong></summary>
+          <table summary="Scimitars" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i502.webp"</td>
+                <td>Scimitar</td>
+                <td>Thanatos +2</td>
+                <td>BG2:SoA chapter 6 or later</td>
+                <td>
+                  <div class="itemdesc">
+This scimitar was once wielded by the caliph Jassan of the Djinn in ancient times. He lost it in a skirmish against a horde of plundering nabassus in -6155 DR. Since then the weapon was lost and forgotten for millennia. Ca. 367 DR it was rediscovered by a band of experienced planewalkers on the banks of the river Styx on Thanatos, the 333rd layer of the Abyss, which became the new namesake of the weapon.<br/>
+<br/>
+After lying in the riverbed of the Styx for so long, the weapon gradually absorbed some of its properties. When a target is hit by the blade it causes temporary or permanent amnesia as if exposed to the water of the Styx itself.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Combat abilities:<br/>
+– Each successful hit causes the target to lose 1d4 memorized spells and has a 50% chance to apply either Miscast Magic, Confusion or Feeblemind for three rounds to the target (save vs. Spell at -2 to negate)<br/>
+<br/>
+THAC0: +2<br/>
+Damage: 1d8+2 (slashing)<br/>
+Speed Factor: 3<br/>
+Proficiency Type: Scimitar/Wakizashi/Ninjatō<br/>
+Type: One-handed<br/>
+Requires:<br/>
+&nbsp;8 Strength<br/>
+<br/>
+Weight: 4
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>Quarterstaves</strong></summary>
+          <table summary="Quarterstaves" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i512.webp"</td>
+                <td>Quarterstaff</td>
+                <td>Lifeless Companion +2</td>
+                <td>BG2:SoA chapter 2 or later</td>
+                <td>
+                  <div class="itemdesc">
+The grip of the staff looks ordinary enough. The skull attached to it, however, seems to be one of a kind. It was once a servant in possession of Lothar, the master of the Bones of the Night. At that time it met another skull with an unusual repertoire of insults that it continuously spew at his fellow skull companions, and sometimes at his master as well (as long as he was out of earshot.) Some of the insults made enough of an impression that the skull attached to the tip of the staff repeats them when commanded, with the effect that any living creature within earshot lowers their guard and falls into a rage.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Charge abilities:<br/>
+– Litany of Curses three times per day<br/>
+  Effects: Berserk, -2 penalty to armor class, saving throws, as well as attack and damage rolls (Save vs. Wand at -2 negates)<br/>
+  Area of Effect: Any non-deaf hostile humanoid or giant-humanoid creature within 15 ft. radius<br/>
+  Duration: 1 turn<br/>
+<br/>
+THAC0: +2<br/>
+Damage: 1d6+2 (crushing)<br/>
+Speed Factor: 2<br/>
+Proficiency Type: Quarterstaff<br/>
+Type: Two-handed<br/>
+Requires:<br/>
+&nbsp;5 Strength<br/>
+<br/>
+Weight: 3
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>Necklace &amp; Amulets</strong></summary>
+          <table summary="Necklace &amp; Amulets" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i521.webp"</td>
+                <td>Bone Necklace</td>
+                <td>Tribal Necklace of the Rengarth</td>
+                <td>BG2:SoA chapter 2 or later</td>
+                <td>
+                  <div class="itemdesc">
+Necklaces like these were crafted by the nomadic Rengarth tribes over 1700 years ago. They were primarily used by the shamans of the tribes in ceremonies and occasionally as support in their skirmishes with rival tribes and the ever-present threat posed by the Netheril Empire.<br/>
+<br/>
+These necklaces consist of bones, teeth and claws from wolves, bears, boars, and several other animals, held together by strong but flexible leather thongs. They provide a number of superficial magic abilities. But the more powerful enchantments are mysterious and resist even powerful divination attempts.<br/>
+<br/>
+This particular necklace wound up in the possession of a Netherese noble of Thultanthar before the city was lost for centuries when it shifted into the Plane of Shadow. About 1279 DR a member of the Doomguard faction returned with it from a planar excursion and sold it to a band of adventurers in Sigil where the trail of the item was lost again until it showed up recently in possesion of Ebb Creakknees' store.<br/>
+<br/>
+Despite its crude appearance the necklace is surprisingly well made and seems to be enchanted to withstand the test of time. Every bone and claw fits seamlessly into each other, making it very sturdy but comfortably to wear at the same time. However, given its barbaric appearance, people in more civilized regions might feel repulsed if the necklace is worn openly.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Charisma: -1<br/>
+– Undetectable by animals (only Druids, Shamans, and Rangers)<br/>
+<br/>
+Charge abilities:<br/>
+– Charm Animal three times per day (Save vs. Spell negates)<br/>
+&nbsp;&nbsp;Range: 30 feet<br/>
+&nbsp;&nbsp;Duration: 2 turns<br/>
+&nbsp;&nbsp;Area of Effect: 1 creature<br/>
+<br/>
+Weight: 2
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>Rings</strong></summary>
+          <table summary="Rings" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i334.webp"</td>
+                <td>Awe-inspiring Ring</td>
+                <td>Aegis of Torment</td>
+                <td>BG2:ToB chapter 9 or later</td>
+                <td>
+                  <div class="itemdesc">
+Rows and rows of minute skulls line the outer edge of this ring. It is crowned by an over-sized skull with fire-red gems that serves as its eyes. This ring is the physical manifestation of the suffering of the tormented slaves of Dahnthur. It was their ultimate wish to gain protection from their oppressors, and with this magical ring, their wish was finally realized. Even with the fiery red gems, a royal purple hue continually emanates outward.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: +3<br/>
+– Base Hit Points: +15<br/>
+– Constitution: +3<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i330.webp"</td>
+                <td>Jagged Ring</td>
+                <td>Mempa's Biting Ring</td>
+                <td>BG2:SoA chapter 6 or later</td>
+                <td>
+                  <div class="itemdesc">
+Mempa was a mage obsessed with the possibility of having her magic items lost or burgled while she was asleep or otherwise incapacitated. While the vast majority of her carried possessions were inseparable from her corpse and thus buried with her, some of her weaker items - early experiments, perhaps - were left behind and remain in the world of the living.<br/>
+<br/>
+Mempa's Biting Ring, whose powerful aura protects its bearer from bodily harm, is one such item. However, once placed upon one's finger, the ring bites down and holds on so tenaciously that it is nigh impossible to remove it from the 'bitten' digit.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: +2<br/>
+– May only be removed with a Remove Curse spell<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i139.webp"</td>
+                <td>Simple Silver Ring</td>
+                <td>Gehraise's Ring</td>
+                <td>BG1 chapter 5 or later</td>
+                <td>
+                  <div class="itemdesc">
+This small silver ring looks like it belongs on a woman's finger. It feels slightly warm to the touch and has the power to ward off poison of any kind.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Save vs. Death: +3<br/>
+– Immunity to poison<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i138.webp"</td>
+                <td>Ring</td>
+                <td>Twisted Ring</td>
+                <td>BG1 chapter 1 or later</td>
+                <td>
+                  <div class="itemdesc">
+This ring looks like three rings that have been wrapped around each other. Just looking at it makes you dizzy.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: +1<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i326.webp"</td>
+                <td>Gaudy Ring</td>
+                <td>Ring of the Traveler</td>
+                <td>SoD chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+These rings are quite common across the planes. Simple to make and in great demand, Mages usually create these items as a way to raise quick money. This particular ring has a minor enchantment on it that protects the wearer from harm.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: +1<br/>
+– Saving Throws: +1<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i327.webp"</td>
+                <td>Lover's Band</td>
+                <td>Displacer Ring</td>
+                <td>BG2:SoA chapter 2 or later</td>
+                <td>
+                  <div class="itemdesc">
+Created from the blood of a displacer beast, this ring is able to partially redirect the force of any ordinary weapon. This results in making the user harder to hit and when hit takes less damage than normal.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: +2<br/>
+– +5% resistance to slashing, piercing, crushing, and missile damage<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i333.webp"</td>
+                <td>Ring</td>
+                <td>Ring of Almost Invisibility</td>
+                <td>SoD chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+This is Yevrah's Ring of Almost Invisibility. It makes its wearer invisible - almost. Sometimes, for brief periods, the wearer becomes really, *really* close to being invisible - an event which is often disconcerting to an attacker - and is thus more difficult to strike in combat.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: +1<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i332.webp"</td>
+                <td>Festival Prize</td>
+                <td>Serpent Ring</td>
+                <td>BG2:ToB chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+This appears to be a baby serpent of some sort that has been frozen into the shape of a ring. Its eyes glitter and swirl like jewels and even appear to move occasionally.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Magic Resistance: +15%<br/>
+– Save vs. Spell: +2<br/>
+– Immune to poison<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i329.webp"</td>
+                <td>Ring</td>
+                <td>Ring of Thex</td>
+                <td>BG2:ToB chapter 9 or later</td>
+                <td>
+                  <div class="itemdesc">
+This ornate silver ring is set with a single red stone of an unknown type. The ring is believed to have been created by an adventuring mage named Thex. Thex claimed she was tired of sitting back and flinging spells at enemies while the rest of her adventuring party was able to get into the thick of battle. She felt that the ring would allow her to become what she chose to call a Battlemage. The Ring of Thex was the crowning achievement of her short career.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: +4<br/>
+– Hit Points: +20<br/>
+– Saving Throws: +2<br/>
+– Wisdom: -1<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i328.webp"</td>
+                <td>Exquisite Ring</td>
+                <td>Ring Zero</td>
+                <td>BG2:ToB chapter 9 or later</td>
+                <td>
+                  <div class="itemdesc">
+From a Hero of ancient times during the Year of Gii 'on, AC195, this exquisite ring is smartly carved, with spiked edges. The ring is made of a metal that is unidentifiable, with a center stone that is ice cold to the touch. It emanates a powerful aura that protects its bearer from bodily harm and makes them more sensitive to the effects of the Weave - which can be a blessing or a curse.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: +3<br/>
+– Intelligence: +3<br/>
+– Magic Resistance: -15%<br/>
+– Save vs. Spell: -3<br/>
+– Can memorize one extra arcane spell of each level from 1st to 9th<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>Earrings (can be equipped in the Amulet slot)</strong></summary>
+          <table summary="Earrings" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i069.webp"</td>
+                <td>Earrings</td>
+                <td>Amber Earrings</td>
+                <td>BG2:SoA chapter 3 or later</td>
+                <td>
+                  <div class="itemdesc">
+These earrings are made from hardened sap of the razorvine. When properly prepared, items made from this substance can be enchanted with powerful spells of protection.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: +2<br/>
+– The wearer can memorize 2 additional 1st-level mage spells<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i071.webp"</td>
+                <td>Earrings</td>
+                <td>Crimson Sphere Earrings</td>
+                <td>SoD chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+Small red gems set into these earrings act like a heat sponge, protecting the wearer from heat or flame attacks. Whenever the wearer is exposed to fire, the gems draw some of the heat into themselves, shielding their wearer from part of the damage.<br/>
+<br/>
+It is rumored that each of these earrings holds a tiny fire mephit inside, and that they are so starved for heat that they will drink deep of any fire in the vicinity. This has never been proven, mostly because no one really cares to investigate the matter.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities: <br/>
+– Fire resistance: +20%<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i074.webp"</td>
+                <td>Earrings</td>
+                <td>Dustman Earrings</td>
+                <td>BG2:SoA chapter 2 or later</td>
+                <td>
+                  <div class="itemdesc">
+These earrings have the smell of ash and dust about them and are icy cold to the touch. When worn, the earrings shield the wearer from temperature extremes, granting the wearer partial resistance to heat and cold. Furthermore, the earrings also protects the wearer from mind-influencing magics and magics that attack the body, including paralyzation and death magic.<br/>
+<br/>
+The earrings signify the wearer's allegiance to the Dustman faction of Sigil. According to rumor, these earrings helps dull the Dustmen to the effects of the outside world.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Cold resistance: +30%<br/>
+– Fire resistance: +30%<br/>
+– Save vs. Death: +2<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i072.webp"</td>
+                <td>Earrings</td>
+                <td>Indep Earrings</td>
+                <td>BG2:SoA chapter 3 or later</td>
+                <td>
+                  <div class="itemdesc">
+These barbed earrings mark the wearer as a member of the Indep faction from Sigil. These earrings are the home of an independent spirit which accompanies the wearer and does its best to protect them from harm. Whenever possible, the spirit gives its wearer a mental nudge to get them out of harm's way… the tiny counseling spirit provides the user with +1 to all Saving Throws, and its mere presence gives the wearer an additional bonus to avoid spells and confusion effects.<br/>
+<br/>
+Many of these enchanted items were made in the bazaars of Sigil by a silversmith from Oerth, who had found a way of shaping metal in such a way that it attracted "free spirits" to the metal and caused them to take up residence there. The spirit is not bound to the earrings by any means; from what scholars have determined, there is something about the earrings that the spirits find "cozy."<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: +1<br/>
+– Saving Throws: +1<br/>
+– Save vs. Spells: +1<br/>
+– Immunity to confusion<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i108.webp"</td>
+                <td>Earrings</td>
+                <td>Chained-Teeth Earrings</td>
+                <td>BG1 chapter 1 or later</td>
+                <td>
+                  <div class="itemdesc">
+These thin metal earrings are actually a series of well-crafted lockpicks. If need be, they can be unhooked and used to pick open stubborn locks.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped appearance:<br/>
+– Pick Locks: +5%<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i353.webp"</td>
+                <td>Earrings</td>
+                <td>Obsidian Earrings</td>
+                <td>BG1 chapter 5 or later</td>
+                <td>
+                  <div class="itemdesc">
+These small earrings are made from polished obsidian. Despite the smoothness of their surface, they reflect no light whatsoever.<br/>
+<br/>
+Commonly referred to as "a rogue's best friends," the black gems these earrings are made from possess magical properties that absorb light, making it easier for their wearer to move undetected in the shadows. Despite their rather explicit nickname they can be utilized by anyone who is proficient in the skill of stealth.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Hide In Shadows: +10%<br/>
+– Move Silently: +10%<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i066.webp"</td>
+                <td>Segmented Earrings</td>
+                <td>Stinger Earrings</td>
+                <td>SoD chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+These earrings have been made from the hardened shell of a segmented, larva-like creature. Its shell has been treated with some sort of glazed finish that makes it look disturbingly alive. The wire that hooks to the ear looks like it is part of the larva itself, perhaps its stinger or antenna.<br/>
+<br/>
+To activate the earrings' power, the wearer must prick his thumb with the stinger, allowing it to bond with its new owner. When "awakened," these earrings help protect the wearer from attacks, giving the wearer's skin the same strength and durability of the larva's shell.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: +2, +4 vs. missile and piercing attacks<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>Bracelets &amp; Bracers (can be equipped in the Bracers/Gauntlets slot)</strong></summary>
+          <table summary="Bracelets &amp; Bracers" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i320.webp"</td>
+                <td>Bracelet</td>
+                <td>Bell's Shield</td>
+                <td>BG2:ToB chapter 9 or later</td>
+                <td>
+                  <div class="itemdesc">
+The engravings on this bracelet are nothing short of beautiful. The craftsmanship reflects the skilled work of the Meh 'gahmi Sah 'ma nomadic tribes. This bracelet was carved for their greatest warrior-priestess, Bell, who sought to bring peace to the greater southern plains region. The enthralling purple stones inset along the bracelet give off a soft, warm, royal purple glow.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Wisdom: +3<br/>
+– Magic Resistance: +10%<br/>
+– Hit Points: +10<br/>
+– Can memorize one extra divine spell of each level from 1st to 6th<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i315.webp"</td>
+                <td>Bracelet</td>
+                <td>Magus Guard</td>
+                <td>SoD chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+Considered standard equipment for any adventuring mage, bracelets such as these can be found across the planes. Judging by the markings on this particular bracelet it appears to have been made in a style quite common to Sigil. Various glyphs of warding are meticulously carved along the surface producing an almost hypnotic effect when looked at. When worn this bracelet protects the wearer from normal attacks as if they were wearing scale armor.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: 6<br/>
+<br/>
+Weight: 2
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i321.webp"</td>
+                <td>Bracelet</td>
+                <td>Magus Shield</td>
+                <td>BG2:SoA chapter 2 or later</td>
+                <td>
+                  <div class="itemdesc">
+This bracelet is a variation of the Magus Guard. Essentially using the same spells and glyphs as its predecessor, the Magus Shield is better able to focus the energy of the enchantments placed upon it.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: 4<br/>
+<br/>
+Weight: 2
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i316.webp"</td>
+                <td>Spiky Bracelet</td>
+                <td>Dread Bond</td>
+                <td>SoD chapter 10 or later</td>
+                <td>
+                  <div class="itemdesc">
+Legend has it that this bracelet was created by Nacek the Sadistic. Tiny razor sharp spikes cover the entire surface of this item injecting small amounts of rare reagents into the blood stream of the user. The effect of these chemicals causes the user to feel a constant adrenaline rush of strength.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Strength: +1<br/>
+– Immunity to panic<br/>
+<br/>
+Weight: 3
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i265.webp"</td>
+                <td>Spiked Gauntlets</td>
+                <td>Spiked Gauntlets of Ogre Power</td>
+                <td>BG2:SoA chapter 6 or later</td>
+                <td>
+                  <div class="itemdesc">
+A ridge of huge black spikes bristle along the knuckles of these metal gauntlets, allowing the wearer to perforate any target they punch. Clamps line the edges of the gauntlets to secure them in place once worn.<br/>
+<br/>
+These gauntlets bear an enchantment that allows the user to strike opponents with the strength of ten men. The spikes along the knuckles simply add insult to injury, as any victim whose bones are not shattered by the initial attack will slowly bleed to death from the jagged wounds the spikes inflict.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– THAC0: +2 when attacking with fists<br/>
+– Damage: +1d4+2 when attacking with fists<br/>
+– Deals additional 1d4+2 piercing damage when attacking with fists<br/>
+<br/>
+Weight: 2
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i317.webp"</td>
+                <td>Costume Jewelry</td>
+                <td>Spider Bracelet</td>
+                <td>BG2:SoA chapter 2 or later</td>
+                <td>
+                  <div class="itemdesc">
+In actuality this is a living spider not jewelry. When attached to ones wrist, the spider will sink its fangs into the users flesh and feed from the host, providing both beneficial and detrimental effects.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– +5% resistance to slashing, piercing, crushing, and missile damage<br/>
+– Hit Points: +10<br/>
+– Intelligence: -1<br/>
+– Wisdom: -1<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i500.webp"</td>
+                <td>Shiny Bracers</td>
+                <td>Vambraces of Evil's Warding</td>
+                <td>BG1 chapter 5 or later</td>
+                <td>
+                  <div class="itemdesc">
+These armbands, when worn, protect their wearer from the attacks of evil creatures. Their shiny metallic pieces of armor are graven with warding runes that attract damage to the vambraces where it bounces off harmlessly. Area of effect attacks there are not directly aimed at the target are unaffected.<br/>
+<br/>
+It is rumored that the vambraces were created from the spirits of fallen petitioners on Arcadia, and their desire to combat evil still lives within the item. This theory is supported by the fact that when evil characters equip these vambraces, they suffer damage repeatedly for every ten rounds while worn.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Armor Class: +2 vs. evil creatures<br/>
+– Saving Throws: +2 vs. evil creatures<br/>
+– Applies 2d8 non-lethal damage to the wearer every 10 rounds when worn by evil characters (save vs. Death for half damage.)<br/>
+<br/>
+Weight: 2
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>Cloaks</strong></summary>
+          <table summary="Cloaks" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i509.webp"</td>
+                <td>Hooded Cloak</td>
+                <td>Cowl of Deepest Shadows</td>
+                <td>BG2:SoA chapter 6 or later</td>
+                <td>
+                  <div class="itemdesc">
+Just like the cowl itself the history of this artifact is shrouded in darkness. It was granted a member of the Doomguard faction by the goddess Shar as a reward for corrupting a group of worshippers of Hanali Celanil, the elven goddess of love and beauty, into self-destructive hedonism and despair. The cowl was lost a short time later, only to reappear occasionally for brief moments in the possession of less reputable individuals like assassins or agents of Shar, as if it has a mind of its own.<br/>
+<br/>
+This cowl is made of an unknown material that is surprisingly light and durable. It seems to blend with the immediate surroundings to a degree where it becomes difficult to discern the exact shape of the cowl and their wearer.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Hide In Shadows: +20%<br/>
+– Move Silently: +20%<br/>
+– Darkvision<br/>
+&nbsp;&nbsp;THAC0: +2 bonus (outdoors at night and in dungeons)<br/>
+– Light Sensitive<br/>
+&nbsp;&nbsp;THAC0: -4 penalty (outdoors at daytime)<br/>
+– Blurred<br/>
+&nbsp;&nbsp;Armor Class: +3 vs. missile attacks<br/>
+<br/>
+Charge abilities:<br/>
+– Mislead once per day<br/>
+&nbsp;&nbsp;Duration: 12 rounds<br/>
+&nbsp;&nbsp;Area of Effect: The wearer<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>Belts</strong></summary>
+          <table summary="Belts" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i513.webp"</td>
+                <td>Stylish Leather Girdle</td>
+                <td>Planar Anchor</td>
+                <td>BG2:SoA chapter 6 or later</td>
+                <td>
+                  <div class="itemdesc">
+Legend has it that the aging planewalker Gojuc decided to retire in Sigil, the City of Doors, after a successful career as adventurer, mercenary, and even an emissary on special occasions. Since the travelling through the planes left their mark on his body he devised a spell to make him immune to the effects of teleportation magic and tasked a local gnomish enchanter to weave it into a piece of clothing of his choice. He was obviously pleased with the result since he lived several years without having to contend with the numerous portals spread over the city. To his surprise he was one day fatally injured by an errant pebble thrown by some children playing on the street. He died from his injuries soon after. The belt and many other of his belongings were eventually sold to a travelling merchant, and so the trail of the item was lost.<br/>
+<br/>
+The belt is enchanted with a spell that binds the user to the current plane of existence. As a result the user becomes immune to any effects that would involve planar travel. At the same time, however, the strengthened link with the plane makes the user susceptible to the primary attributes of the plane.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Equipped abilities:<br/>
+– Immunity to Maze, Imprisonment, and teleportation effects<br/>
+– Slashing Resistance: -50%<br/>
+– Piercing Resistance: -50%<br/>
+– Crushing Resistance: -50%<br/>
+– Missile Resistance: -50%<br/>
+– May only be removed with a Remove Curse spell<br/>
+<br/>
+Weight: 2
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>Wands</strong></summary>
+          <table summary="Wands" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i079.webp"</td>
+                <td>Pipe</td>
+                <td>Abyssal Pipe</td>
+                <td>SoD chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+This is a small wooden pipe, carved to resemble the head of a demon.<br/>
+<br/>
+When used, this pipe billows forth great gouts of deadly fumes from the planes of the Abyss.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Charge abilities:<br/>
+– Cloudkill<br/>
+&nbsp;&nbsp;Damage: 1d10 poison per round<br/>
+&nbsp;&nbsp;Special: Slays creatures with 1-4 HD; creatures with 5-6 HD must save vs. Poison at -4 or die<br/>
+&nbsp;&nbsp;Range: 60 ft.<br/>
+&nbsp;&nbsp;Area of Effect: 15-ft. radius<br/>
+&nbsp;&nbsp;Duration: 1 turn<br/>
+<br/>
+Requires:<br/>
+&nbsp;9 Intelligence<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i022.webp"</td>
+                <td>Finger Bone</td>
+                <td>Skeletal Key</td>
+                <td>BG1 chapter 5 or later</td>
+                <td>
+                  <div class="itemdesc">
+This key has been be fashioned from the finger bones of a humanoid creature. Magical symbols have been engraved on the surface to enchant it with a spell that opens any kinds of locks on chests, boxes or doors.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Charge abilities:<br/>
+– Knock<br/>
+  Range: Visual range of the caster<br/>
+  Area of Effect: Locked door or chest<br/>
+  Duration: Instant<br/>
+<br/>
+Requires:<br/>
+&nbsp;9 Intelligence<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>Consumables &amp; Charged Items</strong></summary>
+          <table summary="Consumables &amp; Charged Items" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i020.webp"</td>
+                <td>Bandages</td>
+                <td>Bandages</td>
+                <td>BG1 chapter 1 or later</td>
+                <td>
+                  <div class="itemdesc">
+This is a roll of bandages, useful for stanching minor wounds. When applied they will heal a character for 3 hit points of damage.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Special: Restores 3 Hit Points.<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i168.webp"</td>
+                <td>Clipped Copper Piece</td>
+                <td>Clipped Copper Charm</td>
+                <td>BG1 chapter 1 or later</td>
+                <td>
+                  <div class="itemdesc">
+This copper piece has been "clipped"… most of the copper has been shaved off, no doubt to still keep the appearance it is a coin and allowing the 'clipper' to use the shaved copper to make another coin. Although many Hive dwellers in Sigil practice this method of "making money," when the Fated faction practices it, they do so with a frightening sense of purpose, creating charms that reflect their own miserly natures.<br/>
+<br/>
+In order to create these charms, the Fated faction seek out failed business owners and other individuals who once possessed great wealth, then had a reversal of fortune and were left destitute. These individuals are then given enchanted carving blades and asked to "clip a copper" for the Fated in a tedious day-long ritual, which infuses the copper coin with the last traces of their former luck. The ritual and the nature of the individual clipping the copper allows a minor enchantment to seep into the coin and affect the fortune of whoever uses it.<br/>
+<br/>
+When the clipped copper charm is flipped into the air, it will spill into a rain of copper pieces, and bestow some luck upon the user.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Charge abilities:<br/>
+– Minor Copper Blessing: +1 bonus to Luck<br/>
+&nbsp;&nbsp;Duration: 1 turn<br/>
+&nbsp;&nbsp;The blessing requires a donation of 11 gold pieces to work.<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i107.webp"</td>
+                <td>Intricate Knot</td>
+                <td>Gordian Knot</td>
+                <td>BG2:ToB chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+The knot binding the two ends of this rope together holds a powerful magic. When this knot is severed by a fighter with an edged weapon, the warrior gains a rush of confidence and arrogance, reducing their Wisdom but raising their Charisma. The user is also beset with the urge to gather an army and rush out and conquer the realms, but this urge does not rule the user's actions.<br/>
+<br/>
+It is said that this is a knotted piece of rope that was cut in two by a conqueror on a distant prime material world. Every time the knot is severed, it disappears, showing up years later in the hands of another who can make use of its power.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Charge abilities:<br/>
+– Permanent +2 bonus to Charisma<br/>
+– Permanent -1 penalty to Wisdom<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i169.webp"</td>
+                <td>Strange Vial</td>
+                <td>Elixir of Horrific Separation</td>
+                <td>BG2:ToB chapter 9 or later</td>
+                <td>
+                  <div class="itemdesc">
+This vial of Elixir of Horrific Separation was compounded by a scholar who'd found she possessed a darker half - a side of her which took control, at times, and bade her do awful things. This potion was to have 'split' the darker half away from her, creating two separate beings. Mercykillers from Sigil, however, found and executed her for a string of depraved murders before she could use it.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Horrific Separation:<br/>
+When the elixir is consumed the enchantment takes hold and splits the less dominant part of the user into a separate being of comparable power but opposite alignment. This being can be controlled for five turns before it breaks free from the enchantment and either attacks the party or escapes. Moreover, the user's ethical part of their alignment shifts permanently towards 'neutral' (neutral good, true neutral or neutral evil).<br/>
+<br/>
+The elixir will have no effect when consumed by a user whose ethical alignment is already 'neutral'.<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i456.webp"</td>
+                <td>Ornate Box</td>
+                <td>Moridor's Box</td>
+                <td>SoD chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+This appears to be a small wooden box. Intricate designs etched in gold adorn the box. At one time this box would have been worthy enough to be displayed at any aristocrat's estate. However, years of neglect have taken their toll and it appears to be falling apart. If not for the large gem mounted to the front of the box, it would be worthless.<br/>
+<br/>
+It is not known what exactly is sealed within the box. There are countless stories about it and none of them bode well for its owner. Some say it's an ancient dragon, while others say it's the evil soul of Moridor himself. Judging by the deteriorating state of the box someone must have already examined the seal and damaged it in the process. It is only a matter of time before the seal dissolves completely and releases the entity imprisoned in the box.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Special:<br/>
+Opening the seal releases the imprisoned entity.<br/>
+<br/>
+Requires:<br/>
+&nbsp;9 Intelligence<br/>
+<br/>
+Weight: 2
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i501.webp"</td>
+                <td>Horn</td>
+                <td>Baku's Horn</td>
+                <td>SoD chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+This nondescript wooden horn is in fact a magical item crafted on the Upper Planes. Similar to the attack of the creature for which it is named, a Baku's Horn inflicts damage upon evil creatures within the area of effect when it is sounded. Further, such creatures must make a save vs. paralyzation or flee in panic.<br/>
+<br/>
+Charge abilities:<br/>
+– Baku's Roar three times per day<br/>
+&nbsp;&nbsp;Damage: 2d8 crushing vs. evil creatures<br/>
+&nbsp;&nbsp;Special: Causes panic for one turn (Save vs. Paralysis negates)<br/>
+&nbsp;&nbsp;Area of Effect: 15-ft. radius<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i506.webp"</td>
+                <td>Hourglass</td>
+                <td>Wesley's Hourglass</td>
+                <td>BG2:ToB chapter 9 or later</td>
+                <td>
+                  <div class="itemdesc">
+This item was originally fashioned by a powerful chronomancer with the intention to teach his students about the nature of time. It looks like an ordinary hourglass in a wooden frame, but instead of sand it is filled with mist-smoke of the Demiplane of Time, also known as Temporal Prime.<br/>
+<br/>
+When the hourglass is smashed it enables the user to step out of the normal flow of time and manipulate objects in a limited fashion while everything around them appears to be frozen in time. The mental and physical stress induced by this state causes the user to be severely fatigued after the effect has worn off.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Charge abilities:<br/>
+– Invokes "Time Stop"<br/>
+&nbsp;&nbsp;Duration: 5 rounds<br/>
+&nbsp;&nbsp;Area of Effect: The user<br/>
+&nbsp;&nbsp;Leaves the user fatigued when the effect has worn off.<br/>
+<br/>
+Requires:<br/>
+&nbsp;6 Intelligence<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i080.webp"</td>
+                <td>Smelly Book</td>
+                <td>The Grimoire of Pestilential Thought</td>
+                <td>BG2:SoA chapter 2 or later</td>
+                <td>
+                  <div class="itemdesc">
+This black-bound tome seems to radiate a slight rotting smell, and the covers are unpleasant to the touch - like uncured human flesh left out in the sun. Rusted buckles on the cover seal it against the elements.<br/>
+<br/>
+It is the Grimoire of Pestilential Thought, an arcane tome created ages ago for purposes unknown, the purpose of which is to teach mortals the nature of evil. Some sages warn against its use, while others urge it. It is said to grant mighty powers when services are performed for it.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Weight: 2
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i038.webp"</td>
+                <td>Bloody Teardrop</td>
+                <td>Tear of Salieru-Dei</td>
+                <td>BG2:SoA chapter 6 or later</td>
+                <td>
+                  <div class="itemdesc">
+This glistening red tear was shed by the martyred Harmonium officer Salieru-Dei when he was put to death on the Harmonium's home plane of Ortho. Mistaken as a member of the hated Revolutionary League, Salieru-Dei's obedience and loyalty was such he could not bring himself to challenge the allegations of his superiors. At the moment of his execution, three tears fell from his right eye and turned to stone as they fell upon the flagstones of the square.<br/>
+<br/>
+Ironically enough, an anarchist subsequently revealed the Harmonium's mistake to the public, discrediting them. Ever since, the tears of Salieru-Dei have been considered relics of the Harmonium... and used as a lesson to the evils of unquestioning obedience by the Revolutionary League.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Constitution: Raised by 1 point permanently<br/>
+<br/>
+Weight: 0
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-i510.webp"</td>
+                <td>Ornate Flask</td>
+                <td>Holy Ward of Amaunator</td>
+                <td>SoD chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+This flask contains holy water blessed by Amaunator himself. It is said that the relic was so powerful that a single drop could eradicate even powerful liches. With the decline of Amaunator's influence in Faerûn this relic lost most of its power over time and became only a shadow of its former self.<br/>
+<br/>
+The relic was originally safeguarded in the ancient Netherese city of Synod, but was lost in the tumultuous aftermath of Karsus' Folly. Many centuries later a group of adventurers discovered the ruins of an ancient temple dedicated to Amaunator where they plundered many artifacts and relics, including the Holy Ward.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Charge abilities:<br/>
+– Turn Undead<br/>
+&nbsp;&nbsp;Special: Priests may turn targets at their class level. Paladins may turn targets with a +1 bonus to their current level. Everyone else may turn targets at half of their class level.<br/>
+&nbsp;&nbsp;Range: 30 ft.<br/>
+&nbsp;&nbsp;Area of Effect: 90-degree arc<br/>
+&nbsp;&nbsp;Duration: Special<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>Spell Scrolls</strong></summary>
+          <table summary="Spell Scrolls" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-sp01a.webp"</td>
+                <td>Scroll</td>
+                <td>Tasha's Unbearable Derisive Laughter</td>
+                <td>BG1 chapter 5 or later</td>
+                <td>
+                  <div class="itemdesc">
+Tasha's Unbearable Derisive Laughter<br/>
+(Enchantment/Charm)<br/>
+<br/>
+Level: 3<br/>
+Range: Visual range of the caster<br/>
+Duration: 1 round/level<br/>
+Casting Time: 3<br/>
+Area of Effect: 15-ft. radius<br/>
+Saving Throw: Neg.<br/>
+<br/>
+What man does not feel their body fill with burning shame when mocked by a woman? Fill the ears of your enemies with the derisive scorn of a woman's laughter. Their bodies shall become clumsy and foolish, easily struck, and confidence shall be leeched from their muscles, weakening their blows.<br/>
+<br/>
+Tasha's Unbearable Derisive Laughter occurs in a 15 ft. radius from that spot. All male humanoid or giant-humanoid creatures with an Intelligence > 4 in range of the spell must make a Saving Throw vs. Spell or get a -2 to their attack and damage rolls, -2 to their armor class, -2 to their Saving Throws, and have their morale lowered for the duration of the spell.
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-sp02a.webp"</td>
+                <td>Scroll</td>
+                <td>Modron Mind</td>
+                <td>SoD chapter 8 or later</td>
+                <td>
+                  <div class="itemdesc">
+Modron Mind<br/>
+(Abjuration)<br/>
+<br/>
+Level: 3<br/>
+Range: 0<br/>
+Duration: 1 turn/level<br/>
+Casting Time: 3<br/>
+Area of Effect: The caster<br/>
+Saving Throw: None<br/>
+<br/>
+Modron Mind allows the the caster to become a being of focused order. The caster gains a +2 bonus to Saving Throws versus spells of the schools of Illusion and Enchantment. The spell also enhances the caster's thought processes which results in an intelligence bonus of +1 every five levels, up to a +5 bonus at level 20.
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-sp03a.webp"</td>
+                <td>Scroll</td>
+                <td>Vrock's Screech</td>
+                <td>SoD chapter 10 or later</td>
+                <td>
+                  <div class="itemdesc">
+Vrock's Screech<br/>
+(Evocation)<br/>
+<br/>
+Level: 4<br/>
+Range: 0<br/>
+Duration: Instant<br/>
+Casting Time: 2<br/>
+Area of Effect: 15-ft. radius<br/>
+Saving Throw: Special<br/>
+<br/>
+This Abyssal spell mimics the terrifying scream of a vrock. It deafens all enemies in the area of effect for one turn and stuns them for one round. Deafened spellcasters have a 50% chance to miscast any spells. Creatures of 6 hit dice or less are always affected. More powerful creatures may make a save vs. Spell to negate both effects. The area of effect is not blocked by walls or other obstacles.
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details>
+          <summary title="Click to show or hide item details"><strong>Misc. Items</strong></summary>
+          <table summary="Misc. Items" class="striped" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th class="centeralign" style="width:128px">Icon</th>
+                <th>Name (unidentified)</th>
+                <th>Name (identified)</th>
+                <th>Availability</th>
+                <th style="width:50%">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="centeralign"><img src="images/a7-i455.webp"</td>
+                <td>Cage</td>
+                <td>Lim-Lim Cage</td>
+                <td>BG1 chapter 1 or later</td>
+                <td>
+                  <div class="itemdesc">
+This sturdy steel cage has a thick leather handle on the top. It appears to be the home of a Lim-Lim which can be unmistakably identified by their gleeful chirps. The cage itself seems to be locked only by a simple latch.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Weight: 10
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="centeralign"><img src="images/a7-ixxx.webp"</td>
+                <td>Stick with a handle?</td>
+                <td>???</td>
+                <td>BG2:ToB chapter 9 or later</td>
+                <td>
+                  <div class="itemdesc">
+This item looks like a stick of polished metal with a handle of a shape that fits nicely in the hand. Because of its small size only children or people of the short races can hold it comfortably.<br/>
+<br/>
+STATISTICS:<br/>
+<br/>
+Weight: 1
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+        <div class="back">
+          <a class="novisit" href="#top">HAUT DE PAGE</a>
+        </div>
+      </section>
+
+      <!-- ================== C R E D I T S ================== -->
+      <section id="credits">
+        <h2>Credits</h2>
+        <p><strong>Writing, coding &amp; testing:</strong> <a href="https://github.com/Argent77">Argent77</a></p>
+        <p><strong>Additional dialog content:</strong> AWizardDidIt</p>
+        <p><strong>French translation:</strong> Deratiseur</p>
+        <p><strong>Simplified Chinese translation:</strong> MephistoSatanDevil</p>
+        <p><strong>Additional help:</strong> Lava</p>
+        <hr class="spacer" />
+        <h5>Copyright Notice:</h5>
+        <div class="important">
+          <div>
+            <a rel="license" id="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+              <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+            </a>
+          </div>
+          <p>"Wares of the Planes" is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+          <hr class="spacer" />
+          <p>Items are based on resources from Planescape: Torment, (c) by Black Isle Studios.</p>
+          <p>Some icon graphics based on resources from Age of Wonders - Shadow Magic, (c) Triumph Studios.</p>
+          <p>Barazhad truetype font by Pixel Sagas Freeware Fonts.</p>
+          <p>Merchant portrait based on "RPG Dwarf Males 41" by ttb2112-ai on DeviantArt.</p>
+          <p>Anarazel portrait based on "Nyxaroth" by DragonGrognard on DeviantArt.</p>
+        </div>
+        <div class="back">
+          <a class="novisit" href="#top">BACK TO TOP</a>
+        </div>
+      </section>
+
+      <!-- ================== V E R S I O N   H I S T O R Y ================== -->
+      <section id="changelog">
+        <h2>Version History</h2>
+        <h6>Version 2.1</h6>
+        <ul>
+          <li>Added new item: Tribal Necklace of the Rengarth</li>
+          <li>Added new item: Soul Mirror +1 (can be upgraded multiple times throughout the game)</li>
+          <li>Added upgrade options to Magus Guard (Cromwell and Cespenar)</li>
+          <li>Added upgrade option to Entropic Blade (Cespenar)</li>
+          <li>Added upgrade option to Final Judgment +3 (Cespenar)</li>
+          <li>Improved many unidentified item names and descriptions</li>
+          <li>Fixed aura effect of a creature from the "Lure of Darkness" quest</li>
+          <li>Various code optimizations and improvements</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 2.0</h6>
+        <ul>
+          <li>Added new ToB quest: Lure of Darkness</li>
+          <li>Added new item: Planar Anchor</li>
+          <li>Added new item: Lifeless Companion +2</li>
+          <li>Fixed or improved several items:
+            <ul>
+              <li>Final Judgment +3: fixed double damage amount</li>
+              <li>Jagged Bolts +1: added bleeding effect</li>
+              <li>Spiked Gauntlets of Ogre Power: Fixed item description</li>
+              <li>Vambraces of Evil's Warding: Fixed self-damage interval for evil characters</li>
+              <li>Cowl of Deepest Shadows: Fixed casting level of Mislead ability</li>
+              <li>Phantom Dagger +3: Increased THAC0 bonus</li>
+              <li>Elixir of Horrific Separation and Moridor's Box should not be available to Project Image/Simulacrum clones</li>
+              <li>Changed effect durations from seconds to rounds/turns for Fiend's Blood Dagger and Blind Terror +2</li>
+              <li>Fixed poison resistance types of Fiend's Blood Dagger, Vroc's Club, and Club of Nettles</li>
+              <li>Chaos Feather: Mention effect durations in item description</li>
+              <li>Devil's Due: Fixed incorrect AC bonus definition</li>
+              <li>Fixed and improved several item descriptions</li>
+            </ul>
+          </li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 1.4</h6>
+        <ul>
+          <li>Added French translation (thanks Deratiseur)</li>
+          <li>Added Simplified Chinese translation (thanks MephistoSatanDevil)</li>
+          <li>Added new items: Holy Ward of Amaunator and Holy Wrath of Amaunator</li>
+          <li>Rebalanced several weapons to fit better into the Baldur's Gate universe</li>
+          <li>Improved hit effects of Devil's Due +2</li>
+          <li>Fixed missing strength bonus flag in Abigail +1</li>
+          <li>Updated several item descriptions</li>
+          <li>Improved Ebb's travel routes</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 1.3</h6>
+        <ul>
+          <li>Added new items for sale: Grimoire of Pestilential Thought, Cowl of Deepest Shadows, Skeletal Key, Tear of Salieru-Dei</li>
+          <li>Added new spell scrolls for sale: Tasha's Unbearable Derisive Laughter, Modron Mind, Vrock's Screech</li>
+          <li>Fixed a resource name conflict with the "Skip Chateau Irenicus" mod</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 1.2</h6>
+        <ul>
+          <li>Added new items for sale: Vambraces of Evil's Warding, Baku's Horn, Abigail +1, Dûrgaläd +3, Fiendblight +2, Wesley's Hourglass, Wesley's Improved Hourglass (upgraded by Cespenar), Thanatos +2, Thanatos +4 (upgraded by Cespenar)</li>
+          <li>Fixed spelling errors</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 1.1</h6>
+        <ul>
+          <li>Added new default portrait for the travelling merchant</li>
+          <li>Added tweak that restores the original PsT portrait for the travelling merchant</li>
+          <li>Added new items for sale: Elixir of Horrific Separation, Moridor's Box</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 1.0</h6>
+        <ul>
+          <li>Initial release</li>
+        </ul>
+        <div class="back">
+          <a class="novisit" href="#top">BACK TO TOP</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

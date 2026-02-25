@@ -13,8 +13,8 @@ ALWAYS
   INCLUDE ~%MOD_FOLDER%/lib/always.tph~
 END
 
-README ~A7-WaresOfThePlanes/doc/readme-%LANGUAGE%.txt~
-       ~A7-WaresOfThePlanes/doc/readme.txt~
+README ~A7-WaresOfThePlanes/doc/readme-%LANGUAGE%.html~
+       ~A7-WaresOfThePlanes/doc/readme.html~
 
 LANGUAGE ~English~
          ~english~
