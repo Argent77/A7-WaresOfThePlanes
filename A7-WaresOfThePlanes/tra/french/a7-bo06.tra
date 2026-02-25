@@ -1,6 +1,6 @@
 // Carreaux of Wincing
 
-@0 = ~Carreaux fourchus~ 
+@0 = ~Carreaux fourchus~
 @1 = ~Carreaux casse-noisettes +1~
 
 @10 = ~La tête de ces carreaux d'arbalète est en forme de "U". Les deux pointes sont acérées et la hampe du carreau est faite d'un alliage que tu ne parviens pas à reconnaître.
@@ -10,7 +10,7 @@ Dégâts : 1d8 (missile)
 Arme à  distance : Arbalète
 
 Poids : 0~
-@11 = ~Ces carreaux d'arbalète à tête en fourche ont une seule et unique raison d'être : l'émasculation de la cible. Quand on les tire, ils se dirigent automatiquement vers la partie la plus sensible de la cible. Au moment de l'impact, les deux pointes d'écartent brusquement, ce qui empêche de ressortir le carreau, tout en  augmentant considérablement les dégâts. Le nom de ces projectiles provient d'une tentative d'humour d'un goût douteux.fired. 
+@11 = ~Ces carreaux d'arbalète à tête en fourche ont une seule et unique raison d'être : l'émasculation de la cible. Quand on les tire, ils se dirigent automatiquement vers la partie la plus sensible de la cible. Au moment de l'impact, les deux pointes d'écartent brusquement, ce qui empêche de ressortir le carreau, tout en  augmentant considérablement les dégâts. Le nom de ces projectiles provient d'une tentative d'humour d'un goût douteux.fired.
 
 PARAMETRES :
 
