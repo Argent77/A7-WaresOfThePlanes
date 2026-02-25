@@ -7,6 +7,8 @@
 # Wares of the Planes
 *A mod for BG:EE, SoD, BG2:EE and EET that imports a large number of items from the Planescape universe to the Baldur's Gate series and makes them available by a unique merchant.*
 
+[![Website](https://img.shields.io/static/v1?label=Website&message=Wares%20of%20the%20Planes&color=ccc7ba&labelColor=eee&style=for-the-badge)](https://argent77.github.io/A7-WaresOfThePlanes/index.html "View Readme")
+
 [![Beamdog Forums](https://img.shields.io/static/v1?label=Discussion&message=Beamdog%20Forums&color=444&labelColor=eee&style=for-the-badge)](https://forums.beamdog.com/discussion/88361/wares-of-the-planes-planescape-items-for-baldurs-gate "Beamdog Forums")
 &nbsp;&nbsp;
 [![G3 Forums](https://img.shields.io/static/v1?label=Discussion&message=G3%20Forums&color=3b45a3&labelColor=eee&style=for-the-badge)](https://www.gibberlings3.net/forums/topic/38054-wares-of-the-planes-planescape-items-for-baldurs-gate "The Gibberlings Three Forums")
