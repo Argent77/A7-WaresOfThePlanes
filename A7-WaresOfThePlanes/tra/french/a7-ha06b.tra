@@ -1,0 +1,56 @@
+// Soul Mirror +2
+
+@0 = ~Marteau de guerre nain~
+@1 = ~Miroir de l’âme +2~
+
+@10 = ~Ce marteau de guerre est fabriqué à partir d'un matériau inconnu qui émet une douce lueur argentée. La surface de la tête du marteau est recouverte de runes naines, ce qui indique qu'une puissante magie a été tissée dans l'arme.
+
+PARAMÈTRES :
+
+Dégâts : 1d4+1 (contondant)
+Facteur de vitesse : 4
+Type de compétence : Marteau de guerre
+Type : arme à une main
+Nécessite : 9 en Force
+
+Poids : 6~
+@11 = ~Forgé dans les profondeurs des montagnes naines des Terres extérieures, le Miroir de l'âme est un marteau de guerre vénéré à la fois comme une relique et comme une épreuve au sein du clan qui l'a forgé. Les nains de cette forteresse isolée suivaient la triade des patrons divins : Dugmaren Brilletoge, Dumathoïn le Gardien des secrets sous la montagne et Vergadain le Nain rieur. Le marteau incarne les aspects de ces trois divinités.
+
+L'arme est forgée à partir de fer stellaire qui résonne faiblement avec la neutralité planaire inhérente aux Terres extérieures, avec un seul cristal incrusté dans une niche sur un côté de la tête du marteau. Comme beaucoup d'objets forgés dans les Terres extérieures, le marteau est imprégné de la tendance du plan à l'équilibre et à la neutralité. Il ne récompense pas la fureur, la force ou la volonté brute de dominer, mais amplifie plutôt la clarté de pensée, l'intuition et la discipline mentale de celui qui le manie. On dit qu'un nain qui manie ce marteau « porte le poids de ses propres pensées au combat », ce qui en fait autant un outil religieux que martial.
+
+L'artefact a été perdu lors d'un raid sur une colonie elfique voisine. Il a finalement fini entre les mains d'un membre de la faction des Adorateurs de la Source de Sigil, où il a continué à être utilisé comme test de foi et de lucidité pour les nouveaux membres de la faction.
+
+Contrairement aux armes ordinaires, le Miroir de l'âme tire sa puissance de la force mentale de celui qui le manie, ce qui en fait un outil redoutable pour un sage avisé, mais le réduit à un simple jouet pour les barbares sauvages. Bien qu'initialement forgée par et pour les nains, cette arme peut être maniée par les membres de n'importe quelle race sans restriction apparente. Cependant, compte tenu du savoir-faire des forgerons nains, on ne peut jamais en être certain.
+
+L'enchantement du marteau de guerre a récemment retrouvé sa puissance d'origine.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+– TAC0 et dégâts : +2 contre les elfes (nains uniquement)
+– TAC0 et dégâts : -2 contre les nains (elfes uniquement)
+
+Capacités de combat :
+– Le montant des dégâts physiques dépend de la sagesse de celui qui manie l'arme :
+  5-7: 1d2 points de dégâts
+  8-9: 1d4 points de dégâts
+  10-11: 1d4+2 points de dégâts
+  12-13: 1d6+2 points de dégâts
+  14-15: 1d6+4 points de dégâts
+  16-17: 1d8+4 points de dégâts
+  18-19: 1d8+6 points de dégâts
+  20: 1d10+6 points de dégâts
+  21: 1d10+8 points de dégâts
+  22: 1d12+8 points de dégâts
+  23: 1d12+10 points de dégâts
+  24: 1d16+10 points de dégâts
+  25: 1d20+10 points de dégâts
+
+TAC0 : +2
+Dégâts : Spécial (contondant)
+Facteur de vitesse : 2
+Type de compétence : Marteau de guerre
+Type : arme à une main
+Nécessite : 9 en Force
+
+Poids : 5~

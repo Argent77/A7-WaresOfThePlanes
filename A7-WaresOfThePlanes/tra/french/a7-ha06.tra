@@ -1,0 +1,64 @@
+// Soul Mirror (related lines)
+
+@20 = ~Une légère sensation de chatouillement~
+@21 = ~Points de caractéristique perdus~ // BG2 strref: 8320
+// DE: @21 = ~Attribut gesenkt~
+// FR: @21 = ~Score de capacité absorbé~
+// CN: @21 = ~被吸取能力值~
+
+
+// Dialog lines
+// Jegg Hillcarver (100-199)
+@100 = ~J'ai récemment acheté ce marteau de guerre. Comme il s'agit manifestement d'une création naine, je me demandais si vous pouviez l'améliorer ?~
+@101 = ~Oh, cela fait longtemps que je n'ai pas vu ce type de motif. Il doit provenir de nos cousins étrangers, je suppose ? Laissez-moi y jeter un œil. Je pourrai peut-être faire quelque chose.~
+@102 = ~Tenez.~
+@103 = ~J'ai changé d'avis. L'arme est très bien telle qu'elle est.~
+@104 = ~C'est fait. J'ai réussi à restaurer l'enchantement de base du marteau. Il devrait désormais frapper avec plus de précision. Tenez, prenez-le !~
+
+// Cromwell (200-299)
+@200 = ~Eh bien... je ne m'attendais pas à voir l'œuvre de nos parents étrangers. C'est le Miroir de l'âme, une arme redoutable.~
+@201 = ~Hmm, les enchantements de cette arme semblent s'être affaiblis avec le temps. Je pourrais les restaurer à leur état d'origine. Cela vous coûterait toutefois 2 000 pièces d'or.~
+@202 = ~Bon, voyons voir ce que vous avez d'autre.~
+@203 = ~Eh bien... maintenant que l'enchantement d'origine a été restauré, je pourrais améliorer encore davantage le Miroir de l'âme~
+@204 = ~Vous avez des parchemins permettant d'invoquer des élémentaires de feu, d'air et de terre. Si vous le souhaitez, je peux ajouter leur colère à l'arme.~
+@205 = ~Si vous aviez avec vous des parchemins permettant d'invoquer des élémentaires de feu, d'air et de terre, je pourrais le rendre encore plus mortel.~
+
+// Cespenar (300-399)
+@300 = ~Ooh, qu'est-ce que c'est ? Un gros marteau ? Ah, le Miroir de l'âme ! Un marteau pour les gens intelligents. Pour 3 000 pièces d'or, je pourrais enlever la poussière pour qu'il frappe mieux. Tu veux que je le fasse ?~
+@301 = ~Montre-moi ce que tu as d'autre.~
+@302 = ~Ooh, qu'est-ce que c'est ? Un gros marteau ? Ah, le Miroir de l'âme ! Un marteau pour les gens intelligents. Tu as peut-être besoin d'aide pour ça ? Hi hi !~
+@303 = ~Oh, encore le gros marteau Miroir de l'âme ? Tu n'es pas assez content de ton nettoyage ?~
+@304 = ~Si tu avais des parchemins pour invoquer des élémentaires de feu, d'air et de terre, je pourrais rendre les coups encore plus puissants. Mais tu n'en as pas.~
+@305 = ~Avec des parchemins permettant d'invoquer des élémentaires de feu, d'air et de terre, je pourrais le rendre encore plus puissant. Mais uniquement pour les personnes intelligentes. Le coût de fabrication est également de 7 500 pièces d'or. Ça t'intéresse ?~
+@306 = ~Oh, encore le gros marteau Miroir de l'âme ? Peut-être n'es-tu pas assez intelligent ?~
+@307 = ~Oh, encore le Miroir de l'âme ? Il revient toujours, comme un mauvais tour. Même si tu ne le veux pas.~
+@308 = ~Avec une pile de parchemins, tu pourrais infliger des dégâts supplémentaires même si ton cerveau ne fonctionne pas correctement. Tu as des parchemins de cécité, de surdité, de ralentissement, de confusion, d'invisibilité et de chance. Il te faut juste 10 000 pièces d'or pour que je me mette au travail. Tu veux ?~
+@309 = ~En tout cas, j'ai une recette pour que le marteau inflige des dégâts supplémentaires même si ton cerveau ne fonctionne pas correctement. Pour cela, j'ai besoin de parchemins d'aveuglement, de surdité, de ralentissement, de confusion, d'invisibilité et de chance. Tu ne les as pas, donc je ne peux pas utiliser la recette.~
+
+
+// Journal entries
+@500 = ~Amélioration du Miroir de l'âme
+
+Jegg Hillcarver a amélioré le marteau de guerre Miroir de l'âme et l'a rendu plus puissant.~
+
+
+@510 = ~Amélioration du Miroir de l'âme
+
+Cromwell a utilisé la magie runique naine pour réveiller encore plus d'enchantements du Miroir de l'âme. Il devrait infliger des dégâts élémentaires supplémentaires si son utilisateur possède la discipline mentale nécessaire.~
+
+@511 = ~Amélioration du Miroir de l'âme
+
+Cromwell a amélioré le marteau de guerre Miroir de l'âme et l'a rendu plus puissant.~
+
+
+@520 = ~Amélioration du Miroir de l'âme
+
+Cespenar a utilisé sa magie pour révéler tout le potentiel du Miroir de l'âme. L'arme peut désormais être utilisée pour transformer l'état mental de son utilisateur en effets spéciaux.~
+
+@521 = ~Amélioration du Miroir de l'âme
+
+Cespenar a utilisé une recette naine pour réveiller encore plus d'enchantements du Miroir de l'âme. Il devrait infliger des dégâts élémentaires supplémentaires si son utilisateur possède la discipline mentale nécessaire.~
+
+@522 = ~Amélioration du Miroir de l'âme
+
+Cespenar a amélioré le marteau de guerre Miroir de l'âme et l'a rendu plus puissant.~

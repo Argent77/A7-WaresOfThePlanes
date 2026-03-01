@@ -1,0 +1,55 @@
+// Lifeless Companion +2
+
+// @0 = ~~  // #6351
+@1 = ~Compagnon sans vie +2~
+
+// @10 = ~~ // #6731
+@11 = ~Le manche du bâton semble tout à fait ordinaire. Le crâne qui y est fixé, cependant, semble être unique en son genre. Il appartenait autrefois à Lothar, le maître des Os de la Nuit. À cette époque, il rencontra un autre crâne doté d'un répertoire inhabituel d'insultes qu'il crachait continuellement à ses compagnons crânes, et parfois aussi à son maître (à condition qu'il puisse les entendre). Certaines de ces insultes ont tellement marqué le crâne fixé à l'extrémité du bâton qu'il les répète sur commande, ce qui a pour effet de faire baisser la garde et de mettre en rage toute créature vivante à portée de voix.
+
+PARAMÈTRES :
+
+Capacités de charge :
+– Litanie de malédictions trois fois par jour.
+  Effets : Berserk, pénalité de -2 à la classe d'armure, aux jets de sauvegarde et aux jets d'attaque et de dégâts (un jet de sauvegarde contre les baguettes à -2 annule l'effet).
+  Zone d'effet : toute créature humanoïde ou géante humanoïde hostile non sourde dans un rayon de 4,5 mètres.
+  Durée : 1 tour.
+
+TAC0 : +2
+Dégâts : 1d6+2 (contondant)
+Facteur de vitesse : 2
+Type de compétence : Bâton
+Type : arme à 2 mains
+Force nécessaire : 5
+
+Poids : 3~
+
+@20 = ~Litanie de malédictions~
+@21 = ~Berserk~
+
+// Notes to translators:
+// The mod installs language-specific sound clips for the taunt ability.
+// They are based on the PST sound clips of Morte's taunts but may be modified by a sound editor (e.g. pitch or tempo)
+// and should be encoded in the Ogg Vorbis file format.
+// The file are expected in %MOD_FOLDER%/tra/%LANGUAGE%/wav
+// English sound clips are used if language-specific files are not available.
+// Mapping of PST to this mod's sound clip filenames:
+// MRT314B.WAV => a7-st01a.wav
+// MRT315.WAV  => a7-st01b.wav
+// MRT316.WAV  => a7-st01c.wav
+// MRT317.WAV  => a7-st01d.wav
+// MRT318.WAV  => a7-st01e.wav
+// MRT319.WAV  => a7-st01f.wav
+// MRT320.WAV  => a7-st01g.wav
+// MRT321.WAV  => a7-st01h.wav
+// MRT322.WAV  => a7-st01i.wav
+// MRT324.WAV  => a7-st01j.wav
+// MRT325.WAV  => a7-st01k.wav
+// MRT326.WAV  => a7-st01l.wav
+// MRT327.WAV  => a7-st01m.wav
+// MRT328.WAV  => a7-st01n.wav
+// MRT329.WAV  => a7-st01o.wav
+// MRT330.WAV  => a7-st01p.wav
+// MRT331.WAV  => a7-st01q.wav
+// MRT332.WAV  => a7-st01r.wav
+// MRT334.WAV  => a7-st01s.wav
+// MRT335D.WAV => a7-st01t.wav

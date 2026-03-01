@@ -10,6 +10,9 @@ Elle semble constituée de fer, d'argent, et de nombreux autres métaux encore. 
 
 PARAMETRES :
 
+Capacité de combat :
+- Le bonus de force ne s'applique pas aux débats infligés par cette arme
+
 TAC0 : +3
 Dégâts : 1d20+3 (perçant)
 Facteur de vitesse : 0
@@ -18,3 +21,9 @@ Type: arme à 1 main
 Nécessite : 3 en Force
 
 Poids : 0~
+
+// Dialog lines
+@1000 = ~Hoo, Lame Entropique ? C'est une belle dague. Mais elle pourrait être encore mieux si l'arme te soignait quand tu frappes des ennemis. Il suffit pour ça d'utiliser les parchemins de Drain d'énergie et d'Absorption mineure de Larloch.~
+@1001 = ~Mais tu n'as pas tous les parchemins, donc pas de soins gratuits quand tu frappes.~
+@1002 = ~Tu as déjà les parchemins ? Alors donnes les, et je peux te faire le boulot pour seulement 5 000 pièces d'or.~
+@1003 = ~Laisse-moi voir ce que tu as d'autre.~

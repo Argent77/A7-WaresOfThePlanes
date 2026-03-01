@@ -16,3 +16,18 @@ Capacités d'équipement :
 – Classe d'Armure : 6
 
 Poids : 2~
+
+// Dialog lines for Cromwell
+@1000 = ~Hmm, vous avez là un très beau bracelet.~
+@1001 = ~Si vous aviez un parchemin d'Armure et un diamant, je pourrais renforcer les enchantements sur le Gardemage.~
+@1002 = ~Vous avez un parchemin d'Armure et un diamant. Avec ça, je pourrais renforcer les enchantements sur le Gardemage.~
+@1003 = ~Deux choses, mon ami. Cela vous coûtera 3 000 pièces d'or pour le travail, pas moins, et en l'absence de mon apprenti, vous devrez rester ici toute la journée et m'aider à faire fonctionner la forge.~~Deux choses, mon amie. Cela vous coûtera 3 000 pièces d'or pour le travail, pas moins, et en l'absence de mon apprenti, vous devrez rester ici toute la journée et m'aider à faire fonctionner la forge.~
+@1004 = ~Bon, voyons voir ce que vous avez d'autre.~
+
+// Dialog lines for Cespenar
+@1100 = ~Oh, un bracelet brillant ? Je peux améliorer le Gardemage avec un diamant et un parchemin d'Armure. C'est une bonne affaire, non ?~
+@1101 = ~Tu n'as pas de parchemin d'Armure ? Tu es encore plus pauvre que Cespenar.~
+@1102 = ~Tu n'as pas de diamant ? Tu es encore plus pauvre que Cespenar.~
+@1103 = ~Mais tu n'as pas tout ça.~
+@1104 = ~Tu as tout ça. Il te faut juste 3 000 pièces d'or pour tout assembler.~
+@1105 = ~Laisse-moi voir ce que tu as d'autre.~

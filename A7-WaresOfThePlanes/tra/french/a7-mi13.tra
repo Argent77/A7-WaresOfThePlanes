@@ -1,0 +1,366 @@
+// Book of Vile Darkness
+
+@1 = ~Grimoire des ténèbres impies~
+@10 = ~Le Grimoire des ténèbres impies est un artefact d'une vilenie indescriptible, un ouvrage de référence sur le mal rédigé, édité et compilé par certaines des entités les plus puissantes et maléfiques du multivers. Ses pages renferment les idées perverses, les pensées dérangées, les secrets magiques obscurs et les conceptions odieuses que ses auteurs ont jamais imaginés ou découverts.
+
+Cet exemplaire ne semble être qu'un petit extrait de l'œuvre originale. Mais même dans son état actuel, il a le pouvoir de corrompre quiconque lit ses pages.
+
+PARAMÈTRES :
+
+Capacité de charge :
+– Protection contre le Bien pendant un tour.
+
+Capacité spéciale :
+– Pacte abyssal : le grimoire décrit un rituel obscur permettant de conclure un pacte avec le puissant seigneur démon Anarazel "l'Obscurité audacieuse". Il nécessite le sacrifice d'un mortel puissant pour attirer l'attention du démon, ainsi qu'une quantité importante d'essence divine ou infernale, donnée de plein gré, pour s'assurer son aide. En échange, le seigneur démon se battra pour le groupe jusqu'à ce qu'il soit vaincu ou que huit heures se soient écoulées, après quoi il retournera dans l'Abîme. Le grimoire est consumé après utilisation.
+
+Poids : 3~
+
+@20 = ~Examiner~  // button label to "converse" with an item
+@21 = ~Alignement changé en loyal mauvais~
+@22 = ~Alignement changé en neutre mauvais~
+@23 = ~Alignement changé en chaotique mauvais~
+@24 = ~Sceller l'objet : Tome ancien~
+
+// creatures
+@30 = ~Grand invocateur~
+@31 = ~Cultiste~
+@32 = ~Mercenaire~
+@33 = ~Paysan~
+@34 = ~Anarazel~
+@35 = ~Obscurité audacieuse~
+@36 = ~Dretch~
+@37 = ~Paladin de Heaum~
+@38 = ~Maître ménestrel~
+@39 = ~ménestrel~
+@40 = ~Prêtre ménestrel~
+@41 = ~Mage ménestrel~
+
+// spells
+@80 = ~Changement de plan~
+@81 = ~Essence divine supprimée.~
+@82 = ~Toucher de l'ombre~
+@83 = ~Toucher de l'ombre
+Tout humanoïde, humanoïde géant ou animal touché par le sort doit réussir un jet de sauvegarde, sinon il est transformé en créature morte-vivante sans esprit et placé sous le contrôle du lanceur de sorts pendant une heure. Toute créature non affectée par la transformation ou ayant réussi son jet de sauvegarde subit tout de même 2d4 points de dégâts magiques. Les morts-vivants, les créatures artificielles et les créatures protégées contre les effets de mort sont immunisées contre ce sort.
+
+La transformation en créature morte-vivante dépend du niveau du lanceur de sorts :
+  1er niveau : la cible doit réussir un jet de sauvegarde contre la mort ou est transformée en goule.
+  9e niveau : la cible doit réussir un jet de sauvegarde contre la mort à -2 ou est transformée en blême.
+  17e niveau : la cible doit réussir un jet de sauvegarde contre la mort à -4 ou est transformée en âme-en-peine.
+  25e niveau : la cible doit réussir un jet de sauvegarde contre la mort à -6 ou est transformée en âme-en-peine vampirique.~
+
+// area strings
+@100 = ~Vous voyez un pentagramme vide. Un sentiment de grand mal imprègne les lieux.~
+@101 = ~Sortie~
+@102 = ~Entrée secrète~
+@103 = ~Une obscurité surnaturelle vous empêche d'entrer dans le trou.~
+@104 = ~En invoquant le mot de pouvoir tout en tenant la pierre de protection entre vos mains, vous dissipez les ténèbres surnaturelles qui empêchaient l'entrée.~
+
+// misc. lines
+@150 = ~Vous êtes approché par l'Ordre du Cœur Radieux. La nouvelle de vos méfaits est parvenue aux oreilles des autorités.~
+@151 = ~Vous êtes pris en embuscade par les Ménestrels. Vos sombres agissements ont apparemment provoqué une réaction hostile.~
+@152 = ~Faite la paix avec vos dieux, <CHARNAME> !~
+@153 = ~<CHARNAME>, vous êtes une menace pour toute la région !~
+
+// dialog: Book of Vile Darkness
+@200 = ~Ce grimoire relié de noir est désagréable au toucher et dégage une odeur nauséabonde qui provoque un sentiment de malaise dans votre esprit.~
+@201 = ~Le grimoire est couvert de symboles ésotériques et écrit dans une langue runique inconnue qui suscite un sentiment de terreur et quelque chose d'encore plus terrifiant qui laisse une étrange sensation dans votre esprit. Vous avez beau essayer, vous n'arrivez pas à l'ouvrir.~
+@202 = ~Le grimoire est couvert de symboles ésotériques et écrit dans une langue runique inconnue qui inspire la crainte. Il reste fermé, quels que soient vos efforts pour l'ouvrir.~
+@203 = ~Même après avoir refermé le grimoire, pendant un moment vous ne pouvez rien faire d'autre que d'y penser.~
+@204 = ~Alors que vous vous apprêtez à mettre le grimoire de coté, un sentiment irrésistible de satisfaction malveillante vous submerge. Vous savez que quelque chose a changé au plus profond de vous.~
+@205 = ~Lorsque vous tournez votre attention vers le grimoire, une puissante force vous pousse à vous en éloigner. Tous vos sens vous disent que le simple fait de l'examiner corrompra votre âme.~
+@206 = ~En utilisant les notes sur les langues abyssales comme référence, vous êtes en mesure de déchiffrer la majeure partie du contenu du grimoire.~
+@207 = ~Avec le Traité des langues abyssales en votre possession, vous êtes en mesure de traduire le contenu du grimoire.~
+@208 = ~Traduire le grimoire.~
+@209 = ~Ranger le grimoire pour le moment.~
+@210 = ~Le grimoire est entouré d'une sinistre aura d'obscurité surnaturelle qui vous met mal à l'aise rien qu'en le tenant entre vos mains. Prononcez le mot de passe inscrit sur la couverture du grimoire pour l'ouvrir.~
+@211 = ~Effectuer le rituel démoniaque "Pacte abyssal".~
+@212 = ~Parcourir le grimoire à la recherche de connaissances secrètes.~
+@213 = ~Ranger le grimoire.~
+@214 = ~Manipuler ce grimoire peut avoir des conséquences désastreuses si le lecteur n'est pas correctement protégé contre son maléfice.~
+@215 = ~Continuer malgré les dangers.~
+@216 = ~Vous passez un certain temps à étudier les secrets consignés par certains des praticiens les plus notoires des arts occultes de l'histoire.~
+@217 = ~Un essai rédigé par un érudit anonyme attire votre attention, car il a été conservé dans son intégralité. Il offre un aperçu considérable de la nature des arts nécromantiques.~
+@218 = ~La grande quantité de connaissances obscures contenues dans ce grimoire a laissé une empreinte sur votre âme et vous oblige à reconsidérer votre propre point de vue sur les concepts du bien et du mal.~
+@219 = ~La lecture du passage introductif sur le rituel montre très clairement que l'invocateur doit soit fournir, soit contenir un lien fort avec les forces surnaturelles. Vous ne pouvez satisfaire à aucune de ces deux exigences.~
+@220 = ~En lisant le passage introductif sur le rituel, on comprend rapidement que l'invocateur doit soit fournir, soit entretenir un lien fort avec les forces surnaturelles. En tant qu'enfant de Bhaal, vous remplissez apparemment cette condition.~
+@221 = ~Oh non, hors de question que j'y pense ne serait-ce qu'une seconde. Faire des rêves étranges à propos de Bhaal est déjà suffisamment pénible.~
+@222 = ~Le paragraphe préparatoire détaille davantage ce qui est nécessaire pour réussir le rituel. L'invocateur doit abandonner une bonne partie de son essence spirituelle pour s'assurer l'aide du démon.~
+@223 = ~Arrêtez les préparatifs et rangez le grimoire.~
+@225 = ~Commencez les préparatifs.~
+@226 = ~Commencez les préparatifs et choisissez <PLAYER2> comme sacrifice.~
+@227 = ~Commencez les préparatifs et choisissez <PLAYER3> comme sacrifice.~
+@228 = ~Commencez les préparatifs et choisissez <PLAYER4> comme sacrifice.~
+@229 = ~Commencez les préparatifs et choisissez <PLAYER5> comme sacrifice.~
+@230 = ~Commencez les préparatifs et choisissez <PLAYER6> comme sacrifice.~
+@231 = ~Il n'y a actuellement aucun compagnon approprié à portée de main pour les intégrer au rituel.~
+@232 = ~Vous préparez le rituel avec le plus grand soin afin de ne pas éveiller les soupçons de vos compagnons.~
+@233 = ~Vous accomplissez les rites nécessaires pour harmoniser votre âme avec le rituel. Puis vous tournez votre attention vers <PLAYER2> et tissez la toile magique aussi soigneusement que possible. Après vous être assuré que tout a été fait exactement comme décrit dans le grimoire, vous commencez la deuxième et dernière étape du rituel.~
+@234 = ~Vous accomplissez les rites nécessaires pour harmoniser votre âme avec le rituel. Puis vous tournez votre attention vers <PLAYER3> et tissez la toile magique aussi soigneusement que possible. Après vous être assuré que tout a été fait exactement comme décrit dans le grimoire, vous commencez la deuxième et dernière étape du rituel.~
+@235 = ~Vous accomplissez les rites nécessaires pour harmoniser votre âme avec le rituel. Puis vous tournez votre attention vers <PLAYER4> et tissez la toile magique aussi soigneusement que possible. Après vous être assuré que tout a été fait exactement comme décrit dans le grimoire, vous commencez la deuxième et dernière étape du rituel.~
+@236 = ~Vous accomplissez les rites nécessaires pour harmoniser votre âme avec le rituel. Puis vous tournez votre attention vers <PLAYER5> et tissez la toile magique aussi soigneusement que possible. Après vous être assuré que tout a été fait exactement comme décrit dans le grimoire, vous commencez la deuxième et dernière étape du rituel.~
+@237 = ~Vous accomplissez les rites nécessaires pour harmoniser votre âme avec le rituel. Puis vous tournez votre attention vers <PLAYER6> et tissez la toile magique aussi soigneusement que possible. Après vous être assuré que tout a été fait exactement comme décrit dans le grimoire, vous commencez la deuxième et dernière étape du rituel.~
+@238 = ~Alors que vous préparez les sorts nécessaires, vous réalisez rapidement que vous manquez d'expérience pour saisir toutes les subtilités du rituel. Étant donné que la moindre erreur pourrait avoir des conséquences désastreuses, vous décidez de reporter les préparatifs jusqu'à ce que vous ayez acquis davantage d'expérience.
+
+^%color_cyan%(L'invocateur doit avoir acquis au moins %min_charname_xp% points d'expérience.)^-~
+@239 = ~Lorsque vous tournez votre attention vers le sacrifice prévu, vous remarquez que les préparatifs ne se déroulent pas comme prévu.~
+@240 = ~Vous êtes incapable d'harmoniser un sort crucial du rituel avec l'âme de votre compagnon. Il semble qu'une sorte d'intervention divine vous empêche de continuer. Vous n'avez d'autre choix que de suspendre tous les préparatifs du rituel.~
+@241 = ~De plus, une autre âme puissante est nécessaire en sacrifice pour attirer l'attention du seigneur abyssal. Malheureusement, il n'y a personne à proximité qui puisse remplir ce rôle pour le moment.~
+@242 = ~De plus, une autre âme puissante est nécessaire en sacrifice pour attirer l'attention du seigneur abyssal. L'un de vos compagnons remplirait parfaitement ce rôle.~
+@243 = ~En y regardant de plus près, vous commencez à douter que le compagnon choisi soit un sacrifice suffisant pour attirer l'attention du seigneur démon. Finalement, vous décidez de chercher un candidat plus puissant.
+
+^%color_cyan%(Les candidats éligibles doivent avoir acquis au moins %min_npc_xp% d'expérience.)^-~
+@244 = ~Vous essayez d'accomplir les rites nécessaires pour harmoniser votre âme avec le rituel, mais quoi que vous fassiez, cela semble échouer. Les énergies vertueuses de cet endroit empêchent toute tentative d'atteindre les plans inférieurs. Vous n'avez d'autre choix que de suspendre tous les préparatifs du rituel.~
+@245 = ~L'examiner plus attentivement.~
+@246 = ~En parcourant cet ouvrage, vous vous rendez rapidement compte que la complexité des idées et des théories dépasse largement vos capacités intellectuelles.~
+@247 = ~Le contenu du grimoire vous semble étrange. Vous pouvez voir plusieurs dessins bizarres, mais ils n'ont aucun sens.~
+@248 = ~Certaines des théories décrites dans cet ouvrage révèlent des secrets si sombres et maléfiques que votre esprit conscient ne peut les saisir.~
+@249 = ~Ha, c'est ironique que je mette la main sur ce grimoire maintenant qu'il ne m'est plus d'aucune utilité.~
+@250 = ~Trouve un autre imbécile pour utiliser ses pouvoirs, <CHARNAME>. Rien que de le regarder me met mal à l'aise.~
+
+// cutscene: ambush
+@300 = ~Ah, ils sont venus comme prévu.~
+@301 = ~Espérons qu'ils seront à la hauteur de nos attentes.~
+
+// dialog: cultist (ambush)
+@350 = ~Salutations, aventuriers. Nous avons appris que vous étiez récemment entrés en possession d'un certain artefact.~
+@351 = ~Il s'agit d'un disque métallique orné qui nous appartenait à l'origine, mais qui a été volé par un ancien membre de notre ordre.~
+@352 = ~Comme vous n'êtes pas directement impliqué dans cet incident, j'aimerais vous faire une proposition. Rendez-nous cet objet et nous vous dédommagerons pour le dérangement.~
+@353 = ~Qui êtes-vous ?~
+@354 = ~Je suis Orma, un conjureur doté d'un pouvoir considérable. Et voici mes collègues, qui maîtrisent eux aussi les arts occultes. Mais cela ne devrait pas vous concerner.~
+@355 = ~Qu'est-ce que cet objet a de si spécial ?~
+@356 = ~Cela ne vous regarde pas. Sachez simplement qu'il est important pour nous. Assez important pour que nous soyons prêts à vous en offrir un bon prix.~
+@357 = ~Et si nous refusons ?~
+@358 = ~Il n'est pas question de refuser. Ne soyez pas stupide. Nous obtiendrons cet objet d'une manière ou d'une autre.~
+@359 = ~Très bien, vous pouvez l'avoir.~
+@360 = ~Nous ne l'avons plus.~
+@361 = ~Non, nous ne vous le donnerons pas.~
+@362 = ~Vous avez fait un choix judicieux. Voici pour vous remercier de votre aide. Nous allons maintenant prendre congé.~
+@363 = ~Pensez-vous vraiment que je vais croire à un mensonge aussi grossier ? Si vous ne voulez pas nous le remettre, nous le prendrons sur vos cadavres. Attaquez-les !~
+@364 = ~Nos divinations ont révélé que vous avez l'objet en votre possession. Soit vous nous mentez, soit vous vous en êtes débarrassé récemment. Dans les deux cas, nous ne pouvons pas vous laisser partir. Attaquez-les !~
+@365 = ~C'est regrettable. Mais ma patience est à bout. Ne croyez pas que ce combat sera facile. Nous sommes tous des maîtres dans notre domaine. Attaquez-les !~
+@366 = ~Salutations. Notre chef souhaite vous parler d'un certain objet qui est récemment entré en votre possession.~
+
+// cutscene: dark ritual
+@400 = ~Le rituel est sur le point de commencer.~
+@401 = ~Scio didici peto--~ [CHA_MM04]
+@402 = ~--Manus potentis paro--~ [CHA_FM02]
+@403 = ~--Cupio virtus licet--~ [CHA_MM05]
+@404 = ~--Presse alia fero--~ [CHA_MM08]
+@405 = ~--Vita mortis careo--~ [CHA_FM07]
+@406 = ~--Facio vaco ferre.~ [CHA_MM03]
+@407 = ~Qu'est-ce que c'est ? Qui ose perturber notre rituel ?~
+@408 = ~Tuez-les tous et arrachez-leur le cœur pour l'offrir à notre patron !~
+@409 = ~Oui, maître.~
+@410 = ~Noonn!~
+
+// dialog: Lazarus Librarus
+@500 = ~J'ai une demande inhabituelle à vous faire. Nous avons trouvé un ouvrage écrit dans une langue runique inconnue qui résiste à toute tentative d'identification magique. Seriez-vous disposé à le traduire ?~
+@501 = ~Je peux certainement essayer. Laissez-moi voir.~
+@502 = ~Ah, par tous les pouvoirs ! S'il vous plaît cachez-ça immédiatement ! Ce grimoire est écrit en runes abyssales et probablement fortement enchanté. Le simple fait de le regarder pourrait avoir un effet insidieux sur le lecteur.~
+@503 = ~Je ne peux en aucun cas accéder à votre demande. Le grimoire doit être détruit ou mis sous clé dès que possible.~
+@504 = ~De quoi avez-vous si peur ?~
+@505 = ~Au cas où vous ne le sauriez pas, ce genre de runes est toujours imprégné d'une partie des pouvoirs abyssaux. Le simple fait de lire ces runes peut corrompre l'esprit des lecteurs inconscients qui n'ont pas pris les précautions nécessaires.~
+@506 = ~Peut-être avez-vous raison. Que suggérez-vous exactement ?~
+@507 = ~Je pourrais lancer un sort puissant, similaire à Emprisonnement, qui transportera le grimoire dans une dimension miniature où, espérons-le, il ne sera pas découvert avant longtemps.~
+@508 = ~Comme ce grimoire représente une menace considérable pour tout le monde, je le ferais même gratuitement.~
+@509 = ~Très bien, lancez votre sort, s'il vous plaît.~
+@510 = ~À bien y réfléchir, je voudrais prendre le risque. Pouvez-vous m'indiquer comment le traduire moi-même ?~
+@511 = ~Absolument pas. Je ne veux pas avoir sur la conscience d'avoir guidé quelqu'un vers une mort certaine.~
+@512 = ~Cependant, puisque votre être même est déjà touché par des forces surnaturelles, je peux vous conseiller de rechercher les membres des races démoniaques, à savoir les habitants des Abysses ou des Neuf Enfers~
+@513 = ~Merci pour votre aide.~
+@514 = ~Non, ne me remerciez pas pour ça. Si vous tenez à la vie, enfermez ce grimoire et ne le touchez plus jamais.~
+@515 = ~Vous ne m'en dissuaderez pas. Vous ne pouvez pas du tout m'aider ?~
+@516 = ~Laissez-moi préparer le sort.~
+@517 = ~J'ai réfléchi et je souhaite que le grimoire démoniaque soit mis sous clé. Pouvez-vous vous en charger ?~
+@518 = ~Je suis soulagé que vous ayez changé d'avis. Oui, je peux le faire, et avec plaisir. Veuillez me remettre le grimoire.~
+@519 = ~Voilà.~
+@520 = ~Ils possèdent les connaissances nécessaires pour vous aider, à condition que vous puissiez payer leurs services.~
+@521 = ~C'est fait. Le grimoire repose désormais en lieu sûr. Du moins pour un temps. Les artefacts de ce genre ont tendance à réapparaître tôt ou tard.~
+
+@550 = ~Le sort fait sortir le grimoire de la dimension parallèle où il était enfermé et le laisse tomber par terre. Vous le ramassez rapidement et le rangez dans votre inventaire.~
+
+// dialog: Cespenar
+@600 = ~Peux-tu nous traduire ce grimoire ?~
+@601 = ~Beurk ! C'est écrit en abyssal. C'est une langue affreuse. Tu veux vraiment le lire ? Je peux te vendre un Traité des langues abyssales pour une opale noire et 1 000 pièces d'or. Tu veux ?~
+@602 = ~Je n'en ai pas les moyens pour le moment.~
+@603 = ~Bon, reviens quand tu aura ce qu'il faut.~
+@604 = ~Je reviendrais.~
+@605 = ~Peux-tu me vendre ton guide de langue abyssale ?~
+@606 = ~Oui, je pourrais. Tu as une opale noire et 1 000 pièces d'or ?~
+@607 = ~Pas pour l'instant.~
+@608 = ~Bien sûr, vas-y.~
+
+// dialog: Anarazel
+@700 = ~** VOTRE OFFRE EST ADÉQUATE. EN ÉCHANGE, JE VAIS SEMER LE CHAOS PARMI VOS ENNEMIS JUSQU'À CE QUE JE SOIS SATISFAIT. **~
+@701 = ~** J'AI REMPLI MA PART DU PACTE. JE M'EN VAIS. **~
+@702 = ~** VOUS M'AVEZ ARRACHÉ À MON PLAN D'ORIGINE ! **~
+@703 = ~** JE VAIS PRENDRE CE QUI M'EST DÛ MAINTENANT ! **~
+@704 = ~** FORMULEZ VOTRE DEMANDE ! **~
+@705 = ~Je te défie en duel, démon !~
+@706 = ~Retourne dans les Abysses, démon !~
+@707 = ~J'ai changé d'avis.~
+@708 = ~** N'OSE PAS DÉRANGER UN SEIGNEUR DES ABYSSES AVEC TES BAVARDAGES INSIGNIFIANTS, MORTEL ! **~
+@709 = ~** HAHAHAHA, QU'IL EN SOIT AINSI. QUE TU TREMBLES EN MA PRÉSENCE ET QUE TU SOUFFRES D'UNE DOULEUR ÉTERNELLE ! **~
+@710 = ~** QU'IL EN SOIT AINSI ! J'AI REMPLI MA PART DU PACTE. JE M'EN VAIS. **~
+@711 = ~** NE METS PAS MA PATIENCE À L'ÉPREUVE, MORTEL ! **~
+
+@750 = ~** VENEZ, MES SERVITEURS ! **~
+@751 = ~** SOUFFREZ DES MAINS DE MES GÉNÉRAUX ! **~
+@752 = ~Viens, Anarazel ! Sers-moi bien et tu seras récompensé !~
+@753 = ~** OUI, MAÎTRE. J'ATTENDS VOS ORDRES. **~
+
+// various NPC lines
+// Korgan
+@800 = ~Alors, l'imbécile est mort, hein ? Trahi comme je l'ai été autrefois, ha ! Espérons que cela en vaille la peine. Partons avant de trop réfléchir à tout cela !~
+// Sarevok
+@810 = ~Tu me déçois, <CHARNAME>. Malgré tous tes discours sur les bonnes actions, quand ça t'arrange tu n'es pas opposé au principe selon lequel « la fin justifie les moyens ».~~Tu me déçois, <CHARNAME>. Malgré tous tes discours sur les bonnes actions, quand ça t'arrange tu n'es pas opposée au principe selon lequel « la fin justifie les moyens ».~
+@811 = ~J'ai aussi tué d'autres personnes sur un coup de tête. Et tout ce que cela m'a finalement apporté, c'est beaucoup d'ennuis et la perte de tout ce qui comptait pour moi.~
+@812 = ~Une impressionnante démonstration de ta cruauté, <CHARNAME>. Je sais ce que l'on ressent lorsqu'on fait une bonne affaire. Cela peut être enivrant, tout comme le vin de Sembia, ou comme tuer un imbécile qui se dresse sur ton chemin vers la victoire.~
+// Dorn
+@820 = ~Tu es un lâche et un imbécile d'avoir abandonné si facilement un artefact d'une telle puissance, <CHARNAME>. Pense à toutes les possibilités qu'il nous aurait offertes s'il avait été utilisé à bon escient.~~Tu es une lâche et une imbécile d'avoir abandonné si facilement un artefact d'une telle puissance, <CHARNAME>. Pense à toutes les possibilités qu'il nous aurait offertes s'il avait été utilisé à bon escient.~
+@821 = ~Tu as fait un excellent choix, <CHARNAME>. Je m'y connais en matière d'accords sanglants, et certains d'entre eux valent vraiment la peine.~
+// Hexxat
+@830 = ~La mort vient chercher aussi bien ceux qui l'attendent que ceux qui ne l'ont jamais vue venir.~
+// Viconia
+@840 = ~Eh bien, Abbil, on dirait que tu as enfin trouvé un moyen d'obtenir un avantage puissant sans trop payer en échange.~
+@841 = ~Soyons francs. C'est ton compagnon qui a payé la part décisive du prix. Lu'oh yutri. J'ai presque l'impression d'être de nouveau à Menzoberranzan !~
+@842 = ~Si tu étais un drow, tu aurais certainement déjà attiré l'attention de la mère matrone, colnbluth. Si ce n'est pas par ton impertinence, alors par ton courage.~~Si tu étais une drow, tu aurais certainement déjà attiré l'attention de la mère matrone, colnbluth. Si ce n'est pas par ton impertinence, alors par ton courage.~
+@843 = ~Cela m'amène à me demander, <CHARNAME>, m'échangerais-tu contre une faveur, si celle-ci était suffisamment intéressante ?~
+@844 = ~Quoi ? Non ! Bien sûr que non !~
+@845 = ~Si la récompense était suffisamment importante...~
+@846 = ~Mhm. Eh bien, saches que les drows oublient rarement ce genre d'offense. Et si nous trouvons un moyen de l'endurer, nous ripostons de toutes nos forces.~
+@847 = ~Je suis... heureuse d'entendre ça, ussta ku'nal. J'ai déjà été trahi trop souvent, et je pense que je mérite enfin un peu de réconfort sincère !~
+@848 = ~Je m'en doutais. Alors laisse-moi, og'elend. Tu ne mérites pas mon attention !~
+// Edwin
+@860 = ~C'est donc ainsi que tu remercies ceux qui ont accepté de t'aider dans tes entreprises futiles. C'est bon à savoir. (Au moins, ce n'est pas moi, Edwin Odesseiron, qui ai dû faire face à une mort aussi ridicule et prématurée.)~
+// Haer'Dalis
+@870 = ~Quelle audace, mon corbeau. Tu as commis un véritable crime, un acte meurtrier. Je me demande si cette décision te hantera dans ton sommeil, ou si tu accepteras simplement que tu n'es pas si différent de ton père qu'il n'y paraît.~
+@871 = ~Nous ferions mieux d'être prudents. Les habitants des plans inférieurs sont rarement, voire jamais, aussi généreux qu'ils le paraissent. Ils déforment leurs propos pour donner mal à la tête même à ce moineau, comme après une tournée des tavernes de Sigil.~
+// Jan
+@880 = ~Vous savez, je ne peux m'empêcher de repenser à l'époque où j'aidais mon oncle Gerhardt dans notre potager. C'était une année particulièrement bonne pour nos légumes. Le mélange de soleil et de pluie avait fait des merveilles, mais je m'égare...~
+@881 = ~En tout cas, nous étions également constamment en train de lutter contre ces parasites nuisibles qui infestaient nos plants de pommes de terre. Ils étaient vraiment pénibles. Je n'en ai cependant jamais vu un de la taille d'un humain. Mais maintenant que je vous vois devant moi avec Mr le démon qui rugit en arrière-plan, je n'en suis plus si sûr.~
+// Neera
+@890 = ~Tu viens de faire QUOI ? Comment as-tu pu ? Je suis juste... NON. Je ne veux même pas y penser. J'ai déjà invoqué des démons par accident, mais jamais à ce prix-là.~
+@891 = ~Faisons comme si c'était un sort qui avait mal tourné, comme la dernière fois. Sinon, je vais faire des cauchemars pour le reste de ma vie.~
+// Wilson
+@900 = ~Grr! Roar! Snort growl!~
+@901 = ~Tu viens de me comparer à une sorte de déception ? Une cicatrice presque fatale à la fierté d'un lion ?! Sérieusement ?!~
+@902 = ~ROAR!~
+// Cernd
+@910 = ~J'ai vu des gens me craindre lorsque je me transformais en monstre poilu, mais ce que je viens de voir est bien plus terrifiant que toutes les transformations auxquelles j'ai assisté jusqu'à présent.~
+@911 = ~Votre décision d'apporter le chaos et la destruction sur ces terres m'inquiète grandement. J'entends déjà la terre hurler de douleur sous le poids de la corruption démoniaque partout où elle passe.~
+@912 = ~Je dois réfléchir longuement et sérieusement à cette tournure catastrophique des événements et à ma propre relation avec vous.~
+// Jaheira
+@920 = ~<CHARNAME>, je n'arrive pas à croire ce que tu viens de faire !~
+@921 = ~Non seulement tu t'associes à des démons, mais tu as également commis le pire crime qui soit en trahissant notre compagnon ! Par Silvanus, je ne peux pas rester les bras croisés et te laisser continuer sur cette voie de la folie. Que dirait Gorion s'il était parmi nous !~
+@922 = ~Il n'est pas là. Il est mort, Jaheira.~
+@923 = ~Jaheira, s'il te plaît...~
+@924 = ~Je sais. Mais visiblement, tu ne comprends pas.~
+@925 = ~Les Ménestrels l'apprendront. Je resterai avec toi, mais uniquement parce que Gorion voulait que je veille sur toi, et pour le bien de Toril. Sache toutefois que je te croyais meilleur que ça !~~Les Ménestrels l'apprendront. Je resterai avec toi, mais uniquement parce que Gorion voulait que je veille sur toi, et pour le bien de Toril. Sache toutefois que je te croyais meilleure que ça !~
+@926 = ~Ne dis rien de plus, <CHARNAME>.~
+@927 = ~Les Ménestrels l'apprendront peut-être. Je resterai avec toi, mais uniquement parce que Gorion voulait que je veille sur toi, et pour le bien de Toril. Sache toutefois que je te croyais meilleur que ça !~~Les Ménestrels l'apprendront peut-être. Je resterai avec toi, mais uniquement parce que Gorion voulait que je veille sur toi, et pour le bien de Toril. Sache toutefois que je te croyais meilleure que ça !~
+@928 = ~Tu as sacrifié notre compagnon de sang-froid ? C'est le pire des crimes ! Je te croyais meilleur que ça ! Mais ce que tu as fait me rappelle ton père meurtrier. C'est exactement ce que Bhaal attendrait de son fils.~~Tu as sacrifié notre compagnon de sang-froid ? C'est le pire des crimes ! Je te croyais meilleure que ça ! Mais ce que tu as fait me rappelle ton père meurtrier. C'est exactement ce que Bhaal attendrait de sa fille.~
+@929 = ~C'était vraiment méchant de ta part.~
+@930 = ~Jaheira, je t'en prie... J'avais peur ! Je devais le faire ! J'ai besoin de toute l'aide possible. De tout le pouvoir... sinon je risque de perdre cette guerre.~
+@931 = ~Je suis désolée, <CHARNAME>, mais je pense que tu avais besoin d'entendre ça. Comment appeler cela autrement qu'un meurtre ?~
+@932 = ~Et est-ce que tout ça te semble être une victoire ?~
+@933 = ~Quand je pense que je voulais passer ma vie avec toi. Mais maintenant, je vois de plus en plus le monstre en toi qui a pris et tué mon mari autrefois.~
+@934 = ~Face aux défis qui nous attendent, nos options se font de plus en plus limitées. Je n'avais d'autre choix que de prendre des mesures désespérées.~
+@935 = ~J'avoue que mes actions ont été irréfléchies et imprudentes. Mais je ne peux plus revenir sur cette décision, Jaheira...~
+@936 = ~C'est tout ce que tu as à dire ? C'est trop difficile à supporter. Je... Je ne peux plus rester à tes côtés, <CHARNAME>. J'étais censé veiller sur toi. Je voulais le faire pour Gorion, mais j'ai atteint mes limites.~
+@937 = ~J'espère que tu vaincras tes ennemis, que tu aideras les autres, et je te regarderai de loin, mais je ne peux pas rester avec quelqu'un en qui je n'ai plus confiance.~
+@938 = ~Malheureusement, cette prise de conscience arrive trop tard. Je resterai au sein de ce groupe, mais uniquement parce que Gorion voulait que je veille sur toi, et pour le bien de Toril. Mais sache que cela change la donne entre nous. Je préférerais mourir plutôt que d'admettre que je t'aime toujours.~
+// Nalia
+@950 = ~Par tous les dieux ! Qu'avez-vous fait, <CHARNAME> ? C'est bien pire que ce dont seraient capables des nobles comme les Roenall.~
+@951 = ~Je ne veux pas imaginer ce dont vous pourriez être capable la prochaine fois. Je dois partir dès maintenant.~
+// Imoen
+@960 = ~Non, <CHARNAME> ! Pourquoi as-tu fait ça à <A7_SACRIFICE> ? Gorion n'aurait jamais approuvé ça, même dans les circonstances les plus désespérées.~
+@961 = ~Quand j'étais sous la garde d'Irenicus, j'ai été témoin de nombreuses choses horribles au cours de ses expériences. Elles me hantent encore dans mes rêves. Je suis sûr que ce que tu as fait te hantera dans tes rêves. Si ce n'est pas aujourd'hui, ce sera plus tard.~
+// Minsc
+@970 = ~Bouh tremble comme jamais auparavant. Même Minsc est perplexe quant à ce qui est arrivé à notre compagnon <A7_SACRIFICE>.~
+@971 = ~J'ai dû prendre une décision qui n'a pas été facile pour moi. Mais c'était nécessaire. As-tu toujours compris Dynaheir et les sorcières de Rashéménie ? Les chemins vers la gloire ne sont-ils pas pavés de décisions difficiles ?~
+@972 = ~Parfois, il faut casser un œuf, voire un crâne, pour atteindre nos objectifs. Je suis certain que notre compagnon aurait compris ce sacrifice nécessaire.~
+@973 = ~Je me sens honteux et en colère. Mais ni Minsc ni Bouh ne comprennent vraiment ce que tu penses vraiment. Nous te surveillerons.~
+@974 = ~Un guerrier brise des crânes et des œufs avec sa propre arme. Même Bouh est tout à fait d'accord. Nous te surveillerons de près, <CHARNAME>.~
+// Valygar
+@980 = ~Imbécile ! Vous avez sacrifié un compagnon de confiance pour cette abomination ? C'est pire que tout ce que Lavok aurait pu faire.~
+@981 = ~Même avec le démon de votre côté, je ne tolérerai pas cela !~
+// Rasaad
+@990 = ~<CHARNAME>, par ce sacrifice, vous avez invité les ténèbres dans votre cœur.~
+@991 = ~Cela va s'étendre davantage et déséquilibrer votre âme. Je vous implore de prendre le temps de réfléchir à ce que vous avez fait aujourd'hui, avant que les ténèbres n'éteignent la lumière qui reste dans votre âme.~
+@992 = ~J'ai envisagé de vous quitter, car je ne veux pas laisser une telle noirceur envahir mon cœur, mais je sais aussi que nous devons sauver les royaumes du destin cruel qui les menace. Cependant, je ne peux ignorer ce que vous avez fait ; je sais désormais que vous n'êtes pas seulement un héros, mais aussi une bête capable de tuer ceux qui se dressent sur votre chemin.~
+@993 = ~Je ne comprends pas comment vous avez pu envisager un tel acte. Je pensais que vous étiez meilleur que cela, que vous vouliez répandre la paix et l'espoir, mais ce que vous avez fait n'a rien à voir avec tout ça.~~Je ne comprends pas comment vous avez pu envisager un tel acte. Je pensais que vous étiez meilleure que cela, que vous vouliez répandre la paix et l'espoir, mais ce que vous avez fait n'a rien à voir avec tout ça.~
+@994 = ~Pour survivre aux défis qui nous attendent, nous sommes parfois contraints de prendre des décisions difficiles.~
+@995 = ~Vous dramatisez trop, Rasaad.~
+@996 = ~Je croyais vous comprendre, <CHARNAME>. Vraiment. Mais maintenant, je n'en suis plus si sûr.~
+@997 = ~Vous devez me croire, je n'ai pas pris cette décision à la légère.~
+@998 = ~Vous devez me croire, je n'ai pas pris cette décision à la légère. Le sacrifice de notre compagnon me hantera probablement pour le reste de ma vie.~
+@999 = ~Sérieusement ? Très bien. Partons. Je sais où cela va nous mener.~
+@1000 = ~Je ne prétendrai pas comprendre votre décision, <CHARNAME>. Mais tant que je verrai la lumière dans vos yeux, je ferai tout ce qui est en mon pouvoir pour vous aider à alléger le poids de votre culpabilité concernant ce qui s'est passé aujourd'hui.~
+@1001 = ~Vraiment ? Je suis désolé, <CHARNAME>, sincèrement désolé, mais je commence à avoir l'impression de ne pas vous connaître. Je ne suis plus sûr que vous vous souciez vraiment de l'équilibre : ni celui qui nous entoure, ni celui qui règne dans votre cœur. Je pense qu'il vaut mieux que je parte. J'espère qu'un jour vous comprendrez que ce que vous avez fait était une erreur.~
+@1002 = ~Comment puis-je croire que ce que vous avez dit est vrai ? La lumière que je voyais autrefois dans vos yeux a disparu. Je ne pense pas pouvoir continuer comme ça.~
+@1003 = ~Merci pour tout ce que vous m'avez donné. Mais vous voir tel que vous êtes aujourd'hui est trop douloureux pour que je puisse rester à vos côtés. Adieu.~
+@1004 = ~Je suis désolé, <CHARNAME>, sincèrement désolé, mais je commence à avoir l'impression de ne plus vous connaître. Je ne suis plus sûr que vous vous souciez vraiment de l'équilibre : ni celui qui nous entoure, ni celui qui règne dans votre cœur. J'espère qu'un jour vous comprendrez que ce que vous avez fait était une erreur.~
+// Mazzy
+@1010 = ~Vous venez de commettre l'acte le plus atroce qui soit en sacrifiant votre compagnon, <CHARNAME> !~
+@1011 = ~Comment ai-je pu être aussi aveugle et ne pas remarquer la noirceur qui rongeait votre âme ? C'est une question à laquelle je dois réfléchir.~
+@1012 = ~Je ne peux, en toute conscience, rester plus longtemps au sein de votre groupe. Je prierai pour votre âme, <CHARNAME>. Puissions-nous ne plus jamais nous revoir.~
+@1013 = ~J'aurais dû agir bien avant d'en arriver là. Maintenant, je suis tout aussi responsable que vous, <CHARNAME>, d'avoir envoyé cette pauvre âme dans les Abysses.~
+@1014 = ~Je ne peux plus tolérer ces agissements, et je ne les tolérerai plus. Même si je succombe face à des adversaires si redoutables, je sais que mon âme sera rachetée de n'avoir pas pris part à ce meurtre. Pour Arvoreen !~
+// Aerie
+@1020 = ~Comment avez-vous... avez vous pu sacrifier l'un de nos compagnons avec autant de désinvolture ? Aucune circonstance ne saurait justifier un tel acte !~
+@1021 = ~Et pour invoquer un démon de l'enfer, rien de moins ? Vous m'effrayez à plus d'un titre.~
+@1022 = ~Parfois, des mesures drastiques sont nécessaires pour survivre. Aerie, nous combattons les dieux et le destin lui-même ! Je ne voyais aucune autre choix possible dans cette affaire.~
+@1023 = ~Vraiment ? Que va-t-il se passer d'autre ? Plus tard ? Serai-je la prochaine victime de vos plans ? Il y a des choses qu'on ne devrait jamais justifier, quoi qu'il arrive. Je... Je ne peux plus rester.~
+@1024 = ~Non, il y a toujours un choix. Il doit y en avoir un. Dites-moi que ce n'était qu'une décision irréfléchie. Dites-moi que ce n'est pas vous. Cela ne PEUT PAS être vous... !~
+@1025 = ~Vous avez raison. Je n'ai pas pensé à toutes les conséquences lorsque j'ai accompli le rituel. Une telle erreur ne se reproduira plus.~
+@1026 = ~Il y avait peut-être d'autres choix possibles. Mais aucun d'entre eux ne m'aurait permis d'atteindre mon objectif. J'assume pleinement ma décision, avec toutes les conséquences que cela implique.~
+@1027 = ~Je... Je n'aime pas ça. Pas du tout. Mais j'essaie de faire face à la situation. Mais j'ai besoin d'un peu de temps maintenant. Laissez-moi. S'il vous plaît. J'ai besoin d'espace.~
+@1028 = ~Je ne voulais pas y croire. Mais je vois maintenant qui vous êtes vraiment. Je... Je ne peux plus rester. Maintenant, quand je vous regarde dans les yeux, je vois l'abîme, et je ne peux pas le supporter.~
+@1029 = ~Je... Je pensais vous connaître. Mais imaginer que vous soyez capable d'une chose aussi horrible ? Je n'arrive pas à y croire. Avez-vous toujours été comme ça ? Ou quelque chose en vous s'est-il simplement... brisé ?~
+@1030 = ~Je ne voyais pas d'autre solution sans vous perdre, vous ou quelqu'un d'autre. Je suis sincèrement désolé pour ce que j'ai dû faire, mais je ferais TOUT pour que vous et moi puissions rester ensemble. Même si cela impliquait de tuer quelqu'un d'autre ! Je vous aime, Aerie.~
+@1031 = ~Parfois, il faut oser prendre des mesures radicales pour survivre. Je n'avais guère le choix dans cette affaire.~
+@1032 = ~Comment pouvez-vous dire une chose pareille ? Et la combiner avec une telle confession… ! <A7_SACRIFICE> est mort de vos propres mains !~
+@1033 = ~Je n'ai jamais voulu vous faire de mal, Aerie. Je vous le jure, mais-nous sommes confrontés à des dieux, des monstres et au destin lui-même ! Je ne peux plus nous protéger avec des boucliers et des astuces ordinaires. Je devais agir ainsi.~
+@1034 = ~Je n'ai jamais voulu vous faire de mal, Aerie. Je vous le jure, mais nous sommes confrontés à des dieux, des monstres et au destin lui-même ! Je ne peux plus nous protéger avec de simples boucliers et astuces. Sachez toutefois que ce que j'ai fais pour nous me hantera probablement pour le reste de ma vie.~
+@1035 = ~Je... Je souhaitais de tout mon cœur pouvoir vous croire. Mais je n'y arrive pas. Je sens une noirceur malveillante dans vos paroles qui m'effraie, <CHARNAME>. Je... Je dois m'éloigner de vous.~
+@1036 = ~Je n'aime pas ça. Est-ce vraiment le moyen de sauver quelqu'un... ? Non. Je ne pense pas que ce soit juste. Je peux accepter que vous ayez peur, parce que j'ai peur moi aussi, mais ça... ?~
+@1037 = ~Je resterai à vos côtés, <CHARNAME>, mais je ne peux ni oublier ni pardonner ce que vous avez fait. C'est tout simplement... trop grave.~
+@1038 = ~Vraiment ? J'entends vos paroles, mais elles sont froides et distantes. Elles ressemblent davantage à celles d'un monstre qu'à celles d'un homme. Vous m'effrayez, <CHARNAME>. Je... Je dois m'éloigner de vous.~
+// Anomen
+@1050 = ~En tant que membre de l'Ordre du Cœur Radieux, je ne peux tolérer ce crime des plus abjects qui consiste à conclure un pacte impie avec un démon des Abysses.~
+@1051 = ~Ma juste colère va s'abattre sur vous, <CHARNAME> !~
+@1052 = ~Honnêtement, <CHARNAME>, cela ne me surprend pas vraiment que vous puissiez vous abaisser à ce point et même fréquenter des démons.~
+@1053 = ~Je ne suis même pas sûr de pouvoir dire que vous me décevez en faisant tout cela. C'est ce que j'ai pensé au début, mais peut-être que ce n'est pas de la déception que je ressens. C'est plutôt la prise de conscience que vous n'êtes pas aussi héroïque que certains pourraient s'y attendre.~
+@1054 = ~Ce qui est fait est fait. Je n'ai plus rien à vous dire, <CHARNAME>.~
+@1055 = ~Mais cela me brise le cœur que la femme que j'aime ait pu me tromper tout ce temps. Je... Je ne peux plus vous regarder, sinon je deviendrais fou.~
+@1056 = ~Adieu, mon ancien amour.~
+@1057 = ~Cela me brise presque le cœur qu'une personne que j'aime ait pu me tromper pendant tout ce temps. Me faire croire que vous étiez digne de confiance. Mais le mot clé ici est « presque ». Je veux que vous me regardiez.~
+@1058 = ~Laissez-moi vous poser une question. Vos sentiments pour moi étaient-ils sincères ? Ou n'était-ce qu'un jeu pour vous ?~
+@1059 = ~Je vous aime, Anomen.~
+@1060 = ~Je suis désolée, Anomen. Je ne peux pas répondre à cette question.~
+@1061 = ~Je vois. J'espérais secrètement cette réponse, même si cela n'efface pas tout ce que vous avez fait. Dans le cadre de votre mission, cependant, cela... a du sens. Vous jouez avec le chaos. Vous êtes en quelque sorte un élément imprévisible.~
+@1062 = ~Je choisis de vous croire. Mais avant de pouvoir en reparler, j'ai besoin d'un moment pour calmer les choses. Nous devons aller de l'avant. Plus tôt nous le ferons, mieux ce sera.~
+@1063 = ~Je vois. Même maintenant, je ne sais pas si vos paroles sont sincères ou si vous vous moquez de moi. Quoi qu'il en soit, rester avec vous ne ferait que me faire douter de ma capacité à voir à travers le masque que vous portez de temps en temps, je n'ai donc d'autre choix que de partir.~
+@1064 = ~Je vois. J'ai été idiot de vous faire confiance. Et même de vous aimer. Mais cela ne se reproduira plus.~
+// Keldorn
+@1070 = ~Le mal a été scellé et ne causera plus aucun dommage. J'en suis heureux. Mais nous devons toujours rester vigilants. De nombreux artefacts corrompent l'esprit de leurs propriétaires de manière plus subtile que ce grimoire.~
+@1071 = ~Je n'arrive pas à croire que vous ayez conclu un pacte avec une force aussi maléfique. Expliquez-vous immédiatement, <CHARNAME> !~
+@1072 = ~Face à des adversaires de plus en plus puissants, je n'avais d'autre choix que de prendre des mesures drastiques. Je regrette sincèrement le sacrifice de notre compagnon, mais je pense qu'il était justifié. <A7_SACRIFICE> n'a pas caché ses intentions maléfiques.~
+@1073 = ~Face à des adversaires de plus en plus puissants, je n'avais d'autre choix que de prendre des mesures drastiques. Je regrette sincèrement le sacrifice de notre compagnon, mais je pense qu'il était justifié. <A7_SACRIFICE> n'a pas caché ses intentions maléfiques.~
+@1074 = ~Avec le recul, cette décision était probablement imprudente et stupide. Avec les pouvoirs incroyables du grimoire entre mes mains, je n'avais pas pleinement conscience de toutes les conséquences.~
+@1075 = ~Vous n'avez pas le droit de me juger. J'assume ma décision et ses conséquences.~
+@1076 = ~Détruire un mal ne peut jamais justifier un autre mal, <CHARNAME>. Vous avez commis aujourd'hui un acte atroce et purement maléfique, même si vous n'avez peut-être pas conscience de toute la portée de vos actes.~
+@1077 = ~Je voudrais pouvoir vous croire, mais je le peux pas.~
+@1078 = ~Vos tentatives pour justifier vos actions semblent hypocrites et intéressées.~
+@1079 = ~Vos intentions ne sont peut-être pas vraiment mauvaises, mais le mal est fait.~
+@1080 = ~Vous avez le don des belles paroles, <CHARNAME>, mais je ne suis pas dupe. Avec votre tentative peu convaincante de justifier cette atrocité, vous ne faites qu'ajouter l'insulte à la blessure.~
+@1081 = ~Cependant, je dois également admettre que vos actions passées ont été honorables.~
+@1082 = ~Même si je prends un grand risque, je continue à croire que vous pouvez être racheté. Le chemin sera long et difficile, mais je suis prêt à vous guider à travers les épreuves si vous acceptez que je sois à vos côtés.~
+@1083 = ~J'accepte votre offre et vous remercie pour votre clémence.~
+@1084 = ~Non, je ne pense pas que cela en vaille la peine. Je dois refuser.~
+@1085 = ~Je regrette sincèrement votre décision, <CHARNAME>. Mais on ne peut forcer quelqu'un à devenir un homme meilleur contre son gré. Je vais m'en aller, maintenant.~~Je regrette sincèrement votre décision, <CHARNAME>. Mais on ne peut forcer quelqu'un à devenir une femme meilleur contre son gré. Je vais m'en aller, maintenant.~
+@1086 = ~Je ne peux, en toute conscience, rester plus longtemps avec vous.~
+@1087 = ~L'Ordre sera informé de vos méfaits et prendra les mesures qui s'imposent.~
+@1088 = ~Même si je devais tomber dans l'exercice de mes fonctions, je ne peux en toute conscience rester les bras croisés et vous laisser vous en tirer ainsi.~
+@1089 = ~Pour Torm et l'Ordre !~

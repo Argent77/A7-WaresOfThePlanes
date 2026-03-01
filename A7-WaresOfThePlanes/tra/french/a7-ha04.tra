@@ -1,9 +1,19 @@
 // "Reason"
 
-// @0 = ~~  // #6345
+@0 = ~Marteau de guerre massif~
 @1 = ~Raison +2~
 
-// @10 = ~~ // #6716
+@10 = ~Il s'agit d'un lourd marteau de guerre. Il est doté d'un long manche et d'une tête métallique qui semble capable de façonner l'acier et d'écraser des crânes sans difficulté. Sur la tête du marteau, on peut distinguer le symbole d'une lame sous un feu ascendant.
+
+PARAMÈTRES :
+
+Dégâts : 1d4 +1 (contondant)
+Facteur de vitesse : 4
+Type de compétence : marteau de guerre
+Type : arme à une main
+Nécessite : 9 en Force
+
+Poids : 6~
 @11 = ~Cet énorme marteau est la troisième arme de la "Triade des Épreuves" des Hommes-Dieux (les deux autres étant la hache "Ascension" et la dague "Illumination"). Sa tête s'orne de runes mystiques et du symbole des Hommes-Dieux. Il vibre entre vos mains.
 
 PARAMETRES :
@@ -13,8 +23,7 @@ Capacités d'équipement :
 – Charisme : +1
 
 TAC0 : +2
-Dégâts : 1d4+3, +2 points de dégâts contondants
-Type de dégâts : Contondant
+Dégâts : 1d4+5 (contondant)
 Facteur de vitesse : 2
 Type de compétence : Marteau de Guerre
 Type: arme à 1 main

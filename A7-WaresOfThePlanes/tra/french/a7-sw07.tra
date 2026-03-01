@@ -1,0 +1,32 @@
+// Morrow's End +5
+
+@0 = ~Épée à l'aspect menaçant~
+@1 = ~Fin du lendemain +5~
+// @10 = ~~  // #6742
+@11 = ~Cette lame abyssale a été à l'origine forgée pour un général balor inconnu qui a combattu pendant plusieurs siècles lors de la Guerre Sanglante. Au fil du temps, la lame s'était imprégnée des horreurs omniprésentes sur le champ de bataille et a fini par développer la capacité unique de maudire tous ceux qu'elle touchait en leur infligeant une fraction de la souffrance accumulée.
+
+Lorsque la lame est entrée en possession du seigneur démon Anarazel, elle a été améliorée et transformée en épée vorpale grâce au sacrifice de milliers d'âmes.
+
+L'arme a un tranchant dentelé et brille d'une couleur rouge vif lorsqu'elle est maniée. Seuls ceux qui ont peu de conscience et qui s'ouvrent à son mal peuvent exploiter tout le potentiel de la lame.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+– Immunité contre la mort magique.
+– Malus de -1 à la force, la dextérité et la constitution pour les personnages d'alignement bon, sauf s'ils sont protégés contre le mal.
+– Ne peut être supprimé qu'à l'aide d'un sort de Délivrance de la malédiction.
+
+Capacités de combat :
+– 25 % de chances de tuer la cible si elle rate un jet de sauvegarde contre la mort à -2.
+– Maladie pendant un tour : -5 à la force, 1 point de dégâts toutes les 3 secondes et lenteur (un jet de sauvegarde contre les sorts annule tous les effets)
+– 25 % de chances de drainer un niveau à la cible et de soigner le porteur de 1d4 points de vie, si utilisé par un personnage d'alignement mauvais.
+
+TAC0 : +5
+Dégâts : 2d4+5, doublé contre les démons
+Type de dégât : tranchant
+Facteur de vitesse : 3
+Compétence : Epée bâtarde
+Type : arme à une main
+Force nécessaire : 11
+
+Poids : 5~

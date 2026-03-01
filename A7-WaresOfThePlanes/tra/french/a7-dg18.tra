@@ -1,0 +1,27 @@
+// Entropic Blade (upgraded)
+
+// @0 = ~~  // #6343
+@1 = ~Lame entropique +4~
+
+// @10 = ~~ // #6720
+@11 = ~La surface de cette petite dague se tord et se courbe sous vos yeux, comme si elle luttait pour se libérer de sa forme.
+
+Elle semble être faite de fer, d'argent et d'un certain nombre de métaux différents. Parfois, ceux-ci se mélangent, d'autres fois, ils s'enfoncent dans le cœur de la lame, pour refaire surface quelques minutes plus tard.
+
+Grâce aux améliorations apportées par Cespenar, l'arme a désormais la capacité d'absorber l'énergie vitale de sa cible et de soigner son utilisateur.
+
+PARAMÈTRES :
+
+Capacités de combat :
+– Le bonus de force ne s'applique pas aux attaques faites avec cette arme
+– À chaque coup il a 15 % de chances de faire perdre un niveau à la cible,
+et de faire gagner 8 points de vie au porteur, qui peuvent devenir un bonus temporaire au maximum de points de vie (5 rounds).
+
+TAC0 : +4
+Dégâts : 1d20+4 (perçant)
+Facteur de vitesse : 0
+Type de compétence : Dague
+Type : arme à une main
+Nécessite : 3 en Force
+
+Poids : 0~

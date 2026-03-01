@@ -1,0 +1,29 @@
+// Rengarth Boar Tusk
+
+@0 = ~Défense d'animal~
+@1 = ~Défense de sanglier Rengarthe~
+
+@10 = ~Cela semble être la défense d'un animal.
+
+PARAMÈTRES :
+
+Poids : 1~
+@11 = ~C'est une défense de sanglier. Elle a été préparée par les tribus nomades Rengarth dans les temps anciens et semble être imprégnée d'un aspect du sort épique interdit "Invocation de Béhémoth".
+
+En raison d'une exposition prolongée au Plan des Ombres, l'enchantement d'origine a été légèrement corrompu. Par conséquent, la magie ne se comporte pas tout à fait comme prévu.
+
+Une forte volonté est nécessaire pour invoquer la magie de l'artefact.
+
+PARAMÈTRES :
+
+Capacités de charge :
+– Invoquer un sanglier géant des plans extérieurs.
+  Il y a 5 % de chances de faire venir à la place un sanglier d'ombre géant hostile, sauf si l'invocation est effectuée par un druide, un chaman ou un rôdeur.
+  Durée : 2 tours.
+
+Niveau minimum nécessaire : 24
+
+Poids : 1~
+
+@100 = ~Sanglier Béhémoth~
+@110 = ~Sanglier de l'ombre Béhémoth~

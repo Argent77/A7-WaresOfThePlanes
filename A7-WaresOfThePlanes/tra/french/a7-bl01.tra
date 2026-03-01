@@ -1,0 +1,23 @@
+// Planar Anchor
+
+@0 = ~Élégante Ceinture de cuir~
+@1 = ~Ancre plan~
+
+// @10 = ~~  // #6466
+@11 = ~La légende raconte que le vieux voyageur Gojuc décida de prendre sa retraite à Sigil, la Cité des Portes, après une carrière couronnée de succès en tant qu'aventurier, mercenaire et même émissaire lors d'occasions spéciales. Les voyages à travers les plans ayant laissé des traces sur son corps, il mit au point un sortilège pour le rendre immunisé contre les effets de la magie de téléportation et chargea un enchanteur gnome local de l'intégrer dans un vêtement de son choix. Il fut manifestement satisfait du résultat, puisqu'il vécut plusieurs années sans avoir à composer avec les nombreux portails disséminés dans la ville. À sa grande surprise, il fut un jour mortellement blessé par un caillou lancé par des enfants qui jouaient dans la rue. Il succomba peu après à ses blessures. La ceinture et beaucoup d'autres de ses effets personnels furent finalement vendus à un marchand ambulant, et l'on perdit ainsi la trace de l'objet.
+
+La ceinture est enchantée avec un sort qui lie son utilisateur au plan d'existence actuel. En conséquence, l'utilisateur devient immunisé contre tout effet impliquant un voyage interplanétaire. Cependant, le lien renforcé avec le plan rend l'utilisateur sensible aux attributs primaires de ce dernier.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+– Immunité contre les effets de labyrinthe, emprisonnement et téléportation.
+– Résistance aux coups tranchants : -50 %.
+– Résistance aux coups perforants : -50 %.
+– Résistance aux coups contondants : -50 %.
+– Résistance aux projectiles : -50 %.
+– Ne peut être enlevé qu'à l'aide d'un sort de Délivrance de la malédiction.
+
+Poids : 2~
+
+@20 = ~Ancré~ ~Ancrée~

@@ -1,0 +1,31 @@
+// Rengarth Bear Claw
+
+@0 = ~Griffe d'animal~
+@1 = ~Griffe d'ours Rengarth~
+
+@10 = ~Cela semble être la griffe d'un animal.
+
+PARAMÈTRES :
+
+Poids : 1~
+@11 = ~C'est une griffe d'ours. Elle a été préparée par les tribus nomades Rengarth dans les temps anciens et semble être imprégnée d'un aspect du sort épique interdit "Invocation de Béhémoth".
+
+En raison d'une exposition prolongée au Plan des Ombres, l'enchantement d'origine a été légèrement corrompu. Par conséquent, la magie ne se comporte pas tout à fait comme prévu.
+
+Une forte volonté est nécessaire pour invoquer la magie de l'artefact.
+
+PARAMÈTRES :
+
+Capacités de charge :
+– Invoquer un ours géant des plans extérieurs.
+  Il y a 5 % de chances de faire venir à la place un ours d'ombre géant hostile, sauf si l'invocation est effectuée par un druide, un chaman ou un rôdeur.
+  Durée : 2 tours.
+
+Niveau minimum nécessaire : 26
+
+Poids : 1~
+
+@100 = ~Ours noir Béhémoth~
+@101 = ~Ours brun Béhémoth~
+@102 = ~Grizzly Béhémoth~
+@110 = ~Loup d'ombre Béhémoth~

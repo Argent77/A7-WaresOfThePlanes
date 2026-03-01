@@ -1,7 +1,7 @@
 // Acidic Sponge Carreaux
 
 @0 = ~Carreaux à tête sphérique~
-@1 = ~Carreaux  d'éponges acide +1~
+@1 = ~Carreaux d'éponges acide +1~
 
 @10 = ~Ces carreaux d'arbalète ont une tête sphérique et spongieuse. Tu n'as pas la moindre idée de quelle peut être leur fonction.
 
@@ -20,7 +20,7 @@ Quand le carreau atteint sa cible, la bulle de résine éclate, l'éponge est co
 PARAMETRES :
 
 TAC0 : +1
-Dégâts : 1d2+1, +6 points de dégâts d'acide (jet de sauvegarde contre les souffles pour la moitié)
+Dégâts : 1d2+1, +6 points de dégâts d'acide (jet de sauvegarde contre les souffles pour ½)
 Type de dégâts : Projectile
 Arme à  distance : Arbalète
 

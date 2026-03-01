@@ -55,3 +55,33 @@
 
 // Interjection: Haer'Dalis
 @110 = ~Une tentative vaine face à l'entropie et à la décadence. Vos paroles et vos actes ne feront que retarder l'inévitable d'un minuscule laps de temps. Alors que vous devez travailler activement pour maintenir l'entropie à distance, nous pouvons simplement nous asseoir et regarder. Le temps est notre allié.~
+
+// additional lines for quest "Lure of Darkness"
+@200 = ~Vous revenez au bon moment. J'ai récemment acquis un étrange disque métallique en paiement d'un de mes articles.~
+@201 = ~Il est fabriqué à partir d'acier vert pur, et à en juger par ses ornements, il pourrait également être enchanté.~
+@202 = ~Alors, qu'est-ce qui rend ce disque si spécial ?~
+@203 = ~Tout d'abord, l'acier vert ne peut être extrait et forgé qu'à Baator.~
+@204 = ~Baator ?~
+@205 = ~Ce sont les Neuf Enfers, <LADGAL>. Le repaire des démons !~
+@206 = ~Et si vous connaissez cet endroit et ses habitants, vous vous méfieriez d'autant plus des artefacts qui en proviennent.~
+@207 = ~Bref... je parie que les aventuriers comme vous meurent généralement d'envie de mettre la main sur des objets exotiques comme celui-ci. J'aimerais donc vous faire une proposition.~
+@208 = ~Pour seulement 500 pièces d'or, il peut être à vous. Qu'en dites-vous ?~
+@209 = ~Marché conclu.~
+@210 = ~Ça semble assez cher. Vous ne pouvez pas baisser un peu le prix ?~
+@211 = ~Hmm, d'accord. Que diriez-vous de 300 pièces d'or ?~
+@212 = ~C'est encore trop pour moi. Peut-être plus tard.~
+@213 = ~Désolé, mais ça ne m'intéresse pas.~~Désolée, mais ça ne m'intéresse pas.~
+@214 = ~Non, je ne peux pas faire ça. C'est un objet précieux, après tout.~
+@215 = ~Je n'ai pas assez d'or. Peut-être pourriez-vous  baisser un peu le prix ?~
+@216 = ~Comme vous voudrez. Mon offre tient toujours si plus tard vous changez d'avis.~
+@217 = ~Très bien. Revenez me voir.~
+@218 = ~J'aimerais reparler du disque en acier vert.~
+@219 = ~Ah, ça vous intéresse toujours ?~
+
+@250 = ~Grâce au disque métallique, nous avons découvert un grimoire écrit dans une langue inconnue. Savez-vous comment le traduire ?~
+@251 = ~Je ne sais pas trop. Faites-moi voir.~
+@252 = ~Tenez.~
+@253 = ~Oh non, c'est écrit en abyssal ! Je n'y toucherai pas.~
+@254 = ~Si vous êtes toujours déterminé à traduire ce texte, vous devriez demander à un érudit. J'en connais un qui habite dans le coin, mais son nom m'échappe pour le moment. Il ne devrait pas être trop difficile à trouver, de toute façon.~
+@255 = ~Pour le moment, veuillez sortir ce livre de ma vue.~
+

@@ -1,9 +1,19 @@
 // "Enlightenment"
 
-// @0 = ~~  // #6343
+@0 = ~Dague légère~
 @1 = ~Illumination +2~
 
-// @10 = ~~ // #6720
+@10 = ~La dague traditionnelle a une lame pointue généralement à double tranchant, contrairement au couteau doté d'un seul tranchant et un peu plus court. Le long de la lame, on peut distinguer le symbole d'une lame sous un feu qui s'élève.
+
+PARAMÈTRES :
+
+Dégâts : 1d4 (perforant)
+Facteur de vitesse : 2
+Type de compétence : dague
+Type : arme à une main
+Nécessite : 3 en Force
+
+ Poids : 1~
 @11 = ~"Cette dague est la deuxième arme de la "Triade des Épreuves" des Hommes-Dieux ("Ascension" et "Raison" étant les deux autres). Elle est fine, merveilleusement équilibrée et légère comme une plume. Le symbole des Hommes-Dieux est gravé sur la lame, et la dague tout entière luit comme si elle était pressée de servir. Tu es le premier à l'utiliser.
 
 

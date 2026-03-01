@@ -1,6 +1,6 @@
 // "Ascension"
 
-// @0 = ~~  // #6654
+// @0 = ~~ // #6654
 @1 = ~Ascension +2~
 
 // @10 = ~~ // #6656
@@ -17,6 +17,6 @@ Dégâts : 1d8+2 (tranchant)
 Facteur de vitesse : 4
 Type de compétence : Hache
 Type: arme à 1 main
-Nécessite : 10 en en Force
+Nécessite : 10 en Force
 
 Poids : 4~

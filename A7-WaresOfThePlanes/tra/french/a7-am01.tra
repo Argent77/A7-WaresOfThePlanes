@@ -1,0 +1,53 @@
+// Tribal Necklace of the Rengarth
+
+@0 = ~Collier en os~
+@1 = ~Collier tribal des Rengarth~
+
+@10 = ~Un collier est un bijou décoratif généralement fabriqué à partir de métaux précieux et orné de pierres précieuses. Ce collier, cependant, semble être entièrement composé d'os, de dents et de griffes d'animaux.
+
+STATISTIQUES :
+
+Poids : 2~
+@11 = ~Ces colliers ont été fabriqués par les tribus nomades Rengarth il y a plus de 1700 ans. Ils étaient principalement utilisés par les chamans des tribus lors de cérémonies et parfois comme soutien dans leurs escarmouches avec les tribus rivales et face à la menace omniprésente que représentait l'Empire Nétheril.
+
+Ces colliers sont composés d'os, de défenses et de griffes de loups, d'ours, de sangliers et de plusieurs autres animaux, maintenus ensemble par des lanières de cuir solides mais souples. Ils confèrent un certain nombre de pouvoirs magiques superficiels. Mais les enchantements les plus puissants sont mystérieux et résistent même aux tentatives de divination les plus puissantes.
+
+Ce collier particulier s'est retrouvé en possession d'un noble nétherese de Thultanthar avant que la ville ne disparaisse pendant des siècles lorsqu'elle a basculé dans le Plan des Ombres. Vers 1279 DR, un membre de la Garde Fatale l'a rapporté d'une excursion dans les plans et l'a vendu à une bande d'aventuriers à Sigil, où la trace de l'objet s'est à nouveau perdue jusqu'à ce qu'il réapparaisse récemment dans la boutique d'Ebb Craquerotule.
+
+Malgré son apparence grossière, le collier est étonnamment bien fait et semble avoir été enchanté pour résister à l'épreuve du temps. Chaque os et chaque griffe s'emboîtent parfaitement les uns dans les autres, ce qui le rend très solide mais confortable à porter. Cependant, étant donné son apparence barbare, les personnes vivant dans des régions plus civilisées pourraient être rebutées si le collier était porté ouvertement.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+– Charisme : -1
+– Protection contre les animaux (uniquement pour les druides, les chamans et les rôdeurs)
+
+Capacités de charge :
+– Charmer un animal trois fois par jour (un jet de sauvegarde contre les sorts annule l'effet)
+  Portée : 9 mètres
+  Durée : 2 tours
+  Zone d'effet : 1 créature
+
+Poids : 2~
+
+@100 = ~examiner~
+
+// dialog lines
+@1000 = ~Le collier est fait d'os, de défenses et de griffes de divers animaux.~
+@1001 = ~Ranger le collier.~
+@1002 = ~Le collier est fait d'os, de dents et de griffes de divers animaux. On peut distinguer des griffes de loup et d'ours, des défenses de sanglier, ainsi que plusieurs autres os impossibles à identifier.~
+@1003 = ~Le collier est fait d'os, de dents et de griffes de divers animaux. On peut distinguer des griffes de loups, d'ours, de panthères et de lions, mais aussi des défenses de sangliers et de plusieurs autres animaux.~
+@1004 = ~En y regardant de plus près, vous remarquez une légère lueur résiduelle lorsque vous touchez certaines pièces du collier.~
+@1005 = ~Essaie d'enlever la griffe de loup du collier.~
+@1006 = ~Essayez de retirer une petite griffe qui semble dangereuse du collier.~
+@1007 = ~Essayez de retirer la griffe de panthère du collier.~
+@1008 = ~Essayez d'enlever une griffe plus grosse et plus dangereuse du collier.~
+@1009 = ~Essaie d'enlever la griffe de lion du collier.~
+@1010 = ~Essaie d'enlever la défense de sanglier du collier.~
+@1011 = ~Essaie d'enlever la griffe d'ours du collier.~
+@1012 = ~Que voulez-vous faire d'autre ?~
+@1013 = ~Vous essayez précautionneusement de détachez le pendentif du collier, mais une force inconnue le maintient en place, quels que soient les efforts que vous déployez.~
+@1014 = ~Vous essayez précautionneusement de détacher le pendentif du collier. Au début, il semble résister. Mais après un certain temps, vous sentez une magie endormie se réveiller, et le pendentif glisse littéralement entre vos mains.~
+@1015 = ~Après avoir retiré le dernier morceau avec une lueur résiduelle particulière, le collier se brise soudainement en plusieurs morceaux qui se transforment presque instantanément en une poignée de poussière et de saleté.~
+@1016 = ~Le collier se brise soudainement en plusieurs morceaux qui se transforment presque instantanément en une poignée de terre et de poussière.~
+@1017 = ~Il semble que la magie qui maintenait le collier ensemble se soit dissipée et que les ravages du temps aient finalement eu raison de lui.~

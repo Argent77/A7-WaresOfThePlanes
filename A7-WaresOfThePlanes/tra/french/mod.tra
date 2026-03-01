@@ -4,8 +4,8 @@
 @2001 = ~Ebb Craquerotule~
 @2002 = ~Butin d'Ebb~
 @2003 = ~Client~
-@2004 = ~gal~   // colloquial for "girl"
-@2005 = ~lad~   // colloquial for "boy"
+@2004 = ~Gamine~   // colloquial for "girl"
+@2005 = ~Gamin~   // colloquial for "boy"
 @2006 = ~Personne ne me vole !~
 @2007 = ~Vous allez payer pour cela.~
 @2008 = ~L'acier le plus fin des Plans !~
@@ -20,8 +20,8 @@
 @2101 = ~Oh, un client ?~
 @2102 = ~J'aimerais voir vos marchandises, s'il vous plaît.~
 @2103 = ~Certainement ! Vous ne serez pas déçu.~
-@2104 = ~Heu.. c'est une sacrée sélection.~
-@2105 = ~J'aimerais acheter ce joli bracelet.~
+@2104 = ~Heu... c'est une sacrée collection.~
+@2105 = ~J'aimerais acheter ce beau bracelet.~
 @2106 = ~Un bon choix. Je l'ai acquis lors d'une de mes escarmouches sur l'Ysgard.~
 @2107 = ~Un beau spectacle. J'espère qu'il appréciera la balade.~
 @2108 = ~Voyons comment il fonctionne.~
@@ -37,25 +37,96 @@
 @3001 = ~Ebb Craquerotule m'a dit que lorsqu'il parcourt la Côte des épées, on peut le trouver à Beregost, au Carnaval de Nashkel ou à la Barbe d'Ulgoth.~
 @3002 = ~Ebb Craquerotule m'a dit que lorsqu'il fait des tournées à travers Amn, on peut le trouver soit à Francmarché, soit à Imnesvale dans les collines d'Umar, soit dans sur la promenade de Waukyne d'Athkatla.~
 
-// Quest: A gnomish contraption
-@3100 = ~Un engin gnomique~
+// Quête : un engin de conception gnomique
+@3100 = ~Un engin de conception gnomique~
 
-@3101 = ~Un engin gnomique
+@3101 = ~Un engin de conception gnomique
 
 Ebb Craquerotule m'a parlé de sa dernière acquisition lorsque je l'ai rencontré à Amkethran. Il s'agit apparemment d'une sorte d'arme exotique qu'il s'est procurée auprès d'un sorcier gnome. Malheureusement, elle est cassée. Peut-être que je peux l'aider ?~
 
-@3102 = ~Un engin gnomique
+@3102 = ~Un engin de conception gnomique
 
 Selon les instructions de réparation qu'Ebb a reçues du gnome, les parties cassées de l'arme peuvent être remplacées. Pour cela, plusieurs objets sont nécessaires : une gemme beljuril et des parchemins de Protection contre l'énergie magique et de Désintégration. Je commence à me demander à quel point cette arme peut être mortelle.~
 
-@3103 = ~Un engin gnomique
+@3103 = ~Un engin de conception gnomique
 
 J'ai livré les objets nécessaires à la réparation de l'arme gnomique. Ebb est partie revoir le gnome, ce qui devrait prendre environ un jour.~
 
-@3150 = ~Un engin gnomique
+@3150 = ~Un engin de conception gnomique
 
 Ebb Craquerotule a tenu parole et est revenu avec l'artefact réparé. Il l'a placé dans son magasin où je peux l'acheter si je le souhaite.~
 
-@3151 = ~Un engin gnomique
+@3151 = ~Un engin de conception gnomique
 
 Il semble qu'Ebb Craquerotule soit parti définitivement, car les événements à Amkethran se succèdent à un rythme effréné. J'aurais dû lui rendre visite plus tôt, avant que l'enfer ne se déchaîne.~
+
+// Quête : La tentation des ténèbres
+@3200 = ~La tentation des ténèbres~
+
+@3201 = ~La tentation des ténèbres
+
+Ebb Craquerotule m'a proposé à la vente un disque ouvragé en acier vert. Les objets forgés à partir d'acier vert ne sont fabriqués que dans les plans inférieurs et sont donc très prisés par les sorciers et les occultistes.~
+
+@3202 = ~La tentation des ténèbres
+
+J'ai acheté un disque unique et orné, fait d'acier vert. Les objets exotiques comme celui-ci sont généralement enchantés d'une manière ou d'une autre. Ebb n'a toutefois pas pu me dire si c'était le cas aussi pour ce disque.~
+
+@3203 = ~La tentation des ténèbres
+
+Alors que je me rendais à ma prochaine destination, un groupe de membres d'une secte m'a abordé et m'a proposé d'acheter le disque métallique que j'avais reçu d'Ebb Craquerotule. J'ai essayé de feindre l'ignorance, mais les fanatiques ont vu clair dans mon jeu et m'ont attaqué.~
+
+@3204 = ~La tentation des ténèbres
+
+Alors que je me rendais à ma prochaine destination, un groupe de membres d'une secte m'a abordé et m'a proposé d'acheter le disque métallique que j'avais reçu d'Ebb Craquerotule. Ils m'ont attaqué lorsque j'ai refusé leur offre.~
+
+@3205 = ~La tentation des ténèbres
+
+Alors que je me rendais à ma prochaine destination, un groupe de membres d'une secte a croisé mon chemin. J'ai saisi l'occasion et je les ai attaqués.~
+
+@3206 = ~La tentation des ténèbres
+
+L'un des fanatiques a laissé tomber un mot mentionnant le disque métallique en ma possession et un « mot de pouvoir » censé ouvrir une entrée secrète quelque part dans la région. Le mot met également en garde contre l'activité accrue des bandits et des chasseurs de primes à la recherche des enfants de Bhaal dans la région. Je devrais me rendre à ces endroits et garder l'œil ouvert pour trouver cette entrée.~
+
+@3207 = ~La tentation des ténèbres
+
+J'ai trouvé une note parmi les affaires d'un mage que j'ai tué. Elle mentionne un « mot de pouvoir » et une sorte de pierre de protection qui ressemble fortement au disque métallique orné que m'a remis Ebb Craquerotule. Ces deux éléments semblent être nécessaires pour franchir une entrée scellée située à proximité.~
+
+@3208 = ~La tentation des ténèbres
+
+En invoquant le mot de pouvoir tout en tenant le disque métallique entre mes mains, j'ai dissipé une barrière protectrice autour d'une entrée cachée. Celui qui s'est donné la peine de l'ériger se trouve très probablement sous terre.~
+
+@3209 = ~La tentation des ténèbres
+
+Il semble que j'aie interrompu un rituel important d'un culte démoniaque. Les membres du culte m'ont « remercié » en essayant de faire de moi leur prochaine offrande, mais j'ai pris le dessus. Sur le corps du chef du culte, j'ai trouvé un grimoire à l'aspect dangereux, écrit dans une langue que je n'avais jamais vue auparavant. Il résiste à toute tentative d'identification et de divination. Peut-être qu'Ebb pourra m'en dire plus, étant donné qu'il a déjà mis la main sur le disque métallique.~
+
+@3210 = ~La tentation des ténèbres
+
+À ma grande surprise, Ebb a immédiatement identifié l'écriture dans le tome. Il semble s'agir d'une sorte de runes abyssales. Quoi qu'il en soit, Ebb ne voulait pas s'en occuper et m'a plutôt renvoyé vers un érudit de la ville.~
+
+@3211 = ~La tentation des ténèbres
+
+Lazarus Librarus était visiblement bouleversé lorsque je lui ai montré le grimoire des cultistes. Il a insisté pour qu'il soit détruit, mais j'ai finalement réussi à le convaincre de me donner quelques indices pour le traduire. Apparemment, seuls les habitants des plans inférieurs, à savoir les races tanar'ri ou baatezu, possèdent les connaissances nécessaires pour lire cette langue. La question est maintenant de savoir où je peux trouver un représentant de l'une de ces races qui serait prêt à me parler *et* à m'aider ?~
+
+@3212 = ~La tentation des ténèbres
+
+Cespenar n'était pas très enthousiaste à l'idée de m'aider avec le grimoire abyssal, mais il m'a proposé de me vendre un guide de traduction pour le prix d'une opale noire et 1 000 pièces d'or.~
+
+@3213 = ~La tentation des ténèbres
+
+J'ai réussi à convaincre Cespenar de me vendre un manuel sur les langues abyssales qui, je l'espère, me permettra de traduire le grimoire que j'ai reçu de la secte démoniaque et d'en exploiter tout le potentiel.~
+
+@3214 = ~La tentation des ténèbres
+
+J'ai réussi à briser le sort que Lazarus Librarus avait jeté sur le grimoire pour le sceller et j'ai pu le récupérer.~
+
+@3250 = ~La tentation des ténèbres
+
+Alors que je me rendais à ma prochaine destination, un groupe de sectateurs m'a abordé et m'a proposé d'acheter le disque métallique que j'avais reçu d'Ebb Craquerotule. J'ai décidé d'accepter leur offre. Ils ont tenu parole et m'ont payé la somme promise avant de prendre congé. Je ne saurai jamais à quoi sert réellement ce disque métallique ouvragé.~
+
+@3251 = ~La tentation des ténèbres
+
+Lazarus Librarus a insisté pour que je mette le grimoire démoniaque sous clé. J'ai finalement accepté et lui ai permis de le transporter dans un plan miniature de son choix. Il devrait désormais être hors de portée de tous, sauf des êtres les plus puissants, pendant très longtemps.~
+
+@3252 = ~La tentation des ténèbres
+
+Grâce aux notes sur les langues abyssales, j'ai pu traduire le tome. Il s'agissait en fait du "Grimoire des ténèbres impies", ou du moins d'une copie incomplète de celui-ci. Mais même ainsi, il s'agit d'une source de pouvoir immense et maléfique qui doit être manipulée avec la plus grande prudence.~

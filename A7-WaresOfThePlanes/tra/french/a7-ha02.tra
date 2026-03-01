@@ -22,12 +22,12 @@ PARAMETRES :
 
 Capacités de combat :
 - Peut infliger 1d4+3 dégâts contondant au porteur, en fonction de son intelligence :
-  6 ou moins : toujours
-  7 : 75% de chances
-  8 : 50% de chances
-  9 : 35% de chances
-  10 à 14 : 25 % de chances
-  15 ou plus : jamais
+ 6 ou moins : toujours
+ 7 : 75% de chances
+ 8 : 50% de chances
+ 9 : 35% de chances
+ 10 à 14 : 25 % de chances
+ 15 ou plus : jamais
 
 TAC0 : +2
 Dégâts : 1d4+3 (contondant)

@@ -1,9 +1,19 @@
 // Runeblade
 
-// @0 = ~~  // #6343
+@0 = ~Dague de forme bizarre~
 @1 = ~Dague runique~
 
-// @10 = ~~ // #6720
+@10 = ~La dague traditionnelle a une lame pointue généralement à double tranchant, contrairement au couteau doté d'un seul tranchant et un peu plus court. La conception peu pratique de la lame rend son utilisation peu efficace au combat.
+
+PARAMÈTRES :
+
+Dégâts : 1d4 (perforant)
+Facteur de vitesse : 2
+Type de compétence : dague
+Type : arme à une main
+Nécessite : 3 en Force
+
+ Poids : 1~
 @11 = ~Crées par une légendaire guilde de Mages guerriers, les "Devins Ecarlates" , ces dagues enchantées servent à se défendre contre les sorts adverses. Les runes minuscules qui recouvrent la lame sont de puissantes défenses qui confèrent une grande protection contre tous les types de magie. Malheureusement, la dague est tout entière tournée vers la défense, ce qui la rend quasiment inefficace au combat.
 
 PARAMETRES :

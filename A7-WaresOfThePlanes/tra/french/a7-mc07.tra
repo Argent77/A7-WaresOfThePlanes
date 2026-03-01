@@ -1,9 +1,19 @@
 // "The Justifier"
 
-// @0 = ~~  // #6337
+// @0 = ~~ // #6337
 @1 = ~Le Viguier +2~
 
-// @10 = ~~ // #6709
+@10 = ~Cette masse ressemble beaucoup à n'importe quelle autre masse : une boule hérissée de pointes au sommet d'un manche en bois, une poignée en cuir avec une lanière pour éviter de la perdre dans le feu de l'action. Elle se distingue toutefois par l'œil gravé à l'acide sur la tête de l'arme, un symbole stylisé du dieu Horus.
+
+PARAMÈTRES :
+
+Dégâts : 1d6 +1 (contondant)
+Facteur de vitesse : 7
+Type de compétence : masse d'armes
+Type : arme à une main
+Nécessite : 10 en Force
+
+Poids : 10~
 @11 = ~Cette masse d'armes a l'air on ne peut plus normale : elle comprend bien une boule à pointes fixée à l'extrémité d'un manche en bois et une poignée en cuir dotée d'une lanière pour éviter qu'on la perde dans la fureur du combat. Là où elle diffère, c'est dans l'oeil gravé à l'acide qui orne sa tête ; on dirait une version stylisée du symbole du dieu Horus.
 
 Cette arme est le Viguier, une masse d'armes créée dans la ville d'Héliopolis, sur le plan d'Arcadie. Elle a été forgée pour aider les forces du bien. Il peut guérir son propriétaire, si on le lui demande, et voue une haine particulière aux forces du chaos et du mal.

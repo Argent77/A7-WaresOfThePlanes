@@ -1,6 +1,6 @@
 // Porphatys Dagger
 
-// @0 = ~~  // #6343
+// @0 = ~~ // #6343
 @1 = ~Dague de Porphatys +3~
 
 // @10 = ~~ // #6720
@@ -9,7 +9,7 @@
 PARAMETRES :
 
 Capacités d'équipement :
-– Rend berserk quand on l'utilise
+– Rend l'utilisateur berserk
 – Ne peut être retirée qu'avec un sort de Délivrance de la Malédiction
 
 TAC0 : +3

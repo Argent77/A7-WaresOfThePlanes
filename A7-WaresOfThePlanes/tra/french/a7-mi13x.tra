@@ -1,0 +1,20 @@
+// Book of Vile Darkness (unidentified)
+
+@1 = ~Livre malodorant~
+@10 = ~Le Livre des ténèbres impies est un artefact d'une vilenie indescriptible, un ouvrage de référence sur le mal rédigé, édité et compilé par certaines des entités les plus puissantes et maléfiques du multivers. Ses pages renferment les idées perverses, les pensées dérangées, les secrets magiques obscurs et les conceptions odieuses que ses auteurs ont jamais imaginés ou découverts.
+
+Cet exemplaire ne semble être qu'un petit extrait de l'œuvre originale. Mais même dans son état actuel, il a le pouvoir de corrompre quiconque lit ses pages.
+
+PARAMÈTRES :
+
+Capacité de charge :
+– Protection contre le Bien pendant un tour.
+
+Capacité spéciale :
+– Pacte abyssal : le livre décrit un rituel obscur permettant de conclure un pacte avec le puissant seigneur démon Anarazel "l'Obscurité audacieuse". Il nécessite le sacrifice d'un mortel puissant pour attirer l'attention du démon, ainsi qu'une quantité importante d'essence divine ou infernale, donnée de plein gré, pour s'assurer son aide. En échange, le seigneur démon se battra pour le groupe jusqu'à ce qu'il soit vaincu ou que huit heures se soient écoulées, après quoi il retournera dans l'Abîme. Le livre est consumé après utilisation.
+
+Poids : 3~
+
+@21 = ~(Le livre est recouvert de symboles ésotériques inconnus et écrit avec une étrange écriture runique pointue.)
+
+Poids : 3~

@@ -11,7 +11,7 @@ Dégâts : 1d8 (tranchant)
 Facteur de vitesse : 7
 Type de compétence : Hache
 Type: arme à 1 main
-Nécessite : 10 en Force
+Nécessite : 16 en Force
 
 Poids : 7~
 @11 = ~Cette hache de guerre à deux lames rappelle la hache d'un bourreau ; la tête de la hache a été forgée pour représenter le symbole de la faction des Rectifieurs (un dragon rouge aux ailes déployées... les ailes déployées ont été façonnées pour former les lames de la hache). La hache elle-même est énorme ; il faudrait une force énorme pour l'utiliser efficacement.
@@ -24,14 +24,73 @@ PARAMETRES :
 
 Capacités d'équipement :
 – Classe d'Armure : +1
-– Ne peut être retirée qu'avec un sort de Délivrance e la Malédiction
+– Ne peut être retirée qu'avec un sort de Délivrance de la Malédiction
 
 TAC0 : +3
-Dégâts : 2d6+3, +1d6 dégâts de feu, double les dégâts contre les créatures chaotiques
+Dégâts : 2d6+3, +1d6 dégâts de feu, double dégâts contre les créatures chaotiques
 Type de dégâts : Tranchant
 Facteur de vitesse : 4
 Type de compétence : Hache
 Type: arme à 1 main
-Nécessite : 9 en Force16 en Force
+Nécessite : 16 en Force
 
 Poids : 12~
+// Copy of the item description without "cursed" line and with remark about Cespenar's work
+@12 = ~Cette hache de guerre à deux lames rappelle la hache d'un bourreau ; la tête de la hache a été forgée pour représenter le symbole de la faction des Rectifieurs (un dragon rouge aux ailes déployées... les ailes déployées ont été façonnées pour former les lames de la hache). La hache elle-même est énorme ; il faudrait une force énorme pour l'utiliser efficacement.
+
+Cette hache porte en elle une partie de l'essence de Vhailor. Elle est donc entièrement dévouée à la justice et ne permet pas à son utilisateur de se reposer tant qu'il reste des " jugements " à rendre. Les dégâts considérables qu'elle inflige à un adversaire sont doublés si la hache frappe une créature coupable ou chaotique. De plus, la hache elle-même prête une partie de sa force à son utilisateur, lui offrant ainsi une protection supplémentaire contre les attaques.
+
+L'origine de cette hache est inconnue. Selon toute vraisemblance, la hache a acquis ses pouvoirs grâce à la croyance de Vhailor.
+
+Cespenar a réussi à réprimer l'esprit de Vhailor juste assez pour que son porteur soit libéré de son sens de la justice pendant un certain temps.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Classe d'Armure : +1
+
+TAC0 : +3
+Dégâts : 2d6+3, +1d6 dégâts de feu, double dégâts contre les créatures chaotiques
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Hache
+Type: arme à 1 main
+Nécessite : 16 en Force
+
+Poids : 12~
+
+// Copy of the item description with remarks that the item curse has awakened again
+@13 = ~Cette hache de guerre à deux lames rappelle la hache d'un bourreau ; la tête de la hache a été forgée pour représenter le symbole de la faction des Rectifieurs (un dragon rouge aux ailes déployées... les ailes déployées ont été façonnées pour former les lames de la hache). La hache elle-même est énorme ; il faudrait une force énorme pour l'utiliser efficacement.
+
+Cette hache porte en elle une partie de l'essence de Vhailor. Elle est donc entièrement dévouée à la justice et ne permet pas à son utilisateur de se reposer tant qu'il reste des " jugements " à rendre. Les dégâts considérables qu'elle inflige à un adversaire sont doublés si la hache frappe une créature coupable ou chaotique. De plus, la hache elle-même prête une partie de sa force à son utilisateur, lui offrant ainsi une protection supplémentaire contre les attaques.
+
+L'origine de cette hache est inconnue. Selon toute vraisemblance, la hache a acquis ses pouvoirs grâce à la croyance de Vhailor.
+
+Cespenar a réussi à réprimer l'esprit de Vhailor juste assez pour que son porteur soit libéré de son sens de la justice pendant un certain temps. Mais présentement son esprit s'est réveillé.
+
+PARAMETRES :
+
+Capacités d'équipement :
+– Classe d'Armure : +1
+– Ne peut être retirée qu'avec un sort de Délivrance de la Malédiction
+
+TAC0 : +3
+Dégâts : 2d6+3, +1d6 dégâts de feu, double dégâts contre les créatures chaotiques
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Hache
+Type: arme à 1 main
+Nécessite : 16 en Force
+
+Poids : 12~
+
+@100 = ~L'esprit de Vhailor s'est de nouveau réveillé.~
+
+
+// Dialog lines
+@1000 = ~Oh non, tu as la hache de l’exécuteur ! Cespenar s'est finalement fait attraper ?~
+@1001 = ~Ah, le Jugement dernier, c'est ça. Je peux lever la malédiction de la hache avec un parchemin de Délivrance de la malédiction. Mais seulement pour un temps. La malédiction est assez puissante car un esprit têtu habite la hache. Elle reviendra de temps en temps.~
+@1002 = ~Ah, la hache est à nouveau maudite ? Avec un parchemin de Délivrance de la malédiction, je peux la faire dormir une fois de plus.~
+@1003 = ~Tu n'as pas de parchemin, donc la malédiction doit rester.~
+@1004 = ~Tu as parchemin de Délivrance de la malédiction. Pour 2 000 pièces d'or, je peux me mettre au travail.~
+@1005 = ~Laisse-moi voir ce que tu as d'autre.~
