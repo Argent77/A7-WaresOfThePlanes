@@ -31,7 +31,7 @@ This is the main component. It installs a large number of items from the Planesc
 
 As the items vary greatly in power, they are only gradually made available as the main story of the game progresses.
 
-Detailed descriptions of available items are listed here: [item-descriptions.txt](https://raw.githubusercontent.com/Argent77/A7-WaresOfThePlanes/master/A7-WaresOfThePlanes/doc/item-descriptions.txt)
+Detailed descriptions of available items are listed in the mod's readme.
 
 ### Identify all wares *(not recommended; requires the main component)*
 
