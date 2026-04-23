@@ -1,0 +1,9 @@
+IF
+  OR(2)
+    Entered([GOODCUTOFF])
+    Opened([GOODCUTOFF])
+THEN
+  RESPONSE #100
+    DisplayString(LastTrigger,14381)  // Trap Sprung
+    ForceSpellRES("a7-ch2t1",LastTrigger) // Slow
+END

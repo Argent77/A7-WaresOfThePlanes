@@ -1,0 +1,62 @@
+// This block ensures that rogue summoning happens only after at least
+// one save and reload operation to work around an engine flaw
+IF
+  OnCreation()
+  Global("A7-Rogue-Init","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-Rogue-Init","GLOBAL",2)
+    Continue()
+END
+
+// Preparing ghostly rogues
+IF
+  Global("A7-Rogue-Init","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-Rogue-Init","GLOBAL",1)
+    CreateCreatureImpassable("a7-rog1",[0.0],0)
+    ActionOverride("A7-MaskRogue1",MakeGlobal())
+    ActionOverride("A7-MaskRogue1",ChangeEnemyAlly(Myself,FAMILIAR))
+    ActionOverride("A7-MaskRogue1",AddFamiliar())
+    ActionOverride("A7-MaskRogue1",ChangeGeneral(Myself,HUMANOID))
+    ActionOverride("A7-MaskRogue1",ChangeRace(Myself,HUMAN))
+    ActionOverride("A7-MaskRogue1",ChangeClass(Myself,THIEF))
+    ActionOverride("A7-MaskRogue1",ChangeGender(Myself,MALE))
+    ActionOverride("A7-MaskRogue1",DestroySelf())
+    Continue()
+END
+
+IF
+  Global("A7-Rogue-Init","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-Rogue-Init","GLOBAL",1)
+    CreateCreatureImpassable("a7-rog2",[0.0],0)
+    ActionOverride("A7-MaskRogue2",MakeGlobal())
+    ActionOverride("A7-MaskRogue2",ChangeEnemyAlly(Myself,FAMILIAR))
+    ActionOverride("A7-MaskRogue2",AddFamiliar())
+    ActionOverride("A7-MaskRogue2",ChangeGeneral(Myself,HUMANOID))
+    ActionOverride("A7-MaskRogue2",ChangeRace(Myself,HUMAN))
+    ActionOverride("A7-MaskRogue2",ChangeClass(Myself,THIEF))
+    ActionOverride("A7-MaskRogue2",ChangeGender(Myself,MALE))
+    ActionOverride("A7-MaskRogue2",DestroySelf())
+    Continue()
+END
+
+IF
+  Global("A7-Rogue-Init","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-Rogue-Init","GLOBAL",1)
+    CreateCreatureImpassable("a7-rog3",[0.0],0)
+    ActionOverride("A7-MaskRogue3",MakeGlobal())
+    ActionOverride("A7-MaskRogue3",ChangeEnemyAlly(Myself,FAMILIAR))
+    ActionOverride("A7-MaskRogue3",AddFamiliar())
+    ActionOverride("A7-MaskRogue3",ChangeGeneral(Myself,HUMANOID))
+    ActionOverride("A7-MaskRogue3",ChangeRace(Myself,HUMAN))
+    ActionOverride("A7-MaskRogue3",ChangeClass(Myself,THIEF))
+    ActionOverride("A7-MaskRogue3",ChangeGender(Myself,MALE))
+    ActionOverride("A7-MaskRogue3",DestroySelf())
+    Continue()
+END

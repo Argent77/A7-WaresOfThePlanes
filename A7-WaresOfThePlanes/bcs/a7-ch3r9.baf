@@ -1,0 +1,44 @@
+// Eyes of Mask: Challenge 3 Rogue 9 initialization
+
+// initialization
+IF
+  Global("init","LOCALS",0)
+  Switch("a7-ch3_start_index","MYAREA")
+THEN
+  RESPONSE #1
+    SetGlobal("index","LOCALS",9)
+    Continue()
+  RESPONSE #2
+    SetGlobal("index","LOCALS",8)
+    Continue()
+  RESPONSE #3
+    SetGlobal("index","LOCALS",7)
+    Continue()
+  RESPONSE #4
+    SetGlobal("index","LOCALS",6)
+    Continue()
+  RESPONSE #5
+    SetGlobal("index","LOCALS",5)
+    Continue()
+  RESPONSE #6
+    SetGlobal("index","LOCALS",4)
+    Continue()
+  RESPONSE #7
+    SetGlobal("index","LOCALS",3)
+    Continue()
+  RESPONSE #8
+    SetGlobal("index","LOCALS",2)
+    Continue()
+  RESPONSE #9
+    SetGlobal("index","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("init","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("init","LOCALS",1)
+    SetName(@625) // Jareth
+    Continue()
+END

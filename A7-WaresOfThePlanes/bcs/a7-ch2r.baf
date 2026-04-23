@@ -1,0 +1,228 @@
+// Challenge 2 rogue script
+
+// Key #1 stolen from player: Return it to resting place
+IF
+  Global("keystolen","LOCALS",0)
+  HasItem("a7-ch2k1",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("keystolen","LOCALS",1)
+    DisplayStringHead(Myself,@576)  // Picked up stone fragment.
+END
+
+IF
+  Global("keystolen","LOCALS",1)
+  !Range("Ch2_Key1",3)
+THEN
+  RESPONSE #100
+    MoveToObjectNoInterrupt("Ch2_Key1")
+END
+
+IF
+  Global("keystolen","LOCALS",1)
+  Range("Ch2_Key1",3)
+THEN
+  RESPONSE #100
+    SetGlobal("keystolen","LOCALS",0)
+    SetGlobal("a7-ch2_key1","MYAREA",0)
+    SetGlobalTimer("pickup1_timer","LOCALS",0)
+    DisplayStringHead(Myself,@577)  // Stone fragment discarded.
+    DestroyItem("a7-ch2k1")
+END
+
+// Key #2 stolen from player: Return it to resting place
+IF
+  Global("keystolen","LOCALS",0)
+  HasItem("a7-ch2k2",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("keystolen","LOCALS",2)
+    DisplayStringHead(Myself,@576)  // Picked up stone fragment.
+END
+
+IF
+  Global("keystolen","LOCALS",2)
+  !Range("Ch2_Key2",3)
+THEN
+  RESPONSE #100
+    MoveToObjectNoInterrupt("Ch2_Key2")
+END
+
+IF
+  Global("keystolen","LOCALS",2)
+  Range("Ch2_Key2",3)
+THEN
+  RESPONSE #100
+    SetGlobal("keystolen","LOCALS",0)
+    SetGlobal("a7-ch2_key2","MYAREA",0)
+    SetGlobalTimer("pickup2_timer","LOCALS",0)
+    DisplayStringHead(Myself,@577)  // Stone fragment discarded.
+    DestroyItem("a7-ch2k2")
+END
+
+// Key #3 stolen from player: Return it to resting place
+IF
+  Global("keystolen","LOCALS",0)
+  HasItem("a7-ch2k3",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("keystolen","LOCALS",3)
+    DisplayStringHead(Myself,@576)  // Picked up stone fragment.
+END
+
+IF
+  Global("keystolen","LOCALS",3)
+  !Range("Ch2_Key3",3)
+THEN
+  RESPONSE #100
+    MoveToObjectNoInterrupt("Ch2_Key3")
+END
+
+IF
+  Global("keystolen","LOCALS",3)
+  Range("Ch2_Key3",3)
+THEN
+  RESPONSE #100
+    SetGlobal("keystolen","LOCALS",0)
+    SetGlobal("a7-ch2_key3","MYAREA",0)
+    SetGlobalTimer("pickup3_timer","LOCALS",0)
+    DisplayStringHead(Myself,@577)  // Stone fragment discarded.
+    DestroyItem("a7-ch2k3")
+END
+
+// Try to steal key parts from player
+IF
+  Global("keystolen","LOCALS",0)
+  // Detect(Player1)
+  Range(Player1,4)
+  HasItem("a7-ch2k1",Player1)
+THEN
+  RESPONSE #100
+    SetGlobal("keystolen","LOCALS",1)
+    DisplayStringHead(Myself,@575)  // Stone fragment stolen from <CHARNAME>.
+    TakePartyItem("a7-ch2k1")
+END
+
+IF
+  Global("keystolen","LOCALS",0)
+  // Detect(Player1)
+  Range(Player1,4)
+  HasItem("a7-ch2k2",Player1)
+THEN
+  RESPONSE #100
+    SetGlobal("keystolen","LOCALS",2)
+    DisplayStringHead(Myself,@575)  // Stone fragment stolen from <CHARNAME>.
+    TakePartyItem("a7-ch2k2")
+END
+
+IF
+  Global("keystolen","LOCALS",0)
+  // Detect(Player1)
+  Range(Player1,4)
+  HasItem("a7-ch2k3",Player1)
+THEN
+  RESPONSE #100
+    SetGlobal("keystolen","LOCALS",3)
+    DisplayStringHead(Myself,@575)  // Stone fragment stolen from <CHARNAME>.
+    TakePartyItem("a7-ch2k3")
+END
+
+IF
+  Global("keystolen","LOCALS",0)
+  // Detect(Player1)
+  !Range(Player1,4)
+  OR(3)
+    HasItem("a7-ch2k1",Player1)
+    HasItem("a7-ch2k2",Player1)
+    HasItem("a7-ch2k3",Player1)
+THEN
+  RESPONSE #100
+    MoveToObject(Player1)
+END
+
+// Try to pick up dropped key parts
+IF
+  !Global("a7-ch2_key1","MYAREA",0)
+  !GlobalTimerNotExpired("pickup1_timer","LOCALS")
+  !PartyHasItem("a7-ch2k1")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("pickup1_timer","LOCALS",6)
+    PickUpItem("a7-ch2k1")
+    SetInterrupt(TRUE)
+END
+
+IF
+  !Global("a7-ch2_key2","MYAREA",0)
+  !GlobalTimerNotExpired("pickup2_timer","LOCALS")
+  !PartyHasItem("a7-ch2k2")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("pickup2_timer","LOCALS",6)
+    PickUpItem("a7-ch2k2")
+    SetInterrupt(TRUE)
+END
+
+IF
+  !Global("a7-ch2_key3","MYAREA",0)
+  !GlobalTimerNotExpired("pickup3_timer","LOCALS")
+  !PartyHasItem("a7-ch2k3")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("pickup3_timer","LOCALS",6)
+    PickUpItem("a7-ch2k3")
+    SetInterrupt(TRUE)
+END
+
+// Default actions
+IF
+  Global("keystolen","LOCALS",0)
+  !Detect(Player1)
+THEN
+  RESPONSE #10
+    SetInterrupt(FALSE)
+    MoveToObjectOffset(Player1,[100.-75])
+    SetInterrupt(TRUE)
+  RESPONSE #10
+    SetInterrupt(FALSE)
+    MoveToObjectOffset(Player1,[100.0])
+    SetInterrupt(TRUE)
+  RESPONSE #10
+    SetInterrupt(FALSE)
+    MoveToObjectOffset(Player1,[100.75])
+    SetInterrupt(TRUE)
+  RESPONSE #10
+    SetInterrupt(FALSE)
+    MoveToObjectOffset(Player1,[0.75])
+    SetInterrupt(TRUE)
+  RESPONSE #10
+    SetInterrupt(FALSE)
+    MoveToObjectOffset(Player1,[-100.75])
+    SetInterrupt(TRUE)
+  RESPONSE #10
+    SetInterrupt(FALSE)
+    MoveToObjectOffset(Player1,[-100.0])
+    SetInterrupt(TRUE)
+  RESPONSE #10
+    SetInterrupt(FALSE)
+    MoveToObjectOffset(Player1,[-100.-75])
+    SetInterrupt(TRUE)
+  RESPONSE #10
+    SetInterrupt(FALSE)
+    MoveToObjectOffset(Player1,[0.-75])
+    SetInterrupt(TRUE)
+  RESPONSE #80
+    Continue()
+END
+
+IF
+  True()
+THEN
+  RESPONSE #80
+    RandomWalk()
+  RESPONSE #20
+    RandomTurn()
+END

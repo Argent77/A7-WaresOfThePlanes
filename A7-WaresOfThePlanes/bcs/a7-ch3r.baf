@@ -1,0 +1,236 @@
+// Eyes of Mask: Challenge 3 Rogue common behavior
+
+// Hit reaction while mismatch is active
+IF
+  HitBy([GOODCUTOFF],0)
+  !Allegiance(Myself,ENEMY)
+  !Global("a7-ch3_hostile","MYAREA",0)
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself,@610)  // Wait for our fellow rogue to calm down.
+END
+
+IF
+  HitBy([GOODCUTOFF],0)
+  Allegiance(Myself,ENEMY)
+  !Global("a7-ch3_hostile","MYAREA",0)
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+// Hit reaction: Match
+IF
+  HitBy([GOODCUTOFF],0)
+  Global("a7-ch3_current_index","MYAREA",1)
+  Global("index","LOCALS",1)
+  Global("disabled","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("disabled","LOCALS",1)
+    SetTokenGlobal("a7-ch3_current_index","MYAREA","A7_CH3_POS")
+    DisplayString(Myself,@613)  // Rogue number <A7_CH3_POS> released.
+    IncrementGlobal("a7-ch3_current_index","MYAREA",1)
+    CreateVisualEffectObject("ICRMPARI",Myself)
+    SmallWait(10)
+    Deactivate(Myself)
+    SetInterrupt(TRUE)
+END
+
+IF
+  HitBy([GOODCUTOFF],0)
+  Global("a7-ch3_current_index","MYAREA",2)
+  Global("index","LOCALS",2)
+  Global("disabled","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("disabled","LOCALS",1)
+    SetTokenGlobal("a7-ch3_current_index","MYAREA","A7_CH3_POS")
+    DisplayString(Myself,@613)  // Rogue number <A7_CH3_POS> released.
+    IncrementGlobal("a7-ch3_current_index","MYAREA",1)
+    CreateVisualEffectObject("ICRMPARI",Myself)
+    SmallWait(10)
+    Deactivate(Myself)
+    SetInterrupt(TRUE)
+END
+
+IF
+  HitBy([GOODCUTOFF],0)
+  Global("a7-ch3_current_index","MYAREA",3)
+  Global("index","LOCALS",3)
+  Global("disabled","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("disabled","LOCALS",1)
+    SetTokenGlobal("a7-ch3_current_index","MYAREA","A7_CH3_POS")
+    DisplayString(Myself,@613)  // Rogue number <A7_CH3_POS> released.
+    IncrementGlobal("a7-ch3_current_index","MYAREA",1)
+    CreateVisualEffectObject("ICRMPARI",Myself)
+    SmallWait(10)
+    Deactivate(Myself)
+    SetInterrupt(TRUE)
+END
+
+IF
+  HitBy([GOODCUTOFF],0)
+  Global("a7-ch3_current_index","MYAREA",4)
+  Global("index","LOCALS",4)
+  Global("disabled","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("disabled","LOCALS",1)
+    SetTokenGlobal("a7-ch3_current_index","MYAREA","A7_CH3_POS")
+    DisplayString(Myself,@613)  // Rogue number <A7_CH3_POS> released.
+    IncrementGlobal("a7-ch3_current_index","MYAREA",1)
+    CreateVisualEffectObject("ICRMPARI",Myself)
+    SmallWait(10)
+    Deactivate(Myself)
+    SetInterrupt(TRUE)
+END
+
+IF
+  HitBy([GOODCUTOFF],0)
+  Global("a7-ch3_current_index","MYAREA",5)
+  Global("index","LOCALS",5)
+  Global("disabled","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("disabled","LOCALS",1)
+    SetTokenGlobal("a7-ch3_current_index","MYAREA","A7_CH3_POS")
+    DisplayString(Myself,@613)  // Rogue number <A7_CH3_POS> released.
+    IncrementGlobal("a7-ch3_current_index","MYAREA",1)
+    CreateVisualEffectObject("ICRMPARI",Myself)
+    SmallWait(10)
+    Deactivate(Myself)
+    SetInterrupt(TRUE)
+END
+
+IF
+  HitBy([GOODCUTOFF],0)
+  Global("a7-ch3_current_index","MYAREA",6)
+  Global("index","LOCALS",6)
+  Global("disabled","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("disabled","LOCALS",1)
+    SetTokenGlobal("a7-ch3_current_index","MYAREA","A7_CH3_POS")
+    DisplayString(Myself,@613)  // Rogue number <A7_CH3_POS> released.
+    IncrementGlobal("a7-ch3_current_index","MYAREA",1)
+    CreateVisualEffectObject("ICRMPARI",Myself)
+    SmallWait(10)
+    Deactivate(Myself)
+    SetInterrupt(TRUE)
+END
+
+IF
+  HitBy([GOODCUTOFF],0)
+  Global("a7-ch3_current_index","MYAREA",7)
+  Global("index","LOCALS",7)
+  Global("disabled","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("disabled","LOCALS",1)
+    SetTokenGlobal("a7-ch3_current_index","MYAREA","A7_CH3_POS")
+    DisplayString(Myself,@613)  // Rogue number <A7_CH3_POS> released.
+    IncrementGlobal("a7-ch3_current_index","MYAREA",1)
+    CreateVisualEffectObject("ICRMPARI",Myself)
+    SmallWait(10)
+    Deactivate(Myself)
+    SetInterrupt(TRUE)
+END
+
+IF
+  HitBy([GOODCUTOFF],0)
+  Global("a7-ch3_current_index","MYAREA",8)
+  Global("index","LOCALS",8)
+  Global("disabled","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("disabled","LOCALS",1)
+    SetTokenGlobal("a7-ch3_current_index","MYAREA","A7_CH3_POS")
+    DisplayString(Myself,@613)  // Rogue number <A7_CH3_POS> released.
+    IncrementGlobal("a7-ch3_current_index","MYAREA",1)
+    CreateVisualEffectObject("ICRMPARI",Myself)
+    SmallWait(10)
+    Deactivate(Myself)
+    SetInterrupt(TRUE)
+END
+
+IF
+  HitBy([GOODCUTOFF],0)
+  Global("a7-ch3_current_index","MYAREA",9)
+  Global("index","LOCALS",9)
+  Global("disabled","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("disabled","LOCALS",1)
+    SetTokenGlobal("a7-ch3_current_index","MYAREA","A7_CH3_POS")
+    DisplayString(Myself,@613)  // Rogue number <A7_CH3_POS> released.
+    IncrementGlobal("a7-ch3_current_index","MYAREA",1)
+    CreateVisualEffectObject("ICRMPARI",Myself)
+    SmallWait(10)
+    DestroySelf()
+    SetInterrupt(TRUE)
+END
+
+// Hit reaction: NOT match
+IF
+  HitBy([GOODCUTOFF],0)
+  Global("disabled","LOCALS",0)
+  !Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    SetGlobal("a7-ch3_hostile","MYAREA",1)
+    SetGlobalTimer("hostile_timer","LOCALS",TWO_ROUNDS)
+    DisplayStringHead(Myself,@611)  // You've hit the wrong target. I'll get you for that!
+    Enemy()
+END
+
+IF
+  GlobalTimerExpired("hostile_timer","LOCALS")
+  Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    SetGlobal("a7-ch3_hostile","MYAREA",0)
+    ChangeEnemyAlly(Myself,GOODBUTRED)
+    DisplayStringHead(Myself,@612)  // I've calmed down.
+END
+
+// Default actions
+IF
+  Allegiance(Myself,ENEMY)
+  See([PC])
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  OR(2)
+    See([FAMILIAR])
+    See([CONTROLLED])
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #50
+    RandomWalk()
+  RESPONSE #25
+    RandomTurn()
+  RESPONSE #25
+    NoAction()
+END

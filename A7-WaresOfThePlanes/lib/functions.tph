@@ -30,6 +30,47 @@ END
 
 
 /**
+ * Returns an array with all available global BALDUR.BCS script resrefs for the current game.
+ *
+ * RET num_scripts            Number of scripts stored in the returned script array.
+ * RET_ARRAY script_resrefs   Indexed array with "num_scripts" global script resrefs.
+ */
+DEFINE_DIMORPHIC_FUNCTION get_baldur_scripts
+RET
+  num_scripts
+RET_ARRAY
+  script_resrefs
+BEGIN
+  OUTER_SET num_scripts = 0
+
+  // collecting hardcoded scripts
+  ACTION_FOR_EACH resref IN ~baldur~ ~baldur25~ BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resref%.bcs~) BEGIN
+      OUTER_SET $map(~%resref%~) = 1
+    END
+  END
+
+  // collecting custom scripts
+  COPY_EXISTING ~campaign.2da~ ~override~
+    READ_2DA_ENTRIES_NOW ~campaign_table~ 1
+    FOR (row = 3; row < campaign_table; ++row) BEGIN
+      READ_2DA_ENTRY_FORMER ~campaign_table~ row 1 resref
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%resref%.BCS~) BEGIN
+        TO_LOWER ~resref~
+        SET $map(~%resref%~) = 1
+      END
+    END
+  BUT_ONLY IF_EXISTS
+
+  // generating output array
+  ACTION_PHP_EACH map AS resref => _ BEGIN
+    OUTER_SPRINT $script_resrefs(~%num_scripts%~) ~%resref%~
+    OUTER_SET num_scripts += 1
+  END
+END
+
+
+/**
  * Performs standard operations on the current item resource.
  * Standard operation includes:
  * - Updating item name (general, identified)
@@ -846,6 +887,38 @@ BEGIN
       COPY_EXISTING ~xplist.2da~ ~override~
         PRETTY_PRINT_2DA
       BUT_ONLY
+    END
+  END
+END
+
+
+/**
+ * Replaces creature equipment according to the specified replacement array.
+ *
+ * STR_VAR replace_array  Name of the associative array with resrefs of items to replace mapping to
+ *                        replacement item resrefs. Resref strings must be defined in all uppercase.
+ * RET count              Number of replaced item instances.
+ */
+DEFINE_PATCH_FUNCTION replace_cre_equipment
+STR_VAR
+  replace_array = ~~
+RET
+  count
+BEGIN
+  SET count = 0
+  READ_ASCII 0 sig (8)
+  PATCH_IF (NOT ~%replace_array%~ STR_EQ ~~ && ~%sig%~ STR_EQ ~CRE V1.0~) BEGIN
+    READ_LONG 0x2bc ofs_items
+    READ_LONG 0x2c0 num_items
+    FOR (i = 0; i < num_items; ++i) BEGIN
+      SET cur_ofs = ofs_items + (i * 20)
+      READ_ASCII cur_ofs resref (8) NULL
+      TO_UPPER ~resref~
+      PATCH_IF (VARIABLE_IS_SET $~%replace_array%~(~%resref%~)) BEGIN
+        SPRINT new_resref $~%replace_array%~(~%resref%~)
+        WRITE_ASCIIE cur_ofs ~%new_resref%~ (8)
+        SET count += 1
+      END
     END
   END
 END

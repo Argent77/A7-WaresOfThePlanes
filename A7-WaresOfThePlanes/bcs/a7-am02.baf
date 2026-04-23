@@ -1,0 +1,56 @@
+// "Summon Rogue" script
+
+IF
+  Global("A7-MaskRogueLevel","GLOBAL",1)
+  !Global("A7-SummonMaskRogue","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("A7-SummonMaskRogue","GLOBAL",0)
+    Deactivate("A7-MaskRogue1")
+    MoveGlobalObject("A7-MaskRogue1",Myself)
+    ApplySpellRES("a7-rogs","A7-MaskRogue1") // restoration
+    SmallWait(1)
+    ActionOverride("A7-MaskRogue1",SetGlobal("summoning","LOCALS",1))
+    DestroySelf()
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-MaskRogueLevel","GLOBAL",2)
+  !Global("A7-SummonMaskRogue","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("A7-SummonMaskRogue","GLOBAL",0)
+    Deactivate("A7-MaskRogue2")
+    MoveGlobalObject("A7-MaskRogue2",Myself)
+    ApplySpellRES("a7-rogs","A7-MaskRogue2") // restoration
+    SmallWait(1)
+    ActionOverride("A7-MaskRogue2",SetGlobal("summoning","LOCALS",1))
+    DestroySelf()
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("A7-MaskRogueLevel","GLOBAL",3)
+  !Global("A7-SummonMaskRogue","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("A7-SummonMaskRogue","GLOBAL",0)
+    Deactivate("A7-MaskRogue3")
+    MoveGlobalObject("A7-MaskRogue3",Myself)
+    ApplySpellRES("a7-rogs","A7-MaskRogue3") // restoration
+    SmallWait(1)
+    ActionOverride("A7-MaskRogue3",SetGlobal("summoning","LOCALS",1))
+    DestroySelf()
+    SetInterrupt(TRUE)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    DestroySelf()
+END

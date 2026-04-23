@@ -1,0 +1,85 @@
+// Eyes of Mask: Summoned Rogue behavior script
+
+// Dead body doesn't persist
+IF
+  Die()
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+// Execute summoning effect
+IF
+  !Global("summoning","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("summoning","LOCALS",0)
+    SetSequence(SEQ_TWITCH)
+    Activate(Myself)
+    MakeUnselectable(2)
+    MoveToOffset([0.0])
+    CreateVisualEffectObject("SPPORTAL",Myself)
+    Wait(1)
+    SetSequence(SEQ_AWAKE)
+    ChangeEnemyAlly(Myself,FAMILIAR)
+    ApplySpellRES("a7-rogx",Myself)  // delayed "unsummoning" effect
+    SetInterrupt(TRUE)
+END
+
+// Don't range too far
+IF
+  !Range(Player1,30)
+  !Range(Player2,30)
+  !Range(Player3,30)
+  !Range(Player4,30)
+  !Range(Player5,30)
+  !Range(Player6,30)
+  !Range(Familiar,30)
+  InMyArea(LastSummonerOf(Myself))
+THEN
+  RESPONSE #100
+    MoveToObject(LastSummonerOf(Myself))
+END
+
+IF
+  !Range(Player1,30)
+  !Range(Player2,30)
+  !Range(Player3,30)
+  !Range(Player4,30)
+  !Range(Player5,30)
+  !Range(Player6,30)
+  !Range(Familiar,30)
+  !InMyArea(LastSummonerOf(Myself))
+THEN
+  RESPONSE #100
+    MoveToObject(Player1)
+END
+
+
+// Performing basic thief actions
+IF
+  ActionListEmpty()
+  !Allegiance(Myself,ENEMY)
+  !ModalState(DETECTTRAPS)
+  !ModalState(STEALTH)
+THEN
+  RESPONSE #100
+    FindTraps()
+END
+
+IF
+  ActionListEmpty()
+  !Allegiance(Myself,ENEMY)
+  !GlobalTimerNotExpired("hidetimer","LOCALS")
+  !StateCheck(Myself,STATE_INVISIBLE)
+  !StateCheck(Myself,STATE_BLIND)
+  !ModalState(DETECTTRAPS)
+  !ModalState(STEALTH)
+  !Range(NearestEnemyOf(Myself),30)
+  !ButtonDisabled(BUTTON_STEALTH)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("hidetimer","LOCALS",ONE_ROUND)
+    Hide()
+END

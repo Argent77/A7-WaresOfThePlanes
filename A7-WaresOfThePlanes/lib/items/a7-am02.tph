@@ -1,0 +1,405 @@
+// Item: Eyes of Mask
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+INCLUDE ~%MOD_FOLDER%/lib/add_areas_lua.tpa~
+
+OUTER_SPRINT itm_resref ~a7-am02~
+OUTER_SPRINT itm_resref_upper ~%itm_resref%~
+ACTION_TO_UPPER ~itm_resref_upper~
+
+// Installing item
+COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+  LPF update_item_generic
+    STR_VAR
+      itm_resref
+    RET
+      icon_resref
+      desc_image_resref
+  END
+
+// Installing associated resources
+LAF install_item_resources_generic
+STR_VAR
+  itm_resref
+  icon_resref
+  desc_image_resref
+END
+
+COPY ~%MOD_FOLDER%/eff/%itm_resref%r.eff~ ~override~
+     ~%MOD_FOLDER%/eff/%itm_resref%s.eff~ ~override~
+     ~%MOD_FOLDER%/eff/%itm_resref%x.eff~ ~override~
+
+LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+  OUTER_SET index = 20
+  ACTION_FOR_EACH suffix IN ~a~ ~b~ ~c~ BEGIN
+    OUTER_SET tra_name = index
+    OUTER_SET tra_desc = index + 1
+    OUTER_SET index += 2
+    COPY ~%MOD_FOLDER%/itm/%itm_resref%%suffix%.itm~ ~override~
+      SAY NAME1 @0  // Decorated Mask
+      SAY NAME2 (AT ~tra_name~)
+      SAY UNIDENTIFIED_DESC @10
+      SAY IDENTIFIED_DESC (AT ~tra_desc~)
+  END
+
+  // making items conversable
+  COMPILE ~%MOD_FOLDER%/dlg/%itm_resref%.d~
+
+  OUTER_SET inspect_strref = RESOLVE_STR_REF(@112)  // inspect
+  OUTER_SET unlock_strref = RESOLVE_STR_REF(@100)   // unlock
+  ACTION_FOR_EACH suffix IN ~~ ~A~ ~B~ BEGIN
+    OUTER_SPRINT resref ~%itm_resref_upper%%suffix%~
+    OUTER_SET strref = (~%suffix%~ STR_EQ ~~) ? inspect_strref : unlock_strref
+    APPEND ~itemdial.2da~ ~%resref%      %strref%   %resref%~
+  END
+  COPY_EXISTING ~itemdial.2da~ ~override~ PRETTY_PRINT_2DA BUT_ONLY
+
+  // adding ability tooltips
+  OUTER_SET abil_strref = RESOLVE_STR_REF(@101)  // Summon Thief
+  ACTION_FOR_EACH suffix IN ~A~ ~B~ ~C~ BEGIN
+    APPEND ~tooltip.2da~ ~%itm_resref_upper%%suffix%    %abil_strref%      -1         -1~
+  END
+  COPY_EXISTING ~tooltip.2da~ ~override~ PRETTY_PRINT_2DA BUT_ONLY
+
+  // helper creature
+  COPY ~%MOD_FOLDER%/cre/a7-am02.cre~ ~override~
+  COMPILE ~%MOD_FOLDER%/bcs/a7-am02.baf~
+
+  // Installing custom thief animation: disabled chunking, non-red blood splatters, no body heat
+  OUTER_SPRINT thief_ini_resref ~5300~
+  OUTER_SET thief_id = 0x5300
+  OUTER_FOR (i = 0x5300; i < 0x5400; ++i) BEGIN
+    OUTER_PATCH ~~ BEGIN SPRINTF resref ~%x~ (i) END
+    OUTER_PATCH_SAVE resref ~%resref%~ BEGIN DELETE_BYTES 0 2 END
+    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%resref%.ini~) BEGIN
+      OUTER_SPRINT thief_ini_resref ~%resref%~
+      OUTER_SET thief_id = i
+      OUTER_SET i = 0x5400
+    END
+  END
+  ACTION_IF (thief_id != 0x5300) BEGIN
+    COPY_EXISTING ~5300.ini~ ~override/%thief_ini_resref%.ini~
+      REPLACE_TEXTUALLY ~^//[ %TAB%]*CHMT.*~ ~// CHMT a7_ghostly_thief_male_human~
+      REPLACE_TEXTUALLY ~^color_chunks=.*~ ~color_chunks=255~
+      REPLACE_TEXTUALLY ~^color_blood=.*~ ~color_blood=34~
+      REPLACE_TEXTUALLY ~^detected_by_infravision=.*~ ~detected_by_infravision=0~
+    APPEND ~animate.ids~ ~0x%thief_ini_resref% A7_GHOSTLY_THIEF_MALE_HUMAN~
+  END ELSE BEGIN
+    WARN @50  // WARNING: No free slot found for custom thief animation. Using default animation.
+  END
+
+  // creature equipment replacement array for BGEE
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY equip_array BEGIN
+    ~SW1H25~ => ~SW1H09~
+    ~LEAT14~ => ~LEAT08~
+    ~SW1H75~ => ~SW1H55~
+    ~SW1H29~ => ~SW1H09~
+  END
+
+  // creature consumable replacement array (all games)
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_array BEGIN
+    ~POTN08~ => ~A7-RPO08~
+    ~POTN10~ => ~A7-RPO10~
+    ~POTN52~ => ~A7-RPO52~
+    ~POTN55~ => ~A7-RPO55~
+  END
+
+  // creating rechargeable versions of potions for the summoned thieves
+  ACTION_PHP_EACH potion_array AS resref => new_resref BEGIN
+    COPY_EXISTING ~%resref%.ITM~ ~override/%new_resref%.ITM~
+      WRITE_SHORT 0x38 1  // # in stack
+      READ_LONG 0x64 ofs_abil
+      READ_SHORT 0x68 num_abil
+      FOR (i = 0; i < num_abil; ++i) BEGIN
+        SET cur_ofs = ofs_abil + i * 56
+        WRITE_SHORT (cur_ofs + 0x22) 5  // # charges
+        WRITE_SHORT (cur_ofs + 0x24) 3  // Item recharges
+        WRITE_LONG (cur_ofs + 0x26) (THIS | BIT11)  // Recharge after resting
+      END
+  END
+
+  // summon thieves
+  COPY ~%MOD_FOLDER%/cre/a7-rog1.cre~ ~override~
+       ~%MOD_FOLDER%/cre/a7-rog2.cre~ ~override~
+       ~%MOD_FOLDER%/cre/a7-rog3.cre~ ~override~
+    SAY NAME1 @102  // Ghostly Thief
+    SAY NAME2 @102  // Ghostly Thief
+    WRITE_LONG 0x28 thief_id
+    PATCH_IF (NOT has_bg2) BEGIN
+      LPF replace_cre_equipment STR_VAR replace_array = ~equip_array~ END
+    END
+    LPF replace_cre_equipment STR_VAR replace_array = ~potion_array~ END
+
+  COMPILE ~%MOD_FOLDER%/bcs/a7-rog.baf~
+
+  COPY ~%MOD_FOLDER%/spl/a7-rogs.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-rogx.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-rogy.spl~ ~override~
+
+  LAF get_baldur_scripts RET num_scripts RET_ARRAY script_resrefs END
+  OUTER_FOR (i = 0; i < num_scripts; ++i) BEGIN
+    OUTER_SPRINT script $script_resrefs(~%i%~)
+    EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/bcs/a7-am02-baldur_top.baf~
+  END
+
+  // challenges
+  COPY ~%MOD_FOLDER%/cre/a7-voice.cre~ ~override~
+    SAY NAME1 @103  // Disembodied Voice
+    SAY NAME2 @103  // Disembodied Voice
+
+  COMPILE ~%MOD_FOLDER%/dlg/a7-voice.d~
+
+  COMPILE ~%MOD_FOLDER%/bcs/a7-emct1.baf~
+          ~%MOD_FOLDER%/bcs/a7-emct2.baf~
+          ~%MOD_FOLDER%/bcs/a7-emct3.baf~
+
+  // challenge 1
+  COPY ~%MOD_FOLDER%/cre/a7-ch1ra.cre~ ~override~
+       ~%MOD_FOLDER%/cre/a7-ch1rb.cre~ ~override~
+       ~%MOD_FOLDER%/cre/a7-ch1rc.cre~ ~override~
+    SAY NAME1 @104  // Rogue
+    SAY NAME2 @104  // Rogue
+    PATCH_IF (NOT has_bg2) BEGIN
+      LPF replace_cre_equipment STR_VAR replace_array = ~equip_array~ END
+    END
+
+  COPY ~%MOD_FOLDER%/eff/a7-ch1rx.eff~ ~override~
+       ~%MOD_FOLDER%/spl/a7-ch1rx.spl~ ~override~
+
+  COMPILE ~%MOD_FOLDER%/bcs/a7-chrog.baf~
+
+  // challenge 2
+  COPY ~%MOD_FOLDER%/bam/a7-i528.bam~  ~override~
+       ~%MOD_FOLDER%/bam/a7-i529.bam~  ~override~
+       ~%MOD_FOLDER%/bam/a7-i530.bam~  ~override~
+       ~%MOD_FOLDER%/bam/a7-i531.bam~  ~override~
+       ~%MOD_FOLDER%/bam/a7-c528.bam~  ~override~
+       ~%MOD_FOLDER%/bam/a7-c529.bam~  ~override~
+       ~%MOD_FOLDER%/bam/a7-c530.bam~  ~override~
+       ~%MOD_FOLDER%/bam/a7-c531.bam~  ~override~
+       ~%MOD_FOLDER%/eff/a7-ch2k.eff~  ~override~
+       ~%MOD_FOLDER%/spl/a7-ch2rx.spl~ ~override~
+
+  COPY ~%MOD_FOLDER%/itm/a7-ch2k1.itm~ ~override~
+    SAY NAME1 @550  // First Stone Fragment
+    SAY NAME2 @550  // First Stone Fragment
+    SAY IDENTIFIED_DESC @553
+
+  COPY ~%MOD_FOLDER%/itm/a7-ch2k2.itm~ ~override~
+    SAY NAME1 @551  // Second Stone Fragment
+    SAY NAME2 @551  // Second Stone Fragment
+    SAY IDENTIFIED_DESC @553
+
+  COPY ~%MOD_FOLDER%/itm/a7-ch2k3.itm~ ~override~
+    SAY NAME1 @552  // Third Stone Fragment
+    SAY NAME2 @552  // Third Stone Fragment
+    SAY IDENTIFIED_DESC @553
+
+  COPY ~%MOD_FOLDER%/itm/a7-ch2k.itm~ ~override~
+    SAY NAME1 @555  // Assembled Icon of Mask
+    SAY NAME2 @555  // Assembled Icon of Mask
+    SAY IDENTIFIED_DESC @556
+
+  COPY ~%MOD_FOLDER%/cre/a7-ch2r.cre~ ~override~
+    SAY NAME1 @104  // Rogue
+    SAY NAME2 @104  // Rogue
+
+  COMPILE ~%MOD_FOLDER%/dlg/a7-ch2r.d~
+
+  COMPILE ~%MOD_FOLDER%/bcs/a7-ch2r.baf~
+          ~%MOD_FOLDER%/bcs/a7-ch2t1.baf~
+          ~%MOD_FOLDER%/bcs/a7-ch2k1.baf~
+          ~%MOD_FOLDER%/bcs/a7-ch2k2.baf~
+          ~%MOD_FOLDER%/bcs/a7-ch2k3.baf~
+
+  // challenge 3
+  COPY ~%MOD_FOLDER%/cre/a7-ch3r1.cre~ ~override~
+       ~%MOD_FOLDER%/cre/a7-ch3r2.cre~ ~override~
+    SAY NAME1 @104  // Rogue
+    SAY NAME2 @104  // Rogue
+
+  COMPILE ~%MOD_FOLDER%/bcs/a7-ch3r.baf~
+          ~%MOD_FOLDER%/bcs/a7-ch3r1.baf~
+          ~%MOD_FOLDER%/bcs/a7-ch3r2.baf~
+          ~%MOD_FOLDER%/bcs/a7-ch3r3.baf~
+          ~%MOD_FOLDER%/bcs/a7-ch3r4.baf~
+          ~%MOD_FOLDER%/bcs/a7-ch3r5.baf~
+          ~%MOD_FOLDER%/bcs/a7-ch3r6.baf~
+          ~%MOD_FOLDER%/bcs/a7-ch3r7.baf~
+          ~%MOD_FOLDER%/bcs/a7-ch3r8.baf~
+          ~%MOD_FOLDER%/bcs/a7-ch3r9.baf~
+
+  // generating dialog with hints for the rogues
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY ch3_hints BEGIN
+    // rogue_index, hint_index => tra_ref
+    // position 1
+    0 => 4
+    0, 1 => 601
+    0, 2 => 602
+    0, 3 => 606
+    0, 4 => 608
+
+    // position 2
+    1 => 5
+    1, 1 => 600
+    1, 2 => 601
+    1, 3 => 603
+    1, 4 => 604
+    1, 5 => 608
+
+    // position 3
+    2 => 5
+    2, 1 => 600
+    2, 2 => 601
+    2, 3 => 602
+    2, 4 => 604
+    2, 5 => 608
+
+    // position 4
+    3 => 6
+    3, 1 => 600
+    3, 2 => 601
+    3, 3 => 603
+    3, 4 => 605
+    3, 5 => 606
+    3, 6 => 608
+
+    // position 5
+    4 => 5
+    4, 1 => 600
+    4, 2 => 601
+    4, 3 => 602
+    4, 4 => 604
+    4, 5 => 607
+
+    // position 6
+    5 => 5
+    5, 1 => 600
+    5, 2 => 601
+    5, 3 => 603
+    5, 4 => 605
+    5, 5 => 609
+
+    // position 7
+    6 => 5
+    6, 1 => 600
+    6, 2 => 601
+    6, 3 => 602
+    6, 4 => 604
+    6, 5 => 609
+
+    // position 8
+    7 => 5
+    7, 1 => 600
+    7, 2 => 601
+    7, 3 => 603
+    7, 4 => 605
+    7, 5 => 609
+
+    // position 9
+    8 => 5
+    8, 1 => 600
+    8, 2 => 602
+    8, 3 => 605
+    8, 4 => 606
+    8, 5 => 609
+  END
+
+<<<<<<<< .../inlined/A7-WaresOfThePlanes/a7-am02/ch3_rogue_hint.d
+APPEND ~a7-ch3r~
+  IF ~Global("a7-ch3_start_index","MYAREA",%start_index%) Specifics(Myself,%rogue_specifics%) RandomNum(%random_max%,%random_num%)~ Hint
+    SAY #%hint_strref%
+    IF ~~ EXIT
+  END
+END
+>>>>>>>>
+  OUTER_SET num_rogues = 9
+  OUTER_SET rogue_specifics_base = 150
+  OUTER_FOR (i = 0; i < num_rogues; ++i) BEGIN
+    OUTER_SET start_index = i + 1
+    OUTER_FOR (j = 0; j < num_rogues; ++j) BEGIN
+      OUTER_SET rogue_index = j + 1
+      OUTER_SET rogue_specifics = rogue_specifics_base + rogue_index
+      OUTER_SET array_index = (num_rogues + j - i) MODULO num_rogues
+      OUTER_SET random_max = $ch3_hints(~%array_index%~)
+      OUTER_FOR (k = 0; k < random_max; ++k) BEGIN
+        OUTER_SET random_num = k + 1
+        OUTER_SET tra_ref = $ch3_hints(~%array_index%~ ~%random_num%~)
+        OUTER_SET hint_strref = RESOLVE_STR_REF((AT "tra_ref"))
+        COMPILE EVAL ~.../inlined/A7-WaresOfThePlanes/a7-am02/ch3_rogue_hint.d~
+      END
+    END
+  END
+
+  // installing area
+  COPY ~%MOD_FOLDER%/bam/a7wp04pt.bam~ ~override~
+       ~%MOD_FOLDER%/bmp/a7wp04ht.bmp~ ~override~
+       ~%MOD_FOLDER%/bmp/a7wp04lm.bmp~ ~override~
+       ~%MOD_FOLDER%/bmp/a7wp04sr.bmp~ ~override~
+       ~%MOD_FOLDER%/ini/a7wp04.ini~ ~override~
+       ~%MOD_FOLDER%/pvrz/awp0400.pvrz~ ~override~
+       ~%MOD_FOLDER%/pvrz/awp0401.pvrz~ ~override~
+       ~%MOD_FOLDER%/pvrz/awp0402.pvrz~ ~override~
+       ~%MOD_FOLDER%/pvrz/awp0403.pvrz~ ~override~
+       ~%MOD_FOLDER%/tis/a7wp04.tis~ ~override~
+       ~%MOD_FOLDER%/wav/a7wp04.wav~ ~override~
+       ~%MOD_FOLDER%/wav/a7wp04a.wav~ ~override~
+       ~%MOD_FOLDER%/wav/a7wp04b.wav~ ~override~
+       ~%MOD_FOLDER%/wav/a7wp04c.wav~ ~override~
+       ~%MOD_FOLDER%/wav/a7wp04d.wav~ ~override~
+       ~%MOD_FOLDER%/wav/a7wp04e.wav~ ~override~
+       ~%MOD_FOLDER%/wav/a7wp04f.wav~ ~override~
+       ~%MOD_FOLDER%/wav/a7wp04g.wav~ ~override~
+       ~%MOD_FOLDER%/wav/a7wp04h.wav~ ~override~
+       ~%MOD_FOLDER%/wav/a7wp04i.wav~ ~override~
+       ~%MOD_FOLDER%/wav/a7wp04j.wav~ ~override~
+       ~%MOD_FOLDER%/wav/a7wp04k.wav~ ~override~
+       ~%MOD_FOLDER%/wav/a7wp04l.wav~ ~override~
+       ~%MOD_FOLDER%/wav/a7wp04m.wav~ ~override~
+       ~%MOD_FOLDER%/wed/a7wp04.wed~ ~override~
+       ~%MOD_FOLDER%/spl/a7-ch2t1.spl~ ~override~
+
+  COPY ~%MOD_FOLDER%/wbm/a7wp04dn.wbm~ ~movies~
+
+  COMPILE ~%MOD_FOLDER%/bcs/a7wp04.baf~
+          ~%MOD_FOLDER%/bcs/a7wp4tel.baf~
+
+  ACTION_IF (NOT is_eet && (has_bg || has_sod)) BEGIN
+    OUTER_SET song_id = IDS_OF_SYMBOL(~songlist~ ~CNite~)
+    OUTER_SET song_battle_id = IDS_OF_SYMBOL(~songlist~ ~BD2~)
+  END ELSE BEGIN
+    OUTER_SET song_id = IDS_OF_SYMBOL(~songlist~ ~Area1400~)
+    OUTER_SET song_battle_id = IDS_OF_SYMBOL(~songlist~ ~BJR~)
+  END
+
+  COPY ~%MOD_FOLDER%/are/a7wp04.are~ ~override~
+    READ_LONG 0xbc ofs_songs
+    WRITE_LONG (ofs_songs + 0x00) song_id
+    WRITE_LONG (ofs_songs + 0x04) song_id
+    WRITE_LONG (ofs_songs + 0x0c) song_battle_id
+
+  // registering entry point
+  COPY_EXISTING ~entries.2da~ ~override~
+    READ_2DA_ENTRIES_NOW entries_table 1
+    FOR (num_cols = 0; VARIABLE_IS_SET $entries_table(~2~ ~%num_cols%~); ++num_cols) BEGIN END
+    SPRINT line ~A7WP04 1095.780~
+    FOR (i = 1; i < num_cols; ++i) BEGIN
+      SPRINT line ~%line% *~
+    END
+  BUT_ONLY
+  APPEND ~entries.2da~ ~%line%~
+  COPY_EXISTING ~entries.2da~ ~override~ PRETTY_PRINT_2DA BUT_ONLY
+
+  // adding area name to debug menu
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY area_lua BEGIN
+    ~A7WP04~ => ~"Trials of Mask" Arena (Wares of the Planes)~
+  END
+  LAF add_areas_lua
+    INT_VAR bg1 = 1 sod = 1 soa = 1 tob = 1
+    STR_VAR map_array = ~area_lua~
+  END
+
+  // registering journal entries
+  ADD_JOURNAL @1000 @1001 @1010 @1011 @1012 @1020 @1021
+END

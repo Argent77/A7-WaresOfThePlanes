@@ -114,6 +114,8 @@ BEGIN
                     SET strref = RESOLVE_STR_REF("%desc%")
                     SPRINT line ~%indent%{"%resref%", %strref%},%WNL%~
                   END ELSE BEGIN
+                    // Double quotes inside the string must be escaped
+                    INNER_PATCH_SAVE desc ~%desc%~ BEGIN REPLACE_TEXTUALLY ~"~ ~\"~ END
                     SPRINT line ~%indent%{"%resref%", "%desc%"},%WNL%~
                   END
                   SET len = STRING_LENGTH "%line%"

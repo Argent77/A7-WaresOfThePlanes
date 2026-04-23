@@ -1,0 +1,80 @@
+// Eyes of Mask: Teleporter trigger
+
+// After winning challenge 1
+IF
+  Global("A7-MaskChallenge","GLOBAL",1)
+  WalkedToTrigger([PC])
+  HasItem("a7-am02",LastTrigger)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    ActionOverride(LastTrigger,TransformItem("a7-am02","a7-am02a"))
+    CreateVisualEffectObject("SPDHRMNY",LastTrigger)
+    DisplayStringPoint([886.720],@107)  // A bright flash of light emits from the Eyes of Mask as some of the dormant powers awaken.
+    AddexperienceParty(1000)
+    Wait(4)
+    EraseJournalEntry(@1000)
+    AddJournalEntry(@1001,QUEST)
+    StartCutScene("a7-emct3")
+END
+
+// After winning challenge 2
+IF
+  Global("A7-MaskChallenge","GLOBAL",2)
+  WalkedToTrigger([PC])
+  HasItem("a7-am02a",LastTrigger)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    ActionOverride(LastTrigger,TransformItem("a7-am02a","a7-am02b"))
+    CreateVisualEffectObject("SPDHRMNY",LastTrigger)
+    DisplayStringPoint([886.720],@107)  // A bright flash of light emits from the Eyes of Mask as some of the dormant powers awaken.
+    AddexperienceParty(4000)
+    Wait(4)
+    EraseJournalEntry(@1011)
+    AddJournalEntry(@1012,QUEST)
+    StartCutScene("a7-emct3")
+END
+
+// After winning challenge 3
+IF
+  Global("A7-MaskChallenge","GLOBAL",3)
+  WalkedToTrigger([PC])
+  HasItem("a7-am02b",LastTrigger)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    ActionOverride(LastTrigger,TransformItem("a7-am02b","a7-am02c"))
+    CreateVisualEffectObject("SPDHRMNY",LastTrigger)
+    DisplayStringPoint([886.720],@107)  // A bright flash of light emits from the Eyes of Mask as some of the dormant powers awaken.
+    AddexperienceParty(16000)
+    Wait(4)
+    EraseJournalEntry(@1020)
+    AddJournalEntry(@1021,QUEST_DONE)
+    StartCutScene("a7-emct3")
+END
+
+// Key item required
+IF
+  WalkedToTrigger([PC])
+  !HasItem("a7-am02",LastTrigger)
+  !HasItem("a7-am02a",LastTrigger)
+  !HasItem("a7-am02b",LastTrigger)
+THEN
+  RESPONSE #100
+    DisplayStringPoint([886.720],@105)  // The portal can only be used with the Eyes of Mask in your possession.
+END
+
+// Failsafe option
+IF
+  WalkedToTrigger([ANYONE])
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    MoveViewPoint([886.780],INSTANT)
+    StartCutScene("a7-emct3")
+END

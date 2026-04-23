@@ -1,0 +1,207 @@
+// Eyes of Mask: Trials area script
+
+// Challenge won: Teleporter activation
+IF
+  Global("a7-challenge-won","MYAREA",1)
+  !ActuallyInCombat()
+THEN
+  RESPONSE #100
+    SetGlobal("a7-challenge-won","MYAREA",0)
+    ClearAllActions()
+    StartCutSceneMode()
+    CreateCreature("cutspy",[886.780],0)
+    MoveViewPoint([886.780],INSTANT)
+    AmbientActivate("AMB_Teleporter",TRUE)
+    PlaySound("EFF_M09")
+    Wait(1)
+    SmallWait(12)
+    StaticSequence("AMB_Teleporter",1)
+    TriggerActivation("Teleporter",TRUE)
+    Wait(1)
+    MoveViewObject(Player1,INSTANT)
+    EndCutSceneMode()
+END
+
+// Challenge 1
+IF
+  Global("A7-MaskChallenge","GLOBAL",1)
+  Global("a7-ch1_start","MYAREA",1)
+  Global("a7-ch1_duel_init","MYAREA",0)
+  XPLT(Player1,100000)
+THEN
+  RESPONSE #100
+    SetGlobal("a7-ch1_duel_init","MYAREA",1)
+    CreateCreature("a7-ch1ra",[880.940],NE) // low-level rogue
+END
+
+IF
+  Global("A7-MaskChallenge","GLOBAL",1)
+  Global("a7-ch1_duel_init","MYAREA",0)
+  !XPLT(Player1,100000)
+  XPLT(Player1,1500000)
+THEN
+  RESPONSE #100
+    SetGlobal("a7-ch1_duel_init","MYAREA",1)
+    CreateCreature("a7-ch1rb",[880.940],NE) // mid-level rogue
+END
+
+IF
+  Global("A7-MaskChallenge","GLOBAL",1)
+  Global("a7-ch1_duel_init","MYAREA",0)
+  !XPLT(Player1,1500000)
+THEN
+  RESPONSE #100
+    SetGlobal("a7-ch1_duel_init","MYAREA",1)
+    CreateCreature("a7-ch1rc",[880.940],NE) // high-level rogue
+END
+
+IF
+  Global("A7-MaskChallenge","GLOBAL",1)
+  Global("a7-ch1_duel_won","MYAREA",0)
+  Dead("A7-Ch1Duel")
+THEN
+  RESPONSE #100
+    SetGlobal("a7-ch1_duel_won","MYAREA",1)
+    SetGlobal("a7-challenge-won","MYAREA",1)
+    SetGlobal("A7-MaskRogueLevel","GLOBAL",1)
+END
+
+// Challenge 2
+IF
+  Global("A7-MaskChallenge","GLOBAL",2)
+  Global("a7-ch2_start","MYAREA",1)
+  Global("a7-ch2_init","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("a7-ch2_init","MYAREA",1)
+    TriggerActivation("Ch2_Key1",TRUE)
+    TriggerActivation("Ch2_Key2",TRUE)
+    TriggerActivation("Ch2_Key3",TRUE)
+    TriggerActivation("Ch2_Trap1",TRUE)
+    TriggerActivation("Ch2_Trap2",TRUE)
+    TriggerActivation("Ch2_Trap3",TRUE)
+    TriggerActivation("Ch2_Trap4",TRUE)
+    TriggerActivation("Ch2_Trap5",TRUE)
+    TriggerActivation("Ch2_Trap6",TRUE)
+    TriggerActivation("Ch2_Trap7",TRUE)
+    TriggerActivation("Ch2_Trap8",TRUE)
+    TriggerActivation("Ch2_Trap9",TRUE)
+    TriggerActivation("Ch2_Trap10",TRUE)
+    TriggerActivation("Ch2_Trap11",TRUE)
+    CreateCreature("a7-ch2r",[989.1057],S)
+END
+
+IF
+  Global("A7-MaskChallenge","GLOBAL",2)
+  Global("a7-ch2_key","MYAREA",0)
+  HasItem("a7-ch2k1",Player1)
+  HasItem("a7-ch2k2",Player1)
+  HasItem("a7-ch2k3",Player1)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    SetGlobal("a7-ch2_key","MYAREA",1)
+    ClearAllActions()
+    ActionOverride(Player1,DestroyItem("a7-ch2k1"))
+    ActionOverride(Player1,DestroyItem("a7-ch2k2"))
+    ActionOverride(Player1,DestroyItem("a7-ch2k3"))
+    ActionOverride(Player1,CreateItem("a7-ch2k",1,0,0))
+    DisplayStringHead(Player1,@580) // The stone fragments transformed into the Icon of Mask. Use it to complete the challenge.
+    EraseJournalEntry(@1010)
+    AddJournalEntry(@1011,QUEST)
+    TriggerActivation("Ch2_Key1",FALSE)
+    TriggerActivation("Ch2_Key2",FALSE)
+    TriggerActivation("Ch2_Key3",FALSE)
+    TriggerActivation("Ch2_Trap1",FALSE)
+    TriggerActivation("Ch2_Trap2",FALSE)
+    TriggerActivation("Ch2_Trap3",FALSE)
+    TriggerActivation("Ch2_Trap4",FALSE)
+    TriggerActivation("Ch2_Trap5",FALSE)
+    TriggerActivation("Ch2_Trap6",FALSE)
+    TriggerActivation("Ch2_Trap7",FALSE)
+    TriggerActivation("Ch2_Trap8",FALSE)
+    TriggerActivation("Ch2_Trap9",FALSE)
+    TriggerActivation("Ch2_Trap10",FALSE)
+    TriggerActivation("Ch2_Trap11",FALSE)
+    ApplySpellRES("a7-ch2rx","a7-ch2r")
+    EndCutSceneMode()
+END
+
+IF
+  Global("A7-MaskChallenge","GLOBAL",2)
+  Global("a7-ch2_key","MYAREA",1)
+  TriggerOverride(Player1,Global("a7-ch2_key_used","LOCALS",1))
+THEN
+  RESPONSE #100
+    SetGlobal("a7-ch2_key","MYAREA",2)
+    SetGlobal("a7-challenge-won","MYAREA",1)
+    SetGlobal("A7-MaskRogueLevel","GLOBAL",2)
+END
+
+// Challenge 3
+IF
+  Global("A7-MaskChallenge","GLOBAL",3)
+  Global("a7-ch3_start","MYAREA",1)
+  Global("a7-ch3_spawn_rogues","MYAREA",0)
+THEN
+  RESPONSE #10
+    SetGlobal("a7-ch3_start_index","MYAREA",1)
+    Continue()
+  RESPONSE #10
+    SetGlobal("a7-ch3_start_index","MYAREA",2)
+    Continue()
+  RESPONSE #10
+    SetGlobal("a7-ch3_start_index","MYAREA",3)
+    Continue()
+  RESPONSE #10
+    SetGlobal("a7-ch3_start_index","MYAREA",4)
+    Continue()
+  RESPONSE #10
+    SetGlobal("a7-ch3_start_index","MYAREA",5)
+    Continue()
+  RESPONSE #10
+    SetGlobal("a7-ch3_start_index","MYAREA",6)
+    Continue()
+  RESPONSE #10
+    SetGlobal("a7-ch3_start_index","MYAREA",7)
+    Continue()
+  RESPONSE #10
+    SetGlobal("a7-ch3_start_index","MYAREA",8)
+    Continue()
+  RESPONSE #10
+    SetGlobal("a7-ch3_start_index","MYAREA",9)
+    Continue()
+END
+
+IF
+  Global("A7-MaskChallenge","GLOBAL",3)
+  Global("a7-ch3_spawn_rogues","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("a7-ch3_spawn_rogues","MYAREA",1)
+    SetGlobal("a7-ch3_current_index","MYAREA",1)
+    SetGlobalTimer("a7_ch3_spawn_timer","MYAREA",2)
+    SetGlobal("A7_CH3_ROGUE_SPAWN","MYAREA",1)
+    Continue()
+END
+
+IF
+  Global("A7-MaskChallenge","GLOBAL",3)
+  Global("a7-ch3_spawn_rogues","MYAREA",1)
+  GlobalTimerExpired("a7_ch3_spawn_timer","MYAREA")
+THEN
+  RESPONSE #100
+    SetGlobal("a7-ch3_spawn_rogues","MYAREA",2)
+    SetGlobal("A7_CH3_ROGUE_SPAWN","MYAREA",0)
+    Continue()
+END
+
+IF
+  Global("A7-MaskChallenge","GLOBAL",3)
+  Global("a7-ch3_current_index","MYAREA",10)
+THEN
+  RESPONSE #100
+    SetGlobal("a7-ch3_current_index","MYAREA",11)
+    SetGlobal("a7-challenge-won","MYAREA",1)
+    SetGlobal("A7-MaskRogueLevel","GLOBAL",3)
+END

@@ -1,0 +1,210 @@
+// Eyes of Mask
+
+@0 = ~Verzierte Maske~
+@1 = ~Ruhende Augen des Mask~
+
+@10 = ~Masken sind künstlerische, kulturelle oder zeremonielle Gesichtsbedeckungen. Sie werden häufig bei festlichen Anlässen getragen, können aber auch dazu dienen, sich ungehindert zu bewegen, ohne Gefahr zu laufen, erkannt zu werden.
+
+EIGENSCHAFTEN:
+
+Gewicht: 1~
+@11 = ~Artefakte wie diese wurden üblicherweise von hochrangigen Mitgliedern der Kirche des Mask getragen. Es heißt, dass sich der Herr der Schatten manchmal selbst als eines dieser Artefakte tarnte, um unerkannt unterwegs zu sein. Wobei der ahnungslose Träger der Maske ihm als Augen und Ohren diente.
+
+Diese Artefakte überlassen ihre Kräfte jedoch niemandem einfach so. Ihre Besitzer müssen sich erst in geheimnisvollen Prüfungen bewähren, um die Kräfte des Artefakts nach und nach freizusetzen. Vielversprechenden Kandidaten der Kirche werden diese Artefakte manchmal verliehen. Obwohl sie zunächst nichts weiter als ein interessantes Schmuckstück sind, können sie in den Händen fähiger Jünger zu Artefakten unvorstellbarer Macht werden.
+
+EIGENSCHAFTEN:
+
+ETW0-Malus: +2 gg. Diebe
+
+Gewicht: 1~
+
+@20 = ~Augen des Mask~
+@21 = ~Artefakte wie diese wurden üblicherweise von hochrangigen Mitgliedern der Kirche des Mask getragen. Es heißt, dass sich der Herr der Schatten manchmal selbst als eines dieser Artefakte tarnte, um unerkannt unterwegs zu sein. Wobei der ahnungslose Träger der Maske ihm als Augen und Ohren diente.
+
+Diese Artefakte überlassen ihre Kräfte jedoch niemandem einfach so. Ihre Besitzer müssen sich erst in geheimnisvollen Prüfungen bewähren, um die Kräfte des Artefakts nach und nach freizusetzen. Vielversprechenden Kandidaten der Kirche werden diese Artefakte manchmal verliehen. Obwohl sie zunächst nichts weiter als ein interessantes Schmuckstück sind, können sie in den Händen fähiger Jünger zu Artefakten unvorstellbarer Macht werden.
+
+Wenn die Maske getragen wird, schärft es die Sinne ihres Trägers. Darüber hinaus kann einmal pro Tag ein Diebesanwärter aus dem Jenseits herbeigerufen werden, um den Träger von lästigen und mitunter gefährlichen Aufgaben zu entlasten, wie zum Beispiel das Entschärfen von Fallen oder das Knacken von Schlössern.
+
+EIGENSCHAFTEN:
+
+RK-Bonus: -1 gg. Stich- und Geschosswaffen
+ETW0-Malus: +2 gg. Diebe
+
+Dieb der Stufe 6 für 5 Phasen herbeirufen (1x täglich)
+  TP: 36, RK: 4, ETW0: 17
+  Schlösser öffnen: 60, Fallen finden: 80, Schleichen: 30, Illusion entdecken: 0
+
+Gewicht: 1~
+
+@22 = ~Verbesserte Augen des Mask~
+@23 = ~Artefakte wie diese wurden üblicherweise von hochrangigen Mitgliedern der Kirche des Mask getragen. Es heißt, dass sich der Herr der Schatten manchmal selbst als eines dieser Artefakte tarnte, um unerkannt unterwegs zu sein. Wobei der ahnungslose Träger der Maske ihm als Augen und Ohren diente.
+
+Diese Artefakte überlassen ihre Kräfte jedoch niemandem einfach so. Ihre Besitzer müssen sich erst in geheimnisvollen Prüfungen bewähren, um die Kräfte des Artefakts nach und nach freizusetzen. Vielversprechenden Kandidaten der Kirche werden diese Artefakte manchmal verliehen. Obwohl sie zunächst nichts weiter als ein interessantes Schmuckstück sind, können sie in den Händen fähiger Jünger zu Artefakten unvorstellbarer Macht werden.
+
+Wenn die Maske getragen wird, schärft es die Sinne ihres Trägers. Darüber hinaus kann einmal pro Tag ein Dieb aus dem Jenseits herbeigerufen werden, um den Träger von lästigen und mitunter gefährlichen Aufgaben zu entlasten, wie zum Beispiel das Entschärfen von Fallen oder das Knacken von Schlössern.
+
+EIGENSCHAFTEN:
+
+RW-Bonus: -1
+RK-Bonus: -2 gg. Stich- und Geschosswaffen
+ETW0-Malus: +2 gg. Diebe
+
+Dieb der Stufe 12 für 5 Phasen herbeirufen (1x täglich)
+  TP: 64, RK: 1, ETW0: 13
+  Schlösser öffnen: 100, Fallen finden: 100, Schleichen: 80, Illusion entdecken: 25
+
+Gewicht: 1~
+
+@24 = ~Perfekte Augen des Mask~
+@25 = ~Artefakte wie diese wurden üblicherweise von hochrangigen Mitgliedern der Kirche des Mask getragen. Es heißt, dass sich der Herr der Schatten manchmal selbst als eines dieser Artefakte tarnte, um unerkannt unterwegs zu sein. Wobei der ahnungslose Träger der Maske ihm als Augen und Ohren diente.
+
+Diese Artefakte überlassen ihre Kräfte jedoch niemandem einfach so. Ihre Besitzer müssen sich erst in geheimnisvollen Prüfungen bewähren, um die Kräfte des Artefakts nach und nach freizusetzen. Vielversprechenden Kandidaten der Kirche werden diese Artefakte manchmal verliehen. Obwohl sie zunächst nichts weiter als ein interessantes Schmuckstück sind, können sie in den Händen fähiger Jünger zu Artefakten unvorstellbarer Macht werden.
+
+Wenn die Maske getragen wird, schärft es die Sinne ihres Trägers. Darüber hinaus kann einmal pro Tag ein Meisterdieb aus dem Jenseits herbeigerufen werden, um den Träger von lästigen und mitunter gefährlichen Aufgaben zu entlasten, wie zum Beispiel das Entschärfen von Fallen oder das Knacken von Schlössern.
+
+EIGENSCHAFTEN:
+
+RW-Bonus: -2
+RK-Bonus: -4 gg. Stich- und Geschosswaffen
+ETW0-Malus: +2 gg. Diebe
+
+Dieb der Stufe 18 für 5 Phasen herbeirufen (1x täglich)
+  TP: 96, RK: 0, ETW0: 8
+  Schlösser öffnen: 100, Fallen finden: 100, Schleichen: 135, Illusion entdecken: 100
+
+Gewicht: 1~
+
+@50 = ~WARNUNG: Kein freier Platz für neue Diebesanimation gefunden. Standardanimation wird genutzt.~
+
+@100 = ~erwecken~
+@101 = ~Dieb herbeirufen~
+@102 = ~Geisterhafter Dieb~
+@103 = ~Körperlose Stimme~
+@104 = ~Masks Auserwählter~
+@105 = ~Das Portal kann nur benutzt werden, wenn sich die Augen des Mask in Eurem Besitz befinden.~
+@107 = ~Ein heller Lichtblitz erstrahlt von den Augen des Mask, als einige schlummernde Kräfte erwachen.~
+@108 = ~20.000 Erfahrungspunkte werden benötigt, um sich der Prüfung zu stellen.~
+@109 = ~440.000 Erfahrungspunkte werden benötigt, um sich der Prüfung zu stellen.~
+@110 = ~1.760.000 Erfahrungspunkte werden benötigt, um sich der Prüfung zu stellen.~
+@111 = ~trinkt einen Trank~
+@112 = ~untersuchen~
+@113 = ~Entdeckt Illusionen~
+@114 = ~Scheitert dabei, Illusionen zu entdecken~
+
+// dialog lines
+// conversable items
+@300 = ~Eine Stimme ertönt in Eurem Kopf: Stellt Euch meiner Prüfung, um meine Kräfte zu erwecken.~
+@301 = ~Ich bin bereit.~
+@302 = ~Legt die Maske beiseite.~
+@303 = ~Eine Stimme ertönt in Eurem Kopf: Ihr seid meiner Kräfte nicht würdig.~
+@304 = ~Ihr seid noch nicht stark genug, um mich herauszufordern.~
+@305 = ~Die Maske ist leicht, aber dennoch sehr robust. Wenn man mit den Fingern über die Oberfläche streicht, spürt man ein leichtes Kribbeln.~
+@306 = ~Als Ihr Eure Gedanken auf die Maske richtet, beginnt sie schwach zu leuchten, und Ihr nehmt ein leises Murmeln in Eurem Kopf wahr.~
+
+// Challenges
+@400 = ~Ihr habt die Prüfungen Masks begonnen, Bittsteller. Besteht meine Herausforderungen, um meine Kräfte zu erwecken.~
+@401 = ~Für die erste Prüfung habe ich einen Zweikampf zwischen Euch und einem meiner Auserwählten vorbereitet. Besiegt ihn, um meinen Preis zu gewinnen.~
+@402 = ~Die zweite Prüfung stellt Eure Reflexe auf die Probe. Findet drei Teile eines Schlüssels, um meinen Preis zu gewinnen. Aber gebt Acht! Einer meiner Auserwählten wird versuchen, sie Euch abzunehmen, wenn Ihr nicht aufpasst.~
+@403 = ~Die dritte und letzte Prüfung stellt Eure Beobachtungsgabe, Euren Verstand und Eure Ausdauer auf die Probe. Die Neun sind der Schlüssel, wenn Ihr sie in der richtigen Reihenfolge trefft. Sprecht mit ihnen, um Hinweise zu ihrer Position innerhalb der Reihenfolge zu erhalten.~
+@404 = ~Es stehen Euch keine weiteren Prüfungen zur Verfügung.~
+
+// Challenge 1
+// @500 = ~~
+
+// Challenge 2
+@550 = ~Erstes Steinfragment~
+@551 = ~Zweites Steinfragment~
+@552 = ~Drittes Steinfragment~
+@553 = ~Eine Steinscherbe, die zu einem Symbol von Mask gehört.
+
+EIGENSCHAFTEN:
+
+Gewicht: 1~
+
+@555 = ~Zusammengesetztes Symbol von Mask~
+@556 = ~Das zusammengesetzte Symbol von Mask. Es wird benötigt, um die Prüfung abzuschließen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 3~
+
+@560 = ~Lasst Euch nicht stören.~
+
+@570 = ~Ihr entdeckt ein Steinfragment unter dem Felsen.~
+@571 = ~Ihr findet nichts von Bedeutung unter dem Felsen.~
+@572 = ~Der Felsen bewegt sich nicht.~
+@573 = ~Ihr seid zu weit entfernt, um das zu benutzen.~
+
+@575 = ~Steinfragment von <CHARNAME> gestohlen.~
+@576 = ~Steinfragment aufgenommen.~
+@577 = ~Steinfragment abgelegt.~
+
+@580 = ~Die Steinfragmente verwandeln sich in das Symbol von Mask. Benutzt es, um die Prüfung abzuschließen.~
+
+// Challenge 3
+// Hints from the rogues about their position in the hit order (1 to 9):
+// not at position 1
+@600 = ~Ich bin nicht der Erste.~
+// not at position 9
+@601 = ~Ich bin nicht der Letzte.~
+// at odd-numbered position (1, 3, 5, 7, or 9)
+@602 = ~Ich kann mich nicht halbieren.~ // Alternativ: Ich mag es ungerade.
+// at even-numbered position (2, 4, 6, or 8)
+@603 = ~Ich lasse alles gerade sein.~   // Alternativ: Ich besitze eine gerade Statur.
+// position is prime number (2, 3, 5, or 7)
+@604 = ~Man kann mich nicht teilen.~    // Alternativ: Ich mag Primzahlen.
+// position is NOT a prime number (1, 4, 6, 8, or 9)
+@605 = ~Man kann mich teilen.~          // Alternativ: Ich mag keine Primzahlen.
+// position is a squared number (1, 4, or 9)
+@606 = ~Ich bin quadratisch, praktisch und gut.~
+// center position (5)
+@607 = ~Ich stehe im Mittelpunkt der Aufmerksamkeit.~
+// lower half of the sequence (1, 2, 3, or 4)
+@608 = ~Ich gehöre der ersten Hälfte an.~
+// upper half of the sequence (6, 7, 8, or 9)
+@609 = ~Ich gehöre der zweiten Hälfte an.~
+
+@610 = ~Wartet, bis sich unser Gefährte wieder beruhigt hat.~
+@611 = ~Ihr habt das falsche Ziel erwischt. Das werdet Ihr mir büßen!~
+@612 = ~Ich habe mich wieder beruhigt.~
+@613 = ~Schurke Nummer <A7_CH3_POS> wurde erlöst.~
+
+// Arbitrary rogue names (male)
+@621 = ~Alric~
+@622 = ~Corvin~
+@623 = ~Dorian~
+@624 = ~Edric~
+@625 = ~Jareth~
+// Arbitrary rogue names (female)
+@626 = ~Brina~
+@627 = ~Elira~
+@628 = ~Selene~
+@629 = ~Tamsin~
+
+// Journal entries
+@1000 = ~Masks Prüfungen
+
+Die Augen des Mask transportierten mich in eine Art Arena, wo mir eine körperlose Stimme sagte, ich solle an einer Prüfung teilnehmen. Ich muss einen von Masks Auserwählten im Zweikampf besiegen, um einige Kräfte der Augen des Mask zu erwecken.~
+@1001 = ~Masks Prüfungen
+
+Mein Sieg in der ersten Prüfung erweckte einige Kräfte in den Augen des Mask. Das Artefakt gewährt dem Träger einige einfache Kampfboni. Außerdem kann ich nun einmal täglich einen Diebesanwärter herbeirufen, der mir mit seinen Diebesfähigkeiten und im Kampf zur Seite steht.~
+
+@1010 = ~Masks Prüfungen
+
+Die Augen des Mask transportierten mich in eine Art Arena, wo mir eine körperlose Stimme sagte, ich solle an einer Prüfung teilnehmen. Ich muss drei Teile eines Schlüssels suchen und aufsammeln, um die Prüfung zu bestehen. Ich muss aber vorsichtig sein, da einer von Masks Auserwählten ständig versuchen wird, mir diese Teile wieder abzunehmen.~
+
+@1011 = ~Masks Prüfungen
+
+Nachdem ich alle drei Steinfragmente aufgesammelt habe, verwandelten sie sich in das Symbol von Mask. Ich muss es benutzen, um weiterzukommen.~
+
+@1012 = ~Masks Prüfungen
+
+Die Vollendung der zweiten Prüfung erweckte weitere Kräfte in den Augen des Mask. Das Artefakt gewährt dem Träger einige weitere Kampfboni. Außerdem kann ich nun einmal täglich einen Dieb herbeirufen, der mir mit seinen Diebesfähigkeiten und im Kampf zur Seite steht.~
+
+@1020 = ~Masks Prüfungen
+
+Die Augen des Mask transportierten mich in eine Art Arena, wo mir eine körperlose Stimme sagte, ich solle an einer Prüfung teilnehmen. Ich muss jeden Schurken in der herbeigerufenen Gruppe in der richtigen Reihenfolge treffen, um die Prüfung zu gewinnen. Die Schurken selbst können mir hilfreiche Hinweise zu ihrer eigenen Position innerhalb der Gruppe geben.~
+
+@1021 = ~Masks Prüfungen
+
+Mein Sieg in der dritten und letzten Prüfung erweckte noch mehr Kräfte in den Augen des Mask. Das Artefakt verstärkt bereits existierende Boni noch weiter. Außerdem kann ich nun einmal täglich einen Meisterdieb herbeirufen, der mir mit seinen Diebesfähigkeiten und im Kampf zur Seite steht.~

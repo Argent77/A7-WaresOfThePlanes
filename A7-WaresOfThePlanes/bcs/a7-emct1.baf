@@ -1,0 +1,66 @@
+// Eyes of Mask Cutscene: Teleport to Trials arena (part 1)
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    StorePartyLocations()
+    FadeToColor([45.0],0)
+    SmallWait(4)
+    CreateVisualEffectObject("ICRMPARI",Myself)
+    Wait(3)
+    LeaveAreaLUAPanicEntry("A7WP04","Entry1",[0.0],W)
+    LeaveAreaLUAEntry("A7WP04","Entry1",[0.0],W)
+    ActionOverride(Player2,LeaveAreaLUAEntry("A7WP04","Entry1",[0.0],W))
+    ActionOverride(Player3,LeaveAreaLUAEntry("A7WP04","Entry1",[0.0],W))
+    ActionOverride(Player4,LeaveAreaLUAEntry("A7WP04","Entry1",[0.0],W))
+    ActionOverride(Player5,LeaveAreaLUAEntry("A7WP04","Entry1",[0.0],W))
+    ActionOverride(Player6,LeaveAreaLUAEntry("A7WP04","Entry1",[0.0],W))
+    StartCutScene("a7-emct2")
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player2)
+    SmallWait(5)
+    CreateVisualEffectObject("ICRMPARI",Myself)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player3)
+    SmallWait(5)
+    CreateVisualEffectObject("ICRMPARI",Myself)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player4)
+    SmallWait(5)
+    CreateVisualEffectObject("ICRMPARI",Myself)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player5)
+    SmallWait(5)
+    CreateVisualEffectObject("ICRMPARI",Myself)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player6)
+    SmallWait(5)
+    CreateVisualEffectObject("ICRMPARI",Myself)
+END

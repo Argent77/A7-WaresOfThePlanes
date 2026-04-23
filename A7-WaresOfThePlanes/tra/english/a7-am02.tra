@@ -1,0 +1,217 @@
+// Eyes of Mask
+
+@0 = ~Decorated Mask~
+@1 = ~Dormant Eyes of Mask~
+
+@10 = ~Masks are artistic, cultural, or ceremonial face coverings. They are widely used for festive occasions, but can also be used to freely move around without the danger of being recognized.
+
+STATISTICS:
+
+Weight: 1~
+@11 = ~Artifacts like these were commonly worn by higher-ranking members of the Church of Mask. It is said that sometimes the Lord of Shadows disguised himself as one of these artifacts to move undetected, with the unsuspecting wearer as his eyes and ears.
+
+These artifacts don't surrender their powers to anyone, however. Their owners must prove their worth by undergoing mysterious trials to progressively unlock the powers of the artifact. Promising candidates of the church are sometimes gifted these artifacts. While nothing more than a curious piece of jewelry at first they would potentially become artifacts of unimaginable power in the hands of capable disciples.
+
+STATISTICS:
+
+Equipped abilities:
+– -2 penalty to THAC0 vs. thieves
+
+Weight: 1~
+
+@20 = ~Eyes of Mask~
+@21 = ~Artifacts like these were commonly worn by higher-ranking members of the Church of Mask. It is said that sometimes the Lord of Shadows disguised himself as one of these artifacts to move undetected, with the unsuspecting wearer as his eyes and ears.
+
+These artifacts don't surrender their powers to anyone, however. Their owners must prove their worth by undergoing mysterious trials to progressively unlock the powers of the artifact. Promising candidates of the church are sometimes gifted these artifacts. While nothing more than a curious piece of jewelry at first they would potentially become artifacts of unimaginable power in the hands of capable disciples.
+
+When worn the artifact sharpens the senses of the user. Furthermore, once per day a fellow novice thief can be called back from the netherworld to relieve the user of tedious and sometimes dangerous tasks, such as disarming traps or picking locks.
+
+STATISTICS:
+
+Equipped abilities:
+– +1 bonus to AC vs. piercing and missile damage
+– -2 penalty to THAC0 vs. thieves
+
+Charge abilities:
+– Summon a level 6 thief for five turns (1x/day)
+  HP: 36, AC: 4, THAC0: 17
+  Open Locks: 60, Find Traps: 80, Stealth: 30, Detect Illusion: 0
+
+Weight: 1~
+
+@22 = ~Improved Eyes of Mask~
+@23 = ~Artifacts like these were commonly worn by higher-ranking members of the Church of Mask. It is said that sometimes the Lord of Shadows disguised himself as one of these artifacts to move undetected, with the unsuspecting wearer as his eyes and ears.
+
+These artifacts don't surrender their powers to anyone, however. Their owners must prove their worth by undergoing mysterious trials to progressively unlock the powers of the artifact. Promising candidates of the church are sometimes gifted these artifacts. While nothing more than a curious piece of jewelry at first they would potentially become artifacts of unimaginable power in the hands of capable disciples.
+
+When worn the artifact sharpens the senses of the user. Furthermore, once per day a fellow thief can be called back from the netherworld to relieve the user of tedious and sometimes dangerous tasks, such as disarming traps or picking locks.
+
+STATISTICS:
+
+Equipped abilities:
+– +1 bonus to all saves
+– +2 bonus to AC vs. piercing and missile damage
+– -2 penalty to THAC0 vs. thieves
+
+Charge abilities:
+– Summon a level 12 thief for five turns (1x/day)
+  HP: 64, AC: 1, THAC0: 13
+  Open Locks: 100, Find Traps: 100, Stealth: 80, Detect Illusion: 25
+
+Weight: 1~
+
+@24 = ~Perfect Eyes of Mask~
+@25 = ~Artifacts like these were commonly worn by higher-ranking members of the Church of Mask. It is said that sometimes the Lord of Shadows disguised himself as one of these artifacts to move undetected, with the unsuspecting wearer as his eyes and ears.
+
+These artifacts don't surrender their powers to anyone, however. Their owners must prove their worth by undergoing mysterious trials to progressively unlock the powers of the artifact. Promising candidates of the church are sometimes gifted these artifacts. While nothing more than a curious piece of jewelry at first they would potentially become artifacts of unimaginable power in the hands of capable disciples.
+
+When worn the artifact sharpens the senses of the user. Furthermore, once per day a fellow master thief can be called back from the netherworld to relieve the user of tedious and sometimes dangerous tasks, such as disarming traps or picking locks.
+
+STATISTICS:
+
+Equipped abilities:
+– +2 bonus to all saves
+– +4 bonus to AC vs. piercing and missile damage
+– -2 penalty to THAC0 vs. thieves
+
+Charge abilities:
+– Summon a level 18 thief for five turns (1x/day)
+  HP: 96, AC: 0, THAC0: 8
+  Open Locks: 100, Find Traps: 100, Stealth: 135, Detect Illusion: 100
+
+Weight: 1~
+
+@50 = ~WARNING: No free slot found for custom thief animation. Using default animation.~
+
+@100 = ~unlock~
+@101 = ~Summon Thief~
+@102 = ~Ghostly Thief~
+@103 = ~Disembodied Voice~
+@104 = ~Mask's Chosen~
+@105 = ~The portal can only be used with the Eyes of Mask in your possession.~
+@107 = ~A bright flash of light emits from the Eyes of Mask as some of the dormant powers awaken.~
+@108 = ~20,000 experience points are required to face the trial.~
+@109 = ~440,000 experience points are required to face the trial.~
+@110 = ~1,760,000 experience points are required to face the trial.~
+@111 = ~*quaffs a potion*~
+@112 = ~inspect~
+@113 = ~Detects Illusion~
+@114 = ~Fails to detect illusions~
+
+// dialog lines
+// conversable items
+@300 = ~A voice resonates in your head: Face my trials to unlock my powers.~
+@301 = ~I am ready.~
+@302 = ~Put the mask away.~
+@303 = ~A voice resonates in your head: You are not worthy of my powers.~
+@304 = ~You are not yet strong enough to challenge me.~
+@305 = ~The mask is light, yet very sturdy. You feel a slight tingle when you run your fingers over the surface of the artifact.~
+@306 = ~As you focus your thoughts on the mask it emits a faint glow and you can sense a distant murmur in your head.~
+
+// Challenges
+@400 = ~You have entered the Trials of Mask, supplicant. Overcome my challenges to unlock my powers.~
+@401 = ~For the first challenge I have prepared a one-on-one duel with one of my Chosen. Defeat him to win my prize.~
+@402 = ~The second challenge tests your reflexes. Find three parts of a key to win my prize. But take care! One of my Chosen will try to snatch them from you if you are not careful.~
+@403 = ~The third and final challenge tests your observation skills, wits, and persistence. The Nine are the key if you hit them all in the right order. Talk to them to gather clues about their position in the order.~
+@404 = ~There are no more challenges available to you.~
+
+// Challenge 1
+// @500 = ~~
+
+// Challenge 2
+@550 = ~First Stone Fragment~
+@551 = ~Second Stone Fragment~
+@552 = ~Third Stone Fragment~
+@553 = ~A shard of stone belonging to an icon of Mask.
+
+STATISTICS:
+
+Weight: 1~
+
+@555 = ~Assembled Icon of Mask~
+@556 = ~The assembled icon of Mask. It is required to complete the trial.
+
+STATISTICS:
+
+Weight: 3~
+
+@560 = ~Don't mind me.~
+
+@570 = ~You discover a stone fragment under the rock.~
+@571 = ~You find nothing of worth under the rock.~
+@572 = ~The rock doesn't budge.~
+@573 = ~You are too far away to use that.~
+
+@575 = ~Stone fragment stolen from <CHARNAME>.~
+@576 = ~Picked up stone fragment.~
+@577 = ~Stone fragment discarded.~
+
+@580 = ~The stone fragments transformed into the Icon of Mask. Use it to complete the challenge.~
+
+// Challenge 3
+// Hints from the rogues about their position in the hit order (1 to 9):
+// not at position 1
+@600 = ~I'm not the first.~
+// not at position 9
+@601 = ~I'm not the last.~
+// at odd-numbered position (1, 3, 5, 7, or 9)
+@602 = ~I'm at odds with you.~
+// at even-numbered position (2, 4, 6, or 8)
+@603 = ~I'm even with you.~
+// position is prime number (2, 3, 5, or 7)
+@604 = ~I'm a prime candidate.~
+// position is NOT a prime number (1, 4, 6, 8, or 9)
+@605 = ~I'm not a prime candidate.~
+// position is a squared number (1, 4, or 9)
+@606 = ~I'm square with you.~
+// center position (5)
+@607 = ~I'm the center of attention.~
+// lower half of the sequence (1, 2, 3, or 4)
+@608 = ~I belong to the first half.~
+// upper half of the sequence (6, 7, 8, or 9)
+@609 = ~I belong to the second half.~
+
+@610 = ~Wait for our fellow rogue to calm down.~
+@611 = ~You've hit the wrong target. I'll get you for that!~
+@612 = ~I've calmed down.~
+@613 = ~Rogue number <A7_CH3_POS> released.~
+
+// Arbitrary rogue names (male)
+@621 = ~Alric~
+@622 = ~Corvin~
+@623 = ~Dorian~
+@624 = ~Edric~
+@625 = ~Jareth~
+// Arbitrary rogue names (female)
+@626 = ~Brina~
+@627 = ~Elira~
+@628 = ~Selene~
+@629 = ~Tamsin~
+
+// Journal entries
+@1000 = ~Trials of Mask
+
+The Eyes of Mask transported me to an arena of some kind where an incorporeal voice told me to participate in a trial. I have to defeat one of Mask's Chosen to unlock some of the powers of the Eyes of Mask.~
+@1001 = ~Trials of Mask
+
+Winning the first trial awakened some of the powers in the Eyes of Mask. The artifact provides the wearer with some basic combat bonuses, and I can now call forth a novice thief once per day who can aid me in thieving and combat situations.~
+
+@1010 = ~Trials of Mask
+
+The Eyes of Mask transported me to an arena of some kind where an incorporeal voice told me to participate in a trial. I have to find and collect three parts of a key to win the trial. One of Mask's Chosen tries to snatch the pieces from me, so I have to be careful.~
+
+@1011 = ~Trials of Mask
+
+Collecting all three stone fragments merged into the Icon of Mask. I have to use it to proceed further.~
+
+@1012 = ~Trials of Mask
+
+Completing the second trial awakened more powers in the Eyes of Mask. The artifact provides even more combat bonuses, and I can now call forth a seasoned thief once per day who can aid me in thieving and combat situations.~
+
+@1020 = ~Trials of Mask
+
+The Eyes of Mask transported me to an arena of some kind where an incorporeal voice told me to participate in a trial. I have to hit every rogue in a summoned group in the right order to win the trial. The rogues themselves can provide me with useful hints about their position in the group.~
+
+@1021 = ~Trials of Mask
+
+Winning the third and final trial awakened even more powers in the Eyes of Mask. The artifact boosted existing combat bonuses even more, and I can now call forth a master thief once per day who can aid me in thieving and combat situations.~

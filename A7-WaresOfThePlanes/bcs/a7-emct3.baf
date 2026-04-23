@@ -1,0 +1,60 @@
+// Eyes of Mask Cutscene: Teleport home
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    // MoveViewPoint([886.780],INSTANT)
+    FadeToColor([45.0],0)
+    Wait(3)
+    RestorePartyLocations()
+    FadeFromColor([30.0],0)
+    Wait(2)
+    EndCutSceneMode()
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player2)
+    Wait(1)
+    MakeUnselectable(0)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player3)
+    Wait(1)
+    MakeUnselectable(0)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player4)
+    Wait(1)
+    MakeUnselectable(0)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player5)
+    Wait(1)
+    MakeUnselectable(0)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player6)
+    Wait(1)
+    MakeUnselectable(0)
+END

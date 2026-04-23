@@ -1,0 +1,61 @@
+// Eyes of Mask Cutscene: Teleport to Trials arena (part 2)
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-voice")
+    AmbientActivate("AMB_Teleporter",FALSE)
+    StaticSequence("AMB_Teleporter",0)
+    TriggerActivation("Teleporter",FALSE)
+    Explore()
+    FadeFromColor([15.0],0)
+    Wait(1)
+    StartDialogNoSet(Player1)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player2)
+    JumpToPoint([1672.1367])
+    MakeUnselectable(9999999)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player3)
+    JumpToPoint([1672.1425])
+    MakeUnselectable(9999999)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player4)
+    JumpToPoint([1617.1367])
+    MakeUnselectable(9999999)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player5)
+    JumpToPoint([1617.1425])
+    MakeUnselectable(9999999)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player6)
+    JumpToPoint([1566.1425])
+    MakeUnselectable(9999999)
+END
+

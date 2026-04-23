@@ -1,0 +1,37 @@
+IF
+  Clicked([ANYONE])
+  InPartySlot(LastTrigger,0)
+  Range(LastTrigger,5)
+  Global("a7-ch2_key2","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("a7-ch2_key2","MYAREA",1)
+    ActionOverride(LastTrigger,CreateItem("a7-ch2k2",0,0,0))
+    DisplayString(Myself,@570)  // You discover a stone fragment under the rock.
+END
+
+IF
+  Clicked([ANYONE])
+  InPartySlot(LastTrigger,0)
+  Range(LastTrigger,5)
+  !Global("a7-ch2_key2","MYAREA",0)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@571)  // You find nothing of worth under the rock.
+END
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger,5)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@572)  // The rock doesn't budge.
+END
+
+IF
+  Clicked([ANYONE])
+  !Range(LastTrigger,5)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@573)  // You are too far away to use that.
+END
