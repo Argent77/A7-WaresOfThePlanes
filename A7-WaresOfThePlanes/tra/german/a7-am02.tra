@@ -160,9 +160,9 @@ Gewicht: 3~
 // center position (5)
 @607 = ~Ich stehe im Mittelpunkt der Aufmerksamkeit.~
 // lower half of the sequence (1, 2, 3, or 4)
-@608 = ~Ich gehöre der ersten Hälfte an.~
+@608 = ~Ich gehöre der Unterschicht an.~
 // upper half of the sequence (6, 7, 8, or 9)
-@609 = ~Ich gehöre der zweiten Hälfte an.~
+@609 = ~Ich gehöre der Oberschicht an.~
 
 @610 = ~Wartet, bis sich unser Gefährte wieder beruhigt hat.~
 @611 = ~Ihr habt das falsche Ziel erwischt. Das werdet Ihr mir büßen!~
