@@ -167,9 +167,9 @@ Weight: 3~
 // center position (5)
 @607 = ~I'm the center of attention.~
 // lower half of the sequence (1, 2, 3, or 4)
-@608 = ~I belong to the first half.~
+@608 = ~I belong to the lower class.~
 // upper half of the sequence (6, 7, 8, or 9)
-@609 = ~I belong to the second half.~
+@609 = ~I belong to the upper class.~
 
 @610 = ~Wait for our fellow rogue to calm down.~
 @611 = ~You've hit the wrong target. I'll get you for that!~
