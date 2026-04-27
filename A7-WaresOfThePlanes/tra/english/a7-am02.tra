@@ -129,7 +129,7 @@ STATISTICS:
 Weight: 1~
 
 @555 = ~Assembled Icon of Mask~
-@556 = ~The assembled icon of Mask. It is required to complete the trial.
+@556 = ~The assembled icon of Mask. It is required to complete the challenge.
 
 STATISTICS:
 
@@ -146,7 +146,7 @@ Weight: 3~
 @576 = ~Picked up stone fragment.~
 @577 = ~Stone fragment discarded.~
 
-@580 = ~The stone fragments transformed into the Icon of Mask. Use it to complete the challenge.~
+@580 = ~The stone fragments have fused together to form the Icon of Mask. Use it to complete the challenge.~
 
 // Challenge 3
 // Hints from the rogues about their position in the hit order (1 to 9):
