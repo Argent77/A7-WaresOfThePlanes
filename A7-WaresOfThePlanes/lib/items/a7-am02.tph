@@ -153,6 +153,7 @@ WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
   COMPILE ~%MOD_FOLDER%/bcs/a7-emct1.baf~
           ~%MOD_FOLDER%/bcs/a7-emct2.baf~
           ~%MOD_FOLDER%/bcs/a7-emct3.baf~
+          ~%MOD_FOLDER%/bcs/a7-emct4.baf~
 
   // challenge 1
   COPY ~%MOD_FOLDER%/cre/a7-ch1ra.cre~ ~override~
@@ -166,6 +167,9 @@ WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
 
   COPY ~%MOD_FOLDER%/eff/a7-ch1rx.eff~ ~override~
        ~%MOD_FOLDER%/spl/a7-ch1rx.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-ch1ps.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-ch1px.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-ch1py.spl~ ~override~
 
   COMPILE ~%MOD_FOLDER%/bcs/a7-chrog.baf~
 

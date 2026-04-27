@@ -25,6 +25,18 @@ END
 // Challenge 1
 IF
   Global("A7-MaskChallenge","GLOBAL",1)
+  Global("a7-ch1_duel_won","MYAREA",0)
+  HP(Player1,1)
+THEN
+  RESPONSE #100
+    SetGlobal("a7-ch1_duel_won","MYAREA",2)
+    StartCutSceneMode()
+    ClearAllActions()
+    StartCutSceneEx("a7-emct4",TRUE)
+END
+
+IF
+  Global("A7-MaskChallenge","GLOBAL",1)
   Global("a7-ch1_start","MYAREA",1)
   Global("a7-ch1_duel_init","MYAREA",0)
   XPLT(Player1,100000)
@@ -64,6 +76,7 @@ THEN
     SetGlobal("a7-ch1_duel_won","MYAREA",1)
     SetGlobal("a7-challenge-won","MYAREA",1)
     SetGlobal("A7-MaskRogueLevel","GLOBAL",1)
+    ApplySpellRES("a7-ch1py",Player1)
 END
 
 // Challenge 2

@@ -1,0 +1,78 @@
+// Eyes of Mask Cutscene: Teleport home after losing challenge 1
+
+// Don't lose the artifact
+IF
+  !PartyHasItem("a7-am02")
+  !HasItem("a7-am02",Familiar)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    CreateItem("a7-am02",1,0,0)
+    Continue()
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    MoveViewObject(Player1,INSTANT)
+    DisplayStringHead(Player1,@500) // After you've been mortally wounded, everything blurs before your eyes and you lose consciousness.
+    SetSequence(SEQ_DIE)
+    Wait(4)
+    FadeToColor([60.0],0)
+    Wait(4)
+    ApplySpellRES("a7-ch1ps",Myself)
+    ApplySpellRES("a7-ch1py",Myself)
+    RestorePartyLocations()
+    FadeFromColor([60.0],0)
+    Wait(2)
+    SetSequence(SEQ_AWAKE)
+    Wait(2)
+    EndCutSceneMode()
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player2)
+    Wait(5)
+    MakeUnselectable(0)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player3)
+    Wait(5)
+    MakeUnselectable(0)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player4)
+    Wait(5)
+    MakeUnselectable(0)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player5)
+    Wait(5)
+    MakeUnselectable(0)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player6)
+    Wait(5)
+    MakeUnselectable(0)
+END

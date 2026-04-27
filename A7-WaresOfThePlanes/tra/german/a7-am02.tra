@@ -109,7 +109,7 @@ Gewicht: 1~
 @404 = ~Es stehen Euch keine weiteren Prüfungen zur Verfügung.~
 
 // Challenge 1
-// @500 = ~~
+@500 = ~Nachdem Ihr tödlich verwundet wurdet, verschwimmt alles vor Euren Augen, und Ihr verliert Euer Bewusstsein.~
 
 // Challenge 2
 @550 = ~Erstes Steinfragment~

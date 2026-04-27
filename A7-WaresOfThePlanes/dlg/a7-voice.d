@@ -12,7 +12,7 @@ END
 
 IF ~~ Challenge1.1
   SAY @401 /* For the first challenge I have prepared a one-on-one duel with one of my Chosen. Defeat him to win your prize. */
-  IF ~~ DO ~SetGlobal("a7-ch1_start","MYAREA",1) DestroySelf()~ UNSOLVED_JOURNAL @1000 EXIT
+  IF ~~ DO ~SetGlobal("a7-ch1_start","MYAREA",1) ApplySpellRES("a7-ch1px",Player1) DestroySelf()~ UNSOLVED_JOURNAL @1000 EXIT
 END
 
 IF ~~ Challenge2.1

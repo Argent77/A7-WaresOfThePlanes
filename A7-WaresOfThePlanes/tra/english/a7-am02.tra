@@ -116,7 +116,7 @@ Weight: 1~
 @404 = ~There are no more challenges available to you.~
 
 // Challenge 1
-// @500 = ~~
+@500 = ~After you've been mortally wounded, everything blurs before your eyes and you lose consciousness.~
 
 // Challenge 2
 @550 = ~First Stone Fragment~
