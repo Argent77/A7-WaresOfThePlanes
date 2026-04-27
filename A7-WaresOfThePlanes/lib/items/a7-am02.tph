@@ -171,7 +171,7 @@ WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
        ~%MOD_FOLDER%/spl/a7-ch1px.spl~ ~override~
        ~%MOD_FOLDER%/spl/a7-ch1py.spl~ ~override~
 
-  COMPILE ~%MOD_FOLDER%/bcs/a7-chrog.baf~
+  COMPILE ~%MOD_FOLDER%/bcs/a7-ch1r.baf~
 
   // challenge 2
   COPY ~%MOD_FOLDER%/bam/a7-i528.bam~  ~override~

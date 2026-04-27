@@ -1,4 +1,4 @@
-// Basic thief combat script
+// Challenge 1 rogue combat script
 
 IF
   Global("DefensePotion","LOCALS",0)
@@ -162,7 +162,9 @@ IF
   Range(LastSeenBy(Myself),7)
 THEN
   RESPONSE #50
+    SetInterrupt(FALSE)
     RunAwayFromNoInterrupt(LastSeenBy(Myself),45)
+    SetInterrupt(TRUE)
   RESPONSE #100
     EquipMostDamagingMelee()
     AttackReevaluate(LastSeenBy(Myself),45)
