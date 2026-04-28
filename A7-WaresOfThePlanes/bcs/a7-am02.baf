@@ -1,6 +1,21 @@
 // "Summon Rogue" script
 
 IF
+  !Global("A7-SummonMaskRogue","GLOBAL",0)
+  OR(3)
+    InMyArea("A7-MaskRogue1")
+    InMyArea("A7-MaskRogue2")
+    InMyArea("A7-MaskRogue3")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("A7-SummonMaskRogue","GLOBAL",0)
+    DisplayString(LastSummonerOf(Myself),@106)  // You cannot summon another thief at this time.
+    DestroySelf()
+    SetInterrupt(TRUE)
+END
+
+IF
   Global("A7-MaskRogueLevel","GLOBAL",1)
   !Global("A7-SummonMaskRogue","GLOBAL",0)
 THEN
