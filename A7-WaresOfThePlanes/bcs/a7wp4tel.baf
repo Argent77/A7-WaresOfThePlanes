@@ -3,7 +3,7 @@
 // After winning challenge 1
 IF
   Global("A7-MaskChallenge","GLOBAL",1)
-  WalkedToTrigger([PC])
+  WalkedToTrigger([GOODCUTOFF])
   HasItem("a7-am02",LastTrigger)
 THEN
   RESPONSE #100
@@ -22,7 +22,7 @@ END
 // After winning challenge 2
 IF
   Global("A7-MaskChallenge","GLOBAL",2)
-  WalkedToTrigger([PC])
+  WalkedToTrigger([GOODCUTOFF])
   HasItem("a7-am02a",LastTrigger)
 THEN
   RESPONSE #100
@@ -41,7 +41,7 @@ END
 // After winning challenge 3
 IF
   Global("A7-MaskChallenge","GLOBAL",3)
-  WalkedToTrigger([PC])
+  WalkedToTrigger([GOODCUTOFF])
   HasItem("a7-am02b",LastTrigger)
 THEN
   RESPONSE #100
@@ -59,7 +59,7 @@ END
 
 // Key item required
 IF
-  WalkedToTrigger([PC])
+  WalkedToTrigger([GOODCUTOFF])
   !HasItem("a7-am02",LastTrigger)
   !HasItem("a7-am02a",LastTrigger)
   !HasItem("a7-am02b",LastTrigger)
