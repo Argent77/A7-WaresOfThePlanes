@@ -15,20 +15,39 @@ ACTION_IF (has_bg2) BEGIN
 END
 
 // Defining custom token: Use "gal" or "lad" based on character's gender
-COPY_EXISTING ~tokentxt.2da~ ~override~
-  COUNT_2DA_ROWS 1 tokentxt_index
-  SET tokentxt_index -= 3
-  SPRINT string_gal @2004 // "gal"
-  SPRINT string_lad @2005 // "lad"
-  // token text must not contain regular spaces
-  INNER_PATCH_SAVE replace ~  ~ BEGIN WRITE_SHORT 0 0xa0c2 END  // non-breaking space (U+00A0)
-  INNER_PATCH_SAVE string_gal ~%string_gal%~ BEGIN REPLACE_TEXTUALLY ~[ %TAB%]~ ~%replace%~ END
-  INNER_PATCH_SAVE string_lad ~%string_lad%~ BEGIN REPLACE_TEXTUALLY ~[ %TAB%]~ ~%replace%~ END
-BUT_ONLY
-APPEND ~tokentxt.2da~ ~%tokentxt_index% LADGAL      0   35  2   0   %string_gal%  %string_lad%~
-OUTER_SET tokentxt_index += 1
-APPEND ~tokentxt.2da~ ~%tokentxt_index% PRO_LADGAL  1   35  2   0   %string_gal%  %string_lad%~
-COPY_EXISTING ~tokentxt.2da~ ~override~ PRETTY_PRINT_2DA BUT_ONLY
+ACTION_IF (FILE_EXISTS ~lang/%EE_LANGUAGE%/override/tokentxt.2da~) BEGIN
+  OUTER_SET is_file = 1
+  OUTER_SPRINT tokentxt_file ~lang/%EE_LANGUAGE%/override/tokentxt.2da~
+  COPY ~%tokentxt_file%~ ~%tokentxt_file%~
+    COUNT_2DA_ROWS 1 tokentxt_index
+  BUT_ONLY
+END ELSE BEGIN
+  OUTER_SET is_file = 0
+  OUTER_SPRINT tokentxt_file ~tokentxt.2da~
+  COPY_EXISTING ~%tokentxt_file%~ ~override~
+    COUNT_2DA_ROWS 1 tokentxt_index
+  BUT_ONLY
+END
+
+OUTER_SET tokentxt_index -= 3
+OUTER_SPRINT string_gal @2004 // "gal"
+OUTER_SPRINT string_lad @2005 // "lad"
+// token text must not contain regular spaces
+OUTER_PATCH_SAVE replace ~  ~ BEGIN WRITE_SHORT 0 0xa0c2 END  // non-breaking space (U+00A0)
+OUTER_PATCH_SAVE string_gal ~%string_gal%~ BEGIN REPLACE_TEXTUALLY ~[ %TAB%]~ ~%replace%~ END
+OUTER_PATCH_SAVE string_lad ~%string_lad%~ BEGIN REPLACE_TEXTUALLY ~[ %TAB%]~ ~%replace%~ END
+
+ACTION_IF (is_file) BEGIN
+  APPEND_OUTER ~%tokentxt_file%~ ~%tokentxt_index% LADGAL      0   35  2   0   %string_gal%  %string_lad%~
+  OUTER_SET tokentxt_index += 1
+  APPEND_OUTER ~%tokentxt_file%~ ~%tokentxt_index% PRO_LADGAL  1   35  2   0   %string_gal%  %string_lad%~
+  COPY ~%tokentxt_file%~ ~%tokentxt_file%~ PRETTY_PRINT_2DA BUT_ONLY
+END ELSE BEGIN
+  APPEND ~%tokentxt_file%~ ~%tokentxt_index% LADGAL      0   35  2   0   %string_gal%  %string_lad%~
+  OUTER_SET tokentxt_index += 1
+  APPEND ~%tokentxt_file%~ ~%tokentxt_index% PRO_LADGAL  1   35  2   0   %string_gal%  %string_lad%~
+  COPY_EXISTING ~%tokentxt_file%~ ~override~ PRETTY_PRINT_2DA BUT_ONLY
+END
 
 
 // Merchant name is referenced in dialog
