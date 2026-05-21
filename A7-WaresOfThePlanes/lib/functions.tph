@@ -240,7 +240,7 @@ BEGIN
     READ_2DA_ENTRIES_NOW ~kitlist~ 1
     FOR (row = 4; row < kitlist; ++row) BEGIN
       READ_2DA_ENTRY_FORMER ~kitlist~ row 8 kit_class
-      PATCH_IF (kit_class = 6) BEGIN  // Paladin?
+      PATCH_IF (IS_AN_INT ~kit_class~ && kit_class = 6) BEGIN  // Paladin?
         READ_2DA_ENTRY_FORMER ~kitlist~ row 1 kit_name
         READ_2DA_ENTRY_FORMER ~kitlist~ row 3 kit_title_strref
         TO_UPPER ~kit_name~
@@ -436,7 +436,7 @@ BEGIN
         READ_2DA_ENTRIES_NOW ~kitlist~ 1
         FOR (row = 4; row < kitlist; ++row) BEGIN
           READ_2DA_ENTRY_FORMER ~kitlist~ row 9 id
-          PATCH_IF (id = kit_id) BEGIN
+          PATCH_IF (IS_AN_INT ~id~ && id = kit_id) BEGIN
             READ_2DA_ENTRY_FORMER ~kitlist~ row 3 title
             SET row = kitlist
           END
