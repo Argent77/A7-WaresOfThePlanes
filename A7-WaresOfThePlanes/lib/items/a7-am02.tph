@@ -106,17 +106,30 @@ WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
   END
 
   // creating rechargeable versions of potions for the summoned thieves
+  OUTER_SPRINT prev_resref ~~
+  OUTER_SPRINT prev_new_resref ~~
   ACTION_PHP_EACH potion_array AS resref => new_resref BEGIN
-    COPY_EXISTING ~%resref%.ITM~ ~override/%new_resref%.ITM~
-      WRITE_SHORT 0x38 1  // # in stack
-      READ_LONG 0x64 ofs_abil
-      READ_SHORT 0x68 num_abil
-      FOR (i = 0; i < num_abil; ++i) BEGIN
-        SET cur_ofs = ofs_abil + i * 56
-        WRITE_SHORT (cur_ofs + 0x22) 5  // # charges
-        WRITE_SHORT (cur_ofs + 0x24) 3  // Item recharges
-        WRITE_LONG (cur_ofs + 0x26) (THIS | BIT11)  // Recharge after resting
-      END
+    // checking whether item is available in the game
+    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%resref%.ITM~) BEGIN
+      OUTER_SPRINT $potion_array(~%resref%~) ~%prev_new_resref%~
+      OUTER_SPRINT resref ~%prev_resref%~
+      OUTER_SPRINT new_resref ~%prev_new_resref%~
+    END
+    // cloning item
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resref%.ITM~ && NOT FILE_EXISTS_IN_GAME ~%new_resref%.ITM~) BEGIN
+      COPY_EXISTING ~%resref%.ITM~ ~override/%new_resref%.ITM~
+        WRITE_SHORT 0x38 1  // # in stack
+        READ_LONG 0x64 ofs_abil
+        READ_SHORT 0x68 num_abil
+        FOR (i = 0; i < num_abil; ++i) BEGIN
+          SET cur_ofs = ofs_abil + i * 56
+          WRITE_SHORT (cur_ofs + 0x22) 5  // # charges
+          WRITE_SHORT (cur_ofs + 0x24) 3  // Item recharges
+          WRITE_LONG (cur_ofs + 0x26) (THIS | BIT11)  // Recharge after resting
+        END
+      OUTER_SPRINT prev_resref ~%resref%~
+      OUTER_SPRINT prev_new_resref ~%new_resref%~
+    END
   END
 
   // summon thieves
