@@ -1,0 +1,43 @@
+// Sleepstick
+
+@0 = ~Sleepstick~
+@1 = ~Sleepstick~
+
+@10 = ~The Sleepstick is a blackjack–a light weapon that consists of a small leather bag filled with a heavyweight material, attached to a flexible wooden stick. With its small size, it can be easily concealed, and is therefore favored by less reputable characters.
+
+Because of the small size the weapon can deal only minor non-lethal damage. However, unsuspecting targets can be knocked unconscious by administering a well-aimed blow to the head or back of the neck.
+
+STATISTICS:
+
+Combat abilities:
+– When a backstab is performed the victim is knocked unconscious for 1d4+2 rounds if the wielder is proficient in handling the weapon. A successful save vs. Death with a penalty that increases with the amount of points spent in the weapon proficiency negates the effect. Undead, myconids, and constructs are immune to the effect.
+– The victim is rendered unconscious if a hit from the weapon reduces their hit points to 0.
+
+Damage: 1d2 (non-lethal)
+Speed Factor: 2
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
+@11 = ~The Sleepstick is a blackjack–a light weapon that consists of a small leather bag filled with a heavyweight material, attached to a flexible wooden stick. With its small size, it can be easily concealed, and is therefore favored by less reputable characters.
+
+Because of the small size the weapon can deal only minor non-lethal damage. However, unsuspecting targets can be knocked unconscious by administering a well-aimed blow to the head or back of the neck.
+
+STATISTICS:
+
+Combat abilities:
+– When a backstab is performed the victim is knocked unconscious for 1d4+2 rounds if the wielder is proficient in handling the weapon. A successful save vs. Death with a penalty that increases with the amount of points spent in the weapon proficiency negates the effect. Undead, myconids, and constructs are immune to the effect.
+– The victim is rendered unconscious if a hit from the weapon reduces their hit points to 0.
+
+Damage: 1d2 (non-lethal)
+Speed Factor: 2
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
+
+@20 = ~Neck broken~

@@ -1,0 +1,72 @@
+// Item: Sleepstick
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-mc10~
+
+// Installing item
+COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+  LPF update_item_generic
+    STR_VAR
+      itm_resref
+    RET
+      icon_resref
+      desc_image_resref
+  END
+
+// Installing associated resources
+LAF install_item_resources_generic
+STR_VAR
+  itm_resref
+  icon_resref
+  desc_image_resref
+END
+
+// updating strref in opcode 139 instances
+LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+  // new splprot filter
+  LAF get_splprot_entry
+    INT_VAR
+      stat = IDS_OF_SYMBOL(~stats~ ~PROFICIENCYCLUB~)
+      value = "-1"
+      relation = 1
+    STR_VAR
+      name = ~*_STAT(PROFICIENCYCLUB)=n~
+    RET
+      splprot_idx = index
+  END
+
+  COPY ~%MOD_FOLDER%/spl/a7-mc10a.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 326  // Apply effects list
+        parameter2 = splprot_idx
+    END
+
+  COPY ~%MOD_FOLDER%/spl/a7-mc10b.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-mc10c.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-mc10d.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-mc10e.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-mc10f.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@20) // Neck is broken
+    END
+    PATCH_FOR_EACH ids_label IN ~DEATH_WARD~ ~DEATH_IMMUNITY~ BEGIN
+      SET ids_value = IDS_OF_SYMBOL(~splstate~ ~%ids_label%~)
+      PATCH_IF (ids_value > 0) BEGIN
+        LPF CLONE_EFFECT
+          INT_VAR
+            check_globals = 0
+            multi_match = 1
+            match_opcode = 318  // Protection from resource
+            parameter1 = ids_value
+            parameter2 = 110  // SPLSTATE == [parameter1]
+          STR_VAR
+            insert = ~below~
+        END
+      END
+    END
+END
