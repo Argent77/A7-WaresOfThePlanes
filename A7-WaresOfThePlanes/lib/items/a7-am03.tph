@@ -1,0 +1,149 @@
+// Item: Ordeal of the Yor'thae
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+INCLUDE ~%MOD_FOLDER%/lib/find_free_anim_slot.tph~
+
+OUTER_SPRINT itm_resref ~a7-am03~
+OUTER_SPRINT itm_resref_upper ~%itm_resref%~
+ACTION_TO_UPPER ~itm_resref_upper~
+
+ACTION_IF (has_sod || has_bg2) BEGIN
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        desc_image_resref
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    desc_image_resref
+  END
+
+  COPY ~%MOD_FOLDER%/2da/a7-spcms.2da~      ~override~
+       ~%MOD_FOLDER%/bam/%itm_resref%d.bam~ ~override~
+       ~%MOD_FOLDER%/bam/a7-anism.bam~      ~override~
+       ~%MOD_FOLDER%/bam/mspi0inv.bam~      ~override~
+       ~%MOD_FOLDER%/eff/%itm_resref%a.eff~ ~override~
+       ~%MOD_FOLDER%/eff/a7-spcmm.eff~      ~override~
+       ~%MOD_FOLDER%/eff/a7-spcms.eff~      ~override~
+       ~%MOD_FOLDER%/itm/a7-spcma.itm~      ~override~
+       ~%MOD_FOLDER%/vvc/a7-spcmm.vvc~      ~override~
+       ~%MOD_FOLDER%/vvc/a7-spcms.vvc~      ~override~
+
+  // Installing creature animation
+  OUTER_SPRINT ini_resref ~monster-spider-common~
+  OUTER_SPRINT ini_type   ~monster~
+  OUTER_SPRINT bam_resref ~a7sc~
+  OUTER_SPRINT ids_label  ~A7_SPIDER_COMMON~
+  LAF FIND_FREE_ANIM_SLOT STR_VAR type = EVAL ~%ini_type%~ RET anim_slot = slot END
+
+  ACTION_IF (anim_slot > 0) BEGIN
+    OUTER_PATCH ~~ BEGIN
+      SPRINTF slot_hex ~%x~ (anim_slot)
+      INNER_PATCH_SAVE slot_hex ~%slot_hex%~ BEGIN DELETE_BYTES 0 2 END
+      WHILE (STRING_LENGTH ~%slot_hex%~ < 4) BEGIN SPRINT slot_hex ~0%slot_hex%~ END
+    END
+
+    // installing INI file
+    COPY ~%MOD_FOLDER%/ini/%ini_resref%.ini~ ~override/%slot_hex%.ini~
+
+    // installing BAM files
+    ACTION_BASH_FOR ~%MOD_FOLDER%/bam~ ~^%bam_resref%.*\.bam$~ BEGIN
+      COPY ~%BASH_FOR_FILESPEC%~ ~override~
+    END
+
+    // adding ANIMATE.IDS entry
+    APPEND ~animate.ids~ ~0x%slot_hex% %ids_label%~
+    CLEAR_IDS_MAP
+  END ELSE BEGIN
+    FAIL ~No free animation slot found for %ini_resref%.ini~
+  END
+
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    // installing creature scripts
+    OUTER_SET id_spider_master = 211
+    OUTER_SET id_spider_drone = 212
+    OUTER_PATCH ~~ BEGIN
+      SET id_spider_master_set = 0
+      SET id_spider_drone_set = 0
+      FOR (id = 201; id < 255; ++id) BEGIN
+        LOOKUP_IDS_SYMBOL_OF_INT name ~specific~ id
+        PATCH_IF (IS_AN_INT ~name~) BEGIN
+          PATCH_IF (NOT id_spider_master_set) BEGIN
+            SET id_spider_master = id
+            SET id_spider_master_set = 1
+          END ELSE PATCH_IF (NOT id_spider_drone_set) BEGIN
+            SET id_spider_drone = id
+            SET id_spider_drone_set = 1
+          END
+          PATCH_IF (id_spider_master_set && id_spider_drone_set) BEGIN
+            SET id = 255
+          END
+        END
+      END
+    END
+    APPEND ~SPECIFIC.IDS~ ~%id_spider_master% A7_SPIDER_MASTER~
+    APPEND ~SPECIFIC.IDS~ ~%id_spider_drone% A7_SPIDER_DRONE~
+    CLEAR_IDS_MAP
+    OUTER_PATCH ~~ BEGIN
+      LOOKUP_IDS_SYMBOL_OF_INT symbol_spider_master ~specific~ id_spider_master
+      LOOKUP_IDS_SYMBOL_OF_INT symbol_spider_drone ~specific~ id_spider_drone
+    END
+
+    COMPILE ~%MOD_FOLDER%/bcs/a7-spcmm.baf~
+            ~%MOD_FOLDER%/bcs/a7-spcms.baf~
+
+    // installing creatures
+    COPY ~%MOD_FOLDER%/cre/a7-spcmm.cre~ ~override~
+      SAY NAME1 @200  // Spider Swarm Leader
+      SAY NAME2 @200  // Spider Swarm Leader
+      WRITE_BYTE 0x274 id_spider_master // specifics value
+
+    COPY ~%MOD_FOLDER%/cre/a7-spcms.cre~ ~override~
+      SAY NAME1 @201  // Spider Drone
+      SAY NAME2 @201  // Spider Drone
+      WRITE_LONG 0x28 anim_slot
+      WRITE_BYTE 0x274 id_spider_drone  // specifics value
+
+    // adding ability tooltips
+    OUTER_SET summon_strref = RESOLVE_STR_REF(@100) // Summon Spider Swarm
+    APPEND ~tooltip.2da~ ~%itm_resref_upper%    %summon_strref%      -1         -1~
+
+    // Appending STATDESC table
+<<<<<<<< .../inlined/A7-WaresOfThePlanes/a7-bl01/statdesc-append.2da
+%statdesc_idx%   %statdesc_tra_101%   %itm_resref_upper%D
+>>>>>>>>
+    COPY_EXISTING ~statdesc.2da~ ~override~
+      READ_2DA_ENTRIES_NOW ~statdesc~ 1
+      SET statdesc_idx = 0
+      FOR (row = 3; row < statdesc; ++row) BEGIN
+        READ_2DA_ENTRY_FORMER ~statdesc~ row 0 index
+        PATCH_IF (IS_AN_INT ~index~ && index > statdesc_idx) BEGIN
+          SET statdesc_idx = index
+        END
+      END
+      SET statdesc_idx += 1
+      SET statdesc_tra_101 = RESOLVE_STR_REF(@101)  // Protected from Web Effects
+      APPEND_FILE_EVALUATE TEXT ~.../inlined/A7-WaresOfThePlanes/a7-bl01/statdesc-append.2da~
+      PRETTY_PRINT_2DA
+    BUT_ONLY
+
+    COPY_EXISTING ~%itm_resref%.itm~ ~override~
+      LPF alter_item_effect_ex
+        INT_VAR
+          check_globals = 1
+          match_opcode = 142  // Display portrait icon
+          match_parameter2 = 19
+          parameter2 = statdesc_idx
+      END
+    BUT_ONLY
+  END
+END

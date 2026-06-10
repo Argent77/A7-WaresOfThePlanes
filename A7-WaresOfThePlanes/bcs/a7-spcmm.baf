@@ -1,0 +1,168 @@
+// Master spider combat script
+IF
+  Global("init","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("init","LOCALS",1)
+    SetGlobal("SPRITE_IS_DEADA7-SPCMS","GLOBAL",0)
+    SetGlobal("SPRITE_IS_DEADA7-SPCMM","GLOBAL",0)
+    ChangeGender(Myself,SUMMONED)
+    Continue()
+END
+
+IF
+  Global("final","LOCALS",0)
+  !Global("init","LOCALS",0)
+  NumDeadGT("a7-spcms",15)
+THEN
+  RESPONSE #100
+    SetGlobal("final","LOCALS",1)
+    DestroyItem("MINHP1")
+    DisplayString(Myself,@202)  // Drone Shield deactivated
+    Continue()
+END
+
+IF
+  StateCheck(Myself,STATE_PANIC)
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+END
+
+IF
+  TookDamage()
+  HP(Myself,1)
+  Detect([GOODCUTOFF.MONSTER.SPIDER.0.A7_SPIDER_DRONE])
+THEN
+  RESPONSE #100
+    Kill([GOODCUTOFF.MONSTER.SPIDER.0.A7_SPIDER_DRONE])
+    Continue()
+END
+
+IF
+  TookDamage()
+  HP(Myself,1)
+  !Detect([GOODCUTOFF.MONSTER.SPIDER.0.A7_SPIDER_DRONE])
+THEN
+  RESPONSE #100
+    SetGlobal("final","LOCALS",1)
+    DestroyItem("MINHP1")
+    DisplayString(Myself,@202)  // Drone Shield deactivated
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  !ActuallyInCombat()
+  !See([PC])
+  Exists(LastSummonerOf(Myself))
+THEN
+  RESPONSE #100
+    MoveToObject(LastSummonerOf(Myself))
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  !ActuallyInCombat()
+  !See([PC])
+  !Exists(LastSummonerOf(Myself))
+THEN
+  RESPONSE #100
+    MoveToObject(Player1)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself),4)
+  Range([GOODCUTOFF.MONSTER.SPIDER.0.A7_SPIDER_DRONE],15)
+THEN
+  RESPONSE #50
+    ActionOverride([GOODCUTOFF.MONSTER.SPIDER.0.A7_SPIDER_DRONE],AttackReevaluate(LastSeenBy([GOODCUTOFF.MONSTER.SPIDER.0.A7_SPIDER_MASTER]),15))
+    RunAwayFromNoInterruptNoLeaveArea(LastSeenBy(Myself),30)
+  RESPONSE #50
+    Continue()
+END
+
+
+IF
+  ActionListEmpty()
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself),4)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),5)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  See(NearestEnemyOf(Myself))
+  !Range(LastSeenBy(Myself),4)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),5)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  See(SecondNearestEnemyOf(Myself))
+  !Range(LastSeenBy(Myself),4)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),5)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  See(ThirdNearestEnemyOf(Myself))
+  !Range(LastSeenBy(Myself),4)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),5)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  See(FourthNearestEnemyOf(Myself))
+  !Range(LastSeenBy(Myself),4)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),5)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  See(FifthNearestEnemyOf(Myself))
+  !Range(LastSeenBy(Myself),4)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),5)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  ActuallyInCombat()
+THEN
+  RESPONSE #50
+    RandomWalk()
+  RESPONSE #100
+    RandomTurn()
+  RESPONSE #100
+    Continue()
+END

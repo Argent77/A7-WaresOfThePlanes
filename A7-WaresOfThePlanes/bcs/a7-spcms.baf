@@ -1,0 +1,105 @@
+// Spider drones combat script
+IF
+  Global("init","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("init","LOCALS",1)
+    ChangeGender(Myself,SUMMONED)
+    Continue()
+END
+
+IF
+  StateCheck(Myself,STATE_PANIC)
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+END
+
+IF
+  AttackedBy([ENEMY],DEFAULT)
+  See(LastAttackerOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastAttackerOf(Myself),15)
+END
+
+IF
+  !ActuallyInCombat()
+  !Dead("a7-spcmm")
+  Detect([GOODCUTOFF.MONSTER.SPIDER.0.A7_SPIDER_MASTER])
+  !Range([GOODCUTOFF.MONSTER.SPIDER.0.A7_SPIDER_MASTER],20)
+THEN
+  RESPONSE #100
+    MoveToObjectOffset([GOODCUTOFF.MONSTER.SPIDER.0.A7_SPIDER_MASTER],[0.20])
+END
+
+IF
+  !ActuallyInCombat()
+  !Detect([GOODCUTOFF.MONSTER.SPIDER.0.A7_SPIDER_MASTER])
+  Exists(LastSummonerOf(Myself))
+THEN
+  RESPONSE #100
+    MoveToObjectOffset(LastSummonerOf(Myself),[0.20])
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  !ActuallyInCombat()
+  !Detect([GOODCUTOFF.MONSTER.SPIDER.0.A7_SPIDER_MASTER])
+  !Exists(LastSummonerOf(Myself))
+THEN
+  RESPONSE #100
+    MoveToObjectOffset(Player1,[0.20])
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  OR(2)
+    Detect([GOODCUTOFF.MONSTER.SPIDER.0.A7_SPIDER_DRONE])
+    Detect([GOODCUTOFF.MONSTER.SPIDER.0.A7_SPIDER_MASTER])
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),15)
+  RESPONSE #25
+    RandomWalk()
+  RESPONSE #25
+    Continue()
+END
+
+IF
+  ActuallyInCombat()
+  See([ENEMY])
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),15)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActuallyInCombat()
+THEN
+  RESPONSE #50
+    RandomWalk()
+  RESPONSE #100
+    RandomTurn()
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Dead("a7-spcmm")
+THEN
+  RESPONSE #100
+    EscapeAreaNoSee()
+END

@@ -1,0 +1,38 @@
+// Ordeal of the Yor'thae
+
+@0 = ~Spider-shaped Amulet~
+@1 = ~Ordeal of the Yor'thae~
+
+// @10 = ~~ // #6900
+@11 = ~Even at a cursory glance it is obvious that this artifact was forged by the Drow. It is part of a set that was created in the Demonweb Pits, the 66th layer of the Abyss, by a fanatical sect of Lolth worshippers. It was supposedly shaped from raw matter of the Demonweb Pits, and infused with dark magics by a ritual that involved the sacrifice of many drow slaves.
+
+Once equipped the enchantment of the amulet activates and the spider "wakes up". It fuses with the wearer who undergoes a painful transformation into a spider as a result. The effect can only be reversed by a Remove Curse spell.
+
+These amulets were sometimes granted to promising novice priests in the hopes they would gain a greater understanding of Lolth's doctrines. With the artifact equipped they were forced to live in exile. Their only hope to be released from the curse was by surviving a full year in solitude.
+
+Artifacts like these are rarely seen outside of the drow society. This particular instance was discovered in the Underdark among the remains of a failed novice priest by a group of adventurers, before it could be secured by the drow clergy.
+
+STATISTICS:
+
+Equipped abilities: 
+– Changes the wearer's appearance to that of a spider
+– Immunity to web effects
+– Charisma: -50%
+– Armor Class: +2 vs. spiders
+– Saving Throws: +2 vs. spiders
+– May only be removed by a Remove Curse spell
+
+Charge abilities:
+– Summon a spider swarm once per day
+  Range: 30 ft.
+  Duration: 5 turns
+  Summons one swarm leader and 16 drones. Only the spider leader can be directly controlled by the summoner. The spider drones will follow the leader and attack enemies of the summoner on sight. They can attack twice per round and have a chance to poison their target (Save vs. Poison at +2 negates).
+
+Weight: 1~
+
+@100 = ~Summon Spider Swarm~
+@101 = ~Protected from Web Effects~
+
+@200 = ~Spider Swarm Leader~
+@201 = ~Spider Drone~
+@202 = ~Drone Shield deactivated~

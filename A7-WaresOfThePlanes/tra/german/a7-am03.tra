@@ -1,0 +1,39 @@
+// Ordeal of the Yor'thae
+
+@0 = ~Spinnenförmiges Amulett~
+@1 = ~Marter der Yor'thae~
+
+// @10 = ~~ // #6900
+@11 = ~Schon auf den ersten Blick erkennt man die offensichtliche Drow-Herkunft des Amuletts. Es war Teil einer Reihe von Artefakten, die in den Todesnetz-Gruben, der 66. Ebene des Abyss, von einer fanatischen Sekte von Lolth-Anhängerinnen erschaffen wurde. Das Amulett wurde angeblich direkt aus der rohen Materie der Todesnetz-Gruben geschmiedet und mit dunkler Magie gefüllt, die durch Rituale gespeist wurde, bei der viele Drowsklaven geopfert wurden.
+
+Sobald man das Amulett anlegt, aktiviert sich seine Verzauberung und „weckt“ die Spinne auf. Sie verschmilzt mit dem Träger, der dadurch eine schmerzhafte Verwandlung in eine Spinne durchmacht. Dieser Effekt kann nur durch den Zauber „Fluch brechen“ wieder umgekehrt werden.
+
+Diese Amulette wurden manchmal an aussichtsreiche Priesteranwärterinnen vergeben, in der Hoffnung, dass sie dadurch ein tieferes Verständnis für die Lehren von Lolth erlangen würden. Ausgestattet mit dem Artefakt waren sie gezwungen, im Exil zu leben. Ihre einzige Hoffnung, vom Fluch befreit zu werden, war, ein ganzes Jahr in Abgeschiedenheit zu überleben.
+
+Artefakte wie diese sind außerhalb der Drowgemeinschaft nur selten zu finden. Dieses Exemplar wurde im Unterreich von einer Gruppe Abenteurern in den Überresten einer gefallenen Priesteranwärterin entdeckt, bevor es von der Drowpriesterschaft in Sicherheit gebracht werden konnte.
+
+EIGENSCHAFTEN:
+
+Kann nur durch „Fluch brechen“ wieder abgenommen werden.
+
+Der Träger sieht aus wie eine Spinne.
+
+Der Träger ist vor Spinnennetzen geschützt.
+
+Charisma: um 50 % reduziert
+RK-Bonus: -2 gg. Spinnen
+RW-Bonus: -2 gg. Spinnen
+
+Spinnenschwarm beschwören (1x täglich)
+ Reichweite: 9 m (Sichtfeld)
+ Dauer: 5 Phasen
+ Beschwört einen Spinnenanführer und 16 Spinnendronen. Nur der Spinnenanführer kann vom Beschwörer kontrolliert werden. Die Spinnendronen folgen dem Anführer und greifen die Feinde des Beschwörers an. Sie können zweimal pro Runde angreifen und sind in der Lage, das Opfer zu vergiften (Rettungswurf mit einem +2 Bonus gg. Gift).
+
+Gewicht: 1~
+
+@100 = ~Spinnenschwarm beschwören~
+@101 = ~Vor Spinnennetzen geschützt~
+
+@200 = ~Spinnenanführer~
+@201 = ~Spinnendrone~
+@202 = ~Dronenschild abgeschaltet~
