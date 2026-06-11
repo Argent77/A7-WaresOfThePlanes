@@ -374,6 +374,53 @@ END
 
 
 /**
+ * Adds a new definition with the specified parameters to STATDESC.2DA and returns the stat index.
+ *
+ * INT_VAR strref   Strref of the portrait icon description label. (Default: -1)
+ * INT_VAR prettify Whether to invoke PRETTY_PRINT_2DA after the definition was added. (Default: 1)
+ * STR_VAR resref   Custom BAM resref to use for the statdesc entry.
+ * RET index        Returns the index of the added statdesc entry. Returns -1 if the definition could not be added.
+ */
+DEFINE_ACTION_FUNCTION add_statdesc_entry
+INT_VAR
+  strref = "-1"
+  prettify = 1
+STR_VAR
+  resref = ~~
+RET
+  index
+BEGIN
+  OUTER_SET index = "-1"
+  ACTION_IF (NOT ~%resref%~ STR_EQ ~~) BEGIN
+<<<<<<<< .../inlined/A7-WaresOfThePlanes/add_statdesc_entry/statdesc-append.2da
+%index%         %strref%      %resref%
+>>>>>>>>
+    COPY_EXISTING ~statdesc.2da~ ~override~
+      // finding first free index
+      READ_2DA_ENTRIES_NOW statdesc_table 1
+      SET cur_idx = index
+      FOR (row = 3; row < statdesc_table; ++row) BEGIN
+        READ_2DA_ENTRY_FORMER statdesc_table row 0 value
+        PATCH_IF (IS_AN_INT ~value~ && value > cur_idx) BEGIN
+          SET cur_idx = value
+        END
+      END
+
+      // appending statdesc table
+      PATCH_IF (cur_idx >= 0) BEGIN
+        SET index = cur_idx + 1
+        TO_UPPER ~resref~
+        APPEND_FILE_EVALUATE TEXT ~.../inlined/A7-WaresOfThePlanes/add_statdesc_entry/statdesc-append.2da~
+        PATCH_IF (prettify) BEGIN
+          PRETTY_PRINT_2DA
+        END
+      END
+    BUT_ONLY IF_EXISTS
+  END
+END
+
+
+/**
  * Returns the title of the specified class as strref.
  *
  * STR_VAR class_name   Symbolic class name or numeric class id to look up.

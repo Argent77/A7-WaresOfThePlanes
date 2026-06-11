@@ -91,23 +91,13 @@ WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
 END
 
 // "Protection from Good" effect
-OUTER_SET statdesc_index = "-1"
-COPY_EXISTING ~statdesc.2da~ ~override~
-  READ_2DA_ENTRIES_NOW statdesc_table 1
-  FOR (row = 3; row < statdesc_table; ++row) BEGIN
-    PATCH_IF (IS_AN_INT $statdesc_table(~%row%~ ~0~)) BEGIN
-      SET index = $statdesc_table(~%row%~ ~0~)
-      SET statdesc_index = index > statdesc_index ? index : statdesc_index
-    END
-  END
-BUT_ONLY
+LAF add_statdesc_entry
+  INT_VAR strref = 14770 // Protected from Good
+  STR_VAR resref = EVAL ~%itm_resref%d~
+  RET statdesc_index = index
+END
 
-ACTION_IF (statdesc_index > 0) BEGIN
-  OUTER_SET statdesc_index += 1
-  APPEND ~statdesc.2da~ ~%statdesc_index%  14770  %itm_resref%d~
-  COPY_EXISTING ~statdesc.2da~ ~override~ PRETTY_PRINT_2DA BUT_ONLY
-  COPY ~%MOD_FOLDER%/bam/%itm_resref%d.bam~ ~override~
-END ELSE BEGIN
+ACTION_IF (statdesc_index < 0) BEGIN
   // fallback option
   OUTER_SET statdesc_index = 9  // Protection from Evil
 END
@@ -119,7 +109,8 @@ COPY ~%MOD_FOLDER%/spl/%itm_resref%a.spl~ ~override~
       parameter2 = statdesc_index
   END
 
-COPY ~%MOD_FOLDER%/bmp/%itm_resref%a.bmp~ ~override~
+COPY ~%MOD_FOLDER%/bam/%itm_resref%d.bam~ ~override~
+     ~%MOD_FOLDER%/bmp/%itm_resref%a.bmp~ ~override~
      ~%MOD_FOLDER%/vvc/%itm_resref%a.vvc~ ~override~
 
 WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
