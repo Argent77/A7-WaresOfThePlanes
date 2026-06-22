@@ -1,0 +1,14 @@
+// *** BG2-SoA: Shadow Temple interior ***
+
+IF
+  Global("a7-mi11-statuecheck","MYAREA",0)
+  GlobalGT("a7-mi11-upgrade","GLOBAL",1)
+  GlobalLT("a7-mi11-upgrade","GLOBAL",4)
+  PartyHasItem("a7-mi11")
+  !Exists("shaava01")
+THEN
+  RESPONSE #100
+    SetGlobal("a7-mi11-statuecheck","MYAREA",1)
+    CreateCreatureImpassable("shaava01",[913.198],SW)
+    Continue()
+END

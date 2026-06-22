@@ -140,6 +140,7 @@ ACTION_IF (has_sod || has_bg2) BEGIN
     WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
       ADD_JOURNAL @300 @301 @302 @303 @350
       COMPILE ~%MOD_FOLDER%/dlg/%itm_resref%.d~
+      EXTEND_TOP ~ar1401.bcs~ ~%MOD_FOLDER%/bcs/%itm_resref%-ar1401-top.baf~
       EXTEND_BOTTOM ~cleanse.bcs~ ~%MOD_FOLDER%/bcs/%itm_resref%.baf~
 
       COPY_EXISTING ~spholy.vvc~ ~override/a7-mi11x.vvc~
