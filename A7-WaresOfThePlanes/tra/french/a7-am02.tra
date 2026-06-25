@@ -1,0 +1,218 @@
+// Eyes of Mask
+
+@0 = ~Masque décoré~
+@1 = ~Les yeux de Mask (endormis)~
+
+@10 = ~Les masques sont des couvre-visages à caractère artistique, culturel ou cérémoniel. Ils sont couramment utilisés lors d'occasions festives, mais peuvent également servir à se déplacer librement sans risquer d'être reconnu.
+
+STATISTIQUES :
+
+Poids : 1~
+@11 = ~Des artefacts comme ceux-ci étaient couramment portés par les membres haut placés de l’Église de Mask. On raconte que le Seigneur des Ombres se déguisait parfois en l’un de ces artefacts pour se déplacer sans être repéré, utilisant alors la personne qui le portait, qui ne se doutait de rien, comme ses yeux et ses oreilles.
+
+Ces artefacts ne cèdent toutefois leurs pouvoirs à personne. Leurs propriétaires doivent prouver leur valeur en se soumettant à des épreuves mystérieuses afin de débloquer progressivement les pouvoirs de l’artefact. Ces artefacts sont parfois offerts à des candidats prometteurs de l’Église. Bien qu’ils ne soient au premier abord qu’un simple bijou insolite, ils peuvent potentiellement devenir des artefacts dotés d’un pouvoir inimaginable entre les mains de disciples compétents.
+
+STATISTIQUES :
+
+Capacité d'équipement :
+– Malus de -2 au TAC0 contre les voleurs
+
+Poids : 1~
+
+@20 = ~Les yeux de Mask~
+@21 = ~Des artefacts comme ceux-ci étaient couramment portés par les membres haut placés de l’Église du Masque. On raconte que le Seigneur des Ombres se déguisait parfois en l’un de ces artefacts pour se déplacer sans être repéré, utilisant alors la personne qui le portait, qui ne se doutait de rien, comme ses yeux et ses oreilles.
+
+Ces artefacts ne cèdent toutefois leurs pouvoirs à personne. Leurs propriétaires doivent prouver leur valeur en se soumettant à des épreuves mystérieuses afin de débloquer progressivement les pouvoirs de l’artefact. Ces artefacts sont parfois offerts à des candidats prometteurs de l’Église. Bien qu’ils ne soient au premier abord qu’un simple bijou insolite, ils peuvent potentiellement devenir des artefacts dotés d’un pouvoir inimaginable entre les mains de disciples compétents.
+
+Lorsqu'il est porté, cet artefact aiguise les sens de son utilisateur. De plus, une fois par jour, il permet de rappeler d'entre les morts un voleur novice afin qu'il se charge à la place de tâches fastidieuses et parfois dangereuses, telles que le désamorçage de pièges ou le crochetage de serrures.
+
+STATISTIQUES :
+
+Capacités d'équipement :
+– Bonus de +1 à la CA contre les dégâts perforants et de missiles
+– Malus de -2 au TAC0 contre les voleurs
+
+Capacités de charge :
+– Invoque un voleur de niveau 6 pendant cinq tours (1 fois par jour)
+  PV : 36, CA : 4, TAC0 : 17
+  Crochetage : 60, Détection de pièges : 80, Discrétion : 30, Détection d'illusions : 0
+
+Poids : 1~
+
+@22 = ~Les yeux de Mask (améliorés)~
+@23 = ~Des artefacts comme ceux-ci étaient couramment portés par les membres haut placés de l’Église du Masque. On raconte que le Seigneur des Ombres se déguisait parfois en l’un de ces artefacts pour se déplacer sans être repéré, utilisant alors la personne qui le portait, qui ne se doutait de rien, comme ses yeux et ses oreilles.
+
+Ces artefacts ne cèdent toutefois leurs pouvoirs à personne. Leurs propriétaires doivent prouver leur valeur en se soumettant à des épreuves mystérieuses afin de débloquer progressivement les pouvoirs de l’artefact. Ces artefacts sont parfois offerts à des candidats prometteurs de l’Église. Bien qu’ils ne soient au premier abord qu’un simple bijou insolite, ils peuvent potentiellement devenir des artefacts dotés d’un pouvoir inimaginable entre les mains de disciples compétents.
+
+Lorsqu'il est porté, cet artefact aiguise les sens de son utilisateur. De plus, une fois par jour, il permet de faire revenir d'outre-tombe un voleur chevronné afin de décharger l'utilisateur de tâches fastidieuses et parfois dangereuses, telles que le désamorçage de pièges ou le crochetage de serrures.
+
+STATISTIQUES :
+
+Capacités d'équipement :
+– Bonus de +1 à tous les jets de sauvegarde
+– Bonus de +2 à la CA contre les dégâts perforants et de missiles
+– Malus de -2 au TAC0 contre les voleurs
+
+Capacités de charge :
+– Invoque un voleur de niveau 12 pendant cinq tours (1 fois par jour)
+  PV : 64, CA : 1, TAC0 : 13
+  Crochetage : 100, Détection de pièges : 100, Discrétion : 80, Détection d'illusions : 25
+
+Poids : 1~
+
+@24 = ~Les yeux de Mask (parfaits)~
+@25 = ~Des artefacts comme ceux-ci étaient couramment portés par les membres haut placés de l’Église du Masque. On raconte que le Seigneur des Ombres se déguisait parfois en l’un de ces artefacts pour se déplacer sans être repéré, utilisant alors la personne qui le portait, qui ne se doutait de rien, comme ses yeux et ses oreilles.
+
+Ces artefacts ne cèdent toutefois leurs pouvoirs à personne. Leurs propriétaires doivent prouver leur valeur en se soumettant à des épreuves mystérieuses afin de débloquer progressivement les pouvoirs de l’artefact. Ces artefacts sont parfois offerts à des candidats prometteurs de l’Église. Bien qu’ils ne soient au premier abord qu’un simple bijou insolite, ils peuvent potentiellement devenir des artefacts dotés d’un pouvoir inimaginable entre les mains de disciples compétents.
+
+Lorsqu'il est porté, cet artefact aiguise les sens de son utilisateur. De plus, une fois par jour, il permet de faire revenir d'outre-tombe un maître voleur afin de décharger l'utilisateur de tâches fastidieuses et parfois dangereuses, telles que le désamorçage de pièges ou le crochetage de serrures.
+
+STATISTIQUES :
+
+Capacités d'équipement :
+– Bonus de +2 à tous les jets de sauvegarde
+– Bonus de +4 à la CA contre les dégâts perforants et de missiles
+– Malus de -2 au TAC0 contre les voleurs
+
+Capacités de charge :
+– Invoque un voleur de niveau 18 pendant cinq tours (1 fois par jour)
+  PV : 96, CA : 0, TAC0 : 8
+  Crochetage : 100, Détection de pièges : 100, Discrétion : 135, Détection d'illusions : 100
+
+Poids : 1~
+
+@50 = ~AVERTISSEMENT : aucun emplacement libre n'a ete trouve pour l'animation personnalisee du voleur. Utilisation de l'animation par defaut.~
+
+@100 = ~débloquer~
+@101 = ~Invoquer un voleur~
+@102 = ~Voleur fantomatique~
+@103 = ~Voix désincarnée~
+@104 = ~L'élu de Mask~
+@105 = ~Le portail ne peut être utilisé que si vous possédez les Yeux de Mask.~
+@106 = ~Vous ne pouvez pas invoquer un autre voleur pour le moment.~
+@107 = ~Un éclair de lumière émane des Yeux de Mask alors que certains pouvoirs dormants se réveillent.~
+@108 = ~20 000 points d'expérience sont nécessaires pour affronter l'épreuve.~
+@109 = ~440 000 points d'expérience sont nécessaires pour affronter l'épreuve.~
+@110 = ~1 760 000 points d’expérience sont nécessaires pour relever l’épreuve.~
+@111 = ~*boit une potion*~
+@112 = ~Inspecter~
+@113 = ~Détection d’illusion~
+@114 = ~Échec de la détection d’illusions~
+
+// dialog lines
+// conversable items
+@300 = ~Une voix résonne dans votre tête : « Affronte mes épreuves pour débloquer mes pouvoirs. »~
+@301 = ~Je suis prêt.~~Je suis prête.~
+@302 = ~Ranger le masque.~
+@303 = ~Une voix résonne dans votre tête : « Tu n'es pas digne de mes pouvoirs. »~
+@304 = ~Tu n'es pas encore assez fort pour me défier.~
+@305 = ~Le masque est léger, mais très solide. Vous ressentez un léger picotement lorsque vous passez vos doigts sur la surface de l’artefact.~
+@306 = ~Alors que vous concentrez vos pensées sur le masque, celui-ci émet une faible lueur et vous percevez un murmure lointain dans votre tête.~
+
+// Challenges
+@400 = ~Tu es entré dans les Épreuves du Masque, suppliant. Surmonte mes défis pour débloquer mes pouvoirs.~
+@401 = ~Pour le premier défi, j’ai préparé un duel à un contre un avec l’un de mes Élus. Bats-le pour remporter ma récompense.~
+@402 = ~Le deuxième défi mettra tes réflexes à l’épreuve. Trouve les trois parties d’une clé pour remporter ma récompense. Mais prends garde ! L’un de mes Élus tentera de te les arracher si tu ne fais pas attention.~
+@403 = ~Le troisième et dernier défi met à l'épreuve ton sens de l'observation, ta perspicacité et ta persévérance. Les Neuf sont la clé si tu les trouves tous dans le bon ordre. Parle-leur pour obtenir des indices sur leur position dans l'ordre.~
+@404 = ~Il n'y a plus de défis disponibles pour toi.~
+
+// Challenge 1
+@500 = ~Alors que vous êtes mortellement blessé, tout devient flou devant vos yeux et vous perdez connaissance.~~Alors que vous êtes mortellement blessée, tout devient flou devant vos yeux et vous perdez connaissance.~
+
+// Challenge 2
+@550 = ~Premier fragment de pierre~
+@551 = ~Deuxième fragment de pierre~
+@552 = ~Troisième fragment de pierre~
+@553 = ~Un éclat de pierre provenant d'un symbole de Mask.
+
+STATISTIQUES :
+
+Poids : 1~
+
+@555 = ~Symbole de Mask~
+@556 = ~Le symbole de Mask ré-assemblé. Il est nécessaire pour terminer le défi.
+
+STATISTIQUES :
+
+Poids : 3~
+
+@560 = ~Ne faites pas attention à moi.~
+
+@570 = ~Vous découvrez un fragment de pierre sous le rocher.~
+@571 = ~Vous ne trouvez rien d'intéressant sous le rocher.~
+@572 = ~Le rocher ne bouge pas d'un pouce.~
+@573 = ~Vous êtes trop loin pour l'utiliser.~
+
+@575 = ~Fragment de pierre volé à <CHARNAME>.~
+@576 = ~Fragment de pierre trouvé.~
+@577 = ~Fragment de pierre jeté.~
+
+@580 = ~Les fragments de pierre se sont assemblés pour former le symbole de Mask. Utilisez-les pour valider le défi.~
+
+// Challenge 3
+// Hints from the rogues about their position in the hit order (1 to 9):
+// not at position 1
+@600 = ~Je ne suis pas le premier.~
+// not at position 9
+@601 = ~Je ne suis pas le dernier.~
+// at odd-numbered position (1, 3, 5, 7, or 9)
+@602 = ~Je commets un impair en te parlant~
+// at even-numbered position (2, 4, 6, or 8)
+@603 = ~Je fais la paire avec mes confrères.~
+// position is prime number (2, 3, 5, or 7)
+@604 = ~je suis indivisible.~
+// position is NOT a prime number (1, 4, 6, 8, or 9)
+@605 = ~je suis divisible.~
+// position is a squared number (1, 4, or 9)
+@606 = ~Je suis carré avec toi.~
+// center position (5)
+@607 = ~Je suis le centre de l'attention.~
+// lower half of the sequence (1, 2, 3, or 4)
+@608 = ~J'appartiens à la classe inférieure.~
+// upper half of the sequence (6, 7, 8, or 9)
+@609 = ~J'appartiens à la classe supérieure.~
+
+@610 = ~Attendez que votre compagnon voleur se calme.~
+@611 = ~Tu t'es trompé de cible. Je te le ferai payer !~
+@612 = ~Je me suis calmé.~
+@613 = ~Voleur numéro <A7_CH3_POS> renvoyé.~
+
+// Arbitrary rogue names (male)
+@621 = ~Alric~
+@622 = ~Corvin~
+@623 = ~Dorian~
+@624 = ~Edric~
+@625 = ~Jareth~
+// Arbitrary rogue names (female)
+@626 = ~Brina~
+@627 = ~Elira~
+@628 = ~Selene~
+@629 = ~Tamsin~
+
+// Journal entries
+@1000 = ~Les épreuves de Mask
+
+Les Yeux de Mask m'ont transporté dans une sorte d'arène où une voix immatérielle m'a demandé de participer à une épreuve. Je dois vaincre l'un des Élus de Mask pour débloquer certains des pouvoirs des Yeux de Mask.~
+@1001 = ~Les épreuves de Mask
+
+Ma victoire lors de la première épreuve a réveillé certains des pouvoirs des Yeux de Mask. Cet artefact confère à celui qui le porte quelques bonus de combat de base, et je peux désormais faire appel, une fois par jour, à un voleur novice capable de m'aider dans les situations nécessitant des compétences de voleur, ainsi qu'au combat.~
+
+@1010 = ~Les épreuves de Mask
+
+Les Yeux de Mask m'ont transporté dans une sorte d'arène où une voix immatérielle m'a demandé de participer à une épreuve. Je dois trouver et rassembler les trois parties d'une clé pour remporter cette épreuve. L'un des Élus de Mask tente de me dérober ces fragments, je dois donc faire preuve de prudence.~
+
+@1011 = ~Les épreuves de Mask
+
+Une fois les trois fragments de pierre rassemblés, ils ont fusionné pour former le symbole de Mask. Je dois l'utiliser pour continuer.~
+
+@1012 = ~Les épreuves de Mask
+
+La réussite de la deuxième épreuve a réveillé de nouveaux pouvoirs dans les Yeux de Mask. Cet artefact m'offre désormais encore plus de bonus au combat, et je peux désormais faire appel, une fois par jour, à un voleur chevronné capable de m'aider dans les situations nécessitant des compétences de voleur, ainsi qu'au combat.~
+
+@1020 = ~Les épreuves de Mask
+
+Les Yeux de Mask m'ont transporté dans une sorte d'arène où une voix immatérielle m'a demandé de participer à une épreuve. Pour remporter cette épreuve, je dois frapper chaque voleur d'un groupe invoqué dans le bon ordre. Les voleurs eux-mêmes peuvent me donner des indices utiles sur leur position au sein du groupe.~
+
+@1021 = ~Les épreuves de Mask
+
+Ma victoire lors de la troisième et dernière épreuve a libéré encore davantage de pouvoirs dans les Yeux de Mask. Cet artefact a encore renforcé mes bonus de combat existants, et je peux désormais faire appel, une fois par jour, à un maître voleur capable de m'aider dans les situations nécessitant des compétences de voleur, ainsi qu'au combat.~

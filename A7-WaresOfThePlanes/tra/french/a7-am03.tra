@@ -1,0 +1,38 @@
+// Ordeal of the Yor'thae
+
+@0 = ~Amulette en forme d'araignée~
+@1 = ~L'épreuve des Yor'thae~
+
+// @10 = ~~ // #6900
+@11 = ~Même d’un simple coup d’œil, il est évident que cet artefact a été forgé par les Drows. Il fait partie d’un ensemble créé dans les Fosses de la Toile Démoniaque, la 66ème strate des Abysses, par une secte fanatique d’adorateurs de Lolth. Il aurait été façonné à partir de matière brute provenant des Fosses de la Toile Démoniaque, puis imprégné de magie noire lors d’un rituel impliquant le sacrifice de nombreux esclaves drows.
+
+Une fois équipée, l’enchantement de l’amulette s’active et l’araignée « se réveille ». Elle fusionne alors avec celui qui la porte, qui subit en conséquence une douloureuse transformation en araignée. Seul un sort de « Suppression de malédiction » peut inverser cet effet.
+
+Ces amulettes étaient parfois offertes à de jeunes prêtres prometteurs dans l’espoir qu’ils acquièrent une meilleure compréhension des doctrines de Lolth. Une fois l’artefact équipé, ils étaient contraints de vivre en exil. Leur seul espoir de se libérer de la malédiction était de survivre une année entière dans la solitude.
+
+On voit rarement des artefacts de ce type en dehors de la société drow. Cet exemplaire particulier a été découvert dans l’Ombreterre, parmi les restes d’un prêtre novice ayant succombé, par un groupe d’aventuriers, avant que le clergé drow n’ait pu s’en emparer.
+
+STATISTIQUES :
+
+Capacités conférées : 
+– Transforme l'apparence du porteur en celle d'une araignée
+– Immunité contre les effets de toile d'araignée
+– Charisme : -50 %
+– Classe d'armure : +2 contre les araignées
+– Jets de sauvegarde : +2 contre les araignées
+– Ne peut être retiré que par un sort de Délivrance de la malédiction
+
+Capacité de charge :
+– Invocation d'essaim d'araignées une fois par jour
+  Portée : 9 mètres
+  Durée : 5 tours
+  Invoque une reine de l'essaim et 16 drones. Seul la reine peut être contrôlée directement par l’invocateur. Les drones suivront la reine et attaqueront les ennemis de l’invocateur dès qu’elles les aperçoivent. Elles peuvent attaquer deux fois par round et ont une chance d’empoisonner leur cible (un jet de sauvegarde contre le poison avec un bonus de +2 annule l’effet).
+
+Poids : 1~
+
+@100 = ~Invocation d'essaim d'araignées~
+@101 = ~Protégé contre les effets des toiles~
+
+@200 = ~Reine de l'essaim~
+@201 = ~Drone~
+@202 = ~Bouclier de drone désactivé~
