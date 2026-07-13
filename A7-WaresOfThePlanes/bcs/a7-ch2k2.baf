@@ -1,5 +1,14 @@
 IF
   Clicked([ANYONE])
+  Global("a7-ch2_progress","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("a7-ch2_progress","MYAREA",1)
+    Continue()
+END
+
+IF
+  Clicked([ANYONE])
   InPartySlot(LastTrigger,0)
   Range(LastTrigger,5)
   Global("a7-ch2_key2","MYAREA",0)

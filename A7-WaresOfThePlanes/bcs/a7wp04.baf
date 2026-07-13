@@ -151,6 +151,84 @@ THEN
     SetGlobal("A7-MaskRogueLevel","GLOBAL",2)
 END
 
+// Challenge 2: providing hints to the player
+IF
+  Global("A7-MaskChallenge","GLOBAL",2)
+  Global("a7-ch2_hints","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("a7-ch2_hints","MYAREA",1)
+    SetGlobalTimer("a7-ch2_hints_timer","MYAREA",ONE_TURN)
+    Continue()
+END
+
+IF
+  Global("A7-MaskChallenge","GLOBAL",2)
+  Global("a7-ch2_key","MYAREA",0)
+  Global("a7-ch2_progress","MYAREA",0)
+  Global("a7-ch2_hints","MYAREA",1)
+  GlobalTimerExpired("a7-ch2_hints_timer","MYAREA")
+  TriggerOverride("a7-ch2r",Detect(Player1))
+THEN
+  RESPONSE #100
+    SetGlobal("a7-ch2_hints","MYAREA",2)
+    SetGlobalTimer("a7-ch2_hints_timer","MYAREA",FIVE_ROUNDS)
+    DisplayStringHead("a7-ch2r",@561) // "Walking around aimlessly won't get you anywhere."
+    Continue()
+END
+
+IF
+  Global("A7-MaskChallenge","GLOBAL",2)
+  Global("a7-ch2_key","MYAREA",0)
+  Global("a7-ch2_progress","MYAREA",0)
+  Global("a7-ch2_hints","MYAREA",2)
+  GlobalTimerExpired("a7-ch2_hints_timer","MYAREA")
+  TriggerOverride("a7-ch2r",Detect(Player1))
+THEN
+  RESPONSE #100
+    SetGlobal("a7-ch2_hints","MYAREA",3)
+    SetGlobalTimer("a7-ch2_hints_timer","MYAREA",FIVE_ROUNDS)
+    DisplayStringHead("a7-ch2r",@562) // "Are you even trying? Look harder! Treasure ain't always left around in plain sight."
+    Continue()
+END
+
+IF
+  Global("A7-MaskChallenge","GLOBAL",2)
+  Global("a7-ch2_key","MYAREA",0)
+  Global("a7-ch2_progress","MYAREA",0)
+  Global("a7-ch2_hints","MYAREA",3)
+  GlobalTimerExpired("a7-ch2_hints_timer","MYAREA")
+  TriggerOverride("a7-ch2r",Detect(Player1))
+THEN
+  RESPONSE #100
+    SetGlobal("a7-ch2_hints","MYAREA",4)
+    SetGlobalTimer("a7-ch2_hints_timer","MYAREA",FIVE_ROUNDS)
+    DisplayStringHead("a7-ch2r",@563) // "You're a disappointment. How can you call yourself a thief if you can't even find some treasure lying on the ground?"
+    Continue()
+END
+
+IF
+  Global("A7-MaskChallenge","GLOBAL",2)
+  Global("a7-ch2_key","MYAREA",0)
+  Global("a7-ch2_progress","MYAREA",0)
+  GlobalGT("a7-ch2_hints","MYAREA",3)
+  GlobalTimerExpired("a7-ch2_hints_timer","MYAREA")
+  TriggerOverride("a7-ch2r",Detect(Player1))
+THEN
+  RESPONSE #100
+    SetGlobalTimer("a7-ch2_hints_timer","MYAREA",FIVE_ROUNDS)
+    DisplayStringHead("a7-ch2r",@561) // "Walking around aimlessly won't get you anywhere."
+    Continue()
+  RESPONSE #100
+    SetGlobalTimer("a7-ch2_hints_timer","MYAREA",FIVE_ROUNDS)
+    DisplayStringHead("a7-ch2r",@562) // "Are you even trying? Look harder! Treasure ain't always left around in plain sight."
+    Continue()
+  RESPONSE #100
+    SetGlobalTimer("a7-ch2_hints_timer","MYAREA",FIVE_ROUNDS)
+    DisplayStringHead("a7-ch2r",@563) // "You're a disappointment. How can you call yourself a thief if you can't even find some treasure lying on the ground?"
+    Continue()
+END
+
 // Challenge 3
 IF
   Global("A7-MaskChallenge","GLOBAL",3)
