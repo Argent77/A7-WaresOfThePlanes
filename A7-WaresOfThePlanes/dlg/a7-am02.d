@@ -21,8 +21,8 @@ END
 
 IF ~InPartySlot(LastTalkedToBy,0)~ Unlock.Basic.1
   SAY @300 /* A voice resonates in your head: Face my trials to unlock my powers. */
-  + ~OR(2) XPLT(Player1,20000) !Global("A7-Rogue-Init","GLOBAL",2)~ + @301 /* I am ready. */ + Unlock.Basic.Denied
-  + ~!XPLT(Player1,20000) Global("A7-Rogue-Init","GLOBAL",2)~ + @301 /* I am ready. */
+  + ~!AreaCheck("a7wp04") OR(2) XPLT(Player1,20000) !Global("A7-Rogue-Init","GLOBAL",2)~ + @301 /* I am ready. */ + Unlock.Basic.Denied
+  + ~!AreaCheck("a7wp04") !XPLT(Player1,20000) Global("A7-Rogue-Init","GLOBAL",2)~ + @301 /* I am ready. */
     DO ~SetGlobal("A7-MaskChallenge","GLOBAL",1) ClearAllActions() StartCutSceneMode() StartCutScene("a7-emct1")~ EXIT
   ++ @302 /* Put the mask away. */ EXIT
 END
@@ -48,8 +48,8 @@ END
 
 IF ~InPartySlot(LastTalkedToBy,0)~ Unlock.Improved.1
   SAY @300 /* A voice resonates in your head: Face my trials to unlock my powers. */
-  + ~XPLT(Player1,440000)~ + @301 /* I am ready. */ + Unlock.Improved.Denied
-  + ~!XPLT(Player1,440000)~ + @301 /* I am ready. */
+  + ~!AreaCheck("a7wp04") XPLT(Player1,440000)~ + @301 /* I am ready. */ + Unlock.Improved.Denied
+  + ~!AreaCheck("a7wp04") !XPLT(Player1,440000)~ + @301 /* I am ready. */
     DO ~SetGlobal("A7-MaskChallenge","GLOBAL",2) ClearAllActions() StartCutSceneMode() StartCutScene("a7-emct1")~ EXIT
   ++ @302 /* Put the mask away. */ EXIT
 END
@@ -75,8 +75,8 @@ END
 
 IF ~InPartySlot(LastTalkedToBy,0)~ Unlock.Perfect.1
   SAY @300 /* A voice resonates in your head: Face my trials to unlock my powers. */
-  + ~XPLT(Player1,1760000)~ + @301 /* I am ready. */ + Unlock.Perfect.Denied
-  + ~!XPLT(Player1,1760000)~ + @301 /* I am ready. */
+  + ~!AreaCheck("a7wp04") XPLT(Player1,1760000)~ + @301 /* I am ready. */ + Unlock.Perfect.Denied
+  + ~!AreaCheck("a7wp04") !XPLT(Player1,1760000)~ + @301 /* I am ready. */
     DO ~SetGlobal("A7-MaskChallenge","GLOBAL",3) ClearAllActions() StartCutSceneMode() StartCutScene("a7-emct1")~ EXIT
   ++ @302 /* Put the mask away. */ EXIT
 END
