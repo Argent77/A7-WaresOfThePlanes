@@ -30,12 +30,4 @@ ACTION_IF (has_sod || has_bg2) BEGIN
     icon_resref
     desc_image_resref
   END
-
-  // prevents negative damage display in inventory screen
-  COPY_EXISTING ~ui.menu~ ~override~
-    REPLACE_TEXTUALLY EXACT_MATCH ~characters[id].damage.min .. ' - ' .. characters[id].damage.max~
-                                  ~math.max(0, characters[id].damage.min) .. ' - ' .. math.max(0, characters[id].damage.max)~
-    REPLACE_TEXTUALLY EXACT_MATCH ~characters[id].damage.minOffhand .. ' - ' .. characters[id].damage.maxOffhand~
-                                  ~math.max(0, characters[id].damage.minOffhand) .. ' - ' .. math.max(0, characters[id].damage.maxOffhand)~
-  BUT_ONLY
 END
