@@ -1,0 +1,41 @@
+// Item: Energy Bolts of Piercing +1
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-bo10~
+
+ACTION_IF (has_sod || has_bg2) BEGIN
+  // Installing projectiles
+  ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-bop1.pro~ ~Piercing_Bolt_Force_Sub~
+  ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-bop.pro~ ~Piercing_Bolt_Force~
+  COPY_EXISTING ~a7-bop.pro~ ~override~
+    WRITE_SHORT 0x21a "a7-bop1"
+  BUT_ONLY
+
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        desc_image_resref
+    END
+    LPF ALTER_ITEM_HEADER INT_VAR projectile = "a7-bop" END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    desc_image_resref
+  END
+
+  // prevents negative damage display in inventory screen
+  COPY_EXISTING ~ui.menu~ ~override~
+    REPLACE_TEXTUALLY EXACT_MATCH ~characters[id].damage.min .. ' - ' .. characters[id].damage.max~
+                                  ~math.max(0, characters[id].damage.min) .. ' - ' .. math.max(0, characters[id].damage.max)~
+    REPLACE_TEXTUALLY EXACT_MATCH ~characters[id].damage.minOffhand .. ' - ' .. characters[id].damage.maxOffhand~
+                                  ~math.max(0, characters[id].damage.minOffhand) .. ' - ' .. math.max(0, characters[id].damage.maxOffhand)~
+  BUT_ONLY
+END

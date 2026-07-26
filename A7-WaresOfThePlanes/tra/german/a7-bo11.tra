@@ -1,0 +1,25 @@
+// Fire Bolts of Piercing +1
+
+@0 = ~Feurige Bolzen~
+@1 = ~Feuerbolzen der Durchbohrung +1~
+
+@10 = ~Diese Bolzen sind von loderndem Feuer umgeben. Wie sie gelagert werden können, ohne alles in ihrer Umgebung in Brand zu setzen, ist ein Rätsel.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Geschoss)
+Schusswaffe: Armbrust
+
+Gewicht: 0~
+@11 = ~Die Bolzen speichern reine Energie direkt von der Feuerebene. Lediglich ein magisches Kraftfeld schützt den Nutzer davor, sich zu verbrennen. Wenn sie abgefeuert werden, ermöglichen es ihre immateriellen Eigenschaften, Materie vollständig zu durchdringen, ohne auf ihrem Weg aufgehalten zu werden. Jedes Ziel, das nicht immun gegen Feuer ist, erleidet dabei erheblichen Schaden.
+
+EIGENSCHAFTEN:
+
+Trifft jedes Ziel in der Geschossbahn.
+
+ETW0-Bonus: -4
+Schaden: 1W8 +1 (Feuer)
+Rettungswurf: ja (gg. Zauber für halben Schaden)
+Schusswaffe: Armbrust
+
+Gewicht: 0~

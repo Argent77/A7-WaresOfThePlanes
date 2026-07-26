@@ -1,0 +1,25 @@
+// Energy Bolts of Piercing +1
+
+@0 = ~Durchscheinende Bolzen~
+@1 = ~Energiebolzen der Durchbohrung +1~
+
+@10 = ~Diese Bolzen scheinen aus einem durchscheinenden Material zu bestehen. Gelegentlich ändert sich die innere Struktur ein wenig, als ob sie aus einem zähflüssigen Material bestehen.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Geschoss)
+Schusswaffe: Armbrust
+
+Gewicht: 0~
+@11 = ~Die Bolzen sind durchscheinend, als bestünden sie aus Glas, und überraschend leicht. Bei näherer Betrachtung zeigt sich, dass sie gar nicht aus einem bestimmten Material gefertigt sind. Stattdessen bestehen sie aus reiner Energie, die durch eine unbekannte Kraft in Form gehalten wird. Wenn sie abgefeuert werden, ermöglichen es ihre immateriellen Eigenschaften, Materie vollständig zu durchdringen, ohne auf ihrem Weg aufgehalten zu werden. Dabei bleiben geringe Mengen an Energie zurück, die lebenden Wesen starke Schmerzen zufügen. Untote und Konstrukte sind gegen die Auswirkungen der Energie immun.
+
+EIGENSCHAFTEN:
+
+Trifft jedes Ziel in der Geschossbahn.
+
+ETW0-Bonus: -4
+Schaden: 1W8 +1 (Geschoss)
+Rettungswurf: ja (-2 gg. Zauber für halben Schaden)
+Schusswaffe: Armbrust
+
+Gewicht: 0~

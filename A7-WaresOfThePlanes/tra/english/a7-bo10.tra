@@ -1,0 +1,26 @@
+// Energy Bolts of Piercing +1
+
+@0 = ~Translucent Bolt~
+@1 = ~Energy Bolts of Piercing +1~
+
+@10 = ~These bolts seem to be made from a translucent material. Now and then the inner texture shifts slightly, as if made of some kind of viscous matter.
+
+STATISTICS:
+
+Damage: 1d8 (missile)
+Launcher: Crossbow
+
+Weight: 0~
+@11 = ~The bolts are translucent, as if they were made of glass, and surprisingly light. Upon closer inspection, it becomes apparent that they aren't made of any specific material at all. Instead, they consist of pure energy, held in shape by an unknown force. When fired, their immaterial properties allow them to pass right through matter without stopping along the way. Small amounts of energy are left behind, causing intense pain to living creatures. Undead and constructs are immune to the effect.
+
+STATISTICS:
+
+Combat abilities:
+– Hits every target in their path
+
+THAC0: +4
+Damage: 1d8+1 (Save vs. Spell at -2 for half)
+Damage type: Missile
+Launcher: Crossbow
+
+Weight: 0~

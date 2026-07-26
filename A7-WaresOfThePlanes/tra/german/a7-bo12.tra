@@ -1,0 +1,25 @@
+// Lightning Bolts of Piercing +1
+
+@0 = ~Funkelnde Bolts~
+@1 = ~Blitzbolzen der Durchbohrung +1~
+
+@10 = ~Diese Bolzen sprühen vor intensiver Energie und stoßen ununterbrochen Funken unterschiedlichster Stärke aus.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W8 (Geschoss)
+Schusswaffe: Armbrust
+
+Gewicht: 0~
+@11 = ~Die Bolzen strotzen nur vor Energie von der quasi-elementaren Blitzebene. Wenn sie abgefeuert werden, ermöglichen es ihre immateriellen Eigenschaften, Materie vollständig zu durchdringen, ohne auf ihrem Weg aufgehalten zu werden. Jedes Ziel, das nicht immun gegen Elektrizität ist, erleidet dabei erheblichen Schaden.
+
+EIGENSCHAFTEN:
+
+Trifft jedes Ziel in der Geschossbahn.
+
+ETW0-Bonus: -4
+Schaden: 1W8 +1 (Elektrizität)
+Rettungswurf: ja (gg. Zauber für halben Schaden)
+Schusswaffe: Armbrust
+
+Gewicht: 0~

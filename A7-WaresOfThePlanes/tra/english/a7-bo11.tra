@@ -1,0 +1,26 @@
+// Fire Bolts of Piercing +1
+
+@0 = ~Fiery Bolts~
+@1 = ~Fire Bolts of Piercing +1~
+
+@10 = ~These bolts are engulfed in blazing fire. How they can be stored without burning everything in their vicinity is a mystery.
+
+STATISTICS:
+
+Damage: 1d8 (missile)
+Launcher: Crossbow
+
+Weight: 0~
+@11 = ~The bolts store pure energy from the Elemental Plane of Fire. Only a magical force field protects the user from burning themselves. When fired, their immaterial properties allow them to pass right through matter without stopping along the way. Any target that is not immune to fire takes considerable damage in the process.
+
+STATISTICS:
+
+Combat abilities:
+– Hits every target in their path
+
+THAC0: +4
+Damage: 1d8+1 (Save vs. Spell for half)
+Damage type: Fire
+Launcher: Crossbow
+
+Weight: 0~

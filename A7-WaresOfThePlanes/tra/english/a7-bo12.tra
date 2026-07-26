@@ -1,0 +1,26 @@
+// Lightning Bolts of Piercing +1
+
+@0 = ~Sparkling Bolts~
+@1 = ~Lightning Bolts of Piercing +1~
+
+@10 = ~These bolts are bursting with intense energy and continuously emit sparks of varying magnitudes.
+
+STATISTICS:
+
+Damage: 1d8 (missile)
+Launcher: Crossbow
+
+Weight: 0~
+@11 = ~The bolts brim with energy from the quasi-elemental plane of lightning. When fired, their immaterial properties allow them to pass right through matter without stopping along the way. Any target that is not immune to electricity takes considerable damage in the process.
+
+STATISTICS:
+
+Combat abilities:
+– Hits every target in their path
+
+THAC0: +4
+Damage: 1d8+1 (Save vs. Spell for half)
+Damage type: Electricity
+Launcher: Crossbow
+
+Weight: 0~
