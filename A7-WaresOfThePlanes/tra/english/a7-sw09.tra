@@ -1,0 +1,60 @@
+// Item set: Sarin's Short Sword +3
+
+// @0 = ~~  // #6745
+@1 = ~Sarin's Short Sword +3~
+
+// @10 = ~~ // #6747
+
+// Identified item description (without set bonus)
+@11 = ~Sarin was a human paladin and factol of the Harmonium on his homeworld Ortho, and later in Sigil. Also called the "Hardheads" they were known for their more radical take on law and order. According to their view true peace can only be achieved if everyone thinks and acts the same way—by force if necessary. The Harmonium led many campaigns across the multiverse under Sarin's leadership to propagate "peace".
+
+It is not documented when exactly Sarin came into possession of this weapon. However, he used it on occasion as an off-hand weapon if he needed to dispatch of obstacles quickly. The blade is made of a shiny golden metal that can blind opponents if used skillfully—or the wielder if not.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+
+Combat abilities:
+– Blinds the target for one round on a critical hit
+– Blinds the wielder for one round on a critical miss (Save vs. Spell to avoid)
+
+THAC0: +3
+Damage: 1d6+3 (piercing)
+Speed Factor: 0
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 1~
+
+// Identified item description (with set bonus enabled)
+@12 = ~Sarin was a human paladin and factol of the Harmonium on his homeworld Ortho, and later in Sigil. Also called the "Hardheads" they were known for their more radical take on law and order. According to their view true peace can only be achieved if everyone thinks and acts the same way—by force if necessary. The Harmonium led many campaigns across the multiverse under Sarin's leadership to propagate "peace".
+
+It is not documented when exactly Sarin came into possession of this weapon. However, he used it on occasion as an off-hand weapon if he needed to dispatch of obstacles quickly. The blade is made of a shiny golden metal that can blind opponents if used skillfully—or the wielder if not.
+
+Together with his personal long sword Sarin was able to deal damage in rapid succession that made enough of an impression to his fellow comrades-in-arms to give him the nickname "Crimson Tempest."
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Crimson Tempest: Activates if Sarin's long sword and short sword are equipped
+  Provides +1 bonus attack per round, and prevents getting blinded on a critical miss
+– Righteous Wrath: Activates if all pieces of Sarin's armor, long sword and short sword are equipped
+  Provides +1 dexterity bonus, +2 bonus vs. missile damage, increased movement speed, and regeneration (1 HP every 3 seconds)
+
+Combat abilities:
+– Blinds the target for one round on a critical hit
+– Blinds the wielder for one round on a critical miss (Save vs. Spell to avoid)
+
+THAC0: +3
+Damage: 1d6+3 (piercing)
+Speed Factor: 0
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 1~

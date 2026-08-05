@@ -1,0 +1,44 @@
+// Item set: Sarin's Plate Mail +4
+
+// @0 = ~~  // #267
+@1 = ~Sarins Plattenpanzer +4~
+
+// @10 = ~~ // #6681
+
+// Identified item description (without set bonus)
+@11 = ~Sarin war ein menschlicher Paladin und Bundmeister des Harmoniums, zuerst in seiner Heimatwelt Ortho, später auch in Sigil. Sie wurden auch „Dickschädel“ genannt, da sie eine sehr radikale Einstellung zu Recht und Gesetz hatten. Ihrer Ansicht nach kann wahrer Frieden nur erreicht werden, wenn alle gleich denken und handeln - notfalls mit Gewalt. Unter Sarins Führung startete das Harmonium im ganzen Multiversum Feldzüge, um für ihren „Frieden“ zu sorgen.
+
+Als Sarin zu einem hochrangigen Befehlshaber aufstieg, ließ er sich eine persönliche Rüstung anfertigen, die aus einer Plattenrüstung, Handschuhen und einem Helm bestand. Sie sollte ihn bei seinen Feldzügen unterstützen. Diese Plattenrüstung ist mit aufwendigen Gravuren verziert und stark verzaubert, um Menschen von den Vorteilen des absoluten Friedens zu „überzeugen“. Nur Menschen mit rechtschaffender Einstellung sind in der Lage, die Kräfte dieser Rüstung zu nutzen.
+
+EIGENSCHAFTEN:
+
+Charisma: +1
+Feuerwiderstand: +20 %
+
+Rüstungsklasse: -1
+RK-Bonus: -4 gg. Klingenwaffen
+Mindeststärke: 12
+
+Gewicht: 25~
+
+// Identified item description (with set bonus enabled)
+@12 = ~Sarin war ein menschlicher Paladin und Bundmeister des Harmoniums, zuerst in seiner Heimatwelt Ortho, später auch in Sigil. Sie wurden auch „Dickschädel“ genannt, da sie eine sehr radikale Einstellung zu Recht und Gesetz hatten. Ihrer Ansicht nach kann wahrer Frieden nur erreicht werden, wenn alle gleich denken und handeln - notfalls mit Gewalt. Unter Sarins Führung startete das Harmonium im ganzen Multiversum Feldzüge, um für ihren „Frieden“ zu sorgen.
+
+Als Sarin zu einem hochrangigen Befehlshaber aufstieg, ließ er sich eine persönliche Rüstung anfertigen, die aus einem Plattenpanzer, Handschuhen und einem Helm bestand. Sie sollte ihn bei seinen Feldzügen unterstützen. Dieser Plattenpanzer ist mit aufwendigen Gravuren verziert und stark verzaubert, um Menschen von den Vorteilen des absoluten Friedens zu „überzeugen“. Nur Menschen mit rechtschaffender Einstellung sind in der Lage, die Kräfte dieser Rüstung zu nutzen.
+
+Immer wenn Sarin die komplette Rüstung trug, entfaltete sich ihr wahres Potenzial, das ihn zu einer ordnungsstiftenden Macht werden ließ, mit der man rechnen musste.
+
+EIGENSCHAFTEN:
+
+Seelenfrieden:
+Aktiviert sich, wenn alle Teile von Sarins Rüstung getragen werden.
+Schützt vor Schwachsinn, Verwirrung und Bezauberung.
+
+Charisma: +1
+Feuerwiderstand: +20 %
+
+Rüstungsklasse: -1
+RK-Bonus: -4 gg. Klingenwaffen
+Mindeststärke: 12
+
+Gewicht: 25~

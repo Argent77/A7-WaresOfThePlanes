@@ -1,0 +1,67 @@
+// Item set: Sarin's Long Sword +2
+
+// @0 = ~~  // #2893
+@1 = ~Sarin's Long Sword +2~
+
+// @10 = ~~ // #6742
+
+// Identified item description (without set bonus)
+@11 = ~Sarin was a human paladin and factol of the Harmonium on his homeworld Ortho, and later in Sigil. Also called the "Hardheads" they were known for their more radical take on law and order. According to their view true peace can only be achieved if everyone thinks and acts the same way—by force if necessary. The Harmonium led many campaigns across the multiverse under Sarin's leadership to propagate "peace".
+
+When Sarin joined the Harmonium he inherited this weapon from his father, who was a famous Harmonium officer himself. The blade is bright red, as if it were radiating intense heat. In reality, however, it was made from a special mineral that existed only on Ortho and carried the property of numbing living tissue. As a result, targets hit by the weapon become more sluggish and inaccurate.
+
+STATISTICS:
+
+Combat abilities:
+– Each successful hit reduces the target's attack rate by 1/2 and THAC0 by 1 for two rounds (Save vs. Death to avoid). Undead and constructs are immune.
+
+THAC0: +2
+Damage: 1d8+4 (slashing)
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3~
+
+// Identified item description (with set bonus enabled)
+@12 = ~Sarin was a human paladin and factol of the Harmonium on his homeworld Ortho, and later in Sigil. Also called the "Hardheads" they were known for their more radical take on law and order. According to their view true peace can only be achieved if everyone thinks and acts the same way—by force if necessary. The Harmonium led many campaigns across the multiverse under Sarin's leadership to propagate "peace".
+
+When Sarin joined the Harmonium he inherited this weapon from his father, who was a famous Harmonium officer himself. The blade is bright red, as if it were radiating intense heat. In reality, however, it was made from a special mineral that existed only on Ortho and carried the property of numbing living tissue. As a result, targets hit by the weapon become more sluggish and inaccurate.
+
+Later Sarin commissioned the construction of a shield that harmonized with this weapon and unlocked additional powers if both were equipped at the same time. According to rumors among Harmonium members, Sarin became an unstopping killing machine when he entered the battleground fully equipped with his armor, weapon, and shield.
+
+STATISTICS:
+
+Equipped abilities:
+– Force of Order: Activates if Sarin's long sword and shield are equipped
+  Provides +1 strength bonus and +1 bonus to all saving throws
+– Crimson Tempest: Activates if Sarin's long sword and short sword are equipped
+  Provides +1 bonus attack per round, and prevents getting blinded on a critical miss
+– Fortress of Order: Activates if all pieces of Sarin's armor, long sword and shield are equipped
+  Provides +1 constitution bonus, protection from chaotic creatures, 20% fire resistance bonus, and regeneration (1 HP every 3 seconds)
+– Righteous Wrath: Activates if all pieces of Sarin's armor, long sword and short sword are equipped
+  Provides +1 dexterity bonus, +2 bonus vs. missile damage, increased movement speed, and regeneration (1 HP every 3 seconds)
+
+Combat abilities:
+– Each successful hit reduces the target's attack rate by 1/2 and THAC0 by 1 for two rounds (Save vs. Death to avoid). Undead and constructs are immune.
+
+THAC0: +2
+Damage: 1d8+4 (slashing)
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3~
+
+@20 = ~Attack slowed~
+
+// portrait icon labels
+@30 = ~Peace of Mind~
+@31 = ~Crimson Tempest~
+@32 = ~Force of Order~
+@33 = ~Righteous Wrath~
+@34 = ~Fortress of Order~

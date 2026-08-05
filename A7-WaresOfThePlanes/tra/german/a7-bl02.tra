@@ -1,0 +1,107 @@
+// Arcadian Peace Ribbon
+
+@0 = ~Glänzende Schärpe~
+@1 = ~Arkadisches Friedensband~
+
+@10 = ~Eine Schärpe ist ein breites und meist farbenfrohes Band, das um den Körper getragen wird - entweder so, dass es von einer Schulter zur gegenüberliegenden Hüfte und wieder zurück verläuft, oder aber so, dass es die Taille umschließt.
+
+EIGENSCHAFTEN:
+
+Gewicht: 2~
+@11 = ~Unter den Harmonium gilt das Friedensband nicht als militärische Auszeichnung, sondern als bürgerliche Ehrung. Es wird in der Regel an Personen verliehen, die mit Zurückhaltung die Ordnung wiederhergestellt, unter Einsatz ihres eigenen Lebens Unschuldige geschützt oder Frieden ausgehandelt haben, wo Blutvergießen unvermeidlich schien. Auch wenn Außenstehende sich das Recht verdienen können, ein solches Band zu tragen, bleibt jedes Band Eigentum des Harmoniums und symbolisiert, dass wahrer Frieden durch fortwährenden Dienst und nicht durch persönlichen Ruhm gewahrt wird.
+
+EIGENSCHAFTEN:
+
+Der Träger ist immun gegen alle Arten der Panik und seine Moral wird angehoben.
+
+Gewicht: 2~
+
+
+// Harmonium event
+@20 = ~Sir Sorcien~
+@21 = ~Kriegerpriester~
+@22 = ~Kleriker~
+@23 = ~Kämpfer~
+
+// dialog lines
+@100 = ~Haltet ein, Materier! Ich möchte gerne mit Euch reden.~
+@101 = ~Materier? Was meint Ihr damit?~
+@102 = ~Wer seid Ihr?~
+@103 = ~Worum geht es?~
+@104 = ~Dafür habe ich jetzt keine Zeit.~
+@105 = ~Verzeiht, bitte. „Materier“ ist der Name für Wesen wie Euch, die in Welten der Materiellen Ebene geboren wurden.~
+@106 = ~Ihr werdet Euch die Zeit nehmen, sich mit uns zu befassen.~
+@107 = ~Ich bin Sorcien der Gerechte. Erster Lenker des Harmonium in Sigil. Und dies sind meine Untergebenen. Sie sind alle Notare dritten oder höheren Ranges.~
+@108 = ~Unsere Aufgabe ist es, verlorene oder gestohlene Relikte wiederzufinden, die für das Harmonium von großer Bedeutung sind.~
+@109 = ~Seit einiger Zeit sind wir auf der Suche nach der persönlichen Rüstung und Waffe, die Bundmeister Sarin, dem Anführer des Harmoniums, gehörten. Sie waren vor Jahren von Mitgliedern der Revolutionsliga gestohlen worden und galten als für immer verloren.~
+@110 = ~Vor nicht allzu langer Zeit ist es uns gelungen, den Verbleib der Rüstungsgegenstände hier auf Toril ausfindig zu machen. Es hat uns zwar einiges an Zeit und Mühe gekostet, aber wir sind uns sicher, dass sich die gesuchten Gegenstände derzeit in Eurem Besitz befinden.~
+@111 = ~Ja, ich besitze die Gegenstände, von denen Ihr sprecht.~
+@112 = ~Ich weiß nicht, wovon Ihr sprecht.~
+@113 = ~Unsere Weissagungen stehen außer Frage. Allerdings können dimensionale Störungen die Ergebnisse verzerren. Lasst mir bitte kurz Zeit, einen genaueren Überblick zu gewinnen.~
+@114 = ~Ihr habt schon eine gewisse Dreistigkeit, unseren Anspruch abzustreiten, während Ihr die betreffende Ausrüstung ganz offen zur Schau stellt.~
+@115 = ~Aber ich bewundere Eure Kühnheit bei dem Versuch.~
+@116 = ~Glaubt bloß nicht, dass Ihr mit so einer offensichtlichen Täuschung davonkommt.~
+@117 = ~Ihr werdet uns die Gegenstände zurückgeben. Übergebt Ihr sie uns freiwillig?~
+@118 = ~Na gut. Ihr könnt sie haben.~
+@119 = ~Nein, sie gehören jetzt uns.~
+@120 = ~Ihr mögt unsere Behauptung vielleicht leugnen, aber Euer Gesicht verrät mir alles, was ich wissen muss.~
+@121 = ~Ich kann keine weiteren Hinweise darauf finden, dass sich die fraglichen Ausrüstung tatsächlich in Eurem Besitz befindet. Und meine Ehre gebietet mir, Eure Aussage vorerst zu respektieren.~
+@122 = ~Wir werden uns nun zurückziehen und uns wieder unserem Auftrag widmen. Lebt wohl, Materier. Mögen wir uns nicht wieder begegnen.~
+@123 = ~Es freut mich, dass Ihr doch noch rechtzeitig zur Vernunft gekommen seid.~
+@124 = ~Trotz Eurer Versuche, uns zu täuschen, halte ich eine kleine Entschädigung für angemessen.~
+@125 = ~Erwartet jedoch keine weitere Dankbarkeit. Diese Gegenstände gehörten uns von vornherein zu Recht.~
+@126 = ~Das ist nicht akzeptabel. Wenn Ihr sie uns nicht friedlich aushändigt, müssen wir sie uns ohne Eure Zustimmung an uns nehmen.~
+@127 = ~Zu den Waffen!~
+@128 = ~Da diese Gegenstände rechtmäßig uns gehören, kann ich Euch als Zeichen des Respekts ein weiteres heiliges Relikt unseres Bundes anbieten, falls Ihr dazu bereit seid, sie uns freiwillig zu übergeben.~
+@129 = ~Das klingt annehmbar. Einverstanden.~
+@130 = ~Ich finde, eine höhere Belohnung wäre angebracht. Schließlich waren diese Stücke ziemlich teuer.~
+@131 = ~Nein, ich werde sie nicht zurückgeben.~
+@132 = ~Ihr stellt meine Geduld auf die Probe, Materier. Ich habe Euch mein Angebot unterbreitet. Wie lautet Eure Antwort?~
+@133 = ~Dann habe ich wohl keine andere Wahl. Einverstanden.~
+@134 = ~Das kann ich nicht akzeptieren. Ich lehne das Angebot ab.~
+@135 = ~Ihr habt eine kluge Wahl getroffen. Wie versprochen überreiche ich Euch nun das Friedensband. Jetzt können wir endlich nach Sigil zurückkehren. Lebt wohl, Materier.~
+@136 = ~Ihr habt eine kluge Wahl getroffen. Wie versprochen überreiche ich Euch nun das Friedensband und etwas Gold. Jetzt können wir endlich nach Sigil zurückkehren. Lebt wohl, Materier.~
+@137 = ~Ein Wort der Warnung. Wir werden diesen Ort nicht mit leeren Händen verlassen. Werdet Ihr Euch friedlich fügen?~
+@138 = ~Ist ja gut. Ihr könnt sie haben.~
+@139 = ~Ich werde meine Meinung nicht ändern.~
+@140 = ~Dann lasst Ihr uns keine andere Wahl. Wir sind kampferprobte Ebenenwandler, die seit Jahrzehnten im Dienst des Harmonium stehen. Ihr habt gegen uns keine Chance.~
+
+@200 = ~Falls Ihr Fragen habt, richtet Ihr sie besser an Sir Sorcien.~
+
+
+// journal entries
+@1000 = ~Ein Besuch vom Bund des Harmonium
+
+Eine Gruppe Abgesandter des Harmoniumbundes aus Sigil stattete uns in Amkethran einen Besuch ab. Sie erzählten uns, dass Sarins Rüstung und Waffen, die wir von Ebb Knarrknie erworben hatten, gestohlene Relikte seien und wollten sie von uns einfordern.
+
+Wir konnten ihnen gegenüber Unwissenheit vortäuschen, und so gingen sie unverrichteter Dinge wieder davon.~
+
+@1001 = ~Ein Besuch vom Bund des Harmonium
+
+Eine Gruppe Abgesandter des Harmoniumbundes aus Sigil stattete uns in Amkethran einen Besuch ab. Sie erzählten uns, dass Sarins Rüstung und Waffen, die wir von Ebb Knarrknie erworben hatten, gestohlene Relikte seien und wollten sie von uns einfordern.
+
+Es gelang uns nicht, sie zu täuschen. Daher mussten wir die Rüstung und Waffen gegen eine geringe finanzielle Entlohnung an sie aushändigen.~
+
+@1002 = ~Ein Besuch vom Bund des Harmonium
+
+Eine Gruppe Abgesandter des Harmoniumbundes aus Sigil stattete uns in Amkethran einen Besuch ab. Sie erzählten uns, dass Sarins Rüstung und Waffen, die wir von Ebb Knarrknie erworben hatten, gestohlene Relikte seien und wollten sie von uns einfordern.
+
+Es gelang uns nicht, sie zu täuschen. Daher mussten wir die Rüstung und Waffen an sie aushändigen.~
+
+@1003 = ~Ein Besuch vom Bund des Harmonium
+
+Eine Gruppe Abgesandter des Harmoniumbundes aus Sigil stattete uns in Amkethran einen Besuch ab. Sie erzählten uns, dass Sarins Rüstung und Waffen, die wir von Ebb Knarrknie erworben hatten, gestohlene Relikte seien und wollten sie von uns einfordern.
+
+Unsere Weigerung, die Gegenstände an sie auszuhändigen, führte schließlich zu einem Kampf.~
+
+@1004 = ~Ein Besuch vom Bund des Harmonium
+
+Eine Gruppe Abgesandter des Harmoniumbundes aus Sigil stattete uns in Amkethran einen Besuch ab. Sie erzählten uns, dass Sarins Rüstung und Waffen, die wir von Ebb Knarrknie erworben hatten, gestohlene Relikte seien und wollten sie von uns einfordern.
+
+Wir kamen ihren Wünschen nach und wurden dafür mit einem weiteren Relikt des Harmonium belohnt. Es war eine armselige Belohnung, aber immerhin besser als nichts.~
+
+@1005 = ~Ein Besuch vom Bund des Harmonium
+
+Eine Gruppe Abgesandter des Harmoniumbundes aus Sigil stattete uns in Amkethran einen Besuch ab. Sie erzählten uns, dass Sarins Rüstung und Waffen, die wir von Ebb Knarrknie erworben hatten, gestohlene Relikte seien und wollten sie von uns einfordern.
+
+Wir kamen ihren Wünschen nach und wurden dafür mit einem weiteren Relikt des Harmonium und etwas Kleingeld belohnt. Es war eine armselige Belohnung, aber immerhin besser als nichts.~

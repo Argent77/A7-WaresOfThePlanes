@@ -1,0 +1,79 @@
+// Cutscene: Harmonium event (part 1)
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-hrm_cut")
+    MoveViewObject(Myself,VERY_FAST)
+    FadeToColor([30.0],0)
+    Wait(2)
+    MoveViewObject(Myself,INSTANT)
+    ActionOverride(Player1,JumpToPoint([3216.2316]))
+    ActionOverride(Player1,Face(NW))
+    ActionOverride(Player2,JumpToPoint([3288.2310]))
+    ActionOverride(Player2,Face(NW))
+    ActionOverride(Player3,JumpToPoint([3214.2386]))
+    ActionOverride(Player3,Face(NW))
+    ActionOverride(Player4,JumpToPoint([3294.2380]))
+    ActionOverride(Player4,Face(NW))
+    ActionOverride(Player5,JumpToPoint([3364.2340]))
+    ActionOverride(Player5,Face(NW))
+    ActionOverride(Player6,JumpToPoint([3264.2452]))
+    ActionOverride(Player6,Face(NW))
+    CreateCreature("a7-hrmp",[3050.2165],SE)
+    CreateCreature("a7-hrmfc",[2988.2113],SE)
+    CreateCreature("a7-hrmc",[2938.2062],SE)
+    CreateCreature("a7-hrmf2",[3068.2078],SE)
+    CreateCreature("a7-hrmf4",[2954.2169],SE)
+    CreateCreature("a7-hrmf1",[3001.2025],SE)
+    CreateCreature("a7-hrmf3",[2890.2118],SE)
+    StartCutScene("a7-hmct2")
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    MoveToObject("a7-harmonium_trigger")
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player2)
+    MoveToObject("a7-harmonium_trigger")
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player3)
+    MoveToObject("a7-harmonium_trigger")
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player4)
+    MoveToObject("a7-harmonium_trigger")
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player5)
+    MoveToObject("a7-harmonium_trigger")
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player6)
+    MoveToObject("a7-harmonium_trigger")
+END

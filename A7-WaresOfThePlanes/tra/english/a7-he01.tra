@@ -1,0 +1,44 @@
+// Item set: Sarin's Helmet
+
+// @0 = ~~  // #6346
+@1 = ~Sarin's Helmet~
+
+// @10 = ~~ // #6807
+
+// Identified item description (without set bonus)
+@11 = ~Sarin was a human paladin and factol of the Harmonium on his homeworld Ortho, and later in Sigil. Also called the "Hardheads" they were known for their more radical take on law and order. According to their view true peace can only be achieved if everyone thinks and acts the same way—by force if necessary. The Harmonium led many campaigns across the multiverse under Sarin's leadership to propagate "peace".
+
+When Sarin became a high-ranking commander he commissioned a personal set of armor that consisted of plate armor, gauntlets, and helmet to help him in his campaigns. With his helmet equipped Sarin was able to make out enemies and other cowardly creatures that tried to escape from his doctrine of peace.
+
+STATISTICS:
+
+Equipped abilities:
+– Fire Resistance: +20%
+– Protects against critical hits
+
+Charge abilities:
+– True Seeing once per day
+  Duration: 1 turn
+
+Weight: 2~
+
+// Identified item description (with set bonus enabled)
+@12 = ~Sarin was a human paladin and factol of the Harmonium on his homeworld Ortho, and later in Sigil. Also called the "Hardheads" they were known for their more radical take on law and order. According to their view true peace can only be achieved if everyone thinks and acts the same way—by force if necessary. The Harmonium led many campaigns across the multiverse under Sarin's leadership to propagate "peace".
+
+When Sarin became a high-ranking commander he commissioned a personal set of armor that consisted of plate armor, gauntlets, and helmet to help him in his campaigns. With his helmet equipped Sarin was able to make out enemies and other cowardly creatures that tried to escape from his doctrine of peace.
+
+When Sarin wore the complete set of armor, its true potential was unlocked that made him a powerful force of order to be reckoned with.
+
+STATISTICS:
+
+Equipped abilities:
+– Fire Resistance: +20%
+– Protects against critical hits
+– Peace of Mind: Activates if all pieces of Sarin's armor are equipped
+  Provides immunity to feeblemind, confusion, and charm
+
+Charge abilities:
+– True Seeing once per day
+  Duration: 1 turn
+
+Weight: 2~

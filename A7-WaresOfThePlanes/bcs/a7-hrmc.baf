@@ -1,0 +1,14 @@
+IF
+  Global("A7-HarmoniumQuest","GLOBAL",9)
+THEN
+  RESPONSE #100
+    EscapeArea()
+END
+
+IF
+  Global("A7-HarmoniumQuest","GLOBAL",10)
+  !Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    Enemy()
+END

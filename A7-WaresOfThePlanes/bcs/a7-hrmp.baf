@@ -1,0 +1,80 @@
+// Paladin: specific combat script
+
+IF
+  DifficultyGT(EASY)
+  Global("summoned","LOCALS",0)
+  See(NearestEnemyOf(Myself))
+  !Range(LastSeenBy(Myself),4)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobal("summoned","LOCALS",1)
+    ForceSpell(Myself,PALADIN_SUMMON_DEVA)
+END
+
+IF
+  DifficultyGT(EASY)
+  Global("whirl","LOCALS",0)
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself),8)
+  HaveSpell(WARRIOR_GREATER_WHIRLWIND)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("whirl","LOCALS",1)
+    SetGlobalTimer("whirl_timer","LOCALS",THREE_ROUNDS)
+    ForceSpell(Myself,WARRIOR_GREATER_WHIRLWIND)
+    AttackReevaluate(LastSeenBy(Myself),30)
+    SetInterrupt(TRUE)
+END
+
+IF
+  DifficultyGT(NORMAL)
+  GlobalGT("whirl","LOCALS",0)
+  GlobalTimerExpired("whirl_timer","LOCALS")
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself),8)
+  HaveSpell(WARRIOR_GREATER_WHIRLWIND)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("whirl_timer","LOCALS",THREE_ROUNDS)
+    ForceSpell(Myself,WARRIOR_GREATER_WHIRLWIND)
+    AttackReevaluate(LastSeenBy(Myself),30)
+    SetInterrupt(TRUE)
+END
+
+IF
+  GlobalGT("whirl","LOCALS",0)
+  GlobalTimerExpired("whirl_timer","LOCALS")
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself),8)
+  HaveSpell(WARRIOR_WHIRLWIND)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("whirl_timer","LOCALS",THREE_ROUNDS)
+    ForceSpell(Myself,WARRIOR_WHIRLWIND)
+    AttackReevaluate(LastSeenBy(Myself),30)
+    SetInterrupt(TRUE)
+END
+
+IF
+  !DifficultyGT(EASY)
+  Global("whirl","LOCALS",0)
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself),8)
+  HaveSpell(WARRIOR_WHIRLWIND)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("whirl","LOCALS",1)
+    SetGlobalTimer("whirl_timer","LOCALS",THREE_ROUNDS)
+    ForceSpell(Myself,WARRIOR_WHIRLWIND)
+    AttackReevaluate(LastSeenBy(Myself),30)
+    SetInterrupt(TRUE)
+END

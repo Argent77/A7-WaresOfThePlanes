@@ -1,0 +1,69 @@
+// Item set: Sarin's Long Sword +2
+
+// @0 = ~~  // #2893
+@1 = ~Sarins Langschwert +2~
+
+// @10 = ~~ // #6742
+
+// Identified item description (without set bonus)
+@11 = ~Sarin war ein menschlicher Paladin und Bundmeister des Harmoniums, zuerst in seiner Heimatwelt Ortho, später auch in Sigil. Sie wurden auch „Dickschädel“ genannt, da sie eine sehr radikale Einstellung zu Recht und Gesetz hatten. Ihrer Ansicht nach kann wahrer Frieden nur erreicht werden, wenn alle gleich denken und handeln - notfalls mit Gewalt. Unter Sarins Führung startete das Harmonium im ganzen Multiversum Feldzüge, um für ihren „Frieden“ zu sorgen.
+
+Als Sarin dem Harmonium beitrat, erbte er diese Waffe von seinem Vater, der selbst ein berühmter Befehlshaber des Harmonium war. Die Klinge ist leuchtend rot, als würde sie starke Hitze ausstrahlen. Tatsächlich besteht sie jedoch aus einem besonderen Erz, das nur in seiner Heimatwelt Ortho existiert und die Eigenschaft besitzt, lebendes Gewebe zu betäuben. Dadurch werden Ziele, die von der Waffe getroffen wurden, in ihren Handlungen träger und ungenauer.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer wird die Angriffsgeschwindigkeit des Ziels um 1/2 und ETW0 um 1 für zwei Runden gesenkt (Rettungswurf gg. Tod). Untote und Konstrukte sind immun.
+
+ETW0-Bonus: -2
+Schaden: 1W8 +4 (Klinge)
+Initiativefaktor: 3
+Fertigkeit: Langschwert
+Typ: 1-händig
+Mindeststärke: 6
+
+Gewicht: 3~
+
+// Identified item description (with set bonus enabled)
+@12 = ~Sarin war ein menschlicher Paladin und Bundmeister des Harmoniums, zuerst in seiner Heimatwelt Ortho, später auch in Sigil. Sie wurden auch „Dickschädel“ genannt, da sie eine sehr radikale Einstellung zu Recht und Gesetz hatten. Ihrer Ansicht nach kann wahrer Frieden nur erreicht werden, wenn alle gleich denken und handeln - notfalls mit Gewalt. Unter Sarins Führung startete das Harmonium im ganzen Multiversum Feldzüge, um für ihren „Frieden“ zu sorgen.
+
+Als Sarin dem Harmonium beitrat, erbte er diese Waffe von seinem Vater, der selbst ein berühmter Befehlshaber des Harmonium war. Die Klinge ist leuchtend rot, als würde sie starke Hitze ausstrahlen. Tatsächlich besteht sie jedoch aus einem besonderen Erz, das nur in seiner Heimatwelt Ortho existiert und die Eigenschaft besitzt, lebendes Gewebe zu betäuben. Dadurch werden Ziele, die von der Waffe getroffen wurden, in ihren Handlungen träger und ungenauer.
+
+Später ließ Sarin einen Schild anfertigen, der perfekt auf diese Waffe abgestimmt war und weitere Kräfte freisetzte, wenn er mit beidem gleichzeitig ausgerüstet war. Gerüchten unter Harmoniumsmitgliedern zufolge wurde Sarin zu einer unaufhaltsamen Kampfmaschine, wenn er vollständig mit seiner Rüstung, Waffe und Schild ausgerüstet das Schlachtfeld betrat.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer wird die Angriffsgeschwindigkeit des Ziels um 1/2 und ETW0 um 1 für zwei Runden gesenkt (Rettungswurf gg. Tod). Untote und Konstrukte sind immun.
+
+Kraft der Ordnung:
+Aktiviert sich, wenn Sarins Langschwert und Schild getragen werden.
+Verleiht dem Träger einen +1 Stärkebonus und einen -1 Bonus auf alle Rettungswürfe.
+
+Purpurroter Sturm:
+Aktiviert sich, wenn Sarins Langschwert und Kurzschwert getragen werden.
+Verleiht dem Träger einen +1 Bonus auf Angriffe pro Runde und verhindert Blindheit bei einem kritischen Fehlschlag.
+
+Festung der Ordnung:
+Aktiviert sich, wenn alle Teile von Sarins Rüstung, Langschwert und Schild getragen werden.
+Verleiht dem Träger einen +1 Konstitutionsbonus, Schutz vor chaotischen Wesen, 20 % Feuerresistenz und Regeneration (1 Trefferpunkt pro 3 Sekunden).
+
+Rechtschaffender Zorn:
+Aktiviert sich, wenn alle Teile von Sarins Rüstung, Langschwert und Kurzschwert getragen werden.
+Verleiht dem Träger einen +1 Geschicklichkeitsbonus, einen -2 RK-Bonus gg. Geschosswaffen, erhöhte Laufgeschwindigkeit und Regeneration (1 Trefferpunkt pro 3 Sekunden).
+
+ETW0-Bonus: -2
+Schaden: 1W8 +4 (Klinge)
+Initiativefaktor: 3
+Fertigkeit: Langschwert
+Typ: 1-händig
+Mindeststärke: 6
+
+Gewicht: 3~
+
+@20 = ~Angriff verlangsamt~
+
+// portrait icon labels
+@30 = ~Seelenfrieden~
+@31 = ~Purpurroter Sturm~
+@32 = ~Kraft der Ordnung~
+@33 = ~Rechtschaffender Zorn~
+@34 = ~Festung der Ordnung~

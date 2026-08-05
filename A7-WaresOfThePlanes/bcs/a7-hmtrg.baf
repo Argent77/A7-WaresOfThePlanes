@@ -1,0 +1,22 @@
+// triggers Harmonium event
+IF
+  Global("A7-HarmoniumQuest","GLOBAL",2)
+  GlobalGT("AMTemplePlotFight","AR5500",1)
+  Range([PC],15)
+  InMyArea(Player1)
+  !ActuallyInCombat()
+  PartyHasItem("a7-pl01")
+  PartyHasItem("a7-br08")
+  PartyHasItem("a7-he01")
+  PartyHasItem("a7-sw08")
+  OR(2)
+    PartyHasItem("a7-sh01")
+    PartyHasItem("a7-sw09")
+THEN
+  RESPONSE #100
+    SetGlobal("A7-HarmoniumQuest","GLOBAL",3)
+    StartCutSceneMode()
+    ClearAllActions()
+    CreateCreatureObject("a7-hrmcs",Myself,0,0,0)
+    StartCutScene("a7-hmct1")
+END

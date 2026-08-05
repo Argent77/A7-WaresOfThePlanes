@@ -969,3 +969,51 @@ BEGIN
     END
   END
 END
+
+
+/**
+ * Determines the number of free IDS slots in the current file.
+ *
+ * INT_VAR include_zero     Whether slot 0 should be considered. (Default: 0)
+ * INT_VAR slots_available  Max. number of supported slots. (Default: 256)
+ * RET count                Number of unoccupied IDS slots.
+ * RET_ARRAY slots          Indexed array with "count" entries of unoccupied slot numbers.
+ */
+DEFINE_PATCH_FUNCTION ids_slots_available
+INT_VAR
+  include_zero = 0
+  slots_available = 256
+RET count
+RET_ARRAY slots
+BEGIN
+  READ_2DA_ENTRIES_NOW ids_table 1
+
+  // determining start of data entries
+  SET start_row = 0
+  FOR (row = 0; row < 2; ++row) BEGIN
+    PATCH_IF (ids_table > start_row && (NOT IS_AN_INT $ids_table(~%start_row%~ ~0~) || NOT VARIABLE_IS_SET $ids_table(~%start_row%~ ~1~))) BEGIN
+      SET start_row += 1
+    END
+  END
+
+  // marking occupied slots
+  SET min_id = include_zero ? 0 : 1
+  FOR (row = start_row; row < ids_table; ++row) BEGIN
+    SET id = IS_AN_INT $ids_table(~%row%~ ~0~) ? $ids_table(~%row%~ ~0~) : "-1"
+    PATCH_IF (id >= min_id && id < slots_available) BEGIN
+      SET $count_table(~%id%~) = 1
+    END
+  END
+
+  // initializing return values
+  SET slots = 0
+  SET count = slots_available - min_id
+  FOR (id = min_id; id < slots_available; ++id) BEGIN
+    PATCH_IF (VARIABLE_IS_SET $count_table(~%id%~)) BEGIN
+      SET count -= 1
+    END ELSE BEGIN
+      SET $slots(~%slots%~) = id
+      SET slots += 1
+    END
+  END
+END

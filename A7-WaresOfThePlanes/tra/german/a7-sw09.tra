@@ -1,0 +1,58 @@
+// Item set: Sarin's Short Sword +3
+
+// @0 = ~~  // #6745
+@1 = ~Sarins Kurzschwert +3~
+
+// @10 = ~~ // #6747
+
+// Identified item description (without set bonus)
+@11 = ~Sarin war ein menschlicher Paladin und Bundmeister des Harmoniums, zuerst in seiner Heimatwelt Ortho, später auch in Sigil. Sie wurden auch „Dickschädel“ genannt, da sie eine sehr radikale Einstellung zu Recht und Gesetz hatten. Ihrer Ansicht nach kann wahrer Frieden nur erreicht werden, wenn alle gleich denken und handeln - notfalls mit Gewalt. Unter Sarins Führung startete das Harmonium im ganzen Multiversum Feldzüge, um für ihren „Frieden“ zu sorgen.
+
+Es ist nicht überliefert, wann genau Sarin in den Besitz dieser Waffe gelangte. Er setzte sie jedoch gelegentlich als Zweitwaffe ein, wenn Hindernisse schnell aus dem Weg geräumt werden mussten. Die Klinge besteht aus einem glänzenden, goldenen Metall, das bei geschicktem Einsatz Gegner blenden kann - oder den Träger selbst, falls er sie nicht richtig handhabt.
+
+EIGENSCHAFTEN:
+
+Bei einem kritischen Treffer erblindet das Ziel für eine Runde.
+Bei einem kritischen Fehlschlag erblindet der Träger für eine Runde (Rettungswurf gg. Zauber).
+
+RK-Bonus: -1
+
+ETW0-Bonus: -3
+Schaden: 1W6 +3 (Stich)
+Initiativefaktor: 0
+Fertigkeit: Kurzschwert
+Typ: 1-händig
+Mindeststärke: 5
+
+Gewicht: 1~
+
+// Identified item description (with set bonus enabled)
+@12 = ~Sarin war ein menschlicher Paladin und Bundmeister des Harmoniums, zuerst in seiner Heimatwelt Ortho, später auch in Sigil. Sie wurden auch „Dickschädel“ genannt, da sie eine sehr radikale Einstellung zu Recht und Gesetz hatten. Ihrer Ansicht nach kann wahrer Frieden nur erreicht werden, wenn alle gleich denken und handeln - notfalls mit Gewalt. Unter Sarins Führung startete das Harmonium im ganzen Multiversum Feldzüge, um für ihren „Frieden“ zu sorgen.
+
+Es ist nicht überliefert, wann genau Sarin in den Besitz dieser Waffe gelangte. Er setzte sie jedoch gelegentlich als Zweitwaffe ein, wenn Hindernisse schnell aus dem Weg geräumt werden mussten. Die Klinge besteht aus einem glänzenden, goldenen Metall, das bei geschicktem Einsatz Gegner blenden kann - oder den Träger selbst, falls er sie nicht richtig handhabt.
+
+Zusammen mit seinem persönlichen Langschwert gelang es Sarin, in schneller Folge Treffer zu landen, was bei seinen Mitstreitern einen so starken Eindruck hinterließ, dass sie ihm den Spitznamen „Purpurroter Sturm“ gaben.
+
+EIGENSCHAFTEN:
+
+Bei einem kritischen Treffer erblindet das Ziel für eine Runde.
+Bei einem kritischen Fehlschlag erblindet der Träger für eine Runde (Rettungswurf gg. Zauber).
+
+Purpurroter Sturm:
+Aktiviert sich, wenn Sarins Langschwert und Kurzschwert getragen werden.
+Verleiht dem Träger einen +1 Bonus auf Angriffe pro Runde und verhindert Blindheit bei einem kritischen Fehlschlag.
+
+Rechtschaffender Zorn:
+Aktiviert sich, wenn alle Teile von Sarins Rüstung, Langschwert und Kurzschwert getragen werden.
+Verleiht dem Träger einen +1 Geschicklichkeitsbonus, einen -2 RK-Bonus gg. Geschosswaffen, erhöhte Laufgeschwindigkeit und Regeneration (1 Trefferpunkt pro 3 Sekunden).
+
+RK-Bonus: -1
+
+ETW0-Bonus: -3
+Schaden: 1W6 +3 (Stich)
+Initiativefaktor: 0
+Fertigkeit: Kurzschwert
+Typ: 1-händig
+Mindeststärke: 5
+
+Gewicht: 1~

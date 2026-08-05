@@ -1,0 +1,465 @@
+// Item set: Sarin's Plate Armor, Gauntlets, Helmet, Long Sword, Short Sword, and Medium Shield
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT plate_resref      ~a7-pl01~
+OUTER_SPRINT gauntlets_resref  ~a7-br08~
+OUTER_SPRINT helmet_resref     ~a7-he01~
+OUTER_SPRINT longsword_resref  ~a7-sw08~
+OUTER_SPRINT shortsword_resref ~a7-sw09~
+OUTER_SPRINT shield_resref     ~a7-sh01~
+OUTER_SPRINT ribbon_resref     ~a7-bl02~
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY item_info BEGIN
+  // itm resref, spell state, bg?, sod?, bg2? => dummy
+  ~%plate_resref%~, ~A7_ARMOR_PLATE~, 0, 0, 1 => 1
+  ~%gauntlets_resref%~, ~A7_ARMOR_GAUNTLETS~, 0, 1, 1 => 1
+  ~%helmet_resref%~, ~A7_ARMOR_HELMET~, 1, 1, 1 => 1
+  ~%longsword_resref%~, ~A7_WEAPON_MAIN~, 0, 1, 1 => 1
+  ~%shortsword_resref%~, ~A7_WEAPON_OFF~, 0, 0, 1 => 1
+  ~%shield_resref%~, ~A7_WEAPON_SHIELD~, 0, 0, 1 => 1
+END
+
+// determine whether set bonuses can be activated
+COPY_EXISTING ~splstate.ids~ ~override~
+  LPF ids_slots_available
+    RET splstate_free = count
+    RET_ARRAY splstate_free_table = slots
+  END
+BUT_ONLY
+
+// OUTER_SET set_bonuses_enabled = 0
+OUTER_SET set_bonuses_enabled = (splstate_free >= 6)
+ACTION_IF (NOT set_bonuses_enabled) BEGIN
+  WARN ~WARNING: Item set bonuses are not installed because of insufficient number of free spell states (required: 6, found: %splstate_free%).~
+END
+
+// install spell states and filters
+ACTION_IF (set_bonuses_enabled) BEGIN
+  // SPLSTATE.IDS entries
+  OUTER_SET index = 0
+  ACTION_PHP_EACH item_info AS keys => _ BEGIN
+    OUTER_SET slot = $splstate_free_table(~%index%~)
+    OUTER_SPRINT label $keys(~1~)
+    APPEND ~splstate.ids~ ~%slot% %label%~
+    OUTER_SET index += 1
+  END
+  CLEAR_IDS_MAP
+
+  // SPLPROT.2DA filters
+  LAF get_splprot_entry
+    INT_VAR stat = 0x112 value = IDS_OF_SYMBOL(~splstate~ ~A7_ARMOR_PLATE~) relation = 5
+    STR_VAR name = ~*_SPLSTATE!=A7_ARMOR_PLATE~
+    RET filter_1 = index
+  END
+  LAF get_splprot_entry
+    INT_VAR stat = 0x112 value = IDS_OF_SYMBOL(~splstate~ ~A7_ARMOR_GAUNTLETS~) relation = 5
+    STR_VAR name = ~*_SPLSTATE!=A7_ARMOR_GAUNTLETS~
+    RET filter_2 = index
+  END
+  LAF get_splprot_entry
+    INT_VAR stat = 0x112 value = IDS_OF_SYMBOL(~splstate~ ~A7_ARMOR_HELMET~) relation = 5
+    STR_VAR name = ~*_SPLSTATE!=A7_ARMOR_HELMET~
+    RET filter_3 = index
+  END
+  LAF get_splprot_entry
+    INT_VAR stat = 0x112 value = IDS_OF_SYMBOL(~splstate~ ~A7_WEAPON_MAIN~) relation = 5
+    STR_VAR name = ~*_SPLSTATE!=A7_WEAPON_MAIN~
+    RET filter_4 = index
+  END
+  LAF get_splprot_entry
+    INT_VAR stat = 0x112 value = IDS_OF_SYMBOL(~splstate~ ~A7_WEAPON_OFF~) relation = 5
+    STR_VAR name = ~*_SPLSTATE!=A7_WEAPON_OFF~
+    RET filter_5 = index
+  END
+  LAF get_splprot_entry
+    INT_VAR stat = 0x112 value = IDS_OF_SYMBOL(~splstate~ ~A7_WEAPON_SHIELD~) relation = 5
+    STR_VAR name = ~*_SPLSTATE!=A7_WEAPON_SHIELD~
+    RET filter_6 = index
+  END
+
+  LAF get_splprot_entry
+    INT_VAR stat = 0x103 value = filter_1 relation = filter_2
+    STR_VAR name = EVAL ~*_ENTRIES=(%filter_1%||%filter_2%)~
+    RET filter_7 = index
+  END
+  // armor filter
+  LAF get_splprot_entry
+    INT_VAR stat = 0x104 value = filter_3 relation = filter_7
+    STR_VAR name = EVAL ~*_ENTRIES!=(%filter_3%||%filter_7%)~
+    RET filter_8 = index
+  END
+  // weapon/off-hand filter
+  LAF get_splprot_entry
+    INT_VAR stat = 0x104 value = filter_4 relation = filter_5
+    STR_VAR name = EVAL ~*_ENTRIES!=(%filter_4%||%filter_5%)~
+    RET filter_9 = index
+  END
+  // weapon/shield filter
+  LAF get_splprot_entry
+    INT_VAR stat = 0x104 value = filter_4 relation = filter_6
+    STR_VAR name = EVAL ~*_ENTRIES!=(%filter_4%||%filter_6%)~
+    RET filter_10 = index
+  END
+  LAF get_splprot_entry
+    INT_VAR stat = 0x103 value = filter_3 relation = filter_7
+    STR_VAR name = EVAL ~*_ENTRIES=(%filter_3%||%filter_7%)~
+    RET filter_11 = index
+  END
+  LAF get_splprot_entry
+    INT_VAR stat = 0x103 value = filter_4 relation = filter_11
+    STR_VAR name = EVAL ~*_ENTRIES=(%filter_4%||%filter_11%)~
+    RET filter_12 = index
+  END
+  // armor/weapon/off-hand filter
+  LAF get_splprot_entry
+    INT_VAR stat = 0x104 value = filter_5 relation = filter_12
+    STR_VAR name = EVAL ~*_ENTRIES!=(%filter_5%||%filter_12%)~
+    RET filter_13 = index
+  END
+  // armor/weapon/shield filter
+  LAF get_splprot_entry
+    INT_VAR stat = 0x104 value = filter_6 relation = filter_12
+    STR_VAR name = EVAL ~*_ENTRIES!=(%filter_6%||%filter_12%)~
+    RET filter_14 = index
+  END
+END
+
+// installing items
+ACTION_PHP_EACH item_info AS keys => _ BEGIN
+  OUTER_SPRINT itm_resref $keys(~0~)
+  OUTER_SPRINT splstate_label $keys(~1~)
+  OUTER_SET is_game = ($keys(~2~) && has_bg) || ($keys(~3~) && has_sod) || ($keys(~4~) && has_bg2)
+  OUTER_SET EVAL ~%itm_resref%_installed~ = is_game
+  ACTION_IF (is_game) BEGIN
+    // Installing item
+    COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+      LPF update_item_generic
+        STR_VAR
+          itm_resref
+        RET
+          icon_resref
+          desc_image_resref
+      END
+
+    // Installing associated resources
+    LAF install_item_resources_generic
+    STR_VAR
+      itm_resref
+      icon_resref
+      desc_image_resref
+    END
+  END
+
+  ACTION_IF (set_bonuses_enabled) BEGIN
+    LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+    WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+      COPY_EXISTING ~%itm_resref%.itm~ ~override~
+        SAY IDENTIFIED_DESC @12 // alternate item description with set bonuses enabled
+        LPF ADD_ITEM_EQEFFECT
+          INT_VAR
+            opcode = 328  // set spell state
+            target = 1    // self
+            parameter2 = IDS_OF_SYMBOL(~splstate~ ~%splstate_label%~)
+            timing = 2    // while equipped
+            special = 1   // iwd2 mode
+            insert_point = "-1"
+        END
+        PATCH_IF (~%itm_resref%~ STR_EQ ~%longsword_resref%~) BEGIN
+          LPF ALTER_ITEM_EFFECT
+            INT_VAR
+              check_headers = 1
+              match_opcode = 139  // Display string
+              parameter1 = RESOLVE_STR_REF(@20) // Attack slowed
+          END
+        END
+      BUT_ONLY IF_EXISTS
+    END
+  END
+END
+
+ACTION_IF (set_bonuses_enabled) BEGIN
+  // updating item effects
+  COPY_EXISTING ~%plate_resref%.itm~ ~override~
+    LPF ADD_ITEM_EQEFFECT
+      INT_VAR
+        opcode = 272  // Use EFF file on condition
+        target = 1    // self
+        parameter1 = 1
+        parameter2 = 0  // once per second
+        timing = 2    // while equipped
+        insert_point = "-1"
+      STR_VAR
+        resource = ~A7-IS01~
+    END
+  BUT_ONLY IF_EXISTS
+
+  COPY_EXISTING ~%gauntlets_resref%.itm~ ~override~
+    LPF ADD_ITEM_EQEFFECT
+      INT_VAR
+        opcode = 272  // Use EFF file on condition
+        target = 1    // self
+        parameter1 = 1
+        parameter2 = 0  // once per second
+        timing = 2    // while equipped
+        insert_point = "-1"
+      STR_VAR
+        resource = ~A7-IS01~
+    END
+  BUT_ONLY IF_EXISTS
+
+  COPY_EXISTING ~%helmet_resref%.itm~ ~override~
+    LPF ADD_ITEM_EQEFFECT
+      INT_VAR
+        opcode = 272  // Use EFF file on condition
+        target = 1    // self
+        parameter1 = 1
+        parameter2 = 0  // once per second
+        timing = 2    // while equipped
+        insert_point = "-1"
+      STR_VAR
+        resource = ~A7-IS01~
+    END
+  BUT_ONLY IF_EXISTS
+
+  COPY_EXISTING ~%shortsword_resref%.itm~ ~override~
+    LPF ADD_ITEM_EQEFFECT
+      INT_VAR
+        opcode = 272  // Use EFF file on condition
+        target = 1    // self
+        parameter1 = 1
+        parameter2 = 0  // once per second
+        timing = 2    // while equipped
+        insert_point = "-1"
+      STR_VAR
+        resource = ~A7-IS02~
+    END
+    LPF ADD_ITEM_EQEFFECT
+      INT_VAR
+        opcode = 272  // Use EFF file on condition
+        target = 1    // self
+        parameter1 = 1
+        parameter2 = 0  // once per second
+        timing = 2    // while equipped
+        insert_point = "-1"
+      STR_VAR
+        resource = ~A7-IS04~
+    END
+  BUT_ONLY IF_EXISTS
+
+  COPY_EXISTING ~%shield_resref%.itm~ ~override~
+    LPF ADD_ITEM_EQEFFECT
+      INT_VAR
+        opcode = 272  // Use EFF file on condition
+        target = 1    // self
+        parameter1 = 1
+        parameter2 = 0  // once per second
+        timing = 2    // while equipped
+        insert_point = "-1"
+      STR_VAR
+        resource = ~A7-IS03~
+    END
+    LPF ADD_ITEM_EQEFFECT
+      INT_VAR
+        opcode = 272  // Use EFF file on condition
+        target = 1    // self
+        parameter1 = 1
+        parameter2 = 0  // once per second
+        timing = 2    // while equipped
+        insert_point = "-1"
+      STR_VAR
+        resource = ~A7-IS05~
+    END
+  BUT_ONLY IF_EXISTS
+
+  COPY ~%MOD_FOLDER%/eff/a7-is01.eff~ ~override~
+       ~%MOD_FOLDER%/eff/a7-is02.eff~ ~override~
+       ~%MOD_FOLDER%/eff/a7-is03.eff~ ~override~
+       ~%MOD_FOLDER%/eff/a7-is04.eff~ ~override~
+       ~%MOD_FOLDER%/eff/a7-is05.eff~ ~override~
+    // updating splprot filter indices
+    READ_LONG 0x20 param2
+    PATCH_IF (VARIABLE_IS_SET EVAL ~filter_%param2%~) BEGIN
+      SET value = EVAL ~filter_%param2%~
+      WRITE_LONG 0x20 value
+    END ELSE BEGIN
+      PATCH_WARN ~WARNING: Invalid SPLPROT filter index found in %SOURCE_FILE%: %param2%~
+    END
+
+  COPY ~%MOD_FOLDER%/eff/a7-is04b.eff~ ~override~
+       ~%MOD_FOLDER%/spl/a7-is01.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-is02.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-is03.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-is04.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-is04a.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-is04b.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-is05.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-sw09a.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-sw09b.spl~ ~override~
+
+  ACTION_IF (is_eet) BEGIN
+    // adjusting chapter check in EET
+    COPY_EXISTING ~a7-is04.spl~ ~override~
+                  ~a7-is05.spl~ ~override~
+      LPF ALTER_EFFECT
+        INT_VAR
+          match_opcode = 326  // Apply effects list
+          match_parameter2 = 136  // Chapter >= n
+          parameter1 = bg2_chapter_8
+      END
+  END
+
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%longsword_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    // installing portrait icons for set bonuses
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY icon_array BEGIN
+      // tra ref, portrait icon index, spl resref => bam resref
+      30, 301, ~a7-is01~ => ~a7-is01d~
+      31, 302, ~a7-is02~ => ~a7-is02d~
+      32, 303, ~a7-is03~ => ~a7-is03d~
+      33, 304, ~a7-is04~ => ~a7-is04d~
+      34, 305, ~a7-is05~ => ~a7-is05d~
+    END
+
+    ACTION_PHP_EACH icon_array AS keys => bam_resref BEGIN
+      OUTER_SET tra_ref = $keys(~0~)
+      OUTER_SET icon_index = $keys(~1~)
+      OUTER_SPRINT spl_resref $keys(~2~)
+      LAF add_statdesc_entry
+        INT_VAR strref = RESOLVE_STR_REF((AT "tra_ref"))
+        STR_VAR resref = EVAL ~%bam_resref%~
+        RET icon_index_new = index
+      END
+
+      COPY ~%MOD_FOLDER%/bam/%bam_resref%.bam~ ~override~
+      COPY_EXISTING ~%spl_resref%.spl~ ~override~
+        PATCH_IF (icon_index_new >= 0) BEGIN
+          LPF ALTER_EFFECT
+            INT_VAR
+              check_globals = 0
+              check_headers = 1
+              match_opcode = 142  // Display portrait icon
+              match_parameter2 = icon_index
+              parameter2 = icon_index_new
+          END
+        END ELSE BEGIN
+          PATCH_WARN ~WARNING: Could not add custom status portrait icon (%bam_resref%)~
+          LPF DELETE_EFFECT
+            INT_VAR
+              check_globals = 0
+              check_headers = 1
+              match_opcode = 142  // Display portrait icon
+              match_parameter2 = icon_index
+          END
+        END
+      BUT_ONLY IF_EXISTS
+    END
+  END
+END
+
+// installing optional ToB event
+ACTION_IF (has_bg2 && set_bonuses_enabled) BEGIN
+  // Installing reward item
+  OUTER_SPRINT itm_resref ~%ribbon_resref%~
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        desc_image_resref
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    desc_image_resref
+  END
+
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    // creatures
+    COPY ~%MOD_FOLDER%/cre/a7-hrmp.cre~ ~override~
+      SAY NAME1 @20 // Sir Sorcien
+      SAY NAME2 @20 // Sir Sorcien
+
+    COPY ~%MOD_FOLDER%/cre/a7-hrmfc.cre~ ~override~
+      SAY NAME1 @21 // Warrior Priest
+      SAY NAME2 @21 // Warrior Priest
+
+    COPY ~%MOD_FOLDER%/cre/a7-hrmc.cre~ ~override~
+      SAY NAME1 @22 // Cleric
+      SAY NAME2 @22 // Cleric
+
+    COPY ~%MOD_FOLDER%/cre/a7-hrmf1.cre~ ~override~
+         ~%MOD_FOLDER%/cre/a7-hrmf2.cre~ ~override~
+         ~%MOD_FOLDER%/cre/a7-hrmf3.cre~ ~override~
+         ~%MOD_FOLDER%/cre/a7-hrmf4.cre~ ~override~
+      SAY NAME1 @23 // Fighter
+      SAY NAME2 @23 // Fighter
+
+    COPY ~%MOD_FOLDER%/cre/a7-hrmcs.cre~ ~override~
+
+    // dialogs
+    ADD_JOURNAL @1000 @1001 @1002 @1003 @1004 @1005
+    COMPILE ~%MOD_FOLDER%/dlg/a7-hrm.d~
+  END
+
+  // scripts
+  COMPILE ~%MOD_FOLDER%/bcs/a7-hmtrg.baf~
+          ~%MOD_FOLDER%/bcs/a7-hrmc.baf~
+          ~%MOD_FOLDER%/bcs/a7-hrmp.baf~
+          ~%MOD_FOLDER%/bcs/a7-hmct1.baf~
+          ~%MOD_FOLDER%/bcs/a7-hmct2.baf~
+          ~%MOD_FOLDER%/bcs/a7-hmctx.baf~
+
+<<<<<<<< .../inlined/A7-WaresOfThePlanes/a7-itemset/ar5500-top.baf
+IF
+  OnCreation()
+  Global("A7-HarmoniumQuest","GLOBAL",1)
+  GlobalTimerExpired("A7-HarmoniumQuestTimer","GLOBAL")
+  !Global("Enclave","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-HarmoniumQuest","GLOBAL",2)
+    Continue()
+END
+
+IF
+  Global("A7-HarmoniumQuest","GLOBAL",0)
+  !Global("A7-SarinSetEquipped","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-HarmoniumQuest","GLOBAL",1)
+    SetGlobalTimer("A7-HarmoniumQuestTimer","GLOBAL",ONE_DAY)
+    Continue()
+END
+>>>>>>>>
+  EXTEND_TOP ~ar5500.bcs~ ~.../inlined/A7-WaresOfThePlanes/a7-itemset/ar5500-top.baf~
+
+  // adding area trigger
+  COPY_EXISTING ~ar5500.are~ ~override~
+    LPF fj_are_structure
+      INT_VAR
+        fj_type = 0
+        fj_box_left = 3223
+        fj_box_top = 2330
+        fj_box_right = 3229
+        fj_box_bottom = 2334
+        fj_cursor_idx = 0
+        fj_flags = BIT1 // trap resets
+        fj_trap_active = 1
+        fj_loc_x = 3226
+        fj_loc_y = 2332
+        fj_vertex_0 = 3223 | (2334 << 16)
+        fj_vertex_1 = 3229 | (2334 << 16)
+        fj_vertex_2 = 3226 | (2330 << 16)
+      STR_VAR
+        fj_structure_type = ~region~
+        fj_name = ~a7-harmonium_trigger~
+        fj_reg_script = ~a7-hmtrg~
+    END
+  BUT_ONLY
+END

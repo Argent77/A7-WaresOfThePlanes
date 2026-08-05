@@ -1,0 +1,68 @@
+// Cutscene: Harmonium event (part 2)
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-hrm_cut")
+    DestroySelf()
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-hrm_leader")
+    FadeFromColor([45.0],0)
+    MoveToPoint([3140.2255])
+    Wait(2)
+    StartDialogNoSet(Player1)
+    EndCutSceneMode()
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-hrm_cleric2")
+    MoveToPoint([3078.2203])
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-hrm_cleric1")
+    MoveToPoint([3028.2153])
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-hrm_fighter2")
+    MoveToPoint([3159.2168])
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-hrm_fighter4")
+    MoveToPoint([3044.2259])
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-hrm_fighter1")
+    MoveToPoint([3091.2115])
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-hrm_fighter3")
+    MoveToPoint([2980.2208])
+END

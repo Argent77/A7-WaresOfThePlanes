@@ -1,0 +1,40 @@
+// Item set: Sarin's Helmet
+
+// @0 = ~~  // #6346
+@1 = ~Sarins Helm~
+
+// @10 = ~~ // #6807
+
+// Identified item description (without set bonus)
+@11 = ~Sarin war ein menschlicher Paladin und Bundmeister des Harmoniums, zuerst in seiner Heimatwelt Ortho, später auch in Sigil. Sie wurden auch „Dickschädel“ genannt, da sie eine sehr radikale Einstellung zu Recht und Gesetz hatten. Ihrer Ansicht nach kann wahrer Frieden nur erreicht werden, wenn alle gleich denken und handeln - notfalls mit Gewalt. Unter Sarins Führung startete das Harmonium im ganzen Multiversum Feldzüge, um für ihren „Frieden“ zu sorgen.
+
+Als Sarin zu einem hochrangigen Befehlshaber aufstieg, ließ er sich eine persönliche Rüstung anfertigen, die aus einem Plattenpanzer, Handschuhen und einem Helm bestand. Sie sollte ihn bei seinen Feldzügen unterstützen. Mit seinem Helm konnte Sarin Feinde und andere feige Kreaturen ausmachen, die versuchten, seiner Friedensdoktrin zu entkommen.
+
+EIGENSCHAFTEN:
+
+Wahrer Blick (1x täglich)
+
+Feuerwiderstand: +20 %
+Schützt vor kritischen Treffern
+
+Gewicht: 2~
+
+// Identified item description (with set bonus enabled)
+@12 = ~Sarin war ein menschlicher Paladin und Bundmeister des Harmoniums, zuerst in seiner Heimatwelt Ortho, später auch in Sigil. Sie wurden auch „Dickschädel“ genannt, da sie eine sehr radikale Einstellung zu Recht und Gesetz hatten. Ihrer Ansicht nach kann wahrer Frieden nur erreicht werden, wenn alle gleich denken und handeln - notfalls mit Gewalt. Unter Sarins Führung startete das Harmonium im ganzen Multiversum Feldzüge, um für ihren „Frieden“ zu sorgen.
+
+Als Sarin zu einem hochrangigen Befehlshaber aufstieg, ließ er sich eine persönliche Rüstung anfertigen, die aus einem Plattenpanzer, Handschuhen und einem Helm bestand. Sie sollte ihn bei seinen Feldzügen unterstützen. Mit seinem Helm konnte Sarin Feinde und andere feige Kreaturen ausmachen, die versuchten, seiner Friedensdoktrin zu entkommen.
+
+Immer wenn Sarin die komplette Rüstung trug, entfaltete sich ihr wahres Potenzial, das ihn zu einer ordnungsstiftenden Macht werden ließ, mit der man rechnen musste.
+
+EIGENSCHAFTEN:
+
+Wahrer Blick (1x täglich)
+
+Seelenfrieden:
+Aktiviert sich, wenn alle Teile von Sarins Rüstung getragen werden.
+Schützt vor Schwachsinn, Verwirrung und Bezauberung.
+
+Feuerwiderstand: +20 %
+Schützt vor kritischen Treffern
+
+Gewicht: 2~

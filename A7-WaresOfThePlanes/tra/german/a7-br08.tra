@@ -1,0 +1,38 @@
+// Item set: Sarins Handschuhe
+
+// @0 = ~~  // #6797
+@1 = ~Sarins Handschuhe~
+
+// @10 = ~~ // #6798
+
+// Identified item description (without set bonus)
+@11 = ~Sarin war ein menschlicher Paladin und Bundmeister des Harmoniums, zuerst in seiner Heimatwelt Ortho, später auch in Sigil. Sie wurden auch „Dickschädel“ genannt, da sie eine sehr radikale Einstellung zu Recht und Gesetz hatten. Ihrer Ansicht nach kann wahrer Frieden nur erreicht werden, wenn alle gleich denken und handeln - notfalls mit Gewalt. Unter Sarins Führung startete das Harmonium im ganzen Multiversum Feldzüge, um für ihren „Frieden“ zu sorgen.
+
+Als Sarin zu einem hochrangigen Befehlshaber aufstieg, ließ er sich eine persönliche Rüstung anfertigen, die aus einem Plattenpanzer, Handschuhen und einem Helm bestand. Sie sollte ihn bei seinen Feldzügen unterstützen. Diese Handschuhe ermöglichen dem Träger einen festeren Griff an der Waffe, wodurch präziser und mit größerer Kraft angegriffen werden kann.
+
+EIGENSCHAFTEN:
+
+ETW0-Bonus: -2 mit Nahkampfwaffen
+Schadensbonus: +2 mit Nahkampfwaffen
+Feuerwiderstand: +20 %
+
+Gewicht: 2~
+
+// Identified item description (with set bonus enabled)
+@12 = ~Sarin war ein menschlicher Paladin und Bundmeister des Harmoniums, zuerst in seiner Heimatwelt Ortho, später auch in Sigil. Sie wurden auch „Dickschädel“ genannt, da sie eine sehr radikale Einstellung zu Recht und Gesetz hatten. Ihrer Ansicht nach kann wahrer Frieden nur erreicht werden, wenn alle gleich denken und handeln - notfalls mit Gewalt. Unter Sarins Führung startete das Harmonium im ganzen Multiversum Feldzüge, um für ihren „Frieden“ zu sorgen.
+
+Als Sarin zu einem hochrangigen Befehlshaber aufstieg, ließ er sich eine persönliche Rüstung anfertigen, die aus einem Plattenpanzer, Handschuhen und einem Helm bestand. Sie sollte ihn bei seinen Feldzügen unterstützen. Diese Handschuhe ermöglichen dem Träger einen festeren Griff an der Waffe, wodurch präziser und mit größerer Kraft angegriffen werden kann.
+
+Immer wenn Sarin die komplette Rüstung trug, entfaltete sich ihr wahres Potenzial, das ihn zu einer ordnungsstiftenden Macht werden ließ, mit der man rechnen musste.
+
+EIGENSCHAFTEN:
+
+Seelenfrieden:
+Aktiviert sich, wenn alle Teile von Sarins Rüstung getragen werden.
+Schützt vor Schwachsinn, Verwirrung und Bezauberung.
+
+ETW0-Bonus: -2 mit Nahkampfwaffen
+Schadensbonus: +2 mit Nahkampfwaffen
+Feuerwiderstand: +20 %
+
+Gewicht: 2~

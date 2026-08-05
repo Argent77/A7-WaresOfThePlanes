@@ -1,0 +1,81 @@
+// Cutscene: Harmonium event (leaving)
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(2)
+    FadeToColor([60.0],0)
+    Wait(5)
+    FadeFromColor([30.0],0)
+    Wait(2)
+    EndCutSceneMode()
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-hrm_leader")
+    SmallWait(5)
+    FaceObject("a7-hrm_cleric2")
+    SmallWait(5)
+    SetSequence(SEQ_CAST)
+    SmallWait(8)
+    ReallyForceSpell(Myself,DRYAD_TELEPORT)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-hrm_cleric2")
+    Wait(1)
+    ReallyForceSpell(Myself,DRYAD_TELEPORT)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-hrm_cleric1")
+    Wait(1)
+    ReallyForceSpell(Myself,DRYAD_TELEPORT)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-hrm_fighter2")
+    Wait(1)
+    ReallyForceSpell(Myself,DRYAD_TELEPORT)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-hrm_fighter4")
+    Wait(1)
+    ReallyForceSpell(Myself,DRYAD_TELEPORT)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-hrm_fighter1")
+    Wait(1)
+    ReallyForceSpell(Myself,DRYAD_TELEPORT)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-hrm_fighter3")
+    Wait(1)
+    ReallyForceSpell(Myself,DRYAD_TELEPORT)
+END

@@ -1,0 +1,44 @@
+// Item set: Sarin's Shield +3
+
+// @0 = ~~  // #215
+@1 = ~Sarin's Shield +3~
+
+// @10 = ~~ // #6819
+
+// Identified item description (without set bonus)
+@11 = ~Sarin was a human paladin and factol of the Harmonium on his homeworld Ortho, and later in Sigil. Also called the "Hardheads" they were known for their more radical take on law and order. According to their view true peace can only be achieved if everyone thinks and acts the same way—by force if necessary. The Harmonium led many campaigns across the multiverse under Sarin's leadership to propagate "peace".
+
+When Sarin was promoted to Mover rank he commissioned the construction of a shield that complemented his abilities with the sword. With the shield equipped he was able to deflect incoming attacks in a way that made his target more susceptible to his own attacks.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4
+– Slashing Damage Bonus: +20%
+– Fire Resistance: +20%
+
+Requires:
+ 12 Strength
+
+Weight: 4~
+
+// Identified item description (with set bonus enabled)
+@12 = ~Sarin was a human paladin and factol of the Harmonium on his homeworld Ortho, and later in Sigil. Also called the "Hardheads" they were known for their more radical take on law and order. According to their view true peace can only be achieved if everyone thinks and acts the same way—by force if necessary. The Harmonium led many campaigns across the multiverse under Sarin's leadership to propagate "peace".
+
+When Sarin was promoted to Mover rank he commissioned the construction of a shield that complemented his abilities with the sword. With the shield equipped he was able to deflect incoming attacks in a way that made his target more susceptible to his own attacks. Furthermore, if both shield and his personal long sword worked in unison, they provided him with extra power to succeed on the battleground.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4
+– Slashing Damage Bonus: +20%
+– Fire Resistance: +20%
+– Force of Order: Activates if Sarin's long sword and shield are equipped
+  Provides +1 strength bonus and +1 bonus to all saving throws
+– Fortress of Order: Activates if all pieces of Sarin's armor, long sword and shield are equipped
+  Provides +1 constitution bonus, protection from chaotic creatures, 20% fire resistance bonus, and regeneration (1 HP every 3 seconds)
+
+Requires:
+ 12 Strength
+
+Weight: 4~

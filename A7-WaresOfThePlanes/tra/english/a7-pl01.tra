@@ -1,0 +1,44 @@
+// Item set: Sarin's Plate Mail +4
+
+// @0 = ~~  // #267
+@1 = ~Sarin's Plate Mail +4~
+
+// @10 = ~~ // #6681
+
+// Identified item description (without set bonus)
+@11 = ~Sarin was a human paladin and factol of the Harmonium on his homeworld Ortho, and later in Sigil. Also called the "Hardheads" they were known for their more radical take on law and order. According to their view true peace can only be achieved if everyone thinks and acts the same way—by force if necessary. The Harmonium led many campaigns across the multiverse under Sarin's leadership to propagate "peace".
+
+When Sarin became a high-ranking commander he commissioned a personal set of armor that consisted of plate armor, gauntlets, and helmet to help him in his campaigns. This plate mail is adorned with rich engraving, and heavily enchanted to help "convince" the people of the advantages of absolute peace. Only people of righteous belief are able to tap into the powers of the armor.
+
+STATISTICS:
+
+Equipped abilities:
+– +1 Charisma
+– Fire Resistance: +20%
+
+Armor Class: -1 (-4 vs. slashing)
+Requires:
+ 12 Strength
+
+Weight: 25~
+
+// Identified item description (with set bonus enabled)
+@12 = ~Sarin was a human paladin and factol of the Harmonium on his homeworld Ortho, and later in Sigil. Also called the "Hardheads" they were known for their more radical take on law and order. According to their view true peace can only be achieved if everyone thinks and acts the same way—by force if necessary. The Harmonium led many campaigns across the multiverse under Sarin's leadership to propagate "peace".
+
+When Sarin became a high-ranking commander he commissioned a personal set of armor that consisted of plate armor, gauntlets, and helmet to help him in his campaigns. This plate mail is adorned with rich engraving, and heavily enchanted to help "convince" the people of the advantages of absolute peace. Only people of righteous belief are able to tap into the powers of the armor.
+
+When Sarin wore the complete set of armor, its true potential was unlocked that made him a powerful force of order to be reckoned with.
+
+STATISTICS:
+
+Equipped abilities:
+– +1 Charisma
+– Fire Resistance: +20%
+– Peace of Mind: Activates if all pieces of Sarin's armor are equipped
+  Provides immunity to feeblemind, confusion, and charm
+
+Armor Class: -1 (-4 vs. slashing)
+Requires:
+ 12 Strength
+
+Weight: 25~

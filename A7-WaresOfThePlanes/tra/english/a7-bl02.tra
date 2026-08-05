@@ -1,0 +1,108 @@
+// Arcadian Peace Ribbon
+
+@0 = ~Shiny Sash~
+@1 = ~Arcadian Peace Ribbon~
+
+@10 = ~A sash is a large and usually colorful ribbon worn around the body, either draping from one shoulder to the opposite hip and back up, or else encircling the waist.
+
+STATISTICS:
+
+Weight: 2~
+@11 = ~Among the Harmonium, the Peace Ribbon is not considered a military decoration but a civic honor. It is usually bestowed upon individuals who have restored order with restraint, protected innocents at personal risk, or negotiated peace where bloodshed seemed inevitable. Though outsiders may earn the right to wear one, each ribbon remains the property of the Harmonium, symbolizing that true peace is maintained through continued service rather than personal glory.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against all forms of panic and boosts morale
+
+Weight: 2~
+
+
+// Harmonium event
+@20 = ~Sir Sorcien~
+@21 = ~Warrior Priest~
+@22 = ~Cleric~
+@23 = ~Fighter~
+
+// dialog lines
+@100 = ~Hold, prime! I'd like to have words with you.~
+@101 = ~Prime? What are you talking about?~
+@102 = ~Who are you?~
+@103 = ~What's this about?~
+@104 = ~I don't have the time for this.~
+@105 = ~My apologies. "Prime" is the name given to creatures like you who are native to the Prime Material plane.~
+@106 = ~You will take the time to deal with us.~
+@107 = ~I am Sorcien the Fair, first Mover of the Harmonium in Sigil. And these are my subordinates, all of them notaries of third rank or higher.~
+@108 = ~We are on a mission to retrieve lost or stolen relics of great importance to the Harmonium.~
+@109 = ~For some time we have been searching for a set of personal armor and weapons that belonged to Factol Sarin, the head of our faction. They had been stolen by members of the Revolutionary League years ago and were thought to be lost forever.~
+@110 = ~Not long ago we were able to divine the whereabouts of the pieces, here on the prime world of Toril. It took us some time and effort, but we are certain that the items we seek are currently in your possession.~
+@111 = ~Yes, I do have the items you speak of.~
+@112 = ~I don't know what you're talking about.~
+@113 = ~Our divinations are beyond any doubt. However, planar interference can sometimes distort the results. Let me take a closer look.~
+@114 = ~You have some gall to deny our claim while openly wearing the equipment in question.~
+@115 = ~But I acknowledge your boldness in the attempt.~
+@116 = ~Don't think you can get away with such a blatant lie.~
+@117 = ~You will return the items to us. Do you surrender them freely?~
+@118 = ~Very well. You can have them.~
+@119 = ~No, they now belong to us.~
+@120 = ~You might deny our claim, but your face tells me all that I need to know.~
+@121 = ~I can't find any evidence that the equipment in question is actually in your possession. And my honor demands to respect your answer, for now.~
+@122 = ~We will take our leave and focus on our task once more. Farewell, prime. May we not meet again.~
+@123 = ~I am glad that you've come to your senses in time.~
+@124 = ~Despite your attempts to deceive us, I think a small compensation is appropriate.~
+@125 = ~Don't expect any further gratitude, however. These items rightfully belonged to us in the first place.~
+@126 = ~That is not acceptable. If you won't surrender them peacefully then we'll have to take them without your consent.~
+@127 = ~To arms!~
+@128 = ~Since the items rightfully belong to us, I can offer you another sacred relic of our faction as a sign of respect, if you are willing to surrender them freely to us.~
+@129 = ~That sounds acceptable. I agree.~
+@130 = ~I think a greater reward is in order. The pieces were quite expensive after all.~
+@131 = ~No, I won't hand them over.~
+@132 = ~You are trying my patience, prime. I've made my offer. What is your answer?~
+@133 = ~Then I have no other choice. I agree.~
+@134 = ~That's not acceptable. I refuse.~
+@135 = ~You've made a wise choice. As promised I bestow upon you the Peace Ribbon. Now we can finally return home. Farewell, prime.~
+@136 = ~You've made a wise choice. As promised I bestow upon you the Peace Ribbon and some spending money. Now we can finally return home. Farewell, prime.~
+@137 = ~A word of warning. We won't leave this place empty-handed. Do you comply peacefully?~
+@138 = ~Alright, alright. You can have them.~
+@139 = ~Don't make me repeat myself.~
+@140 = ~You leave us no choice. We are battle-hardened planewalkers in the service of the Harmonium for decades. You can't possibly win against us.~
+
+@200 = ~Direct all you inquiries to Sir Sorcien.~
+
+
+// journal entries
+@1000 = ~A visit from the Harmonium
+
+A group of Harmonium members from Sigil visited us in Amkethran. They told us that the set of Sarin's armor and weapons we bought from Ebb Creakknees were stolen relics and claimed them from us.
+
+We were able to feign ignorance and they left empty-handed.~
+
+@1001 = ~A visit from the Harmonium
+
+A group of Harmonium members from Sigil visited us in Amkethran. They told us that the set of Sarin's armor and weapons we bought from Ebb Creakknees were stolen relics and claimed them from us.
+
+We were unable to deceive them and had to hand over the whole set for a small monetary compensation.~
+
+@1002 = ~A visit from the Harmonium
+
+A group of Harmonium members from Sigil visited us in Amkethran. They told us that the set of Sarin's armor and weapons we bought from Ebb Creakknees were stolen relics and claimed them from us.
+
+We were unable to deceive them and had to hand over the whole set.~
+
+@1003 = ~A visit from the Harmonium
+
+A group of Harmonium members from Sigil visited us in Amkethran. They told us that the set of Sarin's armor and weapons we bought from Ebb Creakknees were stolen relics and claimed them from us.
+
+Our refusal to hand over the items eventually led to fight.~
+
+@1004 = ~A visit from the Harmonium
+
+A group of Harmonium members from Sigil visited us in Amkethran. They told us that the set of Sarin's armor and weapons we bought from Ebb Creakknees were stolen relics and claimed them from us.
+
+We complied to their wishes and were rewarded with another relic of the Harmonium. A poor reward, but still better than nothing.~
+
+@1005 = ~A visit from the Harmonium
+
+A group of Harmonium members from Sigil visited us in Amkethran. They told us that the set of Sarin's armor and weapons we bought from Ebb Creakknees were stolen relics and claimed them from us.
+
+We complied to their wishes and were rewarded with another relic of the Harmonium and some spending money. A poor reward, but still better than nothing.~

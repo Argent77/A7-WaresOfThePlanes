@@ -1,0 +1,44 @@
+// Item set: Sarin's Shield +3
+
+// @0 = ~~  // #215
+@1 = ~Sarins Schild +3~
+
+// @10 = ~~ // #6819
+
+// Identified item description (without set bonus)
+@11 = ~Sarin war ein menschlicher Paladin und Bundmeister des Harmoniums, zuerst in seiner Heimatwelt Ortho, später auch in Sigil. Sie wurden auch „Dickschädel“ genannt, da sie eine sehr radikale Einstellung zu Recht und Gesetz hatten. Ihrer Ansicht nach kann wahrer Frieden nur erreicht werden, wenn alle gleich denken und handeln - notfalls mit Gewalt. Unter Sarins Führung startete das Harmonium im ganzen Multiversum Feldzüge, um für ihren „Frieden“ zu sorgen.
+
+Als Sarin in den Lenker-Rang befördert wurde, gab er die Anfertigung eines Schildes in Auftrag, der seine Fähigkeiten im Schwertkampf ergänzen sollte. Mit diesem Schild konnte er Angriffe so abwehren, dass sein Gegner für seine eigenen Angriffe anfälliger wurde.
+
+EIGENSCHAFTEN:
+
+Schaden durch Klingenwaffen: +20 %
+Feuerwiderstand: +20 %
+
+RK-Bonus: -4
+Mindeststärke: 12
+
+Gewicht: 4~
+
+// Identified item description (with set bonus enabled)
+@12 = ~Sarin war ein menschlicher Paladin und Bundmeister des Harmoniums, zuerst in seiner Heimatwelt Ortho, später auch in Sigil. Sie wurden auch „Dickschädel“ genannt, da sie eine sehr radikale Einstellung zu Recht und Gesetz hatten. Ihrer Ansicht nach kann wahrer Frieden nur erreicht werden, wenn alle gleich denken und handeln - notfalls mit Gewalt. Unter Sarins Führung startete das Harmonium im ganzen Multiversum Feldzüge, um für ihren „Frieden“ zu sorgen.
+
+Als Sarin in den Lenker-Rang befördert wurde, gab er die Anfertigung eines Schildes in Auftrag, der seine Fähigkeiten im Schwertkampf ergänzen sollte. Mit diesem Schild konnte er Angriffe so abwehren, dass sein Gegner für seine eigenen Angriffe anfälliger wurde. Wenn zudem Schild und sein persönliches Langschwert in Einklang eingesetzt wurden, verschafften sie ihm zusätzliche Kraft, um auf dem Schlachtfeld erfolgreich zu sein.
+
+EIGENSCHAFTEN:
+
+Kraft der Ordnung:
+Aktiviert sich, wenn Sarins Langschwert und Schild getragen werden.
+Verleiht dem Träger einen +1 Stärkebonus und einen -1 Bonus auf alle Rettungswürfe.
+
+Festung der Ordnung:
+Aktiviert sich, wenn alle Teile von Sarins Rüstung, Langschwert und Schild getragen werden.
+Verleiht dem Träger einen +1 Konstitutionsbonus, Schutz vor chaotischen Wesen, 20 % Feuerresistenz und Regeneration (1 Trefferpunkt pro 3 Sekunden).
+
+Schaden durch Klingenwaffen: +20 %
+Feuerwiderstand: +20 %
+
+RK-Bonus: -4
+Mindeststärke: 12
+
+Gewicht: 4~
