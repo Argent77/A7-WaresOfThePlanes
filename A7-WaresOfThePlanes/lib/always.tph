@@ -4,6 +4,7 @@ OUTER_SET has_bg  = GAME_IS ~bgee eet~
 OUTER_SET has_sod = GAME_INCLUDES ~sod~
 OUTER_SET has_bg2 = GAME_IS ~bg2ee eet~
 OUTER_SET is_eet  = GAME_IS ~eet~
+OUTER_SET is_eeex = MOD_IS_INSTALLED ~EEex.tp2~ (ID_OF_LABEL ~EEex.tp2~ ~B3-EEex-Main~)
 
 // Setting bg2_chapter_1, bg2_chapter_2, ... to actual BG2 chapter value
 OUTER_SET bg2_chapter = is_eet ? 12 : 0

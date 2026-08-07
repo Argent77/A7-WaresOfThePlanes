@@ -21,8 +21,17 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY item_info BEGIN
 END
 
 // determine whether set bonuses can be activated
+ACTION_IF (is_eeex) BEGIN
+  LOG ~EEex detected: Adjusting spell slot indices accordingly.~
+  OUTER_SET start_slot = 256
+  OUTER_SET slots_available = 1024
+END ELSE BEGIN
+  OUTER_SET start_slot = 0
+  OUTER_SET slots_available = 256
+END
 COPY_EXISTING ~splstate.ids~ ~override~
   LPF ids_slots_available
+    INT_VAR start_slot slots_available
     RET splstate_free = count
     RET_ARRAY splstate_free_table = slots
   END

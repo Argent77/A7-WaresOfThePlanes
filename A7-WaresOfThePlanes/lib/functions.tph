@@ -975,6 +975,7 @@ END
  * Determines the number of free IDS slots in the current file.
  *
  * INT_VAR include_zero     Whether slot 0 should be considered. (Default: 0)
+ * INT_VAR start_slot       Can be used to limit the lower bounds of unoccupied slot numbers. (Default: 0)
  * INT_VAR slots_available  Max. number of supported slots. (Default: 256)
  * RET count                Number of unoccupied IDS slots.
  * RET_ARRAY slots          Indexed array with "count" entries of unoccupied slot numbers.
@@ -982,6 +983,7 @@ END
 DEFINE_PATCH_FUNCTION ids_slots_available
 INT_VAR
   include_zero = 0
+  start_slot = 0
   slots_available = 256
 RET count
 RET_ARRAY slots
