@@ -1,0 +1,44 @@
+// Sealed Pocket Singularity
+
+@0 = ~Schwarze Kugel~
+@1 = ~Versiegelte Taschensingularität~
+
+@10 = ~Auf den ersten Blick scheint diese Kugel aus einer Art schwarzem Material zu bestehen. Bei genauerem Hinsehen fällt jedoch auf, dass es das umgebende Licht absorbiert, wodurch sie viel dunkler wirkt, als sie tatsächlich ist.
+
+EIGENSCHAFTEN:
+
+Gewicht: 5~
+@11 = ~Was von weitem wie eine schwarze Kugel aussieht, ist in Wirklichkeit ein mobiles Portal in einen außerdimensionalen Raum. Über die ursprüngliche Verwendung dieses Gegenstands kann man nur spekulieren, da der Name des Erschaffers dieser bemerkenswerten Gerätschaft schon vor langer Zeit in den Untiefen der Geschichte verloren ging.
+
+Das Portal scheint allerdings inaktiv oder versiegelt zu sein. Egal wie sehr man sich bemüht, es gibt keine Möglichkeit, diese schwarze Kugel zu öffnen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 5~
+
+@100 = ~Untersuchen~
+
+
+// item dialog
+@200 = ~Auf den ersten Blick scheint diese Kugel aus einer Art schwarzem Material zu bestehen. Bei genauerem Hinsehen fällt jedoch auf, dass es das umgebende Licht absorbiert, wodurch sie viel dunkler wirkt, als sie tatsächlich ist.~
+@201 = ~Legt den Gegenstand beiseite.~
+@202 = ~Was von weitem wie eine schwarze Kugel aussieht, ist in Wirklichkeit ein mobiles Portal in einen außerdimensionalen Raum. Das Portal scheint allerdings inaktiv oder versiegelt zu sein. Egal wie sehr man sich bemüht, es gibt keine Möglichkeit, diese schwarze Kugel zu öffnen.~
+@203 = ~Untersucht die Kugel.~
+@204 = ~Ihr starrt gebannt auf die Kugel und versucht, irgendwelche Hinweise auf ihre Beschaffenheit zu erkennen. Doch egal, wie sehr Ihr Euch auch bemüht, die Kugel bleibt wie immer schwarz und strukturlos.~
+@205 = ~Ihr starrt gebannt auf die Kugel und versucht, irgendwelche Hinweise auf ihre Beschaffenheit zu erkennen. Hin und wieder bemerkt Ihr winzige Veränderungen an der Oberfläche der Kugel, wenn Ihr sie aus dem Augenwinkel heraus betrachtet. Ihr habt aber keine Ahnung, ob das etwas zu bedeuten hat.~
+@206 = ~Ihr betrachtet die Kugel etwas genauer. Auf den ersten Blick erscheint sie schwarz und strukturlos, aber als Ihr Eure Augen etwas entspannt, könnt Ihr eine Art 'Nachbild' erkennen, das auf die Bewegungen Eurer linken Hand reagiert. Nachdem Ihr einige verschiedene Handbewegungen ausprobiert habt, blitzt die Kugel kurz auf und erzeugt ein schwaches, aber kontinuierliches Licht um die Kugel herum. Ihr könnt nun mühelos in den außerdimensionalen Raum hineingreifen.~
+
+// journal entries
+@300 = ~Ein tragbares Loch
+
+Ich habe von Ebb Knarrknie eine rätselhafte schwarze Kugel erworben. Sie sieht außergewöhnlich schwarz und strukturlos aus. Egal, wie sehr ich mich auch konzentriere, ich komme einfach nicht dahinter, wie man sie benutzt.~
+
+@301 = ~Ein tragbares Loch
+
+Ich habe von Ebb Knarrknie eine rätselhafte schwarze Kugel erworben. Sie sieht außergewöhnlich schwarz und strukturlos aus. Bei genauerer Betrachtung sind mir hin und wieder winzige Veränderungen auf der Oberfläche der Kugel aufgefallen. Allerdings kann ich einfach nicht herausfinden, ob sie etwas zu bedeuten haben.~
+
+@310 = ~Ein tragbares Loch
+
+Ich habe von Ebb Knarrknie eine rätselhafte schwarze Kugel erworben. Sie sieht außergewöhnlich schwarz und strukturlos aus. Als ich die Kugel ganz genau untersuchte, bemerkte ich, dass sie auf meine Anwesenheit reagierte. Mit einiger Mühe und Geduld löste ich das Rätsel und konnte sie schließlich entsiegeln.
+
+So unwahrscheinlich es auch klingen mag, scheint diese Kugel ein Portal in einen außerdimensionalen Raum zu sein, in dem ich beliebig viel Gepäck verstauen und wieder herausholen kann.~

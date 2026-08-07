@@ -1,0 +1,11 @@
+// Potion Shelf
+
+@0 = ~Tränkeregal~
+@1 = ~Tränkeregal~
+
+@10 = ~Dieses Regal ist so kompakt, dass es mühelos herumgetragen werden kann. Die Tränke sind zur sicheren Aufbewahrung während der Reise in gepolsterten Brettern untergebracht.
+
+EIGENSCHAFTEN:
+
+Gewicht: 5~
+// @11 = ~~

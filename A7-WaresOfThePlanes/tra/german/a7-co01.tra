@@ -1,0 +1,15 @@
+// Imp Leather Bag
+
+@0 = ~Lederbeutel~
+@1 = ~Teufelslederbeutel~
+
+@10 = ~Dies ist ein kleiner Lederbeutel.
+
+EIGENSCHAFTEN:
+
+Gewicht: 2~
+@11 = ~Dieser Beutel wurde aus den Häuten mehrerer Teufelchen zusammengenäht und ist erstaunlich leicht und flexibel. Trotz seiner geringen Größe ist er elastisch genug, um jede Menge Schmuck und anderen Krimskrams zu verwahren.
+
+EIGENSCHAFTEN:
+
+Gewicht: 2~

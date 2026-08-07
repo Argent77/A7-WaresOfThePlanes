@@ -1,0 +1,44 @@
+// Sealed Pocket Singularity
+
+@0 = ~Black Orb~
+@1 = ~Sealed Pocket Singularity~
+
+@10 = ~At first glance this orb seems to be composed of some kind of black material. At a closer look you notice that it actually absorbs the surrounding light, which makes it look much darker than it really is.
+
+STATISTICS:
+
+Weight: 5~
+@11 = ~What looks like a black orb from afar is actually a transportable portal into a nondimensional space. Not much is known about its nature since the maker of this curious device has long been forgotten by time.
+
+The portal appears to be dormant or sealed, however. No matter how hard you try, you can't find a way to open the black orb.
+
+STATISTICS:
+
+Weight: 5~
+
+@100 = ~examine~
+
+
+// item dialog
+@200 = ~At first glance this orb seems to be composed of some kind of black material. At a closer look you notice that it actually absorbs the surrounding light, which makes it look much darker than it really is.~
+@201 = ~Put the item away.~
+@202 = ~What looks like a black orb from afar is actually a transportable portal into a nondimensional space. The portal appears to be dormant or sealed, however. No matter how hard you try, you can't find a way to open the black orb.~
+@203 = ~Examine the orb.~
+@204 = ~You stare intently at the orb and try to make out any hints about its nature. But no matter how hard you try, the orb stays black and featureless as always.~
+@205 = ~You stare intently at the orb and try to make out any hints about its nature. Now and then you notice minute changes on the orb's surface whenever you look at it from the corner of your eye, but have no clue whether it means something.~
+@206 = ~You take a closer look at the orb. At first the surface of the item looks black and featureless. When you relax your eyes a bit you can see some kind of after-image which changes in intensity depending on how you move your left hand. After trying out different gestures the orb flashes briefly and produces a faint permanent halo around it. You can effortless reach into what seems to be an alternate space.~
+
+// journal entries
+@300 = ~A Portable Hole
+
+I have purchased a mysterious black orb from Ebb Creakknees. It looks exceptionally black and featureless. No matter how much I concentrate, I can't figure out how to use it.~
+
+@301 = ~A Portable Hole
+
+I have purchased a mysterious black orb from Ebb Creakknees. It looks exceptionally black and featureless. While examining it more closely I noticed some minute changes on the orb's surface now and then, but can't figure out whether it means something.~
+
+@310 = ~A Portable Hole
+
+I have purchased a mysterious black orb from Ebb Creakknees. It looks exceptionally black and featureless. Examining the orb very closely I noticed some reactions to my own presence. With some effort and patience I solved the riddle and was finally able to unseal it.
+
+As unlikely as it sounds, the orb appears to be a portal into a nondimensional space where I can freely store and retrieve any amount of baggage.~

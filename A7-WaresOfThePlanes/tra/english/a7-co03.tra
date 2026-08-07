@@ -1,0 +1,11 @@
+// Potion Shelf
+
+@0 = ~Potion Shelf~
+@1 = ~Potion Shelf~
+
+@10 = ~This shelf is compact enough to be carried around with little effort. The potion bottles are strapped into cushioned boards for safe storage during travel.
+
+STATISTICS:
+
+Weight: 5~
+// @11 = ~~
