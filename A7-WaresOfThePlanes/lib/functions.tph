@@ -1000,6 +1000,7 @@ BEGIN
 
   // marking occupied slots
   SET min_id = include_zero ? 0 : 1
+  SET min_id = (start_slot > min_id) ? start_slot : min_id
   FOR (row = start_row; row < ids_table; ++row) BEGIN
     SET id = IS_AN_INT $ids_table(~%row%~ ~0~) ? $ids_table(~%row%~ ~0~) : "-1"
     PATCH_IF (id >= min_id && id < slots_available) BEGIN
