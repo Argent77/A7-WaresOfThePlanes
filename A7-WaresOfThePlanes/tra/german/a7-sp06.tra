@@ -1,0 +1,22 @@
+// Heart of Stone
+
+// @0 = ~~  // #7222
+@1 = ~Steinherz~
+
+// @10 = ~~ // #-1
+@11 = ~Steinherz
+
+Grad: 8
+Schule: Nekromantie
+Reichweite: Anwender
+Dauer: 1 Runde pro Stufe
+Zeitaufwand: 8
+Bereich: Anwender
+Rettungswurf: Nein
+
+Steinherz verwandelt das Herz des Anwenders in einen perfekten makellosen Stein, welches die Beschaffenheit des Körpers des Magiers grundlegend verändert. Solange der Zauber wirkt, ist der Anwender gegen Versteinerungen aller Art immun, erhält einen -4 Bonus auf Rettungswürfe gegen Versteinerung und macht ihn äußerst widerstandsfähig gegen alle Arten von physischen Schaden. Stich-, Geschoss- und Klingenschaden wird um 99 % reduziert. Wuchtschaden wird um 50 % reduziert. Es besteht eine Wahrscheinlichkeit von 1 %, dass ein Treffer das Herz zerschmettert und das Ziel tötet, falls ein Rettungswurf gg. Tod scheitert. Bei erfolgreichem Rettungswurf erleidet das Ziel trotzdem 1W8 +1 Schadenspunkte und beendet den Zaubereffekt. Der Zauber „Stein zu Fleisch“ kann die Magie des Zaubers ebenfalls vorzeitig beenden.~
+
+// portrait icon label
+@20 = ~Steinherz~
+
+@21 = ~Herz zerschmettert~

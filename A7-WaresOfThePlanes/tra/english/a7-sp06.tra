@@ -1,0 +1,22 @@
+// Heart of Stone
+
+// @0 = ~~  // #7222
+@1 = ~Heart of Stone~
+
+// @10 = ~~ // #-1
+@11 = ~Heart of Stone
+(Necromancy)
+
+Level: 8
+Range: 0
+Duration: 1 round/level
+Casting Time: 8
+Area of Effect: The caster
+Saving Throw: None
+
+Heart of Stone turns the caster's own heart into a perfect, unblemished stone that alters the very nature of the wizard's body. As long as the spell is in effect, the caster is immune to petrification, gains a +4 bonus to saving throws vs. petrification, and is highly resistant to physical attacks. Piercing, missile, and slashing damage is reduced by 99%. Crushing damage is reduced by 50%. There is a 1% chance that a hit shatters the heart and kills the target unless a successful Save vs. Death is made. On a successful save the target still receives 1d8+1 points of damage and cancels the effects of the spell. The spell "Stone to Flesh" is also able to undo the magic of Heart of Stone.~
+
+// portrait icon label
+@20 = ~Heart of Stone~
+
+@21 = ~Heart shattered~
