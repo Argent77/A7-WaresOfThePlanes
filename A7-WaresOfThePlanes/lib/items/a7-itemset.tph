@@ -21,7 +21,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY item_info BEGIN
 END
 
 // determine whether set bonuses can be activated
-ACTION_IF (is_eeex) BEGIN
+ACTION_IF (is_eeex_spellstates) BEGIN
   LOG ~EEex detected: Adjusting spell slot indices accordingly.~
   OUTER_SET start_slot = 256
   OUTER_SET slots_available = 1024
