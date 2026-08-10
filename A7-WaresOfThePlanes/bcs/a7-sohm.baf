@@ -1,0 +1,146 @@
+// Sohmien combat script
+IF
+  See(NearestEnemyOf(Myself))
+  !Range(LastSeenBy(Myself),5)
+  CanEquipRanged()
+THEN
+  RESPONSE #100
+    EquipRanged()
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HPPercentGT(LastSeenBy(Myself),50)
+  !Range(LastSeenBy(Myself),5)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+  See(SecondNearestEnemyOf(Myself))
+  HPPercentGT(LastSeenBy(Myself),50)
+  !Range(LastSeenBy(Myself),5)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+  See(ThirdNearestEnemyOf(Myself))
+  HPPercentGT(LastSeenBy(Myself),50)
+  !Range(LastSeenBy(Myself),5)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+  See(FourthNearestEnemyOf(Myself))
+  HPPercentGT(LastSeenBy(Myself),50)
+  !Range(LastSeenBy(Myself),5)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+  See(FifthNearestEnemyOf(Myself))
+  HPPercentGT(LastSeenBy(Myself),50)
+  !Range(LastSeenBy(Myself),5)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+  See(SixthNearestEnemyOf(Myself))
+  HPPercentGT(LastSeenBy(Myself),50)
+  !Range(LastSeenBy(Myself),5)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HPLT(LastSeenBy(Myself),24)
+  !Range(LastSeenBy(Myself),5)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+  See(SecondNearestEnemyOf(Myself))
+  HPLT(LastSeenBy(Myself),24)
+  !Range(LastSeenBy(Myself),5)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+  See(ThirdNearestEnemyOf(Myself))
+  HPLT(LastSeenBy(Myself),24)
+  !Range(LastSeenBy(Myself),5)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+  See(FourthNearestEnemyOf(Myself))
+  HPLT(LastSeenBy(Myself),24)
+  !Range(LastSeenBy(Myself),5)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+  See(FifthNearestEnemyOf(Myself))
+  HPLT(LastSeenBy(Myself),24)
+  !Range(LastSeenBy(Myself),5)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+  See(SixthNearestEnemyOf(Myself))
+  HPLT(LastSeenBy(Myself),24)
+  !Range(LastSeenBy(Myself),5)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  !Range(LastSeenBy(Myself),5)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+  AttackedBy([ANYONE],DEFAULT)
+THEN
+  RESPONSE #100
+    Attack(LastAttackerOf(Myself))
+END
