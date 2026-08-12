@@ -1,0 +1,108 @@
+// Arcadian Peace Ribbon
+
+@0 = ~Écharpe Brillante~
+@1 = ~Ruban de la Paix d'Arcadie~
+
+@10 = ~Une écharpe est un large ruban, généralement coloré, que l'on porte autour du corps, soit en le laissant retomber d'une épaule à la hanche opposée avant de remonter, soit en l'enroulant autour de la taille.
+
+STATISTIQUES :
+
+Poids : 2~
+@11 = ~Au sein de l'Harmonium, le Ruban de la Paix n'est pas considéré comme une décoration militaire, mais comme une distinction civique. Il est généralement décerné à des personnes qui ont rétabli l'ordre en faisant preuve de retenue, protégé des innocents au péril de leur vie ou négocié la paix alors qu'un bain de sang semblait inévitable. Bien que des personnes extérieures à l'Harmonium puissent mériter le droit de le porter, chaque ruban reste la propriété de l'Harmonium, symbolisant ainsi que la véritable paix se maintient grâce à un engagement constant plutôt qu'à la gloire personnelle.
+
+STATISTIQUES :
+
+Capacités équipées :
+– Protège contre toutes les formes de panique et renforce le moral
+
+Poids : 2~
+
+
+// Harmonium event
+@20 = ~Sir Sorcien~
+@21 = ~Prêtre geurrier~
+@22 = ~Prêtre~
+@23 = ~Geurrier~
+
+// dialog lines
+@100 = ~Attendez, Primaire ! J'aimerais vous parler.~
+@101 = ~Primaire ? De quoi parlez-vous ?~
+@102 = ~Qui êtes-vous ?~
+@103 = ~De quoi s'agit-il ?~
+@104 = ~Je n'ai pas le temps pour ça.~
+@105 = ~Je m'excuse. "Primaire" est le nom donné aux créatures comme vous, originaires du plan matériel primaire.~
+@106 = ~Vous allez devoir prendre le temps de nous écouter.~
+@107 = ~Je suis Sorcien le Juste, premier Moteur de l'Harmonium à Sigil. Et voici mes subordonnés, tous Notaires de troisième rang ou supérieur.~
+@108 = ~Nous avons pour mission de récupérer des reliques perdues ou volées qui revêtent une grande importance pour l'Harmonium.~
+@109 = ~Depuis quelque temps, nous recherchons un ensemble d'armures et d'armes personnelles ayant appartenu au Factol Sarin, le chef de notre faction. Elles ont été volées il y a des années par des membres de la Ligue révolutionnaire et on les croyait perdues à jamais.~
+@110 = ~Il n'y a pas si longtemps, nous avons réussi à localiser ces objets, ici même, sur le continent principal de Toril. Cela nous a demandé un certain temps et des efforts, mais nous sommes certains que les objets que nous recherchons se trouvent actuellement en votre possession.~
+@111 = ~Oui, j'ai bien les objets dont vous parlez.~
+@112 = ~Je ne sais pas de quoi vous parlez.~
+@113 = ~Nos prédictions sont incontestables. Cependant, des interférences planaires peuvent parfois fausser les résultats. Je vais regarder ça de plus près.~
+@114 = ~Vous avez un sacré culot de contester nos affirmations alors que vous portez ouvertement l’équipement en question.~
+@115 = ~Mais je reconnais l’audace de votre tentative.~
+@116 = ~Ne croyez pas que vous pourrez vous en tirer avec un mensonge aussi flagrant.~
+@117 = ~Vous allez nous rendre ces objets. Les remettez-vous de votre plein gré ?~
+@118 = ~Très bien. Vous pouvez les avoir.~
+@119 = ~Non, ils nous appartiennent désormais.~
+@120 = ~Vous pouvez contester notre revendication, mais votre expression en dit long.~
+@121 = ~Je ne trouve aucune preuve que le matériel en question soit réellement en votre possession. Et mon honneur m'impose de respecter votre réponse, pour l'instant.~
+@122 = ~Nous allons prendre congé et nous remettre au travail. Adieu, Primaire. Puissions-nous ne plus jamais nous revoir.~
+@123 = ~Je suis content que vous ayez compris à temps.~~Je suis contente que vous ayez compris à temps.~
+@124 = ~Malgré vos tentatives pour nous tromper, je pense qu'une petite compensation s'impose.~
+@125 = ~Ne vous attendez toutefois pas à davantage de reconnaissance. Ces objets nous appartenaient de droit dès le départ.~
+@126 = ~C'est inacceptable. Si vous refusez de les remettre pacifiquement, nous serons contraints de les prendre de force.~
+@127 = ~Aux armes !~
+@128 = ~Puisque ces objets nous appartiennent de droit, je peux vous offrir une autre relique sacrée de notre faction en signe de respect, si vous êtes disposé à nous les remettre de votre plein gré.~
+@129 = ~Cela me semble acceptable. Je suis d'accord.~
+@130 = ~Je pense qu'une récompense plus importante s'impose. Ces objets valaient tout de même très cher.~
+@131 = ~Non, je ne vous les remettrai pas.~
+@132 = ~Vous mettez ma patience à rude épreuve, Primaire. J'ai fait ma proposition. Quelle est votre réponse ?~
+@133 = ~Dans ce cas, je n'ai pas d'autre choix. J'accepte.~
+@134 = ~C'est inacceptable. Je refuse.~
+@135 = ~Vous avez fait un choix judicieux. Comme promis, je vous remets le Ruban de la Paix. Nous pouvons enfin rentrer chez nous. Adieu, primaire.~
+@136 = ~Vous avez fait un choix judicieux. Comme promis, je vous remets le Ruban de la Paix et un peu d'argent de poche. Nous pouvons enfin rentrer chez nous. Adieu, Prime.~
+@137 = ~Un petit avertissement. Nous ne quitterons pas cet endroit les mains vides. Allez-vous vous soumettre sans résistance ?~
+@138 = ~D'accord, d'accord. Vous pouvez les avoir.~
+@139 = ~Ne m'obligez pas à me répéter.~
+@140 = ~Vous ne nous laissez pas le choix. Nous sommes des arpenteurs aguerris au combat, au service de l'Harmonium depuis des décennies. Vous n'avez aucune chance de nous vaincre.~
+
+@200 = ~Adressez toutes vos demandes à Sir Sorcien.~
+
+
+// journal entries
+@1000 = ~Une rencontre avec l'Harmonium
+
+Un groupe de membres de l'Harmonium, venus de Sigil, nous a rendu visite à Amkethran. Ils nous ont expliqué que l'armure et les armes de Sarin que nous avions achetées à Ebb Craquerotule étaient des reliques volées et ont exigé que nous leur rendions.
+
+Nous avons réussi à feindre l'ignorance et ils sont repartis les mains vides.~
+
+@1001 = ~Une rencontre avec l'Harmonium
+
+Un groupe de membres de l'Harmonium, venus de Sigil, nous a rendu visite à Amkethran. Ils nous ont expliqué que l'armure et les armes de Sarin que nous avions achetées à Ebb Craquerotule étaient des reliques volées et ont exigé que nous leur rendions.
+
+Nous n'avons pas réussi à les tromper et avons dû leur remettre l'ensemble complet en échange d'une modeste compensation financière.~
+
+@1002 = ~Une rencontre avec l'Harmonium
+
+Un groupe de membres de l'Harmonium, venus de Sigil, nous a rendu visite à Amkethran. Ils nous ont expliqué que l'armure et les armes de Sarin que nous avions achetées à Ebb Craquerotule étaient des reliques volées et ont exigé que nous leur rendions.
+
+Nous n'avons pas réussi à les tromper et avons dû leur remettre l'ensemble complet.~
+
+@1003 = ~Une rencontre avec l'Harmonium
+
+Un groupe de membres de l'Harmonium, venus de Sigil, nous a rendu visite à Amkethran. Ils nous ont expliqué que l'armure et les armes de Sarin que nous avions achetées à Ebb Craquerotule étaient des reliques volées et ont exigé que nous leur rendions.
+
+Notre refus de remettre ces objets a fini par déclencher une bagarre.~
+
+@1004 = ~Une rencontre avec l'Harmonium
+
+Un groupe de membres de l'Harmonium, venus de Sigil, nous a rendu visite à Amkethran. Ils nous ont expliqué que l'armure et les armes de Sarin que nous avions achetées à Ebb Craquerotule étaient des reliques volées et ont exigé que nous leur rendions.
+
+Nous avons accédé à leur demande et avons été récompensés par une autre relique de l'Harmonium. Une maigre récompense, mais toujours mieux que rien.~
+
+@1005 = ~Une rencontre avec l'Harmonium
+
+Un groupe de membres de l'Harmonium, venus de Sigil, nous a rendu visite à Amkethran. Ils nous ont expliqué que l'armure et les armes de Sarin que nous avions achetées à Ebb Craquerotule étaient des reliques volées et ont exigé que nous leur rendions.
+
+Nous avons accédé à leur demande et avons été récompensés par une autre relique de l'Harmonium et un peu d'argent de poche. Une maigre récompense, mais c'est toujours mieux que rien.~

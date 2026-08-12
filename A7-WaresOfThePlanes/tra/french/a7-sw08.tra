@@ -1,0 +1,61 @@
+// Item set: Sarin's Long Sword +2
+
+// @0 = ~~  // #2893
+@1 = ~Épée longue de Sarin +2~
+
+// @10 = ~~ // #6742
+
+// Identified item description (without set bonus)
+@11 = ~Sarin était un paladin humain et un factol de l’Harmonium sur sa planète natale, Ortho, puis plus tard à Sigil. Également appelés les "Têtes dures", ils étaient connus pour leur approche plus radicale de la loi et de l’ordre. Selon eux, la véritable paix ne peut être atteinte que si tout le monde pense et agit de la même manière — par la force si nécessaire. Sous la direction de Sarin, l’Harmonium a mené de nombreuses campagnes à travers le multivers afin de propager la "paix".
+
+Lorsque Sarin a rejoint l'Harmonium, il a hérité de cette arme de son père, qui était lui-même un officier réputé de l'Harmonium. La lame est d'un rouge vif, comme si elle dégageait une chaleur intense. En réalité, cependant, elle était fabriquée à partir d'un minéral spécial que l'on ne trouvait que sur Ortho et qui avait la propriété d'engourdir les tissus vivants. De ce fait, les cibles touchées par cette arme deviennent plus lentes et moins précises.
+
+STATISTIQUES :
+
+Capacités de combat :
+– Chaque coup réussi pénalise la cible de -½ attaque par round et -1 au TAC0 pendant deux rounds (jet de sauvegarde contre la mort pour éviter). Les morts-vivants et les golems sont immunisés.
+
+TAC0 : +2
+Dégâts : 1d8+4 (tranchants)
+Facteur de vitesse : 3
+Type de maîtrise : Épée longue
+Type : À une main
+Conditions requises :
+ 6 en Force
+
+Poids : 3~
+
+// Identified item description (with set bonus enabled)
+@12 = ~Sarin était un paladin humain et un factol de l’Harmonium sur sa planète natale, Ortho, puis plus tard à Sigil. Également appelés les "Têtes dures", ils étaient connus pour leur approche plus radicale de la loi et de l’ordre. Selon eux, la véritable paix ne peut être atteinte que si tout le monde pense et agit de la même manière — par la force si nécessaire. Sous la direction de Sarin, l’Harmonium a mené de nombreuses campagnes à travers le multivers afin de propager la "paix".
+
+Lorsque Sarin a rejoint l'Harmonium, il a hérité de cette arme de son père, qui était lui-même un officier réputé de l'Harmonium. La lame est d'un rouge vif, comme si elle dégageait une chaleur intense. En réalité, cependant, elle était fabriquée à partir d'un minéral spécial que l'on ne trouvait que sur Ortho et qui avait la propriété d'engourdir les tissus vivants. De ce fait, les cibles touchées par cette arme deviennent plus lentes et moins précises.
+
+Par la suite, Sarin fit fabriquer un bouclier assorti à cette arme, qui débloquait des pouvoirs supplémentaires lorsque les deux étaient équipés simultanément. D'après les rumeurs circulant parmi les membres de l'Harmonium, Sarin devenait une machine à tuer imparable lorsqu'il entrait sur le champ de bataille entièrement équipé de son armure, de son arme et de son bouclier.
+
+STATISTIQUES :
+
+Capacités d'équipement :
+– Force de l'Ordre : s'active lorsque Sarin est équipé de son épée longue et de son bouclier, confère un bonus de +1 en Force et un bonus de +1 à tous les jets de sauvegarde
+– Tempête pourpre : s'active lorsque Sarin est équipé de son épée longue et de son épée courte, confère +1 ataque par round et empêche d'être aveuglé en cas d'échec critique
+– Forteresse de l’Ordre : s’active si Sarin porte toutes les pièces de son armure, ainsi que son épée longue et son bouclier, confère un bonus de +1 en Force, une protection contre les créatures chaotiques, un bonus de 20 % à la résistance au feu et la régénération (1 PV toutes les 3 secondes)
+– Colère vertueuse : s'active lorsque Sarin porte toutes les pièces de son armure, ainsi que son épée longue et son épée courte, confère un bonus de +1 en dextérité, un bonus de +2 contre les dégâts de projectiles, une vitesse de déplacement accrue et la régénération (1 PV toutes les 3 secondes).
+
+
+Capacités de combat :
+– Chaque coup réussi pénalise la cible de -½ attaque par round et -1 au TAC0 pendant deux rounds (jet de sauvegarde contre la mort pour éviter). Les morts-vivants et les golems sont immunisés.
+
+TAC0 : +2
+Dégâts : 1d8+4 (tranchants)
+Facteur de vitesse : 3
+Type de maîtrise : Épée longue
+Type : À une main
+Nécessite : 6 en Force
+
+Poids : 3~
+
+// portrait icon labels
+@30 = ~Paix de l’esprit~
+@31 = ~Tempête pourpre~
+@32 = ~Force de l'Ordre~
+@33 = ~Colère vertueuse~
+@34 = ~Forteresse de l’Ordre~

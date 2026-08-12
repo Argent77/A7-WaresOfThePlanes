@@ -1,0 +1,56 @@
+// Item set: Sarin's Short Sword +3
+
+// @0 = ~~  // #6745
+@1 = ~Épée courte de Sarin +2~
+
+// @10 = ~~ // #6747
+
+// Identified item description (without set bonus)
+@11 = ~Sarin était un paladin humain et un factol de l’Harmonium sur sa planète natale, Ortho, puis plus tard à Sigil. Également appelés les "Têtes dures", ils étaient connus pour leur approche plus radicale de la loi et de l’ordre. Selon eux, la véritable paix ne peut être atteinte que si tout le monde pense et agit de la même manière — par la force si nécessaire. Sous la direction de Sarin, l’Harmonium a mené de nombreuses campagnes à travers le multivers afin de propager la "paix".
+
+On ignore à quelle date exacte Sarin est entré en possession de cette arme. Il l'utilisait toutefois parfois comme arme secondaire lorsqu'il devait se débarrasser rapidement d'obstacles. La lame est faite d'un métal doré brillant capable d'aveugler ses adversaires si elle est maniée avec habileté — ou son utilisateur s'il ne le fait pas.
+
+STATISTIQUES :
+
+Capacités d'équipement :
+– Classe d'armure : +1
+
+Capacités de combat :
+– Aveugle la cible pendant un round en cas de coup critique
+– Aveugle le porteur pendant un round en cas de raté critique (jet de sauvegarde contre les sorts pour éviter)
+
+TAC0 : +3
+Dégâts : 1d6+3 (perforants)
+Facteur de vitesse : 0
+Type de maîtrise : Épée courte
+Type : À une main
+Nécessite : 5 en Force
+
+Poids : 1~
+
+// Identified item description (with set bonus enabled)
+@12 = ~Sarin était un paladin humain et un factol de l’Harmonium sur sa planète natale, Ortho, puis plus tard à Sigil. Également appelés les "Têtes dures", ils étaient connus pour leur approche plus radicale de la loi et de l’ordre. Selon eux, la véritable paix ne peut être atteinte que si tout le monde pense et agit de la même manière — par la force si nécessaire. Sous la direction de Sarin, l’Harmonium a mené de nombreuses campagnes à travers le multivers afin de propager la "paix".
+
+On ignore à quelle date exacte Sarin est entré en possession de cette arme. Il l'utilisait toutefois parfois comme arme secondaire lorsqu'il devait se débarrasser rapidement d'obstacles. La lame est faite d'un métal doré brillant capable d'aveugler ses adversaires si elle est maniée avec habileté — ou son utilisateur s'il ne le fait pas.
+
+Grâce à son épée longue personnelle, Sarin parvenait à infliger des dégâts en succession rapide, ce qui fit une telle impression sur ses compagnons d'armes qu'ils lui donnèrent le surnom de "Tempête pourpre".
+
+STATISTIQUES :
+
+Capacités d'équipement :
+– Classe d'armure : +1
+– Tempête pourpre : s'active lorsque Sarin est équipé de son épée longue et de son épée courte, confère +1 ataque par round et empêche d'être aveuglé en cas d'échec critique
+– Colère vertueuse : s'active lorsque Sarin porte toutes les pièces de son armure, ainsi que son épée longue et son épée courte, confère un bonus de +1 en dextérité, un bonus de +2 contre les dégâts de projectiles, une vitesse de déplacement accrue et la régénération (1 PV toutes les 3 secondes).
+
+Capacités de combat :
+– Aveugle la cible pendant un round en cas de coup critique
+– Aveugle le porteur pendant un round en cas de raté critique (jet de sauvegarde contre les sorts pour éviter)
+
+TAC0 : +3
+Dégâts : 1d6+3 (perforants)
+Facteur de vitesse : 0
+Type de maîtrise : Épée courte
+Type : À une main
+Nécessite : 5 en Force
+
+Poids : 1~

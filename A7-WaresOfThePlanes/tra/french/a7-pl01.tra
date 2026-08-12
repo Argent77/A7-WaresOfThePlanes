@@ -1,0 +1,43 @@
+// Item set: Sarin's Plate Mail +4
+
+// @0 = ~~  // #267
+@1 = ~Armure de plates de Sarin +4~
+
+// @10 = ~~ // #6681
+
+// Identified item description (without set bonus)
+@11 = ~Sarin était un paladin humain et un factol de l’Harmonium sur sa planète natale, Ortho, puis plus tard à Sigil. Également appelés les "Têtes dures", ils étaient connus pour leur approche plus radicale de la loi et de l’ordre. Selon eux, la véritable paix ne peut être atteinte que si tout le monde pense et agit de la même manière — par la force si nécessaire. Sous la direction de Sarin, l’Harmonium a mené de nombreuses campagnes à travers le multivers afin de propager la "paix".
+
+Lorsque Sarin devint commandant de haut rang, il fit fabriquer une armure personnelle composée d’une armure de plaques, de gantelets et d’un casque pour l’aider dans ses campagnes. Cette armure de plates est ornée de riches gravures et fortement enchantée afin d’aider à « convaincre » le peuple des avantages d’une paix absolue. Seules les personnes animées d’une foi sincère sont capables de puiser dans les pouvoirs de cette armure.
+
+STATISTIQUES :
+
+Capacités d'équipement :
+– Charisme : +1
+– Résistance au feu : +20 %
+
+Classe d'armure : -1 (-4 contre les attaques tranchantes)
+
+Nécessite : 12 en Force
+
+Poids : 25~
+
+// Identified item description (with set bonus enabled)
+@12 = ~Sarin était un paladin humain et un factol de l’Harmonium sur sa planète natale, Ortho, puis plus tard à Sigil. Également appelés les "Têtes dures", ils étaient connus pour leur approche plus radicale de la loi et de l’ordre. Selon eux, la véritable paix ne peut être atteinte que si tout le monde pense et agit de la même manière — par la force si nécessaire. Sous la direction de Sarin, l’Harmonium a mené de nombreuses campagnes à travers le multivers afin de propager la "paix".
+
+Lorsque Sarin devint commandant de haut rang, il fit fabriquer une armure personnelle composée d’une armure de plaques, de gantelets et d’un casque pour l’aider dans ses campagnes. Cette armure de plates est ornée de riches gravures et fortement enchantée afin d’aider à « convaincre » le peuple des avantages d’une paix absolue. Seules les personnes animées d’une foi sincère sont capables de puiser dans les pouvoirs de cette armure.
+
+Lorsque Sarin revêtait l'armure complète, son véritable potentiel se déchaînait, faisant de lui une puissante force de l'ordre avec laquelle il fallait compter.
+
+STATISTIQUES :
+
+Capacités d'équipement :
+– Charisme : +1
+– Résistance au feu : +20 %
+– Paix de l’esprit : s’active lorsque toutes les pièces de l’armure de Sarin sont équipées, coonfère une immunité contre les effets de débilité, confusion et charme
+
+Classe d'armure : -1 (-4 contre les attaques tranchantes)
+
+Nécessite : 12 en Force
+
+Poids : 25~

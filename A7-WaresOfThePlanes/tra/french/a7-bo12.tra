@@ -1,0 +1,26 @@
+// Lightning Bolts of Piercing +1
+
+@0 = ~Carreaux étincelants~
+@1 = ~Carreaux fulgurants perforants +1~
+
+@10 = ~Ces carreaux débordent d'une énergie intense et émettent en permanence des étincelles d'intensité variable.
+
+STATISTIQUES :
+
+Dégâts : 1d8 (projectile)
+Arme : Arbalète
+
+Poids : 0~
+@11 = ~Ces carreaux sont chargés de l'énergie du plan quasi-élémentaire de la foudre. Lorsqu'elles sont tirées, leurs propriétés immatérielles leur permettent de traverser la matière sans s'arrêter. Toute cible qui n'est pas immunisée contre l'électricité subit des dégâts considérables.
+
+STATISTIQUES :
+
+Capacités de combat :
+– Touche toutes les cibles sur son passage
+
+THAC0 : +4
+Dégâts : 1d8+1 (jet de sauvegarde contre les sorts pour subir la moitié des dégâts)
+Type de dégâts : Électricité
+Arme de tir : Arbalète
+
+Poids : 0~

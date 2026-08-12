@@ -1,0 +1,37 @@
+// Item set: Sarin's Gauntlets
+
+// @0 = ~~  // #6797
+@1 = ~Gantelets de Sarin~
+
+// @10 = ~~ // #6798
+
+// Identified item description (without set bonus)
+@11 = ~Sarin était un paladin humain et un factol de l’Harmonium sur sa planète natale, Ortho, puis plus tard à Sigil. Également appelés les "Têtes dures", ils étaient connus pour leur approche plus radicale de la loi et de l’ordre. Selon eux, la véritable paix ne peut être atteinte que si tout le monde pense et agit de la même manière — par la force si nécessaire. Sous la direction de Sarin, l’Harmonium a mené de nombreuses campagnes à travers le multivers afin de propager la "paix".
+
+Lorsque Sarin devint commandant de haut rang, il fit fabriquer une armure personnelle composée d’une armure de plaques, de gantelets et d’un casque pour l’aider dans ses campagnes. Ces gantelets permettent à celui qui les porte d’avoir une prise plus ferme sur son arme, ce qui lui permet d’attaquer avec plus de précision et de puissance.
+
+STATISTIQUES :
+
+Capacités d'équipement :
+– TAC0 en mêlée : +2
+– Dégâts en mêlée : +2
+– Résistance au feu : +20 %
+
+Poids : 2~
+
+// Identified item description (with set bonus enabled)
+@12 = ~Sarin était un paladin humain et un factol de l’Harmonium sur sa planète natale, Ortho, puis plus tard à Sigil. Également appelés les "Têtes dures", ils étaient connus pour leur approche plus radicale de la loi et de l’ordre. Selon eux, la véritable paix ne peut être atteinte que si tout le monde pense et agit de la même manière — par la force si nécessaire. Sous la direction de Sarin, l’Harmonium a mené de nombreuses campagnes à travers le multivers afin de propager la "paix".
+
+Lorsque Sarin devint commandant de haut rang, il fit fabriquer une armure personnelle composée d’une armure de plaques, de gantelets et d’un casque pour l’aider dans ses campagnes. Ces gantelets permettent à celui qui les porte d’avoir une prise plus ferme sur son arme, ce qui lui permet d’attaquer avec plus de précision et de puissance.
+
+Lorsque Sarin revêtait l'armure complète, son véritable potentiel se déchaînait, faisant de lui une puissante force de l'ordre avec laquelle il fallait compter.
+
+STATISTIQUES :
+
+Capacités d'équipement :
+– TAC0 en mêlée : +2
+– Dégâts en mêlée : +2
+– Résistance au feu : +20 %
+– Paix de l’esprit : s’active lorsque toutes les pièces de l’armure de Sarin sont équipées, coonfère une immunité contre les effets de débilité, confusion et charme
+
+Poids : 2~

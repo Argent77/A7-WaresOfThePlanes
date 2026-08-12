@@ -1,0 +1,26 @@
+// Energy Bolts of Piercing +1
+
+@0 = ~Carreau translucide~
+@1 = ~Carreaux d'énergie perforants +1~
+
+@10 = ~Ces carreaux semblent être fabriqués dans un matériau translucide. De temps à autre, leur texture interne change légèrement, comme s'ils étaient composés d'une matière visqueuse.
+
+STATISTIQUES :
+
+Dégâts : 1d8 (projectile)
+Lanceur : Arbalète
+
+Poids : 0~
+@11 = ~Ces carreaux sont translucides, comme s’ils étaient en verre, et étonnamment légers. En y regardant de plus près, on constate qu’ils ne sont en réalité composés d’aucun matériau spécifique. Ils sont en effet constitués d’énergie pure, maintenus sous cette forme par une force inconnue. Lorsqu’ils sont tirés, leurs propriétés immatérielles leur permettent de traverser la matière sans s’arrêter. De petites quantités d’énergie sont laissées derrière elles, provoquant une douleur intense chez les créatures vivantes. Les morts-vivants et les créatures artificielles sont immunisés contre cet effet.
+
+STATISTIQUES :
+
+Capacités de combat :
+– Touche toutes les cibles sur son passage
+
+THAC0 : +4
+Dégâts : 1d8+1 (jet de sauvegarde contre les sorts avec un malus de -2 pour réduire les dégâts de moitié)
+Type de dégâts : projectile
+Lanceur : arbalète
+
+Poids : 0~

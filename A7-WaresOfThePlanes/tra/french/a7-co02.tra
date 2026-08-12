@@ -1,0 +1,11 @@
+// Modron Storage Crystal
+
+@0 = ~Cristal~
+@1 = ~Cristal de stockage modrone~
+
+@10 = ~Ce cristal n'a rien de particulier. Il présente une teinte jaune et tient bien dans la main.
+
+Poids : 2~
+@11 = ~Ce cristal est issu de la même source d'où viennent tous les modrones de Méchanus. Ses propriétés uniques te permettent de stocker et récupérer toutes sortes d'informations. Étrangement, les objets sont détruits lors du processus de stockage. Mais le cristal reproduit avec fidélité les objets stockés lorsque tu les réclames. Il accepte tous les parchemins, notes, livres et grimoires.
+
+Poids : 2~

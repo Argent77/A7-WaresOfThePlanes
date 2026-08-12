@@ -1,0 +1,43 @@
+// Item set: Sarin's Helmet
+
+// @0 = ~~  // #6346
+@1 = ~Casque de Sarin~
+
+// @10 = ~~ // #6807
+
+// Identified item description (without set bonus)
+@11 = ~Sarin était un paladin humain et un factol de l’Harmonium sur sa planète natale, Ortho, puis plus tard à Sigil. Également appelés les "Têtes dures", ils étaient connus pour leur approche plus radicale de la loi et de l’ordre. Selon eux, la véritable paix ne peut être atteinte que si tout le monde pense et agit de la même manière — par la force si nécessaire. Sous la direction de Sarin, l’Harmonium a mené de nombreuses campagnes à travers le multivers afin de propager la "paix".
+
+Lorsque Sarin devint commandant de haut rang, il fit fabriquer une armure personnelle composée d’une armure de plaques, de gantelets et d’un casque pour l’aider dans ses campagnes. Grâce à son casque, Sarin était capable de repérer les ennemis et autres créatures lâches qui tentaient d'échapper à sa doctrine de paix.
+
+STATISTIQUES :
+
+Capacités d'équipement :
+– Résistance au feu : +20 %
+– Protection contre les coups critiques
+
+Capacités de charge :
+– Vision véritable : une fois par jour
+  Durée : 1 tour
+
+Poids : 2~
+
+// Identified item description (with set bonus enabled)
+@12 = ~Sarin était un paladin humain et un factol de l’Harmonium sur sa planète natale, Ortho, puis plus tard à Sigil. Également appelés les "Têtes dures", ils étaient connus pour leur approche plus radicale de la loi et de l’ordre. Selon eux, la véritable paix ne peut être atteinte que si tout le monde pense et agit de la même manière — par la force si nécessaire. Sous la direction de Sarin, l’Harmonium a mené de nombreuses campagnes à travers le multivers afin de propager la "paix".
+
+Lorsque Sarin devint commandant de haut rang, il fit fabriquer une armure personnelle composée d’une armure de plaques, de gantelets et d’un casque pour l’aider dans ses campagnes. Grâce à son casque, Sarin était capable de repérer les ennemis et autres créatures lâches qui tentaient d'échapper à sa doctrine de paix.
+
+Lorsque Sarin revêtait l'armure complète, son véritable potentiel se déchaînait, faisant de lui une puissante force de l'ordre avec laquelle il fallait compter.
+
+STATISTIQUES :
+
+Capacités d'équipement :
+– Résistance au feu : +20 %
+– Protection contre les coups critiques
+– Paix de l’esprit : s’active lorsque toutes les pièces de l’armure de Sarin sont équipées, coonfère une immunité contre les effets de débilité, confusion et charme
+
+Capacités de charge :
+– Vision véritable : une fois par jour
+  Durée : 1 tour
+
+Poids : 2~

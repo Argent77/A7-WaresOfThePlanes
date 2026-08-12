@@ -1,0 +1,22 @@
+// Heart of Stone
+
+// @0 = ~~  // #7222
+@1 = ~Coeur de pierre~
+
+// @10 = ~~ // #-1
+@11 = ~Coeur de pierre
+(Nécromancie)
+
+Niveau : 8
+Portée : 0
+Durée : 1 round par niveau
+Temps d'incantation : 8
+Zone d'effet : le lanceur de sort
+Jet de sauvegarde : aucun
+
+Cœur de pierre transforme le cœur du lanceur de sorts en une pierre parfaite et sans défaut, modifiant ainsi la nature même de son corps. Tant que le sort est actif, le lanceur de sorts est immunisé contre la pétrification, bénéficie d’un bonus de +4 aux jets de sauvegarde contre la pétrification et est très résistant aux attaques physiques. Les dégâts perforants, de projectiles et tranchants sont réduits de 99 %. Les dégâts contondants sont réduits de 50 %. Il y a 1 % de chances chaque fois que le lanceur de sort est touché que cela brise le cœur et tue le magicien, à moins que celui-ci ne réussisse un jet de sauvegarde contre la mort. En cas de jet de sauvegarde réussi, le magicien subit tout de même 1d8+1 points de dégâts et les effets du sort s'arrêtent. Le sort "Pierre en chair" permet également de neutraliser la magie de Cœur de pierre.~
+
+// portrait icon label
+@20 = ~Coeur de pierre~
+
+@21 = ~Coeur brisé~

@@ -1,0 +1,25 @@
+// Fire Bolts of Piercing +1
+@0 = ~Carreaux de feu~
+@1 = ~Carreaux de feu perforants +1~
+
+@10 = ~Ces carreaux sont enveloppés d'un feu ardent. Comment ils peuvent être stockés sans brûler tout ce qui se trouve à proximité reste un mystère.
+
+STATISTIQUES :
+
+Dégâts : 1d8 (projectile)
+Arme : Arbalète
+
+Poids : 0~
+@11 = ~Ces carreaux emmagasinent l’énergie pure du Plan élémentaire du Feu. Seul un champ de force magique protège l’utilisateur contre les brûlures. Une fois tirées, leurs propriétés immatérielles leur permettent de traverser la matière sans s’arrêter. Toute cible qui n’est pas immunisée contre le feu subit des dégâts considérables.
+
+STATISTIQUES :
+
+Capacités de combat :
+– Touche toutes les cibles sur son passage
+
+THAC0 : +4
+Dégâts : 1d8+1 (jet de sauvegarde contre les sorts pour subir la moitié des dégâts)
+Type de dégâts : Feu
+Arme de tir : Arbalète
+
+Poids : 0~

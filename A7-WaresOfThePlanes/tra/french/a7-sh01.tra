@@ -1,0 +1,41 @@
+// Item set: Sarin's Shield +3
+
+// @0 = ~~  // #215
+@1 = ~Bouclier de Sarin +3~
+
+// @10 = ~~ // #6819
+
+// Identified item description (without set bonus)
+@11 = ~Sarin était un paladin humain et un factol de l’Harmonium sur sa planète natale, Ortho, puis plus tard à Sigil. Également appelés les "Têtes dures", ils étaient connus pour leur approche plus radicale de la loi et de l’ordre. Selon eux, la véritable paix ne peut être atteinte que si tout le monde pense et agit de la même manière — par la force si nécessaire. Sous la direction de Sarin, l’Harmonium a mené de nombreuses campagnes à travers le multivers afin de propager la "paix".
+
+Lorsque Sarin fut promu au rang de « Mover », il fit fabriquer un bouclier qui venait compléter ses talents à l'épée. Équipé de ce bouclier, il était capable de parer les attaques adverses de manière à rendre sa cible plus vulnérable à ses propres assauts. 
+
+STATISTIQUES :
+
+Capacités d'équipement :
+– Classe d'armure : +4
+– Bonus aux dégâts tranchants : +20 %
+– Résistance au feu : +20 %
+
+Nécessite : 12 en Force
+
+Poids : 4~
+
+
+// Identified item description (with set bonus enabled)
+@12 = ~Sarin était un paladin humain et un factol de l’Harmonium sur sa planète natale, Ortho, puis plus tard à Sigil. Également appelés les "Têtes dures", ils étaient connus pour leur approche plus radicale de la loi et de l’ordre. Selon eux, la véritable paix ne peut être atteinte que si tout le monde pense et agit de la même manière — par la force si nécessaire. Sous la direction de Sarin, l’Harmonium a mené de nombreuses campagnes à travers le multivers afin de propager la "paix".
+
+Lorsque Sarin fut promu au rang de « Mover », il fit fabriquer un bouclier qui venait compléter ses talents à l'épée. Équipé de ce bouclier, il était capable de parer les attaques adverses de manière à rendre sa cible plus vulnérable à ses propres assauts. De plus, lorsque le bouclier et son épée longue personnelle agissaient à l'unisson, ils lui conféraient une puissance supplémentaire qui lui permettait de s'imposer sur le champ de bataille.
+
+STATISTIQUES :
+
+Capacités d'équipement :
+– Classe d'armure : +4
+– Bonus aux dégâts tranchants : +20 %
+– Résistance au feu : +20 %
+– Force de l'Ordre : s'active lorsque Sarin est équipé de son épée longue et de son bouclier, confère un bonus de +1 en Force et un bonus de +1 à tous les jets de sauvegarde
+– Forteresse de l’Ordre : s’active si Sarin porte toutes les pièces de son armure, ainsi que son épée longue et son bouclier, confère un bonus de +1 en Force, une protection contre les créatures chaotiques, un bonus de 20 % à la résistance au feu et la régénération (1 PV toutes les 3 secondes)
+
+Nécessite : 12 en Force
+
+Poids : 4~

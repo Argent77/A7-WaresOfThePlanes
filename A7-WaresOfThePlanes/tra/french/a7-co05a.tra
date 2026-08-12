@@ -1,0 +1,44 @@
+// Sealed Pocket Singularity
+
+@0 = ~Orbe noir~
+@1 = ~Singularité scellée~
+
+@10 = ~À première vue, cet orbe semble être composé d’une sorte de matière noire. En y regardant de plus près, on remarque qu’il absorbe en réalité la lumière environnante, ce qui le fait paraître bien plus sombre qu’il ne l’est en réalité.
+
+STATISTIQUES :
+
+Poids : 5~
+@11 = ~Cet orbe noir est en fait un portail miniature vers un espace non dimensionnel. Les informations concernant cet objet sont peu nombreuses, car l'inventeur de ce curieux dispositif a depuis longtemps été totalement oublié.
+
+Le portail semble toutefois inactif ou scellé. Malgré tous vos efforts, vous ne parvenez pas à trouver le moyen d’ouvrir l’orbe noir.
+
+STATISTIQUES :
+
+Poids : 5~
+
+@100 = ~examiner~
+
+
+// item dialog
+@200 = ~À première vue, cet orbe semble être composé d’une sorte de matière noire. En y regardant de plus près, on remarque qu’il absorbe en réalité la lumière environnante, ce qui le fait paraître beaucoup plus sombre qu’il ne l’est en réalité.~
+@201 = ~Rangez l'objet.~
+@202 = ~Ce qui ressemble de loin à une sphère noire est en réalité un portail transportable menant à un espace non dimensionnel. Le portail semble toutefois inactif ou scellé. Malgré tous vos efforts, vous ne parvenez pas à trouver le moyen d'ouvrir la sphère noire.~
+@203 = ~Examinez la sphère.~
+@204 = ~Vous fixez l'orbe avec attention et essayez d'y déceler le moindre indice sur sa nature. Mais quels que soient vos efforts, l'orbe reste noir et sans relief, comme toujours.~
+@205 = ~Vous fixez l'orbe intensément et essayez d'y déceler le moindre indice sur sa nature. De temps à autre, vous remarquez de minuscules changements à la surface de l'orbe lorsque vous le regardez du coin de l'œil, mais vous n'avez aucune idée de ce que cela peut signifier.~
+@206 = ~Vous examinez l'orbe de plus près. Au premier abord, sa surface semble noire et lisse. En détendant légèrement votre regard, vous percevez une sorte d'image rémanente dont l'intensité varie en fonction des mouvements de votre main gauche. Après avoir essayé différents gestes, l'orbe clignote brièvement et dégage un halo permanent et ténu autour de lui. Vous pouvez sans effort plonger la main dans ce qui semble être un espace parallèle.~
+
+// journal entries
+@300 = ~Un trou portable
+
+J'ai acheté une mystérieuse sphère noire à Ebb Craquerotule. Elle semble d'un noir exceptionnel et dépourvue de tout relief. J'ai beau me concentrer, je n'arrive pas à comprendre comment l'utiliser.~
+
+@301 = ~Un trou portable
+
+J'ai acheté une mystérieuse sphère noire à Ebb Craquerotule. Elle semble d'un noir exceptionnel et dépourvue de tout relief. En l'observant de plus près, j'ai remarqué de temps à autre de minuscules changements à la surface de l'orbe, mais je n'arrive pas à déterminer si cela a une signification.~
+
+@310 = ~Un trou portable
+
+J'ai acheté une mystérieuse sphère noire à Ebb Craquerotule. Elle semble d'un noir exceptionnel et dépourvue de tout relief. En examinant l'orbe de très près, j'ai remarqué qu'il réagissait à ma présence. Avec un peu d'effort et de patience, j'ai résolu l'énigme et j'ai enfin réussi à le déverrouiller.
+
+Aussi improbable que cela puisse paraître, l'orbe semble être un portail vers un espace non dimensionnel où je peux librement stocker et récupérer autant de choses que je veux.~
