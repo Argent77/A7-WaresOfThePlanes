@@ -1,0 +1,138 @@
+// Item: Tzarakul's Eye
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+INCLUDE ~%MOD_FOLDER%/lib/find_free_anim_slot.tph~
+
+OUTER_SPRINT itm_resref ~a7-mi18~
+
+ACTION_IF (has_bg2) BEGIN
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        desc_image_resref
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    desc_image_resref
+  END
+
+  COPY ~%MOD_FOLDER%/2da/a7-nmsum.2da~ ~override~
+       ~%MOD_FOLDER%/eff/a7-mi18a.eff~ ~override~
+       ~%MOD_FOLDER%/eff/a7-mi18b.eff~ ~override~
+       ~%MOD_FOLDER%/eff/a7-mi18c.eff~ ~override~
+       ~%MOD_FOLDER%/itm/a7-nmfx.itm~  ~override~
+       ~%MOD_FOLDER%/itm/a7-nmwf1.itm~ ~override~
+       ~%MOD_FOLDER%/itm/a7-nmwf2.itm~ ~override~
+       ~%MOD_FOLDER%/itm/a7-nmwot.itm~ ~override~
+       ~%MOD_FOLDER%/itm/a7-nmwsl.itm~ ~override~
+       ~%MOD_FOLDER%/itm/a7-nmwtr.itm~ ~override~
+       ~%MOD_FOLDER%/spl/a7-nmdie.spl~ ~override~
+       ~%MOD_FOLDER%/bmp/a7-nmhit.bmp~ ~override~
+       ~%MOD_FOLDER%/vvc/a7-nmhit.vvc~ ~override~
+
+  // installing missing creature animation BAMs and WAVs
+  ACTION_FOR_EACH bam_resref IN ~mdtr~ ~mfe2~ ~mfey~ BEGIN
+    ACTION_BASH_FOR ~%MOD_FOLDER%/bam~ ~^%bam_resref%.+\.bam$~ BEGIN
+      ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~) BEGIN
+        COPY ~%BASH_FOR_FILESPEC%~ ~override~
+      END
+    END
+  END
+
+  ACTION_FOR_EACH wav_resref IN ~feyr~ ~tree~ BEGIN
+    ACTION_BASH_FOR ~%MOD_FOLDER%/wav~ ~^%wav_resref%.+\.wav$~ BEGIN
+      ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~) BEGIN
+        COPY ~%BASH_FOR_FILESPEC%~ ~override~
+      END
+    END
+  END
+
+  // creating custom animation slots if necessary
+  ACTION_FOR_EACH label IN ~FEYR~ ~OTYUGH~ ~TREANT_DARK~ ~BEHOLDER_SMALL~ ~FEYR_GREATER~ ~SLAYER~ BEGIN
+    // checking animation slot: immune to chunking?
+    OUTER_SET anim_id = IDS_OF_SYMBOL(~animate~ ~%label%~)
+    OUTER_SET $anim_labels(~%label%~) = anim_id
+    ACTION_IF (anim_id >= 0) BEGIN
+      OUTER_PATCH ~~ BEGIN SPRINTF anim_hex ~%x~ (anim_id) END
+      OUTER_PATCH_SAVE anim_hex ~%anim_hex%~ BEGIN DELETE_BYTES 0 2 END
+      ACTION_IF (FILE_EXISTS_IN_GAME ~%anim_hex%.ini~) BEGIN
+        COPY_EXISTING ~%anim_hex%.ini~ ~override~
+          SET clone = (INDEX_BUFFER(~color_chunks=255~) < 0)
+          PATCH_IF (clone) BEGIN
+            // retrieving animation type
+            SPRINT type ~~
+            REPLACE_EVALUATE ~\[\(.+\)\]~ BEGIN
+              PATCH_IF NOT (~%MATCH1%~ STR_EQ ~general~ || ~%MATCH1%~ STR_EQ ~sounds~) BEGIN
+                SPRINT type ~%MATCH1%~
+              END
+            END ~%MATCH0%~
+          END
+        BUT_ONLY
+
+        ACTION_IF (clone) BEGIN
+          // cloning animation slot
+          LAF FIND_FREE_ANIM_SLOT STR_VAR type RET anim_slot_new = slot END
+          ACTION_IF (anim_slot_new > 0) BEGIN
+            OUTER_PATCH ~~ BEGIN SPRINTF anim_hex_new ~%x~ (anim_slot_new) END
+            OUTER_PATCH_SAVE anim_hex_new ~%anim_hex_new%~ BEGIN DELETE_BYTES 0 2 END
+            OUTER_SET $anim_labels(~%label%~) = anim_slot_new
+            COPY_EXISTING ~%anim_hex%.ini~ ~override/%anim_hex_new%.ini~
+              REPLACE_TEXTUALLY ~color_chunks=[0-9]+~ ~color_chunks=255~
+              REPLACE_TEXTUALLY ~//[ %TAB%]*[^ %TAB%]+[ %TAB%]+[^ %TAB%]+~ ~\0 (shade)~ // cosmetic
+          END
+          APPEND ~animate.ids~ ~0x%anim_hex_new% A7_%label%_NOCHUNK~
+        END
+      END
+    END
+  END
+  CLEAR_IDS_MAP
+
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    COPY_EXISTING ~%itm_resref%.itm~ ~override~
+      LPF ALTER_EFFECT
+        INT_VAR
+          match_opcode = 139  // Display string
+          parameter1 = RESOLVE_STR_REF(@30) // Draws the attention of creatures from a hidden reality
+      END
+    BUT_ONLY
+
+    // nightmare creatures
+    DEFINE_PATCH_MACRO cre_update_animation BEGIN
+      READ_LONG 0x28 anim_id
+      LOOKUP_IDS_SYMBOL_OF_INT anim_label ~animate~ anim_id
+      PATCH_IF (VARIABLE_IS_SET $anim_labels(~%anim_label%~) && $anim_labels(~%anim_label%~) != anim_id) BEGIN
+        WRITE_LONG 0x28 $anim_labels(~%anim_label%~)
+      END
+    END
+
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY cre_info BEGIN
+      // cre resref => tra reference for name
+      ~a7-nmfey~ => 20
+      ~a7-nmoty~ => 20
+      ~a7-nmtre~ => 21
+      ~a7-nmgau~ => 21
+      ~a7-nmfe2~ => 22
+      ~a7-nmsly~ => 22
+    END
+
+    ACTION_PHP_EACH cre_info AS cre_resref => tra_ref BEGIN
+      COPY ~%MOD_FOLDER%/cre/%cre_resref%.cre~ ~override~
+        SAY NAME1 (AT tra_ref)
+        SAY NAME2 (AT tra_ref)
+        LPM cre_update_animation
+    END
+
+    // combat scripts
+    COMPILE ~%MOD_FOLDER%/bcs/a7-nmdef.baf~
+            ~%MOD_FOLDER%/bcs/a7-nmgau.baf~
+  END
+END

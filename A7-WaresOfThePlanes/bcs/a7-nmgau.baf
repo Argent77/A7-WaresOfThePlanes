@@ -1,0 +1,263 @@
+// Nightmare Gauth script
+
+IF
+  StateCheck(Myself,STATE_SLEEPING)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  Global("GauthBehavior","LOCALS",0)
+  !GlobalTimerNotExpired("GauthGazeTimer","LOCALS")
+  See(LastSummonerOf(Myself))
+  HPGT(Myself,55)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("GauthGazeTimer","LOCALS",2)
+    ReallyForceSpell(LastSeenBy(Myself),BEHOLDER_CAUSE_SERIOUS_WOUNDS)
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Global("GauthBehavior","LOCALS",0)
+  !GlobalTimerNotExpired("GauthGazeTimer","LOCALS")
+  !See(LastSummonerOf(Myself))
+  See(NearestEnemyOf(Myself))
+  HPGT(Myself,55)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("GauthGazeTimer","LOCALS",2)
+    ReallyForceSpell(LastSeenBy(Myself),BEHOLDER_CAUSE_SERIOUS_WOUNDS)
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Global("GauthBehavior","LOCALS",0)
+  !GlobalTimerNotExpired("GauthGazeTimer","LOCALS")
+  See(LastSummonerOf(Myself))
+  !Range(LastSeenBy(Myself),3)
+  HPGT(Myself,5)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("GauthGazeTimer","LOCALS",2)
+    ReallyForceSpell(LastSeenBy(Myself),BEHOLDER_LIGHTNING_BOLT)
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Global("GauthBehavior","LOCALS",0)
+  !GlobalTimerNotExpired("GauthGazeTimer","LOCALS")
+  !See(LastSummonerOf(Myself))
+  See(NearestEnemyOf(Myself))
+  !Range(LastSeenBy(Myself),3)
+  HPGT(Myself,5)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("GauthGazeTimer","LOCALS",2)
+    ReallyForceSpell(LastSeenBy(Myself),BEHOLDER_LIGHTNING_BOLT)
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Global("GauthBehavior","LOCALS",0)
+  !GlobalTimerNotExpired("GauthGazeTimer","LOCALS")
+  See(LastSummonerOf(Myself))
+  HPGT(Myself,15)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("GauthGazeTimer","LOCALS",2)
+    ReallyForceSpell(LastSeenBy(Myself),BEHOLDER_PARALYZATION)
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Global("GauthBehavior","LOCALS",0)
+  !GlobalTimerNotExpired("GauthGazeTimer","LOCALS")
+  !See(LastSummonerOf(Myself))
+  See(LeastDamagedOf(Myself))
+  HPGT(Myself,15)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("GauthGazeTimer","LOCALS",2)
+    ReallyForceSpell(LastSeenBy(Myself),BEHOLDER_PARALYZATION)
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Global("GauthBehavior","LOCALS",0)
+  !GlobalTimerNotExpired("GauthGazeTimer","LOCALS")
+  !See(LastSummonerOf(Myself))
+  See(NearestEnemyOf(Myself))
+  HPGT(Myself,15)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("GauthGazeTimer","LOCALS",2)
+    ReallyForceSpell(LastSeenBy(Myself),BEHOLDER_PARALYZATION)
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Global("GauthBehavior","LOCALS",0)
+  !GlobalTimerNotExpired("GauthGazeTimer","LOCALS")
+  See(NearestEnemyOf(Myself))
+  HPGT(Myself,25)
+THEN
+  RESPONSE #100
+    SetGlobal("GauthBehavior","LOCALS",1)
+END
+
+IF
+  Global("GauthBehavior","LOCALS",1)
+  !GlobalTimerNotExpired("GauthGazeTimer","LOCALS")
+  See(LastSummonerOf(Myself))
+  HPGT(Myself,45)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("GauthGazeTimer","LOCALS",2)
+    ReallyForceSpell(LastSeenBy(Myself),BEHOLDER_PARALYZATION)
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Global("GauthBehavior","LOCALS",1)
+  !GlobalTimerNotExpired("GauthGazeTimer","LOCALS")
+  !See(LastSummonerOf(Myself))
+  See(NearestEnemyOf(Myself))
+  HPGT(Myself,45)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("GauthGazeTimer","LOCALS",2)
+    ReallyForceSpell(LastSeenBy(Myself),BEHOLDER_PARALYZATION)
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Global("GauthBehavior","LOCALS",1)
+  !GlobalTimerNotExpired("GauthGazeTimer","LOCALS")
+  See(LastSummonerOf(Myself))
+  HPGT(Myself,25)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("GauthGazeTimer","LOCALS",2)
+    ReallyForceSpell(LastSeenBy(Myself),BEHOLDER_SLOW)
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Global("GauthBehavior","LOCALS",1)
+  !GlobalTimerNotExpired("GauthGazeTimer","LOCALS")
+  !See(LastSummonerOf(Myself))
+  See(NearestEnemyOf(Myself))
+  HPGT(Myself,25)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("GauthGazeTimer","LOCALS",2)
+    ReallyForceSpell(LastSeenBy(Myself),BEHOLDER_SLOW)
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Global("GauthBehavior","LOCALS",1)
+  !GlobalTimerNotExpired("GauthGazeTimer","LOCALS")
+  See(LastSummonerOf(Myself))
+  HPGT(Myself,35)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("GauthGazeTimer","LOCALS",2)
+    ReallyForceSpell(LastSeenBy(Myself),BEHOLDER_HOLD_PERSON)
+    SetGlobal("GauthBehavior","LOCALS",0)
+  RESPONSE #100
+    SetGlobal("GauthBehavior","LOCALS",0)
+    Continue()
+END
+
+IF
+  Global("GauthBehavior","LOCALS",1)
+  !GlobalTimerNotExpired("GauthGazeTimer","LOCALS")
+  !See(LastSummonerOf(Myself))
+  See(LeastDamagedOf(Myself))
+  HPGT(Myself,35)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("GauthGazeTimer","LOCALS",2)
+    ReallyForceSpell(LastSeenBy(Myself),BEHOLDER_HOLD_PERSON)
+    SetGlobal("GauthBehavior","LOCALS",0)
+  RESPONSE #100
+    SetGlobal("GauthBehavior","LOCALS",0)
+    Continue()
+END
+
+IF
+  Global("GauthBehavior","LOCALS",1)
+  !GlobalTimerNotExpired("GauthGazeTimer","LOCALS")
+  !See(LastSummonerOf(Myself))
+  See(NearestEnemyOf(Myself))
+  HPGT(Myself,35)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("GauthGazeTimer","LOCALS",2)
+    ReallyForceSpell(LastSeenBy(Myself),BEHOLDER_HOLD_PERSON)
+    SetGlobal("GauthBehavior","LOCALS",0)
+  RESPONSE #100
+    SetGlobal("GauthBehavior","LOCALS",0)
+    Continue()
+END
+
+IF
+  Global("GauthBehavior","LOCALS",1)
+  !GlobalTimerNotExpired("GauthGazeTimer","LOCALS")
+  See(LastSummonerOf(Myself))
+  HPGT(Myself,35)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("GauthGazeTimer","LOCALS",2)
+    ReallyForceSpell(LastSeenBy(Myself),BEHOLDER_HOLD_PERSON)
+    SetGlobal("GauthBehavior","LOCALS",0)
+  RESPONSE #100
+    SetGlobal("GauthBehavior","LOCALS",0)
+    Continue()
+END
+
+IF
+  Global("GauthBehavior","LOCALS",1)
+  !GlobalTimerNotExpired("GauthGazeTimer","LOCALS")
+  !See(LastSummonerOf(Myself))
+  See(LeastDamagedOf(Myself))
+  HPGT(Myself,35)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("GauthGazeTimer","LOCALS",2)
+    ReallyForceSpell(LastSeenBy(Myself),BEHOLDER_HOLD_PERSON)
+    SetGlobal("GauthBehavior","LOCALS",0)
+  RESPONSE #100
+    SetGlobal("GauthBehavior","LOCALS",0)
+    Continue()
+END
+
+IF
+  Global("GauthBehavior","LOCALS",1)
+  !GlobalTimerNotExpired("GauthGazeTimer","LOCALS")
+  !See(LastSummonerOf(Myself))
+  See(NearestEnemyOf(Myself))
+  HPGT(Myself,35)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("GauthGazeTimer","LOCALS",2)
+    ReallyForceSpell(LastSeenBy(Myself),BEHOLDER_HOLD_PERSON)
+    SetGlobal("GauthBehavior","LOCALS",0)
+  RESPONSE #100
+    SetGlobal("GauthBehavior","LOCALS",0)
+    Continue()
+END

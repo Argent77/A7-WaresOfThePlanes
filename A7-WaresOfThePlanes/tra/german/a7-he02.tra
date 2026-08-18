@@ -1,0 +1,42 @@
+// Worm-Crown of Uul
+
+@0 = ~Von Würmern befallener Stirnreif~
+@1 = ~Wurmkrone von Uul~
+
+@10 = ~Dieser abstoßende Kopfschmuck besteht aus einem metallischen Material und scheint von Würmern befallen zu sein.
+
+EIGENSCHAFTEN:
+
+Gewicht: 1~
+@11 = ~Dieser Stirnreif besteht aus einem metallischen Material, das sich windet wie ein lebender Organismus. Der Legende nach wurde er von einer Intelligenz aus den Fernen Reichen für einen sterblichen Propheten erschaffen, der seine Gottheit verriet. Der Name des Propheten ist längst in den Untiefen der Zeit verloren gegangen. Sein Vermächtnis - dieser Kopfschmuck - ist jedoch erhalten geblieben und scheint noch genauso gut zu funktionieren wie zum Zeitpunkt seiner Erschaffung vor Urzeiten.
+
+Bei genauerer Betrachtung lassen sich Dutzende wurmartige Wesen erkennen, die wie Pflanzen aus dem Artefakt sprießen. Diese Wesen ernähren sich auf ganz besondere Weise vom Gehirn des Trägers. Sie gehen eine Art Symbiose mit ihrem Wirt ein, indem sie dessen Erinnerungen und Erfahrungen verzehren. Im Gegenzug setzen diese Gedankenwürmer eine Substanz frei, die neuronale Prozesse verstärkt, und so das Denkvermögen des Wirts steigert.
+
+Ihre enge Beziehung zu den Fernen Reichen ermöglicht es dem Träger, Abscheulichkeiten zu befehligen. Jeder Befehl birgt jedoch das Risiko, dass sich die Würmer der Krone tiefer in die Kopfhaut des Trägers eingraben und weitere Teile seines Geistes verzehren. Sobald die Krone auf den Kopf gesetzt wird, krallen sich die Gedankenwürmer instinktiv in der Kopfhaut des Trägers fest und lassen ohne Hilfe durch „Fluch brechen“ nicht mehr los.
+
+EIGENSCHAFTEN:
+
+Rettung gg. Verzauberungen: +2
+Magiewiderstand: +5 %
+Charisma: -1
+Kann nur durch „Fluch brechen“ wieder abgenommen werden.
+
+Abscheulichkeiten befehligen (3x täglich)
+ Dauer: 12 Stunden
+ Reichweite: 9 m
+ Bereich: 1 Wesen
+ Kontrolliert die Aktionen eines Wesens, das direkt oder indirekt mit den Fernen Reichen verbunden ist:
+  • Kreischlinge (kein Rettungswurf möglich)
+  • Aaskriecher (Rettungswurf -4 gg. Zauber)
+  • Gedankenschinder (Rettungswurf gg. Zauber)
+  • Betrachter (Rettungswurf +2 gg. Zauber)
+ Es besteht eine Wahrscheinlichkeit von 15 %, dass die Würmer bei einem erfolgreichen Kontrollversuch aufwachen und Teile des Geistes des Trägers verzehren (-1 Weisheit und +1 Intelligenz dauerhaft).
+
+Gewicht: 1~
+
+// ability name
+@20 = ~Abscheulichkeiten befehligen~
+
+// log messages
+@21 = ~Gedankenwürmer werden unruhig~
+@22 = ~Als der Stirneif die Haut berührt, sprießen zahlreiche wurmartigen Fortsätze aus der Oberfläche hervor und krallen sich in Eurer Kopfhaut fest. Eine energiegeladene Welle durchströmt Euren Kopf, und unwillkürlich erschließt sich Euch die wahre Natur des Stirnreifs.~

@@ -1,0 +1,31 @@
+// Tzarakul's Eye
+
+@0 = ~Creepy Eye~
+@1 = ~Tzarakul's Eye~
+
+@10 = ~This is a black crystal orb that contains an unblinking eye. Just looking at it makes you uneasy.
+
+STATISTICS:
+
+Weight: 2~
+@11 = ~This is a black crystal orb that contains an unblinking eye. It was supposedly found embedded in the skull of a "dead thing" that fell from the stars. None of the scholars who studied the orb where able to identify the creature. However, the most prevailing hypothesis is that the creature must have originally come from one of the planes of the Far Realm.
+
+Looking closer into the eye triggers the eerie feeling of being probed by an alien mind. However, if the orb is held high above the head it reveals even the most cleverly hidden creatures, illusions–and at times some things that exist just beyond the planes. The effect is so powerful that it sometimes draws the attention of beings native to hidden realities.
+
+STATISTICS:
+
+Charge abilities:
+– Dispel Illusions three times per day
+  Duration: Instant
+  Area of Effect: 120-ft. radius
+  Dispels all hostile Illusion/Phantasm spells in the area, regardless of any protective measures that may have been erected. There is a 10% chance that it draws the attention of 1 to 3 creatures from a hidden reality.
+
+Weight: 2~
+
+// creature names
+@20 = ~Lesser Nightmare~
+@21 = ~Nightmare~
+@22 = ~Greater Nightmare~
+
+// log message
+@30 = ~Draws the attention of creatures from a hidden reality~

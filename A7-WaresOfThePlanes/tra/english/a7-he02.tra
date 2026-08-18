@@ -1,0 +1,44 @@
+// Worm-Crown of Uul
+
+@0 = ~Worm-infested Circlet~
+@1 = ~Worm-Crown of Uul~
+
+@10 = ~This repulsive headpiece is made of a metallic substance that appears to be crawling with worms.
+
+STATISTICS:
+
+Weight: 1~
+@11 = ~This circlet is made of a metallic substance that writhes as though alive. According to legend, it was fashioned by a Far Realm intelligence for a mortal prophet who betrayed their god. The name of the prophet has long been lost in time. Their legacy–this headpiece–has survived, however, and seems to function just as well as it did when it was fashioned ages ago.
+
+At closer inspection you can make out dozens of worm-like creatures sprouting from the artifact like plants. These creatures feed on the brain of the wearer in a very particular way. They enter some form of symbiosis with their host by consuming their memories and experience. In return these mind worms release a substance that increases neuronal processes–effectively augmenting the reasoning capabilities of the host.
+
+Their close relationship with the Far Realm allows the wearer to command aberrations, such as carrion crawlers or mind flayers. However, each command bears the risk of the crown's worms to burrow deeper into the wearer's scalp and consume more of their mind. When the crown is placed on the head, the mind worms instinctively latch onto the wearer's scalp and won't let go without the use of a Remove Curse spell.
+
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Enchantment spells: +2
+– Magic Resistance: +5%
+– Charisma: -1
+– May only be removed with a Remove Curse spell
+
+Charge abilities:
+– Command Aberration three times per day
+  Duration: 12 hours
+  Range: 30 ft.
+  Area of Effect: 1 creature
+  Controls the actions of creatures that are directly or indirectly linked to the Far Realm:
+    • Gibberlings (no save)
+    • Carrion Crawlers (Save vs. Spell at -4 negates)
+    • Mind Flayers (Save vs. Spell negates)
+    • Beholders (Save vs. Spell at +2 negates)
+  There is a 15% chance that the worms wake up and feast on the mind of the wearer on a successful control attempt (-1 Wisdom and +1 Intelligence permanently).
+
+Weight: 1~
+
+// ability name
+@20 = ~Command Aberration~
+
+// log messages
+@21 = ~Mind worms become agitated~
+@22 = ~As the circlet touches the skin, a great number of worm-like appendages sprout from the surface and latch onto your scalp. A surge of energy enters your head, and you instinctively learn the true nature of the circlet.~

@@ -1,0 +1,89 @@
+// Item: Worm-Crown of Uul
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref_dormant ~a7-he02a~
+OUTER_SPRINT itm_resref_active ~a7-he02~
+OUTER_SPRINT itm_resref_upper ~%itm_resref_active%~
+ACTION_TO_UPPER ~itm_resref_upper~
+
+// Installing items
+ACTION_FOR_EACH itm_resref IN ~%itm_resref_dormant%~ ~%itm_resref_active%~ BEGIN
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        desc_image_resref
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    desc_image_resref
+  END
+END
+
+// Installing SPLPROT.2DA entries
+LAF get_splprot_entry INT_VAR stat = 0x10c value = IDS_OF_SYMBOL(~race~ ~GIBBERLING~) relation = 1 STR_VAR name = ~*_RACE=GIBBERLING~ RET filter_1 = index END
+LAF get_splprot_entry INT_VAR stat = 0x10c value = IDS_OF_SYMBOL(~race~ ~CARRIONCRAWLER~) relation = 1 STR_VAR name = ~*_RACE=CARRIONCRAWLER~ RET filter_2 = index END
+LAF get_splprot_entry INT_VAR stat = 0x10c value = IDS_OF_SYMBOL(~race~ ~MIND_FLAYER~) relation = 1 STR_VAR name = ~*_RACE=MIND_FLAYER~ RET filter_3 = index END
+LAF get_splprot_entry INT_VAR stat = 0x10c value = IDS_OF_SYMBOL(~race~ ~BEHOLDER~) relation = 1 STR_VAR name = ~*_RACE=BEHOLDER~ RET filter_4 = index END
+LAF get_splprot_entry INT_VAR stat = 0x103 value = filter_1 relation = filter_2 STR_VAR name = EVAL ~*_ENTRIES=(%filter_1%||%filter_2%)~ RET filter_5 = index END
+LAF get_splprot_entry INT_VAR stat = 0x103 value = filter_3 relation = filter_5 STR_VAR name = EVAL ~*_ENTRIES=(%filter_3%||%filter_5%)~ RET filter_6 = index END
+LAF get_splprot_entry INT_VAR stat = 0x103 value = filter_4 relation = filter_6 STR_VAR name = EVAL ~*_ENTRIES=(%filter_4%||%filter_6%)~ RET filter_7 = index END
+LAF get_splprot_entry INT_VAR stat = 0x104 value = filter_4 relation = filter_6 STR_VAR name = EVAL ~*_ENTRIES!=(%filter_4%||%filter_6%)~ RET filter_8 = index END
+
+// new item category
+COPY_EXISTING ~itemtype.2da~ ~override~
+  READ_2DA_ENTRIES_NOW itemtype_table 1
+  SET category_index = 0
+  FOR (row = 3; row < itemtype_table; ++row) BEGIN
+    READ_2DA_ENTRY_FORMER itemtype_table row 0 value
+    SET category_index = (IS_AN_INT ~value~ && value > category_index) ? value : category_index
+  END
+  SET category_index += 1
+BUT_ONLY
+ACTION_IF (category_index > 7) BEGIN
+  APPEND ~itemtype.2da~ ~%category_index%         A7-HE02P   A7-HE02D   6~
+END
+
+COPY ~%MOD_FOLDER%/wav/a7-he02d.wav~ ~override~
+     ~%MOD_FOLDER%/wav/a7-he02p.wav~ ~override~
+
+LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref_active%~ RET tra_language tra_fallback END
+WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+  COPY ~%MOD_FOLDER%/spl/a7-he02a.spl~ ~override~
+    SAY NAME1 @20 // Command Aberration
+
+  COPY ~%MOD_FOLDER%/spl/a7-he02b.spl~ ~override~
+       ~%MOD_FOLDER%/spl/a7-he02c.spl~ ~override~
+    // patch "Display string"
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@21) END // Mind worms become agitated
+
+  COPY ~%MOD_FOLDER%/spl/a7-he02r.spl~ ~override~
+    // patch "Display string"
+    LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF(@22) END // As the circlet touches the skin...
+
+  COPY_EXISTING ~%itm_resref_dormant%.itm~ ~override~
+    WRITE_SHORT 0x1c (category_index > THIS ? category_index : THIS)  // item category
+  BUT_ONLY
+
+  COPY_EXISTING ~%itm_resref_active%.itm~ ~override~
+    WRITE_SHORT 0x1c (category_index > THIS ? category_index : THIS)  // item category
+    // patch "Immunity to resource and message"
+    LPF ALTER_EFFECT INT_VAR match_opcode = 324 parameter2 = filter_8 END
+    // patch "Apply effects list"
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 match_parameter1 = IDS_OF_SYMBOL(~race~ ~GIBBERLING~) parameter1 = 0 parameter2 = filter_1 END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 match_parameter1 = IDS_OF_SYMBOL(~race~ ~CARRIONCRAWLER~) parameter1 = 0 parameter2 = filter_2 END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 match_parameter1 = IDS_OF_SYMBOL(~race~ ~MIND_FLAYER~) parameter1 = 0 parameter2 = filter_3 END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 326 match_parameter1 = IDS_OF_SYMBOL(~race~ ~BEHOLDER~) parameter1 = 0 parameter2 = filter_4 END
+  BUT_ONLY
+
+  // new tooltip entry
+  OUTER_SET strref_command = RESOLVE_STR_REF(@20) // Command Aberration
+  APPEND ~tooltip.2da~ ~%itm_resref_upper%   %strref_command%      -1         -1~
+END

@@ -1,0 +1,33 @@
+// Default combat script
+
+IF
+  See(LastSummonerOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+  AttackedBy([ANYONE],DEFAULT)
+THEN
+  RESPONSE #100
+    Attack(LastAttackerOf(Myself))
+END
+
+IF
+  True()
+THEN
+  RESPONSE #50
+    NoAction()
+  RESPONSE #50
+    RandomTurn()
+  RESPONSE #50
+    RandomWalk()
+END
