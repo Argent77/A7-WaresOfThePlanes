@@ -1,0 +1,117 @@
+// Item: Scroll of "Sphere of Ultimate Destruction"
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+INCLUDE ~%MOD_FOLDER%/lib/find_free_anim_slot.tph~
+
+OUTER_SPRINT itm_resref ~a7-sp07~
+
+ACTION_IF (has_bg2) BEGIN
+  // SPLPROT filters for EA ranges
+  LAF get_splprot_entry
+    INT_VAR stat = 0x10a value = "-1" relation = 2
+    STR_VAR name = ~*_EA<n~
+    RET splprot_ea_less = index
+  END
+
+  LAF get_splprot_entry
+    INT_VAR stat = 0x10a value = "-1" relation = 4
+    STR_VAR name = ~*_EA>=n~
+    RET splprot_ea_greater = index
+  END
+
+  // new animation slot for projectile "smoke" trail animation
+  LAF FIND_FREE_ANIM_SLOT
+    INT_VAR
+      slot_min = 0x310
+      slot_max = 0x3ff
+      slot_step = 1
+    STR_VAR
+      type = ~effect~
+    RET
+      smoke_id = slot
+  END
+
+  OUTER_PATCH ~~ BEGIN SPRINTF smoke_id_hex ~%x~ (smoke_id) END
+  OUTER_PATCH_SAVE smoke_id_hex ~%smoke_id_hex%~ BEGIN REPLACE_TEXTUALLY ~0x~ ~0x0~ END
+  OUTER_PATCH_SAVE smoke_id_resref ~%smoke_id_hex%~ BEGIN REPLACE_TEXTUALLY ~0x~ ~~ END
+
+  COPY ~%MOD_FOLDER%/ini/effect-black_sphere_trail.ini~ ~override/%smoke_id_resref%.ini~
+
+  APPEND ~animate.ids~ ~%smoke_id_hex% A7_BLACK_SPHERE_TRAIL~
+  APPEND ~anisnd.ids~ ~%smoke_id_hex% A7-SOUDS CGAMEANIMATIONTYPE_A7_BLACK_SPHERE_TRAIL~
+  CLEAR_IDS_MAP
+
+  // Black Sphere projectile
+  ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-soud.pro~ ~Black_Sphere_Bouncing~
+  COPY_EXISTING ~a7-soud.pro~ ~override~
+    WRITE_SHORT 0x134 smoke_id
+  BUT_ONLY
+
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    // installing spell
+    ADD_SPELL ~%MOD_FOLDER%/spl/%itm_resref%.spl~ 2 9 ~WIZARD_SPHERE_OF_ULTIMATE_DESTRUCTION~
+    LAF RES_NAME_OF_SPELL_NUM INT_VAR spell_num = WIZARD_SPHERE_OF_ULTIMATE_DESTRUCTION RET spl_resref = spell_res END
+    COPY_EXISTING ~%spl_resref%.spl~ ~override~
+      SAY NAME1 @1  // Sphere of Ultimate Destruction
+      SAY UNIDENTIFIED_DESC @11
+      LPF ALTER_EFFECT
+        INT_VAR
+          match_opcode = 318  // Protection from resource
+        STR_VAR
+          resource = EVAL ~%spl_resref%~
+      END
+      LPF ALTER_EFFECT
+        INT_VAR
+          match_opcode = 326  // Apply effects list
+          match_parameter2 = 146
+          parameter2 = splprot_ea_less
+      END
+      LPF ALTER_EFFECT
+        INT_VAR
+          match_opcode = 326  // Apply effects list
+          match_parameter2 = 147
+          parameter2 = splprot_ea_greater
+      END
+      GET_OFFSET_ARRAY abil_ar SPL_V10_HEADERS
+      PHP_EACH abil_ar AS _ => ofs_abil BEGIN
+        WRITE_SHORT (ofs_abil + 0x26) "a7-soud"
+      END
+    BUT_ONLY
+  END
+
+  COPY ~%MOD_FOLDER%/bam/a7-soudb.bam~      ~override~
+       ~%MOD_FOLDER%/bam/a7-souds.bam~      ~override~
+       ~%MOD_FOLDER%/bam/%itm_resref%a.bam~ ~override~
+       ~%MOD_FOLDER%/bam/%itm_resref%b.bam~ ~override~
+       ~%MOD_FOLDER%/bam/%itm_resref%c.bam~ ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%a.spl~ ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%b.spl~ ~override~
+       ~%MOD_FOLDER%/wav/a7-soud.wav~       ~override~
+
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        desc_image_resref
+    END
+    LPF ALTER_EFFECT
+      INT_VAR match_opcode = 148  // Cast spell at point
+      STR_VAR resource = EVAL ~%spl_resref%~
+    END
+    LPF ALTER_EFFECT
+      INT_VAR match_opcode = 147  // Learn spell
+      STR_VAR resource = EVAL ~%spl_resref%~
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    desc_image_resref
+  END
+END
