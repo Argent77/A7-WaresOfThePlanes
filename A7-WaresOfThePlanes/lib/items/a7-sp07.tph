@@ -50,8 +50,15 @@ ACTION_IF (has_bg2) BEGIN
   LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
   WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
     // installing spell
-    ADD_SPELL ~%MOD_FOLDER%/spl/%itm_resref%.spl~ 2 9 ~WIZARD_SPHERE_OF_ULTIMATE_DESTRUCTION~
-    LAF RES_NAME_OF_SPELL_NUM INT_VAR spell_num = WIZARD_SPHERE_OF_ULTIMATE_DESTRUCTION RET spl_resref = spell_res END
+    LAF spell_slot_available INT_VAR type = 2 level = 9 RET slot END
+    ACTION_IF (slot > 0) BEGIN
+      ADD_SPELL ~%MOD_FOLDER%/spl/%itm_resref%.spl~ 2 9 ~WIZARD_SPHERE_OF_ULTIMATE_DESTRUCTION~
+      LAF RES_NAME_OF_SPELL_NUM INT_VAR spell_num = WIZARD_SPHERE_OF_ULTIMATE_DESTRUCTION RET spl_resref = spell_res END
+    END ELSE BEGIN
+      COPY ~%MOD_FOLDER%/spl/%itm_resref%.spl~ ~override~
+      OUTER_SPRINT spl_resref ~%itm_resref%~
+    END
+
     COPY_EXISTING ~%spl_resref%.spl~ ~override~
       SAY NAME1 @1  // Sphere of Ultimate Destruction
       SAY UNIDENTIFIED_DESC @11

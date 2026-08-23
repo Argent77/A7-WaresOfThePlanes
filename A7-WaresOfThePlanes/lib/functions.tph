@@ -421,6 +421,52 @@ END
 
 
 /**
+ * Checks SPELL.IDS whether the specified spell slot range contains open slots.
+ *
+ * INT_VAR type           Spell type to check, in range 1 to 4. Default: 2 (wizard spells)
+ * INT_VAR level          The spell level to check, in range 0 to 9. Default: 1
+ * INT_VAR visible_only   Whether to check only slot ranges that are exposed through the automatic spell assignment.
+ *                        Default: automatic (on for priest and wizard spells, off otherwise)
+ * RET slot               The first unoccupied spell slot in the given range. -1 if no slots are available.
+ */
+DEFINE_DIMORPHIC_FUNCTION spell_slot_available
+INT_VAR
+  type = 2
+  level = 1
+  visible_only = "-1"
+RET
+  slot
+BEGIN
+  OUTER_SET slot = "-1"
+  ACTION_IF (type > 0 && type < 5 && level >= 0 && level < 10) BEGIN
+    ACTION_DEFINE_ARRAY spl_prefixes BEGIN ~MARW~ ~SPPR~ ~SPWI~ ~SPIN~ ~SPCL~ END
+    OUTER_SPRINT spl_prefix $spl_prefixes(~%type%~)
+    OUTER_SET is_spell = (type == 1 || type == 2)
+    OUTER_SET visible_only = (visible_only < 0 && is_spell) || (visible_only > 0)
+    OUTER_SET min_slot = (type * 1000) + (level * 100) + is_spell
+    OUTER_SET max_slot = (type * 1000) + (level * 100) + (visible_only ? 49 : 99)
+    OUTER_PATCH ~~ BEGIN
+      FOR (id = min_slot; id <= max_slot; ++id) BEGIN
+        // mark as "unoccupied" only if both IDS entry and associated SPL resref don't exist
+        LOOKUP_IDS_SYMBOL_OF_INT label ~spell~ id
+        PATCH_IF (IS_AN_INT ~label~ && label == id) BEGIN
+          PATCH_IF (id < 10) BEGIN
+            SPRINT spl_resref ~%spl_prefix%%level%0%id%~
+          END ELSE BEGIN
+            SPRINT spl_resref ~%spl_prefix%%level%%id%~
+          END
+          PATCH_IF (NOT FILE_EXISTS_IN_GAME ~%spl_resref%.SPL~) BEGIN
+            SET slot = id
+            SET id = max_slot + 1
+          END
+        END
+      END
+    END
+  END
+END
+
+
+/**
  * Returns the title of the specified class as strref.
  *
  * STR_VAR class_name   Symbolic class name or numeric class id to look up.
