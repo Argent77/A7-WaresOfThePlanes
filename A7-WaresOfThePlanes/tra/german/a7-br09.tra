@@ -1,0 +1,30 @@
+// Chains of Mechanus
+
+@0 = ~Goldene Kette~
+@1 = ~Ketten von Mechanus~
+
+@10 = ~Die Kettenglieder scheinen aus Gold zu bestehen und werden durch eine unbekannte Kraft zusammengehalten.
+
+EIGENSCHAFTEN:
+
+Gewicht: 2~
+@11 = ~Diese Ketten bestehen aus einer goldenen Adamantitverbindung und einigen weiteren unbekannten Materialien. Sie werden durch robuste Energiefäden zusammengehalten.
+
+Sie waren einst Teil einer gewaltigen Modronmaschine, die die Prognose berechnete, dass freier Wille statistisch gesehen unmöglich sei. Die Maschine wurde jedoch von Agenten aus Limbo zerstört, bevor sie ihre Schlussfolgerung beweisen konnte. Viele Teile der zerstörten Maschine, darunter auch diese Ketten, wurden durch die Wucht der Explosion über diverse Existenzebenen hinweggeschleudert. Einige Jahre später wurden sie von einem Erkundungstrupp der Revolutionsliga auf Acheron entdeckt und zurück nach Sigil gebracht.
+
+Die Magie des Artefakts reagiert stark auf die ethischen Überzeugungen ihres Trägers. Je mehr sie von der reinen Lehre der Rechtschaffenheit und Logik abweichen, umso stärker „kämpft“ die Magie dagegen an und beeinträchtigt die Konzentration des Trägers.
+
+EIGENSCHAFTEN:
+
+Rechtschaffend: Bonus von -2 auf Rüstungsklasse und Rettungswürfe
+Neutral: Zufälliger Bonus von 0 bis -2 auf Rüstungsklasse und Rettungswürfe
+Chaotisch: Zufälliger Malus oder Bonus von +2 bis -2 auf Rüstungsklasse und Rettungswürfe
+
+Aura der Koordination: Verbündete in 2,5 m Radius des Trägers erhalten die Effekte in abgeschwächter Form
+ Rechtschaffend: Bonus von -1 auf Rüstungsklasse und Rettungswürfe
+ Neutral: 50% Wahrscheinlichkeit eines -1 Bonus auf Rüstungsklasse und Rettungswürfe
+ Chaotisch: Zufälliger Malus oder Bonus von +1 bis -1 auf Rüstungsklasse und Rettungswürfe
+
+Gewicht: 2~
+
+@20 = ~Aura der Koordination~

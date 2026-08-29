@@ -1,0 +1,90 @@
+// Item: Chains of Mechanus
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-br09~
+
+ACTION_IF (has_sod || has_bg2) BEGIN
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        desc_image_resref
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    desc_image_resref
+  END
+
+  // adding new SPLPROT.2DA entry
+  LAF get_splprot_entry
+    INT_VAR
+      stat = 0x104
+      value = 59
+      relation = 61
+    STR_VAR
+      name = ~*_ENTRIES!=(59||61)~
+    RET
+      splprot_ceneutral = index
+  END
+
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    // adding new STATDESC.2DA entry
+    LAF add_statdesc_entry
+      INT_VAR strref = RESOLVE_STR_REF(@20) // Aura of Coordination
+      STR_VAR resref = EVAL ~%itm_resref%d~
+      RET stat_index = index
+    END
+    ACTION_IF (stat_index < 0) BEGIN
+      OUTER_SET stat_index = 49
+    END
+  END
+
+  // installing projectile
+  ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-br09.pro~ ~AoE_8_ft_Party_Only~
+
+  COPY ~%MOD_FOLDER%/bam/%itm_resref%d.bam~ ~override~
+       ~%MOD_FOLDER%/eff/%itm_resref%a.eff~ ~override~
+       ~%MOD_FOLDER%/eff/%itm_resref%b.eff~ ~override~
+
+  COPY ~%MOD_FOLDER%/spl/%itm_resref%a.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 326  // Apply effects list
+        match_parameter2 = 255
+        parameter2 = splprot_ceneutral
+    END
+
+  COPY ~%MOD_FOLDER%/spl/%itm_resref%b.spl~ ~override~
+    GET_OFFSET_ARRAY abil_ar SPL_V10_HEADERS
+    PHP_EACH abil_ar AS _ => ofs_abil BEGIN
+      WRITE_SHORT (ofs_abil + 0x26) "a7-br09"
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 326  // Apply effects list
+        match_parameter2 = 255
+        parameter2 = splprot_ceneutral
+    END
+
+  COPY ~%MOD_FOLDER%/spl/%itm_resref%c.spl~ ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%d.spl~ ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%e.spl~ ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%f.spl~ ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%g.spl~ ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%h.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 142  // Display portrait icon
+        match_parameter2 = 49
+        parameter2 = stat_index
+    END
+END
