@@ -255,7 +255,7 @@ END
 IF ~~ grimoire.task3.1
   SAY @193 /* Excellent. You have proven yourself a worthy student. This, then, is the final power I can grant you. */
   ++ @194 /* Thanks, book. */
-      DO ~SetGlobal("A7-Grimoire","GLOBAL",8) EraseJournalEntry(@303) ApplySpellRES("a7-mi09e",LastTalkedToBy) ActionOverride(LastTalkedToBy,RemoveSpellRES("a7-mi09d"))~
+      DO ~SetGlobal("A7-Grimoire","GLOBAL",8) EraseJournalEntry(@303) ApplySpellRES("a7-mi09e",LastTalkedToBy) ActionOverride(LastTalkedToBy,RemoveSpellRES("a7-mi09d",LastTalkedToBy))~
       UNSOLVED_JOURNAL @304 /* Dark Temptations  The book has granted me yet another, more powerful power in exchange for the death of an innocent person - a worthy trade. */
       + grimoire.task3.finished
 END
