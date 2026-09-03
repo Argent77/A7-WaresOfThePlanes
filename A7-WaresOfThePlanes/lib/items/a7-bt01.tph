@@ -1,0 +1,101 @@
+// Item: Spitewalkers
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-bt01~
+
+// checking available spell state slots
+ACTION_IF (is_eeex_spellstates) BEGIN
+  LOG ~EEex detected: Adjusting spell slot indices accordingly.~
+  OUTER_SET start_slot = 256
+  OUTER_SET slots_available = 1024
+END ELSE BEGIN
+  OUTER_SET start_slot = 0
+  OUTER_SET slots_available = 256
+END
+COPY_EXISTING ~splstate.ids~ ~override~
+  LPF ids_slots_available
+    INT_VAR start_slot slots_available
+    RET splstate_free = count
+    RET_ARRAY splstate_free_table = slots
+  END
+BUT_ONLY
+
+OUTER_SET can_install = (splstate_free > 0)
+
+ACTION_IF (can_install) BEGIN
+  // installing SPLSTATE.IDS entry
+  OUTER_SET splstate_id = $splstate_free_table(~0~)
+  APPEND ~splstate.ids~ ~%splstate_id% A7_SPITEWALKERS~
+  CLEAR_IDS_MAP
+
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        desc_image_resref
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 328  // Set spell state
+        match_parameter2 = 127
+        parameter2 = splstate_id
+    END
+
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    desc_image_resref
+  END
+
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    // adding new STATDESC.2DA entry
+    LAF add_statdesc_entry
+      INT_VAR strref = RESOLVE_STR_REF(@20) // Pain
+      STR_VAR resref = EVAL ~%itm_resref%d~
+      RET stat_index = index
+    END
+    ACTION_IF (stat_index < 0) BEGIN
+      OUTER_SET stat_index = 137  // Fallback: Bleeding
+    END
+  END
+
+  COPY ~%MOD_FOLDER%/bam/%itm_resref%d.bam~ ~override~
+
+  COPY_EXISTING ~%itm_resref%.itm~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 142  // Display portrait icon
+        match_parameter2 = 256
+        parameter2 = stat_index
+    END
+  BUT_ONLY
+
+  COPY ~%MOD_FOLDER%/spl/%itm_resref%a.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 318  // Protection from resource
+        match_parameter1 = 127
+        match_parameter2 = 111
+        parameter1 = splstate_id
+    END
+
+  COPY ~%MOD_FOLDER%/spl/%itm_resref%b.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 318  // Protection from resource
+        match_parameter1 = 127
+        match_parameter2 = 111
+        parameter1 = splstate_id
+    END
+
+END ELSE BEGIN
+  WARN ~No free spell state slots found: Skipping installation of Spitewalkers~
+END

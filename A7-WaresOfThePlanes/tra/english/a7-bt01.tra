@@ -1,0 +1,25 @@
+// Spitewalkers
+
+@0 = ~Riveted Leather Boots~
+@1 = ~Spitewalkers~
+
+// @10 = ~~  // #6824
+@11 = ~Forged in the infernal forges of Avernus, the Spitewalkers were originally crafted for a devilish torturer who believed that anger was the purest fuel for violence. Their dark leather is studded with tiny inward-facing barbs of infernal iron. The wearer feels a sharp sting with every step, and the pain never quite fades.
+
+The agony slowly infects the wearer’s temperament, leaving them irritable, impatient, and constantly on edge. In combat, this manifests as a dangerous aggression: the wearer gains a bonus to melee damage and attack rolls but suffers a penalty to missile attacks, as they are too agitated to calmly aim. The constant torment also disrupts concentration, giving the wearer a chance of spell failure whenever they attempt to cast a spell.
+
+The barbs cannot be removed without damaging the boots, and those who attempt to discard the Spitewalkers often find themselves inexplicably putting them back on, unless a Remove Curse spell is used.
+
+STATISTICS:
+
+Equipped abilities:
+– Damage (melee): +2 bonus
+– THAC0 (melee): +2 bonus
+– THAC0 (ranged): -4 penalty
+– Casting failure: 25%
+– Inflicts 1d2 points of piercing damage per round while the wearer is moving during combat
+– May only be removed with a Remove Curse spell
+
+Weight: 2~
+
+@20 = ~Pain~

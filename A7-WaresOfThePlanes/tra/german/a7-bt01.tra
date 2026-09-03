@@ -1,0 +1,26 @@
+// Spitewalkers
+
+@0 = ~Genietete Lederstiefel~
+@1 = ~Zornläufer~
+
+// @10 = ~~  // #6824
+@11 = ~Die Zornläufer wurden in den höllischen Schmieden von Avernus geschmiedet und ursprünglich für einen teuflischen Folterknecht angefertigt, der glaubte, dass Zorn der reinste Nährstoff für Gewalt sei. Ihr dunkles Leder ist mit winzigen, nach innen gerichteten Widerhaken aus höllischem Eisen übersät. Der Träger verspürt bei jedem Schritt einen scharfen Stich, und der Schmerz lässt nie ganz nach.
+
+Die Qualen beeinflussen langsam das Temperament des Trägers und machen ihn reizbar, ungeduldig und ständig nervös. Im Kampf äußert sich dies in einer gefährlichen Aggression: Der Träger erhält einen Bonus auf Angriff und Schaden im Nahkampf, erleidet jedoch einen Malus auf Fernkampfangriffe, da er zu aufgeregt ist, um ruhig zu zielen. Die ständige Qual stört zudem die Konzentration, sodass der Träger bei jedem Versuch, einen Zauber zu wirken, die Chance hat zu scheitern.
+
+Die Widerhaken lassen sich nicht entfernen, ohne die Stiefel zu beschädigen. Und wer versucht, die Stiefel abzulegen, zieht sie oft aus unerklärlichen Gründen wieder an, es sei denn, es wird der Zauber „Fluch brechen“ gewirkt.
+
+EIGENSCHAFTEN:
+
+Kann nur durch „Fluch brechen“ wieder abgenommen werden.
+
+Verursacht 1W2 Schadenspunkte pro Runde, wenn sich der Träger im Kampf bewegt.
+
+Schadensbonus (Nahkampf): +2
+ETW0-Bonus (Nahkampf): -2
+ETW0-Malus (Fernkampf): +4
+Zauber scheitern zu 25 %
+
+Gewicht: 2~
+
+@20 = ~Schmerz~
