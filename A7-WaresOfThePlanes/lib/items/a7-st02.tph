@@ -1,0 +1,81 @@
+// Item: Herder's Revenge
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-st02~
+
+// splprot filters used by the item
+LAF get_splprot_entry
+  INT_VAR stat = 36 value = "-1" relation = 1
+  STR_VAR name = ~*_STAT(STR)=n~
+  RET stat_str_eq_idx = index
+END
+LAF get_splprot_entry
+  INT_VAR stat = 0x10c value = "-1" relation = 4
+  STR_VAR name = ~*_RACE>=n~
+  RET race_ge_idx = index
+END
+LAF get_splprot_entry
+  INT_VAR stat = 0x10c value = "-1" relation = 2
+  STR_VAR name = ~*_RACE<n~
+  RET race_lt_idx = index
+END
+
+// Installing item
+COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+  LPF update_item_generic
+    STR_VAR
+      itm_resref
+    RET
+      icon_resref
+      desc_image_resref
+  END
+  LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 0
+      check_headers = 1
+      match_opcode = 326  // Apply effects list
+      match_parameter2 = 125
+      parameter2 = stat_str_eq_idx
+  END
+
+// Installing associated resources
+LAF install_item_resources_generic
+STR_VAR
+  itm_resref
+  icon_resref
+  desc_image_resref
+END
+
+COPY ~%MOD_FOLDER%/spl/%itm_resref%a.spl~ ~override~
+     ~%MOD_FOLDER%/spl/%itm_resref%b.spl~ ~override~
+     ~%MOD_FOLDER%/spl/%itm_resref%c.spl~ ~override~
+     ~%MOD_FOLDER%/spl/%itm_resref%d.spl~ ~override~
+     ~%MOD_FOLDER%/spl/%itm_resref%e.spl~ ~override~
+     ~%MOD_FOLDER%/spl/%itm_resref%f.spl~ ~override~
+     ~%MOD_FOLDER%/spl/%itm_resref%g.spl~ ~override~
+     ~%MOD_FOLDER%/spl/%itm_resref%h.spl~ ~override~
+     ~%MOD_FOLDER%/spl/%itm_resref%i.spl~ ~override~
+     ~%MOD_FOLDER%/spl/%itm_resref%j.spl~ ~override~
+     ~%MOD_FOLDER%/spl/%itm_resref%x.spl~ ~override~
+     ~%MOD_FOLDER%/spl/%itm_resref%y.spl~ ~override~
+
+LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+  COPY ~%MOD_FOLDER%/spl/%itm_resref%k.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        check_globals = 0
+        check_headers = 1
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@20) // Vorpal Hit
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        check_globals = 0
+        check_headers = 1
+        match_opcode = 324  // Immunity to resource and message
+        parameter1 = 10
+        parameter2 = race_ge_idx
+    END
+END

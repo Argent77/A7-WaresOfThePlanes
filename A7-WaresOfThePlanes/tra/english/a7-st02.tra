@@ -1,0 +1,62 @@
+// Herder's Revenge
+
+@0 = ~Shepherd's Crook~
+@1 = ~Herder's Revenge~
+
+@10 = ~A shepherd's crook is a long sturdy stick with a hook at one end. It is primarily used as a tool for herding livestock. The hook can be used to catch sheep or other animals. As a weapon it serves as an aid to defend against predators or other threats.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1 vs. crushing and slashing weapons
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+
+Weight: 4~
+@11 = ~At first glance, this unremarkable wooden crook seems scarcely worthy of a place in an adventurer's pack, let alone a place among enchanted weapons. It is exceptionally light and resembles nothing more than the humble tool it was made to be. Such appearances, however, can be deceiving.
+
+Legend claims that it once belonged to a humble shepherd in the Dalelands, driven from his land by a cruel and wealthy lord. After losing his home, his flock, and his wife, the shepherd prayed to Hoar, god of vengeance. The god heard his plea and imbued the crook with the power to exact retribution.
+
+Though the shepherd had never wielded a weapon in his life, he found himself suddenly able to evade and parry the attacks of even the landowner's most skilled guards. Yet the gift came at a price, and with every blow the shepherd's strength ebbed away.
+
+At last, seeing his guards defeated, the landowner cast aside his pride and begged for mercy. It was a deception, however. As he secretly drew a dagger, he waited for the moment to strike but never found it. In a flash, the crook's tip pierced his chest, and the shepherd's vengeance was complete. With his purpose fulfilled, the exhausted shepherd dropped the crook and collapsed beside his fallen enemy. Whether he died from his wounds, his exhaustion, or the price demanded by Hoar is unknown.
+
+The crook retains its strange blessing to this day. In the hands of a seasoned warrior, it is little more than a training weapon or shepherd's tool. Those lacking courage or skill, however, may find themselves possessed of unnatural reflexes and strength, enough to stand against foes far their better. Each successful blow, however, exacts a price, draining a portion of the wielder's life force.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1 vs. crushing and slashing weapons
+– THAC0 bonus, attack rate, and weapon enchantment is based on the wielder's constitution:
+  1-2: +5 THAC0, +1 attack per round, +5 enchantment
+  3-4: +4 THAC0, +1/2 attack per round, +4 enchantment
+  5-7: +3 THAC0, +3 enchantment
+  8-10: +2 THAC0, +2 enchantment
+  11-14: +1 THAC0, +1 enchantment
+  15 and higher: no bonuses
+
+Combat abilities:
+– Each successful hit drains one hit point of the wielder. If only one hit point is left then the wielder either passes out or turns berserk for one or two rounds.
+– Damage and chance of a vorpal effect is based on the wielder's strength:
+  1: 1d6+8, 10% chance that humanoid creatures must save vs. Death or die
+  2: 1d6+6, 5% chance that humanoid creatures must save vs. Death or die
+  3: 1d6+5, 1% chance that humanoid creatures must save vs. Death or die
+  4: 1d6+4
+  5: 1d6+3
+  6: 1d6+2
+  7-8: 1d6+1
+  9-10: 1d6
+  11-14: 1d4
+  15 and higher: 1
+
+Damage: special (crushing)
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+
+Weight: 1~
+
+@20 = ~Vorpal Hit~
