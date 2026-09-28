@@ -1,0 +1,94 @@
+// Item: Flash Grenade
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-mi19~
+
+ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-mi19.pro~ ~Flash_Grenade_AoE~
+
+// Adding SPLPROT filter
+LAF get_splprot_entry
+  INT_VAR
+    stat = 0x104    // Negate match of two entries
+    value = 16      // RACE!=ELF
+    relation = 38   // ALIGNMENT!=EVIL
+  STR_VAR
+    name = EVAL ~*_ENTRIES!=(16||38)~
+  RET
+    splprot_evil_elf = index
+END
+
+// Installing item
+COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+  LPF update_item_generic
+    STR_VAR
+      itm_resref
+    RET
+      icon_resref
+      desc_image_resref
+  END
+  GET_OFFSET_ARRAY abil_arr ITM_V10_HEADERS
+  PHP_EACH abil_arr AS _ => ofs BEGIN
+    WRITE_SHORT (ofs + 0x2a) "a7-mi19"  // projectile index
+  END
+  LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 0
+      check_headers = 1
+      match_opcode = 326  // Apply effects list
+      match_parameter2 = 146
+      parameter2 = splprot_evil_elf
+  END
+
+// Installing associated resources
+LAF install_item_resources_generic
+STR_VAR
+  itm_resref
+  icon_resref
+  desc_image_resref
+END
+
+LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+  // "Dazed" status
+  LAF add_statdesc_entry
+    INT_VAR strref = RESOLVE_STR_REF(@20) // Dazed
+    STR_VAR resref = EVAL ~%itm_resref%d~
+    RET statdesc_index = index
+  END
+
+  COPY ~%MOD_FOLDER%/spl/%itm_resref%b.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        check_globals = 0
+        check_headers = 1
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@20) // Dazed
+    END
+    LPF ALTER_EFFECT
+      INT_VAR
+        check_globals = 0
+        check_headers = 1
+        match_opcode = 142  // Display portrait icon
+        parameter2 = statdesc_index
+    END
+END
+
+// defining custom sequence for throwing the grenade
+// Note: Because of an engine bug the sequence value has to be written as a raw byte value.
+//       EEex fixed that behavior.
+ACTION_IF (is_eeex) BEGIN
+  OUTER_SET seq = IDS_OF_SYMBOL(~seq~ ~SEQ_SHOOT~)
+END ELSE BEGIN
+  OUTER_PATCH_SAVE seq ~ ~ BEGIN WRITE_BYTE 0 IDS_OF_SYMBOL(~seq~ ~SEQ_SHOOT~) END
+END
+APPEND ~itemanim.2da~ ~%itm_resref%    %seq%~
+
+COPY ~%MOD_FOLDER%/spl/%itm_resref%a.spl~ ~override~
+     ~%MOD_FOLDER%/bam/%itm_resref%d.bam~ ~override~
+     ~%MOD_FOLDER%/bam/%itm_resref%m.bam~ ~override~
+     ~%MOD_FOLDER%/bam/%itm_resref%r.bam~ ~override~
+     ~%MOD_FOLDER%/bam/%itm_resref%s.bam~ ~override~
+     ~%MOD_FOLDER%/bam/%itm_resref%x.bam~ ~override~
+     ~%MOD_FOLDER%/vvc/%itm_resref%m.vvc~ ~override~
+     ~%MOD_FOLDER%/vvc/%itm_resref%x.vvc~ ~override~

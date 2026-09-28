@@ -1,0 +1,23 @@
+// Flash Grenade
+
+@0 = ~Explosive~
+@1 = ~Flash Grenade~
+
+@10 = ~Explosives consist of volatile substances that can produce an explosion if released suddenly, usually accompanied by the production of light, heat, sound, or pressure. It can either be thrown or triggered remotely to unleash their potential. Since the effect is usually not magical in nature it may affect even creatures that are resistant to magic.
+
+STATISTICS:
+
+Weight: 1~
+@11 = ~The flash grenade is a non-lethal explosive that was originally invented by the deep gnomes to disorientate and blind their foes. In order to set it off, it has to be thrown. The impact would cause the grenade to explode out into a brilliant flare of light. Nearby creatures will be dazed by the effect. Furthermore, creatures with light-sensitive eyes, such as the majority of the denizens of the Underdark, would additionally be blinded. Since the effect is caused by mundane means it would even bypass magical resistances.
+
+STATISTICS:
+
+Charge abilities:
+– Flare of Light in 15 ft. radius
+  Affected creatures are dazed for one turn (-2 penalty to AC and THAC0) if they fail their Save vs. Breath.
+  Light-sensitive creatures, such as Beholders, Kuo-toa, Orcs, Kobolds, Sahuagin, Drow, Dwarves, or Gnomes, must save vs. Breath at -4 or become blinded for one turn (-4 penalty to AC and THAC0.)
+  Blind creatures and creatures that don't rely on eyesight are immune to the effect.
+
+Weight: 1~
+
+@20 = ~Dazed~

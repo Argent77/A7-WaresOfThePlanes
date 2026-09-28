@@ -1,0 +1,22 @@
+// Flash Grenade
+
+@0 = ~Sprengkörper~
+@1 = ~Blendgranate~
+
+@10 = ~Ein Sprengkörper besteht aus flüchtigen Stoffen, die eine Explosion herbeiführen können, wenn sie unmittelbar freigesetzt werden. Sie geht in der Regel mit der Entstehung von Licht, Wärme, Schall oder Druck einher. Sprengkörper können geworfen oder ferngesteuert gezündet werden, um ihr Potenzial freizusetzen. Da dieser Effekt üblicherweise nicht magisch ist, kann er sogar Wesen mit magischen Resistenzen betreffen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 1~
+@11 = ~Die Blendgranate ist ein nicht-tödlicher Sprengkörper, der ursprünglich von den Tiefengnomen erfunden wurde, um ihre Feinde zu desorientieren und zu blenden. Um sie zu zünden, muss sie geworfen werden. Durch den Aufprall explodiert die Granate und erzeugt einen grellen Lichtblitz. Bei Wesen in der Nähe löst dieser Effekt Benommenheit aus. Darüber hinaus werden Wesen mit lichtempfindlichen Augen, wie es bei der Mehrheit der Bewohner des Unterreichs der Fall ist, zusätzlich geblendet. Da der Effekt durch natürliche Mittel hervorgerufen wird, umgeht er sogar magische Resistenzen.
+
+EIGENSCHAFTEN:
+
+Lichtblitz in 4,5 m Radius
+ Betroffene Wesen sind für die Dauer einer Phase benommen (+2 Malus auf RK und ETW0), wenn ihnen ein Rettungswurf gegen Odemwaffen misslingt.
+ Lichtempfindliche Wesen, wie z.B. Betrachter, Kuo-Toa, Orks, Kobolde, Sahuagin, Drow, Zwerge oder Gnome, müssen einen Rettungswurf mit einem Malus von -4 gegen Odemwaffen bestehen oder erblinden für eine Phase (+4 Malus auf RK und ETW0).
+ Blinde Wesen und Wesen, die sich nicht auf ihr Augenlicht verlassen, sind gegenüber dem Effekt immun.
+
+Gewicht: 1~
+
+@20 = ~Benommen~
