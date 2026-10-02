@@ -1,0 +1,127 @@
+// Item: Gnome Flinger
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-mi20~
+
+ACTION_IF (has_bg2) BEGIN
+  ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-scfd.pro~ ~Flinged_Female_Dwarf~
+  ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-scfgh.pro~ ~Flinged_Female_Gnome_or_Halfling~
+  ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-scmdg.pro~ ~Flinged_Male_Dwarf_or_Gnome~
+  ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-scmh.pro~ ~Flinged_Male_Halfling~
+
+  // Adding SPLPROT filters
+  LAF get_splprot_entry
+    INT_VAR stat = 0x10c value = IDS_OF_SYMBOL(~race~ ~DWARF~) relation = 1
+    STR_VAR name = ~*_RACE=DWARF~
+    RET splprot_race_dwarf = index
+  END
+  LAF get_splprot_entry
+    INT_VAR stat = 0x10c value = IDS_OF_SYMBOL(~race~ ~HALFLING~) relation = 1
+    STR_VAR name = ~*_RACE=HALFLING~
+    RET splprot_race_halfling = index
+  END
+  LAF get_splprot_entry
+    INT_VAR stat = 0x10c value = IDS_OF_SYMBOL(~race~ ~GNOME~) relation = 1
+    STR_VAR name = ~*_RACE=GNOME~
+    RET splprot_race_gnome = index
+  END
+  LAF get_splprot_entry
+    INT_VAR stat = 0x103 value = splprot_race_dwarf relation = splprot_race_halfling
+    STR_VAR name = EVAL ~*_ENTRIES=(%splprot_race_dwarf%||%splprot_race_halfling%)~
+    RET splprot_entries_dwarf_halfling = index
+  END
+  LAF get_splprot_entry
+    INT_VAR stat = 0x104 value = splprot_race_gnome relation = splprot_entries_dwarf_halfling
+    STR_VAR name = EVAL ~*_ENTRIES=(%splprot_race_gnome%||%splprot_entries_dwarf_halfling%)~
+    RET splprot_entries_shorties = index
+  END
+
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        ground_icon_resref
+        desc_image_resref
+    END
+    PATCH_FOR_EACH match_opcode IN 326 318 BEGIN
+      LPF ALTER_EFFECT
+        INT_VAR
+          check_globals = 0
+          check_headers = 1
+          match_opcode
+          parameter2 = splprot_entries_shorties
+      END
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    ground_icon_resref
+    desc_image_resref
+  END
+
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    // installing race-specific subspells
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY spl_pros BEGIN
+      // spl resref => projectile index
+      ~a7-scfd~ => ~%a7-scfd%~
+      ~a7-scfg~ => ~%a7-scfgh%~
+      ~a7-scfh~ => ~%a7-scfgh%~
+      ~a7-scmd~ => ~%a7-scmdg%~
+      ~a7-scmg~ => ~%a7-scmdg%~
+      ~a7-scmh~ => ~%a7-scmh%~
+    END
+    ACTION_PHP_EACH spl_pros AS spl_resref => pro_idx BEGIN
+      COPY ~%MOD_FOLDER%/spl/%spl_resref%.spl~ ~override~
+        GET_OFFSET_ARRAY abil_arr ITM_V10_HEADERS
+        PHP_EACH abil_arr AS _ => ofs BEGIN
+          WRITE_SHORT (ofs + 0x26) pro_idx
+        END
+    END
+
+    COPY ~%MOD_FOLDER%/spl/%itm_resref%a.spl~ ~override~
+      LPF ALTER_EFFECT
+        INT_VAR
+          check_globals = 0
+          check_headers = 1
+          match_opcode = 139  // Display string
+          parameter1 = RESOLVE_STR_REF(@20) // Flinger is being prepared...
+      END
+
+    COPY ~%MOD_FOLDER%/spl/%itm_resref%x.spl~ ~override~
+      LPF ALTER_EFFECT
+        INT_VAR
+          check_globals = 0
+          check_headers = 1
+          match_opcode = 139  // Display string
+          parameter1 = RESOLVE_STR_REF(@21) // Unable to use the flinger
+      END
+  END
+
+  COPY ~%MOD_FOLDER%/bam/a7-scfd.bam~       ~override~
+       ~%MOD_FOLDER%/bam/a7-scfgh.bam~      ~override~
+       ~%MOD_FOLDER%/bam/a7-scmdg.bam~      ~override~
+       ~%MOD_FOLDER%/bam/a7-scmh.bam~       ~override~
+       ~%MOD_FOLDER%/bmp/%itm_resref%x.bmp~ ~override~
+       ~%MOD_FOLDER%/eff/a7-scfd1.eff~      ~override~
+       ~%MOD_FOLDER%/eff/a7-scfd2.eff~      ~override~
+       ~%MOD_FOLDER%/eff/a7-scfg1.eff~      ~override~
+       ~%MOD_FOLDER%/eff/a7-scfg2.eff~      ~override~
+       ~%MOD_FOLDER%/eff/a7-scfh1.eff~      ~override~
+       ~%MOD_FOLDER%/eff/a7-scfh2.eff~      ~override~
+       ~%MOD_FOLDER%/eff/a7-scmd1.eff~      ~override~
+       ~%MOD_FOLDER%/eff/a7-scmd2.eff~      ~override~
+       ~%MOD_FOLDER%/eff/a7-scmg1.eff~      ~override~
+       ~%MOD_FOLDER%/eff/a7-scmg2.eff~      ~override~
+       ~%MOD_FOLDER%/eff/a7-scmh1.eff~      ~override~
+       ~%MOD_FOLDER%/eff/a7-scmh2.eff~      ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%b.spl~ ~override~
+       ~%MOD_FOLDER%/vvc/%itm_resref%x.vvc~ ~override~
+END
