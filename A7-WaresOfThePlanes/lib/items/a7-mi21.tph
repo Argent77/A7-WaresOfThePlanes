@@ -1,0 +1,66 @@
+// Item: Impervious Sphere
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-mi21~
+OUTER_SPRINT itm_resref_upper ~%itm_resref%~
+
+ACTION_IF (has_sod || has_bg2) BEGIN
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        ground_icon_resref
+        desc_image_resref
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    ground_icon_resref
+    desc_image_resref
+  END
+
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    // installing portrait icon
+    LAF add_statdesc_entry
+      INT_VAR
+        strref = RESOLVE_STR_REF(@20) // Impervious Sphere
+      STR_VAR
+        resref = EVAL ~%itm_resref_upper%D~
+      RET
+        statdesc_idx = index
+    END
+
+    COPY ~%MOD_FOLDER%/spl/%itm_resref%p.spl~ ~override~
+    LPF ALTER_EFFECT
+      INT_VAR
+        match_opcode = 142  // Display portrait icon
+        parameter2 = statdesc_idx
+    END
+
+    COPY ~%MOD_FOLDER%/spl/%itm_resref%y.spl~ ~override~
+      LPF ALTER_EFFECT
+        INT_VAR
+          match_opcode = 139  // Display string
+          parameter1 = RESOLVE_STR_REF(@21) // Suffocation
+      END
+  END
+
+  COPY ~%MOD_FOLDER%/bam/%itm_resref%a.bam~ ~override~
+       ~%MOD_FOLDER%/bam/%itm_resref%d.bam~ ~override~
+       ~%MOD_FOLDER%/eff/%itm_resref%x.eff~ ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%a.spl~ ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%b.spl~ ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%c.spl~ ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%d.spl~ ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%x.spl~ ~override~
+       ~%MOD_FOLDER%/vvc/%itm_resref%a.vvc~ ~override~
+       ~%MOD_FOLDER%/wav/aft_m05.wav~       ~override~
+END
