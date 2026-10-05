@@ -1,0 +1,30 @@
+// Chalice of the Silver Sea
+
+@0 = ~Golden Chalice~
+@1 = ~Chalice of the Silver Sea~
+
+@10 = ~This chalice appears to be made out of pure gold and radiates a soothing aura.
+
+STATISTICS:
+
+Weight: 2~
+@11 = ~This chalice is said to hold a single, unending drop of the holy waters that surround Mount Celestia. No matter how much is drawn from it, the drop is never diminished, and its waters gleam with a soft silver radiance.
+
+Once per day, the bearer may drink from the chalice to purge poison or disease and restore the body to health. For those of good alignment, the chalice offers an even greater blessing: its sacred waters may restore spells that have already been cast, as though the grace of Celestia itself renews the faithful.
+
+For a long time the relic was used in holy ceremonies by the Church of Torm in Excelsior, the gate town in the Outlands that connected to Mount Celestia. A century ago a daring thief stole the chalice and fled with it to Sigil. Despite the best attempts of the priests to divine the whereabouts of the chalice, it was never found.
+
+STATISTICS:
+
+Charge abilities:
+– Divine Cure (1x/day)
+  Cures poison and disease, and heals 4d4 Hit Points.
+
+– Divine Recall (1x/day)
+  Restores two lost priest and wizard spells of level 5 or lower. This ability works only for good-aligned characters.
+
+Weight: 2~
+
+@20 = ~Divine Cure~
+@21 = ~Divine Recall~
+@22 = ~Cured~

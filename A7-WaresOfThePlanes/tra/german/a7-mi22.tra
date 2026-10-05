@@ -1,0 +1,29 @@
+// Chalice of the Silver Sea
+
+@0 = ~Goldener Kelch~
+@1 = ~Kelch der Silbernen See~
+
+@10 = ~Dieser Kelch scheint aus purem Gold zu bestehen und strahlt eine beruhigende Aura aus.
+
+EIGENSCHAFTEN:
+
+Gewicht: 2~
+@11 = ~Dieser Kelch soll einen einzigen unerschöpflichen Tropfen des heiligen Wassers enthalten, der den Berg Zelestia umgibt. Ganz gleich, wie viel davon entnommen wird, der Tropfen wird niemals kleiner, und sein Wasser schimmert in einem sanften silbernen Glanz.
+
+Einmal täglich darf der Träger aus dem Kelch trinken, um Gift oder Krankheiten aus seinem Körper zu vertreiben und seine Gesundheit wiederherzustellen. Für diejenigen mit guter Gesinnung bieter der Kelch einen noch größeren Segen: Sein heiliges Wasser kann bereits gewirkte Zauber wiederherstellen, als würde die Gnade Zelestias selbst die Gläubigen erneuern.
+
+In Excelsior, der Torstadt in den Außenländern, die mit dem Berg Zelestia verbunden war, wurde über lange Zeit hinweg diese Reliquie bei heiligen Zeremonien der Kirche von Torm verwendet. Vor einem Jahrhundert stahl ein wagemutiger Dieb den Kelch und floh damit nach Sigil. Trotz aller Bemühungen der Priester, den Verbleib des Kelchs ausfindig zu machen, wurde er nie gefunden.
+
+EIGENSCHAFTEN:
+
+Göttliche Heilung (1x täglich)
+ Kuriert Gift und Krankheiten und heilt 4W4 Trefferpunkte.
+
+Göttliches Erinnerungsvermögen (1x täglich)
+ Erlaubt es dem Anwender, sich an zwei Priester- und Magierzauber des 5. oder eines niedrigeren Grades zu erinnern, die bereits eingesetzt wurden. Diese Fähigkeit wirkt nur bei Anwendern guter Gesinnung.
+
+Gewicht: 2~
+
+@20 = ~Göttliche Heilung~
+@21 = ~Göttliches Erinnerungsvermögen~
+@22 = ~Geheilt~

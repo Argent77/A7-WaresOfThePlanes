@@ -1,0 +1,50 @@
+// Item: Chalice of the Silver Sea
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-mi22~
+
+ACTION_IF (has_sod || has_bg2) BEGIN
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        ground_icon_resref
+        desc_image_resref
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    ground_icon_resref
+    desc_image_resref
+  END
+
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    COPY ~%MOD_FOLDER%/spl/%itm_resref%a.spl~ ~override~
+      SAY NAME1 @20 // Divine Cure
+      LPF ALTER_EFFECT
+        INT_VAR
+          header = 0
+          match_opcode = 139  // Display string
+          parameter1 = RESOLVE_STR_REF(@22) // Cured
+      END
+
+    COPY ~%MOD_FOLDER%/spl/%itm_resref%e.spl~ ~override~
+      SAY NAME1 @21 // Divine Recall
+
+    OUTER_SET strref_cure = RESOLVE_STR_REF(@20)  // Divine Cure
+    OUTER_SET strref_recall = RESOLVE_STR_REF(@21)  // Divine Recall
+    APPEND ~tooltip.2da~ ~%itm_resref%   %strref_cure%      %strref_recall%      -1~
+  END
+
+  COPY ~%MOD_FOLDER%/spl/%itm_resref%b.spl~ ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%c.spl~ ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%d.spl~ ~override~
+END
