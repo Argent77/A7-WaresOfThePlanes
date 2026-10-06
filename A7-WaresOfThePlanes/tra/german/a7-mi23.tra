@@ -1,0 +1,40 @@
+// Shard of Chronias
+
+@0 = ~Kristallsplitter~
+@1 = ~Splitter von Chronias~
+
+@10 = ~Dies ist der Splitter eines Kristalls. Er ist von einer Aura der Heiligkeit umgeben.
+
+EIGENSCHAFTEN:
+
+Gewicht: 1~
+@11 = ~Über den Ursprung dieses Kristallsplitters gibt es widersprüchliche Erzählungen. Einige Gelehrte vermuten, dass es sich um ein Fragment kristallisierter Strahlkraft handelt, das vom Gipfel des Berges Zelestia herabfiel. Bislang konnte dies jedoch noch niemand bestätigen, da nur wenige behaupten können, Chronias jemals direkt gesehen zu haben. Andere Erzählungen besagen, es handele sich um das kristallisierte Herz eines mächtigen Thronarchonen, der bei der Verteidigung des Berges Zelestia fiel.
+
+Auf jeden Fall strahlt der Splitter eine überwältigende Aura höchster Güte und Rechtschaffenheit aus, der sich nur wenige entziehen können. Wird er hoch über den Kopf gehalten, deckt er jegliche Täuschung und Verdorbenheit im Blickfeld des Trägers auf.
+
+Einmal täglich kann der Träger für sich selbst und seine Verbündeten um Schutz vor den Mächten des Bösen bitten. Der Eindruck von reiner Harmonie und Frieden, der dieser Segen vermittelt, kann bei den betroffenen Charakteren eine grundlegende Sinneswandlung bewirken.
+
+EIGENSCHAFTEN:
+
+Böses entdecken (3x täglich)
+ Reichweite: Der Anwender
+ Dauer: Sofort
+ Bereich: 9 m Radius
+ Jedes böse Wesen im Wirkungsbereich leuchtet kurz rot auf.
+
+Göttliches Heiligtum (1x täglich)
+ Reichweite: Der Anwender
+ Dauer: 1 Phase
+ Bereich: 4,5 m Radius
+ Alle Verbündeten im Wirkungsbereich werden durch göttliches Heiligtum geschützt. Dadurch werden sie von allen Gegnern ignoriert, ganz so, als ob sie unsichtbar wären. Angriffe oder offensive Zauber beenden die Wirkung des Heiligtums sofort.
+ Es besteht eine Wahrscheinlichkeit von 5 %, dass betroffene Wesen ihre ethische oder moralische Gesinnung dauerhaft um einen Schritt in Richtung Rechtschaffend Gut ändern.
+
+Gewicht: 1~
+
+@20 = ~Ethische Gesinnung wandelt sich zu Neutral~
+@21 = ~Ethische Gesinnung wandelt sich zu Rechtschaffend~
+@22 = ~Moralische Gesinnung wandelt sich zu Neutral~
+@23 = ~Moralische Gesinnung wandelt sich zu Gut~
+
+@30 = ~Böses entdecken~
+@31 = ~Göttliches Heiligtum~

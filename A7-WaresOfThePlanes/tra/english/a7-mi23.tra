@@ -1,0 +1,41 @@
+// Shard of Chronias
+
+@0 = ~Crystal Shard~
+@1 = ~Shard of Chronias~
+
+@10 = ~This is the shard of a crystal. It is surrounded by an aura of holiness.
+
+STATISTICS:
+
+Weight: 1~
+@11 = ~There are conflicting tales about the origin of this crystal shard. Some scholars assume that it is a fragment of crystallized radiance that fell from the summit of Mount Celestia. However, nobody was able to confirm it yet, as few can claim to have witnessed Chronias directly. Other tales claim that it is the crystallized heart of a powerful Throne Archon who fell while defending Mount Celestia.
+
+Either way, the shard radiates an overwhelming aura of ultimate goodness and law that few can escape. If held high above the head it will expose any deception and corruption within the sight of the user.
+
+Once per day the bearer can pray for protection from the forces of evil for themselves and their allies. The impression of pure harmony and peace granted by the blessing has a chance to cause a fundamental change of heart in the characters affected.
+
+STATISTICS:
+
+Charge abilities:
+– Detect Evil (3x/day)
+  Range: The user
+  Duration: Instant
+  Area of Effect: 30-ft radius
+  Any evil creature within the range of the effect will glow red briefly.
+
+– Divine Sanctuary (1x/day)
+  Range: The user
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius
+  All allies within the range of the effect become protected by divine sanctuary, which causes opponents to ignore their existence as if they were invisible as long as they don't take direct offensive actions.
+  There is a 5% chance that affected characters permanently shift their ethical or moral alignment one step towards lawful good.
+
+Weight: 1~
+
+@20 = ~Ethical alignment changed to Neutral~
+@21 = ~Ethical alignment changed to Lawful~
+@22 = ~Moral alignment changed to Neutral~
+@23 = ~Moral alignment changed to Good~
+
+@30 = ~Detect Evil~
+@31 = ~Divine Sanctuary~

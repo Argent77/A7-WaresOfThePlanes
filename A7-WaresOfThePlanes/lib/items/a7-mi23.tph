@@ -1,0 +1,53 @@
+// Item: Shard of Chronias
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+OUTER_SPRINT itm_resref ~a7-mi23~
+
+ACTION_IF (has_bg2) BEGIN
+  // Installing item
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        ground_icon_resref
+        desc_image_resref
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    ground_icon_resref
+    desc_image_resref
+  END
+
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY align_strref BEGIN
+      ~f~ => 22   ~g~ => 22   ~h~ => 22
+      ~i~ => 23   ~j~ => 23   ~k~ => 23
+      ~l~ => 20   ~m~ => 20   ~n~ => 20
+      ~o~ => 21   ~p~ => 21   ~q~ => 21
+    END
+    ACTION_PHP_EACH align_strref AS suffix => tra_ref BEGIN
+      COPY ~%MOD_FOLDER%/spl/%itm_resref%%suffix%.spl~ ~override~
+        LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF((AT tra_ref)) END
+    END
+
+    OUTER_SET de_strref = RESOLVE_STR_REF(@30) // Detect Evil
+    OUTER_SET ds_strref = RESOLVE_STR_REF(@31) // Divine Sanctuary
+    APPEND ~tooltip.2da~ ~%itm_resref%   %de_strref%      %ds_strref%      -1~
+  END
+
+  COPY ~%MOD_FOLDER%/bmp/%itm_resref%s.bmp~ ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%a.spl~ ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%b.spl~ ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%c.spl~ ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%d.spl~ ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%e.spl~ ~override~
+       ~%MOD_FOLDER%/vvc/%itm_resref%s.vvc~ ~override~
+END
