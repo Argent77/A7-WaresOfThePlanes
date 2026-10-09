@@ -1,0 +1,148 @@
+// Items: Verminous Idol of Obox-ob
+
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+INCLUDE ~%MOD_FOLDER%/lib/find_free_anim_slot.tph~
+
+OUTER_SPRINT itm_resref ~a7-mi24~
+
+ACTION_IF (has_bg2) BEGIN
+  // installing projectile
+  ADD_PROJECTILE ~%MOD_FOLDER%/pro/a7-mi24.pro~ ~Sparkle_Area_Black_5_ft~
+
+  // Installing items
+  COPY ~%MOD_FOLDER%/itm/%itm_resref%.itm~ ~override~
+    LPF update_item_generic
+      STR_VAR
+        itm_resref
+      RET
+        icon_resref
+        ground_icon_resref
+        desc_image_resref
+    END
+    GET_OFFSET_ARRAY abil_arr ITM_V10_HEADERS
+    PHP_EACH abil_arr AS _ => ofs BEGIN
+      WRITE_SHORT (ofs + 0x2a) "a7-mi24"  // projectile index
+    END
+
+  // Installing associated resources
+  LAF install_item_resources_generic
+  STR_VAR
+    itm_resref
+    icon_resref
+    ground_icon_resref
+    desc_image_resref
+  END
+
+  COPY_EXISTING ~%itm_resref%.itm~ ~override/%itm_resref%a.itm~
+    WRITE_SHORT 0x42 0  // Lore
+
+  // installing creature animation
+  OUTER_SPRINT ini_resref  ~monster_icewind-corrupted_vermin~
+  OUTER_SPRINT ini_type    ~monster_icewind~
+  OUTER_SPRINT bam_resref  ~mcrd~
+  OUTER_SPRINT wav_resref1 ~creep~
+  OUTER_SPRINT wav_resref2 ~bf_sm~
+  OUTER_SPRINT ids_label   ~A7_CORRUPTED_VERMIN~
+  LAF FIND_FREE_ANIM_SLOT STR_VAR type = EVAL ~%ini_type%~ RET anim_slot = slot END
+
+  ACTION_IF (anim_slot > 0) BEGIN
+    OUTER_PATCH ~~ BEGIN
+      SPRINTF slot_hex ~%x~ (anim_slot)
+      INNER_PATCH_SAVE slot_hex ~%slot_hex%~ BEGIN DELETE_BYTES 0 2 END
+      WHILE (STRING_LENGTH ~%slot_hex%~ < 4) BEGIN SPRINT slot_hex ~0%slot_hex%~ END
+    END
+
+    // installing INI file
+    COPY ~%MOD_FOLDER%/ini/%ini_resref%.ini~ ~override/%slot_hex%.ini~
+         ~%MOD_FOLDER%/bmp/a7-mcrd.bmp~      ~override~
+
+    // installing BAM files
+    ACTION_BASH_FOR ~%MOD_FOLDER%/bam~ ~^%bam_resref%.*\.bam$~ BEGIN
+      ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~) BEGIN
+        COPY ~%BASH_FOR_FILESPEC%~ ~override~
+      END
+    END
+
+    // installing sound files
+    ACTION_FOR_EACH wav_resref IN ~%wav_resref1%~ ~%wav_resref2%~ BEGIN
+      ACTION_BASH_FOR ~%MOD_FOLDER%/wav~ ~^%wav_resref%.*\.wav$~ BEGIN
+        ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~) BEGIN
+          COPY ~%BASH_FOR_FILESPEC%~ ~override~
+        END
+      END
+    END
+
+    // adding ANIMATE.IDS entry
+    APPEND ~animate.ids~ ~0x%slot_hex% %ids_label%~
+    CLEAR_IDS_MAP
+  END ELSE BEGIN
+    FAIL ~No free animation slot found for %ini_resref%.ini~
+  END
+
+  LAF get_tra_paths STR_VAR tra_res = EVAL ~%itm_resref%~ RET tra_language tra_fallback END
+  WITH_TRA ~%tra_fallback%~ ~%tra_language%~ BEGIN
+    COMPILE ~%MOD_FOLDER%/bcs/a7-mcrdv.baf~
+
+    COPY ~%MOD_FOLDER%/cre/a7-mcrdv.cre~ ~override~
+      SAY NAME1 @23 // Corrupted Vermin
+      SAY NAME2 @23 // Corrupted Vermin
+      WRITE_SHORT 0x28 anim_slot
+
+    OUTER_SET infected_strref = RESOLVE_STR_REF(@20) // Infected by vermin
+
+    // Prevent display of custom "diseased" string
+    COPY_EXISTING ~ring39.itm~ ~override~ // Ring of Gaxx
+                  ~misc8j.itm~ ~override~ // Boots of the West
+      LPF ADD_ITEM_EQEFFECT
+        INT_VAR
+          opcode = 267  // Disable display string
+          target = 1    // Self
+          parameter1 = infected_strref
+          timing = 2  // instant/while equipped
+          insert_point = "-1" // add last
+      END
+    BUT_ONLY
+
+    COPY ~%MOD_FOLDER%/spl/%itm_resref%a.spl~ ~override~
+      LPF ALTER_EFFECT
+        INT_VAR
+          match_opcode = 139  // Display string
+          parameter1 = infected_strref
+      END
+
+    COPY ~%MOD_FOLDER%/spl/%itm_resref%b.spl~ ~override~
+      LPF ALTER_EFFECT
+        INT_VAR
+          match_opcode = 139  // Display string
+          parameter1 = RESOLVE_STR_REF(@24) // Corrupted Vermin rises from the corpse
+      END
+      // EE Fixpack provides a more effective check for death immunity
+      SET value = IDS_OF_SYMBOL(~splstate~ ~DEATH_IMMUNITY~)
+      PATCH_IF (value > 0) BEGIN
+        LPF ALTER_EFFECT
+          INT_VAR
+            match_opcode = 318  // Protection from resource
+            match_parameter2 = 76 // SPLSTATE = [value]
+            parameter1 = value
+        END
+      END
+
+    COPY ~%MOD_FOLDER%/spl/%itm_resref%s.spl~ ~override~
+      LPF ALTER_EFFECT
+        INT_VAR
+          match_opcode = 139  // Display string
+          parameter1 = RESOLVE_STR_REF(@21) // Larva spawned
+      END
+
+    COPY ~%MOD_FOLDER%/spl/%itm_resref%t.spl~ ~override~
+      LPF ALTER_EFFECT
+        INT_VAR
+          match_opcode = 139  // Display string
+          parameter1 = RESOLVE_STR_REF(@22) // Larva developed into vermin
+      END
+  END
+
+  COPY ~%MOD_FOLDER%/eff/%itm_resref%c.eff~ ~override~
+       ~%MOD_FOLDER%/itm/a7-mcrdw.itm~      ~override~
+       ~%MOD_FOLDER%/spl/%itm_resref%p.spl~ ~override~
+END

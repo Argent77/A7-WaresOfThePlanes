@@ -1,0 +1,156 @@
+IF
+  OnCreation()
+  !Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    Enemy()
+END
+
+IF
+  ActionListEmpty()
+  See(NearestEnemyOf(Myself))
+  !Name("a7-vermin",LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),15)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  See(NearestAllyOf(Myself))
+  !Name("a7-vermin",LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),15)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  See(SecondNearestEnemyOf(Myself))
+  !Name("a7-vermin",LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),15)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  See(SecondNearestAllyOf(Myself))
+  !Name("a7-vermin",LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),15)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  See(ThirdNearestEnemyOf(Myself))
+  !Name("a7-vermin",LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),15)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  See(ThirdNearestAllyOf(Myself))
+  !Name("a7-vermin",LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),15)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  See(FourthNearestEnemyOf(Myself))
+  !Name("a7-vermin",LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),15)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  See(FourthNearestAllyOf(Myself))
+  !Name("a7-vermin",LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),15)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  See(FifthNearestEnemyOf(Myself))
+  !Name("a7-vermin",LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),15)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  See(FifthNearestAllyOf(Myself))
+  !Name("a7-vermin",LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),15)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  See(SixthNearestEnemyOf(Myself))
+  !Name("a7-vermin",LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),15)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  See(SixthNearestAllyOf(Myself))
+  !Name("a7-vermin",LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),15)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  ActionListEmpty()
+  AttackedBy([ANYONE],DEFAULT)
+THEN
+  RESPONSE #100
+    Attack(LastAttackerOf(Myself))
+END
+
+IF
+  ActionListEmpty()
+THEN
+  RESPONSE #100
+    RandomWalk()
+  RESPONSE #50
+    NoAction()
+END

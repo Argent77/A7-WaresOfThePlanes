@@ -1,0 +1,20 @@
+// Larval Idol of Obox-ob
+
+@0 = ~Larvenidol von Obox-ob~
+// @1 = ~~
+
+@10 = ~Dies ist die Larvenform des abscheulichen Idols von Obox-ob, welche manchmal den Opfern von der Verderbnis des Abyss eingepflanzt werden. Dieser kleine, vieläugige Steinparasit wächst langsam heran, indem er sich von Verderbnis ernährt, bis er zu einem voll ausgebildeten, abscheulichen Idol heranreift.
+
+Das Idol infiziert Wesen mit einer Krankheit, die ihre Opfer stark schwächt. Im Gegensatz zur Krankheit, die vom abscheulichen Idol verursacht wird, ist diese Form nicht tödlich. Sie verschwindet normalerweise nach einiger Zeit von allein, wenn sie nicht weiter behandelt wird.
+
+EIGENSCHAFTEN:
+
+Krankheit verursachen (3x täglich)
+ Reichweite: 9 m (Sichtfeld)
+ Wirkungsbereich: 1 Wesen
+ Rettungswurf: Ja (gg. Tod)
+ Das Opfer wird mit einer Krankheit infiziert, die sowohl Stärke, Geschicklichkeit und Charisma um -3 senkt, als auch alle drei Runden einen Schadenspunkt verursacht. Die Krankheit hält bis zu 8 Stunden an, sofern sie nicht geheilt wird.
+ Bei jeder Anwendung besteht eine Wahrscheinlichkeit von 10 %, dass sich die Larve zu einem voll ausgebildeten, abscheulichen Idol heranreift.
+
+Gewicht: 2~
+// @11 = ~~

@@ -1,0 +1,33 @@
+// Verminous Idol of Obox-ob
+
+@0 = ~Übelriechendes Idol~
+@1 = ~Abscheuliches Idol von Obox-ob~
+
+@10 = ~Diese Skulptur ist aus Stein gefertigt und ähnelt einer Kreuzung aus Spinnentier und Insekt. Sie verströmt einen übelriechenden Gestank.
+
+EIGENSCHAFTEN:
+
+Gewicht: 4~
+@11 = ~Das abscheuliche Idol wurde aus Urgestein geformt und ist übersät mit unzähligen starren Augen. Es ist ein Relikt des Obyrithen Obox-ob, des Prinzen des Ungeziefers. Auf der Oberfläche des Idols wimmelt es von unsichtbarem Leben, und wer es zu lange in den Händen hält, spürt vielleicht, wie sich etwas unter seiner Haut regt.
+
+Das Idol infiziert seine Opfer mit einer schrecklichen Verderbnis des Abyss, einer zehrenden Krankheit, die immer schwerer wird und dem Opfer letztendlich das Leben kosten kann, wenn sie unbehandelt bleibt. Nach dem Tod bringt der Leichnam des Opfers ein verdorbenes Ungeziefer hervor, das ein Stück der widerwärtigen Essenz des Idols in sich trägt. Selbst sein Träger ist nicht sicher; das Relikt kann seinen Träger infizieren, wenn dieser seiner Ansteckungskraft nicht widerstehen kann.
+
+Schlimmer noch: Das Idol pflanzt manchmal eine Larvenkopie seiner selbst in ein Opfer ein. Dieser winzige, vieläugige Parasit aus Stein wächst langsam und ernährt sich von Verderbnis, bis er zu einem voll ausgebildeten, abscheulichen Idol heranreift. So breitet sich der Einfluss von Obox-ob von Wirt zu Wirt aus und verwandelt jedes Opfer in eine weitere Gelegenheit für den Abyss, seine Schrecken zu vervielfachen.
+
+EIGENSCHAFTEN:
+
+Verderbnis des Abyss (3x täglich)
+ Reichweite: 9 m (Sichtfeld)
+ Wirkungsbereich: 1,5 m Radius
+ Rettungswurf: Ja (-4 gg. Tod)
+ Das Opfer wird von Parasiten des Abyss infiziert. Sie verursachen eine zehrende Krankheit mit schmerzhaften Symptomen. Dadurch erhält es einen Malus von -5 auf Stärke, Geschicklichkeit und Charisma und werden verlangsamt. Nach fünf Runden muss das Opfer alle zwei Runden einen Rettungswurf gg. Tod bestehen oder sterben an der Krankheit. Der Leichnam des Opfers bringt ein verdorbenes Ungeziefer hervor, das alles in seiner Nähe angreift. Diese Auswirkungen halten an, bis sie durch „Krankheit heilen“ aufgehoben werden. Untote und Konstrukte sind immun.
+ Bei jeder Anwendung besteht eine Wahrscheinlichkeit von 33 %, dass eine Larvenkopie des Idols in das Opfer eingepflanzt wird. Sie wächst beständig und entwickelt sich irgendwann in ein voll ausgebildetes abscheuliches Idol.
+ Der Anwender selbst muss einen Rettungswurf gg. Tod bestehen, oder steckt sich mit einer Krankheit an, die sowohl Stärke, Geschicklichkeit und Charisma um -3 senkt, als auch alle drei Runden einen Schadenspunkt verursacht. Die Krankheit hält bis zu 8 Stunden an, sofern sie nicht geheilt wird.
+
+Gewicht: 4~
+
+@20 = ~Mit Ungeziefer infiziert~
+@21 = ~Larve erschaffen~
+@22 = ~Larve reift zu abscheulichem Idol heran~
+@23 = ~Verdorbenes Ungeziefer~
+@24 = ~Verdorbenes Ungeziefer schlüpft aus der Leiche~

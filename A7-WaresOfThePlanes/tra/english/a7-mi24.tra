@@ -1,0 +1,33 @@
+// Verminous Idol of Obox-ob
+
+@0 = ~Foul-smelling Idol~
+@1 = ~Verminous Idol of Obox-ob~
+
+@10 = ~This sculpture is made of stone and resembles a cross of arachnids and insects. It gives off a foul odor.
+
+STATISTICS:
+
+Weight: 4~
+@11 = ~Carved from primordial stone and riddled with countless unblinking eyes, the Verminous Idol is a relic of the ancient obyrith lord Obox-ob, Prince of Vermin. Its surface crawls with unseen life, and those who handle it too long may feel something stirring beneath their skin.
+
+The idol infects its victims with a terrible Abyssal corruption, a wasting disease that grows increasingly severe and may ultimately claim the victim's life if left uncured. Upon death, the victim's corpse spawns a corrupted vermin, carrying a fragment of the idol's foul essence. Even its wielder is not safe; the relic may infect its user if they fail to resist its contagion.
+
+Worse still, the idol sometimes plants a larval replica of itself within a victim. This tiny, many-eyed stone parasite grows slowly, feeding upon corruption until it matures into a full Verminous Idol. Thus, Obox-ob's influence spreads from host to host, turning every victim into an opportunity for the Abyss to multiply its horrors.
+
+STATISTICS:
+
+Charge abilities:
+– Abyssal Corruption three times per day (Save vs. Death at -4 to negate)
+  Range: Visual range of the user
+  Area of Effect: 5-ft. radius
+  Victims are infested by an abyssal parasite that causes a major disease with painful and distracting symptoms. Strength, Dexterity, and Charisma scores are reduced by 5. They are also slowed. After five rounds victims must save vs. Death every other round or die from the disease. From the corpse of a victim rises corrupted vermin that attacks everything in their sight. These effects persist until the victim receives a Cure Disease spell. Undead and constructs are not affected.
+  With each use there is a 33% chance that the idol replicates itself in larval form inside the victim, which eventually grows into a fully developed Verminous Idol.
+  The user must save vs. Death or is infected by a disease as well, which reduces Strength, Dexterity, and Charisma by 3, and deals 1 HP damage every three rounds for 8 hours, or until cured.
+
+Weight: 4~
+
+@20 = ~Infected by vermin~
+@21 = ~Larva spawned~
+@22 = ~Larva developed into vermin~
+@23 = ~Corrupted Vermin~
+@24 = ~Corrupted Vermin rises from the corpse~

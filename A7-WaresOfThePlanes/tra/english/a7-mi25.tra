@@ -1,0 +1,21 @@
+// Larval Idol of Obox-ob
+
+@0 = ~Larval Idol of Obox-ob~
+// @1 = ~~
+
+@10 = ~This is the larval form of the Verminous Idol of Obox-ob that is sometimes spawned in victims of Abyssal Corruption. This small, many-eyed stone parasite grows slowly, feeding upon corruption until it matures into a full Verminous Idol.
+
+The idol infects its victims by a disease that severely weakens the target. Unlike the disease caused by the Verminous Idol, it is not lethal and usually disappars by itself after some time if left uncured.
+
+STATISTICS:
+
+Charge abilities:
+– Cause Disease three times per day (Save vs. Death to negate)
+  Range: Visual range of the user
+  Duration: 8 hours
+  Area of Effect: 1 creature
+  Victim becomes infected with a disease that saps the target of 3 points of Strength, Dexterity, and Charisma. It also deals 1 HP damage every three rounds. Undead and constructs are not affected.
+  Each use has a 10% chance to let the larval idol grow into a fully developed Verminous Idol.
+
+Weight: 2~
+// @11 = ~~
