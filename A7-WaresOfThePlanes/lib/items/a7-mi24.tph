@@ -33,7 +33,9 @@ ACTION_IF (has_bg2) BEGIN
     desc_image_resref
   END
 
+  // parasitic version cannot be sold
   COPY_EXISTING ~%itm_resref%.itm~ ~override/%itm_resref%a.itm~
+    WRITE_LONG 0x34 0   // Price
     WRITE_SHORT 0x42 0  // Lore
 
   // installing creature animation
